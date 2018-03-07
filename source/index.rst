@@ -10,7 +10,7 @@ Introduction to Robotics
    :maxdepth: 2
    :caption: Contents:
 
-   preface
+   Preface
    Introduction
    Math
 
