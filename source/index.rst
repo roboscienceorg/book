@@ -13,6 +13,8 @@ Introduction to Robotics
    Preface
    Introduction
    Math
+   Terms
+   Design
 
 
 Index
