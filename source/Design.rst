@@ -1,6 +1,3 @@
-.. role:: math(raw)
-   :format: html latex
-..
 
 Robotics Design Elements [Chap:Design]
 ======================================
@@ -128,7 +125,7 @@ efficient. C++ provides the object oriented approach to a code base and
 is widely adopted in industry. Recent languages like Java and C# are
 popular when the robot has a full computer available as a controller.
 One can even find older languages like BASIC and FORTH as well. In this
-text we will focus on two: C/C++ and Python. 
+text we will focus on two: C/C++ and Python.
 
 Why C/C++ and Python? C is the major language for embedded systems. It
 can compile down to very compact code to run on a variety of

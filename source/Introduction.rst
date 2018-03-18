@@ -1,10 +1,5 @@
-.. role:: math(raw)
-   :format: html latex
-..
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+
 
 Introduction[Chap:Introduction]
 *******************************

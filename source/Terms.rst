@@ -1,10 +1,4 @@
-.. role:: math(raw)
-   :format: html latex
-..
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
 
 Terms and Basic Concepts of Robotics[Chap:Terms]
 ================================================

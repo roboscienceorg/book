@@ -1,6 +1,3 @@
-.. role:: math(raw)
-   :format: html latex
-..
 
 Mathematical and Computational Background
 ******************************************
