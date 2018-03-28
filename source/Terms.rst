@@ -1,6 +1,6 @@
 
 
-Terms and Basic Concepts of Robotics[Chap:Terms]
+Terms and Basic Concepts of Robotics
 ================================================
 
 Getting the language down is the first step. Robotics is like any other

@@ -9,9 +9,10 @@ Introduction to Robotics
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :numbered:
 
    Preface
-   Introduction
+   ./Introduction/Introduction
    Math
    Terms
    Design

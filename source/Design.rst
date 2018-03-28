@@ -1,5 +1,5 @@
 
-Robotics Design Elements [Chap:Design]
+Robotics Design Elements 
 ======================================
 
 Robotics Frameworks
