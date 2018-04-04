@@ -1,3 +1,4 @@
+
 .. Roboscience master file, created by
    sphinx-quickstart on Fri Feb 16 18:55:27 2018.
    You can adapt this file completely to your liking, but it should at least
@@ -12,14 +13,30 @@ Introduction to Robotics
    :numbered:
 
    Preface
-   ./Introduction/Introduction
+   Introduction
    Math
+   SciPy
    Terms
    Design
-
+   ROS
+   Simulation
+   RobotSim
+   Electrical
+   Sensors
+   Vision
+   Motion
+   Kinematics
+   Manipulators
+   Control
+   Filtering
+   Kalman
+   Particle
+   Planning
+   Localization
 
 Index
 ======
 
 * :ref:`genindex`
 * :ref:`search`
+
