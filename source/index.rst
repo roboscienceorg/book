@@ -12,27 +12,27 @@ Introduction to Robotics
    :caption: Contents:
    :numbered:
 
-   Preface
-   Introduction
-   Math
-   SciPy
-   Terms
-   Design
-   ROS
-   Simulation
-   RobotSim
-   Electrical
-   Sensors
-   Vision
-   Motion
-   Kinematics
-   Manipulators
-   Control
-   Filtering
-   Kalman
-   Particle
-   Planning
-   Localization
+   Preface/Preface
+   Introduction/Introduction
+   Math/Math
+   SciPy/SciPy
+   Terms/Terms
+   Design/Design
+   ROS/ROS
+   Simulation/Simulation
+   RobotSim/RobotSim
+   Electrical/Electrical
+   Sensors/Sensors
+   Vision/Vision
+   Motion/Motion
+   Kinematics/Kinematics
+   Manipulators/Manipulators
+   Control/Control
+   Filtering/Filtering
+   Kalman/Kalman
+   Particle/Particle
+   Planning/Planning
+   Localization/Localization
 
 Index
 ======
