@@ -1,6 +1,8 @@
 #!/bin/bash
 
 files=`grep -v "^%" Robotics.tex | grep "\\include{" | grep  -o "\{.*\}" | grep -o "\w*"`
+files="Control Electrical Gazebo Planning"
+
 
 echo "
 .. Roboscience master file, created by

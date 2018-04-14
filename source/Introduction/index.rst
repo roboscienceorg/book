@@ -41,7 +41,6 @@ ourselves in the process. A process we embark on here.
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
 
    whatisarobot
    overview
@@ -57,7 +56,7 @@ ourselves in the process. A process we embark on here.
 
 
 Problems
-========
+--------
 
 [Introduction\_ans]
 
