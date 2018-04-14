@@ -10,6 +10,7 @@ Localization and Mapping.
    :maxdepth: 2
 
    WhatisLocalization
+   LocalizationBelief
    MapRepresentation
    Decomposition
    MapBuilding

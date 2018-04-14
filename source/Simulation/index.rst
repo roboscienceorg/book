@@ -6,6 +6,7 @@ Simulation Basics [Chap:Simulation]
 
    WhySimulate
    SimulatingMotion
+   AnimationTwoLink
    MovingDifferential
    GroundRobotWorld
    MotionPlanning

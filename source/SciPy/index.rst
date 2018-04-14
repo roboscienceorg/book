@@ -12,7 +12,7 @@ up before reading on.
 .. toctree::
    :maxdepth: 2
 
-   ScipiMath
+   ScipyMath
    Vectors
    LinearAlgebra
    Graphing

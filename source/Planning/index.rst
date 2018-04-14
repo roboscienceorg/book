@@ -32,7 +32,7 @@ configuration, end location and pose or goal.
    BugComparison
    BugSimulations
    Mazes
-   Potential Functions
-   Brushfire 
-   Navigation Planner
+   PotentialFunctions
+   Brushfire
+   NavigationPlanner
    Problems
