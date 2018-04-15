@@ -33,9 +33,18 @@ automatically operated machine that replaces human effort, though it may
 not resemble human beings in appearance or perform functions in a
 humanlike manner*.
 
-0.4 |[Figure:robotimagesB]|
+.. This image is public domain
+.. figure:: IntroductionFigures/Repliee_Q2.jpg
+   :scale:  50%
 
-0.55 |[Figure:robotimagesB]|
+   Repliee Q2 - developed by Osaka University and manufactured by Kokoro Company Ltd.
+
+
+.. This image is public domain
+.. figure:: IntroductionFigures/ATHLETE.jpg
+   :scale:  50%
+
+   The NASA ATHLETE rover as it climbs to the top of a hill.
 
 This latter definition includes washing machines, bread makers, and
 other devices not generally seen as a robot. However, as we will argue,
