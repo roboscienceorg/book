@@ -21,6 +21,7 @@ Introduction to Robotics
    ROS/index
    Simulation/index
    RobotSim/index
+   Gazebo/index
    Electrical/index
    Sensors/index
    Vision/index
@@ -39,4 +40,3 @@ Index
 
 * :ref:`genindex`
 * :ref:`search`
-

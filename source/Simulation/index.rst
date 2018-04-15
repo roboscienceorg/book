@@ -1,5 +1,5 @@
-Simulation Basics [Chap:Simulation]
-===================================
+Simulation Basics
+=================
 
 .. toctree::
    :maxdepth: 2
@@ -11,4 +11,3 @@ Simulation Basics [Chap:Simulation]
    GroundRobotWorld
    MotionPlanning
    Problems
-

@@ -1,5 +1,5 @@
-Kalman FIlter[Chap:Kalman]
-==========================
+Kalman FIlter
+=============
 
 
 .. toctree::
@@ -9,4 +9,3 @@ Kalman FIlter[Chap:Kalman]
    KalmanFilters
    ExtendedKalmanFilter
    Problems
-

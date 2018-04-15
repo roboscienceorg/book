@@ -1,5 +1,5 @@
-Machine Vision[Chap:Vision]
-===========================
+Machine Vision
+==============
 
 .. toctree::
    :maxdepth: 2
@@ -7,4 +7,3 @@ Machine Vision[Chap:Vision]
    TriangulationandStructuredLight
    StereoCameras
    Problems
-

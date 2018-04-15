@@ -1,5 +1,5 @@
-Planning[Chap:Planning]
-=======================
+Planning
+========
 
 The single most important aspect of a robot is its ability to move.
 Motion itself is not complicated. Requiring only servos and motors,

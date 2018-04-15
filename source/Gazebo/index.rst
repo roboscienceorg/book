@@ -1,5 +1,5 @@
-Gazebo[Gazebochapter]
-=====================
+Gazebo
+======
 
 .. toctree::
    :maxdepth: 2

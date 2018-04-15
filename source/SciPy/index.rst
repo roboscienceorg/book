@@ -1,5 +1,5 @@
-Numerical Methods and SciPy [Chap:SciPy]
-========================================
+Numerical Methods and SciPy
+===========================
 
 Note: This is under significant development.
 
@@ -18,4 +18,3 @@ up before reading on.
    Graphing
    Probability
    MatPlotLib
-

@@ -1,5 +1,5 @@
-Robotics Design Elements [Chap:Design]
-======================================
+Robotics Design Elements
+========================
 
 .. toctree::
    :maxdepth: 2
@@ -13,6 +13,3 @@ Robotics Design Elements [Chap:Design]
    HumanEnv
    CyberSecurity
    Problems
-
-
-

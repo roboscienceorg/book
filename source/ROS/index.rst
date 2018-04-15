@@ -1,5 +1,5 @@
-ROS - The Robot Operating System [ROSChapter]
-=============================================
+ROS - The Robot Operating System
+================================
 
 | The official ROS website defines ROS as follows:
 | *ROS (Robot Operating System) provides libraries and tools to help
@@ -37,6 +37,3 @@ the core goals of ROS as a whole.
    FundamentalROS
    ROSCommunication
    Problems
-
-
-
