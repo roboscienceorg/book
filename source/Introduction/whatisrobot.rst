@@ -1,18 +1,19 @@
 What exactly is a robot?
 ------------------------
 
-.. Here is an example of a figure:
+.. This image is public domain
+.. figure:: IntroductionFigures/Honda_ASIMO.jpg
+   :scale:  50%
 
-.. figure:: IntroductionFigures/HONDA_ASIMO.jpg
-   :scale:  30%
+   The Honda Asimo Robot.
 
-   The Honda Asimo Robot [wiki:asimo]
+.. This image is public domain
+.. figure:: IntroductionFigures/Foundry_robot.jpg
+   :scale:  50%
 
-..  Not free to use this ... (sample)
+   Kuka robot
 
-0.55 |FANUC 6-axis welding robot. :raw-latex:`\cite{wiki:fanuc}`|
 
-[Figure:robotimagesA]
 
 Definition
 ~~~~~~~~~~
