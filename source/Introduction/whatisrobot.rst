@@ -1,7 +1,14 @@
 What exactly is a robot?
 ------------------------
 
-0.31 |FANUC 6-axis welding robot. :raw-latex:`\cite{wiki:fanuc}`|
+.. Here is an example of a figure:
+
+.. figure:: IntroductionFigures/HONDA_ASIMO.jpg
+   :scale:  30%
+
+   The Honda Asimo Robot [wiki:asimo]
+
+..  Not free to use this ... (sample)
 
 0.55 |FANUC 6-axis welding robot. :raw-latex:`\cite{wiki:fanuc}`|
 
@@ -354,4 +361,3 @@ painting robotics characters as pure evil or immensely powerful giving a
 backdrop for character growth. But how is this important? It is because
 the role fiction has played, it, as much as the needs of society and
 economic forces, influences what we do in robotics.
-

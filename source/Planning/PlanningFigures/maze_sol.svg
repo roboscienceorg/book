@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="27cm" height="22cm" viewBox="204 28 533 436" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <image x="257" y="29" width="434" height="434" xlink:href="file:///Users/jmcgough/book/Figures/turtle/maze1.png"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #00ff00" points="208,272 293,271 294,220 344,220 344,270 445,271 444,325 507,324 508,271 609,272 609,220 503,219 504,57 552,58 552,160 611,159 611,58 659,58 659,160 734,161 "/>
+  </g>
+</svg>
