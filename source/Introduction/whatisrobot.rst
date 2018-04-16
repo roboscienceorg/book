@@ -130,9 +130,18 @@ to be solely in the domain of humans and animals, we tend to label it a
 robot. As soon as that capability becomes routine, the device is thought
 of a mechatronic device.
 
-0.45 |[Figure:robotimagesF]|
 
-0.45 |[Figure:robotimagesF]|
+.. This image is public domain
+.. figure:: IntroductionFigures/Robonaut2.jpg
+   :scale: 40%
+
+   NASA's Robonaut.
+
+.. This image is public domain
+.. figure:: IntroductionFigures/RUNSWift_Naos_2010.jpg
+   :scale: 20%
+
+   RoboCup Standard Platform League (Image from 2010).
 
 Robots embody technological magic. So, it is natural that some
 previously unseen ability programmed into a machine will have a magic
@@ -140,13 +149,24 @@ quality for humans, thus making that machine more of a robot. But with
 time, we get accustomed to it, and the magic gets replaced with
 expectation.
 
-0.475
+.. This image is public domain
+.. figure:: IntroductionFigures/Beam_telepresence_robot.jpg
+   :scale:  30%
 
-0.475
+   An Intel IT Labs researcher working on a remote telepresence robot pilot
+   project that uses Suitable Technologies' Beam robot.
 
-|
+.. This image is public domain
+.. figure:: IntroductionFigures/ROV_working_on_a_subsea_structure.jpg
+   :scale: 25%
 
-0.475
+   ROV working on a subsea structure.
+
+.. This image is public domain
+.. figure:: IntroductionFigures/Justus_robot_in_Krakow_Poland_Aug2009.jpg
+   :scale: 50%
+
+   Justus security robot in front of Krakow railway station [JustusSecurity]_ .
 
 It can be argued that there is nothing new in the subject of robotics -
 that all we are doing is building machines. Nothing different than what
@@ -156,9 +176,13 @@ technology. However, there is a body of knowledge related to building
 machines that interact in human or physical environments. This is what
 we will consider robotics.
 
-0.475
+.. This image is public domain
+.. figure:: IntroductionFigures/Rhex.jpg
+   :scale: 40%
 
-0.475
+   Rhex: DARPA project on compliant six legged robots.
+
+
 
 A brief history
 ~~~~~~~~~~~~~~~
@@ -180,7 +204,8 @@ a life-like manner.
 In ancient Greece, an orrery known as the Antikythera Mechanism is
 developed. This device is credited as being the first analog computer.
 
-.. figure:: robots/antikytheramachine.jpg
+.. figure:: IntroductionFigures/antikytheramachine.jpg
+   :scale: 50%
    :alt: Antikythera Mechanism. :raw-latex:`\cite{wiki:antik}`
 
    Antikythera Mechanism. :raw-latex:`\cite{wiki:antik}`
@@ -212,13 +237,12 @@ with pegs (cams) that bump into little levers that operate the
 percussion. The drummer could be made to play different rhythms and
 different drum patterns by moving the pegs to different locations.[8]
 
-.. figure:: robots/Al-Jazari.jpg
-   :alt: Al-Jazari’s Mechanical Musical Boat.
-   :raw-latex:`\cite{wiki:aljazari}`
+.. figure:: IntroductionFigures/Al-Jazari.jpg
+   :scale: 30%
 
    Al-Jazari’s Mechanical Musical Boat.
-   :raw-latex:`\cite{wiki:aljazari}`
 
+   
 1495
 ''''
 
