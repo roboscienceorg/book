@@ -62,17 +62,14 @@ and much more.
 .. figure:: IntroductionFigures/Roomba_Discovery.jpg
    :scale: 25%
 
-   iRobot Roomba Discovery 2.1
-
-
+   iRobot Roomba Discovery 2.1.
 
 .. This image is public domain
 .. figure:: IntroductionFigures/drill_bot2.jpg
    :scale: 35%
 
-   NASA experimental drilling robot
+   NASA experimental drilling robot.
 
-0.35 |[Figure:robotimagesC]|
 
 There is no consensus on which machines qualify as robots. However,
 there *is* a general agreement that robots exhibit behaviors which mimic
@@ -81,9 +78,18 @@ expect the robot to interact with its environment and the objects within
 that environment. Most of us may expect that the robot performs this
 interaction through movement and sensation.
 
-0.4 |[Figure:robotimagesD]|
+.. This image is public domain
+.. figure:: IntroductionFigures/KeeponTophatNextfest2007.jpg
+   :scale: 50%
 
-0.49 |[Figure:robotimagesD]|
+   Keepon - therapy robot.
+
+.. This image is public domain
+.. figure:: IntroductionFigures/IED_detonator.jpg
+   :scale: 20%
+
+   Robot tasked to detonate a buried improvised explosive device.
+
 
 Many may expect the robot to perform complex tasks or deal with harsh,
 unforgiving environments. Some may expect a robot to be an extension of
@@ -104,9 +110,18 @@ We can boil down our notion of robot abilities to three things:
     full mobility of the machine or control of a tool through a
     manipulator.
 
-0.45 |[Figure:robotimagesE]|
+.. This image is public domain
+.. figure:: IntroductionFigures/Laproscopic_Surgery_Robot.jpg
+   :scale: 50%
 
-0.45 |[Figure:robotimagesE]|
+   Da Vinci Surgical System [DaVinci]_ .
+
+.. This image is public domain
+.. figure:: IntroductionFigures/PR2_Tabletop.jpg
+   :scale: 20%
+
+   Willow Garage's PR2 robot.
+
 
 One interesting phenomenon that could be influencing the lack of a solid
 definition for the term is that what we label a “robot" varies with
