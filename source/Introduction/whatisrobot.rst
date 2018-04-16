@@ -206,9 +206,8 @@ developed. This device is credited as being the first analog computer.
 
 .. figure:: IntroductionFigures/antikytheramachine.jpg
    :scale: 50%
-   :alt: Antikythera Mechanism. :raw-latex:`\cite{wiki:antik}`
 
-   Antikythera Mechanism. :raw-latex:`\cite{wiki:antik}`
+   Antikythera Mechanism [Antikythera]_ .
 
 270 BC
 ''''''
@@ -242,7 +241,7 @@ different drum patterns by moving the pegs to different locations.[8]
 
    Al-Jazari’s Mechanical Musical Boat.
 
-   
+
 1495
 ''''
 
@@ -392,15 +391,7 @@ Items are hyperlinked to web pages.
    Tower. <http://spectrum.ieee.org/automaton/robotics/diy/video-watch-flying-robots-build-a-6-meter-tower>`__
    , Figure [quadswarm] :raw-latex:`\cite{wiki:quadswarm}`
 
-0.49 |Quadrotors Building a Tower[quadswarm]|
 
-0.49 |Quadrotors Building a Tower[quadswarm]|
-
-|
-
-1 |Quadrotors Building a Tower[quadswarm]|
-
-[2013news]
 
 2012
 ^^^^
