@@ -9,7 +9,7 @@ What exactly is a robot?
 
 .. This image is public domain
 .. figure:: IntroductionFigures/Foundry_robot.jpg
-   :scale:  50%
+   :scale:  75%
 
    Kuka robot
 
@@ -58,7 +58,19 @@ them used in from manufacturing to exploration, from assistive
 technologies and medicine to entertainment, from research to education,
 and much more.
 
-0.35 |[Figure:robotimagesC]|
+.. This image is public domain
+.. figure:: IntroductionFigures/Roomba_Discovery.jpg
+   :scale: 25%
+
+   iRobot Roomba Discovery 2.1
+
+
+
+.. This image is public domain
+.. figure:: IntroductionFigures/drill_bot2.jpg
+   :scale: 35%
+
+   NASA experimental drilling robot
 
 0.35 |[Figure:robotimagesC]|
 
