@@ -10,14 +10,15 @@ was found in subjects such as kinematics, dynamics, controls,
 mechatronics, embedded systems, sensing, signal processing,
 communications, algorithms and planning.
 
-.. figure:: overview
-   :alt: Robotics is a blend of mechatronics, embedded systems,
-   controls, sensing, signal processing, kinematics, dynamics,
-   communications, algorithms and planning.
+.. This figure is owned by RoboScience
+.. figure:: IntroductionFigures/overview.svg
+   :width: 70%
+   :align: center
 
    Robotics is a blend of mechatronics, embedded systems, controls,
    sensing, signal processing, kinematics, dynamics, communications,
    algorithms and planning.
+
 
 Application domains for robotics is a quickly growing list. We are quite
 used to seeing robots in large industrial settings like automotive

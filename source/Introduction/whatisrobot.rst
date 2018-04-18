@@ -304,8 +304,7 @@ Robots in the news
 
 Items are hyperlinked to web pages.
 
-2017
-^^^^
+**2017**
 
 -  `Tertill (Franklin Robotics) - Fully autonomous weeding
    robot. <http://www.franklinrobotics.com/>`__
@@ -325,8 +324,7 @@ Items are hyperlinked to web pages.
 -  `Kuri. Home “social" robot. Mayfield
    Robotics. <http://www.mayfieldrobotics.com/>`__
 
-2016
-^^^^
+**2016**
 
 -  `SpotMini, a compact version of Boston Dynamics’ Spot
    robot. <http://spectrum.ieee.org/automaton/robotics/home-robots/boston-dynamics-spotmini/>`__
@@ -337,8 +335,7 @@ Items are hyperlinked to web pages.
 -  `Vyo - Different approach to social domestic
    robots. <http://spectrum.ieee.org/automaton/robotics/home-robots/vyo-robotic-smart-home-assistant/>`__
 
-2015
-^^^^
+**2015**
 
 -  `DRC Hubo - UNLV finished 8th place in the
    DRC. <http://www.drc-hubo.com/>`__
@@ -354,8 +351,7 @@ Items are hyperlinked to web pages.
 -  `Deepfield Robotics targeting
    agriculture. <http://spectrum.ieee.org/automaton/robotics/industrial-robots/bosch-deepfield-robotics-weed-control/>`__
 
-2014
-^^^^
+**2014**
 
 -  `Robocup 2014: Goal! Although the human team was not really
    aggressive, the goal was well setup and the defender did try to block
@@ -377,8 +373,7 @@ Items are hyperlinked to web pages.
 -  `Festo announces a robot kangaroo. Why? Well who wouldn’t want a
    kangaroo robot? <https://www.youtube.com/watch?v=mWiNlWk1Muw>`__
 
-2013
-^^^^
+**2013**
 
 -  `Boston Dynamic’s BigDog gets an arm which can throw heavy
    objects. <https://www.youtube.com/watch?v=2jvLalY6ubc>`__ , Figure
@@ -393,8 +388,7 @@ Items are hyperlinked to web pages.
 
 
 
-2012
-^^^^
+**2012**
 
 -  `Boston Dynamics announces Legged Squad Support System (LS3) which is
    a militarized variant of Big
