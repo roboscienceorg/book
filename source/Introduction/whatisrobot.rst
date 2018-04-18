@@ -5,7 +5,7 @@ What exactly is a robot?
 .. figure:: IntroductionFigures/Honda_ASIMO.jpg
    :scale:  50%
 
-   The Honda Asimo Robot.
+   The Honda Asimo Robot
 
 .. This image is public domain
 .. figure:: IntroductionFigures/Foundry_robot.jpg
@@ -37,7 +37,7 @@ humanlike manner*.
 .. figure:: IntroductionFigures/Repliee_Q2.jpg
    :scale:  50%
 
-   Repliee Q2 - developed by Osaka University and manufactured by Kokoro Company Ltd.
+   Repliee Q2 - developed by Osaka University and manufactured by Kokoro Company Ltd. [Repliee_Q2]_
 
 
 .. This image is public domain
