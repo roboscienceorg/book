@@ -52,13 +52,23 @@ through examples like the NASA Rovers and the IED detecting robots of
 our armed forces. Industrial robots have been in use for a half of a
 century and are well known in manufacturing and more recently with
 surgical robots. Typical examples are shown in
-Figure [fig:fixedvmobile].
+Figure :numref:`fig:fixedvmobile` .
 
 .. This image is public domain
-.. figure:: ./IntroductionFigures/PR2_at_Maker_Faire.jpg
-   :scale:  40%
+.. _`fig:fixedvmobile`:
+.. figure:: IntroductionFigures/PR2_at_Maker_Faire.jpg
+   :width: 50%
+   :align: center
 
-0.49 |[fig:fixedvmobile]Mobile vs Manufacturing Robots|
+   PR2 - an example of a mobile robot.
+
+.. This image is public domain
+.. figure:: IntroductionFigures/Foundry_robot.jpg
+   :width: 55%
+   :align: center
+
+   Kuka system - an example of a fixed manufacturing robot.
+
 
 It is important to note that partitioning these machines into two
 categories ignores the full spectrum of systems available. As the
