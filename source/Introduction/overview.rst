@@ -54,7 +54,9 @@ century and are well known in manufacturing and more recently with
 surgical robots. Typical examples are shown in
 Figure [fig:fixedvmobile].
 
-0.49
+.. This image is public domain
+.. figure:: ./IntroductionFigures/PR2_at_Maker_Faire.jpg
+   :scale:  40%
 
 0.49 |[fig:fixedvmobile]Mobile vs Manufacturing Robots|
 
