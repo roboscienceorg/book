@@ -1,23 +1,33 @@
 
-   Preface  
-   Introduction - McGough
-   Math  
-   SciPy  
-   Terms  
-   Design  
-   ROS  
-   Simulation  
-   RobotSim  
-   Gazebo  
-   Electrical  
-   Sensors  
-   Vision  
-   Motion  
-   Kinematics  
-   Manipulators  
-   Control  
-   Filtering  
-   Kalman  
-   Particle  
-   Planning  
-   Localization  
+   Preface
+   Introduction:
+     whatisrobot - McGough
+     overview - McGough
+     navigation
+     vision
+     robotcontrol
+     senseplanact
+     FewLastWords
+     supplementary
+     Problems
+     References
+   Math
+   SciPy
+   Terms
+   Design
+   ROS
+   Simulation
+   RobotSim
+   Gazebo
+   Electrical
+   Sensors
+   Vision
+   Motion
+   Kinematics
+   Manipulators
+   Control
+   Filtering
+   Kalman
+   Particle
+   Planning
+   Localization
