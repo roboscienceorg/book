@@ -121,7 +121,7 @@ We can boil down our notion of robot abilities to three things:
 .. figure:: IntroductionFigures/PR2_Tabletop.jpg
    :scale: 20%
 
-   Willow Garage's PR2 robot.
+   Willow Garage's PR2 robot.  [Wikipedia]_
 
 
 One interesting phenomenon that could be influencing the lack of a solid
@@ -136,13 +136,13 @@ of a mechatronic device.
 .. figure:: IntroductionFigures/Robonaut2.jpg
    :scale: 40%
 
-   NASA's Robonaut.
+   NASA's Robonaut.  [Wikipedia]_
 
 .. This image is public domain
 .. figure:: IntroductionFigures/RUNSWift_Naos_2010.jpg
    :scale: 20%
 
-   RoboCup Standard Platform League (Image from 2010).
+   RoboCup Standard Platform League (Image from 2010).  [Wikipedia]_
 
 Robots embody technological magic. So, it is natural that some
 previously unseen ability programmed into a machine will have a magic
@@ -155,13 +155,13 @@ expectation.
    :scale:  30%
 
    An Intel IT Labs researcher working on a remote telepresence robot pilot
-   project that uses Suitable Technologies' Beam robot.
+   project that uses Suitable Technologies' Beam robot.  [Wikipedia]_
 
 .. This image is public domain
 .. figure:: IntroductionFigures/ROV_working_on_a_subsea_structure.jpg
    :scale: 25%
 
-   ROV working on a subsea structure.
+   ROV working on a subsea structure.  [Wikipedia]_
 
 .. This image is public domain
 .. figure:: IntroductionFigures/Justus_robot_in_Krakow_Poland_Aug2009.jpg
@@ -181,7 +181,7 @@ we will consider robotics.
 .. figure:: IntroductionFigures/Rhex.jpg
    :scale: 40%
 
-   Rhex: DARPA project on compliant six legged robots.
+   Rhex: DARPA project on compliant six legged robots.   [Wikipedia]_
 
 
 

@@ -1,7 +1,7 @@
 
    Preface
    Introduction:
-     whatisrobot - McGough
+     whatisrobot
      overview - McGough
      navigation
      vision
