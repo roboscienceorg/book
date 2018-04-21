@@ -5,13 +5,13 @@ What exactly is a robot?
 .. figure:: IntroductionFigures/Honda_ASIMO.jpg
    :scale:  50%
 
-   The Honda Asimo Robot
+   The Honda Asimo Robot [Wikipedia]_
 
 .. This image is public domain
 .. figure:: IntroductionFigures/Foundry_robot.jpg
    :scale:  75%
 
-   Kuka robot
+   Kuka robot [Wikipedia]_
 
 
 
@@ -37,14 +37,15 @@ humanlike manner*.
 .. figure:: IntroductionFigures/Repliee_Q2.jpg
    :scale:  50%
 
-   Repliee Q2 - developed by Osaka University and manufactured by Kokoro Company Ltd. [Repliee_Q2]_
+   Repliee Q2 - developed by Osaka University and manufactured by
+   Kokoro Company Ltd. [Repliee_Q2]_
 
 
 .. This image is public domain
 .. figure:: IntroductionFigures/ATHLETE.jpg
    :scale:  50%
 
-   The NASA ATHLETE rover as it climbs to the top of a hill.
+   The NASA ATHLETE rover as it climbs to the top of a hill. [Wikipedia]_
 
 This latter definition includes washing machines, bread makers, and
 other devices not generally seen as a robot. However, as we will argue,
@@ -62,13 +63,13 @@ and much more.
 .. figure:: IntroductionFigures/Roomba_Discovery.jpg
    :scale: 25%
 
-   iRobot Roomba Discovery 2.1.
+   iRobot Roomba Discovery 2.1. [Wikipedia]_
 
 .. This image is public domain
 .. figure:: IntroductionFigures/drill_bot2.jpg
    :scale: 35%
 
-   NASA experimental drilling robot.
+   NASA experimental drilling robot. [Wikipedia]_
 
 
 There is no consensus on which machines qualify as robots. However,
@@ -82,13 +83,13 @@ interaction through movement and sensation.
 .. figure:: IntroductionFigures/KeeponTophatNextfest2007.jpg
    :scale: 50%
 
-   Keepon - therapy robot.
+   Keepon - therapy robot.  [Wikipedia]_
 
 .. This image is public domain
 .. figure:: IntroductionFigures/IED_detonator.jpg
    :scale: 20%
 
-   Robot tasked to detonate a buried improvised explosive device.
+   Robot tasked to detonate a buried improvised explosive device. [Wikipedia]_
 
 
 Many may expect the robot to perform complex tasks or deal with harsh,
