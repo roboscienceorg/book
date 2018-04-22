@@ -10,7 +10,7 @@ Introduction to Robotics
 
    Preface/index
    Introduction/index
-   Math/index
+   Mathematical Background <Math/index>
    SciPy/index
    Terms/index
    Design/index
