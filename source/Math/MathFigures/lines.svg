@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="8cm" height="7cm" viewBox="127 19 141 127" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="198" y1="28.4721" x2="198" y2="140.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="203,36.2361 198,26.2361 193,36.2361 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="193,132.764 198,142.764 203,132.764 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="133.472" y1="87.9676" x2="262.528" y2="87.0324"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="141.2,82.9115 131.236,87.9838 141.272,92.9112 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.8,92.0885 264.764,87.0162 254.728,82.0888 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="175.462" y1="119.941" x2="225.538" y2="46.0593"/>
+    <polygon style="fill: #000000" points="171.255,126.149 172.726,115.066 175.462,119.941 181.004,120.676 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="171.255,126.149 172.726,115.066 175.462,119.941 181.004,120.676 "/>
+    <polygon style="fill: #000000" points="229.745,39.851 228.274,50.934 225.538,46.0593 219.996,45.3235 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="229.745,39.851 228.274,50.934 225.538,46.0593 219.996,45.3235 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="151.517" y1="104.767" x2="220.483" y2="28.2328"/>
+    <polygon style="fill: #000000" points="146.497,110.339 149.477,99.5629 151.517,104.767 156.905,106.257 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="146.497,110.339 149.477,99.5629 151.517,104.767 156.905,106.257 "/>
+    <polygon style="fill: #000000" points="225.503,22.6611 222.523,33.4371 220.483,28.2328 215.095,26.743 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="225.503,22.6611 222.523,33.4371 220.483,28.2328 215.095,26.743 "/>
+  </g>
+</svg>

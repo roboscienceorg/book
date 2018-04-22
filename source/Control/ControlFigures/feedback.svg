@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="7cm" viewBox="52 44 548 140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #e6e6fa" x="350" y="92" width="75" height="33"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="350" y="92" width="75" height="33"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="365" y="114">
+    <tspan x="365" y="114">Motor</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" x1="425" y1="108.5" x2="498" y2="110"/>
+  <g>
+    <rect style="fill: #ffa500" x="455" y="95" width="10" height="30"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="455" y="95" width="10" height="30"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="434" y="88">
+    <tspan x="434" y="88">Encoder</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="507" y="113">
+    <tspan x="507" y="113">Actual Speed</tspan>
+  </text>
+  <g>
+    <rect style="fill: #3232ff" x="267" y="97" width="52" height="23"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="267" y="97" width="52" height="23"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="319" y1="108.5" x2="340.264" y2="108.5"/>
+    <polygon style="fill: #000000" points="347.764,108.5 337.764,113.5 340.264,108.5 337.764,103.5 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="347.764,108.5 337.764,113.5 340.264,108.5 337.764,103.5 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="273" y="92">
+    <tspan x="273" y="92">Motor</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="273" y="135">
+    <tspan x="273" y="135">Driver</tspan>
+  </text>
+  <g>
+    <rect style="fill: #e2bf9e" x="189" y="65" width="30" height="87"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="189" y="65" width="30" height="87"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="460.296,125.992 461,164 162,165 162,131 179.264,131 "/>
+    <polygon style="fill: #000000" points="186.764,131 176.764,136 179.264,131 176.764,126 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="186.764,131 176.764,136 179.264,131 176.764,126 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="219" y1="108.5" x2="257.264" y2="108.5"/>
+    <polygon style="fill: #000000" points="264.764,108.5 254.764,113.5 257.264,108.5 254.764,103.5 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="264.764,108.5 254.764,113.5 257.264,108.5 254.764,103.5 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="253" y="181">
+    <tspan x="253" y="181">Speed feedback</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="157" y1="92" x2="179.269" y2="91.3041"/>
+    <polygon style="fill: #000000" points="186.765,91.0698 176.926,96.3798 179.269,91.3041 176.614,86.3846 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="186.765,91.0698 176.926,96.3798 179.269,91.3041 176.614,86.3846 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="52" y="95">
+    <tspan x="52" y="95">Desired Speed</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="169" y="58">
+    <tspan x="169" y="58">Controller</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="198" y="94">
+    <tspan x="198" y="94">V</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="196.4" y="135.4">
+    <tspan x="196.4" y="135.4">V</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="205" y="98">
+    <tspan x="205" y="98">d</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="203" y="139">
+    <tspan x="203" y="139">m</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="230" y="99">
+    <tspan x="230" y="99">u(t)</tspan>
+  </text>
+</svg>

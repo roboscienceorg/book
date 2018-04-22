@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="6cm" height="3cm" viewBox="-885 117 105 53" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-883.5" y1="161" x2="-840.5" y2="161"/>
+    <polygon style="fill: #000000" points="-840.5,168 -826.5,161 -840.5,154 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-840.5,168 -826.5,161 -840.5,154 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-837.5" y1="160" x2="-781.5" y2="161"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-823.377" y1="153.251" x2="-823.627" y2="167.249"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-865.5" y1="131" x2="-808.235" y2="131.895"/>
+    <polygon style="fill: #000000" points="-803.736,131.965 -809.782,134.871 -808.235,131.895 -809.688,128.872 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-803.736,131.965 -809.782,134.871 -808.235,131.895 -809.688,128.872 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="-876.3" y="133">
+    <tspan x="-876.3" y="133">i</tspan>
+  </text>
+</svg>

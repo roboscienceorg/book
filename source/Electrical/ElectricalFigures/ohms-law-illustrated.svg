@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="17cm" height="13cm" viewBox="75 81 328 252" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #1e90ff" points="102,97 132,98 133,259 226,259 226,275 264.616,275 265,259 374.116,259.5 373.866,195 401.866,195 402.116,300.5 265.116,301 265.616,289.5 227,289 227.116,300 101.866,300 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="102,97 132,98 133,259 226,259 226,275 264.616,275 265,259 374.116,259.5 373.866,195 401.866,195 402.116,300.5 265.116,301 265.616,289.5 227,289 227.116,300 101.866,300 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="197.866" y1="322" x2="278.131" y2="321.108"/>
+    <polygon style="fill: #000000" points="285.63,321.025 275.686,326.136 278.131,321.108 275.575,316.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="285.63,321.025 275.686,326.136 278.131,321.108 275.575,316.136 "/>
+  </g>
+  <text font-size="22.5778" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="236.866" y="243">
+    <tspan x="236.866" y="243">R</tspan>
+  </text>
+  <text font-size="22.5778" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="182.866" y="327">
+    <tspan x="182.866" y="327">i</tspan>
+  </text>
+  <text font-size="22.5778" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="75.8662" y="102">
+    <tspan x="75.8662" y="102">V</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="83.7273" y1="115.999" x2="83.0014" y2="168.265"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="88.7963,111.069 83.7273,115.999 78.7972,110.93 "/>
+    <polygon style="fill: #000000" points="82.8973,175.764 78.0366,165.696 83.0014,168.265 88.0356,165.835 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="82.8973,175.764 78.0366,165.696 83.0014,168.265 88.0356,165.835 "/>
+  </g>
+</svg>

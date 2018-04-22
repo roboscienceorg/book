@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="18cm" height="10cm" viewBox="47 58 355 189" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="72.3347" y1="64.4721" x2="72.3574" y2="143.902"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="77.3369,72.2346 72.334,62.2361 67.3369,72.2375 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="50.6666" y1="122" x2="379.958" y2="121.904"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="372.195,126.906 382.194,121.903 372.192,116.906 "/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="47" y="84">
+    <tspan x="47" y="84">V</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="395" y="127">
+    <tspan x="395" y="127">t</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="72.4461" y1="168.184" x2="71.5" y2="246.712"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="77.3522,176.007 72.4731,165.948 67.353,175.887 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="51.5" y1="228.712" x2="380.028" y2="229.699"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="372.249,234.675 382.264,229.705 372.279,224.675 "/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="47.5" y="187.712">
+    <tspan x="47.5" y="187.712">V</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="395.5" y="230.712">
+    <tspan x="395.5" y="230.712">t</tspan>
+  </text>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 71.6666 120.333 C 94.6666,62.3334 109.667,62.3334 132.667,122.333"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 133.065 120.32 C 158.419,176.667 168.419,178.667 194.065,122.32"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 194.484 121.32 C 217.484,63.3198 232.484,63.3198 255.484,123.32"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 255.174 122.056 C 280.528,178.402 291.406,178.916 317.052,122.569"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 71.4504 226.888 C 94.4504,168.889 109.45,168.889 132.45,228.888"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 132.55 226.288 C 155.55,168.289 170.55,168.289 193.55,228.288"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 192.65 225.688 C 215.65,167.689 230.65,167.689 253.65,227.688"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 255.75 227.088 C 278.75,169.089 293.75,169.089 316.75,229.088"/>
+</svg>
