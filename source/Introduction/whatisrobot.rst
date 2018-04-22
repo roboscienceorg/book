@@ -1,17 +1,12 @@
 What exactly is a robot?
 ------------------------
 
-.. This image is public domain
-.. figure:: IntroductionFigures/Honda_ASIMO.jpg
-   :scale:  50%
+.. These images are in the public domain  (Honda_ASIMO.jpg & Foundry_robot.jpg)
+.. figure:: IntroductionFigures/honda-foundry.png
+   :width:  90%
+   :align: center
 
-   The Honda Asimo Robot [Wikipedia]_
-
-.. This image is public domain
-.. figure:: IntroductionFigures/Foundry_robot.jpg
-   :scale:  75%
-
-   Kuka robot [Wikipedia]_
+   Two different versions of robots.  a) Honda Asimo Robot [Wikipedia]_ b) Kuka robot [Wikipedia]_
 
 
 
@@ -33,19 +28,16 @@ automatically operated machine that replaces human effort, though it may
 not resemble human beings in appearance or perform functions in a
 humanlike manner*.
 
-.. This image is public domain
-.. figure:: IntroductionFigures/Repliee_Q2.jpg
-   :scale:  50%
+.. These images are in the public domain  (Repliee_Q2.jpg & ATHLETE.jpg)
+.. figure:: IntroductionFigures/repliee-athlete.png
+   :width:  90%
+   :align: center
 
-   Repliee Q2 - developed by Osaka University and manufactured by
-   Kokoro Company Ltd. [Repliee_Q2]_
+   Robots design to replace human effort.  a) Repliee Q2 - developed by Osaka
+   University and manufactured by
+   Kokoro Company Ltd. [Repliee_Q2]_ .  b) The NASA ATHLETE rover
+   as it climbs to the top of a hill. [Wikipedia]_
 
-
-.. This image is public domain
-.. figure:: IntroductionFigures/ATHLETE.jpg
-   :scale:  50%
-
-   The NASA ATHLETE rover as it climbs to the top of a hill. [Wikipedia]_
 
 This latter definition includes washing machines, bread makers, and
 other devices not generally seen as a robot. However, as we will argue,
@@ -59,17 +51,13 @@ them used in from manufacturing to exploration, from assistive
 technologies and medicine to entertainment, from research to education,
 and much more.
 
-.. This image is public domain
-.. figure:: IntroductionFigures/Roomba_Discovery.jpg
-   :scale: 25%
+.. These images are in the public domain  (Roomba_Discovery.jpg & drill_bot2.jpg)
+.. figure:: IntroductionFigures/roomba-drill.png
+   :width:  90%
+   :align: center
 
-   iRobot Roomba Discovery 2.1. [Wikipedia]_
-
-.. This image is public domain
-.. figure:: IntroductionFigures/drill_bot2.jpg
-   :scale: 35%
-
-   NASA experimental drilling robot. [Wikipedia]_
+   More examples of assistive robots.  a)  iRobot Roomba Discovery 2.1.
+   [Wikipedia]_  b) NASA experimental drilling robot. [Wikipedia]_
 
 
 There is no consensus on which machines qualify as robots. However,
