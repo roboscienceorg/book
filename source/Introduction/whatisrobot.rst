@@ -354,13 +354,13 @@ Items are hyperlinked to web pages.
 **2013**
 
 -  `Boston Dynamic’s BigDog gets an arm which can throw heavy
-   objects. <https://www.youtube.com/watch?v=2jvLalY6ubc>`__ , 
+   objects. <https://www.youtube.com/watch?v=2jvLalY6ubc>`__
 
 -  Google’s robotic car gets a full test.
 
 -  `Watch Flying Robots Build a 6-Meter
    Tower. <http://spectrum.ieee.org/automaton/robotics/diy/video-watch-flying-robots-build-a-6-meter-tower>`__
-   ,
+   
 
 
 

@@ -54,20 +54,14 @@ century and are well known in manufacturing and more recently with
 surgical robots. Typical examples are shown in
 Figure :numref:`fig:fixedvmobile` .
 
-.. This image is public domain
+.. First image is public domain, second is owned by SDSMT UAV.
 .. _`fig:fixedvmobile`:
-.. figure:: IntroductionFigures/PR2_at_Maker_Faire.jpg
-   :width: 50%
+.. figure:: IntroductionFigures/factory-drone.png
+   :width: 90%
    :align: center
 
-   PR2 - an example of a mobile robot.
-
-.. This image is public domain
-.. figure:: IntroductionFigures/Foundry_robot.jpg
-   :width: 55%
-   :align: center
-
-   Kuka system - an example of a fixed manufacturing robot.
+   A contrast in uses.  a) The traditional factory setting for robotics, Kuka robotics.  b)
+   An autonomous helicopter releasing an autonomous quadrotor - SDSMT UAV Team.
 
 
 It is important to note that partitioning these machines into two
