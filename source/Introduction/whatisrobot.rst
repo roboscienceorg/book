@@ -67,17 +67,14 @@ expect the robot to interact with its environment and the objects within
 that environment. Most of us may expect that the robot performs this
 interaction through movement and sensation.
 
-.. This image is public domain
-.. figure:: IntroductionFigures/KeeponTophatNextfest2007.jpg
-   :scale: 50%
+.. These images are in the public domain  (KeeponTophatNextfest2007.jpg & IED_detonator.jpg)
+.. figure:: IntroductionFigures/keepon-ied.png
+   :width:  90%
+   :align: center
 
-   Keepon - therapy robot.  [Wikipedia]_
-
-.. This image is public domain
-.. figure:: IntroductionFigures/IED_detonator.jpg
-   :scale: 20%
-
-   Robot tasked to detonate a buried improvised explosive device. [Wikipedia]_
+   There are a wide range of roles for robots.  a) Keepon - therapy robot.
+   [Wikipedia]_  b) Robot tasked to detonate a buried improvised explosive
+   device. [Wikipedia]_
 
 
 Many may expect the robot to perform complex tasks or deal with harsh,
@@ -99,17 +96,13 @@ We can boil down our notion of robot abilities to three things:
     full mobility of the machine or control of a tool through a
     manipulator.
 
-.. This image is public domain
-.. figure:: IntroductionFigures/Laproscopic_Surgery_Robot.jpg
-   :scale: 50%
+.. These images are in the public domain  (Laproscopic_Surgery_Robot.jpg &  PR2_Tabletop.jpg)
+.. figure:: IntroductionFigures/davinci-pr2.png
+   :width:  90%
+   :align: center
 
-   Da Vinci Surgical System [DaVinci]_ .
-
-.. This image is public domain
-.. figure:: IntroductionFigures/PR2_Tabletop.jpg
-   :scale: 20%
-
-   Willow Garage's PR2 robot.  [Wikipedia]_
+   Systems which focus on manipulation:  a) Da Vinci Surgical System [DaVinci]_ .
+   b) Willow Garage's PR2 robot.  [Wikipedia]_
 
 
 One interesting phenomenon that could be influencing the lack of a solid
@@ -119,18 +112,14 @@ to be solely in the domain of humans and animals, we tend to label it a
 robot. As soon as that capability becomes routine, the device is thought
 of a mechatronic device.
 
+.. These images are in the public domain  (Robonaut2.jpg & RUNSWift_Naos_2010.jpg)
+.. figure:: IntroductionFigures/nasa-nao.png
+   :width:  90%
+   :align: center
 
-.. This image is public domain
-.. figure:: IntroductionFigures/Robonaut2.jpg
-   :scale: 40%
+   Systems which focus on mobility:  a) NASA's Robonaut.  [Wikipedia]_
+   b) RoboCup Standard Platform League (Image from 2010).  [Wikipedia]_
 
-   NASA's Robonaut.  [Wikipedia]_
-
-.. This image is public domain
-.. figure:: IntroductionFigures/RUNSWift_Naos_2010.jpg
-   :scale: 20%
-
-   RoboCup Standard Platform League (Image from 2010).  [Wikipedia]_
 
 Robots embody technological magic. So, it is natural that some
 previously unseen ability programmed into a machine will have a magic
@@ -138,24 +127,16 @@ quality for humans, thus making that machine more of a robot. But with
 time, we get accustomed to it, and the magic gets replaced with
 expectation.
 
-.. This image is public domain
-.. figure:: IntroductionFigures/Beam_telepresence_robot.jpg
-   :scale:  30%
+.. These images are in the public domain  (Beam_telepresence_robot.jpg & ROV_working_on_a_subsea_structure.jpg)
+.. figure:: IntroductionFigures/beam-rov.png
+   :width:  90%
+   :align: center
 
-   An Intel IT Labs researcher working on a remote telepresence robot pilot
+   Telepresence or remote work is a growth area in robotics.
+   a) An Intel IT Labs researcher working on a remote telepresence robot pilot
    project that uses Suitable Technologies' Beam robot.  [Wikipedia]_
+   b) ROV working on a subsea structure.  [Wikipedia]_
 
-.. This image is public domain
-.. figure:: IntroductionFigures/ROV_working_on_a_subsea_structure.jpg
-   :scale: 25%
-
-   ROV working on a subsea structure.  [Wikipedia]_
-
-.. This image is public domain
-.. figure:: IntroductionFigures/Justus_robot_in_Krakow_Poland_Aug2009.jpg
-   :scale: 50%
-
-   Justus security robot in front of Krakow railway station [JustusSecurity]_ .
 
 It can be argued that there is nothing new in the subject of robotics -
 that all we are doing is building machines. Nothing different than what
@@ -165,11 +146,15 @@ technology. However, there is a body of knowledge related to building
 machines that interact in human or physical environments. This is what
 we will consider robotics.
 
-.. This image is public domain
-.. figure:: IntroductionFigures/Rhex.jpg
-   :scale: 40%
 
-   Rhex: DARPA project on compliant six legged robots.   [Wikipedia]_
+
+.. These images are in the public domain (Justus_robot_in_Krakow_Poland_Aug2009.jpg & Rhex.jpg)
+.. figure:: IntroductionFigures/justus-rhex.png
+   :width: 90%
+   :align: center
+
+   Mobility in simple and complex domains.  a) Justus security robot in front of Krakow railway station [JustusSecurity]_ .
+   b) Rhex: DARPA project on compliant six legged robots.   [Wikipedia]_
 
 
 
@@ -193,8 +178,10 @@ a life-like manner.
 In ancient Greece, an orrery known as the Antikythera Mechanism is
 developed. This device is credited as being the first analog computer.
 
+.. This image is under creative commons.
 .. figure:: IntroductionFigures/antikytheramachine.jpg
-   :scale: 50%
+   :width: 40%
+   :align: center
 
    Antikythera Mechanism [Antikythera]_ .
 
@@ -225,10 +212,12 @@ with pegs (cams) that bump into little levers that operate the
 percussion. The drummer could be made to play different rhythms and
 different drum patterns by moving the pegs to different locations.[8]
 
+.. This figure is public domain.
 .. figure:: IntroductionFigures/Al-Jazari.jpg
-   :scale: 30%
+   :width: 40%
+   :align: center
 
-   Al-Jazari’s Mechanical Musical Boat.
+   Al-Jazari’s Mechanical Musical Boat.  [Wikipedia]_
 
 
 1495
@@ -365,15 +354,13 @@ Items are hyperlinked to web pages.
 **2013**
 
 -  `Boston Dynamic’s BigDog gets an arm which can throw heavy
-   objects. <https://www.youtube.com/watch?v=2jvLalY6ubc>`__ , Figure
-   [bigdog]
+   objects. <https://www.youtube.com/watch?v=2jvLalY6ubc>`__ , 
 
--  Google’s robotic car gets a full test. Figure [googlecar]
-   :raw-latex:`\cite{wiki:googlecar}`
+-  Google’s robotic car gets a full test.
 
 -  `Watch Flying Robots Build a 6-Meter
    Tower. <http://spectrum.ieee.org/automaton/robotics/diy/video-watch-flying-robots-build-a-6-meter-tower>`__
-   , Figure [quadswarm] :raw-latex:`\cite{wiki:quadswarm}`
+   ,
 
 
 
