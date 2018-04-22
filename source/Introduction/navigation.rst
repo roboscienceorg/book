@@ -33,9 +33,10 @@ Dead reckoning normally has very poor results due to normal variations
 in motors. Environmental instrumentation can be very successful if
 available.
 
-.. figure:: slam/localization
-   :alt: Localization can be very difficult. In this example, a LIDAR
-   scan is compared to a known map to deduce the location of the robot.
+.. Owned by RoboScience
+.. figure:: IntroductionFigures/localization.svg
+   :width: 85%
+   :align: center
 
    Localization can be very difficult. In this example, a LIDAR scan is
    compared to a known map to deduce the location of the robot.
