@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="6cm" height="6cm" viewBox="167 58 110 107" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #000000" x="169" y="60" width="42" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="169" y="60" width="42" height="9"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="170.2" y="155.7" width="42" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.2" y="155.7" width="42" height="9"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="190" cy="111" rx="6.5" ry="4.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="190" cy="111" rx="6.5" ry="4.5"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="204" y="113.65">
+    <tspan x="204" y="113.65">P</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="196" y="91.6504">
+    <tspan x="196" y="91.6504">L</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="190.069" y1="69.9672" x2="191.131" y2="154.733"/>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 218,160.65 A 88.2665,88.2665 0 0 0 272.723,138.688"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="270.731,147.773 274.399,137.212 263.749,140.614 "/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="10cm" height="13cm" viewBox="182 15 193 256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #a52a2a" x="270.2" y="16.7" width="60" height="95"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="270.2" y="16.7" width="60" height="95"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="269.9" y="175.3" width="60" height="95"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="269.9" y="175.3" width="60" height="95"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="195" cy="145" rx="11" ry="11"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="195" cy="145" rx="11" ry="11"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="223" y1="144" x2="368.528" y2="144"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="360.764,149 370.764,144 360.764,139 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="195" cy="145.5" rx="3" ry="3.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="195" cy="145.5" rx="3" ry="3.5"/>
+  </g>
+</svg>

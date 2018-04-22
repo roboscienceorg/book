@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="6cm" height="8cm" viewBox="108 58 117 142" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="109" y="77" width="114" height="72"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="109" y="77" width="114" height="72"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="169" y="60" width="42" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="169" y="60" width="42" height="9"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="170.2" y="155.7" width="42" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.2" y="155.7" width="42" height="9"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="118.5" cy="110.5" rx="6.5" ry="6.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="118.5" cy="110.5" rx="6.5" ry="6.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="190" cy="111" rx="6.5" ry="4.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="190" cy="111" rx="6.5" ry="4.5"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:LMMathSymbols10;font-style:italic;font-weight:normal" x="393" y="222">
+    <tspan x="393" y="222"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="416" y="216">
+    <tspan x="416" y="216"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="204" y="113.65">
+    <tspan x="204" y="113.65">P</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="190" y1="73.4721" x2="190" y2="102.028"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="195,81.2361 190,71.2361 185,81.2361 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="185,94.2639 190,104.264 195,94.2639 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="196" y="91.6504">
+    <tspan x="196" y="91.6504">L</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="176.472" y1="177.65" x2="203.528" y2="177.65"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="184.236,172.65 174.236,177.65 184.236,182.65 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="195.764,182.65 205.764,177.65 195.764,172.65 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="189" y="197.65">
+    <tspan x="189" y="197.65">D</tspan>
+  </text>
+</svg>
