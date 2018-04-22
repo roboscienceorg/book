@@ -12,8 +12,28 @@
      Problems
      References
    Math
+     MathematicalNotation
+     Parametric
+     Vectors
+     LinearSystems
+     Interpolation
+     LinearAlgebra
+     Probability
    SciPy
+     ScipyMath
+     Vectors
+     LinearAlgebra
+     Graphing
+     Probability
+     MatPlotLib
    Terms
+     Terminology
+     ChainManipulators
+     ReferenceFrames
+     ExampleRobotSystems
+     PianoMovers
+     TwoLinkArmRevisited
+     Problems
    Design
    ROS
    Simulation
