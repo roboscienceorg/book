@@ -1,0 +1,141 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 280 171"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B4D97F86-AEC7-409F-88F8-F7C99ECB2F96">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="85.00" cy="84.00" rx="75.00" ry="75.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B4D97F86-AEC7-409F-88F8-F7C99ECB2F96)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="85.00" cy="84.00" rx="75.00" ry="75.00"
+                opacity="0.75"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(255, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-BB77A3A0-A7A3-458F-904F-56FE342F8DC2">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="193.00" cy="84.00" rx="75.00" ry="75.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-BB77A3A0-A7A3-458F-904F-56FE342F8DC2)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="193.00" cy="84.00" rx="75.00" ry="75.00"
+                opacity="0.74"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M39.00 64.00
+                    L114.00 64.00
+                    L114.00 103.00
+                    L39.00 103.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="47.68" y="78.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(255, 255, 255)">Robotic
+                </tspan>
+            </text>
+            <text x="39.17" y="97.56"
+            >
+                <tspan style="font-family:ArialMT; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(255, 255, 255)">Appliance</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M164.00 62.00
+                    L228.00 62.00
+                    L228.00 105.00
+                    L164.00 105.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="165.48" y="78.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(255, 255, 255)">Robotic
+                </tspan>
+            </text>
+            <text x="172.48" y="98.59"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(255, 255, 255)">Agent</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

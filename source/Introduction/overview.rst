@@ -173,6 +173,14 @@ strictly due to the recent successes in machine learning. It is the new
 forms of artificial intelligence that are making robotic agents a
 reality, and appears to be in a rapid growth phase.
 
+.. This figure is owned by RoboScience
+.. figure:: IntroductionFigures/taxon.png
+   :width: 40%
+   :align: center
+
+   Another way to view robotics.
+
+
 The value of classifying is to help one understand the landscape. Its
 utility ceases the moment it restricts innovation. So we will leave the
 classifications behind us and refer to them only when required.
@@ -335,13 +343,13 @@ model is needed for localization and activity planning. Having robust
 and flexible models that operate in realtime is a complex task; a task
 that we will touch on in detail later in this text.
 
-= [diamond, draw, fill=blue!20, text width=4.5em, text badly centered,
-node distance=3cm, inner sep=0pt] = [rectangle, draw, fill=blue!20, text
-width=5em, text centered, rounded corners, minimum height=4em] = [draw,
--latex’] = [draw, ellipse,fill=red!20, node distance=3cm, minimum
-height=2em] (init) perceive the world; (recognize) recognize objects;
-(loc) know location; (plan) plan activity; (init) – (recognize);
-(recognize) – (loc); (loc) – (plan);
+.. Image by Roboscience.
+.. _`trad-challenge`:
+.. figure:: IntroductionFigures/tradchallenge.svg
+   :width: 95%
+   :align: center
+
+    The traditional challenge for the software.
 
 **Requirement**
 
@@ -363,12 +371,12 @@ height=2em] (init) perceive the world; (recognize) recognize objects;
 
 -  Path planning and Optimal paths
 
-.. figure:: robots/RUNSWift_AIBOS.jpg
-   :alt: `Robots in
-   RoboCup. <http://upload.wikimedia.org/wikipedia/commons/f/f2/RUNSWift_AIBOS.jpg>`__
+.. This image is public domain
+.. figure:: IntroductionFigures/RUNSWift_AIBOS.jpg
+   :width: 50%
+   :align: center
 
-   `Robots in
-   RoboCup. <http://upload.wikimedia.org/wikipedia/commons/f/f2/RUNSWift_AIBOS.jpg>`__
+   Robots in RoboCup. [Robocup]_
 
 Autonomy presents additional challenges. The environment is very
 dynamic. Objects can enter, leave and change shape. The landscape

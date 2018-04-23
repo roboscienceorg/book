@@ -92,9 +92,9 @@ numfig = True
 #html_theme = 'traditional'
 #html_theme = 'classic'
 #html_theme = 'nature'
-#html_theme = 'agogo'
+html_theme = 'agogo'
 #html_theme = 'sphinxdoc'
-html_theme = 'bizstyle'   ## so far this is my favorite
+#html_theme = 'bizstyle'
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -123,8 +123,13 @@ html_static_path = ['_static']
 #     ]
 # }
 
+
 html_title = 'RoboScience'
 html_logo = './logo.png'
+
+html_theme_options = {
+"textalign" : "left"
+}
 
 # -- Options for HTMLHelp output ------------------------------------------
 

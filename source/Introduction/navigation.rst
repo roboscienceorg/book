@@ -15,9 +15,18 @@ location is needed. Clearly just moving and avoiding obstacles does not
 require any knowledge of location, but there are plenty of times where
 the routing and localization problem are intertwined.
 
-0.49
 
-0.49
+.. Image by Roboscience.
+.. _`basic-navigation`:
+.. figure:: IntroductionFigures/navigation.svg
+   :width: 90%
+   :align: center
+
+   Navigation approaches.  a)  A very simple approach to navigating the robot.  The programmer
+   codes in the times and velocities to run the motors for linear travel and
+   turns.  b) By instrumenting the environment, for example placing lines or
+   grooves on the floor, the robot can successfully navigate.
+
 
 Navigation requires sensory information. The availability and type of
 information is critical to how effectively the robot can navigate or
