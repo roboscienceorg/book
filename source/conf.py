@@ -92,8 +92,8 @@ numfig = True
 #html_theme = 'traditional'
 #html_theme = 'classic'
 #html_theme = 'nature'
-html_theme = 'agogo'
-#html_theme = 'sphinxdoc'
+#html_theme = 'agogo'
+html_theme = 'sphinxdoc'
 #html_theme = 'bizstyle'
 
 
