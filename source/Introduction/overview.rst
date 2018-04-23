@@ -96,16 +96,26 @@ but must be a generalist. Although the precision of interaction and
 speed of task may be greatly reduced, the increase in complexity for the
 system in the new untamed world is much more complex. It requires
 behaviors that mimic intelligence. It is in this arena that computer
-scientists can contribute best. The contrasting elements are given in
-Table [table-fixedvmobile].
+scientists can contribute best. The contrasting elements are given
+in :numref:`table-fixedvmobile`.
 
-2tableLineOne .. tableLineTwo = ^3mm\_2mm
+.. _table-fixedvmobile:
+.. table::  Typical aspects of Mobile vs Manufacturing Robots.
+   :align:  center
+   :widths: auto
 
-| to 0.7 Manufacturing & Mobile machines
-| Dedicated & General
-| Fixed environment & Changing environment
-| Predetermined tasks & Adapting tasks
-| Fixed interactions & Novel interactions
+   +--------------------+------------------------+
+   | Manufacturing      |    Mobile machines     |
+   +====================+========================+
+   | Dedicated          |    General             |
+   +--------------------+------------------------+
+   | Fixed environment  |   Changing environment |
+   +--------------------+------------------------+
+   | Predetermined tasks|   Adapting tasks       |
+   +--------------------+------------------------+
+   | Fixed interactions |   Novel interactions   |
+   +--------------------+------------------------+
+
 
 A less simplistic view
 ~~~~~~~~~~~~~~~~~~~~~~
