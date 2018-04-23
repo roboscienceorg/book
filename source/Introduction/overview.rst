@@ -191,28 +191,43 @@ is possible to connect the various systems just like we do with Legos.
 electromagnetic interference.) Before we get any further, however, lets
 go over the basic terms we need to know for this section.
 
+Manipulator
+   the movable part of the robot, often this is the robotic arm.
+
 End Effector
+   the end of the manipulator.
 
-the movable part of the robot, often this is the robotic arm.
+Actuator
+   the motor, servo or other device which translates commands into motion.
 
-the end of the manipulator.
+Sensor
+   any device that takes in environmental information and translates it to
+   a signal for the computer such as cameras, switches, ultrasonic ranges,
+   etc.
 
-the motor, servo or other device which translates commands into motion.
+Controller
+  can refer to the hardware or software system that provides low level
+  control of a physical device (mostly meaning positioning control), but
+  may also refer to the robot control overall.
 
-any device that takes in environmental information and translates it to
-a signal for the computer such as cameras, switches, ultrasonic ranges,
-etc.
+Processor
+  the cpu that controls the system. There may be multiple cpus and
+  controllers or just one unit overall.
 
-can refer to the hardware or software system that provides low level
-control of a physical device (mostly meaning positioning control), but
-may also refer to the robot control overall.
+Software
+   all of the code required to make the system operate.
 
-the cpu that controls the system. There may be multiple cpus and
-controllers or just one unit overall.
 
-all of the code required to make the system operate.
+.. Image by Roboscience.
+.. _`intro-components`:
+.. figure:: IntroductionFigures/simplecomponents.png
+   :width: 95%
+   :align: center
 
-Figure [intro-components] shows the basic hardware elements of a typical
+    The small mobile robot illustrates the three aspects of
+    robotic systems: sensing, computing and actuating.
+
+:numref:`intro-components` shows the basic hardware elements of a typical
 low cost small mobile robot. We can see sensors, software and effectors
 in this unit. There are two sensing systems described in Figure
 [intro-components]. The familiar sensor is the Microsoft Kinect. The
@@ -286,22 +301,6 @@ description of these levels can be found at the NHTSA
 | Level 5   | An Automated Driving System (ADS) on the vehicle can do all the driving in all circumstances. The human occupants are just passengers and need never be involved in driving.                                                                                                                                                                     |
 +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |FANUC 6-axis welding robot. :raw-latex:`\cite{wiki:fanuc}`| image:: robots/HONDA_ASIMO.jpg
-.. |FANUC 6-axis welding robot. :raw-latex:`\cite{wiki:fanuc}`| image:: robots/FANUC.jpg
-.. |[Figure:robotimagesB]| image:: robots/Actroid.jpg
-.. |[Figure:robotimagesB]| image:: robots/IED_detonator.jpg
-.. |[Figure:robotimagesC]| image:: robots/Roomba.jpg
-.. |[Figure:robotimagesC]| image:: robots/hexapod2.jpg
-.. |[Figure:robotimagesD]| image:: robots/KeeponTophatNextfest2007.jpg
-.. |[Figure:robotimagesD]| image:: robots/lloyd.jpg
-.. |[Figure:robotimagesE]| image:: robots/Laproscopic.jpg
-.. |[Figure:robotimagesE]| image:: robots/358px-PR2_robot_at_RoboGames.jpg
-.. |[Figure:robotimagesF]| image:: robots/RUNSWift_Naos_2010.jpg
-.. |[Figure:robotimagesF]| image:: robots/robonaut.jpg
-.. |Quadrotors Building a Tower[quadswarm]| image:: robots/bigdog_arm.jpg
-.. |Quadrotors Building a Tower[quadswarm]| image:: robots/google_car.jpg
-.. |Quadrotors Building a Tower[quadswarm]| image:: robots/constructioncopter.jpg
-.. |[fig:fixedvmobile]Mobile vs Manufacturing Robots| image:: robots/arm.jpg
 
 
 
