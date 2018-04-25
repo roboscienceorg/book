@@ -2,7 +2,7 @@
    Preface
    Introduction:
      whatisrobot
-     overview - McGough
+     overview
      navigation
      vision
      robotcontrol

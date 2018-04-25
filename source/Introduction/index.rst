@@ -44,11 +44,7 @@ ourselves in the process. A process we embark on here.
 
    whatisrobot
    overview
-   navigation
-   vision
-   robotcontrol
-   senseplanact
-   FewLastWords
-   supplementary
+   fundamental
+   LastWords
    Problems
    References
