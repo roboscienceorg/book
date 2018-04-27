@@ -12,8 +12,6 @@ possible, elements of a vector will be indexed using a subscript
 
 Notation related to robotics:
 
-2
-
 -  Real line: :math:`{\mathbb R}`
 
 -  Plane: :math:`{\mathbb R}^2`
@@ -26,17 +24,11 @@ Notation related to robotics:
 
 -  Free space: :math:`{\cal W}\setminus \bigcup_i {\cal W}{\cal O}_i`
 
--  | Point in space:
-   | :math:`x = (x_1, x_2, x_3)`
+-  Point in space:  :math:`x = (x_1, x_2, x_3)`
 
--  | Vector:
-   | :math:`\vec{v} \in {\mathbb R}^n`,
-   | :math:`v = [v_1, v_2, \dots , v_n]^T`.
+-  Vector: :math:`\vec{v} \in {\mathbb R}^n`, :math:`v = [v_1, v_2, \dots , v_n]^T`.
 
--  | Bounded workspace:
-   | :math:`{\cal W} \subset B_r(x)`
-   | :math:`\equiv \{ y \in {\mathbb R}^n | d(x,y) < r\}`
-   | for some :math:`0 < r < \infty`.
+-  Bounded workspace:   :math:`{\cal W} \subset B_r(x)` :math:`\equiv \{ y \in {\mathbb R}^n | d(x,y) < r\}` for some :math:`0 < r < \infty`.
 
 We will use several forms of notation for derivatives. Let :math:`f(x)`
 be a differentiable function, both Newton’s notation, :math:`f'(x)`, and
