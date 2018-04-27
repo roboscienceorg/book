@@ -12,8 +12,7 @@ Note: This is under significant development.
 .. toctree::
    :maxdepth: 2
 
-   MathematicalNotation
-   Parametric
+   Begin
    Vectors
    LinearSystems
    Interpolation
