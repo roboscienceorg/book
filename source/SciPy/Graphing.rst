@@ -13,7 +13,7 @@ can easily plot a regular function via
     import pylab as plt
 
     x = np.linspace(0,5,25) # 25 equally spaced points on [0,5]
-    y = 0.15*x*x*x  #  Generate the y values from y = 0.15x^3  
+    y = 0.15*x*x*x  #  Generate the y values from y = 0.15x^3
 
     plt.plot(x,y,'bo')  #  Plot x-y values using blue dots
     plt.show()
@@ -21,17 +21,19 @@ can easily plot a regular function via
     plt.plot(x,y,'b-')  #  Plot x-y values using a blue line
     plt.show()
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: control/plot1
-   :alt: The plot of :math:`y=0.1x^3` using points.
+.. Owned by Roboscience
+.. figure:: SciPyFigures/plot1.svg
+   :width: 70%
+   :align: center
 
    The plot of :math:`y=0.1x^3` using points.
 
-.. figure:: control/plot2
-   :alt: The plot of :math:`y=0.1x^3` using a line.
+.. Owned by Roboscience
+.. figure:: SciPyFigures/plot2.svg
+   :width: 70%
+   :align: center
 
    The plot of :math:`y=0.1x^3` using a line.
 
@@ -115,11 +117,8 @@ See Figure \ `[cubicsplinefigure] <#cubicsplinefigure>`__ for a plot.
     plt.title('Cubic Spline')
     plt.show()
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: control/cubicspline.pdf
+.. figure:: control/cubicspline.svg
    :alt: Graph of the spline for
    example \ `[cubicsplineexample] <#cubicsplineexample>`__.[cubicsplinefigure]
 
@@ -161,8 +160,8 @@ given by:
 
 ::
 
-    def Ellipse(a,b,angle,x0,y0): 
-        points=100 
+    def Ellipse(a,b,angle,x0,y0):
+        points=100
         cos_a,sin_a=math.cos(angle*math.pi/180),math.sin(angle*math.pi/180)
         theta=np.linspace(0,2*np.pi,points)
         X=a*np.cos(theta)*cos_a-sin_a*b*np.sin(theta)+x0
@@ -183,7 +182,7 @@ how to extract eigenvalues and plot an ellipse.
     import math
     import numpy as np
     import pylab as plt
-    from numpy import linalg 
+    from numpy import linalg
     P = np.array([[0.9, 0.1],[0.1, 0.5]])
     w, v = linalg.eig(P)
     angle = 180*math.atan2(v[1][0],v[0][0])/math.pi

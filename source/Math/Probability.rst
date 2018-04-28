@@ -34,12 +34,9 @@ distributions (vector valued random variables) we can exend to
 where :math:`\mu` - mean vector, :math:`\Sigma` - covariance matrix
 (symmetric positive definite).
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: math/pdf
-   :alt: [fig:pdfplot] Probability Distribution Function
+.. figure:: MathFigures/pdf.svg
+   :width: 70%
+   :align: center
 
    [fig:pdfplot] Probability Distribution Function
 
@@ -94,8 +91,8 @@ The **Covariance** Matrix is given by :math:`\Sigma =`
 
 .. math::
 
-   \left( \begin{array}{cccc}E[(x_1-\mu_1)(x_1-\mu_1)^T]& \dots & E[(x_1-\mu_1)(x_n-\mu_n)^T] 
-    \\     \dots & \ddots & \dots 
+   \left( \begin{array}{cccc}E[(x_1-\mu_1)(x_1-\mu_1)^T]& \dots & E[(x_1-\mu_1)(x_n-\mu_n)^T]
+    \\     \dots & \ddots & \dots
      \\ E[(x_n-\mu_n)(x_1-\mu_1)^T]  & \dots &
      E[(x_n-\mu_n)(x_n-\mu_n)^T]\end{array}\right)
 
@@ -120,7 +117,3 @@ and if you don’t know the mean the covariance is given by
 Note: :math:`(x_1-\overline{x})`, :math:`(x_2-\overline{x})`,
 :math:`(x_2-\overline{x})` has :math:`n-1` residuals (since they sum to
 zero).
-
-.. raw:: latex
-
-   \FloatBarrier
