@@ -21,14 +21,11 @@ Lagrange polynomials:
 Since this is a parametric form, we have freedom to select the
 :math:`\{ t_i \}` values.
 
-.. raw:: latex
+.. figure:: MathFigures/poly.svg
+   :width: 50%
+   :align: center
 
-   \centering
-
-.. figure:: motion/poly.pdf
-   :alt: Polynomial Interpolant of data[Fig:PolynomialInterpolant]
-
-   Polynomial Interpolant of data[Fig:PolynomialInterpolant]
+   Polynomial Interpolant of data [Fig:PolynomialInterpolant]
 
 Assume that you are given the points (0,1), (1,2), (2,5). Find the
 Lagrange interpolant. First we define :math:`t_i = i` and compute the

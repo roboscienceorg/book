@@ -13,8 +13,7 @@ Note: This is under significant development.
    :maxdepth: 2
 
    Begin
-   Vectors
-   LinearSystems
+   Linear
    Interpolation
    LinearAlgebra
    Probability
