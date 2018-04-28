@@ -24,18 +24,12 @@ can easily plot a regular function via
 
 
 .. Owned by Roboscience
-.. figure:: SciPyFigures/plot1.svg
-   :width: 70%
+.. figure:: SciPyFigures/plot.svg
+   :width: 90%
    :align: center
 
-   The plot of :math:`y=0.1x^3` using points.
+   The plot of :math:`y=0.1x^3` using a) points b) a line.
 
-.. Owned by Roboscience
-.. figure:: SciPyFigures/plot2.svg
-   :width: 70%
-   :align: center
-
-   The plot of :math:`y=0.1x^3` using a line.
 
 The two plots should look like
 Figure \ `[Fig:exampleplots] <#Fig:exampleplots>`__. You will notice
