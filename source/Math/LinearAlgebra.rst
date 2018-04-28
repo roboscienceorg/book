@@ -36,8 +36,8 @@ which is the linear combination of
 
 .. math::
 
-   \begin{pmatrix} 1 & 0 \\ 0 & 0\end{pmatrix}, 
-   \begin{pmatrix} 0 & 1 \\ 0 & 0\end{pmatrix}, 
+   \begin{pmatrix} 1 & 0 \\ 0 & 0\end{pmatrix},
+   \begin{pmatrix} 0 & 1 \\ 0 & 0\end{pmatrix},
    \begin{pmatrix} 0 & 0 \\ 1 & 0\end{pmatrix},
    \begin{pmatrix} 0 & 0 \\ 0 & 1\end{pmatrix}.
 
@@ -52,16 +52,10 @@ figure below, the solid line is a vector space is, and the dotted is
 not. A vector space must include the zero element and the dotted line
 does not.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/lines
-   :alt: [fig:lineisnotvectorspace] Not all linear sets are vector
-   spaces. The blue is and the red line is not.
-
-   [fig:lineisnotvectorspace] Not all linear sets are vector spaces. The
-   blue is and the red line is not.
+.. figure:: MathFigures/lines.svg
+   :width: 40%
+   :align: center
 
 A subspace is a subset of a vector space :math:`V` that is also a vector
 space. For example, a line through the origin is a subspace of the
@@ -70,7 +64,7 @@ such as the span of
 
 .. math::
 
-   \left\{\begin{pmatrix} 1 \\ 0 \\ 0\end{pmatrix}, 
+   \left\{\begin{pmatrix} 1 \\ 0 \\ 0\end{pmatrix},
    \begin{pmatrix} 0 \\ 1 \\ 0\end{pmatrix}\right\}.
 
 The reason these concepts are brought up is that when solving linear
@@ -206,12 +200,11 @@ where
      b =  \left(\begin{array}{c} b_1 \\ b_2 \\ \vdots
      \\ b_m \end{array}\right) .
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: math/vrect.png
-   :alt: Overdetermined System of Equations[fig:overdetermined]
+.. figure:: MathFigures/vrect.svg
+   :width: 20%
+   :align: center
 
    Overdetermined System of Equations[fig:overdetermined]
 
@@ -323,12 +316,10 @@ The other variation of the non-square linear system is the
 and so has the structure shown in
 Figure \ `[Fig:underdetermined] <#Fig:underdetermined>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/hrect
-   :alt: An underdetermined system[Fig:underdetermined]
+.. figure:: MathFigures/hrect.svg
+   :width:  20%
+   :align: center
 
    An underdetermined system[Fig:underdetermined]
 
@@ -397,9 +388,7 @@ For this example, we have 20 points for which we would like to fit a
 quadratic equation. Assume the data is contained in a file named
 “data.txt” (with the same formatting), we can plot this using:
 
-.. raw:: latex
 
-   \hspace*{5mm}
 
 :math:`x_i` :math:`y_i`
 
@@ -426,15 +415,11 @@ quadratic equation. Assume the data is contained in a file named
     2.719074  1.723766
     2.853608  1.898702
 
-.. raw:: latex
 
-   \hfill
-
-|image|
 
 | Assume that the model for the data is :math:`y = a_2x^2 + a_1x +a_0`.
   Find :math:`a_2, a_1, a_0`. Note that the system arises:
-| 
+|
 
   .. math::
 
@@ -442,7 +427,7 @@ quadratic equation. Assume the data is contained in a file named
         1.367895 = a_2(0.026899)^2 + a_1(0.026899) + a_0\\
         1.295606 = a_2(0.115905)^2 + a_1(0.115905) + a_0\\
         1.156797 = a_2(0.250757)^2 + a_1(0.250757) + a_0\\
-        \vdots 
+        \vdots
        \end{array}
 
 which can be written as
@@ -473,7 +458,7 @@ The Normal Equations can be formed
    \begin{bmatrix}
     (0.026899)^2 & (0.115905)^2 & (0.250757)^2 & \dots \\
     0.026899& 0.115905 & 0.250757 & \dots \\
-   1 & 1 & 1 & \dots 
+   1 & 1 & 1 & \dots
    \end{bmatrix}
    \begin{bmatrix}
    (0.026899)^2 & 0.026899 & 1\\
@@ -491,7 +476,7 @@ The Normal Equations can be formed
    \begin{bmatrix}
     (0.026899)^2 & (0.115905)^2 & (0.250757)^2 & \dots \\
     0.026899& 0.115905 & 0.250757 & \dots \\
-   1 & 1 & 1 & \dots 
+   1 & 1 & 1 & \dots
    \end{bmatrix}
    \begin{bmatrix}
     1.367895\\
@@ -501,21 +486,21 @@ The Normal Equations can be formed
    \end{bmatrix}
 
 | One can solve :math:`X^TX a = X^T y`: :math:`a = (X^TX)^{-1} X^T y`
-| 
+|
 
   .. math::
 
      \begin{bmatrix}
      286.78135686  & 122.11468009 &  55.44347326 \\
       122.11468009 &  55.44347326  & 28.317947 \\
-       55.44347326 &  28.317947  &   20.        
+       55.44347326 &  28.317947  &   20.
      \end{bmatrix}
      \begin{bmatrix}
      a_2 \\ a_1 \\ a_0
      \end{bmatrix}
      =
      \begin{bmatrix}
-       72.4241925 \\  33.380646 \\ 21.534542 
+       72.4241925 \\  33.380646 \\ 21.534542
      \end{bmatrix}
 
 .. math::
@@ -531,12 +516,10 @@ The Normal Equations can be formed
 The curve is approximately :math:`y = 0.49x^2 - 1.21x + 1.42`,
 Figure \ `[plot:quadgraph] <#plot:quadgraph>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/quadgraph
-   :alt: The plot of :math:`y = 0.49x^2 - 1.21x + 1.42`.[plot:quadgraph]
+.. figure:: MathFigures/quadgraph.svg
+   :width: 70%
+   :align: center
 
    The plot of :math:`y = 0.49x^2 - 1.21x + 1.42`.[plot:quadgraph]
 
@@ -602,7 +585,7 @@ the covariance computation):
 
 .. math::
 
-   Q = 
+   Q =
    \begin{pmatrix} q_1 & 0 & \dots & 0 & 0   \\
    0 & q_2 & \dots & 0 & 0   \\
    && \ddots  &&\\
@@ -626,22 +609,18 @@ weight function weights more heavily towards the origin (using
 :math:`w_i = 1.0/i^3`). In this example, the weights are scaled so the
 sum of the weights is one.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: math/weightedleastsquaredata
-   :alt: [Fig:weightedLSdata] Sample noisy data to fit a line.
+.. Owned by Roboscience
+.. figure:: MathFigures/weightedleastsquaredata.svg
+   :width: 70%
+   :align: center
 
    [Fig:weightedLSdata] Sample noisy data to fit a line.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/weightedleastsquareplot
-   :alt: [Fig:weightedLSplot] Least squares line fit. Uniform weighting
-   in blue and weighted to the origin in green.
+.. Owned by Roboscience
+.. figure:: MathFigures/weightedleastsquareplot.svg
+   :width: 70%
+   :align: center
 
    [Fig:weightedLSplot] Least squares line fit. Uniform weighting in
    blue and weighted to the origin in green.
