@@ -126,12 +126,14 @@ linear regression \ `[plot:fitcurveexample] <#plot:fitcurveexample>`__.
    \centering
 
 .. figure:: math/plot_5
-   :alt: Surface plot example.[plot:basicsurfaceplot]
+   :width: 70%
+   :align: center
 
    Surface plot example.[plot:basicsurfaceplot]
 
 .. figure:: math/plot_6
-   :alt: Line fit and plot example.[plot:fitcurveexample]
+   :width: 70%
+   :align: center
 
    Line fit and plot example.[plot:fitcurveexample]
 
@@ -209,7 +211,7 @@ point. Say you wanted to animate an object which was moving by
    (0.5, 0.0),  & 0 \leq t < 2, \\[3mm]
    (0.25, 1.0),  & 2 \leq t < 5, \\[3mm]
    (1.0, 0.0),  & 5 \leq t < 8, \\[3mm]
-   (0.3, -1.0), & 8 \leq t < 10, 
+   (0.3, -1.0), & 8 \leq t < 10,
    \end{array}
    \right.
 
@@ -269,4 +271,3 @@ approximation of the derivative
 .. |image| image:: math/plot_3
 .. |image| image:: math/plot_4
 .. |image| image:: math/plot_8
-

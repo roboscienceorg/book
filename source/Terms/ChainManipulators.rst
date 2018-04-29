@@ -19,23 +19,20 @@ description. Adding a linear actuator on the :math:`z` axis gives a
 cylindrical coordinate description,
 Figure \ `[gantrysample-b] <#gantrysample-b>`__.
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: robots/cartesian
-   :alt: Cartesian design [gantrysample-a]
+.. figure:: TermsFigures/cartesian.png
+   :width: 70%
+   :align: center
 
-   Cartesian design [gantrysample-a]
+   Cartesian design [gantrysample-a] Muhammad Furqan grabcad.com
 
-.. raw:: latex
 
-   \centering
+.. figure:: TermsFigures/weldingarm.png
+   :width: 70%
+   :align: center
 
-.. figure:: robots/cylindrical
-   :alt: Cylindrical design [gantrysample-b]
-
-   Cylindrical design [gantrysample-b]
+   Cylindrical design [gantrysample-b]   Mark Dunn  grabcad.com
 
 A serial chain manipulator is the most common design in industrial
 robots. It is built as a sequence of links connect by actuated joints
@@ -51,23 +48,18 @@ descriptions of arm configuration as a function of joint angles. A
 formalism developed by Denavit and Hartenberg can be used to obtain the
 equations for position.
 
-.. raw:: latex
 
-   \centering
+.. figure:: TermsFigures/ABB_IRB4600.jpg
+   :width: 70%
+   :align: center
 
-.. figure:: robots/RobotArm
-   :alt: Articulated [armsample-a]
+   Articulated [armsample-a]  Ivo Jardim  grabcad.com
 
-   Articulated [armsample-a]
+.. figure:: TermsFigures/SpaceClaim103.jpg
+   :width: 70%
+   :align: center
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: robots/deltadesign
-   :alt: Delta Design [armsample-b]
-
-   Delta Design [armsample-b]
+   Delta Design [armsample-b]  Ivan Volpe  grabcad.com
 
 Another popular approach is the parallel chain manipulator, which uses
 multiple serial chains to control the end-effector. An example of one,

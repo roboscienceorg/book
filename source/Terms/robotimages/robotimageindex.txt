@@ -1,0 +1,55 @@
+grabcad.com
+
+
+Kuka kr16
+Ninjago  
+
+ 
+
+stewart
+micheal meng
+
+Universaljoint
+Devin Dyke
+
+
+robotiq
+chris christofferson
+
+welding arm
+mark dunn
+
+flexi coupling
+Chintan (CK) Patel
+
+
+honeycomb wheel
+Greg Adamson
+
+
+
+
+
+
+
+
+https://en.wikipedia.org/wiki/Coupling
+
+
+uArm Metal Open Source Robot Arm[3]
+
+MeArm Open Source Robot Arm[4]
+The end effector, or robotic hand, can be designed to perform any desired task such as welding, gripping, spinning etc., depending on the application. For example, robot arms in automotive assembly lines perform a variety of tasks such as welding and parts rotation and placement during assembly. In some circumstances, close emulation of the human hand is desired, as in robots designed to conduct bomb disarmament and disposal.[5]
+
+Types
+
+6 Axis Articulated Robots from KUKA
+
+Humans+ exhibit
+Cartesian robot / Gantry robot: Used for pick and place work, application of sealant, assembly operations, handling machine tools and arc welding. It's a robot whose arm has three prismatic joints, whose axes are coincident with a Cartesian coordinator.
+Cylindrical robot: Used for assembly operations, handling at machine tools, spot welding, and handling at diecasting machines. It's a robot whose axes form a cylindrical coordinate system.
+Spherical robot / Polar robot Used for handling machine tools, spot welding, diecasting, fettling machines, gas welding and arc welding. It's a robot whose axes form a polar coordinate system.
+SCARA robot: Used for pick and place work, application of sealant, assembly operations and handling machine tools. This robot features two parallel rotary joints to provide compliance in a plane.
+Articulated robot: Used for assembly operations, diecasting, fettling machines, gas welding, arc welding and spray painting. It's a robot whose arm has at least three rotary joints.
+Parallel robot: One use is a mobile platform handling cockpit flight simulators. It's a robot whose arms have concurrent prismatic or rotary joints.
+Anthropomorphic robot: It is shaped in a way that resembles a human hand, i.e. with independent fingers and thumbs.

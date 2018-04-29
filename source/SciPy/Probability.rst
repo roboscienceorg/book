@@ -40,18 +40,12 @@ Figure \ `[fig:samplenoisylineplot] <#fig:samplenoisylineplot>`__.
     plt.plot(x,y,'b.')
     plt.show()
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/randomvalues
-   :alt: A scatter type plot.[fig:samplescatterplot]
+.. figure:: SciPyFigures/randomvals.svg
+   :width: 95%
+   :align: center
 
    A scatter type plot.[fig:samplescatterplot]
-
-.. figure:: math/randomvalues2
-   :alt: A line with lots of noise.[fig:samplenoisylineplot]
-
    A line with lots of noise.[fig:samplenoisylineplot]
 
 Above we are sampling from a single normal distribution (univariate),
@@ -75,7 +69,7 @@ np.random.multivariate_normal.
            [ 0.47206316,  0.46425447],
            [-0.33998358,  0.4583102 ],
            [-1.07647896,  0.90586496]])
-    >>> 
+    >>>
 
 If you want to do this by hand:
 

@@ -112,9 +112,9 @@ See Figure \ `[cubicsplinefigure] <#cubicsplinefigure>`__ for a plot.
     plt.show()
 
 
-.. figure:: control/cubicspline.svg
-   :alt: Graph of the spline for
-   example \ `[cubicsplineexample] <#cubicsplineexample>`__.[cubicsplinefigure]
+.. figure:: SciPyFigures/cubicspline.svg
+   :width: 70%
+   :align: center
 
    Graph of the spline for
    example \ `[cubicsplineexample] <#cubicsplineexample>`__.[cubicsplinefigure]
@@ -188,12 +188,10 @@ how to extract eigenvalues and plot an ellipse.
     fig.savefig("Ellipse.pdf")
     plt.show()
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: localization/Ellipse
-   :alt: Tilted ellipse
+.. figure:: SciPyFigures/Ellipse.svg
+   :width: 70%
+   :align: center
 
    Tilted ellipse
 

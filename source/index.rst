@@ -5,7 +5,7 @@ Introduction to Robotics
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
+   :caption: Table of Contents:
    :numbered:
 
    Preface/index

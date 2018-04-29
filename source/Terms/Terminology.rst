@@ -43,7 +43,7 @@ section.
 
 -  *Software*: all of the code required to make the system operate.
 
--  
+-
 
 -  *Closed Loop control*: using sensor feedback to improve the control
    accuracy.
@@ -66,12 +66,10 @@ cylindrical, helical, universal and spherical
 joints \ `[fig:robotjoints] <#fig:robotjoints>`__. Linear joints are
 also referred to as prismatic joints.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: manipulators/robotjoints
-   :alt: Some common robot joints.[fig:robotjoints]
+.. figure:: TermsFigures/robotjoints.svg
+   :width: 70%
+   :align: center
 
    Some common robot joints.[fig:robotjoints]
 
@@ -88,9 +86,6 @@ just as higher dimensions in an equation, indicate a system of higher
 complexity. This concept of degrees of freedom is best understood from
 examples.
 
-.. raw:: latex
-
-   \normalfont
 
 Consider a computer-controlled router that can move the tool head freely
 in the :math:`x` and :math:`y` directions. This device has *two degrees
@@ -105,9 +100,7 @@ we added a rotating extruder head, the degrees of freedom would equal to
 four (or more, depending on setup), but the physical dimensions would
 stay at three.
 
-.. raw:: latex
 
-   \normalfont
 
 Consider a welder that can position its tool head at any point in a
 three dimensional space. This implies three degrees of freedom. We
