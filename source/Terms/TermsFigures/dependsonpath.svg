@@ -1,0 +1,229 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 384 247"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-5743051C-8C6F-4FD5-8ACA-F9FD9BC0FB3F">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M24.15 209.77
+                        L29.68 207.46
+                        L36.62 224.07
+                        L25.55 228.69
+                        L18.61 212.08
+                        Z
+                        M125.45 52.73
+                        L127.63 45.03
+                        L148.80 51.03
+                        L144.44 66.42
+                        L123.27 60.43
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M27.00 218.00
+                    C27.00 218.00 -9.77 129.92 22.00 81.00
+                    C53.77 32.08 136.00 55.00 136.00 55.00
+                    "
+                clip-path="url(#clipPath-5743051C-8C6F-4FD5-8ACA-F9FD9BC0FB3F)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M31.35 216.01
+                    C29.94 218.72 26.44 220.18 23.52 219.28
+                    C20.61 218.38 19.39 215.46 20.80 212.76
+                    C22.21 210.05 25.71 208.59 28.63 209.49
+                    C31.54 210.39 32.76 213.31 31.35 216.01
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M126.02 52.89
+                    L128.04 45.76
+                    L136.04 55.73
+                    L124.00 60.02
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-94FC78E9-1581-472C-9A6A-C886BFEEFC2E">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M129.29 78.09
+                        L122.89 73.29
+                        L136.11 55.70
+                        L148.90 65.31
+                        L135.68 82.90
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M27.00 213.00
+                    L136.00 68.00
+                    "
+                clip-path="url(#clipPath-94FC78E9-1581-472C-9A6A-C886BFEEFC2E)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M129.64 77.62
+                    L123.71 73.17
+                    L135.90 69.30
+                    L135.57 82.08
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-3C5DDF28-5FA1-45ED-A300-480FA1C3BE27">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M153.58 48.97
+                        L160.27 53.36
+                        L148.20 71.75
+                        L134.83 62.97
+                        L146.90 44.58
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M24.00 217.00
+                    C24.00 217.00 180.91 249.85 235.00 228.00
+                    C289.09 206.15 372.98 140.32 374.00 82.00
+                    C375.02 23.68 298.90 16.11 241.00 9.00
+                    C182.99 2.90 146.00 58.00 146.00 58.00
+                    "
+                clip-path="url(#clipPath-3C5DDF28-5FA1-45ED-A300-480FA1C3BE27)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M153.26 49.46
+                    L159.46 53.53
+                    L147.55 58.16
+                    L147.06 45.39
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-35632FD2-7582-4FEC-B856-71D1758CA8F7">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="142.00" cy="63.00" rx="4.00" ry="4.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-35632FD2-7582-4FEC-B856-71D1758CA8F7)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="142.00" cy="63.00" rx="4.00" ry="4.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+    </g>
+</svg>
+
