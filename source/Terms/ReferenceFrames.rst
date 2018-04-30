@@ -101,12 +101,9 @@ between the start and end points. However, you could have made a large
 detour and ended up at another
 orientation \ `[fig:dependsonpath] <#fig:dependsonpath>`__.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: kinematics/dependsonpath
-   :alt: Final orientation depends on path[fig:dependsonpath]
+.. figure:: TermsFigures/dependsonpath.svg
+   :width: 70%
+   :align: center
 
    Final orientation depends on path[fig:dependsonpath]
 
@@ -199,7 +196,7 @@ expressions,
    \label{eq:differential}
    \frac{df}{dt} = \sum_{i=1}^{n} a_i (x,t) \dot{x_i} + a_t(x,t) .
 
- These expressions are linear in the velocity terms, :math:`\dot{x_i}`.
+These expressions are linear in the velocity terms, :math:`\dot{x_i}`.
 If your kinematic expression is nonlinear in velocities terms, it did
 not come from differentiation of a holonomic constraint. That is enough
 to eliminate many expressions as candidates. If one is in doubt about an
@@ -213,7 +210,7 @@ differential form you studied in line integrals.
    \label{eq:differentialform}
    df = \sum_{i=1}^{n} a_i (x,t) d x_i + a_t(x,t) dt .
 
- To be a holonomic constraint, we need that
+To be a holonomic constraint, we need that
 Eq \ `[eq:differentialform] <#eq:differentialform>`__ to be a total
 derivative (exact differential) or that by using an integrating factor
 can be made into a total derivative (exact differential). If you are
@@ -288,18 +285,16 @@ equations
 
 .. math:: x = F(p).
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: kinematics/threelink
-   :alt: [fig:threelink] A three link planar manipulator.
+.. figure:: TermsFigures/threelink.svg
+   :width: 70%
+   :align: center
 
    [fig:threelink] A three link planar manipulator.
 
-.. figure:: kinematics/forwardkinematics
-   :alt: [fig:forwardkinematics] The mapping from configuration space to
-   workspace.
+.. figure:: TermsFigures/forwardkinematics.svg
+   :width: 70%
+   :align: center
 
    [fig:forwardkinematics] The mapping from configuration space to
    workspace.

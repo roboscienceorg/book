@@ -44,16 +44,37 @@ degrees of freedom. Since the joint is rotary and moving a full
 directions wrap back on themselves. This actually makes the
 configuration space a two dimensional torus or “donut”.
 
+.. Owned by Roboscience
+.. figure:: TermsFigures/twolinkconfig.svg
+   :width: 70%
+   :align: center
 
-|a) Workspace for the two link manipulator with equal link lengths. b)
-Workspace obstacle for the two link manipulator. [two-link-disk]| |a)
-Workspace for the two link manipulator with equal link lengths. b)
-Workspace obstacle for the two link manipulator. [two-link-disk]|
+   Workspace for the two link manipulator with equal link lengths.
+
+.. Owned by Roboscience
+.. figure:: TermsFigures/twolinkobs.svg
+   :width: 70%
+   :align: center
+
+   Workspace obstacle for the two link manipulator. [two-link-disk]|
 
 
-|Configuration domain and configuration topology which is a torus.
-[intro-config-axis]| |Configuration domain and configuration topology
-which is a torus. [intro-config-axis]|
+.. Owned by Roboscience
+.. figure:: TermsFigures/twolinkconfig.svg
+   :width: 70%
+   :align: center
+
+   Configuration domain and configuration topology which is a torus.
+   [intro-config-axis]
+
+.. Owned by Roboscience
+.. figure:: TermsFigures/twolinkobs.svg
+   :width: 70%
+   :align: center
+
+   Configuration domain and configuration topology which is a torus.
+   [intro-config-axis]
+
 
 We will illustrate what is meant by kinematics and inverse kinematics
 using the two link manipulator. Forward kinematics will identify the
@@ -681,13 +702,10 @@ about :math:`P` is given by adding the individual contributions:
 
 .. math:: \dot{\theta} =  \frac{r}{2L} (\dot{\phi_1} - \dot{\phi_2}).
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: motion/ddaxlerot
-   :alt: The contribution of the two wheels towards rotational
-   motion.[diffdriverotation]
+.. Owned by Roboscience
+.. figure:: TermsFigures/ddaxlerot.svg
+   :width: 70%
+   :align: center
 
    The contribution of the two wheels towards rotational
    motion.[diffdriverotation]
