@@ -24,12 +24,10 @@ practice, these rotary joints would be run by motors or servos and
 probably have some limits, but for now we will assume full
 :math:`360^\circ` motion.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: kinematics/twolinkalt
-   :alt: The two link manipulator. [intro-two-link]
+.. Owned by Roboscience
+.. figure:: TermsFigures/twolinkalt.svg
+   :width: 70%
+   :align: center
 
    The two link manipulator. [intro-two-link]
 
@@ -46,18 +44,12 @@ degrees of freedom. Since the joint is rotary and moving a full
 directions wrap back on themselves. This actually makes the
 configuration space a two dimensional torus or “donut”.
 
-.. raw:: latex
-
-   \centering
 
 |a) Workspace for the two link manipulator with equal link lengths. b)
 Workspace obstacle for the two link manipulator. [two-link-disk]| |a)
 Workspace for the two link manipulator with equal link lengths. b)
 Workspace obstacle for the two link manipulator. [two-link-disk]|
 
-.. raw:: latex
-
-   \centering
 
 |Configuration domain and configuration topology which is a torus.
 [intro-config-axis]| |Configuration domain and configuration topology
@@ -73,13 +65,10 @@ length :math:`a_1`, Figure \ `[twolinklabeled] <#twolinklabeled>`__-(b):
 
 .. math:: \xi =  a_1 \cos \theta_1, \quad \eta = a_1 \sin \theta_1
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: kinematics/twolink2
-   :alt: a) The two link manipulator with the links and joints labeled.
-   b) Location of the middle joint. [twolinklabeled]
+.. Owned by Roboscience
+.. figure:: TermsFigures/twolink2.svg
+   :width: 70%
+   :align: center
 
    a) The two link manipulator with the links and joints labeled. b)
    Location of the middle joint. [twolinklabeled]
@@ -95,11 +84,12 @@ Combining the expressions, the forward kinematics are:
 
    \label{twolinkforward}
    \begin{matrix}
-   x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1 \\ 
-   y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1 
+   x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1 \\
+   y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1
    \end{matrix}
 
- As you move the servos in the system, you can change the angles
+
+As you move the servos in the system, you can change the angles
 :math:`\theta_1` and :math:`\theta_2`. The
 formula \ `[twolinkforward] <#twolinkforward>`__ gives the location of
 the end effector :math:`(x,y)` as a function of
@@ -135,13 +125,10 @@ Dividing the sin and cos expressions to get tan and then inverting:
 The tangent form has the +/- and gives the elbow up and elbow down
 solutions.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: kinematics/twolink3
-   :alt: The interior angles for the two link manipulator.
-   [twolinklabeled2]
+.. Owned by Roboscience
+.. figure:: TermsFigures/twolink3.svg
+   :width: 70%
+   :align: center
 
    The interior angles for the two link manipulator. [twolinklabeled2]
 
@@ -169,7 +156,6 @@ Given the two link manipulator kinematic equations:
 
 .. math:: x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1
 
-\ 
 
 .. math:: y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1
 
@@ -239,12 +225,10 @@ other end of the dark blue links is a free rotational joint (pivot).
 That connects the two light blue links which are joined together at the
 bottom with a rotational joint.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: configuration/2dDelta
-   :alt: Parallel Two Link Manipulator. [Fig:paralleltwolink]
+.. Owned by Roboscience
+.. figure:: TermsFigures/2dDelta.svg
+   :width: 70%
+   :align: center
 
    Parallel Two Link Manipulator. [Fig:paralleltwolink]
 
@@ -266,9 +250,16 @@ effector at :math:`(x,y)` as a function of :math:`\theta_1` and
 Figure \ `[Fig:paralleltwolink2] <#Fig:paralleltwolink2>`__. As with the
 serial chain manipulator, this is an exercise in trigonometry.
 
-.. raw:: latex
+.. Owned by Roboscience
+.. figure:: TermsFigures/2dtwolinkconfigdomain.svg
+   :width: 70%
+   :align: center
 
-   \centering
+.. Owned by Roboscience
+.. figure:: TermsFigures/2dDelta2.svg
+   :width: 70%
+   :align: center
+
 
 |Parallel Two Link (a) configuration space (b) with coordinates
 [Fig:paralleltwolink2]| |Parallel Two Link (a) configuration space (b)
@@ -321,7 +312,7 @@ robot as well.
     xlist = []
     ylist = []
 
-    # Loop over the two angles, 
+    # Loop over the two angles,
     #  stepping about 1.8 degrees each step
     for i in range(100):
         for j in range(100):
@@ -347,12 +338,10 @@ robot as well.
     plt.plot(xlist,ylist, 'b.')
     plt.show()
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: configuration/2dDeltaWS
-   :alt: Parallel Two Link Workspace [Fig:paralleltwolinkWS]
+.. Owned by Roboscience
+.. figure:: TermsFigures/2dDeltaWS.svg
+   :width: 70%
+   :align: center
 
    Parallel Two Link Workspace [Fig:paralleltwolinkWS]
 
@@ -410,7 +399,7 @@ optimized and the code runs close to the speed of C. [3]_
 
     import numpy as np
     from math import *
-    # Set the link lengths and 
+    # Set the link lengths and
     L0 = 8
     L1 = 5
     L2 = 10
@@ -471,25 +460,17 @@ or motion of the robot so we can see the results of our robot control
 software. The second reason is that the equations will be required in
 localization algorithms.
 
-.. raw:: latex
 
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: motion/ddrive
-   :alt: Rectangular frame. [fig:ddriverectangular]
+.. figure:: TermsFigures/ddrive.svg
+   :width: 70%
+   :align: center
 
    Rectangular frame. [fig:ddriverectangular]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/circular
-   :alt: Circular frame. [fig:ddrivecircular]
+.. figure:: TermsFigures/circular.svg
+   :width: 70%
+   :align: center
 
    Circular frame. [fig:ddrivecircular]
 
@@ -516,12 +497,10 @@ direction. To remove any ambiguity, we assume that :math:`x`, :math:`y`,
 :math:`z` also follow a right hand rule (which in this case sets the
 direction of :math:`y`).
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/frames
-   :alt: The global and local frames of reference. [refframe]
+.. figure:: TermsFigures/frames.svg
+   :width: 70%
+   :align: center
 
    The global and local frames of reference. [refframe]
 
@@ -548,13 +527,10 @@ consistent, we take it as the angle from the global frame to the local
 frame. Graphically :math:`\theta` the amount of rotation applied to
 :math:`X_I` to line it up with :math:`X_R`.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: motion/ddframe
-   :alt: The two frames of reference for a mobile robot: the inertial or
-   global frame and the relative or local frame.[refddframe]
+.. Owned by Roboscience
+.. figure:: TermsFigures/ddframe.svg
+   :width: 70%
+   :align: center
 
    The two frames of reference for a mobile robot: the inertial or
    global frame and the relative or local frame.[refddframe]
@@ -562,7 +538,7 @@ frame. Graphically :math:`\theta` the amount of rotation applied to
 We can track the robot position by tracking its coordinate system origin
 and orientation relative to the global coordinate system, :math:`\xi_I`.
 So, we define the object relative to the robot by coordinates
-:math:`\xi_R` and rotate into the ineetial frame:
+:math:`\xi_R` and rotate into the inertial frame:
 
 .. math:: \xi_I = \begin{pmatrix} x \\ y \\ \theta \end{pmatrix}, \quad \xi_R= \begin{pmatrix} x' \\ y' \\ 0 \end{pmatrix}.
 
@@ -630,8 +606,10 @@ Figure \ `[robotdimensions] <#robotdimensions>`__.
 -  Origin of local coordinate system: :math:`P` is placed on the
    midpoint of the axle.
 
-.. figure:: motion/dddim
-   :alt: Robot Dimensions.[robotdimensions]
+.. Owned by Roboscience
+.. figure:: TermsFigures/dddim.svg
+   :width: 70%
+   :align: center
 
    Robot Dimensions.[robotdimensions]
 
@@ -733,7 +711,7 @@ done by applying the rotation matrix :math:`R` to the position vector
 .. math::
 
    \dot{\xi}_I = R(\theta) \dot{\xi}_R = R(\theta) \begin{bmatrix} \frac{r}{2}
-   (\dot{\phi_1}+\dot{\phi_2})\\ 
+   (\dot{\phi_1}+\dot{\phi_2})\\
    0 \\ \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})\end{bmatrix}
 
 .. math::
@@ -742,8 +720,8 @@ done by applying the rotation matrix :math:`R` to the position vector
    & 0 \\
                       0 & 0 & 1
                  \end{bmatrix} \begin{bmatrix} \frac{r}{2}
-   (\dot{\phi_1}+\dot{\phi_2})\\ 
-   0 \\ \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})\end{bmatrix} 
+   (\dot{\phi_1}+\dot{\phi_2})\\
+   0 \\ \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})\end{bmatrix}
    = \begin{bmatrix} \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\cos(\theta) \\
    \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\sin(\theta)\\
       \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})

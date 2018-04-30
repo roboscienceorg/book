@@ -8,8 +8,7 @@ do convey important concepts which we will introduce here.
 .. toctree::
    :maxdepth: 2
 
-   Terminology
-   ChainManipulators
+   Terms
    ReferenceFrames
    ExampleRobotSystems
    PianoMovers
