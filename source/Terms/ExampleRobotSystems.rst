@@ -280,11 +280,8 @@ serial chain manipulator, this is an exercise in trigonometry.
 .. figure:: TermsFigures/2dDelta2.svg
    :width: 70%
    :align: center
-
-
-|Parallel Two Link (a) configuration space (b) with coordinates
-[Fig:paralleltwolink2]| |Parallel Two Link (a) configuration space (b)
-with coordinates [Fig:paralleltwolink2]|
+   |Parallel Two Link (a) configuration space (b) with coordinates
+   [Fig:paralleltwolink2]|
 
 The forward kinematics will provide :math:`(x,y)` as a function of
 :math:`(\theta_1, \theta_2)`. The derivation is left as an exercise and
@@ -649,12 +646,18 @@ Figure \ `[axlevelocity] <#axlevelocity>`__. The differential speeds
 then produce the rotational motion about the robot center and the
 average forward velocity.
 
-.. raw:: latex
+.. Owned by Roboscience
+.. figure:: TermsFigures/ddaxle.svg
+   :width: 70%
+   :align: center
 
-   \centering
+   Velocity of axle induced by wheel velocities.[axlevelocity]
 
-|Velocity of axle induced by wheel velocities.[axlevelocity]| |Velocity
-of axle induced by wheel velocities.[axlevelocity]|
+.. Owned by Roboscience
+.. figure:: TermsFigures/ddforward.svg
+   :width: 70%
+   :align: center
+
 
 The speed of point :math:`P` is given by the weighted average based on
 distances of the wheels to :math:`P`. To see this, we consider a couple
@@ -721,7 +724,7 @@ motion
    \dot{\theta} =  \frac{r}{2L} (\dot{\phi_1} - \dot{\phi_2}).
    \end{array}
 
- To get the model in global (or inertial) coordinates we must apply the
+To get the model in global (or inertial) coordinates we must apply the
 transformation (the rotation) to our local coordinate model. This is
 done by applying the rotation matrix :math:`R` to the position vector
 :math:`\dot{\xi}_R`:
@@ -797,13 +800,10 @@ must be traced out in the same amount of time:
 Thus we have :math:`x^2 + y^2 = 600^2` as the basic formula for the
 curve of motion.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/ddrive_circle
-   :alt: [fig:ddrivecircles]A differential drive robot with constant
-   wheel velocity drives in straight lines and circles.
+.. figure:: TermsFigures/ddrive_circle.svg
+   :width: 70%
+   :align: center
 
    [fig:ddrivecircles]A differential drive robot with constant wheel
    velocity drives in straight lines and circles.
@@ -922,12 +922,18 @@ Figure \ `[Fig:intro-mobile2] <#Fig:intro-mobile2>`__. For a mobile
 ground robot that is not a point, orientation will enter as a variable
 in the system.
 
-.. raw:: latex
+.. figure:: TermsFigures/circle1.svg
+   :width: 70%
+   :align: center
 
-   \centering
+   |Configuration space as a function of robot size. [Fig:RobotSize]|
 
-|Configuration space as a function of robot size. [Fig:RobotSize]|
-|Configuration space as a function of robot size. [Fig:RobotSize]|
+.. figure:: TermsFigures/circle2.svg
+   :width: 70%
+   :align: center
+
+   |Configuration space as a function of robot size. [Fig:RobotSize]|
+
 
 For a round or disk robot with radius, :math:`r`, the center of the
 robot can only get to within distance :math:`r` of an obstacle boundary.
@@ -944,22 +950,16 @@ points of contact between the robot and the obstacle. This draws an
 outer boundary around the obstacle and makes the obstacle larger. We
 have inflated the obstacle.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: configuration/mobile
-   :alt: Example of the inflation process. [Fig:intro-mobile1]
+.. figure:: TermsFigures/mobile.svg
+   :width: 70%
+   :align: center
 
    Example of the inflation process. [Fig:intro-mobile1]
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: configuration/mobile2
-   :alt: Relation between robot size and configuration space.
-   [Fig:intro-mobile2]
+.. figure:: TermsFigures/mobile2.svg
+   :width: 70%
+   :align: center
 
    Relation between robot size and configuration space.
    [Fig:intro-mobile2]
@@ -979,22 +979,16 @@ a point. We can then study robot paths through the open space. Of course
 in practice this is absurd since the robot orientation is not fixed. But
 it does help transition to the general case.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: planning/rect
-   :alt: Changing robot shape also affects c-space. [shapematters]
+.. figure:: TermsFigures/rect.svg
+   :width: 70%
+   :align: center
 
    Changing robot shape also affects c-space. [shapematters]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: planning/rect2
-   :alt: Changing robot orientation affects c-space as well.
-   [orientationmatters]
+.. figure:: TermsFigures/rect2.svg
+   :width: 70%
+   :align: center
 
    Changing robot orientation affects c-space as well.
    [orientationmatters]

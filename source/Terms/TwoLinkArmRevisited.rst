@@ -16,24 +16,17 @@ Figure \ `[Fig:nopaththrough] <#Fig:nopaththrough>`__. Even though the
 articulator is small enough to pass through the gap, it cannot due to
 the other physical restrictions.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: ./configuration/pathmatters
-   :alt: The elbow down approach is blocked, but not the elbow up
-   position. [Fig:pathmatters]
+.. figure:: TermsFigures/pathmatters.svg
+   :width: 70%
+   :align: center
 
    The elbow down approach is blocked, but not the elbow up position.
    [Fig:pathmatters]
 
-.. figure:: ./configuration/nopaththrough
-   :alt: Neither configuration of the robot arm can reach the point.
-   [Fig:nopaththrough]
+.. figure:: TermsFigures/nopaththrough.svg
+   :width: 70%
+   :align: center
 
    Neither configuration of the robot arm can reach the point.
    [Fig:nopaththrough]
-
-.. raw:: latex
-
-   \FloatBarrier

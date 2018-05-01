@@ -16,13 +16,10 @@ possible orientations defined by the vehicle dynamics. In plain English,
 this is when you get the couch stuck in the stairwell trying to move
 into your new flat.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: planning/obst
-   :alt: The object must rotate to fit through the open
-   space.[robotmustrotate]
+.. figure:: TermsFigures/obst.svg
+   :width: 70%
+   :align: center
 
    The object must rotate to fit through the open
    space.[robotmustrotate]
@@ -36,13 +33,10 @@ space. Figure \ `[robotrotation] <#robotrotation>`__ shows the idea for
 three different rotation angles, there are three different configuration
 obstacle maps.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: planning/obst2
-   :alt: Different rotations produce different obstacle maps in
-   configuration space.[robotrotation]
+.. figure:: TermsFigures/obst2.svg
+   :width: 70%
+   :align: center
 
    Different rotations produce different obstacle maps in configuration
    space.[robotrotation]
@@ -58,13 +52,10 @@ Figure \ `[robotrotation3D] <#robotrotation3D>`__. So, although the
 workspace is two dimensional, the configuration space is three
 dimensional and are different objects.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: planning/obst3
-   :alt: The different rotations can be stacked where the vertical
-   dimension is the rotation angle. [robotrotation3D]
+.. figure:: TermsFigures/obst3.svg
+   :width: 70%
+   :align: center
 
    The different rotations can be stacked where the vertical dimension
    is the rotation angle. [robotrotation3D]
@@ -89,12 +80,9 @@ will translate to position and orientation routing in the workspace,
 Figure \ `[obst4] <#obst4>`__. Path planning or motion planning is
 addressed in Chapter \ `[Chap:Planning] <#Chap:Planning>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: planning/obst4
-   :alt: We can see that there is a path that includes the
-   rotation.[obst4]
+.. figure:: TermsFigures/obst4.svg
+   :width: 70%
+   :align: center
 
    We can see that there is a path that includes the rotation.[obst4]
