@@ -41,7 +41,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{11, 22}, {100, 50}}</string>
+					<string>{{11, 53}, {100, 50}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -159,7 +159,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{20, 39}, {83, 17}}</string>
+					<string>{{20, 70}, {83, 17}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -277,7 +277,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{40, 81}, {42, 17}}</string>
+					<string>{{40, 112}, {42, 17}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -377,7 +377,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{253, 22}, {100, 50}}</string>
+					<string>{{253, 53}, {100, 50}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -495,7 +495,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{262, 39}, {83, 17}}</string>
+					<string>{{262, 70}, {83, 17}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -613,7 +613,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{275, 82}, {54, 17}}</string>
+					<string>{{275, 113}, {54, 17}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -721,7 +721,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{111, 48}, {142, 0}}</string>
+					<string>{{111, 79}, {142, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -841,11 +841,809 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{154, 31}, {50, 17}}</string>
+					<string>{{154, 62}, {50, 17}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
 					<string>A000607C-6E56-40EA-A715-DF3D29EC2A4E</string>
+					<key>imageAnchorRatio</key>
+					<string>{0.5, 0.5}</string>
+					<key>imageType</key>
+					<integer>0</integer>
+					<key>locked</key>
+					<false/>
+					<key>opacity</key>
+					<real>1</real>
+					<key>rotationAngle</key>
+					<integer>0</integer>
+					<key>rotationHandleRadius</key>
+					<real>100</real>
+					<key>scaleImage</key>
+					<true/>
+					<key>stroke1Color</key>
+					<string></string>
+					<key>stroke1Enabled</key>
+					<false/>
+					<key>stroke2Color</key>
+					<string></string>
+					<key>stroke2Enabled</key>
+					<false/>
+					<key>strokeColor</key>
+					<string>0.000000:0.000000:0.000000:1.000000</string>
+					<key>strokeLineCap</key>
+					<integer>1</integer>
+					<key>strokeLineJoin</key>
+					<integer>1</integer>
+					<key>strokeLineWidth</key>
+					<real>1</real>
+					<key>strokeShadowBlur</key>
+					<real>3</real>
+					<key>strokeShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>strokeShadowHidden</key>
+					<true/>
+					<key>strokeShadowOffsetX</key>
+					<real>2</real>
+					<key>strokeShadowOffsetY</key>
+					<real>2</real>
+					<key>strokeType</key>
+					<integer>3</integer>
+					<key>textAlign</key>
+					<integer>2</integer>
+					<key>textAppearanceType</key>
+					<integer>0</integer>
+					<key>textDrawOnPath</key>
+					<false/>
+					<key>textShadowBlur</key>
+					<real>5</real>
+					<key>textShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>textShadowHidden</key>
+					<true/>
+					<key>textShadowOffsetX</key>
+					<real>0.0</real>
+					<key>textShadowOffsetY</key>
+					<real>0.0</real>
+					<key>textVerticalAlign</key>
+					<integer>0</integer>
+					<key>title</key>
+					<string>Text</string>
+					<key>userSetTitle</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>adjustmentRatioX</key>
+					<real>0.0</real>
+					<key>adjustmentRatioY</key>
+					<real>0.0</real>
+					<key>className</key>
+					<string>Ellipse</string>
+					<key>constrainAspectRatio</key>
+					<false/>
+					<key>contentFilterSpecs</key>
+					<array/>
+					<key>fillAngle</key>
+					<integer>0</integer>
+					<key>fillColor</key>
+					<string>0.000000:1.000000:1.000000:1.000000</string>
+					<key>fillGradientElements</key>
+					<array/>
+					<key>fillShadowBlur</key>
+					<real>3</real>
+					<key>fillShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>fillShadowHidden</key>
+					<false/>
+					<key>fillShadowOffsetX</key>
+					<real>2</real>
+					<key>fillShadowOffsetY</key>
+					<real>2</real>
+					<key>fillType</key>
+					<integer>0</integer>
+					<key>frame</key>
+					<string>{{252, 158}, {100, 50}}</string>
+					<key>hidden</key>
+					<false/>
+					<key>identifier</key>
+					<string>B4FAFDA8-DBAC-4C7C-95B4-1630E1C9B715</string>
+					<key>imageAnchorRatio</key>
+					<string>{0.5, 0.5}</string>
+					<key>imageType</key>
+					<integer>0</integer>
+					<key>locked</key>
+					<false/>
+					<key>opacity</key>
+					<real>1</real>
+					<key>rotationAngle</key>
+					<integer>0</integer>
+					<key>rotationHandleRadius</key>
+					<real>100</real>
+					<key>scaleImage</key>
+					<true/>
+					<key>stroke1Color</key>
+					<string></string>
+					<key>stroke1Enabled</key>
+					<false/>
+					<key>stroke2Color</key>
+					<string></string>
+					<key>stroke2Enabled</key>
+					<false/>
+					<key>strokeColor</key>
+					<string>0.000000:0.000000:0.000000:1.000000</string>
+					<key>strokeLineCap</key>
+					<integer>1</integer>
+					<key>strokeLineJoin</key>
+					<integer>1</integer>
+					<key>strokeLineWidth</key>
+					<real>1</real>
+					<key>strokeShadowBlur</key>
+					<real>3</real>
+					<key>strokeShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>strokeShadowHidden</key>
+					<true/>
+					<key>strokeShadowOffsetX</key>
+					<real>2</real>
+					<key>strokeShadowOffsetY</key>
+					<real>2</real>
+					<key>strokeType</key>
+					<integer>0</integer>
+					<key>textAlign</key>
+					<integer>2</integer>
+					<key>textAppearanceType</key>
+					<integer>0</integer>
+					<key>textDrawOnPath</key>
+					<false/>
+					<key>textShadowBlur</key>
+					<real>5</real>
+					<key>textShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>textShadowHidden</key>
+					<true/>
+					<key>textShadowOffsetX</key>
+					<real>0.0</real>
+					<key>textShadowOffsetY</key>
+					<real>0.0</real>
+					<key>textVerticalAlign</key>
+					<integer>0</integer>
+					<key>title</key>
+					<string>Ellipse</string>
+					<key>userSetTitle</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>adjustmentRatioX</key>
+					<real>0.0</real>
+					<key>adjustmentRatioY</key>
+					<real>0.0</real>
+					<key>attributedTextData</key>
+					<data>
+					e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29j
+					b2FydGYxNTA0XGNvY29hc3VicnRmODMwCntc
+					Zm9udHRibFxmMFxmbmlsXGZjaGFyc2V0MCBM
+					dWNpZGFHcmFuZGU7fQp7XGNvbG9ydGJsO1xy
+					ZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTtccmVk
+					MFxncmVlbjBcYmx1ZTA7fQp7XCpcZXhwYW5k
+					ZWRjb2xvcnRibDs7XGNzZ2VuZXJpY3JnYlxj
+					MFxjMFxjMDt9ClxwYXJkXHR4NTYwXHR4MTEy
+					MFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMz
+					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
+					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
+					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIFB5dGhvbiBTaGVsbH0=
+					</data>
+					<key>className</key>
+					<string>ResizeText</string>
+					<key>constrainAspectRatio</key>
+					<false/>
+					<key>contentFilterSpecs</key>
+					<array/>
+					<key>fillAngle</key>
+					<integer>0</integer>
+					<key>fillColor</key>
+					<string></string>
+					<key>fillGradientElements</key>
+					<array/>
+					<key>fillShadowBlur</key>
+					<real>3</real>
+					<key>fillShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>fillShadowHidden</key>
+					<false/>
+					<key>fillShadowOffsetX</key>
+					<real>2</real>
+					<key>fillShadowOffsetY</key>
+					<real>2</real>
+					<key>fillType</key>
+					<integer>0</integer>
+					<key>frame</key>
+					<string>{{261, 175}, {83, 17}}</string>
+					<key>hidden</key>
+					<false/>
+					<key>identifier</key>
+					<string>62C86321-470B-4551-AEBC-808E48B7E309</string>
+					<key>imageAnchorRatio</key>
+					<string>{0.5, 0.5}</string>
+					<key>imageType</key>
+					<integer>0</integer>
+					<key>locked</key>
+					<false/>
+					<key>opacity</key>
+					<real>1</real>
+					<key>rotationAngle</key>
+					<integer>0</integer>
+					<key>rotationHandleRadius</key>
+					<real>115</real>
+					<key>scaleImage</key>
+					<true/>
+					<key>stroke1Color</key>
+					<string></string>
+					<key>stroke1Enabled</key>
+					<false/>
+					<key>stroke2Color</key>
+					<string></string>
+					<key>stroke2Enabled</key>
+					<false/>
+					<key>strokeColor</key>
+					<string>0.000000:0.000000:0.000000:1.000000</string>
+					<key>strokeLineCap</key>
+					<integer>1</integer>
+					<key>strokeLineJoin</key>
+					<integer>1</integer>
+					<key>strokeLineWidth</key>
+					<real>1</real>
+					<key>strokeShadowBlur</key>
+					<real>3</real>
+					<key>strokeShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>strokeShadowHidden</key>
+					<true/>
+					<key>strokeShadowOffsetX</key>
+					<real>2</real>
+					<key>strokeShadowOffsetY</key>
+					<real>2</real>
+					<key>strokeType</key>
+					<integer>3</integer>
+					<key>textAlign</key>
+					<integer>2</integer>
+					<key>textAppearanceType</key>
+					<integer>0</integer>
+					<key>textDrawOnPath</key>
+					<false/>
+					<key>textShadowBlur</key>
+					<real>5</real>
+					<key>textShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>textShadowHidden</key>
+					<true/>
+					<key>textShadowOffsetX</key>
+					<real>0.0</real>
+					<key>textShadowOffsetY</key>
+					<real>0.0</real>
+					<key>textVerticalAlign</key>
+					<integer>0</integer>
+					<key>title</key>
+					<string>Text</string>
+					<key>userSetTitle</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>adjustmentRatioX</key>
+					<real>0.0</real>
+					<key>adjustmentRatioY</key>
+					<real>0.0</real>
+					<key>attributedTextData</key>
+					<data>
+					e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29j
+					b2FydGYxNTA0XGNvY29hc3VicnRmODMwCntc
+					Zm9udHRibFxmMFxmbmlsXGZjaGFyc2V0MCBM
+					dWNpZGFHcmFuZGU7fQp7XGNvbG9ydGJsO1xy
+					ZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTtccmVk
+					MFxncmVlbjBcYmx1ZTA7fQp7XCpcZXhwYW5k
+					ZWRjb2xvcnRibDs7XGNzZ2VuZXJpY3JnYlxj
+					MFxjMFxjMDt9ClxwYXJkXHR4NTYwXHR4MTEy
+					MFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMz
+					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
+					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
+					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIExpc3RlbmVyMn0=
+					</data>
+					<key>className</key>
+					<string>ResizeText</string>
+					<key>constrainAspectRatio</key>
+					<false/>
+					<key>contentFilterSpecs</key>
+					<array/>
+					<key>fillAngle</key>
+					<integer>0</integer>
+					<key>fillColor</key>
+					<string></string>
+					<key>fillGradientElements</key>
+					<array/>
+					<key>fillShadowBlur</key>
+					<real>3</real>
+					<key>fillShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>fillShadowHidden</key>
+					<false/>
+					<key>fillShadowOffsetX</key>
+					<real>2</real>
+					<key>fillShadowOffsetY</key>
+					<real>2</real>
+					<key>fillType</key>
+					<integer>0</integer>
+					<key>frame</key>
+					<string>{{271, 218}, {63, 17}}</string>
+					<key>hidden</key>
+					<false/>
+					<key>identifier</key>
+					<string>11E9B402-3C5C-445C-8C6D-F28D4CEA8683</string>
+					<key>imageAnchorRatio</key>
+					<string>{0.5, 0.5}</string>
+					<key>imageType</key>
+					<integer>0</integer>
+					<key>locked</key>
+					<false/>
+					<key>opacity</key>
+					<real>1</real>
+					<key>rotationAngle</key>
+					<integer>0</integer>
+					<key>rotationHandleRadius</key>
+					<real>100</real>
+					<key>scaleImage</key>
+					<true/>
+					<key>stroke1Color</key>
+					<string></string>
+					<key>stroke1Enabled</key>
+					<false/>
+					<key>stroke2Color</key>
+					<string></string>
+					<key>stroke2Enabled</key>
+					<false/>
+					<key>strokeColor</key>
+					<string>0.000000:0.000000:0.000000:1.000000</string>
+					<key>strokeLineCap</key>
+					<integer>1</integer>
+					<key>strokeLineJoin</key>
+					<integer>1</integer>
+					<key>strokeLineWidth</key>
+					<real>1</real>
+					<key>strokeShadowBlur</key>
+					<real>3</real>
+					<key>strokeShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>strokeShadowHidden</key>
+					<true/>
+					<key>strokeShadowOffsetX</key>
+					<real>2</real>
+					<key>strokeShadowOffsetY</key>
+					<real>2</real>
+					<key>strokeType</key>
+					<integer>3</integer>
+					<key>textAlign</key>
+					<integer>2</integer>
+					<key>textAppearanceType</key>
+					<integer>0</integer>
+					<key>textDrawOnPath</key>
+					<false/>
+					<key>textShadowBlur</key>
+					<real>5</real>
+					<key>textShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>textShadowHidden</key>
+					<true/>
+					<key>textShadowOffsetX</key>
+					<real>0.0</real>
+					<key>textShadowOffsetY</key>
+					<real>0.0</real>
+					<key>textVerticalAlign</key>
+					<integer>0</integer>
+					<key>title</key>
+					<string>Text</string>
+					<key>userSetTitle</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>adjustmentRatioX</key>
+					<real>0.0</real>
+					<key>adjustmentRatioY</key>
+					<real>0.0</real>
+					<key>arrowTypeA</key>
+					<integer>0</integer>
+					<key>arrowTypeB</key>
+					<integer>1</integer>
+					<key>className</key>
+					<string>Line</string>
+					<key>constrainAspectRatio</key>
+					<false/>
+					<key>contentFilterSpecs</key>
+					<array/>
+					<key>curveRatio</key>
+					<real>0.0</real>
+					<key>fillAngle</key>
+					<integer>0</integer>
+					<key>fillColor</key>
+					<string>1.000000:1.000000:1.000000:1.000000</string>
+					<key>fillGradientElements</key>
+					<array/>
+					<key>fillShadowBlur</key>
+					<real>3</real>
+					<key>fillShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>fillShadowHidden</key>
+					<false/>
+					<key>fillShadowOffsetX</key>
+					<real>2</real>
+					<key>fillShadowOffsetY</key>
+					<real>2</real>
+					<key>fillType</key>
+					<integer>5</integer>
+					<key>flipped</key>
+					<false/>
+					<key>frame</key>
+					<string>{{93, 97}, {159, 86}}</string>
+					<key>hidden</key>
+					<false/>
+					<key>identifier</key>
+					<string>67CC53F2-FFF2-4570-A648-8697C9046CCE</string>
+					<key>imageAnchorRatio</key>
+					<string>{0.5, 0.5}</string>
+					<key>imageType</key>
+					<integer>0</integer>
+					<key>locked</key>
+					<false/>
+					<key>opacity</key>
+					<real>1</real>
+					<key>pathType</key>
+					<integer>0</integer>
+					<key>rotationAngle</key>
+					<integer>0</integer>
+					<key>rotationHandleRadius</key>
+					<real>115</real>
+					<key>scaleImage</key>
+					<true/>
+					<key>stroke1Color</key>
+					<string></string>
+					<key>stroke1Enabled</key>
+					<false/>
+					<key>stroke2Color</key>
+					<string></string>
+					<key>stroke2Enabled</key>
+					<false/>
+					<key>strokeColor</key>
+					<string>0.000000:0.000000:0.000000:1.000000</string>
+					<key>strokeLineCap</key>
+					<integer>1</integer>
+					<key>strokeLineJoin</key>
+					<integer>1</integer>
+					<key>strokeLineWidth</key>
+					<real>2</real>
+					<key>strokeShadowBlur</key>
+					<real>3</real>
+					<key>strokeShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>strokeShadowHidden</key>
+					<true/>
+					<key>strokeShadowOffsetX</key>
+					<real>2</real>
+					<key>strokeShadowOffsetY</key>
+					<real>2</real>
+					<key>strokeType</key>
+					<integer>0</integer>
+					<key>textAlign</key>
+					<integer>2</integer>
+					<key>textAppearanceType</key>
+					<integer>0</integer>
+					<key>textDrawOnPath</key>
+					<false/>
+					<key>textShadowBlur</key>
+					<real>5</real>
+					<key>textShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>textShadowHidden</key>
+					<true/>
+					<key>textShadowOffsetX</key>
+					<real>0.0</real>
+					<key>textShadowOffsetY</key>
+					<real>0.0</real>
+					<key>textVerticalAlign</key>
+					<integer>0</integer>
+					<key>title</key>
+					<string>Line</string>
+					<key>userSetTitle</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>adjustmentRatioX</key>
+					<real>0.0</real>
+					<key>adjustmentRatioY</key>
+					<real>0.0</real>
+					<key>attributedTextData</key>
+					<data>
+					e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29j
+					b2FydGYxNTA0XGNvY29hc3VicnRmODMwCntc
+					Zm9udHRibFxmMFxmbmlsXGZjaGFyc2V0MCBM
+					dWNpZGFHcmFuZGU7fQp7XGNvbG9ydGJsO1xy
+					ZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTtccmVk
+					MFxncmVlbjBcYmx1ZTA7fQp7XCpcZXhwYW5k
+					ZWRjb2xvcnRibDs7XGNzZ2VuZXJpY3JnYlxj
+					MFxjMFxjMDt9ClxwYXJkXHR4NTYwXHR4MTEy
+					MFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMz
+					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
+					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
+					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIENoYXR0ZXIyfQ==
+					</data>
+					<key>className</key>
+					<string>ResizeText</string>
+					<key>constrainAspectRatio</key>
+					<false/>
+					<key>contentFilterSpecs</key>
+					<array/>
+					<key>fillAngle</key>
+					<integer>0</integer>
+					<key>fillColor</key>
+					<string></string>
+					<key>fillGradientElements</key>
+					<array/>
+					<key>fillShadowBlur</key>
+					<real>3</real>
+					<key>fillShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>fillShadowHidden</key>
+					<false/>
+					<key>fillShadowOffsetX</key>
+					<real>2</real>
+					<key>fillShadowOffsetY</key>
+					<real>2</real>
+					<key>fillType</key>
+					<integer>0</integer>
+					<key>frame</key>
+					<string>{{148.02001953125, 122}, {58.9599609375, 17}}</string>
+					<key>hidden</key>
+					<false/>
+					<key>identifier</key>
+					<string>702146EC-4B61-4883-9FA4-952755ECD2A2</string>
+					<key>imageAnchorRatio</key>
+					<string>{0.5, 0.5}</string>
+					<key>imageType</key>
+					<integer>0</integer>
+					<key>locked</key>
+					<false/>
+					<key>opacity</key>
+					<real>1</real>
+					<key>rotationAngle</key>
+					<integer>29</integer>
+					<key>rotationHandleRadius</key>
+					<real>83</real>
+					<key>scaleImage</key>
+					<true/>
+					<key>stroke1Color</key>
+					<string></string>
+					<key>stroke1Enabled</key>
+					<false/>
+					<key>stroke2Color</key>
+					<string></string>
+					<key>stroke2Enabled</key>
+					<false/>
+					<key>strokeColor</key>
+					<string>0.000000:0.000000:0.000000:1.000000</string>
+					<key>strokeLineCap</key>
+					<integer>1</integer>
+					<key>strokeLineJoin</key>
+					<integer>1</integer>
+					<key>strokeLineWidth</key>
+					<real>1</real>
+					<key>strokeShadowBlur</key>
+					<real>3</real>
+					<key>strokeShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>strokeShadowHidden</key>
+					<true/>
+					<key>strokeShadowOffsetX</key>
+					<real>2</real>
+					<key>strokeShadowOffsetY</key>
+					<real>2</real>
+					<key>strokeType</key>
+					<integer>3</integer>
+					<key>textAlign</key>
+					<integer>2</integer>
+					<key>textAppearanceType</key>
+					<integer>0</integer>
+					<key>textDrawOnPath</key>
+					<false/>
+					<key>textShadowBlur</key>
+					<real>5</real>
+					<key>textShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>textShadowHidden</key>
+					<true/>
+					<key>textShadowOffsetX</key>
+					<real>0.0</real>
+					<key>textShadowOffsetY</key>
+					<real>0.0</real>
+					<key>textVerticalAlign</key>
+					<integer>0</integer>
+					<key>title</key>
+					<string>Text</string>
+					<key>userSetTitle</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>adjustmentRatioX</key>
+					<real>0.0</real>
+					<key>adjustmentRatioY</key>
+					<real>0.0</real>
+					<key>arrowTypeA</key>
+					<integer>0</integer>
+					<key>arrowTypeB</key>
+					<integer>1</integer>
+					<key>className</key>
+					<string>Path</string>
+					<key>constrainAspectRatio</key>
+					<false/>
+					<key>contentFilterSpecs</key>
+					<array/>
+					<key>curveRatio</key>
+					<real>0.58333333333333326</real>
+					<key>fillAngle</key>
+					<integer>0</integer>
+					<key>fillColor</key>
+					<string></string>
+					<key>fillGradientElements</key>
+					<array/>
+					<key>fillShadowBlur</key>
+					<real>3</real>
+					<key>fillShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>fillShadowHidden</key>
+					<false/>
+					<key>fillShadowOffsetX</key>
+					<real>2</real>
+					<key>fillShadowOffsetY</key>
+					<real>2</real>
+					<key>fillType</key>
+					<integer>5</integer>
+					<key>flipped</key>
+					<false/>
+					<key>frame</key>
+					<string>{{87, 33}, {198, 20}}</string>
+					<key>hidden</key>
+					<false/>
+					<key>identifier</key>
+					<string>F8DB0032-9E47-46C9-9407-FF626381751E</string>
+					<key>imageAnchorRatio</key>
+					<string>{0.5, 0.5}</string>
+					<key>imageType</key>
+					<integer>0</integer>
+					<key>locked</key>
+					<false/>
+					<key>modelPoints</key>
+					<array>
+						<string>{87, 53}</string>
+						<string>{179, 33}</string>
+						<string>{285, 53}</string>
+					</array>
+					<key>opacity</key>
+					<real>1</real>
+					<key>pathType</key>
+					<integer>1</integer>
+					<key>rotationAngle</key>
+					<integer>0</integer>
+					<key>rotationHandleRadius</key>
+					<real>115</real>
+					<key>scaleImage</key>
+					<true/>
+					<key>stroke1Color</key>
+					<string></string>
+					<key>stroke1Enabled</key>
+					<false/>
+					<key>stroke2Color</key>
+					<string></string>
+					<key>stroke2Enabled</key>
+					<false/>
+					<key>strokeColor</key>
+					<string>0.000000:0.000000:0.000000:1.000000</string>
+					<key>strokeLineCap</key>
+					<integer>1</integer>
+					<key>strokeLineJoin</key>
+					<integer>1</integer>
+					<key>strokeLineWidth</key>
+					<real>2</real>
+					<key>strokeShadowBlur</key>
+					<real>3</real>
+					<key>strokeShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>strokeShadowHidden</key>
+					<true/>
+					<key>strokeShadowOffsetX</key>
+					<real>2</real>
+					<key>strokeShadowOffsetY</key>
+					<real>2</real>
+					<key>strokeType</key>
+					<integer>0</integer>
+					<key>textAlign</key>
+					<integer>2</integer>
+					<key>textAppearanceType</key>
+					<integer>0</integer>
+					<key>textDrawOnPath</key>
+					<false/>
+					<key>textShadowBlur</key>
+					<real>5</real>
+					<key>textShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>textShadowHidden</key>
+					<true/>
+					<key>textShadowOffsetX</key>
+					<real>0.0</real>
+					<key>textShadowOffsetY</key>
+					<real>0.0</real>
+					<key>textVerticalAlign</key>
+					<integer>0</integer>
+					<key>title</key>
+					<string>Smart Path</string>
+					<key>userSetTitle</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>adjustmentRatioX</key>
+					<real>0.0</real>
+					<key>adjustmentRatioY</key>
+					<real>0.0</real>
+					<key>attributedTextData</key>
+					<data>
+					e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29j
+					b2FydGYxNTA0XGNvY29hc3VicnRmODMwCntc
+					Zm9udHRibFxmMFxmbmlsXGZjaGFyc2V0MCBM
+					dWNpZGFHcmFuZGU7fQp7XGNvbG9ydGJsO1xy
+					ZWQyNTVcZ3JlZW4yNTVcYmx1ZTI1NTtccmVk
+					MFxncmVlbjBcYmx1ZTA7fQp7XCpcZXhwYW5k
+					ZWRjb2xvcnRibDs7XGNzZ2VuZXJpY3JnYlxj
+					MFxjMFxjMDt9ClxwYXJkXHR4NTYwXHR4MTEy
+					MFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMz
+					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
+					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
+					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIENoYXR0ZXIzfQ==
+					</data>
+					<key>className</key>
+					<string>ResizeText</string>
+					<key>constrainAspectRatio</key>
+					<false/>
+					<key>contentFilterSpecs</key>
+					<array/>
+					<key>fillAngle</key>
+					<integer>0</integer>
+					<key>fillColor</key>
+					<string></string>
+					<key>fillGradientElements</key>
+					<array/>
+					<key>fillShadowBlur</key>
+					<real>3</real>
+					<key>fillShadowColor</key>
+					<string>0.000000:0.000000:0.000000:0.333000</string>
+					<key>fillShadowHidden</key>
+					<false/>
+					<key>fillShadowOffsetX</key>
+					<real>2</real>
+					<key>fillShadowOffsetY</key>
+					<real>2</real>
+					<key>fillType</key>
+					<integer>0</integer>
+					<key>frame</key>
+					<string>{{152, 15}, {59, 17}}</string>
+					<key>hidden</key>
+					<false/>
+					<key>identifier</key>
+					<string>0486F52C-2D8E-4E9D-B2BC-0005C4095122</string>
 					<key>imageAnchorRatio</key>
 					<string>{0.5, 0.5}</string>
 					<key>imageType</key>
@@ -930,6 +1728,30 @@
 				</dict>
 				<dict>
 					<key>pointerCorner</key>
+					<integer>2</integer>
+					<key>pointerIdentifier</key>
+					<string>F8DB0032-9E47-46C9-9407-FF626381751E</string>
+					<key>shapeEdge</key>
+					<integer>2</integer>
+					<key>shapeIdentifier</key>
+					<string>B2EF6FD8-6BBF-4E39-B0FE-951DC5EF7FD9</string>
+					<key>shapeRatio</key>
+					<real>0.32000000000000001</real>
+				</dict>
+				<dict>
+					<key>pointerCorner</key>
+					<integer>8</integer>
+					<key>pointerIdentifier</key>
+					<string>67CC53F2-FFF2-4570-A648-8697C9046CCE</string>
+					<key>shapeEdge</key>
+					<integer>0</integer>
+					<key>shapeIdentifier</key>
+					<string>B4FAFDA8-DBAC-4C7C-95B4-1630E1C9B715</string>
+					<key>shapeRatio</key>
+					<real>0.5</real>
+				</dict>
+				<dict>
+					<key>pointerCorner</key>
 					<integer>0</integer>
 					<key>pointerIdentifier</key>
 					<string>DA31539C-C04F-49A3-A5D1-5205AE7A0012</string>
@@ -939,6 +1761,18 @@
 					<string>B68D5AFD-D209-481A-B774-22B5D1CDE848</string>
 					<key>shapeRatio</key>
 					<real>0.52000000000000002</real>
+				</dict>
+				<dict>
+					<key>pointerCorner</key>
+					<integer>0</integer>
+					<key>pointerIdentifier</key>
+					<string>F8DB0032-9E47-46C9-9407-FF626381751E</string>
+					<key>shapeEdge</key>
+					<integer>2</integer>
+					<key>shapeIdentifier</key>
+					<string>B68D5AFD-D209-481A-B774-22B5D1CDE848</string>
+					<key>shapeRatio</key>
+					<real>0.76000000000000001</real>
 				</dict>
 			</array>
 			<key>constrainAspectRatio</key>
@@ -964,7 +1798,7 @@
 			<key>fillType</key>
 			<integer>0</integer>
 			<key>frame</key>
-			<string>{{0, 0}, {366, 108}}</string>
+			<string>{{0, 0}, {366, 244}}</string>
 			<key>gridTolerance</key>
 			<real>10</real>
 			<key>hidden</key>
@@ -986,7 +1820,7 @@
 				<key>group</key>
 				<integer>1</integer>
 				<key>height</key>
-				<real>108</real>
+				<real>244</real>
 				<key>resolution</key>
 				<real>72</real>
 				<key>unitType</key>
@@ -1005,7 +1839,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{182.5, 54}</string>
+			<string>{182.5, 122}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>

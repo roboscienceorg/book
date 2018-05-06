@@ -33,7 +33,7 @@ the core goals of ROS as a whole.
    :maxdepth: 2
 
    Origins
-   ROSInstalation
+   ROSInstallation
    FundamentalROS
    ROSCommunication
    Problems

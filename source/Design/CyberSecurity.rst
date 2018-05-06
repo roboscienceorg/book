@@ -30,11 +30,6 @@ principles are similar,
 Table \ `[tab:securityplanning] <#tab:securityplanning>`__ outlines the
 steps.
 
-.. raw:: latex
-
-   \vspace{-3mm}
-
-2
 
 #. Aspects of Planning
 
@@ -96,11 +91,7 @@ real concern in the future, currently there are much more pressing
 issues. The likely causes for robot failures for the near future will be
 lack of risk analysis and poorly tested software.
 
-.. raw:: latex
 
-   \vspace{-3mm}
-
-2
 
 -  Power loss or surges and battery life
 
@@ -148,11 +139,8 @@ If the threat probability per unit for the lifetime of the device is
 comparing :math:`Npz` to :math:`x+Ny`. This is the most simplistic way
 to view the analysis and more detailed studies should be done.
 
-.. raw:: latex
 
-   \vspace{-3mm}
-
-2 *Cost of loss*
+*Cost of loss*
 
 -  Short/Long term lack of availability
 
@@ -203,8 +191,6 @@ Passive:
 -  Port scans and Idle scans
 
 Active:
-
-2
 
 -  Denial-of-service attack
 
@@ -312,7 +298,3 @@ effort for the near future. The root cause in many cases is inequity in
 economics, corruption and unemployment. Addressing these issues will go
 a long way in solving the security problems as well as many problems
 facing us.
-
-.. raw:: latex
-
-   \FloatBarrier

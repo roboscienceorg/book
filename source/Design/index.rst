@@ -12,4 +12,3 @@ Robotics Design Elements
    HumanCollab
    HumanEnv
    CyberSecurity
-   Problems

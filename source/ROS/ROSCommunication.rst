@@ -49,10 +49,10 @@ in each:
 ::
 
     jmcgough@ubuntu:~$ python
-    Python 2.7.12 (default, Jul  1 2016, 15:12:24) 
+    Python 2.7.12 (default, Jul  1 2016, 15:12:24)
     [GCC 5.4.0 20160609] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
-    >>>  
+    >>>
 
 In one window type:
 
@@ -79,7 +79,7 @@ In the second window, type:
     >>> from std_msgs.msg import String
     >>> def callback(data):
     ...    print data.data
-    ... 
+    ...
     >>> rospy.init_node('listener', anonymous=True)
     >>> rospy.Subscriber("chatter", String, callback)
 
@@ -90,12 +90,10 @@ function, we initialize the node with node name listener and the last
 line has our node subscribe to the “chatter” topic and lists the
 callback function.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: ROS/pubsub1
-   :alt: Simple PubSub example[Fig:simplePubSub]
+.. figure:: ROSFigures/pubsub1.svg
+   :width: 40%
+   :align: center
 
    Simple PubSub example[Fig:simplePubSub]
 
@@ -130,8 +128,8 @@ containing a publish.
     >>> for i in range(5):
     ...   message = "Message number " + str(i)
     ...   pub.publish(message)
-    ... 
-    >>> 
+    ...
+    >>>
 
 This results with the text in the other window:
 
@@ -163,12 +161,9 @@ Next we create a new program. Create a new terminal window and enter:
     rospy.init_node('listener2', anonymous=True)
     rospy.Subscriber("chatter2", String, callback)
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: ROS/pubsub2
-   :alt: Simple PubSub example cont.[Fig:simplePubSub2]
+.. figure:: ROSFigures/pubsub2.svg
+   :width: 40%
+   :align: center
 
    Simple PubSub example cont.[Fig:simplePubSub2]
 
@@ -202,12 +197,9 @@ Then on the talker type:
 
     pub3.publish(42)
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: ROS/pubsub3
-   :alt: Simple PubSub example cont.[Fig:simplePubSub3]
+.. figure:: ROSFigures/pubsub3.svg
+   :width: 40%
+   :align: center
 
    Simple PubSub example cont.[Fig:simplePubSub3]
 
@@ -220,15 +212,11 @@ graph and the topics are the edges. ROS can generate this for you using:
 
     rqt_graph
 
-.. raw:: latex
+.. figure:: ROSFigures/rosgraph.png
+   :width: 75%
+   :align: center
 
-   \centering
-
-.. figure:: ROS/rosgraph.png
-   :alt: [fig:rosgraph] The graph of nodes and topics for the current
-   ROS session.
-
-   [fig:rosgraph] The graph of nodes and topics for the current ROS
+   The graph of nodes and topics for the current ROS
    session.
 
 Figure \ `[fig:rosgraph] <#fig:rosgraph>`__ shows the resulting graph.
@@ -258,10 +246,10 @@ You can get information on one of the topics:
     jmcgough@ubuntu:~$ rostopic info /chatter
     Type: std_msgs/String
 
-    Publishers: 
+    Publishers:
      * /talker_25024_1505313174390 (http://ubuntu:36647/)
 
-    Subscribers: 
+    Subscribers:
      * /listener_25288_1505313198989 (http://ubuntu:41441/)
 
 You can even listen in on a topic using the rostopic command.
@@ -283,9 +271,6 @@ and you will see in the rostopic command window:
     data: Did this echo??
     ---
 
-.. raw:: latex
-
-   \vspace*{-5mm}
 
 | 3 Bool
 | Byte
@@ -320,9 +305,6 @@ and you will see in the rostopic command window:
 | UInt8
 | UInt8MultiArray
 
-.. raw:: latex
-
-   \vspace*{-2mm}
 
 Often we need to publish a message on a periodic basis. To do that you
 need some control over delays and timing. The examples that follow will
@@ -340,7 +322,7 @@ integers.
 
 ::
 
-    # sleep for duration 
+    # sleep for duration
     d = rospy.Duration(10, 0)
     rospy.sleep(d)
 
@@ -409,12 +391,10 @@ Listings \ `[lst:publishercode] <#lst:publishercode>`__, \ `[lst:subscribercod
     rospy.Subscriber("chatter", String, callback)
     rospy.spin()
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: ROS/pubsubprog
-   :alt: Simple PubSub Progam example[Fig:simplePubSubProg]
+.. figure:: ROSFigures/pubsubprog.svg
+   :width: 40%
+   :align: center
 
    Simple PubSub Progam example[Fig:simplePubSubProg]
 
@@ -471,11 +451,11 @@ published on the topic named /WorkspacePath.
             pub.publish(x[i])
             pub.publish(y[i])
             rospy.sleep(0.25)
-        
+
         flag.publish(127)
         rospy.sleep(3)
 
-      
+
     if __name__ == '__main__':
         createdata()
 
@@ -495,7 +475,7 @@ Listing \ `[lst:inversekinematicscode] <#lst:inversekinematicscode>`__.
 
     def callback(data):
         global i, x, y
-        if (i%2 == 0): 
+        if (i%2 == 0):
             x = data.data
         else:
              y = data.data
@@ -504,7 +484,7 @@ Listing \ `[lst:inversekinematicscode] <#lst:inversekinematicscode>`__.
 
     def convert(x,y):
         global pub, a1, a2
-        d = (x*x + y*y - a1*a1 - a2*a2)/(2*a1*a2)   
+        d = (x*x + y*y - a1*a1 - a2*a2)/(2*a1*a2)
         t2 = math.atan2(-math.sqrt(1.0-d*d),d)
         t1 = math.atan2(y,x) - math.atan2(a2*math.sin(t2),a1+a2*math.cos(t2))
         # print (t1, t2)
@@ -545,7 +525,7 @@ Listing \ `[lst:checkinversekinematics] <#lst:checkinversekinematics>`__.
 
     def callback(data):
         global i, t1, t2
-        if (i%2 == 0): 
+        if (i%2 == 0):
             t1 = data.data
         else:
             t2 = data.data
@@ -560,7 +540,7 @@ Listing \ `[lst:checkinversekinematics] <#lst:checkinversekinematics>`__.
             plt.ylim(0,15)
             plt.plot(u,v,'b-')
             plt.show()
-        
+
     def convert(t1,t2):
         global pub, a1, a2, u, v
         x = a1*math.cos(t1) + a2*math.cos(t1+t2)
@@ -587,12 +567,11 @@ Listing \ `[lst:checkinversekinematics] <#lst:checkinversekinematics>`__.
     if __name__ == '__main__':
         consumedata()
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: ROS/twolinkrosexample
-   :alt: Two Link Manipulator ROS example. [Fig:twolinkrosexample]
+.. figure:: ROSFigures/twolinkrosexample.svg
+   :width: 75%
+   :align: center
 
    Two Link Manipulator ROS example. [Fig:twolinkrosexample]
 
@@ -633,8 +612,3 @@ will send a block of 32bit integers which is the datatype
     rospy.init_node('listener', anonymous=True)
     rospy.Subscriber("chatter", Int32MultiArray, callback)
     rospy.spin()
-
-.. raw:: latex
-
-   \FloatBarrier
-

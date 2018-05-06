@@ -694,7 +694,7 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjYgXGNmMiBcc2hhZFxzaGFkeDQw
+					XGYwXGZzMjQgXGNmMiBcc2hhZFxzaGFkeDQw
 					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
 					c2hhZGMyIFdoZWVsXApWZWxvY2l0aWVzfQ==
 					</data>
@@ -964,7 +964,7 @@
 			<key>fillType</key>
 			<integer>0</integer>
 			<key>frame</key>
-			<string>{{0, 0}, {575, 108}}</string>
+			<string>{{0, 0}, {334, 108}}</string>
 			<key>gridTolerance</key>
 			<real>10</real>
 			<key>hidden</key>
@@ -992,7 +992,7 @@
 				<key>unitType</key>
 				<integer>0</integer>
 				<key>width</key>
-				<real>575</real>
+				<real>334</real>
 			</dict>
 			<key>opacity</key>
 			<real>1</real>
@@ -1005,7 +1005,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{287.5, 54}</string>
+			<string>{167, 54}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>

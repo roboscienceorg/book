@@ -330,10 +330,10 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgQ3JlYXRlXApXb3Jrc3Bh
-					Y2VcClBvaW50c30=
+					XGYwXGZzMjYgXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIENyZWF0ZVwKV29ya3NwYWNlXApQ
+					b2ludHN9
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -449,10 +449,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgSW52ZXJzZVwKS2luZW1h
-					dGljc30=
+					XGYwXGZzMjYgXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIEludmVyc2VcCktpbmVtYXRpY3N9
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -568,9 +567,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgQ2hlY2tcClZhbHVlc30=
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIENoZWNrXApWYWx1ZXN9
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -705,7 +704,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{81, 101}, {203, 0}}</string>
+					<string>{{149, 101}, {135, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -815,7 +814,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{353, 101}, {207, 0}}</string>
+					<string>{{421, 101}, {139, 0}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -906,9 +905,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgV29ya3NwYWNlUGF0aH0=
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIFdvcmtzcGFjZVBhdGh9
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1024,9 +1023,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgQ29udHJvbH0=
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIENvbnRyb2x9
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1142,10 +1141,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgQ29uZmlnc3BhY2VQYXRo
-					fQ==
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIENvbmZpZ3NwYWNlUGF0aH0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1261,9 +1259,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgSW52ZXJzZUt9
+					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIEludmVyc2VLfQ==
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1379,9 +1377,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgV29ya3NwYWNlfQ==
+					XGYwXGZzMjYgXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIFdvcmtzcGFjZX0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1497,9 +1495,9 @@
 					NjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1
 					NjAwXHR4NjE2MFx0eDY3MjBccGFyZGlybmF0
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
-					XGYwXGZzMjggXGNmMiBcdXAwIFxzaGFkXHNo
-					YWR4NDBcc2hhZHktNDBcc2hhZHI2MFxzaGFk
-					bzg1IFxzaGFkYzIgRm9yd2FyZEt9
+					XGYwXGZzMjYgXGNmMiBcc2hhZFxzaGFkeDQw
+					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
+					c2hhZGMyIEZvcndhcmRLfQ==
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1634,7 +1632,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{81, 101}, {272, -68}}</string>
+					<string>{{100, 75}, {253, -42}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1744,7 +1742,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{629, 101}, {-276, -68}}</string>
+					<string>{{597, 75}, {-244, -42}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1827,7 +1825,7 @@
 					<key>pointerIdentifier</key>
 					<string>A7CDC699-3A23-4693-8F08-8B9007739CDE</string>
 					<key>shapeEdge</key>
-					<integer>4</integer>
+					<integer>1</integer>
 					<key>shapeIdentifier</key>
 					<string>02CBFD95-BFEA-4B06-BFDB-F9019897FF89</string>
 					<key>shapeRatio</key>
@@ -1851,11 +1849,23 @@
 					<key>pointerIdentifier</key>
 					<string>799EB350-A406-4869-8A9C-B8D05243562F</string>
 					<key>shapeEdge</key>
-					<integer>4</integer>
+					<integer>2</integer>
 					<key>shapeIdentifier</key>
-					<string>703EFC14-14CA-4171-903A-83F6BE92C1F1</string>
+					<string>229E46DB-4695-419C-8992-A97154D955DF</string>
 					<key>shapeRatio</key>
-					<real>0.5</real>
+					<real>0.0</real>
+				</dict>
+				<dict>
+					<key>pointerCorner</key>
+					<integer>0</integer>
+					<key>pointerIdentifier</key>
+					<string>102FF35D-0767-4BF1-BEF5-54CC7B9B569B</string>
+					<key>shapeEdge</key>
+					<integer>2</integer>
+					<key>shapeIdentifier</key>
+					<string>4326AE2D-1A28-4E98-B835-B2AA2A5C9AEE</string>
+					<key>shapeRatio</key>
+					<real>0.76712328767123283</real>
 				</dict>
 				<dict>
 					<key>pointerCorner</key>
@@ -1873,21 +1883,9 @@
 					<key>pointerCorner</key>
 					<integer>0</integer>
 					<key>pointerIdentifier</key>
-					<string>102FF35D-0767-4BF1-BEF5-54CC7B9B569B</string>
-					<key>shapeEdge</key>
-					<integer>4</integer>
-					<key>shapeIdentifier</key>
-					<string>8E0B58A9-0B96-42E8-9C77-B37D27BAED32</string>
-					<key>shapeRatio</key>
-					<real>0.5</real>
-				</dict>
-				<dict>
-					<key>pointerCorner</key>
-					<integer>0</integer>
-					<key>pointerIdentifier</key>
 					<string>B9FD2DCB-65F1-4BD4-B64C-C28ABE5C7737</string>
 					<key>shapeEdge</key>
-					<integer>4</integer>
+					<integer>1</integer>
 					<key>shapeIdentifier</key>
 					<string>8E0B58A9-0B96-42E8-9C77-B37D27BAED32</string>
 					<key>shapeRatio</key>

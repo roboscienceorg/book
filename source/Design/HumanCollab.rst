@@ -193,13 +193,10 @@ Our acceptance of, or comfort with, the machine drops as the design
 approaches lifelike accuracy. All cultures (that the author is aware of)
 exhibit this, but varies greatly in the exact boundary of their limits.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: robots/uncanny
-   :alt: Uncanny Valley, the drop in the comfort graph as a function of
-   human likeness.[fig:uncannyvwalley]
+.. figure:: DesignFigures/uncanny.svg
+   :width: 70%
+   :align: center
 
    Uncanny Valley, the drop in the comfort graph as a function of human
    likeness.[fig:uncannyvwalley]

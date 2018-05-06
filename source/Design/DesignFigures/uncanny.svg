@@ -1,0 +1,301 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 424 296"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Bezier Shape SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-68ECE876-F654-4B03-9FF3-7DF7E88321A7">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M44.13 216.29
+                    C91.62 208.93 119.82 204.38 150.00 181.76
+                    C180.18 159.15 225.63 121.04 256.89 114.45
+                    C288.14 107.85 297.61 134.01 303.98 157.96
+                    C310.36 181.91 317.22 251.81 324.05 266.10
+                    C330.88 280.40 341.95 281.45 347.68 265.11
+                    C353.41 248.78 367.83 140.30 376.95 101.96
+                    C386.07 63.63 403.80 33.71 403.80 33.71
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-68ECE876-F654-4B03-9FF3-7DF7E88321A7)"
+            />
+        </g>
+        
+        
+        <!-- ** Bezier Shape *************** -->
+        
+        <g>
+            <defs>
+                <linearGradient id="fillGradient-68ECE876-F654-4B03-9FF3-7DF7E88321A7" x1="0%" y1="0%" x2="100%" y2="0%"
+                    gradientTransform="rotate(32 0.5 0.5)"                    >
+                    <stop offset="0.00%" style="stop-color:rgb(255, 255, 255);stop-opacity:1.00;" />
+                    <stop offset="100.00%" style="stop-color:rgb(255, 255, 255);stop-opacity:1.00;" />
+                </linearGradient>
+            </defs>
+            
+            <path
+                d="
+                    M44.13 216.29
+                    C91.62 208.93 119.82 204.38 150.00 181.76
+                    C180.18 159.15 225.63 121.04 256.89 114.45
+                    C288.14 107.85 297.61 134.01 303.98 157.96
+                    C310.36 181.91 317.22 251.81 324.05 266.10
+                    C330.88 280.40 341.95 281.45 347.68 265.11
+                    C353.41 248.78 367.83 140.30 376.95 101.96
+                    C386.07 63.63 403.80 33.71 403.80 33.71
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="url(#fillGradient-68ECE876-F654-4B03-9FF3-7DF7E88321A7)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-9254AB32-B8CF-4D69-923A-9D7DF38A1F99">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M401.00 219.00
+                        L401.00 215.00
+                        L422.00 215.00
+                        L422.00 223.00
+                        L401.00 223.00
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M42.00 219.00
+                    L412.00 219.00
+                    "
+                clip-path="url(#clipPath-9254AB32-B8CF-4D69-923A-9D7DF38A1F99)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="1.00 2.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M401.00 219.00
+                    L401.00 215.00
+                    L411.00 219.00
+                    L401.00 223.00
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-9B2EE7B4-9ADB-4924-B46A-77647E69E50A">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M42.00 24.00
+                        L38.00 24.00
+                        L38.00 3.00
+                        L46.00 3.00
+                        L46.00 24.00
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M42.00 13.00
+                    L42.00 283.00
+                    "
+                clip-path="url(#clipPath-9B2EE7B4-9ADB-4924-B46A-77647E69E50A)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="1.00 2.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M42.00 24.00
+                    L38.00 24.00
+                    L42.00 14.00
+                    L46.00 24.00
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M167.00 224.00
+                    L257.00 224.00
+                    L257.00 247.00
+                    L167.00 247.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="167.14" y="242.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:20px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Similarity</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M-20.34 141.88
+                    L70.66 141.88
+                    L70.66 158.88
+                    L-20.34 158.88
+                    Z
+                    "
+                transform="
+                    rotate(270 25.16 150.38)
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="-18.55" y="157.00"
+            transform="rotate(270 25.16 150.38)"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:22px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Comfort</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M270.61 201.57
+                    L398.61 201.57
+                    L398.61 180.57
+                    L270.61 180.57
+                    Z
+                    "
+                transform="
+                    rotate(270 334.61 191.07)
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="272.76" y="196.00"
+            transform="rotate(270 334.61 191.07)"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(255, 0, 0)">Uncanny Valley</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M99.00 155.00
+                    L155.00 155.00
+                    L155.00 176.00
+                    L99.00 176.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="99.04" y="171.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 255)">Wall-E</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M180.00 104.00
+                    L228.00 104.00
+                    L228.00 125.00
+                    L180.00 125.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="180.12" y="120.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 255)">C3PO</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

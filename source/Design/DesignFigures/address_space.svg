@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 520 69"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-D19E263A-433C-48A1-82DD-D74962948B2D">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="10.00" y="18.00" width="495.00" height="35.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-D19E263A-433C-48A1-82DD-D74962948B2D)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="10.00" y="18.00" width="495.00" height="35.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M222.00 18.00
+                    L287.00 18.00
+                    L287.00 53.00
+                    L222.00 53.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="222.84" y="46.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:29px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">RAM</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-9168EEB7-3B9E-41B5-95D9-62703A738E29">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="66.00" y="18.00" width="96.00" height="35.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-9168EEB7-3B9E-41B5-95D9-62703A738E29)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="66.00" y="18.00" width="96.00" height="35.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M72.00 22.00
+                    L157.00 22.00
+                    L157.00 49.00
+                    L72.00 49.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="72.35" y="43.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:23px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Process</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

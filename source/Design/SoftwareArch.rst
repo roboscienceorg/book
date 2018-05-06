@@ -25,12 +25,10 @@ process lives in an address space which is defined as all of the memory
 addresses for which the program resides and accesses,
 Fig \ `[fig:address_space] <#fig:address_space>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: os/address_space.pdf
-   :alt: Address space for a process. [fig:address_space]
+.. figure:: DesignFigures/address_space.svg
+   :width: 70%
+   :align:  center
 
    Address space for a process. [fig:address_space]
 
@@ -57,12 +55,10 @@ programming effort. So the OS provides the illusion of an abstracted
 computer or a virtual
 computer \ `[fig:os-abstract] <#fig:os-abstract>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: os/abstract
-   :alt: The fundamental machine abstraction. [fig:os-abstract]
+.. figure:: DesignFigures/abstract.svg
+   :width: 70%
+   :align: center
 
    The fundamental machine abstraction. [fig:os-abstract]
 
@@ -213,17 +209,16 @@ of user program from hardware. However, difficulties in development and
 debugging lead to layered OS designs such as early NT and
 OS/2, Figure-\ `[fig:os-layered] <#fig:os-layered>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: os/monolithic
-   :alt: Monolithic[fig:os-monolithic]
+.. figure:: DesignFigures/monolithic.svg
+   :width: 70%
+   :align: center
 
    Monolithic[fig:os-monolithic]
 
-.. figure:: os/layered.*
-   :alt: Layered[fig:os-layered]
+.. figure:: DesignFigures/layered.svg
+   :width: 70%
+   :align: center
 
    Layered[fig:os-layered]
 
@@ -234,12 +229,11 @@ These were known as microkernels since the design promoted moving all
 but the bare minimum out of the kernel leaving a very small kernel code
 base.
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: os/mkernel
-   :alt: Microkernel architecture. [os-microkernel]
+.. figure:: DesignFigures/mkernel.svg
+   :width: 70%
+   :align: center
 
    Microkernel architecture. [os-microkernel]
 
