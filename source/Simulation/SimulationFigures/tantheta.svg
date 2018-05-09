@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="10cm" height="9cm" viewBox="185 82 184 179" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 187 258 C 280,286 199,27 357,191"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="260" y1="146" x2="318.838" y2="87.1623"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="316.883,96.1877 320.419,85.5811 309.812,89.1167 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x1="262" y1="145" x2="320.528" y2="144.071"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="312.845,149.194 322.764,144.035 312.686,139.195 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x1="326" y1="144" x2="324.629" y2="89.6133"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="329.823,97.2488 324.572,87.378 319.826,97.5008 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="276" y="160">
+    <tspan x="276" y="160">dx/dt</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="336" y="120">
+    <tspan x="336" y="120">dy/dt</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="295" y="134">
+    <tspan x="295" y="134">Q</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="501" y="171">
+    <tspan x="501" y="171"></tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 304,145 A 18.2366,18.2366 0 0 0 295.312,115.742"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="303.472,110.621 293.233,115.112 302.969,120.608 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="123" y="115">
+    <tspan x="123" y="115"></tspan>
+  </text>
+</svg>

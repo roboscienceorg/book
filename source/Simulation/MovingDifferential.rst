@@ -17,12 +17,9 @@ In this section we simulate the motion of the differential drive robot
 that we introduced in Chapter \ `[Chap:Terms] <#Chap:Terms>`__ shown in
 Figure \ `[ddriveRecalled] <#ddriveRecalled>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/ddrive
-   :alt: Simple differential drive robot. [ddriveRecalled]
+.. figure:: SimulationFigures/ddrive.svg
+   :width: 30%
 
    Simple differential drive robot. [ddriveRecalled]
 
@@ -85,7 +82,7 @@ integrated, under the assumption that :math:`\omega_1\neq \omega_2` or
 
 .. math::
 
-   x(t) = \frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[ \sin((r/2L)(\omega_1 - \omega_2)t + \theta(0)) - 
+   x(t) = \frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[ \sin((r/2L)(\omega_1 - \omega_2)t + \theta(0)) -
     \sin(\theta(0))\right]
 
 .. math:: y(t) = -\frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[ \cos((r/2L)(\omega_1 - \omega_2)t + \theta(0)) - \cos( \theta(0)) \right]
@@ -122,12 +119,10 @@ differentiable.
 Figure \ `[fig:piecewisecirculararcs] <#fig:piecewisecirculararcs>`__
 shows a sample path.
 
-.. raw:: latex
-
-   \centering
 
 .. figure:: sim/piecewisecircular
-   :alt: Piecewise circular/linear arc paths[fig:piecewisecirculararcs]
+   :width: 50%
+   :align: center
 
    Piecewise circular/linear arc paths[fig:piecewisecirculararcs]
 
@@ -196,7 +191,7 @@ Using this we can take a time step of :math:`\Delta t` forward (meaning
 
 .. math::
 
-   x(t_{k+1}) = x(t_k) + (\Delta t)x'(t_k) \quad \mbox{and} 
+   x(t_{k+1}) = x(t_k) + (\Delta t)x'(t_k) \quad \mbox{and}
    \quad y(t_{k+1}) = y(t_k) + (\Delta t)y'(t_k).
 
 And so we can write our differential equations as difference equations,
@@ -289,13 +284,10 @@ of piecewise constant velocity does not hold in the general case and so
 we see accumulating drift when comparing the robot’s true path and the
 approximated one.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sim/piecewiseconst.pdf
-   :alt: Piecewise Constant nature of the Euler
-   Approximation.[fig:piecewiseconst]
+.. figure:: SimulationFigures/piecewiseconst.svg
+   :width: 50%
+   :align: center
 
    Piecewise Constant nature of the Euler
    Approximation.[fig:piecewiseconst]
@@ -310,7 +302,7 @@ example, if the wheel speeds are given by :math:`w1 = 0.1 + 2*t` and
     t = 0;  dt = 0.1
     for i in range(10):
        w1 = 0.1 + 2*t
-       w2 = 0.1 
+       w2 = 0.1
        xc, yc, qc = ddstep(xc, yc, qc,1.0,6.0,dt,w1,w2)
        t = t + dt
        print t, xc, yc, qc
@@ -332,7 +324,7 @@ You can plot the motion in Python. Another example with circular motion:
 
 ::
 
-    import pylab as plt 
+    import pylab as plt
     import numpy as np
     from math import *
     N=200
@@ -594,10 +586,10 @@ It makes sense to treat this as a discrete formula and to write as such:
    \label{eq:ddikpartial}
    \boxed{
    \begin{array}{l}
-   v_k = \sqrt{\dot{x}(t_k)^2 + \dot{y}(t_k)^2} , \quad\quad 
+   v_k = \sqrt{\dot{x}(t_k)^2 + \dot{y}(t_k)^2} , \quad\quad
    \displaystyle  \kappa_k = \frac{\dot{x}(t_k) \ddot{y}(t_k ) -  \dot{y}(t_k) \ddot{x}(t_k)}{v_k^3}, \\[3mm]
    \displaystyle  \omega_{1,k} = \frac{v_k}{r}(\kappa_k L + 1), \quad\quad
-   \displaystyle  \omega_{2,k} = \frac{v_k}{r}(-\kappa_k L + 1) 
+   \displaystyle  \omega_{2,k} = \frac{v_k}{r}(-\kappa_k L + 1)
    \end{array} }
 
 Determine the wheel velocities to drive through the way points (0,1),

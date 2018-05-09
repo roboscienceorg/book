@@ -35,7 +35,7 @@ Figure \ `[Fig:twolinkcircleexample] <#Fig:twolinkcircleexample>`__.
     #Initialize variables
     a1 = 10.0
     a2 = 10.0
-    d = (x*x + y*y - a1*a1 - a2*a2)/(2*a1*a2)   
+    d = (x*x + y*y - a1*a1 - a2*a2)/(2*a1*a2)
     t2 = np.arctan2(-np.sqrt(1.0-d*d),d)
     t1 = np.arctan2(y,x) - np.arctan2(a2*np.sin(t2),a1+a2*np.cos(t2))
 
@@ -51,13 +51,9 @@ Figure \ `[Fig:twolinkcircleexample] <#Fig:twolinkcircleexample>`__.
        time.sleep(0.25)
        pub.publish(m)
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: sim/twolinkcircleexample.png
-   :alt: The output of the circle inverse kinematics
-   code.[Fig:twolinkcircleexample]
+.. figure:: SimulationFigures/twolinkcircleexample.png
+   :width: 60%
+   :align: center
 
    The output of the circle inverse kinematics
    code.[Fig:twolinkcircleexample]
@@ -98,19 +94,24 @@ simulation program, we use the inverse kinematics node as before
     rospy.init_node('talker', anonymous=True)
 
     for i in range(t.size):
-       locs = str(x[i]) + ":" + str(y[i]) + ":" + str(10) + ":" + str(10) 
+       locs = str(x[i]) + ":" + str(y[i]) + ":" + str(10) + ":" + str(10)
                        +":" + str(1)
        time.sleep(0.25)
        pub.publish(locs)
 
-.. raw:: latex
 
-   \centering
+ .. figure:: SimulationFigures/twolinkcoarseexample.png
+    :width: 60%
+    :align: center
 
-|Movement between the points. a) moving both linearly. b) moving the
-servos sequentially. [Fig:twolinkcoarseexample]| |Movement between the
-points. a) moving both linearly. b) moving the servos sequentially.
-[Fig:twolinkcoarseexample]|
+    Movement between the points - moving both linearly.
+
+
+ .. figure:: SimulationFigures/twolinkcoarseexample2.png
+    :width: 60%
+    :align: center
+
+    Movement between the points - moving the servos sequentially. [Fig:twolinkcoarseexample]|
 
 This simulation gives an idea about how to move the robotic arm and the
 path is correct. The motion however is not smooth. This is because we

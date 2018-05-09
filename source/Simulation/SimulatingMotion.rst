@@ -48,13 +48,18 @@ another terminal, run Python and type
     >>> message = "20:10:0"
     >>> pub.publish(message)
 
-.. raw:: latex
+.. figure:: SimulationFigures/twolinksimulator1.png
+   :width: 60%
+   :align: center
 
-   \centering
+   The two link simulator.
 
-|(a) The two link simulator. (b) Published angle to the
-simulator.[Fig:twolinksimulator1]| |(a) The two link simulator. (b)
-Published angle to the simulator.[Fig:twolinksimulator1]|
+.. figure:: SimulationFigures/twolinksimulator2.png
+   :width: 60%
+   :align: center
+
+   Published angle to the simulator.
+
 
 You should see the link arm move as shown in
 Figure \ `[Fig:twolinksimulator1] <#Fig:twolinksimulator1>`__-(b). The
@@ -82,12 +87,10 @@ To view the resulting node graph we can use the ROS tool rqt_graph:
 
 In this case it produces Figure \ `[Fig:rosgraph0] <#Fig:rosgraph0>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sim/rosgraph0.png
-   :alt: The ROS Node Graph Tool rqt_graph. [Fig:rosgraph0]
+.. figure:: SimulationFigures/rosgraph0.png
+   :width: 60%
+   :align: center
 
    The ROS Node Graph Tool rqt_graph. [Fig:rosgraph0]
 
@@ -98,7 +101,7 @@ type
 ::
 
     rostopic echo /TwoLinkTheta
-     
+
 
 The move one of the sliders. You will see the message on the
 TwoLinkTheta topic echoed. If you have source code you can clearly print
@@ -113,13 +116,20 @@ intermediate node IK.py is used to convert the :math:`(x,y)` values to
 :math:`(\theta_1, \theta_2)` and these values are published to the Two
 Link Simulator.
 
-.. raw:: latex
+.. figure:: SimulationFigures/tksliderexample.png
+   :width: 60%
+   :align: center
 
-   \centering
+   The servo angle control widget
 
-|(a) The servo angle control widget and (b) the position control
-widget.[Fig:tksliderexample]| |(a) The servo angle control widget and
-(b) the position control widget.[Fig:tksliderexample]|
+.. figure:: SimulationFigures/tksliderexample2.png
+   :width: 60%
+   :align: center
+
+   The position control
+   widget
+
+
 
 ::
 
@@ -142,7 +152,7 @@ widget.[Fig:tksliderexample]| |(a) The servo angle control widget and
 
 ::
 
-    # Compute IK and send to simulator    
+    # Compute IK and send to simulator
     def inverse(x,y,a1,a2,pen):
         if (sqrt(x*x+y*y) > a1+a2):
           print "(x,y) out of reach for links"
@@ -164,11 +174,9 @@ widget.[Fig:tksliderexample]| |(a) The servo angle control widget and
     rospy.Subscriber("TwoLinkCoords", String, capture)
     rospy.spin()
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sim/rosgraph1.png
-   :alt: The ROS Node Graph Tool rqt_graph. [Fig:rosgraph1]
+.. figure:: SimulationFigures/rosgraph1.png
+   :width: 70%
+   :align: center
 
    The ROS Node Graph Tool rqt_graph. [Fig:rosgraph1]
