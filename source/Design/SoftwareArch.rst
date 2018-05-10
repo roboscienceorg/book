@@ -26,7 +26,7 @@ addresses for which the program resides and accesses,
 Fig \ `[fig:address_space] <#fig:address_space>`__.
 
 
-.. figure:: DesignFigures/address_space.svg
+.. figure:: DesignFigures/address_space.*
    :width: 70%
    :align:  center
 
@@ -56,7 +56,7 @@ computer or a virtual
 computer \ `[fig:os-abstract] <#fig:os-abstract>`__.
 
 
-.. figure:: DesignFigures/abstract.svg
+.. figure:: DesignFigures/abstract.*
    :width: 70%
    :align: center
 
@@ -210,13 +210,13 @@ debugging lead to layered OS designs such as early NT and
 OS/2, Figure-\ `[fig:os-layered] <#fig:os-layered>`__.
 
 
-.. figure:: DesignFigures/monolithic.svg
+.. figure:: DesignFigures/monolithic.*
    :width: 70%
    :align: center
 
    Monolithic[fig:os-monolithic]
 
-.. figure:: DesignFigures/layered.svg
+.. figure:: DesignFigures/layered.*
    :width: 70%
    :align: center
 
@@ -231,7 +231,7 @@ base.
 
 
 
-.. figure:: DesignFigures/mkernel.svg
+.. figure:: DesignFigures/mkernel.*
    :width: 70%
    :align: center
 

@@ -21,7 +21,7 @@ Lagrange polynomials:
 Since this is a parametric form, we have freedom to select the
 :math:`\{ t_i \}` values.
 
-.. figure:: MathFigures/poly.svg
+.. figure:: MathFigures/poly.*
    :width: 50%
    :align: center
 

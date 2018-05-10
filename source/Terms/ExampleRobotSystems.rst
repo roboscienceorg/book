@@ -25,7 +25,7 @@ probably have some limits, but for now we will assume full
 :math:`360^\circ` motion.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolinkalt.svg
+.. figure:: TermsFigures/twolinkalt.*
    :width: 70%
    :align: center
 
@@ -45,14 +45,14 @@ directions wrap back on themselves. This actually makes the
 configuration space a two dimensional torus or “donut”.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolinkconfig.svg
+.. figure:: TermsFigures/twolinkconfig.*
    :width: 70%
    :align: center
 
    Workspace for the two link manipulator with equal link lengths.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolinkobs.svg
+.. figure:: TermsFigures/twolinkobs.*
    :width: 70%
    :align: center
 
@@ -60,7 +60,7 @@ configuration space a two dimensional torus or “donut”.
 
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolinkconfig.svg
+.. figure:: TermsFigures/twolinkconfig.*
    :width: 70%
    :align: center
 
@@ -68,7 +68,7 @@ configuration space a two dimensional torus or “donut”.
    [intro-config-axis]
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolinkobs.svg
+.. figure:: TermsFigures/twolinkobs.*
    :width: 70%
    :align: center
 
@@ -87,7 +87,7 @@ length :math:`a_1`, Figure \ `[twolinklabeled] <#twolinklabeled>`__-(b):
 .. math:: \xi =  a_1 \cos \theta_1, \quad \eta = a_1 \sin \theta_1
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolink2.svg
+.. figure:: TermsFigures/twolink2.*
    :width: 70%
    :align: center
 
@@ -147,7 +147,7 @@ The tangent form has the +/- and gives the elbow up and elbow down
 solutions.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolink3.svg
+.. figure:: TermsFigures/twolink3.*
    :width: 70%
    :align: center
 
@@ -247,7 +247,7 @@ That connects the two light blue links which are joined together at the
 bottom with a rotational joint.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/2dDelta.svg
+.. figure:: TermsFigures/2dDelta.*
    :width: 70%
    :align: center
 
@@ -272,12 +272,12 @@ Figure \ `[Fig:paralleltwolink2] <#Fig:paralleltwolink2>`__. As with the
 serial chain manipulator, this is an exercise in trigonometry.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/2dtwolinkconfigdomain.svg
+.. figure:: TermsFigures/2dtwolinkconfigdomain.*
    :width: 70%
    :align: center
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/2dDelta2.svg
+.. figure:: TermsFigures/2dDelta2.*
    :width: 70%
    :align: center
    |Parallel Two Link (a) configuration space (b) with coordinates
@@ -357,7 +357,7 @@ robot as well.
     plt.show()
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/2dDeltaWS.svg
+.. figure:: TermsFigures/2dDeltaWS.*
    :width: 70%
    :align: center
 
@@ -479,14 +479,14 @@ software. The second reason is that the equations will be required in
 localization algorithms.
 
 
-.. figure:: TermsFigures/ddrive.svg
+.. figure:: TermsFigures/ddrive.*
    :width: 70%
    :align: center
 
    Rectangular frame. [fig:ddriverectangular]
 
 
-.. figure:: TermsFigures/circular.svg
+.. figure:: TermsFigures/circular.*
    :width: 70%
    :align: center
 
@@ -516,7 +516,7 @@ direction. To remove any ambiguity, we assume that :math:`x`, :math:`y`,
 direction of :math:`y`).
 
 
-.. figure:: TermsFigures/frames.svg
+.. figure:: TermsFigures/frames.*
    :width: 70%
    :align: center
 
@@ -546,7 +546,7 @@ frame. Graphically :math:`\theta` the amount of rotation applied to
 :math:`X_I` to line it up with :math:`X_R`.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/ddframe.svg
+.. figure:: TermsFigures/ddframe.*
    :width: 70%
    :align: center
 
@@ -625,7 +625,7 @@ Figure \ `[robotdimensions] <#robotdimensions>`__.
    midpoint of the axle.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/dddim.svg
+.. figure:: TermsFigures/dddim.*
    :width: 70%
    :align: center
 
@@ -647,14 +647,14 @@ then produce the rotational motion about the robot center and the
 average forward velocity.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/ddaxle.svg
+.. figure:: TermsFigures/ddaxle.*
    :width: 70%
    :align: center
 
    Velocity of axle induced by wheel velocities.[axlevelocity]
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/ddforward.svg
+.. figure:: TermsFigures/ddforward.*
    :width: 70%
    :align: center
 
@@ -706,7 +706,7 @@ about :math:`P` is given by adding the individual contributions:
 .. math:: \dot{\theta} =  \frac{r}{2L} (\dot{\phi_1} - \dot{\phi_2}).
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/ddaxlerot.svg
+.. figure:: TermsFigures/ddaxlerot.*
    :width: 70%
    :align: center
 
@@ -801,7 +801,7 @@ Thus we have :math:`x^2 + y^2 = 600^2` as the basic formula for the
 curve of motion.
 
 
-.. figure:: TermsFigures/ddrive_circle.svg
+.. figure:: TermsFigures/ddrive_circle.*
    :width: 70%
    :align: center
 
@@ -922,13 +922,13 @@ Figure \ `[Fig:intro-mobile2] <#Fig:intro-mobile2>`__. For a mobile
 ground robot that is not a point, orientation will enter as a variable
 in the system.
 
-.. figure:: TermsFigures/circle1.svg
+.. figure:: TermsFigures/circle1.*
    :width: 70%
    :align: center
 
    |Configuration space as a function of robot size. [Fig:RobotSize]|
 
-.. figure:: TermsFigures/circle2.svg
+.. figure:: TermsFigures/circle2.*
    :width: 70%
    :align: center
 
@@ -951,13 +951,13 @@ outer boundary around the obstacle and makes the obstacle larger. We
 have inflated the obstacle.
 
 
-.. figure:: TermsFigures/mobile.svg
+.. figure:: TermsFigures/mobile.*
    :width: 70%
    :align: center
 
    Example of the inflation process. [Fig:intro-mobile1]
 
-.. figure:: TermsFigures/mobile2.svg
+.. figure:: TermsFigures/mobile2.*
    :width: 70%
    :align: center
 
@@ -979,14 +979,14 @@ a point. We can then study robot paths through the open space. Of course
 in practice this is absurd since the robot orientation is not fixed. But
 it does help transition to the general case.
 
-.. figure:: TermsFigures/rect.svg
+.. figure:: TermsFigures/rect.*
    :width: 70%
    :align: center
 
    Changing robot shape also affects c-space. [shapematters]
 
 
-.. figure:: TermsFigures/rect2.svg
+.. figure:: TermsFigures/rect2.*
    :width: 70%
    :align: center
 
@@ -1002,13 +1002,10 @@ Figure \ `[orientationmattersalot] <#orientationmattersalot>`__. This
 process can be very complicated and often one will want to make
 simplifications.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: planning/rect3
-   :alt: Two sample rotations and the configuration
-   obstacle.[orientationmattersalot]
+.. figure:: TermsFigures/rect3.*
+   :width:  70%
+   :align: center
 
    Two sample rotations and the configuration
    obstacle.[orientationmattersalot]

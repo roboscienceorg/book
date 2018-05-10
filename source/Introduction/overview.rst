@@ -11,7 +11,7 @@ mechatronics, embedded systems, sensing, signal processing,
 communications, algorithms and planning.
 
 .. This figure is owned by RoboScience
-.. figure:: IntroductionFigures/overview.svg
+.. figure:: IntroductionFigures/overview.*
    :width: 70%
    :align: center
 
@@ -56,7 +56,7 @@ Figure :numref:`fig:fixedvmobile` .
 
 .. First image is public domain, second is owned by SDSMT UAV.
 .. _`fig:fixedvmobile`:
-.. figure:: IntroductionFigures/factory-drone.png
+.. figure:: IntroductionFigures/factory-drone.*
    :width: 90%
    :align: center
 
@@ -174,7 +174,7 @@ forms of artificial intelligence that are making robotic agents a
 reality, and appears to be in a rapid growth phase.
 
 .. This figure is owned by RoboScience
-.. figure:: IntroductionFigures/taxon.png
+.. figure:: IntroductionFigures/taxon.*
    :width: 40%
    :align: center
 
@@ -345,7 +345,7 @@ that we will touch on in detail later in this text.
 
 .. Image by Roboscience.
 .. _`trad-challenge`:
-.. figure:: IntroductionFigures/tradchallenge.svg
+.. figure:: IntroductionFigures/tradchallenge.*
    :width: 95%
    :align: center
 
@@ -372,7 +372,7 @@ that we will touch on in detail later in this text.
 -  Path planning and Optimal paths
 
 .. This image is public domain
-.. figure:: IntroductionFigures/RUNSWift_AIBOS.jpg
+.. figure:: IntroductionFigures/RUNSWift_AIBOS.*
    :width: 50%
    :align: center
 

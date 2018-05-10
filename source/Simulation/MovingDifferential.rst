@@ -18,7 +18,7 @@ that we introduced in Chapter \ `[Chap:Terms] <#Chap:Terms>`__ shown in
 Figure \ `[ddriveRecalled] <#ddriveRecalled>`__.
 
 
-.. figure:: SimulationFigures/ddrive.svg
+.. figure:: SimulationFigures/ddrive.*
    :width: 30%
    :align: center
 
@@ -121,7 +121,7 @@ Figure \ `[fig:piecewisecirculararcs] <#fig:piecewisecirculararcs>`__
 shows a sample path.
 
 
-.. figure:: SimulationFigures/piecewisecircular.svg
+.. figure:: SimulationFigures/piecewisecircular.*
    :width: 50%
    :align: center
 
@@ -286,7 +286,7 @@ we see accumulating drift when comparing the robot’s true path and the
 approximated one.
 
 
-.. figure:: SimulationFigures/piecewiseconst.svg
+.. figure:: SimulationFigures/piecewiseconst.*
    :width: 50%
    :align: center
 
@@ -387,7 +387,7 @@ The direction of the robot is the direction of the curve shown in
 Figure \ `[intro-tangent] <#intro-tangent>`__.
 
 
-.. figure:: SimulationFigures/tantheta.svg
+.. figure:: SimulationFigures/tantheta.*
    :width: 60%
    :align: center
 
@@ -554,13 +554,13 @@ And the section of code to check:
     plt.show()
 
 
-.. figure:: SimulationFigures/quadpolyphis.svg
+.. figure:: SimulationFigures/quadpolyphis.*
    :width: 60%
    :align: center
 
    The wheel velocities. [quadraticpathexample2]
 
-.. figure:: SimulationFigures/quadpoly1.svg
+.. figure:: SimulationFigures/quadpoly1.*
    :width: 60%
    :align:  center
 

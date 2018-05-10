@@ -34,7 +34,7 @@ distributions (vector valued random variables) we can exend to
 where :math:`\mu` - mean vector, :math:`\Sigma` - covariance matrix
 (symmetric positive definite).
 
-.. figure:: MathFigures/pdf.svg
+.. figure:: MathFigures/pdf.*
    :width: 70%
    :align: center
 

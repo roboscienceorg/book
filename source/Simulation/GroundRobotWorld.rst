@@ -41,25 +41,25 @@ maps. [One handy way to accomplish this task is to use a paint program
 (or image editing tool) which can export the image into a format that is
 easy to read. ]
 
-.. figure:: SimulationFigures/envrep.svg
+.. figure:: SimulationFigures/envrep.*
    :width: 50%
    :align: center
 
    How one should represent the environment.[fig:enviromodel]
 
-.. figure:: SimulationFigures/metricmap.svg
+.. figure:: SimulationFigures/metricmap.*
    :width: 50%
    :align: center
 
    Continuous environmental representation.[fig:metricmap]
 
-.. figure:: SimulationFigures/discretemap.svg
+.. figure:: SimulationFigures/discretemap.*
    :width: 50%
    :align: center
 
    Discrete environmental representation. [fig:discretemap]
 
-.. figure:: SimulationFigures/topomap.svg
+.. figure:: SimulationFigures/topomap.*
    :width: 50%
    :align: center
 
@@ -145,7 +145,7 @@ straightforward:
 
 Where center is a list and r is the radius.  [3]_
 
-.. figure:: SimulationFigures/collision.svg
+.. figure:: SimulationFigures/collision.*
    :width: 50%
    :align: center
 
@@ -161,7 +161,7 @@ this example, they will be contact or touch sensors, but in experimental
 units often low cost ultrasonic ranging sensors would be used.
 
 
-.. figure:: SimulationFigures/turtlesensors.svg
+.. figure:: SimulationFigures/turtlesensors.*
    :width: 50%
    :align: center
 
@@ -178,20 +178,20 @@ Figure \ `[turtleboundary] <#turtleboundary>`__ shows. Being able to
 estimate the boundary means that a robot can follow the boundary. The
 tangent to the boundary is required for this task.
 
-.. figure:: SimulationFigures/turtlecollide2.svg
+.. figure:: SimulationFigures/turtlecollide2.*
    :width: 50%
    :align: center
 
    Estimating the object boundary.
 
-.. figure:: SimulationFigures/turtlecollide3.svg
+.. figure:: SimulationFigures/turtlecollide3.*
    :width: 50%
    :align: center
 
    Bump sensors can only determine
    the nature of the boundary at the contact location.
 
-.. figure:: SimulationFigures/tangent.svg
+.. figure:: SimulationFigures/tangent.*
    :width: 50%
    :align: center
 
@@ -220,7 +220,7 @@ planner presented assumes that the robot has a ranging device. The
 simplest to model is the LIDAR.
 
 
-.. figure:: SimulationFigures/discretemap2.svg
+.. figure:: SimulationFigures/discretemap2.*
    :width: 50%
    :align: center
 
@@ -273,7 +273,7 @@ circumference is :math:`2\pi R`. If a pixel is :math:`1^2` units, then
 we select :math:`\Delta\theta \approx 1/(2\pi R)` (or slightly smaller).
 
 
-.. figure:: SimulationFigures/lidarinc.svg
+.. figure:: SimulationFigures/lidarinc.*
    :width: 50%
    :align: center
 

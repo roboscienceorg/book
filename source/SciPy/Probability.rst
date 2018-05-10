@@ -41,7 +41,7 @@ Figure \ `[fig:samplenoisylineplot] <#fig:samplenoisylineplot>`__.
     plt.show()
 
 
-.. figure:: SciPyFigures/randomvals.svg
+.. figure:: SciPyFigures/randomvals.*
    :width: 95%
    :align: center
 

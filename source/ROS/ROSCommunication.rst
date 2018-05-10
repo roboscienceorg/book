@@ -91,7 +91,7 @@ line has our node subscribe to the “chatter” topic and lists the
 callback function.
 
 
-.. figure:: ROSFigures/pubsub1.svg
+.. figure:: ROSFigures/pubsub1.*
    :width: 40%
    :align: center
 
@@ -161,7 +161,7 @@ Next we create a new program. Create a new terminal window and enter:
     rospy.init_node('listener2', anonymous=True)
     rospy.Subscriber("chatter2", String, callback)
 
-.. figure:: ROSFigures/pubsub2.svg
+.. figure:: ROSFigures/pubsub2.*
    :width: 40%
    :align: center
 
@@ -197,7 +197,7 @@ Then on the talker type:
 
     pub3.publish(42)
 
-.. figure:: ROSFigures/pubsub3.svg
+.. figure:: ROSFigures/pubsub3.*
    :width: 40%
    :align: center
 
@@ -392,7 +392,7 @@ Listings \ `[lst:publishercode] <#lst:publishercode>`__, \ `[lst:subscribercod
     rospy.spin()
 
 
-.. figure:: ROSFigures/pubsubprog.svg
+.. figure:: ROSFigures/pubsubprog.*
    :width: 40%
    :align: center
 
@@ -569,7 +569,7 @@ Listing \ `[lst:checkinversekinematics] <#lst:checkinversekinematics>`__.
 
 
 
-.. figure:: ROSFigures/twolinkrosexample.svg
+.. figure:: ROSFigures/twolinkrosexample.*
    :width: 75%
    :align: center
 

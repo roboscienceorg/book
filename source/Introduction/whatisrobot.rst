@@ -2,7 +2,7 @@ What exactly is a robot?
 ------------------------
 
 .. These images are in the public domain  (Honda_ASIMO.jpg & Foundry_robot.jpg)
-.. figure:: IntroductionFigures/honda-foundry.png
+.. figure:: IntroductionFigures/honda-foundry.*
    :width:  90%
    :align: center
 
@@ -29,7 +29,7 @@ not resemble human beings in appearance or perform functions in a
 humanlike manner*.
 
 .. These images are in the public domain  (Repliee_Q2.jpg & ATHLETE.jpg)
-.. figure:: IntroductionFigures/repliee-athlete.png
+.. figure:: IntroductionFigures/repliee-athlete.*
    :width:  90%
    :align: center
 
@@ -52,7 +52,7 @@ technologies and medicine to entertainment, from research to education,
 and much more.
 
 .. These images are in the public domain  (Roomba_Discovery.jpg & drill_bot2.jpg)
-.. figure:: IntroductionFigures/roomba-drill.png
+.. figure:: IntroductionFigures/roomba-drill.*
    :width:  90%
    :align: center
 
@@ -68,7 +68,7 @@ that environment. Most of us may expect that the robot performs this
 interaction through movement and sensation.
 
 .. These images are in the public domain  (KeeponTophatNextfest2007.jpg & IED_detonator.jpg)
-.. figure:: IntroductionFigures/keepon-ied.png
+.. figure:: IntroductionFigures/keepon-ied.*
    :width:  90%
    :align: center
 
@@ -97,7 +97,7 @@ We can boil down our notion of robot abilities to three things:
     manipulator.
 
 .. These images are in the public domain  (Laproscopic_Surgery_Robot.jpg &  PR2_Tabletop.jpg)
-.. figure:: IntroductionFigures/davinci-pr2.png
+.. figure:: IntroductionFigures/davinci-pr2.*
    :width:  90%
    :align: center
 
@@ -128,7 +128,7 @@ time, we get accustomed to it, and the magic gets replaced with
 expectation.
 
 .. These images are in the public domain  (Beam_telepresence_robot.jpg & ROV_working_on_a_subsea_structure.jpg)
-.. figure:: IntroductionFigures/beam-rov.png
+.. figure:: IntroductionFigures/beam-rov.*
    :width:  90%
    :align: center
 
@@ -149,7 +149,7 @@ we will consider robotics.
 
 
 .. These images are in the public domain (Justus_robot_in_Krakow_Poland_Aug2009.jpg & Rhex.jpg)
-.. figure:: IntroductionFigures/justus-rhex.png
+.. figure:: IntroductionFigures/justus-rhex.*
    :width: 90%
    :align: center
 
@@ -179,7 +179,7 @@ In ancient Greece, an orrery known as the Antikythera Mechanism is
 developed. This device is credited as being the first analog computer.
 
 .. This image is under creative commons.
-.. figure:: IntroductionFigures/antikytheramachine.jpg
+.. figure:: IntroductionFigures/antikytheramachine.*
    :width: 40%
    :align: center
 
@@ -213,7 +213,7 @@ percussion. The drummer could be made to play different rhythms and
 different drum patterns by moving the pegs to different locations.[8]
 
 .. This figure is public domain.
-.. figure:: IntroductionFigures/Al-Jazari.jpg
+.. figure:: IntroductionFigures/Al-Jazari.*
    :width: 40%
    :align: center
 
@@ -360,7 +360,7 @@ Items are hyperlinked to web pages.
 
 -  `Watch Flying Robots Build a 6-Meter
    Tower. <http://spectrum.ieee.org/automaton/robotics/diy/video-watch-flying-robots-build-a-6-meter-tower>`__
-   
+
 
 
 

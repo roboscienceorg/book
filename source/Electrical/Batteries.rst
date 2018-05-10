@@ -27,9 +27,6 @@ rechargeable batteries: Lead-Acid, Nickel Metal Hydride (NiMH), Lithium
 Polymer (LiPo). Lead-Acid is the type found in automobile, boat,
 motorcycle batteries.
 
-.. raw:: latex
-
-   \centering
 
 |a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol. [leadacidlipo]|
 |a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol. [leadacidlipo]|

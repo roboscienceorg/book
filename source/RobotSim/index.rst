@@ -17,12 +17,10 @@ downloaded and built. There are other ways the robot can be driven
 around which we demonstrate in this section; using either a multiarray
 message or the twist message that contains kinematic parameters.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sim/stdr_gui
-   :alt: STDR Simulator.[fig:stdr_sim]
+.. figure:: sim/stdr_gui.*
+   :width: 70%
+   :align: center
 
    STDR Simulator.[fig:stdr_sim]
 
@@ -36,12 +34,10 @@ robot velocities. It will perform the time steps (integrations) to move
 the robot. It is important that the user provides accurate velocity
 commands based on the wheels and vehicle design.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sim/stdr_basic
-   :alt: STDR Communications [fig:stdr_basic]
+.. figure:: sim/stdr_basic.*
+   :width: 70%
+   :align: center
 
    STDR Communications [fig:stdr_basic]
 
@@ -89,13 +85,10 @@ Figure \ `[fig:stdr_basic] <#fig:stdr_basic>`__ implies since the STDR
 node is really a placeholder for the graph shown in
 Figure \ `[fig:stdr_node_graph] <#fig:stdr_node_graph>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sim/stdr_node_graph
-   :alt: Nodes running after STDR Simulator launch but before you launch
-   your control code.[fig:stdr_node_graph]
+.. figure:: sim/stdr_node_graph.*
+   :width: 70%
+   :align: center
 
    Nodes running after STDR Simulator launch but before you launch your
    control code.[fig:stdr_node_graph]
@@ -106,11 +99,8 @@ hood for the simulator. While getting started you will not need to
 interact with these topics, but later when we are working with sensors,
 you will need to subscribe to some of the sensor topics.
 
-.. raw:: latex
 
-   \vspace*{-5mm}
 
-2
 
 ::
 
@@ -134,7 +124,7 @@ you will need to subscribe to some of the sensor topics.
     /stdr_server/delete_robot/feedback
     /stdr_server/delete_robot/goal
 
-| 
+|
 
 ::
 
@@ -157,9 +147,6 @@ you will need to subscribe to some of the sensor topics.
     /tf
     /tf_static
 
-.. raw:: latex
-
-   \vspace*{-2mm}
 
 Driving the Robot - ROS STDR Messages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -190,7 +177,7 @@ the use of parenthesis instead of brackets.
 ::
 
     >>> # tuple
-    ... 
+    ...
     >>> a = (1,2,3)
     >>> a[0]
     1
@@ -200,7 +187,7 @@ the use of parenthesis instead of brackets.
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     TypeError: 'tuple' object does not support item assignment
-    >>> 
+    >>>
 
 ::
 
@@ -210,9 +197,9 @@ the use of parenthesis instead of brackets.
     from std_msgs.msg import Float64MultiArray
     from std_msgs.msg import MultiArrayLayout
     from std_msgs.msg import MultiArrayDimension
-    r = 2.0 
-    l = 3.0 
-    def talker(w1, w2, r, l): 
+    r = 2.0
+    l = 3.0
+    def talker(w1, w2, r, l):
         pub = rospy.Publisher('kinematic_params', Float64MultiArray, queue_size=1)
         rospy.init_node('talker', anonymous=True)
         rate = rospy.Rate(10) # 10hz
@@ -223,8 +210,8 @@ the use of parenthesis instead of brackets.
             data.layout = MultiArrayLayout()
             data.layout.dim = [MultiArrayDimension()]
             data.layout.dim[0].label = "Parameters"
-            data.layout.dim[0].size = 4 
-            data.layout.dim[0].stride = 1 
+            data.layout.dim[0].size = 4
+            data.layout.dim[0].stride = 1
             data.data = [w1,w2,r,l]
             pub.publish(data)
             rate.sleep()

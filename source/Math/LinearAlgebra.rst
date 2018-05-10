@@ -53,7 +53,7 @@ not. A vector space must include the zero element and the dotted line
 does not.
 
 
-.. figure:: MathFigures/lines.svg
+.. figure:: MathFigures/lines.*
    :width: 40%
    :align: center
 
@@ -202,7 +202,7 @@ where
 
 
 
-.. figure:: MathFigures/vrect.svg
+.. figure:: MathFigures/vrect.*
    :width: 20%
    :align: center
 
@@ -317,7 +317,7 @@ and so has the structure shown in
 Figure \ `[Fig:underdetermined] <#Fig:underdetermined>`__.
 
 
-.. figure:: MathFigures/hrect.svg
+.. figure:: MathFigures/hrect.*
    :width:  20%
    :align: center
 
@@ -415,11 +415,14 @@ quadratic equation. Assume the data is contained in a file named
     2.719074  1.723766
     2.853608  1.898702
 
+.. figure:: MathFigures/quadpts.*
+   :width:  50%
+   :align: center
 
 
-| Assume that the model for the data is :math:`y = a_2x^2 + a_1x +a_0`.
-  Find :math:`a_2, a_1, a_0`. Note that the system arises:
-|
+Assume that the model for the data is :math:`y = a_2x^2 + a_1x +a_0`.
+Find :math:`a_2, a_1, a_0`. Note that the system arises:
+
 
   .. math::
 
@@ -485,8 +488,9 @@ The Normal Equations can be formed
    \vdots
    \end{bmatrix}
 
-| One can solve :math:`X^TX a = X^T y`: :math:`a = (X^TX)^{-1} X^T y`
-|
+
+One can solve :math:`X^TX a = X^T y`: :math:`a = (X^TX)^{-1} X^T y`
+
 
   .. math::
 
@@ -517,7 +521,7 @@ The curve is approximately :math:`y = 0.49x^2 - 1.21x + 1.42`,
 Figure \ `[plot:quadgraph] <#plot:quadgraph>`__.
 
 
-.. figure:: MathFigures/quadgraph.svg
+.. figure:: MathFigures/quadgraph.*
    :width: 70%
    :align: center
 
@@ -610,7 +614,7 @@ weight function weights more heavily towards the origin (using
 sum of the weights is one.
 
 .. Owned by Roboscience
-.. figure:: MathFigures/weightedleastsquaredata.svg
+.. figure:: MathFigures/weightedleastsquaredata.*
    :width: 70%
    :align: center
 
@@ -618,7 +622,7 @@ sum of the weights is one.
 
 
 .. Owned by Roboscience
-.. figure:: MathFigures/weightedleastsquareplot.svg
+.. figure:: MathFigures/weightedleastsquareplot.*
    :width: 70%
    :align: center
 

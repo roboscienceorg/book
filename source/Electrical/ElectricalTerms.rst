@@ -26,7 +26,7 @@ Figure \ `[fundamentalcomponents] <#fundamentalcomponents>`__.
    Resistor (Ohms): resists the current flow, :math:`V = iR` (think of a narrowing in a pipe).
 
 .. figure:: ElectricalFigures/resistor.*
-   :width: 20%
+   :width: 15%
    :align: center
 
    Resistor circuit diagram.
@@ -39,7 +39,7 @@ Figure \ `[fundamentalcomponents] <#fundamentalcomponents>`__.
    :math:`i = \displaystyle C\frac{dV}{dt}` (think of a storage tank).
 
 .. figure:: ElectricalFigures/capacitor.*
-   :width: 20%
+   :width: 15%
    :align: center
 
    Capacitor circuit diagram
@@ -53,12 +53,11 @@ Figure \ `[fundamentalcomponents] <#fundamentalcomponents>`__.
    pipe.)
 
 .. figure:: ElectricalFigures/inductor.*
-   :width: 20%
+   :width: 15%
    :align: center
 
    Inductor circuit diagram.
 
-..
 
 The fundamental law in circuits is Ohm’s Law,
 Figure \ `[circuitsohmslaw] <#circuitsohmslaw>`__:
@@ -75,11 +74,25 @@ Ohms.
    Ohms Law. Note the direction of current flow is the opposite electron
    flow.[circuitsohmslaw]|
 
+.. figure:: ElectricalFigures/ohms-law-illustrated.*
+   :width: 30%
+   :align: center
+
 Current flow can be in one direction or vary in direction. These are
 known as direct current (DC) and alternating current (AC).
 
-|[circuitcurrent] Direct and alternating current.| |[circuitcurrent]
-Direct and alternating current.|
+.. figure:: ElectricalFigures/dc.*
+   :width: 60%
+   :align: center
+
+   Direct current.
+
+.. figure:: ElectricalFigures/ac.*
+   :width: 60%
+   :align: center
+
+   Alternating current.
+
 
 Electronic devices run on direct current and this is the type of power
 delivered by batteries. Large scale power distribution is most
@@ -92,7 +105,15 @@ approach is used. A device called a diode has the property that it
 allows current to flow one way, in essence it is an electrical one way
 valve, Figure \ `[circuitdiode] <#circuitdiode>`__.
 
-|Diode.[circuitdiode]| |Diode.[circuitdiode]|
+.. figure:: ElectricalFigures/diode.*
+   :width: 30%
+   :align: center
+
+   Diode.[circuitdiode]
+
+.. figure:: ElectricalFigures/diode-rect.*
+   :width: 50%
+   :align: center
 
 A clever connection of four diodes known as a diode bridge reroutes
 current so that it flows in one direction only (will still vary, but at
@@ -101,10 +122,16 @@ Figure \ `[circuitdiodebridge] <#circuitdiodebridge>`__. This bridge can
 also be used to protect inputs to electronic devices in case positive
 and negative lines get reversed.
 
-|[circuitdiodebridge] A combination of diodes known as a bridge to
-convert alternating current into positive current.|
-|[circuitdiodebridge] A combination of diodes known as a bridge to
-convert alternating current into positive current.|
+.. figure:: ElectricalFigures/diodebridge.*
+   :width: 50%
+   :align: center
+
+   [circuitdiodebridge] A combination of diodes known as a bridge to
+   convert alternating current into positive current.
+
+.. figure:: ElectricalFigures/acdc.*
+   :width: 30%
+   :align: center
 
 The current headed out of the diode bridge flows in one direction, but
 the voltage is still fluctuating. Another device is employed, a
@@ -114,8 +141,9 @@ out stream flow. These basic circuit devices are used in a common
 household circuits such as a power supply,
 Figure \ `[powersupply] <#powersupply>`__.
 
-.. figure:: circuit/power1
-   :alt: The power supply circuit.[powersupply]
+.. figure:: ElectricalFigures/power1.*
+   :width: 70%
+   :align: center
 
    The power supply circuit.[powersupply]
 

@@ -24,7 +24,7 @@ can easily plot a regular function via
 
 
 .. Owned by Roboscience
-.. figure:: SciPyFigures/plot.svg
+.. figure:: SciPyFigures/plot.*
    :width: 90%
    :align: center
 
@@ -112,7 +112,7 @@ See Figure \ `[cubicsplinefigure] <#cubicsplinefigure>`__ for a plot.
     plt.show()
 
 
-.. figure:: SciPyFigures/cubicspline.svg
+.. figure:: SciPyFigures/cubicspline.*
    :width: 70%
    :align: center
 
@@ -189,7 +189,7 @@ how to extract eigenvalues and plot an ellipse.
     plt.show()
 
 
-.. figure:: SciPyFigures/Ellipse.svg
+.. figure:: SciPyFigures/Ellipse.*
    :width: 70%
    :align: center
 

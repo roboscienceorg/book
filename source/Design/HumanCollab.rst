@@ -194,7 +194,7 @@ approaches lifelike accuracy. All cultures (that the author is aware of)
 exhibit this, but varies greatly in the exact boundary of their limits.
 
 
-.. figure:: DesignFigures/uncanny.svg
+.. figure:: DesignFigures/uncanny.*
    :width: 70%
    :align: center
 
