@@ -41,51 +41,27 @@ maps. [One handy way to accomplish this task is to use a paint program
 (or image editing tool) which can export the image into a format that is
 easy to read. ]
 
-.. raw:: latex
-
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: planning/envrep
-   :alt: How one should represent the environment.[fig:enviromodel]
+.. figure:: SimulationFigures/envrep.svg
+   :width: 50%
+   :align: center
 
    How one should represent the environment.[fig:enviromodel]
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: slam/metricmap
-   :alt: Continuous environmental representation.[fig:metricmap]
+.. figure:: SimulationFigures/metricmap.svg
+   :width: 50%
+   :align: center
 
    Continuous environmental representation.[fig:metricmap]
 
-.. raw:: latex
-
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: slam/discretemap
-   :alt: Discrete environmental representation. [fig:discretemap]
+.. figure:: SimulationFigures/discretemap.svg
+   :width: 50%
+   :align: center
 
    Discrete environmental representation. [fig:discretemap]
 
-.. raw:: latex
-
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: slam/topomap
-   :alt: Topological representation. [fig:topomap]
+.. figure:: SimulationFigures/topomap.svg
+   :width: 50%
+   :align: center
 
    Topological representation. [fig:topomap]
 
@@ -169,12 +145,9 @@ straightforward:
 
 Where center is a list and r is the radius.  [3]_
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: turtle/collision
-   :alt: Collision detection with circular robots. [circlecollide]
+.. figure:: SimulationFigures/collision.svg
+   :width: 50%
+   :align: center
 
    Collision detection with circular robots. [circlecollide]
 
@@ -187,13 +160,10 @@ body of the robot, Figure \ `[turtlesensors] <#turtlesensors>`__. For
 this example, they will be contact or touch sensors, but in experimental
 units often low cost ultrasonic ranging sensors would be used.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: turtle/turtlesensors
-   :alt: A circular robot (like a Create) with touch sensors mounted
-   around the body. [turtlesensors]
+.. figure:: SimulationFigures/turtlesensors.svg
+   :width: 50%
+   :align: center
 
    A circular robot (like a Create) with touch sensors mounted around
    the body. [turtlesensors]
@@ -208,19 +178,25 @@ Figure \ `[turtleboundary] <#turtleboundary>`__ shows. Being able to
 estimate the boundary means that a robot can follow the boundary. The
 tangent to the boundary is required for this task.
 
-.. raw:: latex
+.. figure:: SimulationFigures/turtlecollide2.svg
+   :width: 50%
+   :align: center
 
-   \centering
+   Estimating the object boundary.
 
-|a) Estimating the object boundary. b) Bump sensors can only determine
-the nature of the boundary at the contact location. c) Using touch
-sensors to estimate the boundary normal and tangent. [turtleboundary]|
-|a) Estimating the object boundary. b) Bump sensors can only determine
-the nature of the boundary at the contact location. c) Using touch
-sensors to estimate the boundary normal and tangent. [turtleboundary]|
-|a) Estimating the object boundary. b) Bump sensors can only determine
-the nature of the boundary at the contact location. c) Using touch
-sensors to estimate the boundary normal and tangent. [turtleboundary]|
+.. figure:: SimulationFigures/turtlecollide3.svg
+   :width: 50%
+   :align: center
+
+   Bump sensors can only determine
+   the nature of the boundary at the contact location.
+
+.. figure:: SimulationFigures/tangent.svg
+   :width: 50%
+   :align: center
+
+   Using touch sensors to estimate the boundary normal and tangent. [turtleboundary]|
+
 
 Using the normal vector, :math:`\hat{n} = <n_1, n_2>`, the tangent to
 the boundary is computed via
@@ -243,12 +219,10 @@ sensors shown. One is a LIDAR and the other is a Kinect. The next simple
 planner presented assumes that the robot has a ranging device. The
 simplest to model is the LIDAR.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: slam/discretemap2
-   :alt: Discrete object map.[discreteobjmap]
+.. figure:: SimulationFigures/discretemap2.svg
+   :width: 50%
+   :align: center
 
    Discrete object map.[discreteobjmap]
 
@@ -298,14 +272,10 @@ see Figure \ `[inscribedcircle] <#inscribedcircle>`__ (b).The
 circumference is :math:`2\pi R`. If a pixel is :math:`1^2` units, then
 we select :math:`\Delta\theta \approx 1/(2\pi R)` (or slightly smaller).
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: path/lidarinc
-   :alt: Laser angle increments. (a) The first is too small and we
-   resample the same pixel. (b) The second increment is too large and we
-   miss pixels. [inscribedcircle]
+.. figure:: SimulationFigures/lidarinc.svg
+   :width: 50%
+   :align: center
 
    Laser angle increments. (a) The first is too small and we resample
    the same pixel. (b) The second increment is too large and we miss

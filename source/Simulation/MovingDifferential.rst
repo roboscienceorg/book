@@ -20,6 +20,7 @@ Figure \ `[ddriveRecalled] <#ddriveRecalled>`__.
 
 .. figure:: SimulationFigures/ddrive.svg
    :width: 30%
+   :align: center
 
    Simple differential drive robot. [ddriveRecalled]
 
@@ -99,7 +100,7 @@ so,
    \theta = \theta_0 .
    \end{array}
 
- And when :math:`\omega_1 = -\omega_2 = \omega`, we have :math:`dx/dt=0`
+And when :math:`\omega_1 = -\omega_2 = \omega`, we have :math:`dx/dt=0`
 and :math:`dy/dt=0`, so
 
 .. math::
@@ -120,7 +121,7 @@ Figure \ `[fig:piecewisecirculararcs] <#fig:piecewisecirculararcs>`__
 shows a sample path.
 
 
-.. figure:: sim/piecewisecircular
+.. figure:: SimulationFigures/piecewisecircular.svg
    :width: 50%
    :align: center
 
@@ -172,11 +173,11 @@ of time and one denotes a sequence.
 
 .. math:: t_k \equiv k\Delta t, \quad t_{k+1} = (k+1)\Delta t
 
-.. math:: x_k \equiv x(t_k), \hspace*{1cm} y_k \equiv y(t_k)
+.. math:: x_k \equiv x(t_k), ~~~ y_k \equiv y(t_k)
 
 .. math::
 
-   \omega_{1, k}\equiv \dot{\phi}_{1}(t_k), \hspace*{1cm}
+   \omega_{1, k}\equiv \dot{\phi}_{1}(t_k), ~~~
    \omega_{2, k}\equiv \dot{\phi}_{2}(t_k)
 
 Recall that if :math:`x` is position then :math:`\dot{x}=dx/dt` is
@@ -228,7 +229,7 @@ following difference equations:
    \theta_{k+1} = \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k})
    \end{array}
 
- These equations are the main model for approximating motion of a
+These equations are the main model for approximating motion of a
 differential drive robot. It has also been used as a first approximation
 for a tractor or tank drive system. This function is easily coded into
 Python:
@@ -385,13 +386,10 @@ Solving for :math:`\dot{\phi_2}` and then plugging back in for
 The direction of the robot is the direction of the curve shown in
 Figure \ `[intro-tangent] <#intro-tangent>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/tantheta
-   :alt: The relation between :math:`\theta` and :math:`\dot{x}`,
-   :math:`\dot{y}`. [intro-tangent]
+.. figure:: SimulationFigures/tantheta.svg
+   :width: 60%
+   :align: center
 
    The relation between :math:`\theta` and :math:`\dot{x}`,
    :math:`\dot{y}`. [intro-tangent]
@@ -555,17 +553,16 @@ And the section of code to check:
     plt.title('Path')
     plt.show()
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/quadpolyphis
-   :alt: The wheel velocities. [quadraticpathexample2]
+.. figure:: SimulationFigures/quadpolyphis.svg
+   :width: 60%
+   :align: center
 
    The wheel velocities. [quadraticpathexample2]
 
-.. figure:: motion/quadpoly1
-   :alt: Comparison of the path and driven path.[quadraticpathexample3]
+.. figure:: SimulationFigures/quadpoly1.svg
+   :width: 60%
+   :align:  center
 
    Comparison of the path and driven path.[quadraticpathexample3]
 

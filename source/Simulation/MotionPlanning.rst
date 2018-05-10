@@ -19,29 +19,17 @@ Figure \ `[fig:simplecurvedpath] <#fig:simplecurvedpath>`__. Then is is
 just a matter of starting with the correct orientation and driving for a
 given amount of time.
 
-.. raw:: latex
 
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: sim/simplepath.pdf
-   :alt: [fig:simplecurvedpath] Path with arcs
+.. figure:: SimulationFigures/simplepath.svg
+   :width: 50%
+   :align: center
 
    [fig:simplecurvedpath] Path with arcs
 
-.. raw:: latex
 
-   \hfill
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: sim/simplestraightpath.pdf
-   :alt: [fig:simplecurvedpath] Path without arcs
+.. figure:: SimulationFigures/simplestraightpath.svg
+   :width: 50%
+   :align: center
 
    [fig:simplecurvedpath] Path without arcs
 
@@ -63,7 +51,7 @@ tall boxes. Also pretend that you can hear a phone ringing and you can
 tell what direction it is. How would you navigate to the phone? Figuring
 that I can feel my way, I would start walking towards the phone. I keep
 going as long as there are no obstructions in my way. When I meet an
-obstacle, without sight I can’t make any sophisticated routing
+obstacle, without sight (or a map) I can’t make any sophisticated routing
 decisions. So, I decide to turn right a bit and head that way. If that
 is blocked, then I turn right a bit again. I can continue turning right
 until the path is clear. Now I should take a few steps in this direction
@@ -74,21 +62,17 @@ obstacle and so I just repeat my simple obstacle avoidance approach.
 Set heading towards goal Move forward count = 0 Turn right Move forward
 incr count Set heading towards goal
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: turtle/turtleobs
-   :alt: The direct path to the goal.[turtlebasicmotion_a]
+.. figure:: SimulationFigures/turtleobs.svg
+   :width: 50%
+   :align: center
 
    The direct path to the goal.[turtlebasicmotion_a]
 
-.. raw:: latex
 
-   \hfill
-
-.. figure:: turtle/turtleobs2
-   :alt: Path using the Basic Motion algorithm.[turtlebasicmotion_b]
+.. figure:: SimulationFigures/turtleobs2.svg
+   :width: 50%
+   :align: center
 
    Path using the Basic Motion algorithm.[turtlebasicmotion_b]
 
@@ -117,23 +101,15 @@ cases.
 
    \centering
 
-.. figure:: planning/simple1
-   :alt: Getting trapped in a non-convex solid
-   object.[simple1motionproblem]
+.. figure:: SimulationFigures/simple1.svg
+   :width: 50%
+   :align: center
 
    Getting trapped in a non-convex solid object.[simple1motionproblem]
 
-.. raw:: latex
-
-   \hfill
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: planning/simple2
-   :alt: A collection of convex objects can mimic a non-convex obstacle.
-   [simple2motionproblem]
+.. figure:: SimulationFigures/simple2.svg
+   :width: 50%
+   :align: center
 
    A collection of convex objects can mimic a non-convex obstacle.
    [simple2motionproblem]
@@ -145,7 +121,3 @@ approaches are needed. Before we jump into motion planning, we want to
 understand what view of the world we can get from sensors. This is
 necessary so we know what kind of assumptions can be made when
 developing our algorithms.
-
-.. raw:: latex
-
-   \FloatBarrier

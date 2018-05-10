@@ -1,7 +1,12 @@
 Electrical Terms
 ----------------
 
-**Voltage** is the electrical pressure. If we use a water pipe as an
+In this section, review the concepts of voltage, current and resistance,
+as well as some of the basic components.   We begin with a common analogy
+relating the flow of electricity to water flow.  This analogy is probably
+over used and has its limitations, but it does help in getting started.
+**Voltage** is the electrical pressure in the circuit.
+If we use a water pipe as an
 analogy, you can think of water pressure in the pipe as the voltage. The
 electrical pressure is measured in Volts. The symbol used in computation
 is :math:`v`. **Current** is the flow of electrons along a conductor.
@@ -14,30 +19,61 @@ and Watts = Volts \* Amps. About 770 Watts makes up one horsepower. The
 fundamental components are given in
 Figure \ `[fundamentalcomponents] <#fundamentalcomponents>`__.
 
-| Resistor (Ohms): resists the current flow, :math:`V = iR` (think of a
-  narrowing in a pipe)
-| |Resistors.[fig:resistors]| |Resistors.[fig:resistors]|.
+.. figure:: ElectricalFigures/Resistor.jpg
+   :width: 20%
+   :align: center
 
-| Capacitor (Farads): stores energy in an electrical field,
-  :math:`i = \displaystyle C\frac{dV}{dt}` (think of a storage tank)
-| |Capacitors.[fig:capacitors]| |Capacitors.[fig:capacitors]|
+   Resistor (Ohms): resists the current flow, :math:`V = iR` (think of a narrowing in a pipe).
 
-| Inductor (Henrys): stores energy in a magnetic field,
-  :math:`V = \displaystyle L\frac{di}{dt}` (think of a flywheel in the
-  pipe.)
-| |Inductos.[fig:inductors]| |Inductos.[fig:inductors]|
+.. figure:: ElectricalFigures/resistor.*
+   :width: 20%
+   :align: center
+
+   Resistor circuit diagram.
+
+.. figure:: ElectricalFigures/Capacitor.jpg
+   :width: 20%
+   :align: center
+
+   Capacitor (Farads): stores energy in an electrical field,
+   :math:`i = \displaystyle C\frac{dV}{dt}` (think of a storage tank).
+
+.. figure:: ElectricalFigures/capacitor.*
+   :width: 20%
+   :align: center
+
+   Capacitor circuit diagram
+
+.. figure:: ElectricalFigures/Inductor.jpg
+   :width: 20%
+   :align: center
+
+   Inductor (Henrys): stores energy in a magnetic field,
+   :math:`V = \displaystyle L\frac{di}{dt}` (think of a flywheel in the
+   pipe.)
+
+.. figure:: ElectricalFigures/inductor.*
+   :width: 20%
+   :align: center
+
+   Inductor circuit diagram.
+
+..
 
 The fundamental law in circuits is Ohm’s Law,
 Figure \ `[circuitsohmslaw] <#circuitsohmslaw>`__:
 
 .. math:: V = iR
 
- where :math:`V` is in volts, :math:`i` is in amps, :math:`R` is in
+where :math:`V` is in volts, :math:`i` is in amps, :math:`R` is in
 Ohms.
 
-|Ohms Law. Note the direction of current flow is the opposite electron
-flow.[circuitsohmslaw]| |Ohms Law. Note the direction of current flow is
-the opposite electron flow.[circuitsohmslaw]|
+.. figure:: ElectricalFigures/Ohms.*
+   :width: 20%
+   :align: center
+
+   Ohms Law. Note the direction of current flow is the opposite electron
+   flow.[circuitsohmslaw]|
 
 Current flow can be in one direction or vary in direction. These are
 known as direct current (DC) and alternating current (AC).

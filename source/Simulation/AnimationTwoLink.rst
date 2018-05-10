@@ -100,16 +100,16 @@ simulation program, we use the inverse kinematics node as before
        pub.publish(locs)
 
 
- .. figure:: SimulationFigures/twolinkcoarseexample.png
-    :width: 60%
-    :align: center
+.. figure:: SimulationFigures/twolinkcoarseexample.png
+   :width: 60%
+   :align: center
 
     Movement between the points - moving both linearly.
 
 
- .. figure:: SimulationFigures/twolinkcoarseexample2.png
-    :width: 60%
-    :align: center
+.. figure:: SimulationFigures/twolinkcoarseexample2.png
+   :width: 60%
+   :align: center
 
     Movement between the points - moving the servos sequentially. [Fig:twolinkcoarseexample]|
 
