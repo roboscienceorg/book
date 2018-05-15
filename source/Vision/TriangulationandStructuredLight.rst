@@ -14,12 +14,10 @@ dot indicates distance of the dot. If the size of object is known, then
 triangulation can be done without projecting light. Standard computer
 vision techniques can recover relative image size.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/lasertriangulation
-   :alt: Laser Triangulation.[lasertriangulation]
+.. figure:: VisionFigures/lasertriangulation.*
+   :width: 70%
+   :align: center
 
    Laser Triangulation.[lasertriangulation]
 
@@ -84,8 +82,8 @@ estimate for :math:`D`. Using :math:`\Delta L = \pm 0.3`,
 
 .. math::
 
-   E  = \frac{L}{x} \Delta f +  \frac{f}{x} \Delta L - \frac{fL}{x^2} \Delta x  
-       = \frac{3}{0.2} (0) +  \frac{0.8}{0.2} (\pm 0.3) - \frac{(0.8)(3)}{(0.2)^2}(\pm 0.04)  
+   E  = \frac{L}{x} \Delta f +  \frac{f}{x} \Delta L - \frac{fL}{x^2} \Delta x
+       = \frac{3}{0.2} (0) +  \frac{0.8}{0.2} (\pm 0.3) - \frac{(0.8)(3)}{(0.2)^2}(\pm 0.04)
        = \pm 3.6
 
 This estimates an error of 25%. This turns out to be not so accurate. A
@@ -112,12 +110,10 @@ Move the :math:`x` over:
 
 From the first ratio: :math:`z = \cfrac{fx}{u}`.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/lasertriangulation2
-   :alt: Computer Vision[fig:lasertriangulation2]
+.. figure:: VisionFigures/lasertriangulation2.*
+   :width: 70%
+   :align: center
 
    Computer Vision[fig:lasertriangulation2]
 
@@ -149,7 +145,7 @@ What are :math:`x` and :math:`z` if b = 20cm, f = 2cm, :math:`\alpha` =
 
 .. math:: x = 20*0.7/(2\cot(60)+0.7) = 7.55 cm,
 
-\ 
+\
 
 .. math::
 
@@ -171,17 +167,15 @@ to digital converter can be used to provide the numerical value. In
 practice, the relation between voltage and distance is not linear and
 some calibration in software is required.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: sensor/sharpIR
-   :alt: Sensor package.
+.. figure:: VisionFigures/sharpIR.jpg
+   :width: 30%
+   :align: center
 
    Sensor package.
 
-.. figure:: sensor/sharp
-   :alt: The triangulation used to calculate distance
+.. figure:: VisionFigures/sharp.*
+   :width: 70%
+   :align: center
 
    The triangulation used to calculate distance
 
@@ -190,11 +184,9 @@ pattern of light is projected onto the environment. Common patterns are
 dots, stripes and grids. A camera will view the instrumented scene and
 determine the object heights using geometry.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/structuredlight
-   :alt: Structured light.[structuredlight]
+.. figure:: VisionFigures/structuredlight.*
+   :width: 65%
+   :align: center
 
    Structured light.[structuredlight]

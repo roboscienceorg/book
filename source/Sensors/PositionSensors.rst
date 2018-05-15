@@ -43,12 +43,9 @@ satellites and GPS receiver is essential. Secondly, a precise location
 of the satellite is required. In addition one needs to deal with signal
 quality and interference.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: sensor/gps
-   :alt: Global Positioning System - GPS[gpspng]
+.. figure:: SensorsFigures/gps.*
+   :width: 50%
+   :align: center
 
    Global Positioning System - GPS[gpspng]
 
@@ -64,12 +61,10 @@ so information from more than three satellites are required to adjust
 for local clock errors. This allows for estimates to be accurate within
 several meters.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/dgps
-   :alt: GPS with local correction.
+.. figure:: SensorsFigures/dgps.*
+   :width: 50%
+   :align: center
 
    GPS with local correction.
 
@@ -115,21 +110,17 @@ does not happen due to noise and sensor inaccuracies. The circles do not
 intersect as shown in
 Figure \ `[fig:inexactintersection] <#fig:inexactintersection>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/hough1
-   :alt: Exact intersection of three circles.[fig:exactintersection]
+.. figure:: SensorsFigures/hough1.*
+   :width: 50%
+   :align: center
 
    Exact intersection of three circles.[fig:exactintersection]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/hough2
-   :alt: Non-intersection of three circles.[fig:inexactintersection]
+.. figure:: SensorsFigures/hough2.*
+   :width: 50%
+   :align: center
 
    Non-intersection of three circles.[fig:inexactintersection]
 
@@ -148,21 +139,19 @@ individual error terms.
 .. math::
 
    \begin{array}{ll}
-   E = & \quad  |\sqrt{x^2 + y^2} - 6838|    
+   E = & \quad  |\sqrt{x^2 + y^2} - 6838|
     + |\sqrt{(x-56)^2 + (y-9752)^2} - 4779|     \\[3mm]
-   & + |\sqrt{(x-9126)^2  + (y-7797)^2} - 6245|    
+   & + |\sqrt{(x-9126)^2  + (y-7797)^2} - 6245|
     + |\sqrt{(x-9863)^2 + (y-218)^2} - 8938|  .
    \end{array}
 
 If :math:`E=0`, then we are at the :math:`(x,y)` point that matches all
 four distances.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/circerror
-   :alt: Radial error function.[fig:radialerror]
+.. figure:: SensorsFigures/circerror.*
+   :width: 50%
+   :align: center
 
    Radial error function.[fig:radialerror]
 
@@ -269,7 +258,7 @@ you can pick the center or a random point in the search region.
         a = x - t*u
         b = y - t*v
         return a, b
-     
+
 
 ::
 
@@ -293,11 +282,9 @@ you can pick the center or a random point in the search region.
 
     print x, y
 
-.. raw:: latex
-
-   \centering
-
-|image|
+.. figure:: SensorsFigures/graddescent.*
+   :width: 50%
+   :align: center
 
 The intersection point is :math:`x = 3120, \quad   y = 6085`. Note that
 this algorithm is not guaranteed to converge on the solution (the global
@@ -313,16 +300,16 @@ refining the grid is a way to produce a hierarchal method that can have
 high accuracy but still be fast. See if you can come up with other
 approaches to this example.
 
-.. raw:: latex
-
-   \centering
-
-|image|
+.. figure:: SensorsFigures/hough.*
+   :width: 50%
+   :align: center
 
 Compare the ideal case and the case with noise:
 
-.. raw:: latex
+.. figure:: SensorsFigures/hough1.*
+   :width: 50%
+   :align: center
 
-   \centering
-
-|image| |image|
+.. figure:: SensorsFigures/hough2.*
+   :width: 50%
+   :align: center

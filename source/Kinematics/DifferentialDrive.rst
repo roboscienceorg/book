@@ -9,13 +9,10 @@ for the left wheel: :math:`\alpha = \pi/2`, :math:`\beta = 0`; and for
 the right wheel: :math:`\alpha = -\pi/2`, :math:`\beta = \pi` (to be
 consistent with the coordinate system).
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/ddexample
-   :alt: The differential drive robot dimensions and variables.
-   [ddrive_rederivation]
+.. figure:: KinematicsFigures/ddexample.*
+   :width: 40%
+   :align: center
 
    The differential drive robot dimensions and variables.
    [ddrive_rederivation]
@@ -24,7 +21,7 @@ Recall the left wheel rolling constraint is given by
 
 .. math::
 
-   \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta), -L\cos(\beta) \right\rangle = 
+   \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta), -L\cos(\beta) \right\rangle =
    \left\langle 1 , 0, -L \right\rangle
 
 and the right wheel rolling constraint is
@@ -73,18 +70,18 @@ The resulting motion model is
 
 .. math::
 
-   \begin{bmatrix} 1 & 0 & -L \\ 1 & 0 & L \\ 0 & 1 & 0 \end{bmatrix} R(\theta)^{-1} \dot{\xi}_I  
+   \begin{bmatrix} 1 & 0 & -L \\ 1 & 0 & L \\ 0 & 1 & 0 \end{bmatrix} R(\theta)^{-1} \dot{\xi}_I
    = \begin{bmatrix} r & 0 \\ 0 & r \\0& 0\end{bmatrix} \dot{\phi}
 
 Expanding
 
 .. math::
 
-   \begin{bmatrix} 1 & 0 & -L \\ 1 & 0 & L \\ 0 & 1 & 0 \end{bmatrix} 
+   \begin{bmatrix} 1 & 0 & -L \\ 1 & 0 & L \\ 0 & 1 & 0 \end{bmatrix}
     \begin{bmatrix} \cos \theta & \sin \theta & 0 \\ -\sin \theta &
    \cos \theta & 0 \\  0 & 0 & 1  \end{bmatrix}
-    \dot{\xi}_I  
-   = \begin{bmatrix} r & 0 \\ 0 & r \\0& 0\end{bmatrix} 
+    \dot{\xi}_I
+   = \begin{bmatrix} r & 0 \\ 0 & r \\0& 0\end{bmatrix}
    \begin{bmatrix}\dot{\phi}_2 \\ \dot{\phi}_1\end{bmatrix}
 
 | To be consistent with the previous example, we had the left wheel as
@@ -99,9 +96,9 @@ Working out the details:
 
    \begin{bmatrix} \cos \theta & \sin \theta & 0 \\ -\sin \theta &
    \cos \theta & 0 \\  0 & 0 & 1  \end{bmatrix}
-    \dot{\xi}_I  
+    \dot{\xi}_I
    = \begin{bmatrix} 1 & 0 & -L \\ 1 & 0 & L \\ 0 & 1 & 0 \end{bmatrix}^{-1}
-   \begin{bmatrix} r & 0 \\ 0 & r \\0& 0\end{bmatrix} 
+   \begin{bmatrix} r & 0 \\ 0 & r \\0& 0\end{bmatrix}
    \begin{bmatrix}\dot{\phi}_2 \\ \dot{\phi}_1\end{bmatrix}
 
 .. math::
@@ -110,7 +107,7 @@ Working out the details:
    = \begin{bmatrix} \cos \theta & \sin \theta & 0 \\ -\sin \theta &
    \cos \theta & 0 \\  0 & 0 & 1  \end{bmatrix}^{-1}
    \begin{bmatrix} 1 & 0 & -L \\ 1 & 0 & L \\ 0 & 1 & 0 \end{bmatrix}^{-1}
-   \begin{bmatrix} r & 0 \\ 0 & r \\0& 0\end{bmatrix} 
+   \begin{bmatrix} r & 0 \\ 0 & r \\0& 0\end{bmatrix}
    \begin{bmatrix}\dot{\phi}_2 \\ \dot{\phi}_1\end{bmatrix}
 
 .. math::
@@ -133,8 +130,8 @@ and finally ....
 
 .. math::
 
-   = \begin{bmatrix}  \frac{r}{2}\left(\dot{\phi}_1 + \dot{\phi}_2\right)\cos \theta \\ 
-   \frac{r}{2}\left(\dot{\phi}_1 + \dot{\phi}_2\right)\sin \theta \\ 
+   = \begin{bmatrix}  \frac{r}{2}\left(\dot{\phi}_1 + \dot{\phi}_2\right)\cos \theta \\
+   \frac{r}{2}\left(\dot{\phi}_1 + \dot{\phi}_2\right)\sin \theta \\
    \frac{r}{2L}\left(\dot{\phi}_1 -\dot{\phi}_2\right) \end{bmatrix}
 
 (and you didn’t think this was going to work out, did you.) You may

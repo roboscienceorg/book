@@ -34,40 +34,28 @@ number of times a particular pattern occurs or a beam is interrupted.
 This is explored in detail below with the optical wheel encoders which
 can be used for velocity in addition to position estimates.
 
-.. raw:: latex
 
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: ./sensor/potentiometer.jpg
-   :alt: Potentiometer.[fig:potentiometer]
+.. figure:: SensorsFigures/potentiometer.jpg
+   :width: 30%
+   :align: center
 
    Potentiometer.[fig:potentiometer]
 
-   
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: ./sensor/Faders.jpg
-   :alt: Fader.[fig:fader]
+.. figure:: SensorsFigures/Faders.jpg
+   :width: 30%
+   :align: center
 
    Fader.[fig:fader]
 
-   
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: ./sensor/Encoder.jpg
-   :alt: Encoder.[fig:encoder]
+.. figure:: SensorsFigures/Encoder.jpg
+   :width:  30%
+   :align: center
 
    Encoder.[fig:encoder]
+
 
 Tachometers
 ~~~~~~~~~~~
@@ -88,12 +76,10 @@ or LEDs [1]_. The dominant lighting source in electronics and robotics,
 LEDs can run on very low power, are available in many frequencies and
 can switch on/off quickly. Figure \ `[circuitled] <#circuitled>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: circuit/LED
-   :alt: LED[circuitled]
+.. figure:: SensorsFigures/LED.*
+   :width: 25%
+   :align: center
 
    LED[circuitled]
 
@@ -105,8 +91,9 @@ infrared LED shines on some object and is reflected back to the
 phototransistor. The IR light activates the transistor and causes it to
 switch on and pull the output to low.
 
-.. figure:: sensor/IRObs
-   :alt: Infrared LEDs used for obstacle detection.[IRobstacleLED]
+.. figure:: SensorsFigures/IRObs.*
+   :width: 35%
+   :align: center
 
    Infrared LEDs used for obstacle detection.[IRobstacleLED]
 
@@ -123,12 +110,11 @@ fixed interval of time this provides an estimate of wheel velocity. The
 estimate is clearly improved if more stripes (or slits) per revolution
 are used.
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: sensor/sensormount
-   :alt: Mounting for the encoder sensor [mountingencoder]
+.. figure:: SensorsFigures/sensormount.*
+   :width: 45%
+   :align: center
 
    Mounting for the encoder sensor [mountingencoder]
 
@@ -141,9 +127,9 @@ in single units, for example the Fairchild QRD1313. This has the LED and
 the phototransistor packaged into a unit that is 6.1mm x 4.39mm x 4.65mm
 (height).
 
-.. figure:: sensor/IR2
-   :alt: IR LED (IR light emitting diode) and phototransistor pair
-   [ledopticalsensor]
+.. figure:: SensorsFigures/IR2.*
+   :width: 45%
+   :align: center
 
    IR LED (IR light emitting diode) and phototransistor pair
    [ledopticalsensor]
@@ -153,21 +139,17 @@ An encoder pattern may simply be a pattern printed on paper and attached
 alternating black and white radial stripes. Two examples are given in
 Figure \ `[encoderpattern] <#encoderpattern>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/WheelEncoder
-   :alt: Wheel encoder pattern with 1-1 ratio
+.. figure:: SensorsFigures/WheelEncoder.*
+   :width: 45%
+   :align: center
 
    Wheel encoder pattern with 1-1 ratio
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/encoder_var
-   :alt: Encoder pattern with 1-4 ratio
+.. figure:: SensorsFigures/encoder_var.*
+   :width: 45%
+   :align: center
 
    Encoder pattern with 1-4 ratio
 
@@ -183,12 +165,10 @@ you hear the drop in frequency. Transmitting a known frequency and
 listening to the reflected sound, one can estimate the relative
 velocity.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/doppler
-   :alt: Using the Doppler Effect to estimate velocity.
+.. figure:: SensorsFigures/doppler.*
+   :width: 45%
+   :align: center
 
    Using the Doppler Effect to estimate velocity.
 

@@ -64,12 +64,10 @@ two components of the constraint. Not surprising as this is by
 construction. The zero motion line is then the vertical line spanned by
 :math:`A`.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/bikeicr
-   :alt: [fig:fixedbikewheel]A fixed turn bike wheel.
+.. figure:: KinematicsFigures/bikeicr.*
+   :width: 40%
+   :align: center
 
    [fig:fixedbikewheel]A fixed turn bike wheel.
 
@@ -94,12 +92,10 @@ know that the two rows for the fixed wheels are the same line. This
 tells us one fixed wheel and one steered wheel are sufficient. Thus we
 have two linearly independent rows for the the constraint matrix.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/ackermanzeromotion
-   :alt: The Ackerman Design[fig:ackermanzeromotion]
+.. figure:: KinematiceFigures/ackermanzeromotion.*
+   :width: 40%
+   :align: center
 
    The Ackerman Design[fig:ackermanzeromotion]
 
@@ -112,8 +108,8 @@ wheel 3, the same conventions are followed. Assume that :math:`A = 5`,
 
 .. math::
 
-   \delta_1 = \mbox{atan2}(B,A) = \mbox{atan2}(3,5), \quad 
-   \delta_2 = \mbox{atan2}(B,A+W) = \mbox{atan2}(3,7), \quad 
+   \delta_1 = \mbox{atan2}(B,A) = \mbox{atan2}(3,5), \quad
+   \delta_2 = \mbox{atan2}(B,A+W) = \mbox{atan2}(3,7), \quad
    \delta_3=0
 
 and
@@ -126,8 +122,8 @@ This provides us with
 
 .. math::
 
-   \beta_1 = -\pi/2 - \alpha_1 - \delta_1, \quad  
-   \beta_2 = \pi/2 - \alpha_2 - \delta_2, \quad 
+   \beta_1 = -\pi/2 - \alpha_1 - \delta_1, \quad
+   \beta_2 = \pi/2 - \alpha_2 - \delta_2, \quad
    \beta_3 = -\pi/2 - \alpha_3 - \delta_3
 
 we can plug each into the constraint equation
@@ -235,9 +231,7 @@ of position variables alone. A robot is holonomic if and only if DDOF =
 DOF. A robot is said to be omnidirectional if it is holonomic and DDOF =
 3. This means that the robot can *Maneuver* and *Orient*.
 
-.. raw:: latex
 
-   \centering
 
 | |Summary of some common configurations.[fig:summaryconfigurations]|
 
@@ -259,7 +253,3 @@ DOF. A robot is said to be omnidirectional if it is holonomic and DDOF =
 | E. Two-Steer    | :math:`\delta_M | :math:`\delta_m | :math:`\delta_s |
 |                 |  = 3`           |  = 1`           |  = 2`           |
 +-----------------+-----------------+-----------------+-----------------+
-
-.. raw:: latex
-
-   \FloatBarrier

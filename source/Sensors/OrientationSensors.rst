@@ -27,8 +27,9 @@ over a period of time depending on the sensor quality. This is an issue
 that must be addressed for systems which run for long periods of time
 without a recalibration.
 
-.. figure:: sensor/gyro
-   :alt: Tuning fork MEMS gyroscope. [gyroscope]
+.. figure:: SensorsFigures/gyro.*
+   :width: 40%
+   :align: center
 
    Tuning fork MEMS gyroscope. [gyroscope]
 
@@ -68,7 +69,8 @@ generate a rotating magnetic field which can be detected with the
 Hall-Effect sensor. Figure \ `[halleffect] <#halleffect>`__ shows how
 this is done.
 
-.. figure:: sensor/magneticencoder
-   :alt: Hall-Effect based shaft rotation sensor.[halleffect]
+.. figure:: SensorsFigures/magneticencoder.*
+   :width: 40%
+   :align: center
 
    Hall-Effect based shaft rotation sensor.[halleffect]

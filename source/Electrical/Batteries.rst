@@ -27,10 +27,11 @@ rechargeable batteries: Lead-Acid, Nickel Metal Hydride (NiMH), Lithium
 Polymer (LiPo). Lead-Acid is the type found in automobile, boat,
 motorcycle batteries.
 
+.. figure:: ElectricalFigures/batteries.*
+   :width: 60%
+   :align: center
 
-|a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol. [leadacidlipo]|
-|a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol. [leadacidlipo]|
-|a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol. [leadacidlipo]|
+   Batteries:  a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol. [leadacidlipo]|
 
 .. table:: Quick comparison of battery chemistries.[comparebatteries]
 
@@ -142,12 +143,10 @@ a LiPo. As you can see from the graph, you have to monitor the battery
 voltage very carefully, because it decreases rapidly once the charge
 gets low.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: circuit/lipovoltage.png
-   :alt: LiPo Voltage VS Charge
+.. figure:: ElectricalFigures/lipovoltage.*
+   :width: 50%
+   :align: center
 
    LiPo Voltage VS Charge
 

@@ -14,12 +14,10 @@ axle are denoted by :math:`A` and :math:`B`, with :math:`A`
 corresponding to the point in the positive :math:`x` direction when
 :math:`\alpha=0`.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/angle_labels
-   :alt: The axis angles. [fig:angles]
+.. figure:: KinematicsFigures/angle_labels.*
+   :width: 70%
+   :align: center
 
    The axis angles. [fig:angles]
 
@@ -37,7 +35,7 @@ yields
 
 .. math::
 
-   V_A\sin\alpha = L\dot{\alpha}\sin\alpha-\dot{x}, \quad 
+   V_A\sin\alpha = L\dot{\alpha}\sin\alpha-\dot{x}, \quad
    V_A\cos\alpha = \dot{y}+L\dot{\alpha}\cos\alpha
 
 where :math:`V_A` is the magnitude of the axle tip velocity. Similarly,
@@ -118,13 +116,11 @@ The wheel speeds for this figure are
    V_C, V_D = (5t - t^2)\cos(\alpha)/\cos(\beta) \pm \sin(t) ,   \quad 0 \leq t \leq 5 .
    \end{array}
 
-.. raw:: latex
 
-   \centering
+.. figure:: KinematicsFigures/DDDpath1.png
+   :width: 40%
+   :align: center
 
-.. figure:: motion/DDDpath1.png
-   :alt: Path for the DDD system demonstrating the ability to steer and
-   control the vehicle with free axle pivots. [fig:DDDpath]
 
    Path for the DDD system demonstrating the ability to steer and
    control the vehicle with free axle pivots. [fig:DDDpath]

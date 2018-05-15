@@ -22,13 +22,10 @@ be able to adapt to the environment, for example if we need to slow down
 at some point to avoid a collision. So, feedback in our systems turns
 out to be essential.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: control/splinemiss.pdf
-   :alt: Using position feedback as a way to mitigate
-   drift.[fig:pathdriftcorrection]
+.. figure:: ControlFigures/splinemiss.*
+   :width: 40%
+   :align: center
 
    Using position feedback as a way to mitigate
    drift.[fig:pathdriftcorrection]
@@ -55,12 +52,10 @@ we correct during the route to keep our orientation towards the goal
 point? Assume that you know your orientation error,
 Figure \ `[fig:ddorientationerror] <#fig:ddorientationerror>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: control/ddcontrol.pdf
-   :alt: Orientation error of :math:`\alpha`. [fig:ddorientationerror]
+.. figure:: ControlFigures/ddcontrol.*
+   :width: 40%
+   :align: center
 
    Orientation error of :math:`\alpha`. [fig:ddorientationerror]
 
@@ -154,12 +149,10 @@ control systems are an essential aspect to an engineered solution. We
 will be using these algorithms to set position, velocity and force in
 our robots.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: control/feedback
-   :alt: Feedback and Control for motor speed.[Fig:motorfeedback]
+.. figure:: ControlFigures/feedback.*
+   :width: 40%
+   :align: center
 
    Feedback and Control for motor speed.[Fig:motorfeedback]
 
@@ -209,12 +202,10 @@ to be close to the set value; such as house temperature. For higher
 response systems, this approach can feel rough as it jumps from off to
 on and back. It can also become unstable with very rapid response times.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: control/bangbang
-   :alt: Bang-Bang or On-Off Control.[Fig:bangbang]
+.. figure:: ControlFigures/bangbang.*
+   :width: 40%
+   :align: center
 
    Bang-Bang or On-Off Control.[Fig:bangbang]
 
@@ -285,17 +276,16 @@ the :math:`e_1(t) < d` jump. Selecting some arbitrary values,
 endpoint is (40,60). The result is given in
 Figure \ `[Fig:pcontrolDDrobot] <#Fig:pcontrolDDrobot>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: control/pcontrolDDbot
-   :alt: A noise free example.
+.. figure:: ControlFigures/pcontrolDDbot.*
+   :width: 40%
+   :align: center
 
    A noise free example.
 
-.. figure:: control/noisepcontrolDDbot
-   :alt: Adding noise to the wheels.
+.. figure:: ControlFigures/noisepcontrolDDbot.*
+   :width: 40%
+   :align: center
 
    Adding noise to the wheels.
 
@@ -346,17 +336,16 @@ distance of the goal point, increment the counter. The controller will
 adjust. Figure \ `[Fig:pcontrolDDbotpath] <#Fig:pcontrolDDbotpath>`__
 demonstrates this algorithm.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: control/pcontrolDDbotpath
-   :alt: Starting direction :math:`\theta =0`.
+.. figure:: ControlFigures/pcontrolDDbotpath.*
+   :width: 40%
+   :align: center
 
    Starting direction :math:`\theta =0`.
 
-.. figure:: control/pcontrolDDbotpath2
-   :alt: Starting direction :math:`\theta = \pi /2`.
+.. figure:: ControlFigures/pcontrolDDbotpath2.*
+   :width: 40%
+   :align: center
 
    Starting direction :math:`\theta = \pi /2`.
 
@@ -393,11 +382,12 @@ PID - Proportional Term
 Within the PID control, the proportional control contributes in the same
 manner as it does alone.
 
-.. raw:: latex
+..  NOT public domain
 
-   \centering
+.. figure:: ControlFigures/Change_with_Kp.png
+   :width: 40%
+   :align: center
 
-|image|
 
 PID - Integral Term
 ^^^^^^^^^^^^^^^^^^^
@@ -416,11 +406,11 @@ responds to accumulated errors from the past, it can cause the present
 value to overshoot the setpoint value. This is known as integrator
 windup.
 
-.. raw:: latex
 
-   \centering
+.. figure:: ControlFigures/Change_with_Ki.png
+   :width: 40%
+   :align: center
 
-|image|
 
 PID - Derivative Term
 ^^^^^^^^^^^^^^^^^^^^^
@@ -440,11 +430,11 @@ the controller is highly sensitive to noise in the error term, and can
 cause a process to become unstable if the noise and the derivative gain
 are sufficiently large.
 
-.. raw:: latex
 
-   \centering
+.. figure:: ControlFigures/Change_with_Kd.png
+   :width: 40%
+   :align: center
 
-|image|
 
 PI Control Discretization
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -704,30 +694,17 @@ between multiple devices. This is necessary with any vehicle that has
 more than one drive motor, for example a differential drive,
 Figure \ `[fig:speedramp1] <#fig:speedramp1>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: control/changesetpoint
-   :alt: [fig:speedramp1]A speed ramp function for a single motor
+.. figure:: ControlFigures/changesetpoint.*
+   :width: 40%
+   :align: center
 
    [fig:speedramp1]A speed ramp function for a single motor
 
-.. raw:: latex
 
-   \hfill
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: control/dualmotor1
-   :alt: [fig:speedramp2]Coordinating two motors separately with a P
-   controller.
+.. figure:: ControlFigures/dualmotor1.*
+   :width: 40%
+   :align: center
 
    [fig:speedramp2]Coordinating two motors separately with a P
    controller.
@@ -740,31 +717,18 @@ Figure \ `[fig:speedramp2] <#fig:speedramp2>`__. This can be done with a
 P, PI or PID control; a PID version is shown in
 Figure \ `[fig:speedramp3] <#fig:speedramp3>`__.
 
-.. raw:: latex
 
-   \centering
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: control/dualmotor2
-   :alt: [fig:speedramp3]Coordinating two motors with the same ramp
-   function.
+.. figure:: ControlFigures/dualmotor2.*
+   :width: 40%
+   :align: center
 
    [fig:speedramp3]Coordinating two motors with the same ramp function.
 
-.. raw:: latex
 
-   \hfill
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: control/dualmotor3
-   :alt: [fig:speedramp4]Coordinating two motors with dual P/PI/PID
-   controllers.
+.. figure:: ControlFigures/dualmotor3.*
+   :width: 40%
+   :align: center
 
    [fig:speedramp4]Coordinating two motors with dual P/PI/PID
    controllers.

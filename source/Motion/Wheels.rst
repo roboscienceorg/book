@@ -48,17 +48,16 @@ are used exclusively indoors. Since fine precision maneuvering is
 normally required for indoor systems and not outdoor systems, there has
 not been much effort expended to make outdoor versions.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/airtrax.jpg
-   :alt: The Airtrax forklift. [fig:airtrax]
+.. figure:: MotionFigures/airtrax.jpg
+   :width: 40%
+   :align: center
 
    The Airtrax forklift. [fig:airtrax]
 
-.. figure:: motion/airtraxcobra.jpg
-   :alt: The Airtrax scissor lift. [fig:airtraxcobra]
+.. figure:: MotionFigures/airtraxcobra.jpg
+   :width: 40%
+   :align: center
 
    The Airtrax scissor lift. [fig:airtraxcobra]
 
@@ -69,24 +68,24 @@ rights and briefly manufactured forklifts with a heavy duty version of
 the Mecanum wheel. These wheels have much less ground friction in a turn
 in comparison to a skid steer requiring much less torque.
 
-.. raw:: latex
 
-   \centering
+.. figure:: MotionFigures/swedish_angle.*
+   :width: 20%
+   :align: center
 
-.. figure:: motion/swedish_angle
-   :alt: :math:`\gamma` measure. [gammavarconfig]
+   The :math:`\gamma` measure. [gammavarconfig]
 
-   :math:`\gamma` measure. [gammavarconfig]
+.. figure:: MotionFigures/omni-wheel.*
+   :width: 40%
+   :align: center
 
-.. figure:: motion/omni-wheel
-   :alt: :math:`\gamma = 0` configuration [gammazeroconfig]
+   The :math:`\gamma = 0` configuration [gammazeroconfig]
 
-   :math:`\gamma = 0` configuration [gammazeroconfig]
+.. figure:: MotionFigures/mecanum-wheel.*
+   :width: 40%
+   :align: center
 
-.. figure:: motion/mecanum-wheel
-   :alt: :math:`\gamma = 45^\circ` configuration. [gamma45config]
-
-   :math:`\gamma = 45^\circ` configuration. [gamma45config]
+   The :math:`\gamma = 45^\circ` configuration. [gamma45config]
 
 For this text, we will combine the omni and Mecanum wheels and just call
 them omniwheels. The difference between them is only in the angle the
@@ -99,49 +98,39 @@ robot in the Figure \ `[gammawheelmounting] <#gammawheelmounting>`__ and
 the parallel mounting is used for the other standard type of wheel
 design using :math:`\gamma = 45^\circ`.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/swedish_config
-   :alt: Normal mounting style for :math:`\gamma = 0` and
-   :math:`\gamma = 45^\circ`. [gammawheelmounting]
+.. figure:: MotionFigures/swedish_config.*
+   :width: 40%
+   :align: center
 
    Normal mounting style for :math:`\gamma = 0` and
    :math:`\gamma = 45^\circ`. [gammawheelmounting]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/swedish_mount
-   :alt: Force vectors induced by rotation with the
-   :math:`\gamma = 45^\circ` configuration. [meccanumwheelvectors]
+.. figure:: MotionFigures/swedish_mount.*
+   :width: 40%
+   :align: center
 
    Force vectors induced by rotation with the :math:`\gamma = 45^\circ`
    configuration. [meccanumwheelvectors]
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: motion/swedish_mount2
-   :alt: Mecanum rotation directions and vector forces for different
-   vehicle directions. [meccanumwheelmotion]
+.. figure:: MotionFigures/swedish_mount2.*
+   :width: 60%
+   :align: center
 
    Mecanum rotation directions and vector forces for different vehicle
    directions. [meccanumwheelmotion]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/swedish_mount3
-   :alt: Summary of wheel motion and directions [meccanumwheelmotion2]
+.. figure:: MotionFigures/swedish_mount3.*
+   :width: 60%
+   :align: center
 
    Summary of wheel motion and directions [meccanumwheelmotion2]
 
-2
+
 
 -  Driving forward: all four wheels forward
 
@@ -149,19 +138,12 @@ design using :math:`\gamma = 45^\circ`.
 
 -  Driving left: 1,4 backwards; 2,3 forward
 
-.. raw:: latex
-
-   \hspace*{-5mm}
-
 -  Driving right: 1,4 forward; 2,3 backward
 
 -  Turning clockwise: 1,3 forward; 2,4 backward
 
 -  Turning counterclockwise: 1,3 backward; 2,4 forward
 
-.. raw:: latex
-
-   \vspace*{-3mm}
 
 A variation of the omni wheel is the omni ball developed by Kaneko
 Higashimori Lab at Osaka University,
@@ -171,13 +153,10 @@ below. This wheel fails to be a true spherical wheel as far as two
 directional motion is concerned and has motion equations similar to the
 omniwheel systems.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/omni-ball.jpg
-   :alt: The Omni Ball Wheel developed at the Kaneko Higashimori Lab at
-   Osaka University[fig:omniball]
+.. figure:: MotionFigures/omni-ball.jpg
+   :width: 60%
+   :align: center
 
    The Omni Ball Wheel developed at the Kaneko Higashimori Lab at Osaka
    University[fig:omniball]
@@ -195,45 +174,33 @@ Figure \ `[fig:robotonball] <#fig:robotonball>`__ shows one design by
 Dr. Masaaki Kumagai, director of the Robot Development Engineering
 Laboratory at Tohoku Gakuin University.
 
-.. raw:: latex
 
-   \centering
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: motion/sds-omni-1.jpg
-   :alt: Omniwheel drive system
+.. figure:: MotionFigures/sds-omni-1.jpg
+   :width: 60%
+   :align: center
 
    Omniwheel drive system
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/robotonball.jpg
-   :alt: Omniwheel balancing robot[fig:robotonball]
+.. figure:: MotionFigures/robotonball.jpg
+   :width: 60%
+   :align: center
 
    Omniwheel balancing robot[fig:robotonball]
 
-| 
+|
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: motion/goodyearsphere.jpg
-   :alt: GoodYear Spherical Wheel Concept Tire
+.. figure:: MotionFigures/goodyearsphere.jpg
+   :width: 60%
+   :align: center
 
    GoodYear Spherical Wheel Concept Tire
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/SDS-omnidirectional-electric-motorcycle4.jpg
-   :alt: Prototype omnidirectional motorcycle
+.. figure:: MotionFigures/SDS-omnidirectional-electric-motorcycle4.jpg
+   :width: 60%
+   :align: center
 
    Prototype omnidirectional motorcycle
 

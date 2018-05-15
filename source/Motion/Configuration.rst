@@ -86,13 +86,10 @@ circle of radius :math:`r`. Let :math:`W` be a bounded domain in
 :math:`{\Bbb R}^2`, the obstacles be :math:`{\cal O}_i` and the free
 space be given by :math:`\Omega = W\setminus \cup_{i}{\cal O}_i`.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/deltatheta
-   :alt: A series of short adjustment maneuvers to re-orient the
-   vehicle. [fig:deltatheta]
+.. figure:: MotionFigures/deltatheta.*
+   :width: 20%
+   :align: center
 
    A series of short adjustment maneuvers to re-orient the vehicle.
    [fig:deltatheta]
@@ -115,7 +112,3 @@ and FWS vehicles can navigate to the goal ending with the correct
 orientation.
 
 **Proof:** See Chapter Appendix.
-
-.. raw:: latex
-
-   \FloatBarrier

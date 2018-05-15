@@ -17,15 +17,13 @@ is needed for) the model. The equations for motion then are
 .. math::
 
    J_{1f} = \begin{bmatrix} \sqrt{3}/2 & -1/2 & -L \\ 0 & 1 & -L \\ -\sqrt{3}/2 & -1/2 & -L \end{bmatrix},
-    \quad 
+    \quad
    J_2 = \begin{bmatrix} r & 0 & 0 \\ 0 & r & 0 \\ 0 & 0 & r \end{bmatrix}
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/tribot
-   :alt: The Omniwheel can be configured in a three wheel [Fig:Tribot]
+.. figure:: KinematicsFigures/tribot.*
+   :width: 40%
+   :align: center
 
    The Omniwheel can be configured in a three wheel [Fig:Tribot]
 

@@ -5,8 +5,11 @@ Say that you have a basic electric light circuit (like a flashlight),
 Figure  `[basicpower] <#basicpower>`__-(a). We are able to turn this on
 and off using a switch, Figure \ `[basicpower] <#basicpower>`__-(b).
 
-a) |Basic power delivery.[basicpower]| b) |Basic power
-delivery.[basicpower]|
+.. figure:: ElectricalFigures/basicpower0.*
+   :width: 80%
+   :align: center
+
+   Basic power delivery a) Direct connection b) Open switch  c) Closed switch.
 
 This is a great system until someone asks to dim the light. Now we are
 faced with how to reduce the voltage across the light. One might think
@@ -15,9 +18,12 @@ an AC not a DC device. So, the next idea is to limit current by placing
 a device along the flow of current that will resist the current flow. We
 can use the component described above called a resistor.
 
-a) |(a) Resistor to limit current flow and drop voltage. (b) A voltage
-divider circuit.[voltagedivider]| b) |(a) Resistor to limit current flow
-and drop voltage. (b) A voltage divider circuit.[voltagedivider]|
+.. figure:: ElectricalFigures/basicpower1.*
+   :width: 60%
+   :align: center
+
+   Power control. (a) Resistor to limit current flow and drop voltage.
+   (b) A voltage divider circuit.[voltagedivider
 
 The problem with this design is that some of the energy is wasted as
 heat in the resistor. For low power circuits, this may not be a problem,
@@ -27,7 +33,7 @@ Figure \ `[voltagedivider] <#voltagedivider>`__-(b) is
 
 .. math:: \displaystyle i = \frac{V}{R_1+R_2}.
 
- Voltage drop across :math:`R_1` in
+Voltage drop across :math:`R_1` in
 Figure \ `[voltagedivider] <#voltagedivider>`__-(b) is
 
 .. math:: \displaystyle V_{R_1} = \left(\frac{R_1}{R_1+R_2}\right)V .
@@ -42,8 +48,9 @@ A quick example:
 Assume we are using a 12V power source and we want to use a voltage
 divider to provide 9V, Figure \ `[divider12to9] <#divider12to9>`__.
 
-.. figure:: circuit/vdivider2
-   :alt: Voltage divider to drop 12V to 9V.[divider12to9]
+.. figure:: ElectricalFigures/vdivider2.*
+   :width: 10%
+   :align: center
 
    Voltage divider to drop 12V to 9V.[divider12to9]
 
@@ -57,7 +64,7 @@ for the parallel combination of the load and :math:`R_2`:
 
 .. math:: R =  R_1 + R_p = R_1 + \frac{10R_2 }{(R_2 + 10)}.
 
- The voltage drop across :math:`R_1` is :math:`(12-9)=3` volts and the
+The voltage drop across :math:`R_1` is :math:`(12-9)=3` volts and the
 current is given by
 
 .. math:: i = V/R = \displaystyle \frac{12}{R_1 + \frac{10R_2 }{(R_2 + 10)}} = 3/R_1
@@ -66,19 +73,19 @@ current is given by
 
 .. math:: \displaystyle \frac{1}{4} = \left( \frac{R_1}{R_1 + \frac{10R_2}{(R_2 + 10)}}\right)
 
- and after some algebra,
+and after some algebra,
 
 .. math:: R_1 =\displaystyle \frac{5R_2}{(R_2 + 10)}.
 
- If :math:`R_2 = 10` Ohms, then :math:`R_1 = 2.5`. The load uses:
+If :math:`R_2 = 10` Ohms, then :math:`R_1 = 2.5`. The load uses:
 :math:`W_L = iV = (9/10)9 = 8.1` Watts. The whole circuit uses
 
 .. math::
 
-   W = V^2/R = \displaystyle\frac{12^2}{R_1 + \frac{10R_2}{(R_2 + 10)}} = \displaystyle 
+   W = V^2/R = \displaystyle\frac{12^2}{R_1 + \frac{10R_2}{(R_2 + 10)}} = \displaystyle
     \frac{12^2}{2.5 + \frac{100}{(20)}} = 19.2
 
- A waste of 19.2 - 8.1 = 11.1 Watts. For circuits that power larger
+A waste of 19.2 - 8.1 = 11.1 Watts. For circuits that power larger
 motors, this can be a significant problem as it can be very difficult to
 remove the heat. The system will be at risk due to the high
 temperatures, for example burned components and melted circuits, or even
@@ -90,14 +97,15 @@ Pulse Width Modulation, PWM. To see what we mean,
 Figure \ `[circuitpwm] <#circuitpwm>`__ here is a graph of the voltage
 though time.
 
-.. figure:: pwm/pwm
-   :alt: Switching power on and off. [circuitpwm]
+.. figure:: ElectricalFigures/pwm.*
+   :width: 60%
+   :align: center
 
    Switching power on and off. [circuitpwm]
 
-.. figure:: pwm/pwm_duty
-   :alt: On-Off pulsing known as Pulse Width Modulation -
-   PWM.[circuitpwmduty]
+.. figure:: ElectricalFigures/pwm_duty.*
+   :width: 60%
+   :align: center
 
    On-Off pulsing known as Pulse Width Modulation - PWM.[circuitpwmduty]
 
@@ -109,8 +117,9 @@ the energy waste as compared to using a resistor. If we run the on and
 off fast enough, our eyes will not see the flicker and it will just
 appear dimmer.
 
-.. figure:: pwm/pwm_motor
-   :alt: PWM control of an electric motor.[pwmcontrol]
+.. figure:: ElectricalFigures/pwm_motor.*
+   :width: 60%
+   :align: center
 
    PWM control of an electric motor.[pwmcontrol]
 
@@ -140,25 +149,22 @@ closing S3 and S2, current will flow from right to left. Replacing the
 switches with transistors will provide the switching speed required for
 PWM operation.
 
-.. figure:: circuit/transistor-motor
-   :alt: Using a transistor to control power.[pwmfet]
+.. figure:: ElectricalFigures/transistor-motor.*
+   :width: 20%
+   :align: center
 
    Using a transistor to control power.[pwmfet]
 
-.. figure:: circuit/500px-H_bridge
-   :alt: H-Bridge, a way to select the direction of current
-   flow.[hbridgeswitches]
+.. figure:: ElectricalFigures/H_bridge.*
+   :width: 40%
+   :align: center
 
    H-Bridge, a way to select the direction of current
    flow.[hbridgeswitches]
 
-| 
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: circuit/1000px-H_bridge_operating
-   :alt: Selecting current direction.[hbridgeswitchesclosed]
+.. figure:: ElectricalFigures/H_bridge_operating.*
+   :width: 80%
+   :align: center
 
    Selecting current direction.[hbridgeswitchesclosed]

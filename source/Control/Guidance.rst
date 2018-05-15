@@ -59,32 +59,17 @@ the data we then obtain for the first segment
 :math:`z= 0.1t, a = 0, b = 0, c = -50, d = 40`, and on the next segment
 :math:`z= 0.05t, a = 0, b = 0, c = 50, d = -10`.
 
-.. raw:: latex
 
-   \centering
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: control/cubicexample
-   :alt: [fig:cubicsplineexample1] The two cubic splines from the three
-   data points.
+.. figure:: ControlFigures/cubicexample.*
+   :width: 40%
+   :align: center
 
    [fig:cubicsplineexample1] The two cubic splines from the three data
    points.
 
-.. raw:: latex
-
-   \hfill
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: control/cubicexample2
-   :alt: [fig:cubicsplineexample2] Sampling the two splines to get
-   guidance data.
+.. figure:: ControlFigures/cubicexample2.*
+   :width: 40%
+   :align: center
 
    [fig:cubicsplineexample2] Sampling the two splines to get guidance
    data.
@@ -143,8 +128,3 @@ Figure \ `[fig:cubicsplineexample2] <#fig:cubicsplineexample2>`__.
     plt.title('Cubic Spline')
     plt.savefig("cubicexample2.pdf")
     plt.show()
-
-.. raw:: latex
-
-   \FloatBarrier
-

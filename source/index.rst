@@ -4,32 +4,44 @@ Introduction to Robotics
 #########################
 
 .. toctree::
+   :titlesonly:
+   :caption: Table of Contents
+
+   preface.rst
+
+.. toctree::
    :maxdepth: 1
-   :caption: Table of Contents:
    :numbered:
 
-   Preface/index
-   Introduction/index
+   Introduction <Introduction/index>
    Mathematical Background <Math/index>
-   SciPy/index
-   Terms/index
-   Design/index
-   ROS/index
+   Basic Terms and Concepts <Terms/index>
+   Robot Design <Design/index>
+   Robot Operating System <ROS/index>
    Simulation/index
-   RobotSim/index
-   Gazebo/index
    Electrical/index
    Sensors/index
    Vision/index
    Motion/index
    Kinematics/index
-   Manipulators/index
    Control/index
-   Filtering/index
-   Kalman/index
-   Particle/index
-   Planning/index
-   Localization/index
+
+..  Include when ready:
+..   Manipulators/index
+..   Filtering/index
+..   Kalman/index
+..   Particle/index
+..   Planning/index
+..   Localization/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Appendices
+   :titlesonly:
+
+   The SciPy Library <SciPy/index>
+   STDR Simulator <RobotSim/index>
+   Gazebo 3D Simulator <Gazebo/index>
 
 
 Index

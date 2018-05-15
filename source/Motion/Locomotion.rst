@@ -58,13 +58,10 @@ can run on a road or flat ground. To go beyond this we need to bring the
 rail or road along with - the idea behind tracks. Track systems can
 operate in a larger set of environments, but at cost of energy.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/energyusegraph
-   :alt: The relations between energy, speed and motion
-   type.[motionenergyspeed]
+.. figure:: MotionFigures/energyusegraph.*
+   :width: 60%
+   :align: center
 
    The relations between energy, speed and motion
    type.[motionenergyspeed]

@@ -14,8 +14,9 @@ pivoting or lever arm as shown in
 Figure \ `[electricmotor] <#electricmotor>`__, a rotational force can be
 generated.
 
-.. figure:: circuit/electricmotor
-   :alt: Basic electric motor.[electricmotor]
+.. figure:: ElectricalFigures/electricmotor.svg
+   :width: 70%
+   :align: center
 
    Basic electric motor.[electricmotor]
 
@@ -49,11 +50,8 @@ resistor) which then by using some control logic adjusts the position
 according to the servo signal. A rough schematic is given in
 Figure \ `[servointernals] <#servointernals>`__.
 
-.. figure:: pwm/servo
-   :alt: Servo internals.[servointernals]
+.. figure:: ElectricalFigures/servo.png
+   :width: 70%
+   :align: center
 
    Servo internals.[servointernals]
-
-.. raw:: latex
-
-   \FloatBarrier

@@ -9,6 +9,14 @@ angle between the wheel axis :math:`A` and the axle. We also define
 orthogonal vector (the vector in the travel direction of the wheel). See
 Figure \ `[wheelconfig] <#wheelconfig>`__.
 
+
+.. figure:: KinematicsFigures/fixedwheel.*
+   :width: 40%
+   :align: center
+
+   Basic wheel and axle configuration.[wheelconfig]
+
+
 .. math::
 
    \label{eq:axledirection}
@@ -24,7 +32,7 @@ They can be combined in the following manner:
 
 .. math::
 
-   \left\langle \dot{x}_I , \dot{y}_I , 0 \right\rangle + \left\langle 0 , 0 , \dot{\theta} \right\rangle = 
+   \left\langle \dot{x}_I , \dot{y}_I , 0 \right\rangle + \left\langle 0 , 0 , \dot{\theta} \right\rangle =
    \left\langle \dot{x}_I , \dot{y}_I , \dot{\theta} \right\rangle = \dot{\xi}_I
 
 These equations are in the inertial or global coordinate system. Our
@@ -60,13 +68,10 @@ onto :math:`v` is
 
 .. math:: P^1_v (u) = \frac{v\cdot u}{\| v\|^2} = v \cdot u = \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta) , 0 \right\rangle \cdot u.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/fixedwheel2
-   :alt: Motion in the angular direction is shown by the vector
-   :math:`w`. [fig:angularradialmotion]
+.. figure:: KinematicsFigures/fixedwheel2.*
+   :width: 40%
+   :align: center
 
    Motion in the angular direction is shown by the vector :math:`w`.
    [fig:angularradialmotion]
@@ -96,7 +101,7 @@ and recall
 .. math::
 
    \label{wheelprojection}
-    = \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta), -L\cos(\beta) \right\rangle 
+    = \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta), -L\cos(\beta) \right\rangle
    \cdot R(\theta)^{-1}\left\langle \dot{x}_I , \dot{y}_I , \dot{\theta} \right\rangle .
 
 For *No Slip* we have:
@@ -105,7 +110,7 @@ For *No Slip* we have:
 
 .. math::
 
-   \Rightarrow  \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta), -L\cos(\beta) \right\rangle 
+   \Rightarrow  \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta), -L\cos(\beta) \right\rangle
    R(\theta)^{-1}\dot{\xi}_I = r\dot{\phi}
 
 For *No Slide*, we want the projection in the direction of A and L to be
@@ -115,7 +120,7 @@ zero (a similar derivation as above):
 
 .. math::
 
-   \Rightarrow  \left\langle \cos(\alpha+\beta) , \sin(\alpha+\beta), L\sin(\beta) \right\rangle 
+   \Rightarrow  \left\langle \cos(\alpha+\beta) , \sin(\alpha+\beta), L\sin(\beta) \right\rangle
    \cdot R(\theta)^{-1}\dot{\xi}_I= 0
 
 Steered Wheel
@@ -130,7 +135,7 @@ Steered Wheel
 
   .. math::
 
-     =  \left\langle \sin(\alpha+\beta(t)) , -\cos(\alpha+\beta(t)), -L\cos(\beta(t)) \right\rangle 
+     =  \left\langle \sin(\alpha+\beta(t)) , -\cos(\alpha+\beta(t)), -L\cos(\beta(t)) \right\rangle
      R(\theta)^{-1}\dot{\xi}_I = r\dot{\phi}
 
 | For *No Slide*, as before we want the projection to be zero:
@@ -138,7 +143,7 @@ Steered Wheel
 
   .. math::
 
-     =  \left\langle \cos(\alpha+\beta(t)) , \sin(\alpha+\beta(t)), L\sin(\beta(t)) \right\rangle 
+     =  \left\langle \cos(\alpha+\beta(t)) , \sin(\alpha+\beta(t)), L\sin(\beta(t)) \right\rangle
      \cdot R(\theta)^{-1}\dot{\xi}_I= 0
 
 Castor Wheel
@@ -151,34 +156,30 @@ Castor Wheel
 
   .. math::
 
-     \left\langle \sin(\alpha+\beta(t)) , -\cos(\alpha+\beta(t)), -L\cos(\beta(t)) \right\rangle 
+     \left\langle \sin(\alpha+\beta(t)) , -\cos(\alpha+\beta(t)), -L\cos(\beta(t)) \right\rangle
      R(\theta)^{-1}\dot{\xi}_I = r\dot{\phi}
 
 For *No Slide*:
 
 .. math::
 
-   \left\langle \cos(\alpha+\beta(t)) , \sin(\alpha+\beta(t)), d + L\sin(\beta(t)) \right\rangle 
+   \left\langle \cos(\alpha+\beta(t)) , \sin(\alpha+\beta(t)), d + L\sin(\beta(t)) \right\rangle
    \cdot R(\theta)^{-1}\dot{\xi}_I + d\dot{\beta} = 0
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/castorwheel
-   :alt: Castor Wheel
+.. figure:: KinematicsFigures/castorwheel.*
+   :width: 40%
+   :align: center
 
    Castor Wheel
 
 Omni, Swedish, or Mecanum Wheels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/swedish_angle
-   :alt: Swedish Wheel
+.. figure:: KinematicsFigures/swedish_angle.*
+   :width: 15%
+   :align: center
 
    Swedish Wheel
 
@@ -187,7 +188,7 @@ Omni, Swedish, or Mecanum Wheels
 
   .. math::
 
-     \left\langle \sin(\alpha+\beta+\gamma) , -\cos(\alpha+\beta+\gamma), -L\cos(\beta +\gamma) \right\rangle 
+     \left\langle \sin(\alpha+\beta+\gamma) , -\cos(\alpha+\beta+\gamma), -L\cos(\beta +\gamma) \right\rangle
      R(\theta)^{-1}\dot{\xi}_I
 
   \ :math:`= r\dot{\phi}\cos(\gamma)`
@@ -195,7 +196,7 @@ Omni, Swedish, or Mecanum Wheels
 
   .. math::
 
-     \left\langle \cos(\alpha+\beta +\gamma) , \sin(\alpha+\beta+\gamma),  L\sin(\beta + \gamma) \right\rangle 
+     \left\langle \cos(\alpha+\beta +\gamma) , \sin(\alpha+\beta+\gamma),  L\sin(\beta + \gamma) \right\rangle
      \cdot R(\theta)^{-1}\dot{\xi}_I
 
   \ :math:`= r\dot{\phi}\sin(\gamma) + r_{sw}\dot{\phi}_{sw}`

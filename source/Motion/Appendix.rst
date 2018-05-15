@@ -20,12 +20,3 @@ straight line from disk center to disk center. At each center the
 vehicle may reorient if required. The time limited reach for the DDD
 drive is a proper subset of the FWS reach, and follows from the DDD
 result.
-
-.. |Turn geometry for the DDD (left) and FWS (right) designs. [fig:turngeo]| image:: motion/curvature
-.. |Turn geometry for the DDD (left) and FWS (right) designs. [fig:turngeo]| image:: motion/curvature2
-.. |image| image:: /motion/mecanumpath
-.. |image| image:: solutions/MotionModel/p6-14exact
-.. |image| image:: solutions/MotionModel/p6-14noise
-.. |image| image:: solutions/MotionModel/p6-14ellipse
-.. |image| image:: motion/omniwheelmounting
-

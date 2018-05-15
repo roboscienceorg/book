@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="24cm" height="13cm" viewBox="85 -31 472 248" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #e6e6fa" cx="198.752" cy="41.5559" rx="6.5" ry="48.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="198.752" cy="41.5559" rx="6.5" ry="48.5"/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="129" y="190" width="70" height="26" rx="4" ry="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="129" y="190" width="70" height="26" rx="4" ry="4"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #ff0000" x1="199" y1="203" x2="496.708" y2="115.813"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" points="495.577,118.228 498.854,115.184 494.453,114.389 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="528.5" cy="114.556" rx="27.5" ry="47.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="528.5" cy="114.556" rx="27.5" ry="47.5"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #ff0000" points="156.596,30.1209 501,114.556 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" points="160.966,28.1034 154.424,29.5884 159.537,33.9308 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="507.252" y="125.056">
+    <tspan x="507.252" y="125.056">Target</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="146.252" y="208.056">
+    <tspan x="146.252" y="208.056">Laser</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffc0cb" x="140.252" y="4.05594" width="12" height="83"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140.252" y="4.05594" width="12" height="83"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="161.986" y1="-11.0937" x2="193.518" y2="-11.7944"/>
+    <polygon style="fill: #000000" points="157.488,-10.9937 163.419,-14.1263 161.986,-11.0937 163.553,-8.12778 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="157.488,-10.9937 163.419,-14.1263 161.986,-11.0937 163.553,-8.12778 "/>
+    <polygon style="fill: #000000" points="198.016,-11.8944 192.085,-8.76182 193.518,-11.7944 191.951,-14.7603 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="198.016,-11.8944 192.085,-8.76182 193.518,-11.7944 191.951,-14.7603 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="176.252" y="-16.9441">
+    <tspan x="176.252" y="-16.9441">f</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="206.252" y="17.0559">
+    <tspan x="206.252" y="17.0559">Lens</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="85.252" y="10.0559">
+    <tspan x="85.252" y="10.0559">Camera</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="473.252" y="141.056">
+    <tspan x="473.252" y="141.056">(x,z)</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #e6e6fa" x1="198.252" y1="-17.9441" x2="199" y2="203"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="210.252" y="190.056">
+    <tspan x="210.252" y="190.056">a</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="200.252" y1="176.056" x2="227.252" y2="195.056"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="205.252" y1="41.556" x2="265.516" y2="42.0057"/>
+    <polygon style="fill: #000000" points="270.016,42.0393 263.994,44.9945 265.516,42.0057 264.039,38.9946 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="270.016,42.0393 263.994,44.9945 265.516,42.0057 264.039,38.9946 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="280.252" y="43.056">
+    <tspan x="280.252" y="43.056">z</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="120.252" y1="45.056" x2="140.252" y2="45.556"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="122.252" y1="26.056" x2="141.401" y2="27.5046"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="110.252" y="40.056">
+    <tspan x="110.252" y="40.056">u</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="120.297" y1="58.7919" x2="121.207" y2="196.32"/>
+    <polygon style="fill: #000000" points="120.267,54.292 123.306,60.272 120.297,58.7919 117.307,60.3118 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="120.267,54.292 123.306,60.272 120.297,58.7919 117.307,60.3118 "/>
+    <polygon style="fill: #000000" points="121.237,200.82 118.198,194.84 121.207,196.32 124.197,194.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="121.237,200.82 118.198,194.84 121.207,196.32 124.197,194.8 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="107.252" y="131.056">
+    <tspan x="107.252" y="131.056">b</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="199.063" y1="90.9717" x2="199.21" y2="114.32"/>
+    <polygon style="fill: #000000" points="199.238,118.82 196.2,112.839 199.21,114.32 202.2,112.801 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="199.238,118.82 196.2,112.839 199.21,114.32 202.2,112.801 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="208.252" y="119.056">
+    <tspan x="208.252" y="119.056">x</tspan>
+  </text>
+</svg>

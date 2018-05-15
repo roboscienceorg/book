@@ -16,8 +16,9 @@ and related to the acceleration. Output may be a voltage level in which
 the sensor is known as an analog sensor or the output can be through a
 digital interface, such as I\ :math:`^2`\ c making it a digital sensor.
 
-.. figure:: sensor/accel
-   :alt: Simple accelerometer structure. [accelerometer]
+.. figure:: SensorsFigures/accel.*
+   :width: 40%
+   :align: center
 
    Simple accelerometer structure. [accelerometer]
 

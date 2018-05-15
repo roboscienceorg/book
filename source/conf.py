@@ -93,9 +93,9 @@ numfig = True
 #html_theme = 'classic'
 #html_theme = 'nature'
 #html_theme = 'agogo'
-html_theme = 'sphinxdoc'
+#html_theme = 'sphinxdoc'
 #html_theme = 'bizstyle'
-
+html_theme = 'dotted'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -130,6 +130,11 @@ html_logo = './logo.png'
 html_theme_options = {
 "textalign" : "left"
 }
+
+
+html_copy_source = False
+html_show_sourcelink = False
+#html_show_sphinx = False
 
 # -- Options for HTMLHelp output ------------------------------------------
 

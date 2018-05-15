@@ -1,0 +1,1119 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 436 369"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-10532710-8C78-4E27-93FE-1BB9CE62E67A">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M60.50 74.50
+                        L55.50 74.50
+                        L55.50 52.50
+                        L65.50 52.50
+                        L65.50 74.50
+                        Z
+                        M60.50 350.50
+                        L65.50 350.50
+                        L65.50 372.50
+                        L55.50 372.50
+                        L55.50 350.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M60.00 62.00
+                    L60.00 362.00
+                    "
+                clip-path="url(#clipPath-10532710-8C78-4E27-93FE-1BB9CE62E67A)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M60.50 73.91
+                    L56.09 73.91
+                    L60.50 63.50
+                    L64.91 73.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M60.50 351.09
+                    L64.91 351.09
+                    L60.50 361.50
+                    L56.09 351.09
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-889C33AC-2815-4165-9270-92EDC353EB37">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M22.50 313.50
+                        L22.50 318.50
+                        L0.50 318.50
+                        L0.50 308.50
+                        L22.50 308.50
+                        Z
+                        M348.50 313.50
+                        L348.50 308.50
+                        L370.50 308.50
+                        L370.50 318.50
+                        L348.50 318.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M10.00 313.00
+                    L360.00 313.00
+                    "
+                clip-path="url(#clipPath-889C33AC-2815-4165-9270-92EDC353EB37)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M21.91 313.50
+                    L21.91 317.91
+                    L11.50 313.50
+                    L21.91 309.09
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M349.09 313.50
+                    L349.09 309.09
+                    L359.50 313.50
+                    L349.09 317.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-2020888E-5C78-4ED8-9D78-FF3C29DEFF3F">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M330.15 158.81
+                        L326.48 162.21
+                        L311.54 146.05
+                        L318.88 139.26
+                        L333.82 155.42
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M334.00 186.00
+                    C334.00 186.00 334.17 178.12 330.00 166.00
+                    C325.61 153.95 321.00 149.00 321.00 149.00
+                    "
+                clip-path="url(#clipPath-2020888E-5C78-4ED8-9D78-FF3C29DEFF3F)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M329.75 158.38
+                    L326.51 161.38
+                    L322.68 150.73
+                    L332.99 155.38
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M122.00 220.00
+                    L156.00 220.00
+                    L156.00 239.00
+                    L122.00 239.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="122.18" y="235.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">(x,y)</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M337.00 157.00
+                    L346.00 157.00
+                    L346.00 180.00
+                    L337.00 180.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="337.07" y="174.00"
+            >
+                <tspan style="font-family:SymbolPi-Normal; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">q</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M367.00 303.00
+                    L377.00 303.00
+                    L377.00 323.00
+                    L367.00 323.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="367.09" y="318.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">x</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M56.00 38.00
+                    L64.00 38.00
+                    L64.00 58.00
+                    L56.00 58.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="56.08" y="53.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:15px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">y</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M64.00 48.00
+                    L69.00 48.00
+                    L69.00 68.00
+                    L64.00 68.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="64.05" y="63.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">I</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M377.00 312.00
+                    L382.00 312.00
+                    L382.00 332.00
+                    L377.00 332.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="377.05" y="327.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">I</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-F99653C1-F2AF-4DAA-A16A-78E778C5610A">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="181.00" y="135.00" width="40.00" height="10.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-F99653C1-F2AF-4DAA-A16A-78E778C5610A)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="181.00" y="135.00" width="40.00" height="10.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-D7AA778F-781A-46E6-8D18-133DC3AEE00D">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="180.00" y="196.00" width="40.00" height="10.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-D7AA778F-781A-46E6-8D18-133DC3AEE00D)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="180.00" y="196.00" width="40.00" height="10.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-CD1E699C-D094-480D-B2FA-28CFD9EC69EE">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="145.00" cy="167.00" rx="6.00" ry="6.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-CD1E699C-D094-480D-B2FA-28CFD9EC69EE)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="145.00" cy="167.00" rx="6.00" ry="6.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-41850E15-578A-4A34-925D-184B0A4DC40E">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="139.00" y="149.00" width="81.00" height="43.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-41850E15-578A-4A34-925D-184B0A4DC40E)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="139.00" y="149.00" width="81.00" height="43.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M200.00 140.00
+                    L200.00 196.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="8.00 4.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-C5A1C36C-4A25-451A-9664-FAE754F71EFF">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="158.00" cy="170.00" rx="6.00" ry="6.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-C5A1C36C-4A25-451A-9664-FAE754F71EFF)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="158.00" cy="170.00" rx="6.00" ry="6.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-54E6E183-724A-4F14-9938-16B9B94C00D7">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="200.00" cy="170.00" rx="6.00" ry="6.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-54E6E183-724A-4F14-9938-16B9B94C00D7)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="200.00" cy="170.00" rx="6.00" ry="6.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-A48303AF-D0E9-4073-B2FC-12D2EB93B81B">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M343.50 170.50
+                        L343.50 165.50
+                        L365.50 165.50
+                        L365.50 175.50
+                        L343.50 175.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M200.00 170.00
+                    L355.00 170.00
+                    "
+                clip-path="url(#clipPath-A48303AF-D0E9-4073-B2FC-12D2EB93B81B)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M344.09 170.50
+                    L344.09 166.09
+                    L354.50 170.50
+                    L344.09 174.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M358.00 158.00
+                    L368.00 158.00
+                    L368.00 178.00
+                    L358.00 178.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="358.09" y="173.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">x</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M365.00 168.00
+                    L376.00 168.00
+                    L376.00 188.00
+                    L365.00 188.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="365.13" y="183.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">R</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-2DC292F4-44C3-439C-B1F9-4DD7838CBE2C">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M200.50 87.50
+                        L195.50 87.50
+                        L195.50 65.50
+                        L205.50 65.50
+                        L205.50 87.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M200.00 75.00
+                    L200.00 135.00
+                    "
+                clip-path="url(#clipPath-2DC292F4-44C3-439C-B1F9-4DD7838CBE2C)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M200.50 86.91
+                    L196.09 86.91
+                    L200.50 76.50
+                    L204.91 86.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M195.00 52.00
+                    L203.00 52.00
+                    L203.00 72.00
+                    L195.00 72.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="195.08" y="67.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:15px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">y</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M201.00 64.00
+                    L212.00 64.00
+                    L212.00 84.00
+                    L201.00 84.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="201.13" y="79.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">R</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-BEA0A67C-5426-4E8F-98CC-452B1DF14022">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M207.19 194.08
+                        L204.04 190.20
+                        L221.10 176.31
+                        L227.41 184.06
+                        L210.35 197.95
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M60.00 313.00
+                    L216.00 186.00
+                    "
+                clip-path="url(#clipPath-BEA0A67C-5426-4E8F-98CC-452B1DF14022)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M207.65 193.71
+                    L204.86 190.28
+                    L215.72 187.13
+                    L210.44 197.13
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-859532DA-C8EB-4DF7-B4F5-4D63F9BA4F1C">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M412.50 188.50
+                        L412.50 183.50
+                        L434.50 183.50
+                        L434.50 193.50
+                        L412.50 193.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M216.00 188.00
+                    L424.00 188.00
+                    "
+                clip-path="url(#clipPath-859532DA-C8EB-4DF7-B4F5-4D63F9BA4F1C)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M413.09 188.50
+                    L413.09 184.09
+                    L423.50 188.50
+                    L413.09 192.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-5FC5143E-5C3E-44FB-A385-C0488B1A3CDA">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M335.66 26.61
+                        L330.79 23.11
+                        L341.31 8.50
+                        L351.04 15.52
+                        L340.52 30.12
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M220.00 186.00
+                    L341.00 18.00
+                    "
+                clip-path="url(#clipPath-5FC5143E-5C3E-44FB-A385-C0488B1A3CDA)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M337.20 17.21
+                    C340.24 16.99 343.33 19.21 344.09 22.17
+                    C344.85 25.12 343.00 27.69 339.95 27.91
+                    C336.91 28.12 333.83 25.90 333.07 22.95
+                    C332.31 19.99 334.16 17.42 337.20 17.21
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M371.00 9.00
+                    L412.00 9.00
+                    L412.00 31.00
+                    L371.00 31.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="371.90" y="26.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Goal</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-2A850DCC-27A1-4CF0-B1D4-CDB08B996150">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M285.15 122.81
+                        L281.47 126.21
+                        L266.54 110.05
+                        L273.88 103.26
+                        L288.82 119.42
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M295.00 154.00
+                    C295.00 154.00 296.26 146.83 291.00 135.00
+                    C285.53 123.27 276.00 113.00 276.00 113.00
+                    "
+                clip-path="url(#clipPath-2A850DCC-27A1-4CF0-B1D4-CDB08B996150)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M284.75 122.38
+                    L281.51 125.38
+                    L277.68 114.73
+                    L287.99 119.39
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M294.00 119.00
+                    L305.00 119.00
+                    L305.00 142.00
+                    L294.00 142.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="294.14" y="136.00"
+            >
+                <tspan style="font-family:SymbolPi-Normal; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">a</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-FB3A99B7-B1FF-489A-9C4C-BA07B1747BB3">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M345.63 47.34
+                        L342.15 50.94
+                        L326.34 35.64
+                        L333.29 28.45
+                        L349.10 43.75
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M406.00 186.00
+                    C406.00 186.00 406.09 138.21 392.00 108.00
+                    C377.39 78.04 336.00 38.00 336.00 38.00
+                    "
+                clip-path="url(#clipPath-FB3A99B7-B1FF-489A-9C4C-BA07B1747BB3)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="2.00 3.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M345.21 46.93
+                    L342.14 50.11
+                    L337.72 39.70
+                    L348.27 43.76
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M394.00 79.00
+                    L403.00 79.00
+                    L403.00 100.00
+                    L394.00 100.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="394.11" y="94.00"
+            >
+                <tspan style="font-family:SymbolPi-Normal; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">b</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

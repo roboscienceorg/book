@@ -22,24 +22,17 @@ and SURF are available now to simplify this process. Once that is done,
 it is easy to triangulate the depth of the point, Figure
 (`[intro-stereo1] <#intro-stereo1>`__).
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: vision/stereo1
-   :alt: Seeing in three dimensions with a pair of calibrated cameras:
-   determining depth using basic Trigonometry. [intro-stereo1]
+.. figure:: VisionFigures/stereo1.*
+   :width: 80%
+   :align: center
 
    Seeing in three dimensions with a pair of calibrated cameras:
    determining depth using basic Trigonometry. [intro-stereo1]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: vision/stereo1a
-   :alt: Seeing in three dimensions with a pair of calibrated cameras:
-   determining depth using basic Trigonometry. [intro-stereo1]
+.. figure:: VisionFigures/stereo1a.*
+   :width: 50%
+   :align: center
 
    Seeing in three dimensions with a pair of calibrated cameras:
    determining depth using basic Trigonometry. [intro-stereo1]
@@ -70,17 +63,25 @@ Solving for :math:`x`, we obtain the equation below. Plugging this into
 .. math::
 
    \label{intro:stereodistance}
-   x = \frac{v_1b}{v_1+v_2}, \quad 
+   x = \frac{v_1b}{v_1+v_2}, \quad
    z = \frac{fb}{v_1+v_2}
 
-.. raw:: latex
 
-   \centering
 
-|Seeing in three dimensions with a pair of calibrated cameras: building
-a disparity (depth) map and reconstructing the 3D world.[fig:seeing3d]|
-|Seeing in three dimensions with a pair of calibrated cameras: building
-a disparity (depth) map and reconstructing the 3D world.[fig:seeing3d]|
+.. figure:: VisionFigures/disparitya.*
+   :width: 50%
+   :align: center
+
+   Seeing in three dimensions with a pair of calibrated cameras: building
+   a disparity (depth) map. [fig:seeing3d]
+
+.. figure:: VisionFigures/disparityb.*
+   :width: 50%
+   :align: center
+
+   Seeing in three dimensions with a pair of calibrated cameras:
+   reconstructing the 3D world.[fig:seeing3d]
+
 
 Once depth for the collection of feature points are known, depth for
 surrounding points is inferred. This allows the construction of a
@@ -94,12 +95,10 @@ as object recognition. The depth map is one of several ways to perform
 object recognition and is a useful tool if we have already computed the
 depth map.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: slam/rgbdslam.jpg
-   :alt: Seeing in three dimensions with RGBD sensors[intro-stereo2]
+.. figure:: VisionFigures/rgbdslam.jpg
+   :width: 50%
+   :align: center
 
    Seeing in three dimensions with RGBD sensors[intro-stereo2]
 
@@ -122,15 +121,9 @@ directly provide depth without having to compute a disparity map or some
 other intermediate data set. They are very helpful in doing 3D
 reconstructions of the environment.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/3dcamera
-   :alt: 3D Camera
+.. figure:: VisionFigures/3dcamera.*
+   :width: 50%
+   :align: center
 
    3D Camera
-
-.. raw:: latex
-
-   \FloatBarrier

@@ -9,13 +9,10 @@ maneuverable, easy to control, and simple.
 Figure \ `[ddrive_pre] <#ddrive_pre>`__ gives the basic layout and
 variables involved in the model.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/ddexample
-   :alt: The differential drive robot dimensions and variables.
-   [ddrive_pre]
+.. figure:: MotionFigures/ddexample.*
+   :width: 40%
+   :align: center
 
    The differential drive robot dimensions and variables. [ddrive_pre]
 
@@ -25,16 +22,14 @@ Differential Drive
 Recall the Differential Drive
 robot \ `[fig:ddriveRecalled2] <#fig:ddriveRecalled2>`__
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/ddrive
-   :alt: Simple differential drive robot. [fig:ddriveRecalled2]
+.. figure:: MotionFigures/ddrive.*
+   :width: 60%
+   :align: center
 
    Simple differential drive robot. [fig:ddriveRecalled2]
 
-| and the forward and inverse kinematics:
+and the forward kinematics:
 
 .. math::
 
@@ -45,21 +40,23 @@ robot \ `[fig:ddriveRecalled2] <#fig:ddriveRecalled2>`__
    \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
    \end{array}}
 
+and the inverse kinematics:
+
 .. math::
 
    \boxed{
    \begin{array}{l}
-   v = \sqrt{\dot{x}^2 + \dot{y}^2},\hspace*{2mm}
+   v = \sqrt{\dot{x}^2 + \dot{y}^2},\\[2mm]
    \kappa =   \displaystyle  \frac{\dot{x}\ddot{y} - \dot{y}\ddot{x}}{v^3} \\[3mm]
    \dot{\phi_1} = \displaystyle \frac{v}{r}\left(\kappa L + 1\right) \\[3mm]
    \dot{\phi_2} = \displaystyle \frac{v}{r}\left(-\kappa L + 1\right)
    \end{array}}
 
-| 
-| where :math:`\dot{\phi_1}` and :math:`\dot{\phi_2}` be the right and
-  left wheel rotational speeds (respectively), :math:`r` is wheel radius
-  and :math:`L` is the axle length from the center to the wheel (“half
-  axle”).
+
+where :math:`\dot{\phi_1}` and :math:`\dot{\phi_2}` be the right and
+left wheel rotational speeds (respectively), :math:`r` is wheel radius
+and :math:`L` is the axle length from the center to the wheel (“half
+axle”).
 
 Alternate Form
 ^^^^^^^^^^^^^^
@@ -77,7 +74,7 @@ equation \ `[ddkinematicsmodel] <#ddkinematicsmodel>`__ and using
    \omega = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
    \end{array}
 
- and the inverse of these are
+and the inverse of these are
 
 .. math::
 
@@ -99,12 +96,10 @@ Figure \ `[gammawheelmounting] <#gammawheelmounting>`__ and the parallel
 mounting is used for the other standard type of wheel design using
 :math:`\gamma = 45^\circ`.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/mecanumdim
-   :alt: Dimensions for the Mecanum Kinematics[fig:mecanumdim]
+.. figure:: MotionFigures/mecanumdim.*
+   :width: 60%
+   :align: center
 
    Dimensions for the Mecanum Kinematics[fig:mecanumdim]
 
@@ -167,7 +162,7 @@ Applying the rotation to move to global coordinates
 .. math::
 
    =
-   \frac{ r}{4} 
+   \frac{ r}{4}
    \begin{bmatrix} \left(\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} + \dot{\phi}_{BR}\right) \cos(\theta)
                              -\left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} - \dot{\phi}_{BR}\right)\sin(\theta) \\[3mm]
                            \left(\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} + \dot{\phi}_{BR}\right) \sin(\theta)
@@ -182,7 +177,7 @@ Applying the rotation to move to global coordinates
      \label{meccanumforwardkinematics}
      \begin{bmatrix}\dot{x}\\[3mm] \dot{y}\\[3mm] \dot{\theta} \end{bmatrix}
      =
-     \frac{ r}{4} 
+     \frac{ r}{4}
      \begin{bmatrix}A\cos(\theta)
                                -B\sin(\theta) \\[3mm]
                              A \sin(\theta)
@@ -236,7 +231,7 @@ are given by
    \begin{bmatrix} 1 & -1 & -(L_1+L_2)  \\[3mm]
                    1 & 1 & (L_1+L_2)  \\[3mm]
                    1 & 1 & -(L_1+L_2)  \\[3mm]
-                   1 & -1 & (L_1+L_2)  
+                   1 & -1 & (L_1+L_2)
             \end{bmatrix}
    \begin{bmatrix}v_x \\[3mm] v_y \\[3mm] \omega \end{bmatrix} .
 
@@ -250,7 +245,7 @@ Applying the coordinate transformation we can move to global coordinates
    \begin{bmatrix} 1 & -1 & -(L_1+L_2)  \\[3mm]
                    1 & 1 & (L_1+L_2)  \\[3mm]
                    1 & 1 & -(L_1+L_2)  \\[3mm]
-                   1 & -1 & (L_1+L_2)  
+                   1 & -1 & (L_1+L_2)
     \end{bmatrix}
     R^{-1}(\theta)
    \begin{bmatrix}\dot{x} \\[3mm] \dot{y} \\[3mm] \dot{\theta} \end{bmatrix}
@@ -262,7 +257,7 @@ Applying the coordinate transformation we can move to global coordinates
    \begin{bmatrix} 1 & -1 & -(L_1+L_2)  \\[3mm]
                    1 & 1 & (L_1+L_2)  \\[3mm]
                    1 & 1 & -(L_1+L_2)  \\[3mm]
-                   1 & -1 & (L_1+L_2)  
+                   1 & -1 & (L_1+L_2)
    \end{bmatrix}
    \begin{bmatrix}\cos(\theta) \dot{x} + \sin(\theta)\dot{y}\\[3mm] -\sin(\theta)\dot{x} + \cos(\theta)\dot{y} \\[3mm] \dot{\theta} \end{bmatrix}
 
@@ -271,10 +266,10 @@ Applying the coordinate transformation we can move to global coordinates
    \label{meccanuminversekinematics}
    =
    \frac{1}{ r}
-   \begin{bmatrix}  \cos(\theta) \dot{x} + \sin(\theta)\dot{y} + \sin(\theta)\dot{x} - \cos(\theta)\dot{y} -(L_1+L_2)\dot{\theta}  \\[3mm]  
-                     \cos(\theta) \dot{x} + \sin(\theta)\dot{y} - \sin(\theta)\dot{x} + \cos(\theta)\dot{y} +(L_1+L_2)\dot{\theta}  \\[3mm] 
-                     \cos(\theta) \dot{x} + \sin(\theta)\dot{y} - \sin(\theta)\dot{x} + \cos(\theta)\dot{y} -(L_1+L_2)\dot{\theta}   \\[3mm] 
-                    \cos(\theta) \dot{x} + \sin(\theta)\dot{y} + \sin(\theta)\dot{x} - \cos(\theta)\dot{y} +(L_1+L_2)\dot{\theta}  
+   \begin{bmatrix}  \cos(\theta) \dot{x} + \sin(\theta)\dot{y} + \sin(\theta)\dot{x} - \cos(\theta)\dot{y} -(L_1+L_2)\dot{\theta}  \\[3mm]
+                     \cos(\theta) \dot{x} + \sin(\theta)\dot{y} - \sin(\theta)\dot{x} + \cos(\theta)\dot{y} +(L_1+L_2)\dot{\theta}  \\[3mm]
+                     \cos(\theta) \dot{x} + \sin(\theta)\dot{y} - \sin(\theta)\dot{x} + \cos(\theta)\dot{y} -(L_1+L_2)\dot{\theta}   \\[3mm]
+                    \cos(\theta) \dot{x} + \sin(\theta)\dot{y} + \sin(\theta)\dot{x} - \cos(\theta)\dot{y} +(L_1+L_2)\dot{\theta}
    \end{bmatrix} .
 
 Steered Systems
@@ -292,12 +287,10 @@ a patent by Ackermann, but the solution predates by more than a half
 century. We will discuss this issue in greater detail in the motion
 modeling chapter.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/steered
-   :alt: Front Wheel Steered System.
+.. figure:: MotionFigures/steered.*
+   :width: 60%
+   :align: center
 
    Front Wheel Steered System.
 
@@ -315,10 +308,10 @@ steer model.
    \displaystyle
    \begin{bmatrix} v \\ \dot{\theta} \end{bmatrix}
    =  r \dot{\phi}
-   \begin{bmatrix} 1 \\ \displaystyle \frac{\sin \beta}{L_2} \end{bmatrix} 
+   \begin{bmatrix} 1 \\ \displaystyle \frac{\sin \beta}{L_2} \end{bmatrix}
    \quad \mbox{and} \quad
    \begin{bmatrix} \dot{\phi}  \\ \beta \end{bmatrix}
-   = 
+   =
    \begin{bmatrix}\displaystyle  \frac{v}{r} \\ \displaystyle \sin^{-1} \frac{L_2 \dot{\theta}}{v} \end{bmatrix}
 
 There are several issues with the simple design illustrated above.
@@ -339,14 +332,11 @@ described 50 years earlier by Eramus Darwin (the grandfather of Charles
 Darwin) in 1758 according to Desmond King-Halle in 2002 and Mr. Darwin
 has claim to the invention.
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: motion/ackermann
-   :alt: To avoid skidding, the outside wheel must turn at a different
-   angle and rotate at a different speed than the inside
-   wheel.[ackermannsteeringfig]
+.. figure:: MotionFigures/ackermann.*
+   :width: 60%
+   :align: center
 
    To avoid skidding, the outside wheel must turn at a different angle
    and rotate at a different speed than the inside
@@ -365,12 +355,10 @@ wheels. We can easily see that this is the case for the simple steering
 approach shown above. The rear wheels have overlapping zero motion
 lines. The front wheels have parallel non-overlapping zero motion lines.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/icr
-   :alt: ICR - Instantaneous Center of Rotation.
+.. figure:: MotionFigures/icr.*
+   :width: 60%
+   :align: center
 
    ICR - Instantaneous Center of Rotation.
 
@@ -387,13 +375,10 @@ effective steering angle, :math:`\theta_S` can be found by
 
 .. math:: \cot\theta_S = \frac{L_1}{L_2} + \cot\theta_R    \quad {\mbox{or} } \quad \cot\theta_S =\cot\theta_L -  \frac{L_1}{L_2}
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/ackermann_steer2
-   :alt: The steering angles for the Ackerman
-   equation.[Fig:ackermansteerangles]
+.. figure:: MotionFigures/ackermann_steer2.*
+   :width: 60%
+   :align: center
 
    The steering angles for the Ackerman
    equation.[Fig:ackermansteerangles]
@@ -407,12 +392,10 @@ keep the zero motion lines intersecting on the rear axle. The attachment
 to the wheels is called the *kingpins*. The cross piece between the
 Kingpins is called the *tie rod*.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/icr2
-   :alt: The Ackerman steering system.
+.. figure:: MotionFigures/icr2.*
+   :width: 60%
+   :align: center
 
    The Ackerman steering system.
 
@@ -433,12 +416,10 @@ steered wheels, the wheels are connected by a chain or cable allowing
 all wheels to be steered. Each wheel is kept in a parallel mode so that
 motion is possible in any direction.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/syncro
-   :alt: Syncro Drive System.[fig:syncrodrive]
+.. figure:: MotionFigures/syncro.*
+   :width: 30%
+   :align: center
 
    Syncro Drive System.[fig:syncrodrive]
 
@@ -466,45 +447,30 @@ Figure \ `[fig:AD] <#fig:AD>`__. The kinematics and motion curves for
 this design are essentially the same as the DDD design, and as such will
 be treated as a DDD steering mechanism.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/single_axle
-   :alt: Dual Differential Drive (DDD). This vehicle has single or
-   connected axle in the front and a single axle in the rear. The axle
-   is connect to the frame using a pivot which can be locked (braked) or
-   free. [fig:DDD]
+.. figure:: MotionFigures/single_axle.*
+   :width: 60%
+   :align: center
 
    Dual Differential Drive (DDD). This vehicle has single or connected
    axle in the front and a single axle in the rear. The axle is connect
    to the frame using a pivot which can be locked (braked) or free.
    [fig:DDD]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/split_axle_box
-   :alt: Four Wheel Steer (FWS). This vehicle has four axles each is
-   connected to the frame by a lockable pivot. In addition to motion see
-   in the DDD design, if there is sufficient rotational motion in the
-   axles, this conifguration can spin in place. [fig:FWS]
+.. figure:: MotionFigures/split_axle_box.*
+   :width: 60%
+   :align: center
 
    Four Wheel Steer (FWS). This vehicle has four axles each is connected
    to the frame by a lockable pivot. In addition to motion see in the
    DDD design, if there is sufficient rotational motion in the axles,
    this conifguration can spin in place. [fig:FWS]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/pivot_brake
-   :alt: Articulated Drive (AD). This is a common design in heavy
-   equipment like articulated front loaders. The motion is similar to
-   that found in the DDD design and can be driven with an unlocked pivot
-   (brake not required). [fig:AD]
+.. figure:: MotionFigures/pivot_brake.*
+   :width: 60%
+   :align: center
 
    Articulated Drive (AD). This is a common design in heavy equipment
    like articulated front loaders. The motion is similar to that found
@@ -533,13 +499,10 @@ circular paths. Not found in Ackerman systems, the FWS design can
 additionally rotate in place if the axle is allowed to rotate out
 :math:`45^\circ` or more.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/motion
-   :alt: The forward motion curves. Left: traditional Dubins Car. Right:
-   forward motion of the DDD vehicle.[fig:fmotion]
+.. figure:: MotionFigures/motion.*
+   :width: 60%
+   :align: center
 
    The forward motion curves. Left: traditional Dubins Car. Right:
    forward motion of the DDD vehicle.[fig:fmotion]
@@ -560,13 +523,16 @@ forward normal direction is given by the axle angles and if the front
 and rear axles are not parallel, then a circular path will occur with
 direction off of the forward direction as seen with parallel axles.
 
-.. raw:: latex
 
-   \centering
+.. figure:: MotionFigures/curvature.*
+   :width: 40%
+   :align: center
 
-|Turn geometry for the DDD (left) and FWS (right) designs.
-[fig:turngeo]| |Turn geometry for the DDD (left) and FWS (right)
-designs. [fig:turngeo]|
+.. figure:: MotionFigures/curvature2.*
+   :width: 40%
+   :align: center
+
+   Turn geometry for the DDD (left) and FWS (right) designs.
 
 The FWS design can adjust to the radius of curvature for both inside and
 outside wheels. The radius of curvature for the vehicle center is the

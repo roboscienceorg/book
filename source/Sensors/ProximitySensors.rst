@@ -18,9 +18,19 @@ most sensors available at the hobby level are 3.3 volt boards. Many
 microcontrollers used in hobby class robots have moved down to 1.8
 volts.
 
-|a) Switch and associated circuit. b) Generated signal.
-[switchdebounce1]| |a) Switch and associated circuit. b) Generated
-signal. [switchdebounce1]|
+.. figure:: SensorsFigures/ckt1.*
+   :width: 15%
+   :align: center
+
+   Switch and associated circuit.
+
+
+.. figure:: SensorsFigures/problem.*
+   :width: 50%
+   :align: center
+
+   Generated signal. [switchdebounce1]
+
 
 Lower voltages are used in high performance processors. [Lower voltage
 means faster switching.] USB and a number of interface circuits still
@@ -60,12 +70,19 @@ capacitor filters out higher frequencies and is often called an RC
 filter. Using an RC filter can remove the the alternating voltage levels
 and appears to solve the problem. However another issue arises.
 
-.. raw:: latex
+.. figure:: SensorsFigures/ckt2.*
+   :width: 15%
+   :align: center
 
-   \centering 
+   Basic debounce hardware.
 
-|a) Basic debounce hardware. b) Signal produced. [switchdebounce2]| |a)
-Basic debounce hardware. b) Signal produced. [switchdebounce2]|
+
+.. figure:: SensorsFigures/problem2.*
+   :width: 50%
+   :align: center
+
+   Signal produced. [switchdebounce2]
+
 
 The system will spend more time in transition; more time in the zone
 between logic high and logic low. This middle region is not stable for
@@ -95,12 +112,19 @@ indeterminate region for the controller input, we have removed the
 ambiguous region, and then have removed the mechanical and electrical
 noise.
 
-.. raw:: latex
+.. figure:: SensorsFigures/ckt3.*
+   :width: 15%
+   :align: center
 
-   \centering 
+   Standard hardware approach to debounce.
 
-|Standard hardware approach to debounce. [switchdebounce3]| |Standard
-hardware approach to debounce. [switchdebounce3]|
+
+.. figure:: SensorsFigures/problem3.*
+   :width: 50%
+   :align: center
+
+   Signal produced. [switchdebounce3]
+
 
 Software solutions are also available and normally approach the problem
 by introducing delays in the sampling to allow the switch to settle
@@ -120,13 +144,10 @@ the GPIO configured as output. With 24 lines, one connects the bottom 5
 select lines and the multiplexer output line to six of the GPIO lines.
 This leaves two GPIO open for other use.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: circuit/multiplex
-   :alt: Multiplexers and demultiplexers allow one deal with dozens of
-   devices and a few GPIO.[multiplexer]
+.. figure:: SensorsFigures/multiplex.*
+   :width: 40%
+   :align: center
 
    Multiplexers and demultiplexers allow one deal with dozens of devices
    and a few GPIO.[multiplexer]
@@ -203,12 +224,10 @@ The speed of sound, :math:`c` (about 340 m/s), in air is given by
 where :math:`\gamma` is the adiabatic index, :math:`R` is the gas
 constant, and :math:`T` is the gas temperature in Kelvin.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/sonar_echo
-   :alt: Sonar Echos
+.. figure:: SensorsFigures/sonar_echo.*
+   :width: 50%
+   :align: center
 
    Sonar Echos
 
@@ -228,12 +247,10 @@ degrees in lower cost units. The vendor will normally provide an
 intensity cone that shows signal strength in decibels as a function of
 angle.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: sensor/sonar_details
-   :alt: Sonar Cone
+.. figure:: SensorsFigures/sonar_details.*
+   :width: 50%
+   :align: center
 
    Sonar Cone
 
@@ -291,17 +308,18 @@ is the speed of light, :math:`f` is the modulating frequency, we see
 
    \centering
 
-.. figure:: sensor/lidar
-   :alt: The basic operational diagram for a laser
-   ranger.[basiclidarimage]
+.. figure:: SensorsFigures/lidar.*
+   :width: 50%
+   :align: center
 
    The basic operational diagram for a laser ranger.[basiclidarimage]
 
-.. raw:: latex
 
-   \centering
 
-|image|
+.. figure:: SensorsFigures/lidardetails2.*
+   :width: 50%
+   :align: center
+
 
 For reference, if :math:`f = 5` Mhz then :math:`\lambda = 60` meters.
 This allows us to compute :math:`D` as a function of :math:`\theta`
@@ -373,7 +391,7 @@ simple Python program to check. Step up the values:
     >>> for n in range(20):
     ...   m = 5.0*(n-1)/12.0
     ...   print "n = ", n, "  m = ", m
-    ... 
+    ...
 
 The output becomes
 
@@ -411,25 +429,15 @@ estimate) is inversely proportional to the square of the received signal
 amplitude. Dark distant objects do not produce as good of range estimate
 as closer brighter objects.
 
-.. raw:: latex
+.. figure:: SensorsFigures/lidarhardware.*
+   :width: 50%
+   :align: center
 
-   \centering
 
-|image|
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: sensor/lidarmap
-   :alt: Typical range image of a 2D laser range sensor with a rotating
-   mirror. The length of the lines through the measurement points
-   indicate the uncertainties.
+.. figure:: SensorsFigures/lidarmap.*
+   :width: 50%
+   :align: center
 
    Typical range image of a 2D laser range sensor with a rotating
    mirror. The length of the lines through the measurement points
    indicate the uncertainties.
-
-.. raw:: latex
-
-   \FloatBarrier

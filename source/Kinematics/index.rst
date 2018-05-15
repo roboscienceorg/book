@@ -7,14 +7,6 @@ systems are better options. In this section, we approach the general
 modeling kinematic problem more formally to address different wheel and
 drive systems.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: motion/fixedwheel
-   :alt: Basic wheel and axle configuration.[wheelconfig]
-
-   Basic wheel and axle configuration.[wheelconfig]
 
 .. toctree::
    :maxdepth: 2
@@ -24,6 +16,6 @@ drive systems.
    DifferentialDrive
    OmniwheelExample
    DualDifferential
-   FourAxelRobot
+   FourAxleRobot
    Maneuverability
    Problems
