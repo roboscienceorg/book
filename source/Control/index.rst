@@ -15,4 +15,3 @@ mobile robotic systems.
 
    BasicControls
    Guidance
-   Problems

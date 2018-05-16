@@ -40,7 +40,7 @@ Introduction to Robotics
    :titlesonly:
 
    The SciPy Library <SciPy/index>
-   STDR Simulator <RobotSim/index>
+   STDR Simulator <STDR/index>
    Gazebo 3D Simulator <Gazebo/index>
 
 

@@ -28,7 +28,14 @@ Let x and y be lists of numbers representing the points
 
 This code produces the following two plots:
 
-|image| |image|
+.. figure:: SciPyFigures/plot_1.*
+   :width: 60%
+   :align: center
+
+.. figure:: SciPyFigures/plot_2.*
+   :width: 60%
+   :align: center
+
 
 This is efficiently done using NumPy arrays instead of lists and using
 NumPy functions to generate the arrays.
@@ -51,7 +58,14 @@ NumPy functions to generate the arrays.
 
     In [7]: plt.show()
 
-|image| |image|
+.. figure:: SciPyFigures/plot_3.*
+   :width: 60%
+   :align: center
+
+.. figure:: SciPyFigures/plot_4.*
+   :width: 60%
+   :align: center
+
 
 Surface plots may be done by importing the library mpl_toolkits.mplot3d.
 For surface plotting to work, a meshgrid needs to be created. This can
@@ -121,17 +135,14 @@ linear regression \ `[plot:fitcurveexample] <#plot:fitcurveexample>`__.
     plt.ylim(0,20)
     plt.show()
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/plot_5
+.. figure:: SciPyFigures/plot_5.*
    :width: 70%
    :align: center
 
    Surface plot example.[plot:basicsurfaceplot]
 
-.. figure:: math/plot_6
+.. figure:: SciPyFigures/plot_6.*
    :width: 70%
    :align: center
 
@@ -194,11 +205,12 @@ command is executed to hold the image.
     plt.ioff()
     plt.show()
 
-.. raw:: latex
 
-   \centering
 
-|image|
+.. figure:: SciPyFigures/plot_8.*
+   :width: 60%
+   :align: center
+
 
 Another animation example is to give virtual velocity commands to move a
 point. Say you wanted to animate an object which was moving by
@@ -263,11 +275,4 @@ approximation of the derivative
     plt.ioff()
     plt.show()
 
-.. [1]
-   Thanks to the NumPy and SciPy online tutorials for great examples.
-
-.. |image| image:: math/plot_1
-.. |image| image:: math/plot_2
-.. |image| image:: math/plot_3
-.. |image| image:: math/plot_4
-.. |image| image:: math/plot_8
+Thanks to the NumPy and SciPy online tutorials for great examples.

@@ -17,4 +17,3 @@ for the developing roboticist.
    Batteries
    BasicPowerDelivery
    ElectricMotors
-   Problems

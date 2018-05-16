@@ -17,4 +17,3 @@ robots.
    InertialSensors
    PositionSensors
    ProximitySensors
-   Problems

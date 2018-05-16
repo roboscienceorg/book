@@ -36,4 +36,3 @@ the core goals of ROS as a whole.
    ROSInstallation
    FundamentalROS
    ROSCommunication
-   Problems

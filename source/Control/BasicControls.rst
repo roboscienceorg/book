@@ -68,7 +68,7 @@ Recall the alternate form of the differential drive equations:
    \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2}) .
    \end{array}
 
- We are interested in finding wheel velocities such that :math:`v` is
+We are interested in finding wheel velocities such that :math:`v` is
 constant, :math:`v_c` and :math:`\alpha \to 0`. So we start with wheel
 velocities of the form
 
@@ -88,7 +88,7 @@ velocities of the form
    \dot{\theta} = k\alpha .
    \end{array}
 
- Assume that the robot is relatively far from the goal with respect to
+Assume that the robot is relatively far from the goal with respect to
 robot speed. If so, then :math:`\dot{\beta}` is small. Since
 :math:`\beta = \omega + \alpha` it implies that
 :math:`\dot{\alpha} \approx -\dot{\omega}` and we have
@@ -99,7 +99,7 @@ robot speed. If so, then :math:`\dot{\beta}` is small. Since
 
 .. math:: \alpha(t) = \alpha(0) e^{-kt}
 
- which has :math:`\alpha(t) \to 0` as :math:`t\to 0` if :math:`k>0`.
+which has :math:`\alpha(t) \to 0` as :math:`t\to 0` if :math:`k>0`.
 Large values of :math:`k` produce fast response times and small values
 produce slow response. However, in implementation one works with a
 discrete (digital) time controller. Large values can cause the robot to
@@ -186,7 +186,7 @@ desired configuration by using a series of on/off signals:
 
 .. math:: u(t) = \left\{ \begin{array}{lr} u_c & \mbox{~if~} v_m(t) < v_d \\  0 & \mbox{~if~} v_m(t)\geq v_d \end{array} \right.
 
- where :math:`u_c` is a constant. When :math:`v_m < v_d` a constant
+where :math:`u_c` is a constant. When :math:`v_m < v_d` a constant
 power is applied to the motor. Since the system is digital, the signal
 is sampled every :math:`\Delta t` seconds. There are also delays in the
 time required to run the control algorithm. So, the power will normally
@@ -214,7 +214,7 @@ the motor. Assume that :math:`v_{\mbox{on}} < v_d < v_{\mbox{off}}` then
 
 .. math:: u(t) = \left\{ \begin{array}{lr} u_c & \mbox{~if~} v_m(t) \leq v_{\mbox{on}}  \\  0 & \mbox{~if~} v_m(t)\geq v_{\mbox{off}} \end{array} \right.   .
 
- This is not a good velocity or position control system for the robot.
+This is not a good velocity or position control system for the robot.
 We clearly want to take into account how far off the set value we are
 and adjust our control effort. Meaning we want to base our control
 effort on the amount of error. This is the approach used with the family
@@ -228,7 +228,7 @@ proportionally to the error, :math:`e(t) = v_d - v_m`:
 
 .. math:: u(t) = K_P e(t) .
 
- This is an intuitive thing to try and in some applications works well.
+This is an intuitive thing to try and in some applications works well.
 A proportional control is mathematically more complicated that the Bang
 Bang control discussed above. It overcomes some of the issues in on-off
 controllers since they can continuously vary their output. The constant
@@ -253,7 +253,7 @@ a smooth motion? We can define two error terms
 
 .. math:: e_2(t) = \mbox{atan2}((y_1 - y_m), (x_1 - x_m)) - \theta_m .
 
- :math:`e_1` measures the difference between current location and goal
+:math:`e_1` measures the difference between current location and goal
 location, and :math:`e_2` measures the difference between current
 vehicle direction and the direction to the goal. We can try a
 proportional control on the orientation of the vehicle by proportionally
@@ -262,13 +262,13 @@ base speed. Then select the speed for the wheels:
 
 .. math:: \dot{\phi}_1 = v + k_1 e_2(t), \quad \dot{\phi}_2 = v - k_1 e_2(t).
 
- The robot can move at a fixed speed until it gets close to goal and
+The robot can move at a fixed speed until it gets close to goal and
 then can ramp down the speed by using the :math:`e_1` error value. If
 :math:`e_1(t) < d` then
 
 .. math:: \dot{\phi}_1 = k_2e_1(t)(v + k_1 e_2(t)) , \quad \dot{\phi}_1 = k_2e_1(t)(v - k_1 e_2(t)).
 
- The value :math:`k_2` can be selected so the speed is continuous across
+The value :math:`k_2` can be selected so the speed is continuous across
 the :math:`e_1(t) < d` jump. Selecting some arbitrary values,
 :math:`r=20`, :math:`L=12`, :math:`\Delta t =0.01`, :math:`k_1=2.0` and
 :math:`k_2=0.2`. :math:`k_2` is selected for continuity on wheel speed.
@@ -443,7 +443,7 @@ Set :math:`K_D=0`
 
 .. math:: u(t) = k_P  e(t) + k_I \int_0^t e(\tau)d\tau
 
- Use of the controllers in a computer requires discretization. Let
+Use of the controllers in a computer requires discretization. Let
 :math:`t_n` be the discrete times, :math:`\Delta t` the time step,
 :math:`e_n = e(t_n)`, and :math:`U_n = u(t_n)`. The discrete form can be
 converted to a basic recursion:
@@ -457,14 +457,14 @@ converted to a basic recursion:
    \label{eq:PIdiscreteformula}
    U_n = U_{n-1} + K_P(e_n - e_{n-1}) + K_I (e_n + e_{n-1})
 
- where :math:`K_P = k_p`, :math:`K_I = k_I \Delta t  / 2`.
+where :math:`K_P = k_p`, :math:`K_I = k_I \Delta t  / 2`.
 
 PD Control Discretization
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. math:: u(t) = k_P e(t) + k_D \frac{de(t)}{dt}
 
- The expression can be converted into a recursive relation:
+The expression can be converted into a recursive relation:
 
 .. math:: U_n  = k_P e_n + k_D \frac{e_n - e_{n-1}}{\Delta t}
 
@@ -475,14 +475,14 @@ PD Control Discretization
    \label{eq:PDdiscreteformula}
    U_n = U_{n-1} + K_P(e_n - e_{n-1}) + K_D (e_n - 2e_{n-1} +e_{n-2})
 
- where :math:`K_P = k_p`, :math:`K_D = k_D / \Delta t`.
+where :math:`K_P = k_p`, :math:`K_D = k_D / \Delta t`.
 
 PID Control Discretization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. math:: u(t) = k_P e(t) + k_I \int_0^t e(\tau)d\tau + k_D \frac{de(t)}{dt}
 
- In a similar fashion as above, the expression can be converted into a
+In a similar fashion as above, the expression can be converted into a
 recursive relation:
 
 .. math:: U_n  = k_P e_n + k_I \Delta t \sum_{i=1}^n \frac{e_i + e_{i-1}}{2}  + k_D \frac{e_n - e_{n-1}}{\Delta t}
@@ -494,7 +494,7 @@ recursive relation:
    \label{eq:PIDdiscreteformula}
    U_n = U_{n-1} + K_P(e_n - e_{n-1}) + K_I (e_n + e_{n-1}) + K_D (e_n - 2e_{n-1} +e_{n-2})
 
- where :math:`K_P = k_p`, :math:`K_I = k_I \Delta t  / 2`,
+where :math:`K_P = k_p`, :math:`K_I = k_I \Delta t  / 2`,
 :math:`K_D = k_D / \Delta t`.
 
 PID Application
@@ -514,7 +514,7 @@ differential drive equations:
    \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2}) .
    \end{array}
 
- We will use a PID control approach to control the wheel velocities so
+We will use a PID control approach to control the wheel velocities so
 we can closely track the path defined by the points. Using the same
 structure we assume wheel velocities of the form
 
@@ -525,7 +525,7 @@ structure we assume wheel velocities of the form
    \dot{\phi_2} = \frac{1}{r} (v_c-Lu(t))
    \end{array}
 
- where :math:`u(t)` is obtained from a PID control strategy. In practice
+where :math:`u(t)` is obtained from a PID control strategy. In practice
 on a computer this would use the discrete form of the PID control:
 
 .. math::
@@ -580,7 +580,7 @@ angle between two vectors can be determined by the dot product.
 
 .. math:: u \cdot v = \cos(\theta) \| u\| \|v\|  \quad \rightarrow\quad  \theta = \cos^{-1} \left(\frac{u \cdot v }{ \| u\| \|v\|}\right) .
 
- It is worthwhile to write a function that correctly determines the
+It is worthwhile to write a function that correctly determines the
 signed angle between vectors. Using the cross product:
 
 ::
@@ -607,13 +607,13 @@ Returning to the control problem we have:
    \omega_{2,n} = \frac{1}{r} (v_c-LU_n)
    \end{array}
 
- The last aspect is to work out the transition to the next point. Assume
+The last aspect is to work out the transition to the next point. Assume
 you want to get within :math:`\delta` of the point. This means that you
 want to drive to :math:`(x_n, y_n)` until
 
 .. math:: d = \sqrt{(x-x_n)^2 + (y - y_n)^2} < \delta
 
- then increment :math:`n` to switch to the new point. If you are using
+then increment :math:`n` to switch to the new point. If you are using
 the non-compass formula, you will want save your location when you
 switch. Using the saved location instead of :math:`(x_{n-1}, y_{n-1})`
 will give you better heading accuracy.

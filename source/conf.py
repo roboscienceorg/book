@@ -83,6 +83,7 @@ todo_include_todos = True
 
 numfig = True
 
+
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -94,8 +95,8 @@ numfig = True
 #html_theme = 'nature'
 #html_theme = 'agogo'
 #html_theme = 'sphinxdoc'
-#html_theme = 'bizstyle'
-html_theme = 'dotted'
+html_theme = 'bizstyle'
+
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

@@ -6,4 +6,3 @@ Machine Vision
 
    TriangulationandStructuredLight
    StereoCameras
-   Problems
