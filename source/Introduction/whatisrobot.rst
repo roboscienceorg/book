@@ -6,7 +6,8 @@ What exactly is a robot?
    :width:  90%
    :align: center
 
-   Two different versions of robots.  a) Honda Asimo Robot [Wikipedia]_ b) Kuka robot [Wikipedia]_
+   Two different versions of robots.  a) Honda Asimo Robot [Asimo]_
+   b) Kuka robot [Kuka]_
 
 
 
@@ -35,8 +36,8 @@ humanlike manner*.
 
    Robots design to replace human effort.  a) Repliee Q2 - developed by Osaka
    University and manufactured by
-   Kokoro Company Ltd. [Repliee_Q2]_ .  b) The NASA ATHLETE rover
-   as it climbs to the top of a hill. [Wikipedia]_
+   Kokoro Company Ltd. [Repliee]_ .  b) The NASA ATHLETE rover
+   as it climbs to the top of a hill. [ATHLETE]_
 
 
 This latter definition includes washing machines, bread makers, and
@@ -57,7 +58,7 @@ and much more.
    :align: center
 
    More examples of assistive robots.  a)  iRobot Roomba Discovery 2.1.
-   [Wikipedia]_  b) NASA experimental drilling robot. [Wikipedia]_
+   [Roomba]_  b) NASA experimental drilling robot. [DrillingRover]_
 
 
 There is no consensus on which machines qualify as robots. However,
@@ -73,8 +74,8 @@ interaction through movement and sensation.
    :align: center
 
    There are a wide range of roles for robots.  a) Keepon - therapy robot.
-   [Wikipedia]_  b) Robot tasked to detonate a buried improvised explosive
-   device. [Wikipedia]_
+   [Keepon]_  b) Robot tasked to detonate a buried improvised explosive
+   device. [IED]_
 
 
 Many may expect the robot to perform complex tasks or deal with harsh,
@@ -102,7 +103,7 @@ We can boil down our notion of robot abilities to three things:
    :align: center
 
    Systems which focus on manipulation:  a) Da Vinci Surgical System [DaVinci]_ .
-   b) Willow Garage's PR2 robot.  [Wikipedia]_
+   b) Willow Garage's PR2 robot.  [PR2]_
 
 
 One interesting phenomenon that could be influencing the lack of a solid
@@ -117,8 +118,8 @@ of a mechatronic device.
    :width:  90%
    :align: center
 
-   Systems which focus on mobility:  a) NASA's Robonaut.  [Wikipedia]_
-   b) RoboCup Standard Platform League (Image from 2010).  [Wikipedia]_
+   Systems which focus on mobility:  a) NASA's Robonaut.  [Robonaut]_
+   b) RoboCup Standard Platform League (Image from 2010).  [Robocup]_
 
 
 Robots embody technological magic. So, it is natural that some
@@ -134,8 +135,8 @@ expectation.
 
    Telepresence or remote work is a growth area in robotics.
    a) An Intel IT Labs researcher working on a remote telepresence robot pilot
-   project that uses Suitable Technologies' Beam robot.  [Wikipedia]_
-   b) ROV working on a subsea structure.  [Wikipedia]_
+   project that uses Suitable Technologies' Beam robot.  [TelePR]_
+   b) ROV working on a subsea structure.  [ROV]_
 
 
 It can be argued that there is nothing new in the subject of robotics -
@@ -153,8 +154,8 @@ we will consider robotics.
    :width: 90%
    :align: center
 
-   Mobility in simple and complex domains.  a) Justus security robot in front of Krakow railway station [JustusSecurity]_ .
-   b) Rhex: DARPA project on compliant six legged robots.   [Wikipedia]_
+   Mobility in simple and complex domains.  a) Justus security robot in front of Krakow railway station [Justus]_ .
+   b) Rhex: DARPA project on compliant six legged robots.   [RHex]_
 
 
 
@@ -197,7 +198,7 @@ with moving figures.
 
 The Cosmic Engine, a 10-meter (33 ft) clock tower built by Su Song in
 Kaifeng, China. It featured mechanical mannequins that chimed the hours,
-ringing gongs or bells among other devices.[6][7]
+ringing gongs or bells among other devices.
 
 1206 AD
 '''''''
@@ -210,14 +211,14 @@ with four automatic musicians that floated on a lake to entertain guests
 at royal drinking parties. His mechanism had a programmable drum machine
 with pegs (cams) that bump into little levers that operate the
 percussion. The drummer could be made to play different rhythms and
-different drum patterns by moving the pegs to different locations.[8]
+different drum patterns by moving the pegs to different locations.
 
 .. This figure is public domain.
 .. figure:: IntroductionFigures/Al-Jazari.*
    :width: 40%
    :align: center
 
-   Al-Jazari’s Mechanical Musical Boat.  [Wikipedia]_
+   Al-Jazari’s Mechanical Musical Boat.  [AlJazari]_
 
 
 1495

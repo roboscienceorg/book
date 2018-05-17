@@ -5,13 +5,15 @@ Introduction to Robotics
 
 .. toctree::
    :titlesonly:
-   :caption: Table of Contents
+   :caption: Preliminaries
 
    preface.rst
 
 .. toctree::
    :maxdepth: 1
    :numbered:
+   :caption: Contents
+
 
    Introduction <Introduction/index>
    Mathematical Background <Math/index>
@@ -25,6 +27,7 @@ Introduction to Robotics
    Motion/index
    Kinematics/index
    Control/index
+   References/References
 
 ..  Include when ready:
 ..   Manipulators/index

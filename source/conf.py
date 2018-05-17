@@ -30,7 +30,8 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc',
+extensions = ['sphinxcontrib.bibtex',
+    'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
@@ -128,9 +129,9 @@ html_static_path = ['_static']
 html_title = 'RoboScience'
 html_logo = './logo.png'
 
-html_theme_options = {
-"textalign" : "left"
-}
+#html_theme_options = {
+#"textalign" : "left"
+#}
 
 
 html_copy_source = False

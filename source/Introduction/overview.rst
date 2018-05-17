@@ -232,13 +232,13 @@ Software
    :width: 95%
    :align: center
 
-    The small mobile robot illustrates the three aspects of
-    robotic systems: sensing, computing and actuating.
+   The small mobile robot illustrates the three aspects of
+   robotic systems: sensing, computing and actuating.
 
-:numref:`intro-components` shows the basic hardware elements of a typical
+Figure :numref:`intro-components` shows the basic hardware elements of a typical
 low cost small mobile robot. We can see sensors, software and effectors
 in this unit. There are two sensing systems described in Figure
-[intro-components]. The familiar sensor is the Microsoft Kinect. The
+:numref:`intro-components`. The familiar sensor is the Microsoft Kinect. The
 Kinect is a type of sensor known as a ranger which is any device that
 provides distance or range information. It also has a built in camera
 which is integrated with unit. The depth sensor returns an array of
@@ -293,7 +293,7 @@ definitions of levels of autonomy for automobiles. This is strictly a
 characterization for commercially available ground vehicles. These are
 intended to provide a common set of definitions for the industry. A
 description of these levels can be found at the NHTSA
-(https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety).
+(<https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety>).
 
 +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Level 0   | The human driver does all the driving.                                                                                                                                                                                                                                                                                                           |
@@ -334,7 +334,7 @@ data. Understanding this data is a completely different and formidable
 issue. Thus we arrive at the fundamental distinction between syntax and
 semantics. Autonomous systems need to perceive the world, recognize
 objects, know their location and plan their
-activities ([intro-autonomy]). Perception of the world around requires
+activities (:numref:`intro-autonomy`). Perception of the world around requires
 sufficient sensory data to reconstruct the world, but also requires a
 conceptualization of the world leading to understanding. Recognition of
 objects is essentially the same issue, again requiring
@@ -349,34 +349,34 @@ that we will touch on in detail later in this text.
    :width: 95%
    :align: center
 
-    The traditional challenge for the software.
+   The traditional challenge for the software.
 
-**Requirement**
 
--  Have a model of the environment
+.. _`intro-autonomy`:
+.. table::  The challenge of autonomy
+   :align:  center
+   :widths: auto
 
--  Perceive and analyze the environment
+   +----------------------------------------------+------------------------------------+
+   |        **Requirement**                       | **Implementation**                 |
+   +----------------------------------------------+------------------------------------+
+   | Have a model of the environment              | Maps and Sensor Data               |
+   +----------------------------------------------+------------------------------------+
+   | Perceive and analyze the environment         | Data filtering and Sensor Fusion   |
+   +----------------------------------------------+------------------------------------+
+   | Find its position within the environment     | Localization, Mapping, Navigation  |
+   +----------------------------------------------+------------------------------------+
+   | Plan and execute the movement                | Path planning and Optimal paths    |
+   +----------------------------------------------+------------------------------------+
 
--  Find its position within the environment
 
--  Plan and execute the movement
-
-**Implementation**
-
--  Maps and Sensor Data
-
--  Data filtering and Sensor Fusion
-
--  Localization, Mapping, Navigation
-
--  Path planning and Optimal paths
 
 .. This image is public domain
 .. figure:: IntroductionFigures/RUNSWift_AIBOS.*
    :width: 50%
    :align: center
 
-   Robots in RoboCup. [Robocup]_
+   Robots in RoboCup. [Robocup2]_
 
 Autonomy presents additional challenges. The environment is very
 dynamic. Objects can enter, leave and change shape. The landscape
