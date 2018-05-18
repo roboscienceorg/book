@@ -17,7 +17,7 @@ Serial Two Link Manipulator
 
 The last few paragraphs have introduced lots of jargon. To understand
 them, it helps to see them in action. The simple two link manipulator,
-Figure \ `[intro-two-link] <#intro-two-link>`__ is a good place to
+Figure :numref:`intro-two-link` is a good place to
 start. Imagine a robotic arm that has two straight links with a rotary
 joint at the base and a rotary joint connecting the two links. In
 practice, these rotary joints would be run by motors or servos and
@@ -25,19 +25,20 @@ probably have some limits, but for now we will assume full
 :math:`360^\circ` motion.
 
 .. Owned by Roboscience
+.. _`intro-two-link`:
 .. figure:: TermsFigures/twolinkalt.*
-   :width: 70%
+   :width: 60%
    :align: center
 
-   The two link manipulator. [intro-two-link]
+   The two link manipulator.
 
 The workspace that the arm operates inside is a disk,
-Figure \ `[two-link-disk] <#two-link-disk>`__. This is a two dimensional
+Figure :numref:`two-link-disk`. This is a two dimensional
 workspace. The figure indicates the workspace in gray. It may also be
 the case that there is something in the workspace, a workspace obstacle
 indicated in red. This unit has two joints which define a two
 dimensional configuration space,
-Figure \ `[intro-config-axis] <#intro-config-axis>`__. The dimension of
+Figure :numref:`intro-config-axis`. The dimension of
 the configuration space is the degrees of freedom, and so this has two
 degrees of freedom. Since the joint is rotary and moving a full
 :math:`360^\circ` degrees returns you to the same angle, the two
@@ -45,54 +46,42 @@ directions wrap back on themselves. This actually makes the
 configuration space a two dimensional torus or “donut”.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolinkconfig.*
+.. _`two-link-disk`:
+.. figure:: TermsFigures/twolinkconfigobs.*
    :width: 70%
    :align: center
 
-   Workspace for the two link manipulator with equal link lengths.
-
-.. Owned by Roboscience
-.. figure:: TermsFigures/twolinkobs.*
-   :width: 70%
-   :align: center
-
-   Workspace obstacle for the two link manipulator. [two-link-disk]|
+   Two link manipulator: (a) Workspace with equal link lengths and (b) Workspace obstacle.
 
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/twolinkconfig.*
+.. _`intro-config-axis`:
+.. figure:: TermsFigures/twolinkconfigdomaintorus.*
    :width: 70%
    :align: center
 
    Configuration domain and configuration topology which is a torus.
-   [intro-config-axis]
 
-.. Owned by Roboscience
-.. figure:: TermsFigures/twolinkobs.*
-   :width: 70%
-   :align: center
-
-   Configuration domain and configuration topology which is a torus.
-   [intro-config-axis]
 
 
 We will illustrate what is meant by kinematics and inverse kinematics
 using the two link manipulator. Forward kinematics will identify the
 location of the end effector as a function of the joint angles,
-Figure \ `[twolinklabeled] <#twolinklabeled>`__-(a). This is easily done
+Figure :numref:`twolinklabeled`-(a). This is easily done
 using a little trigonometry. First we find the location of
 :math:`(\xi, \eta)` as a function of :math:`\theta_1` and the link
-length :math:`a_1`, Figure \ `[twolinklabeled] <#twolinklabeled>`__-(b):
+length :math:`a_1`, Figure :numref:`twolinklabeled`-(b):
 
 .. math:: \xi =  a_1 \cos \theta_1, \quad \eta = a_1 \sin \theta_1
 
 .. Owned by Roboscience
+.. _`twolinklabeled`:
 .. figure:: TermsFigures/twolink2.*
-   :width: 70%
+   :width: 85%
    :align: center
 
    a) The two link manipulator with the links and joints labeled. b)
-   Location of the middle joint. [twolinklabeled]
+   Location of the middle joint.
 
 The next link can be included with
 
@@ -102,8 +91,8 @@ Note that :math:`x = \xi + \Delta x` and :math:`y = \eta + \Delta y`.
 Combining the expressions, the forward kinematics are:
 
 .. math::
+   :label: twolinkforward
 
-   \label{twolinkforward}
    \begin{matrix}
    x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1 \\
    y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1
@@ -112,7 +101,7 @@ Combining the expressions, the forward kinematics are:
 
 As you move the servos in the system, you can change the angles
 :math:`\theta_1` and :math:`\theta_2`. The
-formula \ `[twolinkforward] <#twolinkforward>`__ gives the location of
+formula :eq:`twolinkforward` gives the location of
 the end effector :math:`(x,y)` as a function of
 :math:`(\theta_1, \theta_2)`. The values :math:`x`, :math:`y` live in
 the workspace. The values :math:`\theta_1`, :math:`\theta_2` live in the
@@ -128,10 +117,13 @@ is some algebra and trigonometery for solving :math:`\theta_1`,
 To find the inverse kinematics formulas we must appeal to some
 trigonometry (law of cosines):
 
-.. math:: x^2 + y^2 = a_1^2 + a_2^2 - 2a_1a_2 \cos (\pi - \theta_2). \label{eqn:theta2step1}
+.. math::
+   :label: eqn:theta2step1
 
- Using :math:`\cos(\pi - \alpha) = -\cos(\alpha)`, we solve for
-:math:`\cos` in Eqn \ `[eqn:theta2step1] <#eqn:theta2step1>`__:
+   x^2 + y^2 = a_1^2 + a_2^2 - 2a_1a_2 \cos (\pi - \theta_2).
+
+Using :math:`\cos(\pi - \alpha) = -\cos(\alpha)`, we solve for
+:math:`\cos` in Eqn :eq:`eqn:theta2step1`:
 
 .. math:: \cos(\theta_2) = \frac{x^2 + y^2 - a_1^2 - a_2^2}{2a_1a_2 }\equiv D
 
@@ -147,17 +139,21 @@ The tangent form has the +/- and gives the elbow up and elbow down
 solutions.
 
 .. Owned by Roboscience
+.. _`twolinklabeled2`:
 .. figure:: TermsFigures/twolink3.*
-   :width: 70%
+   :width: 40%
    :align: center
 
-   The interior angles for the two link manipulator. [twolinklabeled2]
+   The interior angles for the two link manipulator.
 
-From Figure \ `[twolinklabeled2] <#twolinklabeled2>`__, we have
+From Figure :numref:`twolinklabeled2`, we have
 
-.. math:: \theta_1 = \phi - \gamma = \tan^{-1}\frac{y}{x} - \gamma . \label{eqn:theta1step1}
+.. math::
+   :label: eqn:theta1step1
 
- If you look at the two dotted blue lines you can see that the line
+   \theta_1 = \phi - \gamma = \tan^{-1}\frac{y}{x} - \gamma .
+
+If you look at the two dotted blue lines you can see that the line
 opposite :math:`\gamma` has length :math:`a_2\sin \theta_2`. The segment
 adjacent to :math:`\gamma` (blue solid and dotted lines) has length
 :math:`a_1 + a_2\cos \theta_2`. Then
@@ -168,23 +164,26 @@ which gives us :math:`\gamma`:
 
 .. math:: \gamma = \tan^{-1} \frac{a_2\sin \theta_2}{a_1 + a_2\cos\theta_2}.
 
-Plug :math:`\gamma` into Eqn \ `[eqn:theta1step1] <#eqn:theta1step1>`__
+Plug :math:`\gamma` into Eqn :eq:`eqn:theta1step1`
 and we obtain
 
 .. math:: \theta_1 = \tan^{-1}\frac{y}{x} - \tan^{-1} \frac{a_2\sin \theta_2}{a_1 + a_2\cos\theta_2}
 
 Given the two link manipulator kinematic equations:
 
-.. math:: x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1
+.. math::
 
-
-.. math:: y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1
+   \begin{matrix}
+   x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1 \\
+   y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1
+   \end{matrix}
 
 The inverse kinematics (IK) are
 
 .. math:: D = \frac{x^2 + y^2 - a_1^2 - a_2^2}{2a_1a_2 }
 
 .. math::
+   :label: IKtwolink
 
    \theta_1 = \tan^{-1}\frac{y}{x} - \tan^{-1} \frac{a_2\sin \theta_2}{a_1 + a_2\cos\theta_2}, \quad\quad
    \theta_2 = \tan^{-1}\frac{\pm\sqrt{1-D^2}}{D}
@@ -199,8 +198,7 @@ Let :math:`a_1 = 15`, :math:`a_2 = 10`, :math:`x=10`, :math:`y=8`. Find
 
 #. :math:`\theta_2 = \tan^{-1}(-\sqrt{1-(-0.53667)^2}/(-0.53667))\approx -2.137278`
 
-#. | :math:`\theta_1 = \tan^{-1}(8/10)-\tan^{-1}[(10\sin(-2.137278))/`
-   | :math:`(15+ 10\cos(-2.137278))] \approx 1.394087`
+#. :math:`\theta_1 = \tan^{-1}(8/10)-\tan^{-1}[(10\sin(-2.137278))/(15+ 10\cos(-2.137278))] \approx 1.394087`
 
 | Check the answer:
 | :math:`x = 10*\cos(1.394087-2.137278) + 15*\cos(1.394087) = 10.000`
@@ -236,22 +234,23 @@ The Delta configuration is not just found in *Pick and Place* machines
 but has also become popular with the 3D printing community. This style
 of printer is fast and accurate. Just to get started, we look at a two
 dimensional analog shown in
-Figure \ `[Fig:paralleltwolink] <#Fig:paralleltwolink>`__. The top (red)
+Figure :numref:`Fig:paralleltwolink`. The top (red)
 is fixed and is of length :math:`L_0`. The two links on either side
 shown in dark blue are connected by servos (in green). These links are
 of length :math:`L_1`. The angles are measured from the dotted line (as
 0 degrees) to straight down (90 degrees), see
-Figure \ `[Fig:paralleltwolink2] <#Fig:paralleltwolink2>`__. At the
+Figure :numref:`Fig:paralleltwolink2`. At the
 other end of the dark blue links is a free rotational joint (pivot).
 That connects the two light blue links which are joined together at the
 bottom with a rotational joint.
 
 .. Owned by Roboscience
+.. _`Fig:paralleltwolink`:
 .. figure:: TermsFigures/2dDelta.*
-   :width: 70%
+   :width: 30%
    :align: center
 
-   Parallel Two Link Manipulator. [Fig:paralleltwolink]
+   Parallel Two Link Manipulator.
 
 Unlike the previous two link manipulator, it is not completely obvious
 what the workspace looks like (although you might guess something
@@ -268,50 +267,48 @@ red base link. The question is to figure out the position of the end
 effector at :math:`(x,y)` as a function of :math:`\theta_1` and
 :math:`\theta_2` with fixed link lengths :math:`L_0`, :math:`L_1`,
 :math:`L_2`,
-Figure \ `[Fig:paralleltwolink2] <#Fig:paralleltwolink2>`__. As with the
+Figure :numref:`Fig:paralleltwolink2`. As with the
 serial chain manipulator, this is an exercise in trigonometry.
 
 .. Owned by Roboscience
-.. figure:: TermsFigures/2dtwolinkconfigdomain.*
-   :width: 70%
+.. _`Fig:paralleltwolink2`:
+.. figure:: TermsFigures/2dDeltaCombined.*
+   :width: 80%
    :align: center
 
-.. Owned by Roboscience
-.. figure:: TermsFigures/2dDelta2.*
-   :width: 70%
-   :align: center
-   |Parallel Two Link (a) configuration space (b) with coordinates
-   [Fig:paralleltwolink2]|
+   Parallel Two Link (a) configuration space (b) with coordinates
+
 
 The forward kinematics will provide :math:`(x,y)` as a function of
 :math:`(\theta_1, \theta_2)`. The derivation is left as an exercise and
 so the point :math:`(x,y)` is given by
 
 .. math::
+   :label: paralleltwolinkforward
 
-   \label{paralleltwolinkforward}
    (x,y) = \left( \frac{a+c}{2} + \frac{v (b-d)}{u} , \frac{b+d}{2} + \frac{v (c-a)}{u} \right)
 
- Where
+Where
 
 .. math:: (a,b) = (-L_1 \cos(\theta_1) - L_0/2 , L_1 \sin(\theta_1) )
 
 .. math:: (c,d) = (L_1 \cos(\theta_2) + L_0/2 , L_1 \sin(\theta_2) )
 
-and :math:`u = \sqrt{(a-c)^2 + (b-d)^2}` and
+and :math:`u = \sqrt{(a-c)^2 + (b-d)^2}`,
 :math:`v  = \sqrt{L_2^2 - u^2/4}`.
 
 If you guessed that the workspace was an ellipse like the author did,
-that would be wrong. If you guessed some type of warped rectangle, the
+that would be wrong. If you guessed some type of warped rectangle, then
 you have great intuition.
-Figure \ `[Fig:paralleltwolinkWS] <#Fig:paralleltwolinkWS>`__ shows the
+Figure :numref:`Fig:paralleltwolinkWS` shows the
 workspace for the configuration domain :math:`[0, \pi/2]^2`. The figure
 graphs :math:`y` positive going upwards and for the manipulator
 :math:`y` positive goes down (so a vertical flip is required to match
 up). The workspace can be created by running a program that traces out
 all the possible arm angles and plots the resulting end effector
-position [2]_. Sample code to plot this workspace is given below. It
-uses a double loop over :math:`\theta_1` and :math:`\theta_2`, places
+position (not all points, but a dense sample of points will do just fine).
+Sample code to plot this workspace is given below. It
+uses a double loop over :math:`\theta_1` and :math:`\theta_2`, which places
 these values in the forward kinematics and then gathers the resulting
 :math:`(x,y)` values. Like the serial manipulator, this is a holonomic
 robot as well.
@@ -357,19 +354,23 @@ robot as well.
     plt.show()
 
 .. Owned by Roboscience
+.. _`Fig:paralleltwolinkWS`:
 .. figure:: TermsFigures/2dDeltaWS.*
-   :width: 70%
+   :width: 40%
    :align: center
 
-   Parallel Two Link Workspace [Fig:paralleltwolinkWS]
+   Parallel Two Link Workspace
 
 The inverse kinematics will give you :math:`(\theta_1, \theta_2)` as a
 function of :math:`(x,y)`. This is another exercise in trigonometry. For
 :math:`(x,y)` given, we obtain
 
-.. math:: \theta_1  = \pi - \beta - \eta , \quad \quad \theta_2 = \pi - \alpha - \gamma \label{paralleltwolinkIK}
+.. math::
+   :label: paralleltwolinkIK
 
-\ where
+   \theta_1  = \pi - \beta - \eta , \quad \quad \theta_2 = \pi - \alpha - \gamma
+
+where
 
 .. math:: \| G \| = \sqrt{(x-L_0/2)^2 + y^2},  \quad\quad \| H\| = \sqrt{(x+L_0/2)^2 + y^2}
 
@@ -411,7 +412,8 @@ and SciPy one can leverage existing code considerably. The scalar
 iterator) with little change in the code. The normal arithmetic
 operators are overloaded and the iteration is done elementwise. Although
 Python is normally much slower than a C equivalent, numpy is highly
-optimized and the code runs close to the speed of C. [3]_
+optimized and the code runs close to the speed of C. [#f1]_
+
 
 ::
 
@@ -469,7 +471,8 @@ configuration space than differential drive systems.
 For this example, we assume we have something like the differential
 drive robot. Assume that you have a simple mobile robot with two driven
 wheels and a third free unpowered wheel which can easily pivot or slide,
-Figure \ `[fig:ddrive] <#fig:ddrive>`__. The drive wheels are not
+Figure :numref:`fig:ddriverectangular` or :numref:`fig:ddrivecircular`.
+The drive wheels are not
 steered but can be spun at different rates which will steer the robot.
 This system is known as differential drive and is roughly analogous to
 how a tank drive operates. It is necessary to develop equations of
@@ -478,19 +481,19 @@ or motion of the robot so we can see the results of our robot control
 software. The second reason is that the equations will be required in
 localization algorithms.
 
-
+.. _`fig:ddriverectangular`:
 .. figure:: TermsFigures/ddrive.*
    :width: 70%
    :align: center
 
-   Rectangular frame. [fig:ddriverectangular]
+   Rectangular frame.
 
-
+.. _`fig:ddrivecircular`:
 .. figure:: TermsFigures/circular.*
-   :width: 70%
+   :width: 50%
    :align: center
 
-   Circular frame. [fig:ddrivecircular]
+   Circular frame.
 
 Reference Frames
 ^^^^^^^^^^^^^^^^
@@ -515,12 +518,12 @@ direction. To remove any ambiguity, we assume that :math:`x`, :math:`y`,
 :math:`z` also follow a right hand rule (which in this case sets the
 direction of :math:`y`).
 
-
+.. _`refframe`:
 .. figure:: TermsFigures/frames.*
-   :width: 70%
+   :width: 55%
    :align: center
 
-   The global and local frames of reference. [refframe]
+   The global and local frames of reference.
 
 The global coordinate system already has an origin defined. However, we
 can choose the local frame origin. Our choice to simplify the
@@ -546,12 +549,13 @@ frame. Graphically :math:`\theta` the amount of rotation applied to
 :math:`X_I` to line it up with :math:`X_R`.
 
 .. Owned by Roboscience
+.. _`refddframe`:
 .. figure:: TermsFigures/ddframe.*
-   :width: 70%
+   :width: 55%
    :align: center
 
    The two frames of reference for a mobile robot: the inertial or
-   global frame and the relative or local frame.[refddframe]
+   global frame and the relative or local frame.
 
 We can track the robot position by tracking its coordinate system origin
 and orientation relative to the global coordinate system, :math:`\xi_I`.
@@ -560,7 +564,7 @@ So, we define the object relative to the robot by coordinates
 
 .. math:: \xi_I = \begin{pmatrix} x \\ y \\ \theta \end{pmatrix}, \quad \xi_R= \begin{pmatrix} x' \\ y' \\ 0 \end{pmatrix}.
 
-\ The movement of the robot traces a path, :math:`x(t)`, :math:`y(t)`,
+The movement of the robot traces a path, :math:`x(t)`, :math:`y(t)`,
 in the global coordinate system which is our motion in the environment
 or in the simulation window. It is possible to track this motion through
 information obtained in the local frame. In order to do this, we need a
@@ -594,7 +598,7 @@ instantaneous time:
 
 We can undo the rotation easily. Since :math:`R` is an orthogonal
 matrix, the inverse is easy to
-compute. :raw-latex:`\cite{strang1988book}`
+compute,  for more information see Strang :cite:`strang1988book` .
 
 .. math::
 
@@ -614,7 +618,7 @@ Working in instantenous local coordinate enables us to determine the
 motion easily. We then use the rotation matrix to relate the robot
 position in the global frame. To progress in the modeling process, we
 need to know the specifics of the robot, illustrated in
-Figure \ `[robotdimensions] <#robotdimensions>`__.
+Figure :numref:`robotdimensions`.
 
 -  Wheel size: :math:`D`, so the radius :math:`r = D/2`
 
@@ -625,11 +629,12 @@ Figure \ `[robotdimensions] <#robotdimensions>`__.
    midpoint of the axle.
 
 .. Owned by Roboscience
+.. _`robotdimensions`:
 .. figure:: TermsFigures/dddim.*
-   :width: 70%
+   :width: 25%
    :align: center
 
-   Robot Dimensions.[robotdimensions]
+   Robot Dimensions.
 
 Recall that the goal was to compute the motion of the robot based on the
 rotational speed of the wheels. Let :math:`\dot{\phi_1}` and
@@ -642,21 +647,18 @@ Next we determine the contribution of each wheel to linear forward
 motion. The relation between linear and angular velocities gives us for
 the right wheel :math:`\dot{x_1} = r\dot{\phi_1}` and for the left
 wheel: :math:`\dot{x_2} = r\dot{\phi_2}`,
-Figure \ `[axlevelocity] <#axlevelocity>`__. The differential speeds
+Figure :numref:`axlevelocity`. The differential speeds
 then produce the rotational motion about the robot center and the
 average forward velocity.
 
 .. Owned by Roboscience
+.. _`axlevelocity`:
 .. figure:: TermsFigures/ddaxle.*
    :width: 70%
    :align: center
 
-   Velocity of axle induced by wheel velocities.[axlevelocity]
+   Velocity of axle induced by wheel velocities.
 
-.. Owned by Roboscience
-.. figure:: TermsFigures/ddforward.*
-   :width: 70%
-   :align: center
 
 
 The speed of point :math:`P` is given by the weighted average based on
@@ -664,7 +666,7 @@ distances of the wheels to :math:`P`. To see this, we consider a couple
 of cases. If the two wheel velocities are the same, then the average
 works trivially. If the two velocities are different (but constant),
 then the motion of the robot is a circle.
-Figure \ `[axlevelocity] <#axlevelocity>`__ shows the robot motion.
+Figure :numref:`axlevelocity` shows the robot motion.
 Assuming the outer circle radius is :math:`\rho + 2L` with velocity
 :math:`r\dot{\phi}_1` and the inner circle is radius :math:`\rho` with
 wheel velocity :math:`r\dot{\phi}_2`, we have that the motion of a
@@ -700,18 +702,19 @@ vehicle. The contribution from the right wheel is
 :math:`\dot{\theta} = r\dot{\phi_1}/(2L)` and the contribution from the
 left wheel is :math:`2L\dot{\theta} = -r\dot{\phi_2}` or
 :math:`\dot{\theta} = -r\dot{\phi_2}/(2L)`, see
-Figure \ `[diffdriverotation] <#diffdriverotation>`__. The rotation
+Figure :numref:`[diffdriverotation`. The rotation
 about :math:`P` is given by adding the individual contributions:
 
 .. math:: \dot{\theta} =  \frac{r}{2L} (\dot{\phi_1} - \dot{\phi_2}).
 
 .. Owned by Roboscience
+.. _`diffdriverotation`:
 .. figure:: TermsFigures/ddaxlerot.*
-   :width: 70%
+   :width: 20%
    :align: center
 
    The contribution of the two wheels towards rotational
-   motion.[diffdriverotation]
+   motion.
 
 In local or robot coordinates we obtain the following equations of
 motion
@@ -752,17 +755,17 @@ This leads to the following equations of motion in the global reference
 frame:
 
 .. math::
+   :label: ddkinematicsmodel
 
-   \label{ddkinematicsmodel}
    \boxed{
    \begin{array}{l}
-    \dot{x} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\cos(\theta) \\[5mm]
-   \dot{y} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\sin(\theta) \\[5mm]
+   \dot{x} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\cos(\theta) \\[4mm]
+   \dot{y} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\sin(\theta) \\[4mm]
    \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
    \end{array}}
 
- These are non-holonomic constraints, see
-exercise \ `[DDisnotHolonomic] <#DDisnotHolonomic>`__.
+These are non-holonomic constraints, see
+exercise :numref:`DDisnotHolonomic`.
 
 Assume that you have a differential drive robot. If the drive wheel is
 20cm in diameter and turns at 10 rpm (revolutions per minute), what is
@@ -781,7 +784,7 @@ turning at 10.5 rpm, find a formula for the resulting motion.
 
 As stated earlier, the motion for this robot would be a circle. Thus the
 two wheels trace out two concentric
-circles \ `[fig:ddrivecircles] <#fig:ddrivecircles>`__ The two circles
+circles :numref:`fig:ddrivecircles`.  The two circles
 must be traced out in the same amount of time:
 
 .. math::
@@ -800,12 +803,12 @@ must be traced out in the same amount of time:
 Thus we have :math:`x^2 + y^2 = 600^2` as the basic formula for the
 curve of motion.
 
-
+.. _`fig:ddrivecircles`:
 .. figure:: TermsFigures/ddrive_circle.*
    :width: 70%
    :align: center
 
-   [fig:ddrivecircles]A differential drive robot with constant wheel
+   A differential drive robot with constant wheel
    velocity drives in straight lines and circles.
 
 | Solve these equations for the given values of
@@ -836,14 +839,14 @@ curve of motion.
 |                                   | :math:`(0,0,0)+(135,0,0)=(135,0,0 |
 |                                   | )`                                |
 +-----------------------------------+-----------------------------------+
-| [1mm] :math:`t=5  \to 6`:         | :math:`\omega_1 = - \omega_2 = 2. |
+|  :math:`t=5  \to 6`:         | :math:`\omega_1 = - \omega_2 = 2. |
 |                                   | 0`,                               |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
 |                                   | :math:`(135,0,0) + (0,0,3/2) = (1 |
 |                                   | 35,0,3/2)`                        |
 +-----------------------------------+-----------------------------------+
-| [1mm] :math:`t=6  \to 10`:        | :math:`\omega_1 = \omega_2 = 3.0` |
+|  :math:`t=6  \to 10`:        | :math:`\omega_1 = \omega_2 = 3.0` |
 |                                   | ,                                 |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
@@ -853,14 +856,14 @@ curve of motion.
 |                                   | :math:`\approx (142.6, 107.7, 1.5 |
 |                                   | )`                                |
 +-----------------------------------+-----------------------------------+
-| [1mm] :math:`t=10 \to 11`:        | :math:`\omega_1 = -\omega_2 = -2. |
+| :math:`t=10 \to 11`:        | :math:`\omega_1 = -\omega_2 = -2. |
 |                                   | 0`,                               |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
 |                                   | :math:`(142.6, 107.7, 1.5)+(0, 0, |
 |                                   |  -1.5) = (142.6, 107.7, 0)`       |
 +-----------------------------------+-----------------------------------+
-| [1mm] :math:`t=11 \to 16`:        | :math:`\omega_1 =  \omega_2 = 3.0 |
+| :math:`t=11 \to 16`:        | :math:`\omega_1 =  \omega_2 = 3.0 |
 |                                   | `,                                |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
@@ -891,8 +894,7 @@ we may need to track the entire manipulator. Surgical robots are a fine
 example. They have to operate in very narrow corridors to reduce skin
 incisions. In those cases a full geometric model may be required and
 constraints are placed on all of the intermediate links. For mobile
-robots, this problem seems to arise more often. We tend to track the
-entire machine in the workspace.
+robots, this problem seems to arise often.
 
 If the mobile robot was extremely small, like a point, it is pretty easy
 to deal with. There is only the point to track, no orientation to worry
@@ -916,24 +918,18 @@ tracking the centroid, we can determine the configuration space. Since
 the middle of the robot cannot touch the obstacle boundary, the
 interaction between the robot and the obstacle reduces the configuration
 space as shown in
-Figures \ `[Fig:RobotSize] <#Fig:RobotSize>`__, \ `[Fig:intro-mobile1] <#Fig:intro-mobile1>`__.
+Figures :numref:`Fig:RobotSize`, :numref:`Fig:intro-mobile1`.
 In this case the size of the robot affects the configuration space,
-Figure \ `[Fig:intro-mobile2] <#Fig:intro-mobile2>`__. For a mobile
+Figure :numref:`Fig:intro-mobile2`. For a mobile
 ground robot that is not a point, orientation will enter as a variable
 in the system.
 
+.. _`Fig:RobotSize`:
 .. figure:: TermsFigures/circle1.*
-   :width: 70%
+   :width: 60%
    :align: center
 
-   |Configuration space as a function of robot size. [Fig:RobotSize]|
-
-.. figure:: TermsFigures/circle2.*
-   :width: 70%
-   :align: center
-
-   |Configuration space as a function of robot size. [Fig:RobotSize]|
-
+   Configuration space as a function of robot size.
 
 For a round or disk robot with radius, :math:`r`, the center of the
 robot can only get to within distance :math:`r` of an obstacle boundary.
@@ -950,25 +946,26 @@ points of contact between the robot and the obstacle. This draws an
 outer boundary around the obstacle and makes the obstacle larger. We
 have inflated the obstacle.
 
-
+.. _`Fig:intro-mobile1`:
 .. figure:: TermsFigures/mobile.*
    :width: 70%
    :align: center
 
-   Example of the inflation process. [Fig:intro-mobile1]
+   Example of the inflation process.
 
+.. _`Fig:intro-mobile2`:
 .. figure:: TermsFigures/mobile2.*
    :width: 70%
    :align: center
 
    Relation between robot size and configuration space.
-   [Fig:intro-mobile2]
+
 
 The previous examples looked at a circular robot. What about a robot
 which is a rectangle? What would be the configuration space about some
-obstacle? Figure \ `[shapematters] <#shapematters>`__. The basic shape
+obstacle? Figure :numref:`shapematters`. The basic shape
 of the robot is important as well as its orientation,
-Figure \ `[orientationmatters] <#orientationmatters>`__. Inflation in
+Figure :numref:`orientationmatters`. Inflation in
 this case depends on the fixed orientation of the robot. One follows the
 same process and pushes the robot up until it touches the obstacle.
 Doing this for all locations around the obstacle all while keeping the
@@ -979,36 +976,36 @@ a point. We can then study robot paths through the open space. Of course
 in practice this is absurd since the robot orientation is not fixed. But
 it does help transition to the general case.
 
+.. _`shapematters`:
 .. figure:: TermsFigures/rect.*
    :width: 70%
    :align: center
 
-   Changing robot shape also affects c-space. [shapematters]
+   Changing robot shape also affects c-space.
 
-
+.. _`orientationmatters`:
 .. figure:: TermsFigures/rect2.*
    :width: 70%
    :align: center
 
    Changing robot orientation affects c-space as well.
-   [orientationmatters]
 
 It is helpful to see some examples of the inflation process. A
 rectangular object does not just change scale. It changes shape as well.
 For a rectangle, he inflated obstacle is a “rectangle” with rounded
 corners. It is important to note that each rotation of the rectangle
 generates a new and different configuration space,
-Figure \ `[orientationmattersalot] <#orientationmattersalot>`__. This
+Figure :numref:`orientationmattersalot`. This
 process can be very complicated and often one will want to make
 simplifications.
 
-
+.. _`orientationmattersalot`:
 .. figure:: TermsFigures/rect3.*
    :width:  70%
    :align: center
 
    Two sample rotations and the configuration
-   obstacle.[orientationmattersalot]
+   obstacle.
 
 Robot orientation then makes the configuration space question more
 complicated since the configuration space is a function of the robot
@@ -1017,9 +1014,15 @@ robot orientation or be able to adjust to a changing landscape. To fix
 orientation ultimately means that the orientation is independent of
 travel direction. This is not the case for the vast majority of
 vehicles. The orientation for a car, for example, is pointed in the
-direction of travel. [4]_ To obtain this independence a holonomic robot
+direction of travel. [#f2]_ To obtain this independence a holonomic robot
 is required. The term holonomic will be carefully defined later, for
 now, consider it a mobile robot that can set position and orientation
 independently. Independent of the type of motion, it should be clear now
 that position and orientation are separate and important variables in
 the system which is addressed next.
+
+** Notes **
+
+.. [#f1] Well, this is true on one Tuesday afternoon a long time ago with one little comparison of some loop/math code.  Your results may be very different.
+
+.. [#f2] Under normal conditions this is true, however, icy roads will allow for much greater freedom of vehicle orientation and travel direction.

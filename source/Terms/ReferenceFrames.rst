@@ -15,8 +15,7 @@ the *tool reference*. Relating the various frames of reference requires
 some knowledge of coordinate systems and transforms which is found in
 standard courses in linear algebra.
 
-The operating environment for a robot is known as the *workspace*,
-Figure \ `[intro-two-link] <#intro-two-link>`__. It is defined as the
+The operating environment for a robot is known as the *workspace*. It is defined as the
 volume or region for which the robot can operate. For robots with
 manipulators, traditionally the workspace is all points that the tool
 end can reach. For mobile robots it is the region that the robot can and
@@ -99,16 +98,17 @@ Steering), then your final orientation depends on your path. If you
 drive straight then your final orientation is in line with the line
 between the start and end points. However, you could have made a large
 detour and ended up at another
-orientation \ `[fig:dependsonpath] <#fig:dependsonpath>`__.
+orientation as shown in Figure :numref:`fig:dependsonpath`.
 
+.. _`fig:dependsonpath`:
 .. figure:: TermsFigures/dependsonpath.svg
-   :width: 70%
+   :width: 40%
    :align: center
 
-   Final orientation depends on path[fig:dependsonpath]
+   Final orientation depends on path.
 
 Assume you decide to replace your auto wheels with caster wheels and
-have someone push you [1]_. In this case you can travel from point to
+have someone push you. In this case you can travel from point to
 point with arbitrary orientation. This simple example implies that we
 have two fundamentally different types of motion. One that depends on
 the path and one that does not. The independence of path boils down to
@@ -136,11 +136,11 @@ Holonomic Constraints
 A constraint is called holonomic (or geometric) if one can express it as
 
 .. math::
+   :label: eq:holonomicdefn
 
-   \label{eq:holonomicdefn}
    f(x_1, x_2, \dots , x_n, t)=0
 
- A holonomic constraint only depends on the coordinates and time and
+A holonomic constraint only depends on the coordinates and time and
 does not depend on derivatives. If all the system constraints are
 holonomic then we say the system is *holonomic*. Otherwise we say the
 system is *non-holonomic*. Wikipedia has a nice way of expressing
@@ -192,8 +192,8 @@ differentiating some function :math:`f(t,x)`. We consider first order
 expressions,
 
 .. math::
+   :label: eq:differential
 
-   \label{eq:differential}
    \frac{df}{dt} = \sum_{i=1}^{n} a_i (x,t) \dot{x_i} + a_t(x,t) .
 
 These expressions are linear in the velocity terms, :math:`\dot{x_i}`.
@@ -202,20 +202,20 @@ not come from differentiation of a holonomic constraint. That is enough
 to eliminate many expressions as candidates. If one is in doubt about an
 expression, we can borrow the concepts of independence of path and
 conservative vector fields from calculus.
-Equation \ `[eq:differential] <#eq:differential>`__ is related to the
+Equation :eq:`eq:differential` is related to the
 differential form you studied in line integrals.
 
 .. math::
+   :label:  eq:differentialform
 
-   \label{eq:differentialform}
    df = \sum_{i=1}^{n} a_i (x,t) d x_i + a_t(x,t) dt .
 
 To be a holonomic constraint, we need that
-Eq \ `[eq:differentialform] <#eq:differentialform>`__ to be a total
+Equation :eq:`eq:differentialform` to be a total
 derivative (exact differential) or that by using an integrating factor
 can be made into a total derivative (exact differential). If you are
 able to convert an expression to the form in
-Eq \ `[eq:holonomicdefn] <#eq:holonomicdefn>`__ then we know that we
+Equation :eq:`eq:holonomicdefn` then we know that we
 have a holonomic constraint.
 
 Maybe the expression is not holonomic or you just don’t see how to
@@ -285,18 +285,19 @@ equations
 
 .. math:: x = F(p).
 
-
+.. _`fig:threelink`:
 .. figure:: TermsFigures/threelink.svg
-   :width: 70%
+   :width: 50%
    :align: center
 
-   [fig:threelink] A three link planar manipulator.
+   A three link planar manipulator.
 
+.. _`fig:forwardkinematics`:
 .. figure:: TermsFigures/forwardkinematics.svg
    :width: 70%
    :align: center
 
-   [fig:forwardkinematics] The mapping from configuration space to
+   The mapping from configuration space to
    workspace.
 
 Forward Position Kinematics for Serial Chains
@@ -345,7 +346,7 @@ function of time, let the forward position kinematics be given by
 from the forward position kinematics by differentiation (and chain
 rule). A compact notation uses the Jacobian of the forward kinematics:
 
-.. math:: v = J_F(p) q, \quad  \mbox{~where~} \quad v = \frac{dx}{dt}, ~ q = \frac{dp}{dt}.
+.. math:: v = J_F(p) q, \quad  \mbox{ where } \quad v = \frac{dx}{dt}, ~ q = \frac{dp}{dt}.
 
 Inverse Velocity Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

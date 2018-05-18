@@ -52,7 +52,7 @@ figure below, the solid line is a vector space is, and the dotted is
 not. A vector space must include the zero element and the dotted line
 does not.
 
-
+.. _`fig:lineisnotvectorspace`:
 .. figure:: MathFigures/lines.*
    :width: 40%
    :align: center
@@ -67,7 +67,7 @@ such as the span of
    \left\{\begin{pmatrix} 1 \\ 0 \\ 0\end{pmatrix},
    \begin{pmatrix} 0 \\ 1 \\ 0\end{pmatrix}\right\}.
 
-The reason these concepts are brought up is that when solving linear
+The reason these concepts are discussed is that when solving linear
 systems or doing least squares (optimization), you are often working
 with vector spaces and subspaces. The literature uses this terminology
 and the concepts have a very rich geometric structure which can be
@@ -314,14 +314,14 @@ can do.
 The other variation of the non-square linear system is the
 *underdetermined* problem. In this case we have more columns than rows
 and so has the structure shown in
-Figure \ `[Fig:underdetermined] <#Fig:underdetermined>`__.
+Figure  :numref:`Fig:underdetermined]`
 
-
+.. _`Fig:underdetermined]`:
 .. figure:: MathFigures/hrect.*
    :width:  20%
    :align: center
 
-   An underdetermined system[Fig:underdetermined]
+   An underdetermined system
 
 The columns cannot be linearly independent and so :math:`A^TA` is not
 invertible which means the left sided pseudo-inverse
@@ -518,14 +518,14 @@ One can solve :math:`X^TX a = X^T y`: :math:`a = (X^TX)^{-1} X^T y`
    \end{bmatrix}
 
 The curve is approximately :math:`y = 0.49x^2 - 1.21x + 1.42`,
-Figure \ `[plot:quadgraph] <#plot:quadgraph>`__.
+Figure  :numref:`plot:quadgraph`
 
-
+.. _`plot:quadgraph`
 .. figure:: MathFigures/quadgraph.*
    :width: 70%
    :align: center
 
-   The plot of :math:`y = 0.49x^2 - 1.21x + 1.42`.[plot:quadgraph]
+   The plot of :math:`y = 0.49x^2 - 1.21x + 1.42`.
 
 Singular Value Decomposition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -605,26 +605,28 @@ the covariance computation):
    \end{pmatrix} .
 
 Assume that you have an :math:`x`-:math:`y` data set,
-Figure \ `[Fig:weightedLSdata] <#Fig:weightedLSdata>`__. Using the
+Figure :numref:`Fig:weightedLSdata`. Using the
 process above we compute the uniformly weighted least squares fit to a
 line, shown in blue, and the weighted least squares fit to a line, shown
-in green, Figure \ `[Fig:weightedLSplot] <#Fig:weightedLSplot>`__. The
+in green, Figure :numref:`Fig:weightedLSplot`. The
 weight function weights more heavily towards the origin (using
 :math:`w_i = 1.0/i^3`). In this example, the weights are scaled so the
 sum of the weights is one.
 
 .. Owned by Roboscience
+.. _`Fig:weightedLSdata`
 .. figure:: MathFigures/weightedleastsquaredata.*
    :width: 70%
    :align: center
 
-   [Fig:weightedLSdata] Sample noisy data to fit a line.
+   Sample noisy data to fit a line.
 
 
 .. Owned by Roboscience
+.. _`Fig:weightedLSplot`
 .. figure:: MathFigures/weightedleastsquareplot.*
    :width: 70%
    :align: center
 
-   [Fig:weightedLSplot] Least squares line fit. Uniform weighting in
+   Least squares line fit. Uniform weighting in
    blue and weighted to the origin in green.

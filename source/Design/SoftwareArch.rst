@@ -2,7 +2,7 @@ Software Architectures
 ----------------------
 
 Consider a typical robot or the architecture of the mobile robot
-described in Figure \ `[intro-components] <#intro-components>`__. There
+described in Figure :numref:`intro-components`. There
 is only one computer involved in the sample system. How could
 distributed computing be part of the equation? It is plausible that
 parallel computing could be involved, but at first blush we might
@@ -23,14 +23,14 @@ this development benefits from the last half century.
 Think for a moment about traditional program design and execution. The
 process lives in an address space which is defined as all of the memory
 addresses for which the program resides and accesses,
-Fig \ `[fig:address_space] <#fig:address_space>`__.
+Fig :numref:`fig:address_space`.
 
-
+.. _`fig:address_space`:
 .. figure:: DesignFigures/address_space.*
    :width: 70%
    :align:  center
 
-   Address space for a process. [fig:address_space]
+   Address space for a process.
 
 The underlying operating system will go to great lengths to contain the
 process in it’s allocated section of memory. Separate processes are run
@@ -53,14 +53,14 @@ general interfaces for the memory system, file system, devices, etc.
 This provides portability with software and really reduces the
 programming effort. So the OS provides the illusion of an abstracted
 computer or a virtual
-computer \ `[fig:os-abstract] <#fig:os-abstract>`__.
+computer :numref:`fig:os-abstract`.
 
-
+.. _`fig:os-abstract`:
 .. figure:: DesignFigures/abstract.*
    :width: 70%
    :align: center
 
-   The fundamental machine abstraction. [fig:os-abstract]
+   The fundamental machine abstraction.
 
 The common interface is implemented by a series of system calls. These
 are very special functions which allow access to the hardware. They are
@@ -201,26 +201,27 @@ occurred, increasingly powerful machines entered. This was made possible
 by the increasing power and shrinking size of the cpu.
 
 Operating Systems development saw large monolithic kernels like
-unix, Figure-\ `[fig:os-monolithic] <#fig:os-monolithic>`__. They were
+unix, :numref:`fig:os-monolithic`. They were
 powerful, provided sufficient performance and were complicated.
 Protection of resources and program portability became common. A
 complicated system call interface was produced to support the separation
 of user program from hardware. However, difficulties in development and
 debugging lead to layered OS designs such as early NT and
-OS/2, Figure-\ `[fig:os-layered] <#fig:os-layered>`__.
+OS/2, :numref:`fig:os-layered`.
 
-
+.. _`fig:os-monolithic`:
 .. figure:: DesignFigures/monolithic.*
    :width: 70%
    :align: center
 
-   Monolithic[fig:os-monolithic]
+   Monolithic
 
+.. _`fig:os-layered`:
 .. figure:: DesignFigures/layered.*
    :width: 70%
    :align: center
 
-   Layered[fig:os-layered]
+   Layered
 
 Separation of code blocks is not complete in either of the previous
 designs and so experiments to build a minimal kernel, one which used
@@ -230,12 +231,12 @@ but the bare minimum out of the kernel leaving a very small kernel code
 base.
 
 
-
+.. _`os-microkernel`:
 .. figure:: DesignFigures/mkernel.*
    :width: 70%
    :align: center
 
-   Microkernel architecture. [os-microkernel]
+   Microkernel architecture. 
 
 The concept of a micro-kernel is very appealing. So much so that the
 Mach and NT kernels adopted the approach. The downfall was performance.

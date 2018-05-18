@@ -34,11 +34,12 @@ distributions (vector valued random variables) we can exend to
 where :math:`\mu` - mean vector, :math:`\Sigma` - covariance matrix
 (symmetric positive definite).
 
+.. _`fig:pdfplot`:
 .. figure:: MathFigures/pdf.*
    :width: 70%
    :align: center
 
-   [fig:pdfplot] Probability Distribution Function
+   Probability Distribution Function
 
 Let :math:`X,Y` be two random variables, the joint distribution is
 

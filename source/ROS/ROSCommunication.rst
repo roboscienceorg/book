@@ -5,7 +5,7 @@ OSRF provides tutorials on ROS, http://wiki.ros.org/ROS/Tutorials. Some
 of that material is repeated here and much greater detail can be found
 in the texts referenced earlier. After installing ROS, you need to setup
 the environment, create and build a basic ROS package, see
-Figure \ `[fig:ros_install] <#fig:ros_install>`__. These commands are
+Figure :numref:`fig:ros_install`. These commands are
 covered in the Beginner Level steps 1, 3, 4 (in detail). Our goal for
 this section is to illustrate basic ROS communications which requires
 some infrastructure. We will return to the administrative side of ROS
@@ -91,11 +91,12 @@ line has our node subscribe to the “chatter” topic and lists the
 callback function.
 
 
+.. _`Fig:simplePubSub`:
 .. figure:: ROSFigures/pubsub1.*
    :width: 40%
    :align: center
 
-   Simple PubSub example[Fig:simplePubSub]
+   Simple PubSub example
 
 Now the fun step. In the first python window (the one that has the
 Publisher line), type:
@@ -161,11 +162,12 @@ Next we create a new program. Create a new terminal window and enter:
     rospy.init_node('listener2', anonymous=True)
     rospy.Subscriber("chatter2", String, callback)
 
+.. _`Fig:simplePubSub2`:
 .. figure:: ROSFigures/pubsub2.*
    :width: 40%
    :align: center
 
-   Simple PubSub example cont.[Fig:simplePubSub2]
+   Simple PubSub example cont.
 
 From the “talker” python process you have the two options for
 communication
@@ -197,11 +199,12 @@ Then on the talker type:
 
     pub3.publish(42)
 
+.. _`Fig:simplePubSub3`:
 .. figure:: ROSFigures/pubsub3.*
    :width: 40%
    :align: center
 
-   Simple PubSub example cont.[Fig:simplePubSub3]
+   Simple PubSub example cont.
 
 You should see the number appear on the listener. You now have a fairly
 complicated connection between three processes. We can express the data
@@ -212,6 +215,7 @@ graph and the topics are the edges. ROS can generate this for you using:
 
     rqt_graph
 
+.. _`fig:rosgraph`:
 .. figure:: ROSFigures/rosgraph.png
    :width: 75%
    :align: center
@@ -219,7 +223,7 @@ graph and the topics are the edges. ROS can generate this for you using:
    The graph of nodes and topics for the current ROS
    session.
 
-Figure \ `[fig:rosgraph] <#fig:rosgraph>`__ shows the resulting graph.
+Figure :numref:`fig:rosgraph` shows the resulting graph.
 ROS’s Publish/Subscribe architecture is a many-to-many communication
 protocol. This means that a publisher can talk to many different
 subscribers. Multiple publishers can be on a single topic. It can get
@@ -568,12 +572,12 @@ Listing \ `[lst:checkinversekinematics] <#lst:checkinversekinematics>`__.
         consumedata()
 
 
-
+.. _`Fig:twolinkrosexample`:
 .. figure:: ROSFigures/twolinkrosexample.*
    :width: 75%
    :align: center
 
-   Two Link Manipulator ROS example. [Fig:twolinkrosexample]
+   Two Link Manipulator ROS example. 
 
 Although many devices produce data in a sequential manner, there are
 times when you have blocks of data. ROS provides a number of datatypes

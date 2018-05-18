@@ -68,7 +68,7 @@
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="190.564" y1="111.847" x2="353.634" y2="148.031"/>
     <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="344.971,151.231 355.817,148.516 347.138,141.468 "/>
   </g>
-  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="288" y1="111" x2="289" y2="133"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 289,133 A 13.8505,13.8505 0 0 0 288,111"/>
   <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:LMMathSymbols10;font-style:italic;font-weight:normal" x="393" y="222">
     <tspan x="393" y="222"></tspan>
   </text>

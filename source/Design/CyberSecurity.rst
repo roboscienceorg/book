@@ -8,7 +8,7 @@ prone to all of the security issues found in any distributed system. It
 is in effect the IOT (Internet of Things) security problem.
 
 Using Garfinkle and Spafford’s definition of security, that the computer
-should behave as expected, there are a number of security issues. [6]_
+should behave as expected, there are a number of security issues. [#f1]_
 The problems listed above in this chapter are specific examples of
 security problems.
 
@@ -27,21 +27,23 @@ So this means that ROS inherits any security issues found in Linux
 professional working on a distributed network of Linux systems would
 take are steps that need to be considered in any ROS based system. The
 principles are similar,
-Table \ `[tab:securityplanning] <#tab:securityplanning>`__ outlines the
+Table :numref:`tab:securityplanning` outlines the
 steps.
 
 
-#. Aspects of Planning
 
-#. Risk Assessment
+.. _`tab:securityplanning`:
+.. table::  Security Planning
+   :align:  center
+   :widths: auto
 
-#. Cost-Benefit Analysis
-
-#. Creating Policies
-
-#. Implementation
-
-#. Validation
+   +----------------------+----------------------+
+   | Aspects of Planning  | Creating Policies    |
+   +----------------------+----------------------+
+   | Risk Assessment      | Implementation       |
+   +----------------------+----------------------+
+   | Cost-Benefit Analysis| Validation           |
+   +----------------------+----------------------+
 
 The first design stage is security planning. Have a complete
 understanding of the goals or tasks for the robot. This normally means
@@ -82,7 +84,7 @@ Immediately after you can perform the following steps:
 #. Calculate risks
 
 Threats come in many forms. Most of them are not related to malicious
-humans, Table \ `[tab:systemfailures] <#tab:systemfailures>`__. The
+humans, Table :numref:`tab:systemfailures`. The
 media will latch onto a DEF CON report about “hacking” into the
 bluetooth on a tire pressure monitor and then accessing some of the
 car’s control system. This leads the media to report that hackers can
@@ -92,26 +94,23 @@ issues. The likely causes for robot failures for the near future will be
 lack of risk analysis and poorly tested software.
 
 
+.. _`tab:systemfailures`:
+.. table::  System Failures
+   :align:  center
+   :widths: auto
 
--  Power loss or surges and battery life
+   +----------------------------------------+--------------------------------------+
+   | Power loss or surges and battery life  | Equipment failure, EMF noise, static |
+   +----------------------------------------+--------------------------------------+
+   | Sensor failure or obstruction          | Upgrades to underlying software      |
+   +----------------------------------------+--------------------------------------+
+   | Loss of network service                | Viruses and poorly tested software   |
+   +----------------------------------------+--------------------------------------+
+   | Loss of human input                    | Third party (crackers)               |
+   +----------------------------------------+--------------------------------------+
+   | Water, dust and chemical damage        | Misconfigured software               |
+   +----------------------------------------+--------------------------------------+
 
--  Sensor failure or obstruction
-
--  Loss of network service
-
--  Loss of human input
-
--  Water, dust and chemical damage
-
--  Equipment failure, EMF noise, static
-
--  Upgrades to underlying software
-
--  Viruses and poorly tested software
-
--  Third party (crackers)
-
--  Misconfigured software
 
 You may be able to remove a risk by changing the way a feature is
 implemented but in some cases it requires removing a feature (or ability
@@ -126,7 +125,7 @@ Cost-Benefit analysis takes the risks and converts them to cost by
 estimating the cost of the threat if it occurs. In the cases you can
 estimate the cost and compare this to the cost of building a solution
 which avoids that particular threat,
-Table \ `[tab:costbene] <#tab:costbene>`__. Clearly some of the numbers
+Table :numref:`tab:costbene`. Clearly some of the numbers
 are very rough. Estimating the time and parts to build some system comes
 from experience. If multiple systems are built then the design and
 testing costs can be prorated over all of the production units leaving
@@ -140,25 +139,24 @@ comparing :math:`Npz` to :math:`x+Ny`. This is the most simplistic way
 to view the analysis and more detailed studies should be done.
 
 
-*Cost of loss*
+.. _`tab:costbene`:
+.. table::  Cost Benefit Analysis
+   :align:  center
+   :widths: auto
 
--  Short/Long term lack of availability
+   +------------------------------------------+--------------------------------------+
+   |  *Cost of loss*                          |  *Cost of prevention*                |
+   +------------------------------------------+--------------------------------------+
+   | Short/Long term lack of availability     | Additional design and testing        |
+   +------------------------------------------+--------------------------------------+
+   | Permanent loss (accidental or deliberate)|  Equipment (hardware and software)   |
+   +------------------------------------------+--------------------------------------+
+   | Unauthorized disclosure (to some or all) |  User training                       |
+   +------------------------------------------+--------------------------------------+
+   | Replacement or recovery cost             | Performance                          |
+   +------------------------------------------+--------------------------------------+
 
--  Permanent loss (accidental or deliberate)
 
--  Unauthorized disclosure (to some or all)
-
--  Replacement or recovery cost
-
-*Cost of prevention*
-
--  Additional design and testing
-
--  Equipment (hardware and software)
-
--  User training
-
--  Performance
 
 Although companies will assign a cost to loss of life and limb (based on
 litigation and settlement amounts), we will assume this cost is higher
@@ -279,7 +277,7 @@ Motivation
 Who are the actors? Consider the fear and anger with the vision of the
 future that eliminates so many jobs. Autonomous delivery vehicles,
 autonomous long distance trucking and transport all have very real
-economic consequences for a number of people. [7]_ Angry over job loss
+economic consequences for a number of people. [#f2]_ Angry over job loss
 has in the past led some to strike out at employers. Fear of a new
 technology can lead to preemptive strikes. Bored kids or anti-technology
 zealots as well as all forms of terrorists can find ways to exploit the
@@ -292,9 +290,19 @@ for a large impact and very deadly attack.
 
 It is important that robotics organizations provide options and
 retraining for displaced workers. Public education on the Luddite
-fallacy is important. [8]_ It is easy for politicians to vilify groups
+fallacy is important. [#f3]_ It is easy for politicians to vilify groups
 for their own gain and so countering this behavior will require constant
 effort for the near future. The root cause in many cases is inequity in
 economics, corruption and unemployment. Addressing these issues will go
 a long way in solving the security problems as well as many problems
 facing us.
+
+.. [#f1] The term security has become associated with preventing system
+   cracking but secure really means that you can trust the system. You
+   may not care about intrusion or data exposure, but you do care that
+   the system operates the way you need it to.
+
+.. [#f2] There are roughly 1.7 million trucking jobs in the U.S.
+
+.. [#f3] The fallacy is that new technology eliminates jobs overall.
+   New tech just displaces jobs to new sectors.

@@ -1,7 +1,7 @@
 Human Collaboration
 -------------------
 
-The NSF [3]_ announced the second NRI, National Robotics Initiative,
+The National Science Foundation (NSF) announced the second NRI, National Robotics Initiative,
 Ubiquitous Collaborative Robots (NRI-2.0). The first line of the NSF
 proposal call reads *The goal of the National Robotics Initiative (NRI)
 is to support fundamental research that will accelerate the development
@@ -181,7 +181,7 @@ it by providing the robot with humanlike features. Eyes, faces and arms
 all work at a psychological level to make the machine seem more human.
 However, there are clear limits to this increasing humanization which
 can be seen in our psychological response to certain systems. Take
-Actroid, Figure \ `[Figure:actroid] <#Figure:actroid>`__, which is
+Actroid, Figure :numref:`Figure:actroid`, which is
 designed to replace a human receptionist. It has been built to look as
 human as possible. The idea expressed by Japanese roboticist Masahiro
 Mori in 1970 is that the more human-like a machine appears, the more
@@ -193,13 +193,13 @@ Our acceptance of, or comfort with, the machine drops as the design
 approaches lifelike accuracy. All cultures (that the author is aware of)
 exhibit this, but varies greatly in the exact boundary of their limits.
 
-
+.. _`fig:uncannyvwalley`
 .. figure:: DesignFigures/uncanny.*
    :width: 70%
    :align: center
 
    Uncanny Valley, the drop in the comfort graph as a function of human
-   likeness.[fig:uncannyvwalley]
+   likeness.
 
 A completely different view
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -237,3 +237,32 @@ most robust. We do many many things and in some cases just well enough.
 Our robots should be tuned and exceptional for the task at hand. They
 should be specialists and as such not strive to look or act or be like
 humans.
+
+Human Environments
+~~~~~~~~~~~~~~~~~~
+
+Human and outdoor spaces are messy. They are random, complicated and
+dynamic. Operating there is more challenging than in a designed and
+predictable assembly line. To complete a variety of tasks, robots need
+to understand their location and orientation in space. They need to
+sense and understand landmarks, obstacles and free space. In order to do
+this in the past, the operating environment needed to be augmented or
+instrumented. For example, lines painted on the floor or conduit in the
+concrete would be used for directing the robot along paths and hallways.
+IR sources, RFID tags or other systems are used for landmarks and by
+using stored maps, landmarks would be used for localization. Orientation
+could be inferred from the landmarks or if possible a compass.
+
+Systems up to now would instrument the environment to help the robot in
+the small confines of rooms and hallways found indoors. Outside the
+system might access GPS which can give a rough estimate but lacks the
+fidelity needed for indoor navigation. Modifying the environment can be
+expensive and intrusive. It might not even be possible for some
+locations. Until robots have a very clear understanding for their
+surroundings, systems must rely on changing the environment.
+
+To have an effective home robot, the homeowner needs to accept the
+augmentation costs or not use the robot. Modern deep learning systems
+may bring changes where it is no longer necessary to instrument the
+region. Until then, design decisions must include environmental
+augmentation.

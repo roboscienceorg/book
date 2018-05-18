@@ -12,4 +12,3 @@ do convey important concepts which we will introduce here.
    ReferenceFrames
    ExampleRobotSystems
    PianoMovers
-   TwoLinkArmRevisited

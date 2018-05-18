@@ -66,11 +66,12 @@ It is possible to use Hall-effect or other similar devices to do
 encoding. Small Hall-Effect sensors with sub-degreee accuracy are
 available. Placing a small ceramic magnet on the end of a shaft will
 generate a rotating magnetic field which can be detected with the
-Hall-Effect sensor. Figure \ `[halleffect] <#halleffect>`__ shows how
+Hall-Effect sensor. Figure :numref:`halleffect` shows how
 this is done.
 
+.._`halleffect`:
 .. figure:: SensorsFigures/magneticencoder.*
    :width: 40%
    :align: center
 
-   Hall-Effect based shaft rotation sensor.[halleffect]
+   Hall-Effect based shaft rotation sensor.[]

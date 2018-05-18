@@ -1,12 +1,13 @@
-Robotics Frameworks
--------------------
+Robotics Frameworks and Languages
+---------------------------------
 
 A *Robotics Framework* is currently a “catch-all” term. To most
 roboticists it means a collection of tools to support robotics software
 development. Typically a framework will provide some form of
 interprocess communication and a collection of hardware drivers.
 Interprocess communication is either shared memory and semaphore
-wrappers or TCP/IP socket support. [1]_ There are many simulation
+wrappers or TCP/IP socket support. [If these terms don't sound familiar,
+we will discuss them later in the text.] There are many simulation
 systems available. These range from fairly simplistic 2D single robot
 with a few obstacles to very sophisticated 3D full physics engine
 support systems. It is similar to what is seen in computer gaming. We
@@ -100,3 +101,38 @@ ROS and Gazebo are extensions in some sense to Player-Stage. The idea of
 developing code in simulation then redirecting to real hardware is
 essentially the same outside the differences in interface syntax.
 
+Robotics Programming Languages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is not a “best” robotics programming language just as there is not
+a best programming language in general. Arguments about a best language
+are left to novices attempting to justify the language they most
+recently learned. Programming languages are tools like pliers,
+screwdrivers and hammers. It depends on what you want to do, what
+resources you have available and your personal skill set. Some languages
+are more popular however, like C and C++. The C family is used heavily
+since it has a small footprint (C fits on microcontrollers) and is very
+efficient. C++ provides the object oriented approach to a code base and
+is widely adopted in industry. Recent languages like Java and C# are
+popular when the robot has a full computer available as a controller.
+One can even find older languages like BASIC and FORTH as well. In this
+text we will focus on two: C/C++ and Python. [#f1]_
+
+Why C/C++ and Python? C is the major language for embedded systems. It
+can compile down to very compact code to run on a variety of
+microprocessors. C++ is the object oriented extension to C and both
+remain in the most popular programming language lists even though they
+have been around for some time. Python is an object oriented scripting
+language and is very popular as well, especially with regards to
+programming education. Another simple reason is that these are the two
+languages supported by ROS, the Robot Operating System. The bulk of the
+examples in this text are written in Python.
+
+Also, for this text, we will assume that you are running a relatively
+current version of Ubuntu (possibly in a virtual machine). Python, C and
+C++ are part of the standard Ubuntu distribution. Normally it is not
+critical which version of Python is used (Python 2 versus 3).
+
+.. [#f1] Please don't send me email telling me that this is three languages
+   since C and C++ are "actually" different languages.  I will save you the Google search: 
+   https://stackoverflow.com/questions/14330370/is-c-c-one-language-or-two-languages

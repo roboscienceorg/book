@@ -41,7 +41,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{8, 35}, {626, 626}}</string>
+					<string>{{-2, 22}, {626, 626}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -141,7 +141,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{71, 98}, {500, 500}}</string>
+					<string>{{61, 85}, {500, 500}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -248,7 +248,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{154, 88}, {40, 10}}</string>
+							<string>{{144, 75}, {40, 10}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -348,7 +348,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{153, 149}, {40, 10}}</string>
+							<string>{{143, 136}, {40, 10}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -448,7 +448,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{112, 114}, {12, 12}}</string>
+							<string>{{102, 101}, {12, 12}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -548,7 +548,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{112, 102}, {81, 43}}</string>
+							<string>{{102, 89}, {81, 43}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -656,7 +656,7 @@
 							<key>flipped</key>
 							<false/>
 							<key>frame</key>
-							<string>{{173, 93}, {0, 56}}</string>
+							<string>{{163, 80}, {0, 56}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -758,7 +758,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{125, 117}, {12, 12}}</string>
+							<string>{{115, 104}, {12, 12}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -858,7 +858,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{167, 117}, {12, 12}}</string>
+							<string>{{157, 104}, {12, 12}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -954,11 +954,11 @@
 					<key>fillType</key>
 					<integer>5</integer>
 					<key>frame</key>
-					<string>{{111.66796875, 88}, {82, 71}}</string>
+					<string>{{102, 75}, {82, 71}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
-					<string>3598C52C-746D-493B-9FCF-D03B84B71E34</string>
+					<string>A75D01D7-4061-4191-9D8E-DF032FFC334C</string>
 					<key>imageAnchorRatio</key>
 					<string>{0.5, 0.5}</string>
 					<key>imageType</key>
@@ -968,9 +968,9 @@
 					<key>opacity</key>
 					<real>1</real>
 					<key>rotationAngle</key>
-					<integer>328</integer>
+					<integer>325</integer>
 					<key>rotationHandleRadius</key>
-					<real>112</real>
+					<real>116</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -1061,7 +1061,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{486, 84}, {40, 10}}</string>
+							<string>{{476, 71}, {40, 10}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -1161,7 +1161,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{485, 145}, {40, 10}}</string>
+							<string>{{475, 132}, {40, 10}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -1261,7 +1261,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{444, 110}, {12, 12}}</string>
+							<string>{{434, 97}, {12, 12}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -1361,7 +1361,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{444, 98}, {81, 43}}</string>
+							<string>{{434, 85}, {81, 43}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -1469,7 +1469,7 @@
 							<key>flipped</key>
 							<false/>
 							<key>frame</key>
-							<string>{{505, 89}, {0, 56}}</string>
+							<string>{{495, 76}, {0, 56}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -1571,7 +1571,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{457, 113}, {12, 12}}</string>
+							<string>{{447, 100}, {12, 12}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -1671,7 +1671,7 @@
 							<key>fillType</key>
 							<integer>0</integer>
 							<key>frame</key>
-							<string>{{499, 113}, {12, 12}}</string>
+							<string>{{489, 100}, {12, 12}}</string>
 							<key>hidden</key>
 							<false/>
 							<key>identifier</key>
@@ -1767,7 +1767,7 @@
 					<key>fillType</key>
 					<integer>5</integer>
 					<key>frame</key>
-					<string>{{443.59375, 83.5}, {82, 71}}</string>
+					<string>{{433.59375, 70.5}, {82, 71}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1875,7 +1875,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{315, 348}, {-122, -199}}</string>
+					<string>{{305, 335}, {-122, -199}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1985,7 +1985,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{327, 348}, {148, -182}}</string>
+					<string>{{317, 335}, {148, -182}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2095,7 +2095,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{237, 166}, {193, 48}}</string>
+					<string>{{227, 153}, {193, 48}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2108,9 +2108,9 @@
 					<false/>
 					<key>modelPoints</key>
 					<array>
-						<string>{237, 202}</string>
-						<string>{338, 166}</string>
-						<string>{430, 214}</string>
+						<string>{227, 189}</string>
+						<string>{328, 153}</string>
+						<string>{420, 201}</string>
 					</array>
 					<key>opacity</key>
 					<real>1</real>
@@ -2221,7 +2221,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{321, 140}, {11, 23}}</string>
+					<string>{{311, 127}, {11, 23}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2339,7 +2339,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{316, 17}, {9, 15}}</string>
+					<string>{{306, 4}, {9, 15}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2457,7 +2457,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{316, 80}, {9, 15}}</string>
+					<string>{{306, 67}, {9, 15}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2575,7 +2575,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{326, 18}, {9, 18}}</string>
+					<string>{{316, 5}, {9, 18}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2693,7 +2693,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{325, 83}, {9, 18}}</string>
+					<string>{{315, 70}, {9, 18}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2811,7 +2811,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{142, 50}, {12, 23}}</string>
+					<string>{{132, 37}, {12, 23}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -2929,7 +2929,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{202, 131}, {12, 23}}</string>
+					<string>{{192, 118}, {12, 23}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3047,7 +3047,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{154, 59}, {9, 18}}</string>
+					<string>{{144, 46}, {9, 18}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3165,7 +3165,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{212, 143}, {9, 18}}</string>
+					<string>{{202, 130}, {9, 18}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -3288,7 +3288,7 @@
 			<key>fillType</key>
 			<integer>0</integer>
 			<key>frame</key>
-			<string>{{0, 0}, {635, 270}}</string>
+			<string>{{0, 0}, {620, 257}}</string>
 			<key>gridTolerance</key>
 			<real>10</real>
 			<key>hidden</key>
@@ -3310,13 +3310,13 @@
 				<key>group</key>
 				<integer>1</integer>
 				<key>height</key>
-				<real>270</real>
+				<real>257</real>
 				<key>resolution</key>
 				<real>72</real>
 				<key>unitType</key>
 				<integer>0</integer>
 				<key>width</key>
-				<real>635</real>
+				<real>620</real>
 			</dict>
 			<key>opacity</key>
 			<real>1</real>
@@ -3329,7 +3329,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{317.5, 135}</string>
+			<string>{310, 128.5}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>

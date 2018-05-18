@@ -5,10 +5,8 @@ Robotics Design Elements
    :maxdepth: 2
 
    RoboticsFrameworks
-   RoboticsProgramming
    SoftwareArch
    Distributed
    Safety
    HumanCollab
-   HumanEnv
    CyberSecurity

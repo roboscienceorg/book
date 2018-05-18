@@ -78,8 +78,7 @@ scale, broken connections, reconnections and other real world issues
 without disturbing either the publisher or subscriber. Of course this
 will eliminate request-reply types of communication which should be
 addressed using a direct point to point type of channel. These ideas
-will be fully developed when we cover the Robot Operating System,
-Chapter \ `[ROSChapter] <#ROSChapter>`__.
+will be fully developed when we cover the Robot Operating System.
 
 Before we proceed with building robots, we need to discuss safety, human
 interaction and human environments. Robots can be very helpful, capable
