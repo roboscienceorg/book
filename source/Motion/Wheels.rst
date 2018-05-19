@@ -48,18 +48,19 @@ are used exclusively indoors. Since fine precision maneuvering is
 normally required for indoor systems and not outdoor systems, there has
 not been much effort expended to make outdoor versions.
 
-
+.. _`fig:airtrax`:
 .. figure:: MotionFigures/airtrax.jpg
    :width: 40%
    :align: center
 
-   The Airtrax forklift. [fig:airtrax]
+   The Airtrax forklift.
 
+.. _`fig:airtraxcobra`:
 .. figure:: MotionFigures/airtraxcobra.jpg
    :width: 40%
    :align: center
 
-   The Airtrax scissor lift. [fig:airtraxcobra]
+   The Airtrax scissor lift.
 
 The omni wheel’s first patent was in 1919 by Grabowiecki. The Mecanum
 wheel was developed by Bengt Erland Ilon in 1972 while working for the
@@ -68,67 +69,63 @@ rights and briefly manufactured forklifts with a heavy duty version of
 the Mecanum wheel. These wheels have much less ground friction in a turn
 in comparison to a skid steer requiring much less torque.
 
-
+.. _`gammavarconfig`:
 .. figure:: MotionFigures/swedish_angle.*
    :width: 20%
    :align: center
 
-   The :math:`\gamma` measure. [gammavarconfig]
+   The :math:`\gamma` measure.
 
-.. figure:: MotionFigures/omni-wheel.*
-   :width: 40%
+.. _`gammaconfig`:
+.. figure:: MotionFigures/omni_mecanum-wheel.png
+   :width: 75%
    :align: center
 
-   The :math:`\gamma = 0` configuration [gammazeroconfig]
-
-.. figure:: MotionFigures/mecanum-wheel.*
-   :width: 40%
-   :align: center
-
-   The :math:`\gamma = 45^\circ` configuration. [gamma45config]
+   The (a) :math:`\gamma = 0` configuration
+   and (b) :math:`\gamma = 45^\circ` configuration.
 
 For this text, we will combine the omni and Mecanum wheels and just call
 them omniwheels. The difference between them is only in the angle the
 rollers are mounted on the wheel body.
-Figure \ `[gammaconfig] <#gammaconfig>`__ shows some sample types of
+:numref:`gammaconfig` shows some sample types of
 omniwheels using the :math:`\gamma = 0` configuration and
 :math:`\gamma = 45^\circ` configuration. Normally the :math:`\gamma=0`
 style of wheel is used in non-parallel mounting as shown in the first
-robot in the Figure \ `[gammawheelmounting] <#gammawheelmounting>`__ and
+robot in the :numref:`gammawheelmounting` and
 the parallel mounting is used for the other standard type of wheel
 design using :math:`\gamma = 45^\circ`.
 
-
+.. _`gammawheelmounting`:
 .. figure:: MotionFigures/swedish_config.*
    :width: 40%
    :align: center
 
    Normal mounting style for :math:`\gamma = 0` and
-   :math:`\gamma = 45^\circ`. [gammawheelmounting]
+   :math:`\gamma = 45^\circ`.
 
-
+.. _`meccanumwheelvectors`:
 .. figure:: MotionFigures/swedish_mount.*
    :width: 40%
    :align: center
 
    Force vectors induced by rotation with the :math:`\gamma = 45^\circ`
-   configuration. [meccanumwheelvectors]
+   configuration.
 
 
-
+.. _`meccanumwheelmotion`:
 .. figure:: MotionFigures/swedish_mount2.*
    :width: 60%
    :align: center
 
    Mecanum rotation directions and vector forces for different vehicle
-   directions. [meccanumwheelmotion]
+   directions.
 
-
+.. _`meccanumwheelmotion2`:
 .. figure:: MotionFigures/swedish_mount3.*
    :width: 60%
    :align: center
 
-   Summary of wheel motion and directions [meccanumwheelmotion2]
+   Summary of wheel motion and directions
 
 
 
@@ -147,19 +144,19 @@ design using :math:`\gamma = 45^\circ`.
 
 A variation of the omni wheel is the omni ball developed by Kaneko
 Higashimori Lab at Osaka University,
-see \ `[fig:omniball] <#fig:omniball>`__. This wheel will be used to
+see :numref:`fig:omniball`. This wheel will be used to
 drive tracks in a very novel approach described in the tracks section
 below. This wheel fails to be a true spherical wheel as far as two
 directional motion is concerned and has motion equations similar to the
 omniwheel systems.
 
-
+.. _`fig:omniball`:
 .. figure:: MotionFigures/omni-ball.jpg
    :width: 60%
    :align: center
 
    The Omni Ball Wheel developed at the Kaneko Higashimori Lab at Osaka
-   University[fig:omniball]
+   University
 
 Omni and Mecanum wheels can be driven on only one direction and only
 when combined with other wheels are they able to move against the
@@ -170,7 +167,7 @@ from the classical mechanical computer mouse. In the mechanical mouse
 the ball is forced around which drives small disks inside in the
 component directions. By mounting three omniwheels on top of a ball, one
 can gain motion in two directions.
-Figure \ `[fig:robotonball] <#fig:robotonball>`__ shows one design by
+:numref:`fig:robotonball` shows one design by
 Dr. Masaaki Kumagai, director of the Robot Development Engineering
 Laboratory at Tohoku Gakuin University.
 
@@ -183,11 +180,12 @@ Laboratory at Tohoku Gakuin University.
    Omniwheel drive system
 
 
+.. _`fig:robotonball`:
 .. figure:: MotionFigures/robotonball.jpg
    :width: 60%
    :align: center
 
-   Omniwheel balancing robot[fig:robotonball]
+   Omniwheel balancing robot
 
 |
 
@@ -203,6 +201,24 @@ Laboratory at Tohoku Gakuin University.
    :align: center
 
    Prototype omnidirectional motorcycle
+
+Mobility Issues
+~~~~~~~~~~~~~~~
+
+The stability of the craft is given by several factors. Having less than
+three contact points requires dynamic balance for a system which is “at
+rest”. Having less than 6 contact points means that during locomotion,
+the system requires dynamic balance during motion or one is moving at
+most two legs at a time making a more complicated control system. The
+location of the center of gravity is an important aspect of dynamic
+stability. A lower center of gravity helps to avoid falling over.
+
+For ground systems, the terrain will have more influence than with air
+or sea. We have to worry about the terrain roughness, slickness, grades
+and other issues. The number of wheels, type of wheels, type of
+suspension, and steering will all have a large affect on the
+effectiveness of motion.
+
 
 Tracks
 ~~~~~~

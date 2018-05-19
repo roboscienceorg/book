@@ -59,26 +59,27 @@ the data we then obtain for the first segment
 :math:`z= 0.1t, a = 0, b = 0, c = -50, d = 40`, and on the next segment
 :math:`z= 0.05t, a = 0, b = 0, c = 50, d = -10`.
 
-
+.. _`fig:cubicsplineexample1`:
 .. figure:: ControlFigures/cubicexample.*
    :width: 40%
    :align: center
 
-   [fig:cubicsplineexample1] The two cubic splines from the three data
+   The two cubic splines from the three data
    points.
 
+.. _`fig:cubicsplineexample2`:
 .. figure:: ControlFigures/cubicexample2.*
    :width: 40%
    :align: center
 
-   [fig:cubicsplineexample2] Sampling the two splines to get guidance
+   Sampling the two splines to get guidance
    data.
 
 The plot,
-Figure \ `[fig:cubicsplineexample1] <#fig:cubicsplineexample1>`__ is
+:numref:`fig:cubicsplineexample1` is
 produced by the following code with setting the plot command to lines,
 g-. The following code as is produces
-Figure \ `[fig:cubicsplineexample2] <#fig:cubicsplineexample2>`__.
+:numref:`fig:cubicsplineexample2`.
 
 ::
 

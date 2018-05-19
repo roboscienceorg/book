@@ -17,7 +17,7 @@ Serial Two Link Manipulator
 
 The last few paragraphs have introduced lots of jargon. To understand
 them, it helps to see them in action. The simple two link manipulator,
-Figure :numref:`intro-two-link` is a good place to
+:numref:`intro-two-link` is a good place to
 start. Imagine a robotic arm that has two straight links with a rotary
 joint at the base and a rotary joint connecting the two links. In
 practice, these rotary joints would be run by motors or servos and
@@ -33,12 +33,12 @@ probably have some limits, but for now we will assume full
    The two link manipulator.
 
 The workspace that the arm operates inside is a disk,
-Figure :numref:`two-link-disk`. This is a two dimensional
+:numref:`two-link-disk`. This is a two dimensional
 workspace. The figure indicates the workspace in gray. It may also be
 the case that there is something in the workspace, a workspace obstacle
 indicated in red. This unit has two joints which define a two
 dimensional configuration space,
-Figure :numref:`intro-config-axis`. The dimension of
+:numref:`intro-config-axis`. The dimension of
 the configuration space is the degrees of freedom, and so this has two
 degrees of freedom. Since the joint is rotary and moving a full
 :math:`360^\circ` degrees returns you to the same angle, the two
@@ -67,10 +67,10 @@ configuration space a two dimensional torus or “donut”.
 We will illustrate what is meant by kinematics and inverse kinematics
 using the two link manipulator. Forward kinematics will identify the
 location of the end effector as a function of the joint angles,
-Figure :numref:`twolinklabeled`-(a). This is easily done
+:numref:`twolinklabeled`-(a). This is easily done
 using a little trigonometry. First we find the location of
 :math:`(\xi, \eta)` as a function of :math:`\theta_1` and the link
-length :math:`a_1`, Figure :numref:`twolinklabeled`-(b):
+length :math:`a_1`, :numref:`twolinklabeled`-(b):
 
 .. math:: \xi =  a_1 \cos \theta_1, \quad \eta = a_1 \sin \theta_1
 
@@ -849,14 +849,14 @@ curve of motion.
 |                                   | :math:`(0,0,0)+(135,0,0)=(135,0,0 |
 |                                   | )`                                |
 +-----------------------------------+-----------------------------------+
-|  :math:`t=5  \to 6`:         | :math:`\omega_1 = - \omega_2 = 2. |
+|  :math:`t=5  \to 6`:              | :math:`\omega_1 = - \omega_2 = 2. |
 |                                   | 0`,                               |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
 |                                   | :math:`(135,0,0) + (0,0,3/2) = (1 |
 |                                   | 35,0,3/2)`                        |
 +-----------------------------------+-----------------------------------+
-|  :math:`t=6  \to 10`:        | :math:`\omega_1 = \omega_2 = 3.0` |
+|  :math:`t=6  \to 10`:             | :math:`\omega_1 = \omega_2 = 3.0` |
 |                                   | ,                                 |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
@@ -866,14 +866,14 @@ curve of motion.
 |                                   | :math:`\approx (142.6, 107.7, 1.5 |
 |                                   | )`                                |
 +-----------------------------------+-----------------------------------+
-| :math:`t=10 \to 11`:        | :math:`\omega_1 = -\omega_2 = -2. |
+| :math:`t=10 \to 11`:              | :math:`\omega_1 = -\omega_2 = -2. |
 |                                   | 0`,                               |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
 |                                   | :math:`(142.6, 107.7, 1.5)+(0, 0, |
 |                                   |  -1.5) = (142.6, 107.7, 0)`       |
 +-----------------------------------+-----------------------------------+
-| :math:`t=11 \to 16`:        | :math:`\omega_1 =  \omega_2 = 3.0 |
+| :math:`t=11 \to 16`:              | :math:`\omega_1 =  \omega_2 = 3.0 |
 |                                   | `,                                |
 |                                   | :math:`\Rightarrow`               |
 +-----------------------------------+-----------------------------------+
@@ -928,9 +928,9 @@ tracking the centroid, we can determine the configuration space. Since
 the middle of the robot cannot touch the obstacle boundary, the
 interaction between the robot and the obstacle reduces the configuration
 space as shown in
-Figures :numref:`Fig:RobotSize`, :numref:`Fig:intro-mobile1`.
+:numref:`Fig:RobotSize`, :numref:`Fig:intro-mobile1`.
 In this case the size of the robot affects the configuration space,
-Figure :numref:`Fig:intro-mobile2`. For a mobile
+:numref:`Fig:intro-mobile2`. For a mobile
 ground robot that is not a point, orientation will enter as a variable
 in the system.
 
@@ -973,9 +973,9 @@ have inflated the obstacle.
 
 The previous examples looked at a circular robot. What about a robot
 which is a rectangle? What would be the configuration space about some
-obstacle? Figure :numref:`shapematters`. The basic shape
+obstacle? :numref:`shapematters`. The basic shape
 of the robot is important as well as its orientation,
-Figure :numref:`orientationmatters`. Inflation in
+:numref:`orientationmatters`. Inflation in
 this case depends on the fixed orientation of the robot. One follows the
 same process and pushes the robot up until it touches the obstacle.
 Doing this for all locations around the obstacle all while keeping the
@@ -1005,7 +1005,7 @@ rectangular object does not just change scale. It changes shape as well.
 For a rectangle, he inflated obstacle is a “rectangle” with rounded
 corners. It is important to note that each rotation of the rectangle
 generates a new and different configuration space,
-Figure :numref:`orientationmattersalot`. This
+:numref:`orientationmattersalot`. This
 process can be very complicated and often one will want to make
 simplifications.
 

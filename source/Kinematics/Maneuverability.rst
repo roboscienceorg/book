@@ -45,7 +45,7 @@ vehicle. Clearly
 
 Each constraint is related to the wheel’s zero motion line. The zero
 motion line is the axle direction which from
-equation \ `[eq:axledirection] <#eq:axledirection>`__:
+:eq: `eq:axledirection`,
 :math:`A = \left\langle \cos(\alpha+\beta) , \sin(\alpha+\beta) \right\rangle`.
 Contrary to what you may expect, adding steerable wheels increases the
 number of constraints. Keep in mind adding omniwheels or Mecanum wheels
@@ -64,12 +64,12 @@ two components of the constraint. Not surprising as this is by
 construction. The zero motion line is then the vertical line spanned by
 :math:`A`.
 
-
+.. _`fig:fixedbikewheel`:
 .. figure:: KinematicsFigures/bikeicr.*
    :width: 40%
    :align: center
 
-   [fig:fixedbikewheel]A fixed turn bike wheel.
+   A fixed turn bike wheel.
 
 Next we examine the bicycle. For the bike, we have :math:`L_1 = L_2=L`,
 :math:`\beta_1=\beta_2 = \pi/2`, :math:`\alpha_1=0`,
@@ -83,7 +83,7 @@ drive example, but we have a different result for the constraint matrix.
 
 An Ackerman drive can be modeled as two bicycles attached together. To
 drive the front wheels must respect the Ackerman angle constraint,
-Figure \ `[fig:ackermanzeromotion] <#fig:ackermanzeromotion>`__. Because
+:numref:`fig:ackermanzeromotion`. Because
 of the Ackerman steering angle constraint, with the back wheels and one
 front free, you have selected the location of the ICR. This means that
 the other steered wheel zero motion line is prescribed. So, it must mean
@@ -92,12 +92,12 @@ know that the two rows for the fixed wheels are the same line. This
 tells us one fixed wheel and one steered wheel are sufficient. Thus we
 have two linearly independent rows for the the constraint matrix.
 
-
-.. figure:: KinematiceFigures/ackermanzeromotion.*
-   :width: 40%
+.. _`fig:ackermanzeromotion`:
+.. figure:: KinematicsFigures/ackermanzeromotion.*
+   :width: 70%
    :align: center
 
-   The Ackerman Design[fig:ackermanzeromotion]
+   The Ackerman Design
 
 The algebra for the general case is difficult, however, we can put some
 values on this diagram. Let right front wheel (steered) be wheel 1, left
@@ -134,7 +134,7 @@ to build the matrix C. This is done with the following program.
 
 ::
 
-     import numpy as np
+    import numpy as np
     import numpy.linalg as lin
     import math
 
@@ -180,7 +180,7 @@ freedom*,
 
 .. math:: \delta_m \equiv \mbox{dim} {\cal N}(C_1) = 3 - \mbox{rank}(C_1)
 
- This is the robot’s degrees of freedom or a measure of the local
+This is the robot’s degrees of freedom or a measure of the local
 mobility of the robot.
 
 For a differential drive the degree of mobility is :math:`\delta_m = 2`.
@@ -232,24 +232,21 @@ DOF. A robot is said to be omnidirectional if it is holonomic and DDOF =
 3. This means that the robot can *Maneuver* and *Orient*.
 
 
+.. _`fig:summaryconfigurations`:
 
-| |Summary of some common configurations.[fig:summaryconfigurations]|
+.. table:: Summary of some common configurations.
+   :widths: auto
 
-+-----------------+-----------------+-----------------+-----------------+
-| Configuration   | Maneuverability | Mobility        | Steerability    |
-+=================+=================+=================+=================+
-| A. Omniwheel    | :math:`\delta_M | :math:`\delta_m | :math:`\delta_s |
-|                 |  = 3`           |  = 3`           |  = 0`           |
-+-----------------+-----------------+-----------------+-----------------+
-| B. Differential | :math:`\delta_M | :math:`\delta_m | :math:`\delta_s |
-|                 |  = 2`           |  = 2`           |  = 0`           |
-+-----------------+-----------------+-----------------+-----------------+
-| C. Omni-Steer   | :math:`\delta_M | :math:`\delta_m | :math:`\delta_s |
-|                 |  = 3`           |  = 2`           |  = 1`           |
-+-----------------+-----------------+-----------------+-----------------+
-| D. Tricycle     | :math:`\delta_M | :math:`\delta_m | :math:`\delta_s |
-|                 |  = 2`           |  = 1`           |  = 1`           |
-+-----------------+-----------------+-----------------+-----------------+
-| E. Two-Steer    | :math:`\delta_M | :math:`\delta_m | :math:`\delta_s |
-|                 |  = 3`           |  = 1`           |  = 2`           |
-+-----------------+-----------------+-----------------+-----------------+
+   +-----------------+----------------------+----------------------+----------------------+
+   | Configuration   | Maneuverability      | Mobility             | Steerability         |
+   +=================+======================+======================+======================+
+   | A. Omniwheel    | :math:`\delta_M = 3` | :math:`\delta_m = 3` | :math:`\delta_s  = 0`|
+   +-----------------+----------------------+----------------------+----------------------+
+   | B. Differential | :math:`\delta_M = 2` | :math:`\delta_m = 2` | :math:`\delta_s = 0` |
+   +-----------------+----------------------+----------------------+----------------------+
+   | C. Omni-Steer   | :math:`\delta_M = 3` | :math:`\delta_m = 2` | :math:`\delta_s = 1` |
+   +-----------------+----------------------+----------------------+----------------------+
+   | D. Tricycle     | :math:`\delta_M = 2` | :math:`\delta_m = 1` | :math:`\delta_s = 1` |
+   +-----------------+----------------------+----------------------+----------------------+
+   | E. Two-Steer    | :math:`\delta_M = 3` | :math:`\delta_m = 1` | :math:`\delta_s = 2` |
+   +-----------------+----------------------+----------------------+----------------------+

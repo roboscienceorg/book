@@ -3,7 +3,7 @@ Locomotion
 ----------
 
 The word locomotion means “The act of moving from place to
-place.” :raw-latex:`\cite{dictionary}` from Latin combining location and
+place.” :cite:`dictionary` from Latin combining location and
 motion. Biology has explored a variety of very interesting ways to move
 around. Animals can be carried on currents, swim, crawl, slide, walk,
 run, jump, and fly.
@@ -14,7 +14,7 @@ have valued wheels in their motion solutions. The earliest recorded
 appearance of wheels is in Mesopotamia (Sumerian) at the mid-4th
 millenium BC. The is evidence of independent discovery in the new world,
 the lack of domesticated large animals prevented any development beyond
-children’s toys. :raw-latex:`\cite{wiki:wheel}`.
+children’s toys. :cite:`wiki:wheel`.
 
 Rolling is very efficient, especially compared to dragging or carrying
 materials. At the macroscopic scale, nature has not developed wheels.
@@ -58,10 +58,10 @@ can run on a road or flat ground. To go beyond this we need to bring the
 rail or road along with - the idea behind tracks. Track systems can
 operate in a larger set of environments, but at cost of energy.
 
-
+.. _`motionenergyspeed`:
 .. figure:: MotionFigures/energyusegraph.*
    :width: 60%
    :align: center
 
    The relations between energy, speed and motion
-   type.[motionenergyspeed]
+   type.

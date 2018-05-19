@@ -17,7 +17,7 @@ this is when you get the couch stuck in the stairwell trying to move
 into your new flat.
 
 .. _`robotmustrotate`:
-.. figure:: TermsFigures/obst.svg
+.. figure:: TermsFigures/obst.*
    :width: 40%
    :align: center
 
@@ -34,7 +34,7 @@ three different rotation angles, there are three different configuration
 obstacle maps.
 
 .. _`robotrotation`:
-.. figure:: TermsFigures/obst2.svg
+.. figure:: TermsFigures/obst2.*
    :width: 70%
    :align: center
 
@@ -53,7 +53,7 @@ workspace is two dimensional, the configuration space is three
 dimensional and are different objects.
 
 .. _`robotrotation3D`:
-.. figure:: TermsFigures/obst3.svg
+.. figure:: TermsFigures/obst3.*
    :width: 70%
    :align: center
 
@@ -81,7 +81,7 @@ Figure :numref:`obst4`. Path planning or motion planning is
 addressed in Planning Chapter.
 
 .. _`obst4`:
-.. figure:: TermsFigures/obst4.svg
+.. figure:: TermsFigures/obst4.*
    :width: 50%
    :align: center
 
@@ -108,14 +108,14 @@ articulator is small enough to pass through the gap, it cannot due to
 the other physical restrictions.
 
 .. _`Fig:pathmatters`:
-.. figure:: TermsFigures/pathmatters.svg
+.. figure:: TermsFigures/pathmatters.*
    :width: 50%
    :align: center
 
    The elbow down approach is blocked, but not the elbow up position.
 
 .. _`Fig:nopaththrough`:
-.. figure:: TermsFigures/nopaththrough.svg
+.. figure:: TermsFigures/nopaththrough.*
    :width: 50%
    :align: center
 

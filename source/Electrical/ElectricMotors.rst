@@ -14,7 +14,7 @@ pivoting or lever arm as shown in
 Figure \ `[electricmotor] <#electricmotor>`__, a rotational force can be
 generated.
 
-.. figure:: ElectricalFigures/electricmotor.svg
+.. figure:: ElectricalFigures/electricmotor.*
    :width: 70%
    :align: center
 

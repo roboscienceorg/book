@@ -4,18 +4,17 @@ Differential Drive - Rederivation
 To get a feel for the more general approach above, it is worthwhile to
 rederive the equations for the differential drive robot. This allows us
 to check our result as well as see how the matrices are constructed.
-From Figure \ `[ddrive_rederivation] <#ddrive_rederivation>`__ we have
+From :numref:`ddrive_rederivation` we have
 for the left wheel: :math:`\alpha = \pi/2`, :math:`\beta = 0`; and for
 the right wheel: :math:`\alpha = -\pi/2`, :math:`\beta = \pi` (to be
 consistent with the coordinate system).
 
-
+.. _`ddrive_rederivation`:
 .. figure:: KinematicsFigures/ddexample.*
    :width: 40%
    :align: center
 
    The differential drive robot dimensions and variables.
-   [ddrive_rederivation]
 
 Recall the left wheel rolling constraint is given by
 

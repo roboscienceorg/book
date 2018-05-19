@@ -101,7 +101,7 @@ detour and ended up at another
 orientation as shown in Figure :numref:`fig:dependsonpath`.
 
 .. _`fig:dependsonpath`:
-.. figure:: TermsFigures/dependsonpath.svg
+.. figure:: TermsFigures/dependsonpath.*
    :width: 40%
    :align: center
 
@@ -286,14 +286,14 @@ equations
 .. math:: x = F(p).
 
 .. _`fig:threelink`:
-.. figure:: TermsFigures/threelink.svg
+.. figure:: TermsFigures/threelink.*
    :width: 50%
    :align: center
 
    A three link planar manipulator.
 
 .. _`fig:forwardkinematics`:
-.. figure:: TermsFigures/forwardkinematics.svg
+.. figure:: TermsFigures/forwardkinematics.*
    :width: 70%
    :align: center
 

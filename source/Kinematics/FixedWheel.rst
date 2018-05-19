@@ -7,24 +7,24 @@ angle between the wheel axle and :math:`X_R` and :math:`\beta` as the
 angle between the wheel axis :math:`A` and the axle. We also define
 :math:`A` as the vector in the wheel axle direction and :math:`v` as the
 orthogonal vector (the vector in the travel direction of the wheel). See
-Figure \ `[wheelconfig] <#wheelconfig>`__.
+:numref:`wheelconfig`.
 
-
+.. _`wheelconfig`:
 .. figure:: KinematicsFigures/fixedwheel.*
    :width: 40%
    :align: center
 
-   Basic wheel and axle configuration.[wheelconfig]
+   Basic wheel and axle configuration.
 
 
 .. math::
+   :label: eq:axledirection
 
-   \label{eq:axledirection}
    A = \left\langle \cos(\alpha+\beta) , \sin(\alpha+\beta) \right\rangle
 
 .. math::
+   :label: eq:wheeldirection
 
-   \label{eq:wheeldirection}
    v = \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta) \right\rangle
 
 We will examine the linear and rotational aspects of motion separately.
@@ -68,17 +68,17 @@ onto :math:`v` is
 
 .. math:: P^1_v (u) = \frac{v\cdot u}{\| v\|^2} = v \cdot u = \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta) , 0 \right\rangle \cdot u.
 
-
+.. _`fig:angularradialmotion`:
 .. figure:: KinematicsFigures/fixedwheel2.*
    :width: 40%
    :align: center
 
    Motion in the angular direction is shown by the vector :math:`w`.
-   [fig:angularradialmotion]
+
 
 For angular motion, we can break the motion of the wheel vector
 (:math:`v`) into radial and angular components,
-Figure \ `[fig:angularradialmotion] <#fig:angularradialmotion>`__. The
+:numref:`fig:angularradialmotion`. The
 radial component is in the direction of the :math:`L` vector. The
 angular component is :math:`w`. It is the angular and not the radial
 component which will contribute to :math:`\dot{\theta}`. The angular
@@ -99,8 +99,8 @@ and recall
 | :math:`P_v [R(\theta)^{-1}\dot{\xi}_I]`
 
 .. math::
+   :label: wheelprojection
 
-   \label{wheelprojection}
     = \left\langle \sin(\alpha+\beta) , -\cos(\alpha+\beta), -L\cos(\beta) \right\rangle
    \cdot R(\theta)^{-1}\left\langle \dot{x}_I , \dot{y}_I , \dot{\theta} \right\rangle .
 
@@ -126,10 +126,11 @@ zero (a similar derivation as above):
 Steered Wheel
 ~~~~~~~~~~~~~
 
-| The only difference for steered wheels compared to fixed wheels is
+The only difference for steered wheels compared to fixed wheels is
   that the angle :math:`\beta` varies over time. This does not have an
   effect on the form of the equations at an instanteous time, but will
   when integrated over time.
+
 | For *No Slip* we have:
 | :math:`P_v [R(\theta)^{-1}\dot{\xi}_I]`
 
@@ -149,9 +150,10 @@ Steered Wheel
 Castor Wheel
 ~~~~~~~~~~~~
 
-| For the castor wheel, the no slip condition is the same (as the castor
+For the castor wheel, the no slip condition is the same (as the castor
   offset, d, plays no role in the motion in the direction of the wheel).
   The offset, d, does change the equations in the no slide aspect.
+
 | For *No Slip*:
 
   .. math::
@@ -183,8 +185,8 @@ Omni, Swedish, or Mecanum Wheels
 
    Swedish Wheel
 
-| Let :math:`\gamma` be the angle between the roller axis and wheel
-  plane (plane orthogonal to the wheel axis) For *No Slip*:
+Let :math:`\gamma` be the angle between the roller axis and wheel
+plane (plane orthogonal to the wheel axis) For *No Slip*:
 
   .. math::
 

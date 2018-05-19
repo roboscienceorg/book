@@ -157,7 +157,9 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    # 'preamble': ''
+
+    'preamble': '\\usepackage{svg}',
 
     # Latex figure (float) alignment
     #

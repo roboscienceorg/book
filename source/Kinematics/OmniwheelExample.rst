@@ -1,8 +1,8 @@
 Omniwheel Example
 -----------------
 
-For this example we look at a Swedish three wheel robot, Figure
-`[Fig:Tribot] <#Fig:Tribot>`__. We use an unsteered :math:`90^\circ`
+For this example we look at a Swedish three wheel robot,
+:numref:`Fig:Tribot`. We use an unsteered :math:`90^\circ`
 Swedish wheel, so :math:`\beta_i =0` and :math:`\gamma_i = 0` for all
 :math:`i`. Going counterclockwise in the figure, we have
 :math:`\alpha_1 = \pi/3`, :math:`\alpha_2 = \pi` and
@@ -20,11 +20,11 @@ is needed for) the model. The equations for motion then are
     \quad
    J_2 = \begin{bmatrix} r & 0 & 0 \\ 0 & r & 0 \\ 0 & 0 & r \end{bmatrix}
 
-
+.. _`Fig:Tribot`:
 .. figure:: KinematicsFigures/tribot.*
    :width: 40%
    :align: center
 
-   The Omniwheel can be configured in a three wheel [Fig:Tribot]
+   The Omniwheel can be configured in a three wheel 
 
 .. _subsec:twoaxle:

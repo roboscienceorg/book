@@ -6,28 +6,28 @@ Differential drive is a two wheeled drive system. For stability a third
 support must be employed. A castor wheel or ball is normally used. The
 well known Rumba floor cleaning robot uses this system. It is stable,
 maneuverable, easy to control, and simple.
-Figure \ `[ddrive_pre] <#ddrive_pre>`__ gives the basic layout and
+:numref:`ddrive_pre` gives the basic layout and
 variables involved in the model.
 
-
+.. _`ddrive_pre`:
 .. figure:: MotionFigures/ddexample.*
    :width: 40%
    :align: center
 
-   The differential drive robot dimensions and variables. [ddrive_pre]
+   The differential drive robot dimensions and variables.
 
 Differential Drive
 ~~~~~~~~~~~~~~~~~~
 
 Recall the Differential Drive
-robot \ `[fig:ddriveRecalled2] <#fig:ddriveRecalled2>`__
+robot :numref:`fig:ddriveRecalled2`
 
-
+.. _`fig:ddriveRecalled2`:
 .. figure:: MotionFigures/ddrive.*
    :width: 60%
    :align: center
 
-   Simple differential drive robot. [fig:ddriveRecalled2]
+   Simple differential drive robot.
 
 and the forward kinematics:
 
@@ -63,12 +63,12 @@ Alternate Form
 
 In some cases we only need to know the forward velocity and the vehicle
 rotation rate. By computing :math:`v` from
-equation \ `[ddkinematicsmodel] <#ddkinematicsmodel>`__ and using
+:eq:`ddkinematicsmodel` and using
 :math:`\omega = \dot{\theta}`, we obtain
 
 .. math::
+   :label: ddkinematicsmodelalt
 
-   \label{ddkinematicsmodelalt}
    \begin{array}{l}
    v = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2}) \\[5mm]
    \omega = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
@@ -77,8 +77,8 @@ equation \ `[ddkinematicsmodel] <#ddkinematicsmodel>`__ and using
 and the inverse of these are
 
 .. math::
+   :label: ddinversekinematicsmodelalt
 
-   \label{ddinversekinematicsmodelalt}
    \begin{array}{l}
    \dot{\phi_1} = \frac{1}{r} (v+L\omega)\\[5mm]
    \dot{\phi_2} = \frac{1}{r} (v-L\omega)
@@ -87,25 +87,25 @@ and the inverse of these are
 Omniwheels
 ~~~~~~~~~~
 
-Figure \ `[gammaconfig] <#gammaconfig>`__ shows some sample types of
+:numref:`gammaconfig` shows some sample types of
 omniwheels using the :math:`\gamma = 0` configuration and
 :math:`\gamma = 45^\circ` configuration. Also recall that
 :math:`\gamma=0` style of wheel is used in non-parallel mounting as
 shown in the first robot in the
-Figure \ `[gammawheelmounting] <#gammawheelmounting>`__ and the parallel
+:numref:`gammawheelmounting` and the parallel
 mounting is used for the other standard type of wheel design using
 :math:`\gamma = 45^\circ`.
 
-
+.. _`fig:mecanumdim`:
 .. figure:: MotionFigures/mecanumdim.*
    :width: 60%
    :align: center
 
-   Dimensions for the Mecanum Kinematics[fig:mecanumdim]
+   Dimensions for the Mecanum Kinematics.
 
 For this section we assume that we have a traditional care design frame
 and wheel mounting as described in
-Figure \ `[fig:mecanumdim] <#fig:mecanumdim>`__
+:numref:`fig:mecanumdim`
 (:math:`\gamma = 45^\circ`). The following notation is used in the
 kinematics:
 
@@ -170,38 +170,39 @@ Applying the rotation to move to global coordinates
                                \frac{1}{(L_1+L_2) } \left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} - \dot{\phi}_{BL} +\dot{\phi}_{BR} \right)
             \end{bmatrix} .
 
-| So, finally obtain
+So, finally we obtain
 
   .. math::
+     :label: meccanumforwardkinematics
 
-     \label{meccanumforwardkinematics}
      \begin{bmatrix}\dot{x}\\[3mm] \dot{y}\\[3mm] \dot{\theta} \end{bmatrix}
      =
      \frac{ r}{4}
      \begin{bmatrix}A\cos(\theta)
-                               -B\sin(\theta) \\[3mm]
-                             A \sin(\theta)
-                               +B\cos(\theta)  \\[3mm]
-                                 \frac{1}{(L_1+L_2) } C
-              \end{bmatrix}
+       -B\sin(\theta) \\[3mm]
+        A \sin(\theta)
+       +B\cos(\theta)  \\[3mm]
+      \frac{1}{(L_1+L_2) } C
+    \end{bmatrix}
 
-   where
+where
+
   :math:`A = \left(\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} + \dot{\phi}_{BR}\right)`,
   :math:`B = \left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} - \dot{\phi}_{BR}\right)`,
-| and
+and
   :math:`C = \left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} - \dot{\phi}_{BL} +\dot{\phi}_{BR} \right)`.
 
 | To perform numerical calculations, we need to discretize the
   differential equations. Using the same process that we used to gain
-  equations \ `[discreteDD] <#discreteDD>`__, we discretize the Mecanum
+  :eq:`discreteDD`, we discretize the Mecanum
   equations. As before the time step is :math:`\Delta t`,
   :math:`x_k = x(t_k)`, :math:`y_k = y(t_k)`,
   :math:`\theta_k = \theta(t_k)`,
   :math:`\omega_{FL,k}=\dot{\phi}_{FL}(t_k)` ..., and we have
 
   .. math::
+     :label: mecanumforwardkinematics
 
-     \label{mecanumforwardkinematics}
      \begin{bmatrix} x_{k+1}\\[3mm] y_{k+1}\\[3mm] \theta_{k+1} \end{bmatrix}
      =   \begin{bmatrix} x_{k}\\[3mm] y_{k}\\[3mm] \theta_{k} \end{bmatrix} +
      \frac{ r\Delta t }{4} \begin{bmatrix} A\cos(\theta_{k})  - B \sin(\theta_{k})   \\[3mm]
@@ -209,7 +210,7 @@ Applying the rotation to move to global coordinates
                                  \frac{1}{(L_1+L_2) } C
               \end{bmatrix}
 
-   where
+where
   :math:`A = \left( \omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} + \omega_{BR,k} \right)`,
 | :math:`B = \left(-\omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} - \omega_{BR,k}  \right)`,
 | and
@@ -219,7 +220,7 @@ Inverse Kinematics for the Mecanum
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We used a traditional care design frame and wheel mounting as described
-in Figure \ `[gammaconfig] <#gammaconfig>`__
+in :numref:`gammaconfig`
 (:math:`\gamma = 45^\circ`). The inverse kinematics in local coordinates
 are given by
 
@@ -262,8 +263,8 @@ Applying the coordinate transformation we can move to global coordinates
    \begin{bmatrix}\cos(\theta) \dot{x} + \sin(\theta)\dot{y}\\[3mm] -\sin(\theta)\dot{x} + \cos(\theta)\dot{y} \\[3mm] \dot{\theta} \end{bmatrix}
 
 .. math::
+   :label:  meccanuminversekinematics
 
-   \label{meccanuminversekinematics}
    =
    \frac{1}{ r}
    \begin{bmatrix}  \cos(\theta) \dot{x} + \sin(\theta)\dot{y} + \sin(\theta)\dot{x} - \cos(\theta)\dot{y} -(L_1+L_2)\dot{\theta}  \\[3mm]
@@ -317,7 +318,7 @@ steer model.
 There are several issues with the simple design illustrated above.
 During a turn the left and right wheels travel different arcs meaning
 different distances,
-Figure \ `[ackermannsteeringfig] <#ackermannsteeringfig>`__. This will
+:numref:`ackermannsteeringfig`. This will
 cause the wheels to skid if their rotation rates are the same. Part of
 the solution is to place a differential in the axle to deliver power and
 allow for different wheel speeds. The other part is to allow for
@@ -333,14 +334,14 @@ Darwin) in 1758 according to Desmond King-Halle in 2002 and Mr. Darwin
 has claim to the invention.
 
 
-
+.. _`ackermannsteeringfig`:
 .. figure:: MotionFigures/ackermann.*
    :width: 60%
    :align: center
 
    To avoid skidding, the outside wheel must turn at a different angle
    and rotate at a different speed than the inside
-   wheel.[ackermannsteeringfig]
+   wheel.
 
 Recall that we had the no-slip and no-slide assumptions for our wheels.
 The no-slide assumption means that there is no motion in the direction
@@ -370,18 +371,18 @@ satisfy the Ackerman equation:
 where :math:`\theta_R` is the angle of the right wheel, :math:`\theta_L`
 is the angle of the left wheel, :math:`2L_1` is axle length and
 :math:`L_2` is the wheel base length,
-Figure \ `[Fig:ackermansteerangles] <#Fig:ackermansteerangles>`__. The
+:numref:`Fig:ackermansteerangles`. The
 effective steering angle, :math:`\theta_S` can be found by
 
 .. math:: \cot\theta_S = \frac{L_1}{L_2} + \cot\theta_R    \quad {\mbox{or} } \quad \cot\theta_S =\cot\theta_L -  \frac{L_1}{L_2}
 
-
+.. _`Fig:ackermansteerangles`:
 .. figure:: MotionFigures/ackermann_steer2.*
    :width: 60%
    :align: center
 
    The steering angles for the Ackerman
-   equation.[Fig:ackermansteerangles]
+   equation.
 
 The Ackerman design is one that approximates the geometric constraints
 which produces the ICR. A purely mechanical solution is to embed the
@@ -411,17 +412,17 @@ designs. Using components like Actobots
 (https://www.servocity.com/actobotics), Lego, or Vex one can quickly
 assemble nearly anything that your mind can dream up. One novel approach
 to all wheel steering is the Syncro Drive
-system \ `[fig:syncrodrive] <#fig:syncrodrive>`__. Using three or four
+system :numfig:`fig:syncrodrive`. Using three or four
 steered wheels, the wheels are connected by a chain or cable allowing
 all wheels to be steered. Each wheel is kept in a parallel mode so that
 motion is possible in any direction.
 
-
+.. _`fig:syncrodrive`:
 .. figure:: MotionFigures/syncro.*
    :width: 30%
    :align: center
 
-   Syncro Drive System.[fig:syncrodrive]
+   Syncro Drive System.
 
 The Dubins, Reeds-Shepps Cars and other drive systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -431,11 +432,11 @@ steering. The first design consists of two axles with four driven
 wheels. The centers of the axles are attached to the frame of the robot
 using a lockable pivot. In essence, it is two differential drives
 attached to a bar with the pivot mechanism (see
-Figure \ `[fig:DDD] <#fig:DDD>`__). We will refer to this as the Dual
+:numref:`fig:DDD`). We will refer to this as the Dual
 Differential Drive (DDD). The second design uses four axles (or one can
 think of splitting the axles in the DDD design) each with a driven
 wheel. The axles are attached to the body of the robot again using
-locking pivots (Figure `[fig:FWS] <#fig:FWS>`__). We will focus on
+locking pivots,  :numref:`fig:FWS`. We will focus on
 attachment points at the corners of the vehicle but other locations such
 as along the center line at either end of the robot would also be
 possible. For this design, mounting the pivots at the center of the axle
@@ -443,11 +444,11 @@ or at the corners of a chassis has the effect of changing the number of
 pivot brakes and the costs, but does not significantly change the
 kinematics. This configuration will be known as the Four Wheel Steer
 (FWS). A traditional articulated steering design is shown in
-Figure \ `[fig:AD] <#fig:AD>`__. The kinematics and motion curves for
+:numref:`fig:AD`. The kinematics and motion curves for
 this design are essentially the same as the DDD design, and as such will
 be treated as a DDD steering mechanism.
 
-
+.. _`fig:DDD`:
 .. figure:: MotionFigures/single_axle.*
    :width: 60%
    :align: center
@@ -455,9 +456,9 @@ be treated as a DDD steering mechanism.
    Dual Differential Drive (DDD). This vehicle has single or connected
    axle in the front and a single axle in the rear. The axle is connect
    to the frame using a pivot which can be locked (braked) or free.
-   [fig:DDD]
 
 
+.. _`fig:FWS`:
 .. figure:: MotionFigures/split_axle_box.*
    :width: 60%
    :align: center
@@ -465,9 +466,9 @@ be treated as a DDD steering mechanism.
    Four Wheel Steer (FWS). This vehicle has four axles each is connected
    to the frame by a lockable pivot. In addition to motion see in the
    DDD design, if there is sufficient rotational motion in the axles,
-   this conifguration can spin in place. [fig:FWS]
+   this conifguration can spin in place.
 
-
+.. _`fig:AD`:
 .. figure:: MotionFigures/pivot_brake.*
    :width: 60%
    :align: center
@@ -475,7 +476,7 @@ be treated as a DDD steering mechanism.
    Articulated Drive (AD). This is a common design in heavy equipment
    like articulated front loaders. The motion is similar to that found
    in the DDD design and can be driven with an unlocked pivot (brake not
-   required). [fig:AD]
+   required).
 
 When a wheel motor is activated, it will cause the axle to rotate about
 the pivot. Once the desired angle is achieved, the pivot is locked
@@ -499,13 +500,13 @@ circular paths. Not found in Ackerman systems, the FWS design can
 additionally rotate in place if the axle is allowed to rotate out
 :math:`45^\circ` or more.
 
-
+.. _`fig:fmotion`:
 .. figure:: MotionFigures/motion.*
    :width: 60%
    :align: center
 
    The forward motion curves. Left: traditional Dubins Car. Right:
-   forward motion of the DDD vehicle.[fig:fmotion]
+   forward motion of the DDD vehicle.
 
 For the DDD design, using the bicycle approximation, the radius of
 curvature is given as a function of the maximum axle rotation and the
@@ -514,11 +515,11 @@ given by :math:`d`, then the radius of curvature is given by
 
 .. math:: r  = d/(2\sin\theta)
 
-\ (Figure `[fig:turngeo] <#fig:turngeo>`__ (left)). In addition, the DDD
+:numref:`fig:turngeo` (left). In addition, the DDD
 can move linearly in directions angled off the forward direction of the
 vehicle if the axles are parallel and have nonzero axis angle in
 reference to the forward vehicle normal
-(Figure`[fig:fmotion] <#fig:fmotion>`__). The direction off of the
+:numref:`fig:fmotion`. The direction off of the
 forward normal direction is given by the axle angles and if the front
 and rear axles are not parallel, then a circular path will occur with
 direction off of the forward direction as seen with parallel axles.
@@ -540,7 +541,7 @@ average of the inside and outside circle radii:
 
 .. math:: \overline{r} = (r_1+r_2)/2 = d\left(1/(4\sin\theta_1) + 1/(4\sin\theta_2)\right)
 
-\ (Figure `[fig:turngeo] <#fig:turngeo>`__). For this design, we have
+:numref:`fig:turngeo`. For this design, we have
 the ability to move as with the DDD and in addition rotate in place.
 Both systems can also move forwards and reverse. Thus orientation and
 direction may be changed at any point along the trajectory.

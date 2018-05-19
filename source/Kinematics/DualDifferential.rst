@@ -9,17 +9,17 @@ system, with :math:`y` the forward direction, :math:`z` up, and
 the axle is given by :math:`2L`, the robot angle by :math:`\theta`, and
 the angle of the axle with respect to the robot given by :math:`\alpha`,
 with :math:`\alpha=0` aligning the axle with the :math:`x` axis
-(Figure `[fig:angles] <#fig:angles>`__). The points at the end of the
+:numref:`fig:angles`. The points at the end of the
 axle are denoted by :math:`A` and :math:`B`, with :math:`A`
 corresponding to the point in the positive :math:`x` direction when
 :math:`\alpha=0`.
 
-
+.. _`fig:angles`:
 .. figure:: KinematicsFigures/angle_labels.*
    :width: 70%
    :align: center
 
-   The axis angles. [fig:angles]
+   The axis angles.
 
 Simple planar kinematics gives the following relationships between the
 velocities at points :math:`A` and :math:`B` and the robot motion. Let
@@ -55,7 +55,7 @@ Combining the equations for points :math:`A` and :math:`B` results in
    \dot{\alpha} = \frac{V_A-V_B}{2L}
 
 The major difference with this current derivation and our previous
-version in Chapter \ `[Chap:Terms] <#Chap:Terms>`__ is that the
+version in the Terms Chapter  is that the
 coordinate system is rotated by :math:`90^\circ` compared to what we
 use.
 
@@ -116,13 +116,13 @@ The wheel speeds for this figure are
    V_C, V_D = (5t - t^2)\cos(\alpha)/\cos(\beta) \pm \sin(t) ,   \quad 0 \leq t \leq 5 .
    \end{array}
 
-
+.. _`fig:DDDpath`:
 .. figure:: KinematicsFigures/DDDpath1.png
    :width: 40%
    :align: center
 
 
    Path for the DDD system demonstrating the ability to steer and
-   control the vehicle with free axle pivots. [fig:DDDpath]
+   control the vehicle with free axle pivots. 
 
 .. _subsec:fouraxle:

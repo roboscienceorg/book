@@ -1,7 +1,7 @@
 Basic Controls
 --------------
 
-In Chapter \ `[Chap:Simulation] <#Chap:Simulation>`__, we saw that a
+In the Simulation Chapter, we saw that a
 parametric curve can be used to generate a path for a robot. Two issues
 quickly arise. First, noise, errors in velocity and path discretization
 will cause the vehicle to drift off of the computed path. The formulas
@@ -22,20 +22,20 @@ be able to adapt to the environment, for example if we need to slow down
 at some point to avoid a collision. So, feedback in our systems turns
 out to be essential.
 
-
+.. _`fig:pathdriftcorrection`:
 .. figure:: ControlFigures/splinemiss.*
    :width: 40%
    :align: center
 
    Using position feedback as a way to mitigate
-   drift.[fig:pathdriftcorrection]
+   drift.
 
 As we discussed in the simulation chapter, the approach to minimize the
 drift is to replace the parametric path with a feedback control system
 based on sensing the environment. Thus if we missed hitting the target
 point in the last segment, we don’t use next point in the precomputed
 path, but have the controller provide a modified direction, see
-Fig. \ `[fig:pathdriftcorrection] <#fig:pathdriftcorrection>`__. This
+:numref:`fig:pathdriftcorrection`. This
 keeps the robot headed towards the desired path by using position
 feedback. A simple stop, rotate to orient and drive approach will work
 in very simple applications. How about an approach that corrects as we
@@ -50,14 +50,14 @@ clear that driving a straight line can be hard. Assuming the goal is
 actually driving to a goal and not as much staying on the line, how can
 we correct during the route to keep our orientation towards the goal
 point? Assume that you know your orientation error,
-Figure \ `[fig:ddorientationerror] <#fig:ddorientationerror>`__.
+:numref:`fig:ddorientationerror`.
 
-
+.. _`fig:ddorientationerror`:
 .. figure:: ControlFigures/ddcontrol.*
    :width: 40%
    :align: center
 
-   Orientation error of :math:`\alpha`. [fig:ddorientationerror]
+   Orientation error of :math:`\alpha`.
 
 Recall the alternate form of the differential drive equations:
 
@@ -149,14 +149,14 @@ control systems are an essential aspect to an engineered solution. We
 will be using these algorithms to set position, velocity and force in
 our robots.
 
-
+.. _`Fig:motorfeedback`:
 .. figure:: ControlFigures/feedback.*
    :width: 40%
    :align: center
 
-   Feedback and Control for motor speed.[Fig:motorfeedback]
+   Feedback and Control for motor speed.
 
-Figure \ `[Fig:motorfeedback] <#Fig:motorfeedback>`__ shows the basic
+:numref:`Fig:motorfeedback` shows the basic
 feedback loop for controlling the speed on a motor. We will assume this
 encoder returns angular velocity (rpm) although in practice they return
 a signal which needs to be translated to rpm. This can be easily done as
@@ -174,7 +174,7 @@ these ideas apply to articulated systems as well.
 
 We will be concerned with three quantities here. First, the desired
 configuration, which in
-Figure \ `[Fig:motorfeedback] <#Fig:motorfeedback>`__ is :math:`v_d`.
+:numref:`Fig:motorfeedback` is :math:`v_d`.
 Second, the measured or actual configuration, :math:`v_m`. And third,
 the control signal delivered to the actuator control unit, :math:`u(t)`.
 
@@ -196,18 +196,18 @@ speed.
 In this system, a fixed control effort is used and no attempt at scaling
 it based on measured speeds is done. The obvious result is an
 oscillation of the actual speed around the set speed,
-Figure \ `[Fig:bangbang] <#Fig:bangbang>`__. This approach is fine for
+:numref:`Fig:bangbang`. This approach is fine for
 systems with slow dynamics (significant inertial) where one only wants
 to be close to the set value; such as house temperature. For higher
 response systems, this approach can feel rough as it jumps from off to
 on and back. It can also become unstable with very rapid response times.
 
-
+.. _`Fig:bangbang`:
 .. figure:: ControlFigures/bangbang.*
    :width: 40%
    :align: center
 
-   Bang-Bang or On-Off Control.[Fig:bangbang]
+   Bang-Bang or On-Off Control.
 
 We can smooth this out a bit by placing a range for turning on and off
 the motor. Assume that :math:`v_{\mbox{on}} < v_d < v_{\mbox{off}}` then
@@ -274,9 +274,9 @@ the :math:`e_1(t) < d` jump. Selecting some arbitrary values,
 :math:`k_2=0.2`. :math:`k_2` is selected for continuity on wheel speed.
 :math:`k_1` was derived experimentally. The start point is (0,0) and
 endpoint is (40,60). The result is given in
-Figure \ `[Fig:pcontrolDDrobot] <#Fig:pcontrolDDrobot>`__.
+:numref:`Fig:pcontrolDDbot`.
 
-
+.. _`Fig:pcontrolDDbot`:
 .. figure:: ControlFigures/pcontrolDDbot.*
    :width: 40%
    :align: center
@@ -333,10 +333,10 @@ A simple modification can take a sequence of points and navigate the
 robot along the path of points. Place the goal points into an array. Set
 the counter to the first array index. When the robot is within a small
 distance of the goal point, increment the counter. The controller will
-adjust. Figure \ `[Fig:pcontrolDDbotpath] <#Fig:pcontrolDDbotpath>`__
+adjust. :numref:`Fig:pcontrolDDbotpath`
 demonstrates this algorithm.
 
-
+.. _`Fig:pcontrolDDbotpath`:
 .. figure:: ControlFigures/pcontrolDDbotpath.*
    :width: 40%
    :align: center
@@ -388,6 +388,8 @@ manner as it does alone.
    :width: 40%
    :align: center
 
+   This figure needs to be replaced!!!
+
 
 PID - Integral Term
 ^^^^^^^^^^^^^^^^^^^
@@ -410,6 +412,8 @@ windup.
 .. figure:: ControlFigures/Change_with_Ki.png
    :width: 40%
    :align: center
+
+   This figure needs to be replaced!!!
 
 
 PID - Derivative Term
@@ -435,6 +439,8 @@ are sufficiently large.
    :width: 40%
    :align: center
 
+   This figure needs to be replaced!!!
+
 
 PI Control Discretization
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -453,8 +459,8 @@ converted to a basic recursion:
 .. math:: U_n - U_{n-1} = k_P(e_n - e_{n-1}) + k_I \Delta t \left( \frac{e_n + e_{n-1}}{2}\right)
 
 .. math::
+   :label: eq:PIdiscreteformula
 
-   \label{eq:PIdiscreteformula}
    U_n = U_{n-1} + K_P(e_n - e_{n-1}) + K_I (e_n + e_{n-1})
 
 where :math:`K_P = k_p`, :math:`K_I = k_I \Delta t  / 2`.
@@ -471,8 +477,8 @@ The expression can be converted into a recursive relation:
 .. math:: U_n - U_{n-1} = k_P(e_n - e_{n-1}) + k_D \frac{e_n - 2e_{n-1} +e_{n-2}}{\Delta t}
 
 .. math::
+   :label: eq:PDdiscreteformula
 
-   \label{eq:PDdiscreteformula}
    U_n = U_{n-1} + K_P(e_n - e_{n-1}) + K_D (e_n - 2e_{n-1} +e_{n-2})
 
 where :math:`K_P = k_p`, :math:`K_D = k_D / \Delta t`.
@@ -490,8 +496,8 @@ recursive relation:
 .. math:: U_n - U_{n-1} = k_P(e_n - e_{n-1}) + k_I \Delta t \left( \frac{e_n + e_{n-1}}{2}\right)  + k_D \frac{e_n - 2e_{n-1} +e_{n-2}}{\Delta t}
 
 .. math::
+   :label: eq:PIDdiscreteformula
 
-   \label{eq:PIDdiscreteformula}
    U_n = U_{n-1} + K_P(e_n - e_{n-1}) + K_I (e_n + e_{n-1}) + K_D (e_n - 2e_{n-1} +e_{n-2})
 
 where :math:`K_P = k_p`, :math:`K_I = k_I \Delta t  / 2`,
@@ -652,13 +658,11 @@ gains are first set to zero. The P gain is increased until it reaches
 the ultimate gain, :math:`K_u`, at which the output of the loop starts
 to oscillate. :math:`K_u` and the oscillation period :math:`T_u` are
 used to set the gains as shown in
-Table \ `[tab:ZieglerNicholsmethod] <#tab:ZieglerNicholsmethod>`__
+:numref:`tab:ZieglerNicholsmethod`
 
-.. raw:: latex
-
-   \centering
-
-.. table:: Ziegler - Nichols method values[tab:ZieglerNicholsmethod]
+.. _`tab:ZieglerNicholsmethod`:
+.. table:: Ziegler - Nichols method values
+   :widths: auto
 
    +--------------+-----------------+-----------------+-------------------+
    | Control Type | :math:`K_p`     | :math:`K_i`     | :math:`K_d`       |
@@ -688,49 +692,49 @@ navigation.
 This is addressed by having speed ramp functions to control the
 transition to new set points. This is no more than what we all do in our
 cars by slowly pressing down on the accelerator until we reach the
-desired speed. Figure \ `[fig:speedramp0] <#fig:speedramp0>`__ shows one
+desired speed. :numref:`fig:speedramp0` shows one
 sample ramp function. There are times when one needs coordinated control
 between multiple devices. This is necessary with any vehicle that has
 more than one drive motor, for example a differential drive,
-Figure \ `[fig:speedramp1] <#fig:speedramp1>`__.
+:numref:`fig:speedramp1.
 
-
+.. _`fig:speedramp1`:
 .. figure:: ControlFigures/changesetpoint.*
    :width: 40%
    :align: center
 
-   [fig:speedramp1]A speed ramp function for a single motor
+   A speed ramp function for a single motor
 
-
+.. _`fig:speedramp2`:
 .. figure:: ControlFigures/dualmotor1.*
    :width: 40%
    :align: center
 
-   [fig:speedramp2]Coordinating two motors separately with a P
+   Coordinating two motors separately with a P
    controller.
 
 Ramping up each motor to the same speed does not assure straight motion.
 Variations between ramp ups can cause significant errors in orientation
 for differential drive. Both motors must be ramped up in the same manner
 so must be fed the same ramp up function,
-Figure \ `[fig:speedramp2] <#fig:speedramp2>`__. This can be done with a
+:numref:`fig:speedramp2`. This can be done with a
 P, PI or PID control; a PID version is shown in
-Figure \ `[fig:speedramp3] <#fig:speedramp3>`__.
+:numref:`fig:speedramp3`.
 
 
-
+.. _`fig:speedramp3`:
 .. figure:: ControlFigures/dualmotor2.*
    :width: 40%
    :align: center
 
-   [fig:speedramp3]Coordinating two motors with the same ramp function.
+   Coordinating two motors with the same ramp function.
 
-
+.. _`fig:speedramp4`:
 .. figure:: ControlFigures/dualmotor3.*
    :width: 40%
    :align: center
 
-   [fig:speedramp4]Coordinating two motors with dual P/PI/PID
+   Coordinating two motors with dual P/PI/PID
    controllers.
 
 Kinematics vs Physics Engine
