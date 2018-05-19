@@ -14,16 +14,16 @@ dot indicates distance of the dot. If the size of object is known, then
 triangulation can be done without projecting light. Standard computer
 vision techniques can recover relative image size.
 
-
+.. _`lasertriangulation`:
 .. figure:: VisionFigures/lasertriangulation.*
    :width: 70%
    :align: center
 
-   Laser Triangulation.[lasertriangulation]
+   Laser Triangulation.
 
 Laser Triangulation is done by setting the measurement apparatus up so
 that simple trigonometry can be used to measure distance,
-Figure \ `[lasertriangulation] <#lasertriangulation>`__. In this case,
+:numref:`lasertriangulation`. In this case,
 the laser setup uses similar triangles making the mathematics much
 simpler. The distance :math:`D` is given by
 
@@ -36,12 +36,11 @@ Compute the range of the input values based on the error. Plug the high
 and low values in and you can compute the range on the output value. The
 following example provides some details.
 
-.. raw:: latex
 
-   \normalfont
+
 
 Assume that for the triangulation setup in
-Figure \ `[lasertriangulation] <#lasertriangulation>`__, we have
+:numref:`lasertriangulation`, we have
 :math:`f=8`\ mm, :math:`L = 3`\ cm and :math:`x = 2`\ mm. Using the
 formula we see that :math:`D = 0.8*3/0.2 =12`\ cm. What if there is
 error in the :math:`x` or :math:`L` measurement?
@@ -110,12 +109,12 @@ Move the :math:`x` over:
 
 From the first ratio: :math:`z = \cfrac{fx}{u}`.
 
-
+.. _`fig:lasertriangulation2`:
 .. figure:: VisionFigures/lasertriangulation2.*
    :width: 70%
    :align: center
 
-   Computer Vision[fig:lasertriangulation2]
+   Computer Vision
 
 Plug this in for :math:`z`:
 
@@ -135,8 +134,9 @@ then using
 Summarizing the formulas:
 
 .. math::
+   :label:industrialvision
+   :caption: Industrial Vision location formulas.
 
-   \label{eqn:industrialvision}
    x = \frac{b u}{f\cot \alpha + u},  \quad
    z = \frac{b f}{f\cot \alpha + u}
 
@@ -155,7 +155,7 @@ What are :math:`x` and :math:`z` if b = 20cm, f = 2cm, :math:`\alpha` =
 The Sharp distance sensor uses a very similar approach to estimate
 distances. The displacement of the beam center on the beam detector is
 used for the distance estimate, see
-Figure \ `[fig:SharpIRsensor] <#fig:SharpIRsensor>`__. Distance D is
+:numref:`fig:SharpIRsensor`. Distance D is
 given by
 
 .. math:: D=  \frac{fb}{2d} .
@@ -184,9 +184,9 @@ pattern of light is projected onto the environment. Common patterns are
 dots, stripes and grids. A camera will view the instrumented scene and
 determine the object heights using geometry.
 
-
+.. _`structuredlight:
 .. figure:: VisionFigures/structuredlight.*
    :width: 65%
    :align: center
 
-   Structured light.[structuredlight]
+   Structured light.[]]

@@ -15,7 +15,7 @@ drive has constant wheel speed. In practice this is difficult since one
 cannot have instant jumps in wheel velocity. This makes accurate turns
 challenging. If stopping and turning in place on the route is
 acceptable, paths with just straight lines are the easiest to develop,
-:numref:`fig:simplecurvedpath`. Then is is
+:numref:`fig:simplestraightpath`. Then is is
 just a matter of starting with the correct orientation and driving for a
 given amount of time.
 
@@ -26,12 +26,12 @@ given amount of time.
 
    Path with arcs
 
-.. _`fig:simplecurvedpath`:
+.. _`fig:simplestraightpath`:
 .. figure:: SimulationFigures/simplestraightpath.*
    :width: 50%
    :align: center
 
-   Path without arcs
+   Path *without* arcs
 
 There is a clear problem with open loop control. Any variation in the
 physical system can cause drift. This drift accumulates over time and at
@@ -76,45 +76,39 @@ incr count Set heading towards goal
 
    Path using the Basic Motion algorithm.
 
-Figure \ `[turtlebasicmotion] <#turtlebasicmotion>`__ illustrates the
+:numref:`turtlebasicmotion` illustrates the
 idea. This algorithm is not completely specified. The amount of right
 turn and the distance traveled in the move forward steps is not
 prescribed above. Assuming values can be determined, will this approach
 work? We expect success when faced with convex obstacles but not
 necessarily for non-convex obstacles,
-Figure \ `[simple1motionproblem] <#simple1motionproblem>`__. Using
-Figure \ `[simple1motionproblem] <#simple1motionproblem>`__ as a guide,
+:numref:`simple1motionproblem`. Using
+:numref:`simple1motionproblem` as a guide,
 we can construct a collection of convex obstacles which still foil the
 algorithm; this is expressed in
-Figure \ `[simple2motionproblem] <#simple2motionproblem>`__. The robot
+:numref:`simple2motionproblem`. The robot
 bounces from obstacle to obstacle like a pinball and is wrapped around.
 Leaving the last obstacle the robot reaches the cutoff distance and then
 switches back to the “motion to goal" state. However, this sets up a
 cycle. So, the answer to the question “does this work" is not for all
 cases.
 
-.. raw:: latex
-
-   \centering
-
-.. raw:: latex
-
-   \centering
-
+.. _`simple1motionproblem`:
 .. figure:: SimulationFigures/simple1.*
    :width: 50%
    :align: center
 
-   Getting trapped in a non-convex solid object.[simple1motionproblem]
+   Getting trapped in a non-convex solid object.
 
+.. _`simple2motionproblem`:
 .. figure:: SimulationFigures/simple2.*
    :width: 50%
    :align: center
 
    A collection of convex objects can mimic a non-convex obstacle.
-   [simple2motionproblem]
 
-In Chapter \ `[Chap:Planning] <#Chap:Planning>`__, we will fully explore
+
+In Chapter on Motion Planning, we will fully explore
 the challenge of motion planning in an environment with obstacles. It is
 easy to see how the thought experiment above can fail and more robust
 approaches are needed. Before we jump into motion planning, we want to

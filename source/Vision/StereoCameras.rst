@@ -19,15 +19,15 @@ part is automatically identifying common points in the image.
 Significant effort has been invested in the determination of common
 features between two images. Several well known algorithms such as SIFT
 and SURF are available now to simplify this process. Once that is done,
-it is easy to triangulate the depth of the point, Figure
-(`[intro-stereo1] <#intro-stereo1>`__).
+it is easy to triangulate the depth of the point, :numref:`intro-stereo1`.
 
+.. _`intro-stereo1`:
 .. figure:: VisionFigures/stereo1.*
    :width: 80%
    :align: center
 
    Seeing in three dimensions with a pair of calibrated cameras:
-   determining depth using basic Trigonometry. [intro-stereo1]
+   determining depth using basic Trigonometry.
 
 
 .. figure:: VisionFigures/stereo1a.*
@@ -35,7 +35,7 @@ it is easy to triangulate the depth of the point, Figure
    :align: center
 
    Seeing in three dimensions with a pair of calibrated cameras:
-   determining depth using basic Trigonometry. [intro-stereo1]
+   determining depth using basic Trigonometry.
 
 Define a coordinate system where the horizontal axis is :math:`x` and
 the vertical axis is :math:`z`. Let the focal point of the left camera
@@ -61,26 +61,27 @@ Solving for :math:`x`, we obtain the equation below. Plugging this into
 :math:`z = fx / v_1` we obtain the equation for :math:`z`.
 
 .. math::
+   :label: intro:stereodistance
 
-   \label{intro:stereodistance}
    x = \frac{v_1b}{v_1+v_2}, \quad
    z = \frac{fb}{v_1+v_2}
 
 
-
+.. _`fig:seeing3d`:
 .. figure:: VisionFigures/disparitya.*
    :width: 50%
    :align: center
 
    Seeing in three dimensions with a pair of calibrated cameras: building
-   a disparity (depth) map. [fig:seeing3d]
+   a disparity (depth) map.
 
+.. _`fig:seeing3d-a`:
 .. figure:: VisionFigures/disparityb.*
    :width: 50%
    :align: center
 
    Seeing in three dimensions with a pair of calibrated cameras:
-   reconstructing the 3D world.[fig:seeing3d]
+   reconstructing the 3D world.
 
 
 Once depth for the collection of feature points are known, depth for
@@ -95,12 +96,12 @@ as object recognition. The depth map is one of several ways to perform
 object recognition and is a useful tool if we have already computed the
 depth map.
 
-
+.. _`intro-stereo2`:
 .. figure:: VisionFigures/rgbdslam.jpg
    :width: 50%
    :align: center
 
-   Seeing in three dimensions with RGBD sensors[intro-stereo2]
+   Seeing in three dimensions with RGBD sensors.
 
 Once a depth map is made, reconstruction of the environment can follow.
 Essentially a 3D CAD type representation of the world surrounding the

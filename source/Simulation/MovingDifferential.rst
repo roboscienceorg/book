@@ -15,17 +15,17 @@ one that can take a velocity command and achieve that velocity.
 
 In this section we simulate the motion of the differential drive robot
 that we introduced in Chapter \ `[Chap:Terms] <#Chap:Terms>`__ shown in
-Figure \ `[ddriveRecalled] <#ddriveRecalled>`__.
+:numref:`ddriveRecalled`.
 
-
+.. _`ddriveRecalled`
 .. figure:: SimulationFigures/ddrive.*
    :width: 30%
    :align: center
 
-   Simple differential drive robot. [ddriveRecalled]
+   Simple differential drive robot.
 
 and the associated
-equations \ `[ddkinematicsmodel] <#ddkinematicsmodel>`__:
+equations :eq:`ddkinematicsmodel`
 
 .. math::
 
@@ -117,15 +117,15 @@ can connect these up to produce a path for any sequence of wheel
 velocities. The path is made up of combinations of lines and arcs. Note
 that a pivot in place is possible so the resulting path need not be
 differentiable.
-Figure \ `[fig:piecewisecirculararcs] <#fig:piecewisecirculararcs>`__
+:numref:`fig:piecewisecirculararcs`
 shows a sample path.
 
-
+.. _`fig:piecewisecirculararcs`
 .. figure:: SimulationFigures/piecewisecircular.*
    :width: 50%
    :align: center
 
-   Piecewise circular/linear arc paths[fig:piecewisecirculararcs]
+   Piecewise circular/linear arc paths
 
 In practice it is not possible to instantaneously jump wheel speeds.
 Inertia in the system (mass, inductance, power limits) means that it is
@@ -139,7 +139,8 @@ hand sides for :math:`\dot{x}` and :math:`\dot{y}` normally are not
 integrable. A simple example below demonstrates issues with finding
 antiderivatives.
 
-[ddexamplenotworkable] Let :math:`\dot{\phi_1} = e^{-t^2}` and
+_`ddexamplenotworkable`:
+Let :math:`\dot{\phi_1} = e^{-t^2}` and
 :math:`\dot{\phi_2} = t`
 
 .. math:: \theta(t) = \theta(0) + \int_0^t \frac{r}{2L} \left(e^{-\tau^2}-\tau\right)d\tau = ???
@@ -280,18 +281,18 @@ The output:
 
 The Euler approximation amounts to assuming the vehicle has constant
 wheel velocity over the interval :math:`\Delta t`, see
-Figure \ `[fig:piecewiseconst] <#fig:piecewiseconst>`__. The assumption
+:numref:`fig:piecewiseconst`. The assumption
 of piecewise constant velocity does not hold in the general case and so
 we see accumulating drift when comparing the robot’s true path and the
 approximated one.
 
-
+.. _`fig:piecewiseconst`:
 .. figure:: SimulationFigures/piecewiseconst.*
    :width: 50%
    :align: center
 
    Piecewise Constant nature of the Euler
-   Approximation.[fig:piecewiseconst]
+   Approximation.
 
 A simple modification of the code can accept other wheel speeds. For
 example, if the wheel speeds are given by :math:`w1 = 0.1 + 2*t` and
@@ -386,13 +387,13 @@ Solving for :math:`\dot{\phi_2}` and then plugging back in for
 The direction of the robot is the direction of the curve shown in
 Figure \ `[intro-tangent] <#intro-tangent>`__.
 
-
+.. _`intro-tangent`:
 .. figure:: SimulationFigures/tantheta.*
    :width: 60%
    :align: center
 
    The relation between :math:`\theta` and :math:`\dot{x}`,
-   :math:`\dot{y}`. [intro-tangent]
+   :math:`\dot{y}`.
 
 .. math:: \theta = \arctan \frac{\dot{y}}{\dot{x}}~.
 
@@ -414,8 +415,8 @@ will pick the positive root to be consistent with the front of the
 robot.
 
 .. math::
+   :label: `inverseddequations`
 
-   \label{inverseddequations}
    \boxed{
    \begin{array}{l}
    \dot{\phi_1} = \displaystyle \frac{L}{r}\left( \frac{\dot{x}\ddot{y} - \dot{y}\ddot{x}}{\dot{x}^2 + \dot{y}^2}\right) + \frac{\sqrt{\dot{x}^2 + \dot{y}^2}}{r} \\[3mm]
@@ -432,8 +433,8 @@ Note that the curvature of a parameterized plane curve is given by
 and we can rewrite the inverse kinematic equations, IK, as
 
 .. math::
+   :label:  inverseddequationskappa
 
-   \label{inverseddequationskappa}
    \boxed{
    \begin{array}{l}
    v = \sqrt{\dot{x}^2 + \dot{y}^2}\\[3mm]
@@ -554,17 +555,19 @@ And the section of code to check:
     plt.show()
 
 
+.. _`quadraticpathexample2`:
 .. figure:: SimulationFigures/quadpolyphis.*
    :width: 60%
    :align: center
 
-   The wheel velocities. [quadraticpathexample2]
+   The wheel velocities.
 
+.. _`quadraticpathexample3`
 .. figure:: SimulationFigures/quadpoly1.*
    :width: 60%
    :align:  center
 
-   Comparison of the path and driven path.[quadraticpathexample3]
+   Comparison of the path and driven path.
 
 On a robot, the motor controllers will be taking digital commands which
 means the wheel velocities are discrete. This implies that the robot has
@@ -579,8 +582,8 @@ implementation is still discrete.
 It makes sense to treat this as a discrete formula and to write as such:
 
 .. math::
+   :label: ddikpartial
 
-   \label{eq:ddikpartial}
    \boxed{
    \begin{array}{l}
    v_k = \sqrt{\dot{x}(t_k)^2 + \dot{y}(t_k)^2} , \quad\quad

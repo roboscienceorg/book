@@ -36,7 +36,7 @@ You can run the Two Link Manipulator simulator we will use by typing
     >  python twolinksimple.py
 
 and you should see what is indicated in
-Figure \ `[Fig:twolinksimulator1] <#Fig:twolinksimulator1>`__-(a). In
+:numref:`Fig:twolinksimulator1`-(a). In
 another terminal, run Python and type
 
 ::
@@ -62,13 +62,13 @@ another terminal, run Python and type
 
 
 You should see the link arm move as shown in
-Figure \ `[Fig:twolinksimulator1] <#Fig:twolinksimulator1>`__-(b). The
+:numref:`Fig:twolinksimulator1`-(b). The
 API is very simple. You need to publish a string formatted as
 "theta1:theta2:pen". The values theta1 and theta2 are in degrees (int or
 float), and pen is an int. Pen is set to 1 to draw and 0 to not draw.
 The program DialCntrl.py is an example of a Tk widget that uses two
 sliders to set the angle,
-Figure \ `[Fig:tksliderexample] <#Fig:tksliderexample>`__\ (a). To gain
+:numref:Fig:tksliderexample` (a). To gain
 an understanding of the ROS Node structure, one may list out the ROS
 nodes (example, your numbers will vary):
 
@@ -87,12 +87,12 @@ To view the resulting node graph we can use the ROS tool rqt_graph:
 
 In this case it produces Figure \ `[Fig:rosgraph0] <#Fig:rosgraph0>`__.
 
-
+.. _`Fig:rosgraph0`
 .. figure:: SimulationFigures/rosgraph0.png
    :width: 60%
    :align: center
 
-   The ROS Node Graph Tool rqt_graph. [Fig:rosgraph0]
+   The ROS Node Graph Tool rqt_graph.
 
 If you are curious about the messages flowing on a topic, recall ROS can
 echo those to a terminal for debugging purposes. In a free terminal,
@@ -110,18 +110,20 @@ you don’t have source code, then this tool is very handy.
 
 A Tk control that can set position is given in the next example
 PositionCntrl.py and shown in
-Figure \ `[Fig:tksliderexample] <#Fig:tksliderexample>`__\ (b). The
+:numref:`Fig:tksliderexample` (b). The
 widget PositionCntrl.py publishes :math:`(x,y)` coordinates. An
 intermediate node IK.py is used to convert the :math:`(x,y)` values to
 :math:`(\theta_1, \theta_2)` and these values are published to the Two
 Link Simulator.
 
+.. _`Fig:tksliderexample`:
 .. figure:: SimulationFigures/tksliderexample.png
    :width: 60%
    :align: center
 
    The servo angle control widget
 
+.. _`Fig:tksliderexample2`>:
 .. figure:: SimulationFigures/tksliderexample2.png
    :width: 60%
    :align: center
@@ -175,8 +177,9 @@ Link Simulator.
     rospy.spin()
 
 
+.. _`Fig:rosgraph1`
 .. figure:: SimulationFigures/rosgraph1.png
    :width: 70%
    :align: center
 
-   The ROS Node Graph Tool rqt_graph. [Fig:rosgraph1]
+   The ROS Node Graph Tool rqt_graph.
