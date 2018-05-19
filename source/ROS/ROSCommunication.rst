@@ -152,7 +152,7 @@ by adding the line:
 
 Next we create a new program. Create a new terminal window and enter:
 
-::
+.. code-block:: python
 
     import rospy
     from std_msgs.msg import String
@@ -275,39 +275,43 @@ and you will see in the rostopic command window:
     data: Did this echo??
     ---
 
+.. list-table:: Data Types
+   :widths:  20 20 20
+   :align: center
 
-| 3 Bool
-| Byte
-| ByteMultiArray
-| Char
-| ColorRGBA
-| Duration
-| Empty
-| Float32
-| Float32MultiArray
-| Float64
-| Float64MultiArray
-| Header
-| Int16
-| Int16MultiArray
-| Int32
-| Int32MultiArray
-| Int64
-| Int64MultiArray
-| Int8
-| Int8MultiArray
-| MultiArrayDimension
-| MultiArrayLayout
-| String
-| Time
-| UInt16
-| UInt16MultiArray
-| UInt32
-| UInt32MultiArray
-| UInt64
-| UInt64MultiArray
-| UInt8
-| UInt8MultiArray
+   * - 3 Bool
+     - Byte
+     - ByteMultiArray
+   * - Char
+     - ColorRGBA
+     - Duration
+   * - Empty
+     - Float32
+     - Float32MultiArray
+   * - Float64
+     - Float64MultiArray
+     - Header
+   * - Int16
+     - Int16MultiArray
+     - Int32
+   * - Int32MultiArray
+     - Int64
+     - Int64MultiArray
+   * - Int8
+     - Int8MultiArray
+     - MultiArrayDimension
+   * - MultiArrayLayout
+     - String
+     - Time
+   * - UInt16
+     - UInt16MultiArray
+     - UInt32
+   * - UInt32MultiArray
+     - UInt64
+     - UInt64MultiArray
+   * - UInt8
+     - UInt8MultiArray
+     - ...
 
 
 Often we need to publish a message on a periodic basis. To do that you
@@ -368,9 +372,11 @@ message published on a topic.
 
 Based on the couple of modifications above, the simple publisher and
 subscriber example can be written as the following Python programs,
-Listings \ `[lst:publishercode] <#lst:publishercode>`__, \ `[lst:subscribercode] <#lst:subscribercode>`__.
+:numref:`lst:publishercode`, :numref:`lst:subscribercode`.
 
-::
+.. _`lst:publishercode`:
+.. code-block:: python
+   :caption: Publisher Code
 
     #!/usr/bin/env python
     import rospy
@@ -383,7 +389,9 @@ Listings \ `[lst:publishercode] <#lst:publishercode>`__, \ `[lst:subscribercod
         n = len(message)
         pub.publish(message)
 
-::
+.. _`lst:subscribercode`:
+.. code-block:: python
+   :caption: Subscriber Code
 
     #!/usr/bin/env python
     import rospy
@@ -395,12 +403,12 @@ Listings \ `[lst:publishercode] <#lst:publishercode>`__, \ `[lst:subscribercod
     rospy.Subscriber("chatter", String, callback)
     rospy.spin()
 
-
+.. _`Fig:simplePubSubProg`:
 .. figure:: ROSFigures/pubsubprog.*
    :width: 40%
    :align: center
 
-   Simple PubSub Progam example[Fig:simplePubSubProg]
+   Simple PubSub Program example
 
 Don’t forget to make the two files executable by
 
@@ -425,13 +433,16 @@ that will run the forward kinematics to check the answer. To make this
 look like a stream of points, a delay is placed
 
 The node that creates the workspace points is given in
-Listing \ `[lst:workspacepathcode] <#lst:workspacepathcode>`__. We
+:numref:`lst:workspacepathcode`. We
 illustrate with the curve :math:`x(t) = 5\cos(t)+8`,
 :math:`y(t) = 3\sin(t)+10`. The interval :math:`[-\pi , \pi]` is
 discretized into intervals of :math:`0.1`. The :math:`(x,y)` points are
 published on the topic named /WorkspacePath.
 
-::
+.. _`lst:workspacepathcode`:
+.. code-block:: python
+   :caption: Workspace Points
+
 
     #!/usr/bin/env python
     import rospy
@@ -467,10 +478,11 @@ The next stage of the process is to convert the points from the
 workspace to the configuration space using the inverse kinematic
 equations. The program performs the inverse kinematics and then
 publishes the results on the topic /ConfigspacePath. The code is given
-in
-Listing \ `[lst:inversekinematicscode] <#lst:inversekinematicscode>`__.
+in :numref:`lst:inversekinematicscode`.
 
-::
+.. _`lst:inversekinematicscode`:
+.. code-block:: python
+   :caption: Inverse Kinematics Code
 
     #!/usr/bin/env python
     import rospy
@@ -515,9 +527,11 @@ last node are evaluated by the forward kinematics producing
 :math:`(\tilde{x},\tilde{y})` values. These values are compared to the
 original :math:`(x,y)` values. The two sets of values should agree
 closely. The code for the verification is given in
-Listing \ `[lst:checkinversekinematics] <#lst:checkinversekinematics>`__.
+:numref:`lst:checkinversekinematics`.
 
-::
+.. _`lst:checkinversekinematics`:
+.. code-block:: python
+   :caption: Inverse Kinematics Verification
 
     #!/usr/bin/env python
     import rospy
@@ -577,7 +591,7 @@ Listing \ `[lst:checkinversekinematics] <#lst:checkinversekinematics>`__.
    :width: 75%
    :align: center
 
-   Two Link Manipulator ROS example. 
+   Two Link Manipulator ROS example.
 
 Although many devices produce data in a sequential manner, there are
 times when you have blocks of data. ROS provides a number of datatypes

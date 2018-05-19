@@ -300,20 +300,22 @@ and :math:`u = \sqrt{(a-c)^2 + (b-d)^2}`,
 If you guessed that the workspace was an ellipse like the author did,
 that would be wrong. If you guessed some type of warped rectangle, then
 you have great intuition.
-Figure :numref:`Fig:paralleltwolinkWS` shows the
+:numref:`Fig:paralleltwolinkWS` shows the
 workspace for the configuration domain :math:`[0, \pi/2]^2`. The figure
 graphs :math:`y` positive going upwards and for the manipulator
 :math:`y` positive goes down (so a vertical flip is required to match
 up). The workspace can be created by running a program that traces out
 all the possible arm angles and plots the resulting end effector
 position (not all points, but a dense sample of points will do just fine).
-Sample code to plot this workspace is given below. It
+Sample code to plot this workspace is given in :numref:`lst:computeconfigdomain`. It
 uses a double loop over :math:`\theta_1` and :math:`\theta_2`, which places
 these values in the forward kinematics and then gathers the resulting
 :math:`(x,y)` values. Like the serial manipulator, this is a holonomic
 robot as well.
 
-::
+.. _`lst:computeconfigdomain`:
+.. code-block:: python
+   :caption: Configuration Domain Code
 
     from math import *
     import matplotlib.pyplot as plt
@@ -378,10 +380,13 @@ where
 
 .. math:: \gamma = \cos^{-1} \frac{G^2 + L_1^2 - L_2^2 }{2GL_1},\quad \quad \eta =  \cos^{-1} \frac{H^2 + L_1^2 - L_2^2 }{2HL_1}
 
-The next code example illustrates using the inverse kinematic formulas
+:numref:`lst:IKParallelTwoLink` illustrates using the inverse kinematic formulas
 for a specific pair of :math:`(x,y)` values.
 
-::
+.. _`lst:IKParallelTwoLink`:
+.. code-block:: python
+   :caption: Inverse Kinematics Code for Parallel Two Link
+
 
     from math import *
     # Set the link lengths and starting location
@@ -407,7 +412,8 @@ for a specific pair of :math:`(x,y)` values.
 
 If we want to convert a list of :math:`(x,y)` points like we saw in
 previous examples, we needed to embedd our code into a loop. Using NumPy
-and SciPy one can leverage existing code considerably. The scalar
+and SciPy one can leverage existing code considerably, :numref:`lst:IKParallelTwoLinkNP`.
+The scalar
 (single) operations can be made into array operations (a type of
 iterator) with little change in the code. The normal arithmetic
 operators are overloaded and the iteration is done elementwise. Although
@@ -415,7 +421,10 @@ Python is normally much slower than a C equivalent, numpy is highly
 optimized and the code runs close to the speed of C. [#f1]_
 
 
-::
+.. _`lst:IKParallelTwoLinkNP`:
+.. code-block:: python
+   :caption: Inverse Kinematics Code for Parallel Two Link Using Numpy
+
 
     import numpy as np
     from math import *

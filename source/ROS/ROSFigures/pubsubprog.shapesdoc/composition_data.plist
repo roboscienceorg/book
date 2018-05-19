@@ -485,7 +485,7 @@
 					<key>flipped</key>
 					<false/>
 					<key>frame</key>
-					<string>{{61, 37}, {157, 1}}</string>
+					<string>{{111, 37}, {107, 1}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -934,7 +934,7 @@
 					<key>pointerIdentifier</key>
 					<string>DA31539C-C04F-49A3-A5D1-5205AE7A0012</string>
 					<key>shapeEdge</key>
-					<integer>4</integer>
+					<integer>1</integer>
 					<key>shapeIdentifier</key>
 					<string>B68D5AFD-D209-481A-B774-22B5D1CDE848</string>
 					<key>shapeRatio</key>
@@ -1005,7 +1005,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{167, 54}</string>
+			<string>{166.5, 54}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>
