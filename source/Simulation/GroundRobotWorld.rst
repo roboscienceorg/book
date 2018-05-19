@@ -273,7 +273,7 @@ then that is the value to use. Otherwise, at the maximum range,
 :math:`R`, we would like that an increment in the angle selects the
 “next” (adjacent) pixel. So we want :math:`\Delta \theta` to be small
 enough to hit all the pixels, but no smaller for performance reasons,
-see Figure \ `[inscribedcircle] <#inscribedcircle>`__ (b).The
+see :numref:`inscribedcircle` (b).The
 circumference is :math:`2\pi R`. If a pixel is :math:`1^2` units, then
 we select :math:`\Delta\theta \approx 1/(2\pi R)` (or slightly smaller).
 
@@ -287,30 +287,22 @@ we select :math:`\Delta\theta \approx 1/(2\pi R)` (or slightly smaller).
    pixels.
 
 The lidar simulation algorithm is given in
-Algorithm :ref:`lidarsim`.
+algorithm:  :ref:`Lidar Simulation <lidarsim>`
 
-:math:`k=0` :math:`\Delta\theta = 1/(2\pi R)`
+.. _lidarsim:
+.. topic::  Lidar Simulation Algorithm
 
-.. raw:: latex
-
-   \FOR    {$\theta=0$  \TO $2\pi$}
-
-.. raw:: latex
-
-   \FOR      {$r=0$ \TO $R$}
-
-:math:`i= (\text{int}) r \cos \theta`
-
-:math:`j= (\text{int}) r\sin\theta`
-
-.. raw:: latex
-
-   \IF {Map$(i,j)$ is occupied}
-
-break from :math:`r` loop :math:`dist(k) = r`
-
-k++ :math:`\theta += \Delta\theta`
-
-.. raw:: latex
-
-   \ENDFOR
+   | :math:`k=0`
+   | :math:`\Delta\theta = 1/(2\pi R)`
+   | for :math:`\theta=0`  to  :math:`2\pi`
+   |   for :math:`r=0` to :math:`R`
+   |     i = (int) :math:`r \cos \theta`
+   |     j = (int) :math:`r\sin\theta`
+   |     if Map(i,j) is occupied then
+   |         break from :math:`r` loop
+   |     endif
+   |   endfor
+   |   dist(k) = :math:`r`
+   |   k++
+   |   :math:`\theta += \Delta\theta`
+   | endfor

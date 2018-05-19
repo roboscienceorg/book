@@ -8,30 +8,30 @@ When controlling the robot without feedback, open loop control, we
 preplan the route and then code up a list of motion instructions. For
 differential drive robots, the easiest routes to drive are combinations
 of lines and circles,
-Figure \ `[fig:simplecurvedpath] <#fig:simplecurvedpath>`__. If you have
+:numref:`fig:simplecurvedpath`. If you have
 a rough idea of the route, place some points along the route, connect
 with line and circle segments. Along those segments, the differential
 drive has constant wheel speed. In practice this is difficult since one
 cannot have instant jumps in wheel velocity. This makes accurate turns
 challenging. If stopping and turning in place on the route is
 acceptable, paths with just straight lines are the easiest to develop,
-Figure \ `[fig:simplecurvedpath] <#fig:simplecurvedpath>`__. Then is is
+:numref:`fig:simplecurvedpath`. Then is is
 just a matter of starting with the correct orientation and driving for a
 given amount of time.
 
-
+.. _`fig:simplecurvedpath`:
 .. figure:: SimulationFigures/simplepath.*
    :width: 50%
    :align: center
 
-   [fig:simplecurvedpath] Path with arcs
+   Path with arcs
 
-
+.. _`fig:simplecurvedpath`:
 .. figure:: SimulationFigures/simplestraightpath.*
    :width: 50%
    :align: center
 
-   [fig:simplecurvedpath] Path without arcs
+   Path without arcs
 
 There is a clear problem with open loop control. Any variation in the
 physical system can cause drift. This drift accumulates over time and at
@@ -62,19 +62,19 @@ obstacle and so I just repeat my simple obstacle avoidance approach.
 Set heading towards goal Move forward count = 0 Turn right Move forward
 incr count Set heading towards goal
 
-
+.. _`turtlebasicmotion_a`:
 .. figure:: SimulationFigures/turtleobs.*
    :width: 50%
    :align: center
 
-   The direct path to the goal.[turtlebasicmotion_a]
+   The direct path to the goal.
 
-
+.. _`turtlebasicmotion_b`:
 .. figure:: SimulationFigures/turtleobs2.*
    :width: 50%
    :align: center
 
-   Path using the Basic Motion algorithm.[turtlebasicmotion_b]
+   Path using the Basic Motion algorithm.
 
 Figure \ `[turtlebasicmotion] <#turtlebasicmotion>`__ illustrates the
 idea. This algorithm is not completely specified. The amount of right
