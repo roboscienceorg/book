@@ -383,9 +383,10 @@ where
 :numref:`lst:IKParallelTwoLink` illustrates using the inverse kinematic formulas
 for a specific pair of :math:`(x,y)` values.
 
-.. _`lst:IKParallelTwoLink`:
+
 .. code-block:: python
    :caption: Inverse Kinematics Code for Parallel Two Link
+   :name: lst:IKParallelTwoLink
 
 
     from math import *
@@ -421,9 +422,9 @@ Python is normally much slower than a C equivalent, numpy is highly
 optimized and the code runs close to the speed of C. [#f1]_
 
 
-.. _`lst:IKParallelTwoLinkNP`:
 .. code-block:: python
    :caption: Inverse Kinematics Code for Parallel Two Link Using Numpy
+   :name: lst:IKParallelTwoLinkNP
 
 
     import numpy as np

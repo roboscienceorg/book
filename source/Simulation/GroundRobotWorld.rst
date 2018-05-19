@@ -16,8 +16,7 @@ The obstacle is then represented as a 2D shape as viewed from above. The
 presentation of the simulation is in a window which means at some point
 the robot and obstacles are presented on a grid or in a discrete
 fashion. This means we have some choices on how to represent the world,
-obstacles and other objects,
-Figure \ `[fig:enviromodel] <#fig:enviromodel>`__.
+obstacles and other objects, :numref:`fig:enviromodel`.
 
 The environment can be represented in three different manners:
 continuous, discrete and topological. Continuous is how we tend to think
@@ -25,11 +24,11 @@ about the world. All of the locations and distances for objects,
 ourselves and the robots use floating point values. For example, the
 center of the robot would be located by a pair of floating point values
 and exact information about the robot shape stored in a database,
-Figure \ `[fig:metricmap] <#fig:metricmap>`__.
+:numref:`fig:metricmap`.
 
 For a discrete representation, the world is discretized and objects are
 located using integer values,
-Figure \ `[fig:discretemap] <#fig:discretemap>`__. The world is then a
+:numref:`fig:discretemap`. The world is then a
 large checkerboard with a square (pixel) either occupied or not
 occupied. Simple two or three color bitmaps then suffice (two for object
 maps and optionally a third to track the robot). Painting a pixel white
@@ -41,32 +40,36 @@ maps. [One handy way to accomplish this task is to use a paint program
 (or image editing tool) which can export the image into a format that is
 easy to read. ]
 
+.. _`fig:enviromodel`:
 .. figure:: SimulationFigures/envrep.*
    :width: 50%
    :align: center
 
-   How one should represent the environment.[fig:enviromodel]
+   How one should represent the environment.
 
+.. _`fig:metricmap`:
 .. figure:: SimulationFigures/metricmap.*
    :width: 50%
    :align: center
 
-   Continuous environmental representation.[fig:metricmap]
+   Continuous environmental representation.
 
+.. _`fig:discretemap`:
 .. figure:: SimulationFigures/discretemap.*
    :width: 50%
    :align: center
 
-   Discrete environmental representation. [fig:discretemap]
+   Discrete environmental representation.
 
+.. _`fig:topomap`:
 .. figure:: SimulationFigures/topomap.*
    :width: 50%
    :align: center
 
-   Topological representation. [fig:topomap]
+   Topological representation.
 
 Topological representations do not include metric information like the
-other two, Figure \ `[fig:topomap] <#fig:topomap>`__. Relationships are
+other two, :numref:`fig:topomap`. Relationships are
 through graphs that indicate two things are connected via a path. How
 they are connected is another issue. This is very much how humans store
 maps. You probably know that to get to your favorite restaurant, you
@@ -145,36 +148,37 @@ straightforward:
 
 Where center is a list and r is the radius.  [3]_
 
+.. _`circlecollide`:
 .. figure:: SimulationFigures/collision.*
    :width: 50%
    :align: center
 
-   Collision detection with circular robots. [circlecollide]
+   Collision detection with circular robots.
 
 To check for intersection, we only need to check that :math:`d` is
 small. Using this we may build a method for a contact sensor. You can
 treat a contact sensor as a disk of zero radius and use the formula
 above (adjusting for the relation between the center of the robot and
 the sensor). Many early robots had sensors placed in a ring around the
-body of the robot, Figure \ `[turtlesensors] <#turtlesensors>`__. For
+body of the robot, :numref:`turtlesensors`. For
 this example, they will be contact or touch sensors, but in experimental
 units often low cost ultrasonic ranging sensors would be used.
 
-
+.. _`turtlesensors`:
 .. figure:: SimulationFigures/turtlesensors.*
    :width: 50%
    :align: center
 
    A circular robot (like a Create) with touch sensors mounted around
-   the body. [turtlesensors]
+   the body.
 
 Assume that you have a circular robot with a ring of touch or bump
 sensors around the body. Knowing the direction of travel, it is possible
 to estimate the boundary of the obstacle relative to the robot,
-Figure \ `[turtleboundary] <#turtleboundary>`__. The boundary normal can
+:numref:`turtleboundary`. The boundary normal can
 be estimated from the vector created by the sensor location to the robot
 center. This is a local estimate only as
-Figure \ `[turtleboundary] <#turtleboundary>`__ shows. Being able to
+:numref:`turtleboundary`  shows. Being able to
 estimate the boundary means that a robot can follow the boundary. The
 tangent to the boundary is required for this task.
 
@@ -191,11 +195,12 @@ tangent to the boundary is required for this task.
    Bump sensors can only determine
    the nature of the boundary at the contact location.
 
+.. _`turtleboundary`:
 .. figure:: SimulationFigures/tangent.*
    :width: 50%
    :align: center
 
-   Using touch sensors to estimate the boundary normal and tangent. [turtleboundary]|
+   Using touch sensors to estimate the boundary normal and tangent.
 
 
 Using the normal vector, :math:`\hat{n} = <n_1, n_2>`, the tangent to
@@ -207,7 +212,7 @@ where the sign is taken so that motion is to the right (right hand
 rule). This tangent direction will provide the motion direction for a
 boundary following approach. Estimation of the tangent or the direction
 of travel can be done with a ring of touch sensors,
-Figure \ `[turtleboundary] <#turtleboundary>`__.
+:numref:`turtleboundary`.
 
 Using a range sensor
 ^^^^^^^^^^^^^^^^^^^^
@@ -219,12 +224,12 @@ sensors shown. One is a LIDAR and the other is a Kinect. The next simple
 planner presented assumes that the robot has a ranging device. The
 simplest to model is the LIDAR.
 
-
+.. _`discreteobjmap`:
 .. figure:: SimulationFigures/discretemap2.*
    :width: 50%
    :align: center
 
-   Discrete object map.[discreteobjmap]
+   Discrete object map.
 
 A lidar is a simple device conceptually. The unit is able to sweep or
 turn in one direction which for our discussion we assume it is
@@ -272,17 +277,17 @@ see Figure \ `[inscribedcircle] <#inscribedcircle>`__ (b).The
 circumference is :math:`2\pi R`. If a pixel is :math:`1^2` units, then
 we select :math:`\Delta\theta \approx 1/(2\pi R)` (or slightly smaller).
 
-
+.. _`inscribedcircle`:
 .. figure:: SimulationFigures/lidarinc.*
    :width: 50%
    :align: center
 
    Laser angle increments. (a) The first is too small and we resample
    the same pixel. (b) The second increment is too large and we miss
-   pixels. [inscribedcircle]
+   pixels.
 
 The lidar simulation algorithm is given in
-Algorithm \ `[lidarsim] <#lidarsim>`__.
+Algorithm :ref:`lidarsim`.
 
 :math:`k=0` :math:`\Delta\theta = 1/(2\pi R)`
 

@@ -11,7 +11,7 @@ and plug them into the inverse kinematics.
 Bring up the two link simulator. Then run the following code in Python.
 You should see an animation of the two link arm drawing a circle. The
 final position is given in
-Figure \ `[Fig:twolinkcircleexample] <#Fig:twolinkcircleexample>`__.
+:numref:`Fig:twolinkcircleexample`.
 
 ::
 
@@ -51,12 +51,13 @@ Figure \ `[Fig:twolinkcircleexample] <#Fig:twolinkcircleexample>`__.
        time.sleep(0.25)
        pub.publish(m)
 
+.. _`Fig:twolinkcircleexample`:
 .. figure:: SimulationFigures/twolinkcircleexample.png
    :width: 60%
    :align: center
 
    The output of the circle inverse kinematics
-   code.[Fig:twolinkcircleexample]
+   code.
 
 In this example, we generate an array named t which is used for the
 parametric equations of the circle to generate the x and y arrays. We
@@ -64,7 +65,7 @@ may use the inverse kinematic formulas to determine the arrays for
 :math:`\theta_1` and :math:`\theta_2` called t1 and t2. The
 :math:`\theta_1` and :math:`\theta_2` would be the values sent to the
 joint actuators.
-Figure \ `[Fig:twolinkcircleexample] <#Fig:twolinkcircleexample>`__
+:numref:`Fig:twolinkcircleexample`
 shows the results.
 
 You can modify the data arrays to plot a line:
@@ -106,25 +107,25 @@ simulation program, we use the inverse kinematics node as before
 
     Movement between the points - moving both linearly.
 
-
+.. _`Fig:twolinkcoarseexample`:
 .. figure:: SimulationFigures/twolinkcoarseexample2.png
    :width: 60%
    :align: center
 
-    Movement between the points - moving the servos sequentially. [Fig:twolinkcoarseexample]|
+    Movement between the points - moving the servos sequentially.
 
 This simulation gives an idea about how to move the robotic arm and the
 path is correct. The motion however is not smooth. This is because we
 are moving the arm from position to position. This is known as position
 control. If you look at the curve produced, it is not a smooth curve but
 is a curve made of of connected segments like a polygon,
-Figure \ `[Fig:twolinkcoarseexample] <#Fig:twolinkcoarseexample>`__.
+:numref:`Fig:twolinkcoarseexample`.
 Note that the output is not actually a polygon; the sides are not
 straight line segments.
 
 In between the control points, the system moves according to how the
 controllers are programmed. They will move the joint angles in a linear
 fashion. If they are moved together you will see
-Figure \ `[Fig:twolinkcoarseexample] <#Fig:twolinkcoarseexample>`__\ (a).
+:numref:`Fig:twolinkcoarseexample`(a).
 If they are moved one at a time you will see
-Figure \ `[Fig:twolinkcoarseexample] <#Fig:twolinkcoarseexample>`__\ (b)
+:numref:`Fig:twolinkcoarseexample`(b).
