@@ -3,7 +3,7 @@ The Piano Movers Problem - Orientation
 
 Assume you want to route an object with a complicated shape through a
 tight sequence of corridors. Routing a complex shape through a narrow
-passage is often referred to as the piano movers problem. Take a simple
+passage is often referred to as the :index:`piano movers problem`. Take a simple
 example, move the linear robot through the two blocks,
 Figure :numref:`robotmustrotate`. It is clear to the
 human what has to happen. The robot must rotate. For a holonomic robot,

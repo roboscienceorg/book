@@ -81,7 +81,7 @@ in the figure function:
     ax = fig.add_subplot(111, projection='3d')
 
 An example of a quadratic
-surface \ `[plot:basicsurfaceplot] <#plot:basicsurfaceplot>`__ Many
+surface :ref:`plot:basicsurfaceplot` Many
 other plot examples can be found at the MatPlotLib website.
 
 ::

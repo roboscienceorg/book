@@ -4,7 +4,7 @@ Reference Frames, Workspaces and Configuration Space
 There are several frames of reference which are important to the robot.
 The robot operates in the physical world and it can be tracked by an
 external frame of reference. This is known as a *world* or *global*
-reference frame. This is normally the observer’s frame of reference.
+:index:`reference frame`. This is normally the observer’s frame of reference.
 Frames of reference on or within the robot are known as *local reference
 frames*. Each joint or actuator can have a frame of reference known as
 the *joint reference*. These are useful in understanding the
@@ -17,7 +17,7 @@ standard courses in linear algebra.
 
 The operating environment for a robot is known as the *workspace*. It is defined as the
 volume or region for which the robot can operate. For robots with
-manipulators, traditionally the workspace is all points that the tool
+manipulators, traditionally the :index:`workspace` is all points that the tool
 end can reach. For mobile robots it is the region that the robot can and
 may move into. Any obstacle or constraint will be called a workspace
 obstacle or workspace constraint. Motion of a robot or articulator
@@ -30,7 +30,7 @@ that are commonly used are Cartesian, Cylindrical or Spherical.
 The range of all possible parameter values that the robot can modify is
 known as the *configuration space*. It is the span of the machine when
 the actuators are run through their different positions. The dimension
-of the configuration space is the degrees of freedom. The difference
+of the :index:`configuration space` is the degrees of freedom. The difference
 between workspace and configuration space might be confusing at first.
 Workspace is the physical one, two or three dimensions, where is robot
 operates, whereas configuration space is made up from the different
@@ -88,7 +88,7 @@ concerned only with position where kinematic also includes motion. We
 will use the term *Holonomic* instead of geometric since it is standard
 usage in robotics.
 
-Kinematics describes the geometry of motion. It describes the motion
+:index:`Kinematics` describes the geometry of motion. It describes the motion
 through a set of constraints on the way the robot will move through
 space. For rigid bodies, we focus on displacement and orientation for
 which the kinematics restricts in some manner. Assume that you want to
@@ -140,7 +140,7 @@ A constraint is called holonomic (or geometric) if one can express it as
 
    f(x_1, x_2, \dots , x_n, t)=0
 
-A holonomic constraint only depends on the coordinates and time and
+A :index:`holonomic` constraint only depends on the coordinates and time and
 does not depend on derivatives. If all the system constraints are
 holonomic then we say the system is *holonomic*. Otherwise we say the
 system is *non-holonomic*. Wikipedia has a nice way of expressing
@@ -276,7 +276,7 @@ the expression (constraint) does not have a holonomic representation.
 Forward Position Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The forward position kinematics (FPK) solves the following problem:
+The :index:`forward position kinematics` (FPK) solves the following problem:
 “Given the joint positions, what is the corresponding end effector’s
 pose?” If we let :math:`x = (x_1, x_2, x_3)` be the position as a
 function of time and :math:`p = (p_1, p_2, \dots , p_n)` the equations
@@ -322,7 +322,7 @@ geometry.
 Inverse Position Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The inverse position kinematics (IPK) solves the following problem:
+The :index:`inverse position kinematics` (IPK) solves the following problem:
 “Given the actual end effector pose, what are the corresponding joint
 positions?” In contrast to the forward problem, the solution of the
 inverse problem is not always unique: the same end effector pose can be
@@ -335,7 +335,7 @@ sixteenth order polynomial.
 Forward Velocity Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The forward velocity kinematics (FVK) solves the following problem:
+The :index:`forward velocity kinematics` (FVK) solves the following problem:
 “Given the vectors of joint positions and joint velocities, what is the
 resulting end effector twist?” The solution is always unique: one given
 set of joint positions and joint velocities always corresponds to only
@@ -352,7 +352,7 @@ Inverse Velocity Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Assuming that the inverse position kinematics problem has been solved
-for the current end effector pose, the inverse velocity kinematics (IVK)
+for the current end effector pose, the :index:`inverse velocity kinematics` (IVK)
 then solves the following problem: “Given the end effector twist, what
 is the corresponding vector of joint velocities?” Under the assumption
 that the Jacobian is invertible (square and full rank) we can find
@@ -363,7 +363,7 @@ that the Jacobian is invertible (square and full rank) we can find
 Forward Force Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The forward force kinematics (FFK) solves the following problem: “Given
+The :index:`forward force kinematics` (FFK) solves the following problem: “Given
 the vectors of joint force/torques, what is the resulting static wrench
 that the end effector exerts on the environment?” (If the end effector
 is rigidly fixed to a rigid environment.)
@@ -372,7 +372,7 @@ Inverse Force Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Assuming that the inverse position kinematics problem has been solved
-for the current end effector pose, the inverse force kinematics (IFK)
+for the current end effector pose, the :index:`inverse force kinematics` (IFK)
 then solves the following problem: “Given the wrench that acts on the
 end effector, what is the corresponding vector of joint forces/torques?”
 

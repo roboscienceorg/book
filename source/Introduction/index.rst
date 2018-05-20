@@ -31,7 +31,7 @@ tools, we are indisputably the master tool users on the planet. Tools
 extend our grasp, our strength and our speed. We know of no technology
 that aims to extend human capability like robotics does.
 
-Robotics is an engineering discipline stemming from the fusion of
+:index:`Robotics` is an engineering discipline stemming from the fusion of
 science and art. Humans have an insatiable curiosity, a drive to create,
 and a considerable amount of self-interest. Building machines which look
 like us, act like us and do things like us was the engineering manifest

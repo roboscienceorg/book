@@ -16,7 +16,7 @@ Serial Two Link Manipulator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The last few paragraphs have introduced lots of jargon. To understand
-them, it helps to see them in action. The simple two link manipulator,
+them, it helps to see them in action. The simple :index:`two link manipulator`,
 :numref:`intro-two-link` is a good place to
 start. Imagine a robotic arm that has two straight links with a rotary
 joint at the base and a rotary joint connecting the two links. In
@@ -471,7 +471,7 @@ origin) through a chain of links. This is simply not the case for mobile
 systems. Configuration space is then taken to be the orientation and
 location of the robot. This turns out to be a complicated problem.
 Clearly it depends on the underlying drive system. We will later study a
-drive system known as differential drive. Using differential drive, we
+drive system known as :index:`differential drive`. Using differential drive, we
 are able to move to any position for which there is a sufficiently clear
 path (to be explained below). The differential drive can rotate in place
 to orientation is not a problem. The freedom to orient in place is not
@@ -520,7 +520,7 @@ robots, then it is whatever the coordinate system that exists in the
 area.
 
 The other coordinate system used is one relative to the robot and is
-known as the local coordinate system. You can think of it as a mini
+known as the :index:`local coordinate system`. You can think of it as a mini
 coordinate system for an ant living on the robot. We will use the
 convention that :math:`x` points forward or in the direction of travel.
 :math:`y` is set along the wheel axle and :math:`z` is in the vertical
@@ -535,7 +535,7 @@ direction of :math:`y`).
 
    The global and local frames of reference.
 
-The global coordinate system already has an origin defined. However, we
+The :index:`global coordinate system` already has an origin defined. However, we
 can choose the local frame origin. Our choice to simplify the
 mathematics by using the center of rotation of the vehicle. Thus when
 the robot rotates, the origin of the local coordinate system remains
@@ -550,7 +550,7 @@ and :math:`(x_R, y_R)`. How do these relate? In two dimensions, a
 coordinate system can be translated and rotated relative to another. We
 can write this translation as the displacement of one origin to another
 or in our case, we can just use the location of the robot (local frame)
-origin relative to the global frame. In other words, the local frame
+origin relative to the :index:`global frame`. In other words, the :index:`local frame`
 origin position is :math:`(x_I,y_I)`. We then need to track the
 orientation of the frame or in our case the robot. The angle,
 :math:`\theta`, can be measure from either coordinate system and to be
@@ -624,7 +624,7 @@ removes the translation.
 Equations of Motion
 ^^^^^^^^^^^^^^^^^^^
 
-Working in instantenous local coordinate enables us to determine the
+Working in instantaneous local coordinate enables us to determine the
 motion easily. We then use the rotation matrix to relate the robot
 position in the global frame. To progress in the modeling process, we
 need to know the specifics of the robot, illustrated in

@@ -274,7 +274,7 @@ radiation, heat, humidity, magnetic fields, acceleration, spin, etc.
 Autonomy and SAE
 ~~~~~~~~~~~~~~~~
 
-Autonomy or Autonomous appears quite often in the current press. What
+:index:`Autonomy` or :index:`Autonomous` appears quite often in the current press. What
 does this mean? Dictionary.com will define this as “acting independently
 or having the freedom to do so”. We should be careful to distinguish
 autonomous (and probably autonomy) from automated. The root meaning of
@@ -292,7 +292,7 @@ of autonomy as achievable goals in the near term. SAE has released
 definitions of levels of autonomy for automobiles. This is strictly a
 characterization for commercially available ground vehicles. These are
 intended to provide a common set of definitions for the industry. A
-description of these levels can be found at the NHTSA
+description of these levels can be found at the :index:`NHTSA`
 (<https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety>).
 
 +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

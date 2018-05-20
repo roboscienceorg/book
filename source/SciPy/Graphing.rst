@@ -32,7 +32,7 @@ can easily plot a regular function via
 
 
 The two plots should look like
-Figure \ `[Fig:exampleplots] <#Fig:exampleplots>`__. You will notice
+:numref:`Fig:exampleplots`. You will notice
 that the line plot hides the fact that the underlying data is actually
 discrete. The point plot provides the actual points. The same thing can
 be done using a parametric version making the small change in the code:
@@ -78,7 +78,7 @@ parametric description of the curve:
 
 .. math:: \dot{y} =   -33t^2 +38t -3, \quad \ddot{y} =  -66t+38
 
-See Figure \ `[cubicsplinefigure] <#cubicsplinefigure>`__ for a plot.
+See :numref:`cubicsplinefigure` for a plot.
 
 ::
 
@@ -167,7 +167,7 @@ covariance matrix
 
 .. math:: P = \begin{pmatrix} 0.9 & 0.1 \\ 0.1 & 0.5 \end{pmatrix}
 
-\ about the point :math:`(4,5)`. We use the eigenvalues and eigenvectors
+about the point :math:`(4,5)`. We use the eigenvalues and eigenvectors
 to plot the major and minor axes. The following is a quick example on
 how to extract eigenvalues and plot an ellipse.
 
@@ -198,7 +198,7 @@ how to extract eigenvalues and plot an ellipse.
 Data Plots
 ^^^^^^^^^^
 
-| For Figure in
+For Figure in
   subection\ `[ex:curvefitexample] <#ex:curvefitexample>`__:
 
 ::
@@ -218,7 +218,7 @@ Data Plots
     plt.plot(x,y, 'ro')
     plt.show()
 
-| For Figure in subsection\ `[plot:quadgraph] <#plot:quadgraph>`__:
+For Figure in subsection\ `[plot:quadgraph] <#plot:quadgraph>`__:
 
 ::
 

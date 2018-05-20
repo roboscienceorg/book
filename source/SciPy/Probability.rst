@@ -14,7 +14,7 @@ certain types of distributions. Most of our work will use normal
 distributions. The numpy function random.normal will generate random
 (well, approximately) values drawn from a normal distribution. For
 example, the following code will generate a scatter plot, see
-Figure \ `[fig:samplescatterplot] <#fig:samplescatterplot>`__.
+:numref:`fig:samplescatterplot`-(a).
 
 ::
 
@@ -28,7 +28,7 @@ Figure \ `[fig:samplescatterplot] <#fig:samplescatterplot>`__.
     plt.show()
 
 This code will generate a sampled line with noise, see
-Figure \ `[fig:samplenoisylineplot] <#fig:samplenoisylineplot>`__.
+:numref:`fig:samplescatterplot`-(b).
 
 ::
 
@@ -41,12 +41,13 @@ Figure \ `[fig:samplenoisylineplot] <#fig:samplenoisylineplot>`__.
     plt.show()
 
 
+.. _`fig:samplescatterplot`:
 .. figure:: SciPyFigures/randomvals.*
    :width: 95%
    :align: center
 
-   A scatter type plot.[fig:samplescatterplot]
-   A line with lots of noise.[fig:samplenoisylineplot]
+   Scatter type plots.  a) A scatter type plot.
+   b)  line with lots of noise.
 
 Above we are sampling from a single normal distribution (univariate),
 however, later on we will need to sample from multivariate distribution.

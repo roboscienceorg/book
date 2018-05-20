@@ -46,10 +46,11 @@ command prompt
     $ ipython locate profile foo
     /home/yourloginname/.ipython/profile_foo
 
-| You may create a profile for each of the different iPython activities.
-  We will stick with the default which is profile_default. The startup
-  files, files that get run when you start iPython, are located in the
-  startup subdirectory. In my case this is:
+You may create a profile for each of the different iPython activities.
+We will stick with the default which is profile_default. The startup
+files, files that get run when you start iPython, are located in the
+startup subdirectory. In my case this is:
+
 | /Users/jmcgough/.ipython/profile_default/startup
 
 Inside the startup directory, I created a file: 05-early.py containing

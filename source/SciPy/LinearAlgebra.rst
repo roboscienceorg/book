@@ -16,7 +16,7 @@ provided in SciPy.
     In [4]: A = np.array([[3,1,0],[1,5,1],[0,2,6]])
 
     In [5]: A
-    Out[5]: 
+    Out[5]:
     array([[3, 1, 0],
            [1, 5, 1],
            [0, 2, 6]])
@@ -24,7 +24,7 @@ provided in SciPy.
     In [6]: b = np.array([[3,2,1]]).T
 
     In [7]: b
-    Out[7]: 
+    Out[7]:
     array([[3],
            [2],
            [1]])
@@ -32,7 +32,7 @@ provided in SciPy.
     In [8]: x1 = spl.inv(A).dot(b)  # x = inverse(A)*b
 
     In [9]: x1
-    Out[9]: 
+    Out[9]:
     array([[ 0.93589744],
            [ 0.19230769],
            [ 0.1025641 ]])
@@ -40,13 +40,13 @@ provided in SciPy.
     In [10]: x2 = spl.solve(A,b)  # solve Ax = b
 
     In [11]: x2
-    Out[11]: 
+    Out[11]:
     array([[ 0.93589744],
            [ 0.19230769],
            [ 0.1025641 ]])
 
     In [12]: A.dot(x1)
-    Out[12]: 
+    Out[12]:
     array([[ 3.],
            [ 2.],
            [ 1.]])
@@ -64,7 +64,7 @@ Python-NumPy combination is, this is a small price.
     In [3]: a = np.array([[3, 1, 0], [1, 5, 1],  [0, 2, 6]])
 
     In [4]: lin.eig(a)
-    Out[4]: 
+    Out[4]:
     (array([ 2.48586307+0.j,  4.42800673+0.j,  7.08613020+0.j]),
      array([[ 0.86067643,  0.39715065,  0.11600488],
            [-0.44250554,  0.5671338 ,  0.47401104],
@@ -80,8 +80,8 @@ Least Squares Examples
 
 | Assume that you have the raw data ready in arrays :math:`x` and
   :math:`y`. Then
-  Figures \ `[Fig:weightedLSdata] <#Fig:weightedLSdata>`__ and
-  `[Fig:weightedLSplot] <#Fig:weightedLSplot>`__ can be produced by:
+  :numref:`Fig:weightedLSdata` and
+  :numref:`Fig:weightedLSplot` can be produced by:
 
 ::
 

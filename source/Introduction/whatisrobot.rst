@@ -6,15 +6,15 @@ What exactly is a robot?
    :width:  90%
    :align: center
 
-   Two different versions of robots.  a) Honda Asimo Robot [Asimo]_
-   b) Kuka robot [Kuka]_
+   Two different versions of robots.  a) :index:`Honda Asimo` Robot [Asimo]_
+   b) :index:`Kuka robot` [Kuka]_
 
 
 
 Definition
 ~~~~~~~~~~
 
-What is a robot? This is actually a complicated question. Wikipedia
+What is a :index:`robot`? This is actually a complicated question. Wikipedia
 defines a robot in the following manner: *A robot is a mechanical
 intelligent agent which can perform tasks on its own, or with guidance;
 usually an electro-mechanical machine which is guided by computer and
@@ -34,7 +34,7 @@ humanlike manner*.
    :width:  90%
    :align: center
 
-   Robots design to replace human effort.  a) Repliee Q2 - developed by Osaka
+   Robots design to replace human effort.  a) :index:`Repliee` Q2 - developed by Osaka
    University and manufactured by
    Kokoro Company Ltd. [Repliee]_ .  b) The NASA ATHLETE rover
    as it climbs to the top of a hill. [ATHLETE]_
@@ -57,7 +57,7 @@ and much more.
    :width:  90%
    :align: center
 
-   More examples of assistive robots.  a)  iRobot Roomba Discovery 2.1.
+   More examples of assistive robots.  a)  iRobot :index:`Roomba` Discovery 2.1.
    [Roomba]_  b) NASA experimental drilling robot. [DrillingRover]_
 
 
@@ -73,7 +73,7 @@ interaction through movement and sensation.
    :width:  90%
    :align: center
 
-   There are a wide range of roles for robots.  a) Keepon - therapy robot.
+   There are a wide range of roles for robots.  a) :index:`Keepon` - therapy robot.
    [Keepon]_  b) Robot tasked to detonate a buried improvised explosive
    device. [IED]_
 
@@ -102,8 +102,8 @@ We can boil down our notion of robot abilities to three things:
    :width:  90%
    :align: center
 
-   Systems which focus on manipulation:  a) Da Vinci Surgical System [DaVinci]_ .
-   b) Willow Garage's PR2 robot.  [PR2]_
+   Systems which focus on manipulation:  a) :index:`Da Vinci` Surgical System [DaVinci]_ .
+   b) Willow Garage's :index:`PR2` robot.  [PR2]_
 
 
 One interesting phenomenon that could be influencing the lack of a solid
@@ -118,8 +118,8 @@ of a mechatronic device.
    :width:  90%
    :align: center
 
-   Systems which focus on mobility:  a) NASA's Robonaut.  [Robonaut]_
-   b) RoboCup Standard Platform League (Image from 2010).  [Robocup]_
+   Systems which focus on mobility:  a) NASA's :index:`Robonaut`.  [Robonaut]_
+   b) :index:`RoboCup` Standard Platform League (Image from 2010).  [Robocup]_
 
 
 Robots embody technological magic. So, it is natural that some
@@ -169,14 +169,14 @@ In ancient China, a curious account on automata is found in the Lie Zi
 text, written in the 3rd century BC. Within it there is a description of
 an encounter between King Mu of Zhou (1023-957 BC) and a mechanical
 engineer known as Yan Shi, who was an ’artificer’. According to the
-text, the artificer proudly presented the king with a life-size,
+text, the :index:`artificer` proudly presented the king with a life-size,
 human-shaped figure of mechanical handiwork which could sing and move in
 a life-like manner.
 
 205 BC
 ''''''
 
-In ancient Greece, an orrery known as the Antikythera Mechanism is
+In ancient Greece, an orrery known as the :index:`Antikythera` Mechanism is
 developed. This device is credited as being the first analog computer.
 
 .. This image is under creative commons.
@@ -189,7 +189,7 @@ developed. This device is credited as being the first analog computer.
 270 BC
 ''''''
 
-The Greek engineer Ctesibius (c. 270 BC) applies a knowledge of
+The Greek engineer :index:`Ctesibius` (c. 270 BC) applies a knowledge of
 pneumatics and hydraulics to produce the first organ and water clocks
 with moving figures.
 
@@ -203,7 +203,7 @@ ringing gongs or bells among other devices.
 1206 AD
 '''''''
 
-Al-Jazari (1136-1206), an Arab Muslim inventor during the Artuqid
+:index:`Al-Jazari` (1136-1206), an Arab Muslim inventor during the Artuqid
 dynasty, designed and constructed a number of automatic machines,
 including kitchen appliances, musical automata powered by water, and the
 first programmable humanoid robot in 1206. Al-Jazari’s robot was a boat
@@ -230,7 +230,7 @@ Leonardo da Vinci draws plans for a mechanical knight.
 ''''
 
 The word *robot* is introduced to the English language through the play
-Rossum’s Universal Robots by the Czech writer Karel Čapek. The play is
+:index:Rossum’s Universal Robots` by the Czech writer Karel :index:`Čapek`. The play is
 centered around a factory staffed by intelligent cyborgs. The English
 term robot comes from the Slavic word *robota* which roughly translates
 as work or labor. Credit for the term goes to Karel’s brother Josef.

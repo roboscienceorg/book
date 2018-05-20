@@ -33,12 +33,12 @@ of numbers from 0 to 10:
     Out[5]: array([ 0,  1,  4,  9, 16, 25, 36, 49, 64, 81])
 
     In [6]: np.sqrt(x)
-    Out[6]: 
+    Out[6]:
     array([ 0.        ,  1.        ,  1.41421356,  1.73205081,  2.        ,
             2.23606798,  2.44948974,  2.64575131,  2.82842712,  3.        ])
 
     In [7]: np.sin(0.2*x)
-    Out[7]: 
+    Out[7]:
     array([ 0.        ,  0.19866933,  0.38941834,  0.56464247,  0.71735609,
             0.84147098,  0.93203909,  0.98544973,  0.9995736 ,  0.97384763])
 
@@ -46,7 +46,7 @@ of numbers from 0 to 10:
     Out[8]: 0.56464247339503548
 
     In [9]: x < 7
-    Out[9]: array([ True,  True,  True,  True,  True,  
+    Out[9]: array([ True,  True,  True,  True,  True,
                       True,  True, False, False, False], dtype=bool)
 
     In [10]: x.sum()
@@ -86,7 +86,7 @@ operations are also available as methods.
     Out[6]: 45.0
 
     In [7]: np.outer(x,y)
-    Out[7]: 
+    Out[7]:
     array([[ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],
            [ 1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.],
            [ 2.,  2.,  2.,  2.,  2.,  2.,  2.,  2.,  2.,  2.],
@@ -121,22 +121,22 @@ Some NumPy examples using 2D arrays (or matrices):
     <ipython-input-6-e2f71f566704> in <module>()
     ----> 1 A*B
 
-    ValueError: operands could not be broadcast together with shapes 
-    (2,3) (3,2) 
+    ValueError: operands could not be broadcast together with shapes
+    (2,3) (3,2)
 
     In [7]: np.dot(A,B)
-    Out[7]: 
+    Out[7]:
     array([[ 38,  32],
            [101,  86]])
 
     In [8]: A.T
-    Out[8]: 
+    Out[8]:
     array([[1, 4],
            [2, 5],
            [3, 6]])
 
     In [9]: A.T + B
-    Out[9]: 
+    Out[9]:
     array([[10, 12],
            [ 9, 11],
            [ 8, 10]])
@@ -154,13 +154,13 @@ One can easily create a two dimensional array by reshaping:
     In [10]: z = np.arange(16)
 
     In [11]: z
-    Out[11]: array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 
+    Out[11]: array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12,
                                     13, 14, 15])
 
     In [12]: z.shape = (4,4)
 
     In [13]: z
-    Out[13]: 
+    Out[13]:
     array([[ 0,  1,  2,  3],
            [ 4,  5,  6,  7],
            [ 8,  9, 10, 11],
