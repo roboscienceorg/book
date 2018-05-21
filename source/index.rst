@@ -20,14 +20,14 @@ Introduction to Robotics
    Basic Terms and Concepts <Terms/index>
    Robot Design <Design/index>
    Robot Operating System <ROS/index>
-   Simulation/index
-   Electrical/index
-   Sensors/index
-   Vision/index
-   Motion/index
-   Kinematics/index
-   Control/index
-   Manipulators/index
+   Basic Simulation <Simulation/index>
+   Electronics <Electrical/index>
+   Sensors and Sensing <Sensors/index>
+   Computer Vision <Vision/index>
+   Vehicle Motion <Motion/index>
+   Kinematic Modeling <Kinematics/index>
+   Motion Control <Control/index>
+   Manipulators <Manipulators/index>
    Filtering/index
    Kalman/index
    Particle/index

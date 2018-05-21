@@ -14,6 +14,5 @@ robots.
    Sensing
    PositionandVelocitySensors
    OrientationSensors
-   InertialSensors
-   PositionSensors
+   LocationSensors
    ProximitySensors

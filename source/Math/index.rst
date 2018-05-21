@@ -13,7 +13,6 @@ Note: This is under significant development.
    :maxdepth: 2
 
    Begin
-   Linear
    Interpolation
    LinearAlgebra
    Probability

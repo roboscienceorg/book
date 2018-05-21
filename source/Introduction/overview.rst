@@ -274,9 +274,30 @@ radiation, heat, humidity, magnetic fields, acceleration, spin, etc.
 Popular Hobby Robots
 ~~~~~~~~~~~~~~~~~~~~
 
-- iRobot Create: based on the iRobot Roomba, this robot has been around
-since 2007.
--
+.. figure:: IntroductionFigures/create2.png
+   :width: 35%
+   :align: right
+
+   iRobot Create (image from iRobot).
+
+- :index:`iRobot Create` This robot based on the iRobot Roomba, was introduced
+  in 2007 and has been used as a platform for many ground robotics projects.
+  Most notably is the Create was the base for the ROS based research robot,
+  the turtlebot.  In 2014 the Create 2 was released.  Unlike the Create,
+  the command module was not updated and made available, the create 2 assumes
+  that the robot will be controlled via an Arduino or Raspberry Pi.
+
+.. figure:: IntroductionFigures/boebot.png
+   :width: 35%
+   :align: right
+
+   Parallax Boe Bot (image from Parallax).
+
+- :index:`Parallax` :index:`Boe Bot`  Parallax has been in the educational
+  and hobby robotics business since 1987.  The Boe Bot is based on an early
+  electronics education board, BOE (Board of Education).  This board used
+  a chip that supported the BASIC programming language.  The Boe Bot robot
+  chassis design has been very popular due to its robustness and versatility.
 
 
 

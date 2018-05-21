@@ -1,5 +1,5 @@
-Overview of Electrical Concepts
-===============================
+Electrical Concepts
+====================
 
 There are a wealth of useful sensors available to the robotics engineer.
 These include force, pressure, temperature, light, radiation, and more.
@@ -14,6 +14,5 @@ for the developing roboticist.
    :maxdepth: 2
 
    ElectricalTerms
-   Batteries
    BasicPowerDelivery
    ElectricMotors

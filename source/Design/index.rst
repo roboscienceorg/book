@@ -6,7 +6,6 @@ Robotics Design Elements
 
    RoboticsFrameworks
    SoftwareArch
-   Distributed
    Safety
    HumanCollab
    CyberSecurity
