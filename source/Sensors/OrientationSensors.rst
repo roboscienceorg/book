@@ -27,16 +27,18 @@ over a period of time depending on the sensor quality. This is an issue
 that must be addressed for systems which run for long periods of time
 without a recalibration.
 
+.. _`gyroscope`:
 .. figure:: SensorsFigures/gyro.*
    :width: 40%
    :align: center
 
-   Tuning fork MEMS gyroscope. [gyroscope]
+   Tuning fork MEMS gyroscope.
 
 Compass
 ~~~~~~~~
 
-The :index:`compass` or :index:`magnetometer` is one of the oldest sensors in use dating back 4000 years.
+The :index:`compass` or :index:`magnetometer` is one of the oldest
+sensors in use dating back 4000 years.
 Early forms would take a small piece of loadstone (natural magnetite)
 and suspend it from a silk thread or place it on wood and float that in
 water. This magnetic rock would orient along the Earth’s field lines and
@@ -69,9 +71,10 @@ generate a rotating magnetic field which can be detected with the
 Hall-Effect sensor. Figure :numref:`halleffect` shows how
 this is done.
 
-.._`halleffect`:
+
+.. _`halleffect`:
 .. figure:: SensorsFigures/magneticencoder.*
    :width: 40%
    :align: center
 
-   Hall-Effect based shaft rotation sensor.[]
+   Hall-Effect based shaft rotation sensor.

@@ -6,7 +6,7 @@ mobile robotics and any estimate is welcome. If you have an estimate on
 wheel velocity then you can by integration estimate rotation and through
 wheel diameter estimate the linear travel (over very short distances).
 Using the differential drive equations,
-`[ddkinematicsmodel] <#ddkinematicsmodel>`__, the wheel velocity may be
+:eq:`ddkinematicsmodel`, the wheel velocity may be
 integrated to determine position in the global or inertial reference
 frame. So the obvious question is... how do we determine wheel position
 or velocity?
@@ -34,27 +34,12 @@ number of times a particular pattern occurs or a beam is interrupted.
 This is explored in detail below with the optical wheel encoders which
 can be used for velocity in addition to position estimates.
 
-
-.. figure:: SensorsFigures/potentiometer.jpg
-   :width: 30%
+.. _`fig:positionsensor`:
+.. figure:: SensorsFigures/positionsensor.png
+   :width: 90%
    :align: center
 
-   Potentiometer.[fig:potentiometer]
-
-
-.. figure:: SensorsFigures/Faders.jpg
-   :width: 30%
-   :align: center
-
-   Fader.[fig:fader]
-
-
-
-.. figure:: SensorsFigures/Encoder.jpg
-   :width:  30%
-   :align: center
-
-   Encoder.[fig:encoder]
+   Position sensors:  (a) Potentiometer, (b) Fader, (c) Encoder.
 
 
 Tachometers
@@ -74,28 +59,29 @@ Optical Wheel Encoders
 One option to tackle this problem involves using Light Emitting Diodes,
 or LEDs [1]_. The dominant lighting source in electronics and robotics,
 LEDs can run on very low power, are available in many frequencies and
-can switch on/off quickly. Figure \ `[circuitled] <#circuitled>`__.
+can switch on/off quickly. :numref:`circuitled`.
 
-
+.. _`circuitled`:
 .. figure:: SensorsFigures/LED.*
    :width: 25%
    :align: center
 
-   LED[circuitled]
+   LED
 
 LEDs can emit in non-visible ranges, ultraviolet and infrared. Many of
 the non-visible frequencies are popular for simple object detection in
 combination with a phototransistor,
-Figure \ `[IRobstacleLED] <#IRobstacleLED>`__. In this example, the
+:numref:`IRobstacleLED`. In this example, the
 infrared LED shines on some object and is reflected back to the
 phototransistor. The IR light activates the transistor and causes it to
 switch on and pull the output to low.
 
+.. _`IRobstacleLED`:
 .. figure:: SensorsFigures/IRObs.*
    :width: 35%
    :align: center
 
-   Infrared LEDs used for obstacle detection.[IRobstacleLED]
+   Infrared LEDs used for obstacle detection.
 
 This system can be used for simple occupancy detection or close obstacle
 detection. We can also use the LED-transistor combination to determine
@@ -111,47 +97,42 @@ estimate is clearly improved if more stripes (or slits) per revolution
 are used.
 
 
-
+.. _`mountingencoder`:
 .. figure:: SensorsFigures/sensormount.*
    :width: 45%
    :align: center
 
-   Mounting for the encoder sensor [mountingencoder]
+   Mounting for the encoder sensor
 
 There are two basic components needed to build your own. First you need
 the light source and the detector. Second you need an encoder. To read
 the encoder, you will need an optical sensor. Typically one uses an IR
 LED (IR light emitting diode) and phototransistor pair,
-Figure \ `[ledopticalsensor] <#ledopticalsensor>`__. These are packaged
+:numref:`ledopticalsensor`. These are packaged
 in single units, for example the Fairchild QRD1313. This has the LED and
 the phototransistor packaged into a unit that is 6.1mm x 4.39mm x 4.65mm
 (height).
 
+.. _`ledopticalsensor`:
 .. figure:: SensorsFigures/IR2.*
-   :width: 45%
+   :width: 60%
    :align: center
 
-   IR LED (IR light emitting diode) and phototransistor pair
-   [ledopticalsensor]
+   IR LED (IR light emitting diode) and phototransistor pair.
 
 An encoder pattern may simply be a pattern printed on paper and attached
 (glued) to the inside of a robot wheel. Simple encoder patterns are just
 alternating black and white radial stripes. Two examples are given in
-Figure \ `[encoderpattern] <#encoderpattern>`__.
+:numref:`encoderpattern`.
 
-
-.. figure:: SensorsFigures/WheelEncoder.*
-   :width: 45%
+.. _`encoderpattern`:
+.. figure:: SensorsFigures/EncoderPatterns.*
+   :width: 75%
    :align: center
 
-   Wheel encoder pattern with 1-1 ratio
+   Wheel encoder pattern (a) with 1-1 ratio, (b) with 1-4 ratio.
 
 
-.. figure:: SensorsFigures/encoder_var.*
-   :width: 45%
-   :align: center
-
-   Encoder pattern with 1-4 ratio
 
 Doppler Effect
 ~~~~~~~~~~~~~~

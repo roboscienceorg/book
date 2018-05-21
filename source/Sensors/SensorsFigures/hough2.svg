@@ -33,7 +33,7 @@
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="589.267" y1="127" x2="589.267" y2="427"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="243" y="127" width="371" height="300"/>
   </g>
-  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="245" y1="186" x2="486" y2="424"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 486,424 A 242.924,242.924 0 0 0 245,186"/>
   <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 243,336 A 245.773,245.773 0 0 0 501,128"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="422" y1="428" x2="611" y2="197"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 611,197 A 229.445,229.445 0 0 0 422,428"/>
 </svg>

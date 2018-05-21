@@ -6,7 +6,7 @@ Switches
 
 The most elementary sensor available is a switch and commonly used as a
 bump or contact sensor on a robot.
-Figure \ `[switchdebounce1] <#switchdebounce1>`__-(a) gives the
+:numref:`switchdebounce1`-(a) gives the
 schematic for a pull down circuit. When the switch is open, the output
 (labeled out) is pulled high. This is the connection of the resistor to
 the 5V line. For many years, digital logic used 5 volts for the high or
@@ -18,18 +18,13 @@ most sensors available at the hobby level are 3.3 volt boards. Many
 microcontrollers used in hobby class robots have moved down to 1.8
 volts.
 
-.. figure:: SensorsFigures/ckt1.*
-   :width: 15%
+
+.. _`switchdebounce1`:
+.. figure:: SensorsFigures/prob1.png
+   :width: 90%
    :align: center
 
-   Switch and associated circuit.
-
-
-.. figure:: SensorsFigures/problem.*
-   :width: 50%
-   :align: center
-
-   Generated signal. [switchdebounce1]
+   Switch (a) the associated circuit. (b) the generated signal.
 
 
 Lower voltages are used in high performance processors. [Lower voltage
@@ -42,7 +37,7 @@ issue later on in the chapter.
 
 When you close a switch (or have a bump sensor contact), it does not
 behave like you initially expect. The voltage on the output line is
-given in Figure \ `[switchdebounce1] <#switchdebounce1>`__-(b). The
+given in :numref:`switchdebounce1`-(b). The
 problem jumps right out. There is not a single close and then open. The
 problem is that a switch is a mass spring system and will vibrate. At
 the contact point, the switch is like the basketball player who lowers
@@ -56,32 +51,27 @@ false signals, the noise, is called :index:`debouncing`. There are both hardware
 and software solutions to the problem.
 
 The first approach we will discuss is given in
-Figure \ `[switchdebounce2] <#switchdebounce2>`__-(a). With the switch
+:numref:`switchdebounce2`-(a). With the switch
 open the output again is tied to the high (the 5 volts). The capacitor
 between the output line and ground will be charged (after a short
-interval following poweron). When the switch is depressed, the capactor
+interval following power-on). When the switch is depressed, the capacitor
 will discharge through R2. Voltage across a capacitor is the integral of
 the current flowing. In English this means that the capacitor will
 smooth the voltage level and cut down on the fast oscillations. It
 filters out higher frequency noise. The voltage profile is given in
-Figure \ `[switchdebounce2] <#switchdebounce2>`__-(b). The reverse
+:numref:`switchdebounce2`-(b). The reverse
 happens when the switch is released. A combination of a resistor and
 capacitor filters out higher frequencies and is often called an RC
 filter. Using an RC filter can remove the the alternating voltage levels
 and appears to solve the problem. However another issue arises.
 
-.. figure:: SensorsFigures/ckt2.*
-   :width: 15%
+
+.. _`switchdebounce2`:
+.. figure:: SensorsFigures/prob2.*
+   :width: 90%
    :align: center
 
-   Basic debounce hardware.
-
-
-.. figure:: SensorsFigures/problem2.*
-   :width: 50%
-   :align: center
-
-   Signal produced. [switchdebounce2]
+   Debounce (a) Basic Hardware, (b) Signal produced.
 
 
 The system will spend more time in transition; more time in the zone
@@ -102,7 +92,7 @@ anything that a transistor can’t do. However, the magic is in that
 :math:`V1 > V2`. These values are not the same.
 
 How does that help us? Once the switch is depressed in
-Figure \ `[switchdebounce3] <#switchdebounce3>`__, the voltage across
+:numref:`switchdebounce3`, the voltage across
 the capacitor starts to drop. But the voltage must drop down to level V2
 before the device switches the output to low. Any oscillation above V2
 will not change the output. Once the voltage has gone below V2, the
@@ -112,18 +102,13 @@ indeterminate region for the controller input, we have removed the
 ambiguous region, and then have removed the mechanical and electrical
 noise.
 
-.. figure:: SensorsFigures/ckt3.*
-   :width: 15%
-   :align: center
 
-   Standard hardware approach to debounce.
-
-
+.. _`switchdebounce3`:
 .. figure:: SensorsFigures/problem3.*
-   :width: 50%
+   :width: 95%
    :align: center
 
-   Signal produced. [switchdebounce3]
+   Debounce (a) Improved hardware, (b) Signal produced.
 
 
 Software solutions are also available and normally approach the problem
@@ -134,7 +119,7 @@ Assume that you have your robot completely surrounded by touch sensors -
 say 24 sensors. Also assume that your robot has 8 general purpose
 input-output (GPIO) lines. Seems like you can only use 8 of the 24. This
 is where multiplexing and demultiplexing integrated circuit chips are
-really useful, Figure \ `[multiplexer] <#multiplexer>`__. Essentially it
+really useful, :numref:`multiplexer`. Essentially it
 is the memory addressing question. The multiplexer unit can select a
 line to read and make the connection from that line to output. The
 figure shows 4 input lines, one output line and two select lines. So,
@@ -144,13 +129,13 @@ the GPIO configured as output. With 24 lines, one connects the bottom 5
 select lines and the multiplexer output line to six of the GPIO lines.
 This leaves two GPIO open for other use.
 
-
+.. _`multiplexer`:
 .. figure:: SensorsFigures/multiplex.*
    :width: 40%
    :align: center
 
    Multiplexers and demultiplexers allow one deal with dozens of devices
-   and a few GPIO.[multiplexer]
+   and a few GPIO.
 
 The only issue is that you might miss a signal because you were looking
 at a sensor on another line. If you know that the signal will last a
@@ -287,7 +272,7 @@ frequency formed by interference between reflected and transmitted waves
 form the basis of the phase shift. A pulsed laser is often used instead
 of a continuous beam laser. This can reduce power requirements.
 
-From Figure \ `[basiclidarimage] <#basiclidarimage>`__, the beam is
+From :numref:`basiclidarimage`, the beam is
 split at point :math:`s`. One branch travels to the object and back, and
 then up to the measurement unit for a distance of :math:`L+2D`. The
 other branch just travels up to the measurement unit for a distance of
@@ -306,15 +291,12 @@ is the speed of light, :math:`f` is the modulating frequency, we see
    D' = L + 2D =  L + \frac{\theta}{2\pi} \lambda ,\quad\quad
    \lambda = \frac{c}{f}.
 
-.. raw:: latex
-
-   \centering
-
+.. _`basiclidarimage`:
 .. figure:: SensorsFigures/lidar.*
    :width: 50%
    :align: center
 
-   The basic operational diagram for a laser ranger.[basiclidarimage]
+   The basic operational diagram for a laser ranger.
 
 
 
@@ -374,7 +356,7 @@ moment assume the distance was 26.389 (which would be a phase shift of
 
 .. math:: 26.389+60m, \quad m=0,1,2 ...
 
-\ as values. To find where the wavelengths give the same value, set
+as values. To find where the wavelengths give the same value, set
 
 .. math:: 1.398 + 25n = 26.389 + 60m,
 

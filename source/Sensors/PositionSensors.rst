@@ -43,11 +43,12 @@ satellites and GPS receiver is essential. Secondly, a precise location
 of the satellite is required. In addition one needs to deal with signal
 quality and interference.
 
+.. _`gpspng`:
 .. figure:: SensorsFigures/gps.*
    :width: 50%
    :align: center
 
-   Global Positioning System - GPS[gpspng]
+   Global Positioning System - GPS
 
 Each satellite has an atomic clock for ultra-precise tracking of time.
 They are monitored by ground stations. These ground stations also track
@@ -68,8 +69,8 @@ several meters.
 
    GPS with local correction.
 
-Example[partialexample]
-'''''''''''''''''''''''
+Example
+'''''''''
 
 Assume that you have four beacon towers located in roughly a square over
 a 10km x 10km patch of land. You place a coordinate system on the land
@@ -105,24 +106,25 @@ Using three circle equations, you can obtain two linear equations
 
 In a noise free world, the solution would be where the circles intersect
 exactly such as seen in
-Figure \ `[fig:exactintersection] <#fig:exactintersection>`__. But this
+:numref:`fig:exactintersection`. But this
 does not happen due to noise and sensor inaccuracies. The circles do not
 intersect as shown in
-Figure \ `[fig:inexactintersection] <#fig:inexactintersection>`__.
+:numref:`fig:inexactintersection`.
 
-
+.. _`fig:exactintersection`:
 .. figure:: SensorsFigures/hough1.*
    :width: 50%
    :align: center
 
-   Exact intersection of three circles.[fig:exactintersection]
+   Exact intersection of three circles.
 
 
+.. _`fig:inexactintersection`:
 .. figure:: SensorsFigures/hough2.*
    :width: 50%
    :align: center
 
-   Non-intersection of three circles.[fig:inexactintersection]
+   Non-intersection of three circles.
 
 One way to approach this problem is to cast into a optimization problem.
 If we are a certain distance (in two dimensions) away from a beacon,
@@ -148,12 +150,12 @@ individual error terms.
 If :math:`E=0`, then we are at the :math:`(x,y)` point that matches all
 four distances.
 
-
+.. _`fig:radialerror`:
 .. figure:: SensorsFigures/circerror.*
    :width: 50%
    :align: center
 
-   Radial error function.[fig:radialerror]
+   Radial error function.
 
 Since there is measurement error we will have in practice that
 :math:`E > 0`, so we are looking for the minimum value for :math:`E`. A
@@ -206,9 +208,9 @@ multiply.] For the algorithm, if you have rough guess as to location,
 you can use this for your initial guess for gradient descent. Otherwise
 you can pick the center or a random point in the search region.
 
-| We can use the gradient descent method to find the solution. Set
+We can use the gradient descent method to find the solution. Set
   :math:`x_0 = 5000`, :math:`y_0=5000`, :math:`k=0`, :math:`t=1`:
-| While (:math:`t > t_0`)
+While (:math:`t > t_0`)
 
 -  :math:`u = \nabla E (x_k, y_k) /  \| \nabla E (x_k, y_k) \|`
 
@@ -286,6 +288,8 @@ you can pick the center or a random point in the search region.
    :width: 50%
    :align: center
 
+   Gradient Descent
+
 The intersection point is :math:`x = 3120, \quad   y = 6085`. Note that
 this algorithm is not guaranteed to converge on the solution (the global
 minimum). It can get trapped in local minima. To address this problem
@@ -304,12 +308,4 @@ approaches to this example.
    :width: 50%
    :align: center
 
-Compare the ideal case and the case with noise:
-
-.. figure:: SensorsFigures/hough1.*
-   :width: 50%
-   :align: center
-
-.. figure:: SensorsFigures/hough2.*
-   :width: 50%
-   :align: center
+   Hough Transform
