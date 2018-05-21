@@ -271,6 +271,16 @@ important in manipulation where the object is fragile relative to the
 robot gripper. There is a vast array of sensors available measure light,
 radiation, heat, humidity, magnetic fields, acceleration, spin, etc.
 
+Popular Hobby Robots
+~~~~~~~~~~~~~~~~~~~~
+
+- iRobot Create: based on the iRobot Roomba, this robot has been around
+since 2007.
+-
+
+
+
+
 Autonomy and SAE
 ~~~~~~~~~~~~~~~~
 
@@ -372,11 +382,12 @@ that we will touch on in detail later in this text.
 
 
 .. This image is public domain
+.. _`Robocup2`:
 .. figure:: IntroductionFigures/RUNSWift_AIBOS.*
    :width: 50%
    :align: center
 
-   Robots in RoboCup. [Robocup2]_
+   Robots in RoboCup.
 
 Autonomy presents additional challenges. The environment is very
 dynamic. Objects can enter, leave and change shape. The landscape

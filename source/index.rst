@@ -27,15 +27,13 @@ Introduction to Robotics
    Motion/index
    Kinematics/index
    Control/index
+   Manipulators/index
+   Filtering/index
+   Kalman/index
+   Particle/index
+   Planning/index
+   Localization/index
    References/References
-
-..  Include when ready:
-..   Manipulators/index
-..   Filtering/index
-..   Kalman/index
-..   Particle/index
-..   Planning/index
-..   Localization/index
 
 .. toctree::
    :maxdepth: 1
@@ -43,8 +41,8 @@ Introduction to Robotics
    :titlesonly:
 
    The SciPy Library <SciPy/index>
-..   STDR Simulator <STDR/index>
-..   Gazebo 3D Simulator <Gazebo/index>
+   STDR Simulator <STDR/index>
+   Gazebo 3D Simulator <Gazebo/index>
 
 
 Index
