@@ -52,7 +52,7 @@ intervals, each one of these bounces appears like a button press. So, we
 don’t just generate a single closing of the switch, but we may have
 hundreds. You can imagine what this text would look like if the keyboard
 did not address this iiisssssuuueeeeee. The process of removing the
-false signals, the noise, is called debouncing. There are both hardware
+false signals, the noise, is called :index:`debouncing`. There are both hardware
 and software solutions to the problem.
 
 The first approach we will discuss is given in
@@ -162,7 +162,7 @@ systems.
 Range Sensors
 ~~~~~~~~~~~~~
 
-Sensors which estimate the distance are known as range sensors. Range
+Sensors which estimate the distance are known as :index:`range sensors`. Range
 information is one of the main aspects of localization, navigation and
 mapping. Note that distance sensors which perform short distance
 measurements are sometimes called proximity detectors. The two main
@@ -209,7 +209,7 @@ again introduce errors.
 Sonar
 ^^^^^
 
-Sonar stands for sound navigation and ranging. The idea is to transmit a
+:index:`Sonar` stands for sound navigation and ranging. The idea is to transmit a
 packet of ultrasonic pressure waves and listen for the reflection. The
 time of flight gives the distance. Distance :math:`d` of the reflecting
 object can be calculated based on the propagation speed of sound,
@@ -260,6 +260,8 @@ bounce is required. Surface properties like surface smoothness and angle
 of incidence will have a significant impact on the return sign. A
 surface that has the surface normal not pointed towards the receiver
 will not deliver as much energy and again may produce incorrect results.
+
+.. index:: ! LIDAR
 
 Laser Ranging, aka LIDAR
 ^^^^^^^^^^^^^^^^^^^^^^^^

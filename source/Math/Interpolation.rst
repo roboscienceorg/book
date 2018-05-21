@@ -10,7 +10,7 @@ the linear solver. There are a couple of approaches to finding the
 polynomial, one popular method is known as Lagrange Interpolation. For a
 set of :math:`N` points, we can find a polynomial of degree :math:`N-1`
 that can interpolate the points. A well known approach is to use
-Lagrange polynomials:
+:index:`Lagrange polynomials`:
 
 .. math::
 
@@ -75,7 +75,7 @@ left derivative, right position and right derivative. A quadratic only
 has three degrees of freedom which would result in some points not
 having a smooth transition, so we move to a cubic polynomial.
 
-The method of Cubic Splines is one of the most popular interpolation
+The method of :index:`Cubic Splines` is one of the most popular interpolation
 methods. There are several methods that can be used to find the cubic
 spline given the endpoint data. In addition to fitting the data, it also
 will minimize the curvature along the interpolant. This is exactly the

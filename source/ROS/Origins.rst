@@ -19,10 +19,10 @@ Switchyard
    :width: 15%
 
 The common API used by player was a major part of the next step on the
-road to ROS, the Stanford project known as “Switchyard.” Switchyard was
+road to ROS, the Stanford project known as “Switchyard.” :index:`Switchyard` was
 developed by Morgan Quigley in 2007 under the Stanford Artificial
 Intelligence Robot (STAIR) project. Development of the system was
-shifted to a Stanford robotics start-up known as Willow Garage in 2008.
+shifted to a Stanford robotics start-up known as :index:`Willow Garage` in 2008.
 The platform matured for about 2 years, and in 2010, Willow Garage
 released the first version of ROS.
 
@@ -33,7 +33,7 @@ OSRF
    :width: 15%
 
 In 2012, development of ROS began to shift from Willow Garage to the
-newly formed OSRF also oversees development of the Gazebo robot
+newly formed, Open Source Robotics Foundation, :index:`OSRF` also oversees development of the Gazebo robot
 simulator, as well as the annual ROSCon, where ROS developers meet and
 discuss various ROS-related topics. Development using ROS still
 continues at Willow Garage, but the framework as a whole is developed at

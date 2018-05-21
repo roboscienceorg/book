@@ -11,7 +11,7 @@ integrated to determine position in the global or inertial reference
 frame. So the obvious question is... how do we determine wheel position
 or velocity?
 
-Position sensors measure the absolute displacement of a joint or other
+:index:`Position sensors` measure the absolute displacement of a joint or other
 sensed item for both linear and rotary joints. Both analog and digital
 technologies are used for measuring displacement. Variable resistors
 have been common for years. Either as a rotary device such as found in
@@ -24,7 +24,7 @@ resistors have an element which slides over a coil of resistive wire or
 over carbon base changing the electrical path which varies the
 resistance.
 
-A direct digital approach is to use encoders. Absolute encoders return a
+A direct digital approach is to use :index:`encoders`. Absolute encoders return a
 Gray code as a function of position. These also come in linear and
 rotary designs. Typically one has a collection of sensors which can
 detect light and dark. The encoder allows light to pass through it in
@@ -63,7 +63,7 @@ Tachometers
 An electric motor and a generator are very similar devices which just
 operate in opposite fashions. Providing electrical power in a motor
 causes the shaft to turn. Conversely turning the shaft of a generator
-produces electricity. A tachometer can be built out of a generator (or
+produces electricity. A :index:`tachometer` can be built out of a generator (or
 electric motor). The faster the shaft spins, the greater the voltage or
 higher the frequency produced. This can be converted to a digital signal
 and thus provides a measure of rpm.
@@ -156,8 +156,8 @@ Figure \ `[encoderpattern] <#encoderpattern>`__.
 Doppler Effect
 ~~~~~~~~~~~~~~
 
-Direct measurement of velocity may be achieved by using the Doppler
-Effect. Recall when a vehicle passes by, you notice a change in the
+Direct measurement of velocity may be achieved by using the :index:`Doppler
+Effect`. Recall when a vehicle passes by, you notice a change in the
 sound of the machine. The sound waves are compressed as the vehicle
 approaches and are expanded as the vehicle retreats. This compression
 results in a higher frequency of the sound and so as the vehicle passes,

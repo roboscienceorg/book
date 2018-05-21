@@ -11,14 +11,14 @@ electromagnet. The electromagnet will generate a force on a permanent
 magnet with the direction of the force depending on the magnet pole and
 current direction on the electromagnet. Placing the electromagnet on a
 pivoting or lever arm as shown in
-Figure \ `[electricmotor] <#electricmotor>`__, a rotational force can be
-generated.
+:numref:`electricmotor`, a rotational force can be generated.
 
+.. _`electricmotor`:
 .. figure:: ElectricalFigures/electricmotor.*
    :width: 70%
    :align: center
 
-   Basic electric motor.[electricmotor]
+   Basic electric motor.
 
 As described, the electromagnet will just align in the permanent magnet
 field and oscillate to a stop. The magic is to switch the current
@@ -48,10 +48,11 @@ translated into the correct signals to position the motor. Motor
 position in low cost servos is read by a potentiometer (a variable
 resistor) which then by using some control logic adjusts the position
 according to the servo signal. A rough schematic is given in
-Figure \ `[servointernals] <#servointernals>`__.
+:numref:`servointernals`.
 
+.. _`servointernals`:
 .. figure:: ElectricalFigures/servo.png
    :width: 70%
    :align: center
 
-   Servo internals.[servointernals]
+   Servo internals.

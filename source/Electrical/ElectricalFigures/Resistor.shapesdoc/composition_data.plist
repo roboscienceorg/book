@@ -41,15 +41,15 @@
 					<key>fillType</key>
 					<integer>5</integer>
 					<key>frame</key>
-					<string>{{-6, -3}, {300, 240}}</string>
+					<string>{{0, 0}, {251, 167}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
-					<string>49C3BF1E-B5EB-4006-B756-A37A524F318B</string>
+					<string>EF05F99B-A8C2-42C8-BACF-634B560DE901</string>
 					<key>imageAnchorRatio</key>
 					<string>{0.5, 0.5}</string>
 					<key>imageIdentifier</key>
-					<string>battery3.jpg</string>
+					<string>Resistor.jpg</string>
 					<key>imageType</key>
 					<integer>2</integer>
 					<key>locked</key>
@@ -59,7 +59,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>175</real>
+					<real>100</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -143,119 +143,17 @@
 					<key>fillType</key>
 					<integer>5</integer>
 					<key>frame</key>
-					<string>{{314, 36}, {270, 162}}</string>
+					<string>{{308, 25}, {104, 117}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
-					<string>EFFAC229-C288-4BAE-A731-42FB353CD946</string>
+					<string>6C9F24F3-1088-43A8-9611-4D68F30F616C</string>
 					<key>imageAnchorRatio</key>
 					<string>{0.5, 0.5}</string>
 					<key>imageIdentifier</key>
-					<string>battery.jpg</string>
+					<string>resistor.pdf</string>
 					<key>imageType</key>
-					<integer>2</integer>
-					<key>locked</key>
-					<false/>
-					<key>opacity</key>
-					<real>1</real>
-					<key>rotationAngle</key>
-					<integer>0</integer>
-					<key>rotationHandleRadius</key>
-					<real>190</real>
-					<key>scaleImage</key>
-					<true/>
-					<key>stroke1Color</key>
-					<string></string>
-					<key>stroke1Enabled</key>
-					<false/>
-					<key>stroke2Color</key>
-					<string></string>
-					<key>stroke2Enabled</key>
-					<false/>
-					<key>strokeColor</key>
-					<string>0.000000:0.000000:1.000000:1.000000</string>
-					<key>strokeLineCap</key>
-					<integer>1</integer>
-					<key>strokeLineJoin</key>
-					<integer>1</integer>
-					<key>strokeLineWidth</key>
-					<real>2</real>
-					<key>strokeShadowBlur</key>
-					<real>3</real>
-					<key>strokeShadowColor</key>
-					<string>0.000000:0.000000:0.000000:0.333000</string>
-					<key>strokeShadowHidden</key>
-					<true/>
-					<key>strokeShadowOffsetX</key>
-					<real>2</real>
-					<key>strokeShadowOffsetY</key>
-					<real>2</real>
-					<key>strokeType</key>
 					<integer>3</integer>
-					<key>textAlign</key>
-					<integer>2</integer>
-					<key>textAppearanceType</key>
-					<integer>0</integer>
-					<key>textDrawOnPath</key>
-					<false/>
-					<key>textShadowBlur</key>
-					<real>5</real>
-					<key>textShadowColor</key>
-					<string>0.000000:0.000000:0.000000:0.333000</string>
-					<key>textShadowHidden</key>
-					<true/>
-					<key>textShadowOffsetX</key>
-					<real>0.0</real>
-					<key>textShadowOffsetY</key>
-					<real>0.0</real>
-					<key>textVerticalAlign</key>
-					<integer>0</integer>
-					<key>title</key>
-					<string>Image</string>
-					<key>userSetTitle</key>
-					<false/>
-				</dict>
-				<dict>
-					<key>adjustmentRatioX</key>
-					<real>0.0</real>
-					<key>adjustmentRatioY</key>
-					<real>0.0</real>
-					<key>className</key>
-					<string>Image</string>
-					<key>constrainAspectRatio</key>
-					<true/>
-					<key>contentFilterSpecs</key>
-					<array/>
-					<key>fillAngle</key>
-					<integer>0</integer>
-					<key>fillColor</key>
-					<string>1.000000:1.000000:1.000000:1.000000</string>
-					<key>fillGradientElements</key>
-					<array/>
-					<key>fillShadowBlur</key>
-					<real>3</real>
-					<key>fillShadowColor</key>
-					<string>0.000000:0.000000:0.000000:0.333000</string>
-					<key>fillShadowHidden</key>
-					<true/>
-					<key>fillShadowOffsetX</key>
-					<real>2</real>
-					<key>fillShadowOffsetY</key>
-					<real>2</real>
-					<key>fillType</key>
-					<integer>5</integer>
-					<key>frame</key>
-					<string>{{599, 35}, {92, 144}}</string>
-					<key>hidden</key>
-					<false/>
-					<key>identifier</key>
-					<string>4AF17270-1A75-46AC-AF89-284FE3536B9F</string>
-					<key>imageAnchorRatio</key>
-					<string>{0.5, 0.5}</string>
-					<key>imageIdentifier</key>
-					<string>battery_symbol.png</string>
-					<key>imageType</key>
-					<integer>1</integer>
 					<key>locked</key>
 					<false/>
 					<key>opacity</key>
@@ -263,7 +161,7 @@
 					<key>rotationAngle</key>
 					<integer>0</integer>
 					<key>rotationHandleRadius</key>
-					<real>130</real>
+					<real>160</real>
 					<key>scaleImage</key>
 					<true/>
 					<key>stroke1Color</key>
@@ -345,13 +243,13 @@
 			<key>fillType</key>
 			<integer>0</integer>
 			<key>frame</key>
-			<string>{{0, 0}, {715, 220}}</string>
+			<string>{{0, 0}, {451, 167}}</string>
 			<key>gridTolerance</key>
 			<real>10</real>
 			<key>hidden</key>
 			<false/>
 			<key>identifier</key>
-			<string>C338EBA6-679E-4325-A0B6-0557F43A32E7</string>
+			<string>81A5041A-FBF8-4ED4-BD49-F83C1DE46092</string>
 			<key>imageAnchorRatio</key>
 			<string>{0.5, 0.5}</string>
 			<key>imageType</key>
@@ -367,7 +265,7 @@
 				<key>group</key>
 				<integer>0</integer>
 				<key>height</key>
-				<real>220</real>
+				<real>167</real>
 				<key>name</key>
 				<string>Custom</string>
 				<key>resolution</key>
@@ -375,7 +273,7 @@
 				<key>unitType</key>
 				<integer>0</integer>
 				<key>width</key>
-				<real>715</real>
+				<real>451</real>
 			</dict>
 			<key>opacity</key>
 			<real>1</real>
@@ -388,7 +286,7 @@
 			<key>scaleImage</key>
 			<true/>
 			<key>scrollCenterPoint</key>
-			<string>{357.5, 110}</string>
+			<string>{225.5, 83}</string>
 			<key>stroke1Color</key>
 			<string></string>
 			<key>stroke1Enabled</key>
@@ -447,12 +345,10 @@
 	</array>
 	<key>image_ref_counts</key>
 	<dict>
-		<key>battery.jpg</key>
-		<integer>1</integer>
-		<key>battery3.jpg</key>
-		<integer>1</integer>
-		<key>battery_symbol.png</key>
-		<integer>1</integer>
+		<key>Resistor.jpg</key>
+		<integer>2</integer>
+		<key>resistor.pdf</key>
+		<integer>2</integer>
 	</dict>
 	<key>version</key>
 	<integer>8</integer>

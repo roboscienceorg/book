@@ -7,7 +7,7 @@ Effectively a robot is a collection of networked nodes. As such it is
 prone to all of the security issues found in any distributed system. It
 is in effect the IOT (Internet of Things) security problem.
 
-Using Garfinkle and Spafford’s definition of security, that the computer
+Using Garfinkle and Spafford’s definition of :index:`security`, that the computer
 should behave as expected, there are a number of security issues. [#f1]_
 The problems listed above in this chapter are specific examples of
 security problems.
@@ -45,7 +45,7 @@ steps.
    | Cost-Benefit Analysis| Validation           |
    +----------------------+----------------------+
 
-The first design stage is security planning. Have a complete
+The first design stage is :index:`security planning`. Have a complete
 understanding of the goals or tasks for the robot. This normally means
 having something like a CONOPS document (concept of operations
 document). This will allow you to determine the overall planning

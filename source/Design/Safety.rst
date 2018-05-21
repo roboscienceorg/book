@@ -87,7 +87,8 @@ unsafe decisions.
 Robotics Industries Association
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Founded in 1974, RIA is the only trade group in North America organized
+Founded in 1974, :index:`Robotics Industries Association`, :index:`RIA`,
+is the only trade group in North America organized
 specifically to serve the robotics industry. Member companies include
 leading robot manufacturers, users, system integrators, component
 suppliers, research groups, and consulting firms.

@@ -31,7 +31,7 @@ The appendix has a brief introduction.
     sudo apt-get install python-rosinstall
 
 As mentioned above the basic form of ROS communication is the
-Publish-Subscribe mechanism. To see this in action, you need to do three
+:index:`Publish-Subscribe` mechanism. To see this in action, you need to do three
 things: (1) get ROS running, (2) run a subscriber, (3) run a publisher.
 Step (1) is easy, bring up a terminal window [2]_ and type:
 

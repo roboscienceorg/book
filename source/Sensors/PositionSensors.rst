@@ -11,7 +11,7 @@ this would be placing markers that the robot sensors can detect and
 reliably interpret for location information. We will explore several of
 these ideas with beacon systems as our guiding example.
 
-Beacons are probably the simplest approach to localization. A beacon is
+:index:`Beacons` are probably the simplest approach to localization. A beacon is
 any type of landmark with a known location. Natural beacons such as
 stars, sun, moon, mountains, streams and other markers have been used
 throughout human existence [2]_. Manmade beacons include towers, signs,

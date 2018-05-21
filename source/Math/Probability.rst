@@ -1,8 +1,8 @@
 Probability
 -----------
 
-Let :math:`X` denote a random variable. Let :math:`P` denote the
-probability that :math:`X` takes on a specific value :math:`x`:
+Let :math:`X` denote a :index:`random variable`. Let :math:`P` denote the
+:index:`probability` that :math:`X` takes on a specific value :math:`x`:
 :math:`P(X=x)`. If :math:`X` takes on discrete values we say that
 :math:`X` is a discrete variable. If :math:`X` takes on continuous
 values we say that :math:`X` is a continuous variable.
@@ -17,8 +17,8 @@ probability density function (pdf) :math:`p(x)` in the following manner:
 Uncertainty and Distributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Recall that random variables are drawn from some probability
-distribution function. Often these are the normal distributions seen in
+Recall that random variables are drawn from some :index:`probability
+distribution` function. Often these are the normal distributions seen in
 many areas of the sciences, but can be any shape as long as the area
 under the curve is one. Specifically, the normal distribution is given
 by
@@ -49,7 +49,7 @@ We say the the variables are independent if
 
 .. math:: P(x,y) = P(x)P(y)
 
-Conditional probability: what is the probability of :math:`x` if we know
+:index:`Conditional probability`: what is the probability of :math:`x` if we know
 :math:`y` has occurred? Denoted :math:`P(x|y)`,
 
 .. math:: P(x|y) = \frac{P(x,y)}{P(y)}

@@ -100,7 +100,7 @@ from the outside as well as itself. It must be able to respond to
 failing sensors, software and actuators in addition to unexpected
 external events.
 
-Fault tolerance will be an increasingly important aspect to human-robot
+:index:`Fault tolerance` will be an increasingly important aspect to human-robot
 collaboration. Systems which constantly assess the state of the robot,
 the progress of the task and the environment are needed to be successful
 in the dynamic and varied human environment. At first, humans will
@@ -198,7 +198,7 @@ exhibit this, but varies greatly in the exact boundary of their limits.
    :width: 70%
    :align: center
 
-   Uncanny Valley, the drop in the comfort graph as a function of human
+   :index:`Uncanny Valley`, the drop in the comfort graph as a function of human
    likeness.
 
 A completely different view

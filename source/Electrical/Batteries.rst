@@ -27,13 +27,15 @@ rechargeable batteries: Lead-Acid, Nickel Metal Hydride (NiMH), Lithium
 Polymer (LiPo). Lead-Acid is the type found in automobile, boat,
 motorcycle batteries.
 
+.. _`leadacidlipo`:
 .. figure:: ElectricalFigures/batteries.*
    :width: 60%
    :align: center
 
-   Batteries:  a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol. [leadacidlipo]|
+   Batteries:  a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol.
 
-.. table:: Quick comparison of battery chemistries.[comparebatteries]
+.. _`comparebatteries`:
+.. table:: Quick comparison of battery chemistries.
 
    +-----------------+-----------+------------------+------------------+
    | Chemistry:      | Lead-Acid | NiMH             | LiPo             |
@@ -137,18 +139,18 @@ the LiPo. However, unlike a lead-acid battery, letting the charge get
 too low in a LiPo will permanently damage it. The minimum safe level for
 a single cell is 3V. Always monitor the voltage of LiPo batteries you
 are using and ensure they don’t drop below this level. The difficult
-part is, LiPo voltage doesn’t drop linearly. Figure
-`[fig:lipovoltage] <#fig:lipovoltage>`__ shows voltage versus charge for
+part is, LiPo voltage doesn’t drop linearly.
+:numref:`fig:lipovoltage` shows voltage versus charge for
 a LiPo. As you can see from the graph, you have to monitor the battery
 voltage very carefully, because it decreases rapidly once the charge
 gets low.
 
-
+.. _`fig:lipovoltage`:
 .. figure:: ElectricalFigures/lipovoltage.*
    :width: 50%
    :align: center
 
-   LiPo Voltage VS Charge
+   LiPo Voltage VS Charge.
 
 As a side note, this chart is for one specific battery I found on a
 forum post at Traxxas.com. Individual results may vary in specifics, but

@@ -33,8 +33,8 @@ large checkerboard with a square (pixel) either occupied or not
 occupied. Simple two or three color bitmaps then suffice (two for object
 maps and optionally a third to track the robot). Painting a pixel white
 will indicate that pixel or location is unoccupied. Painting it colored
-indicates the pixel is occupied. This approach is known as an occupancy
-grid. The obstacle is simply the collection of black pixels on the
+indicates the pixel is occupied. This approach is known as an :index:`occupancy
+grid`. The obstacle is simply the collection of black pixels on the
 occupancy map. A B/W image file can then be used to generate obstacle
 maps. [One handy way to accomplish this task is to use a paint program
 (or image editing tool) which can export the image into a format that is
@@ -52,21 +52,21 @@ easy to read. ]
    :width: 50%
    :align: center
 
-   Continuous environmental representation.
+   :index:`Continuous representation`.
 
 .. _`fig:discretemap`:
 .. figure:: SimulationFigures/discretemap.*
    :width: 50%
    :align: center
 
-   Discrete environmental representation.
+   :index:`Discrete representation`.
 
 .. _`fig:topomap`:
 .. figure:: SimulationFigures/topomap.*
    :width: 50%
    :align: center
 
-   Topological representation.
+   :index:`Topological representation`.
 
 Topological representations do not include metric information like the
 other two, :numref:`fig:topomap`. Relationships are
@@ -220,7 +220,7 @@ Using a range sensor
 Recall the components in
 Figure \ `[intro-components] <#intro-components>`__. There was not a
 touch or impact sensor listed. However, there are two types of range
-sensors shown. One is a LIDAR and the other is a Kinect. The next simple
+sensors shown. One is a :index:`LIDAR` and the other is a Kinect. The next simple
 planner presented assumes that the robot has a ranging device. The
 simplest to model is the LIDAR.
 

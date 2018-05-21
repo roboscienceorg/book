@@ -17,7 +17,7 @@ values for :math:`a` and :math:`b`, we say :math:`ax+by` is a span of
 applications. It is a way to decompose sets into basic components. For
 example, the span of :math:`x = \left< 1, 0 \right>` and
 :math:`y = \left< 0, 1 \right>` is the plane and the vectors :math:`x`
-and :math:`y` are a known as a basis. The term basis is a minimal
+and :math:`y` are a known as a :index:`basis`. The term basis is a minimal
 spanning set and the number of linear independent basis elements is the
 dimension. More information on these ideas can be found in most linear
 algebra textbooks.
@@ -41,7 +41,7 @@ which is the linear combination of
    \begin{pmatrix} 0 & 0 \\ 1 & 0\end{pmatrix},
    \begin{pmatrix} 0 & 0 \\ 0 & 1\end{pmatrix}.
 
-One consequence of these ideas is that of a vector space. It is the span
+One consequence of these ideas is that of a :index:`vector space`. It is the span
 of a collection of vectors (or all linear combinations of the vectors).
 More formally, :math:`V` is a vector space if :math:`x, y\in V` are
 vectors, and :math:`a, b\in {\mathbb R}`, then :math:`ax+by \in V`.
@@ -57,7 +57,7 @@ does not.
    :width: 40%
    :align: center
 
-A subspace is a subset of a vector space :math:`V` that is also a vector
+A :index:`subspace` is a subset of a vector space :math:`V` that is also a vector
 space. For example, a line through the origin is a subspace of the
 plane. Also, a plane through the origin is a subspace of three space,
 such as the span of
@@ -252,8 +252,8 @@ the solution
 
 .. math:: \hat{x} = \left( A^T A\right)^{-1} A^T b .
 
-This formula is known by several names. It is called the Pseudo-Inverse
-or Moore-Penrose Pseudo-Inverse. It is also called the left-sided
+This formula is known by several names. It is called the :index:`Pseudo-Inverse`
+or :index:`Moore-Penrose` Pseudo-Inverse. It is also called the left-sided
 pseudo-inverse (because it acts on the left side).
 
 **Example** Find the least squares solution to
@@ -539,7 +539,7 @@ the normal equations. In addition, the product of :math:`A` times the
 transpose of :math:`A` can increase the ill-conditioning of the matrix.
 
 The standard method to address numerical problems such as this is to
-compute the pseudo-inverse through the Singular Value Decomposition
+compute the pseudo-inverse through the :index:`Singular Value Decomposition`
 (SVD). We will present the SVD first and then show how it applies to the
 pseudo-inverse.
 
@@ -556,7 +556,7 @@ Weighted Least Squares
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Traditional least squares is formulated by minimizing using the normal
-innerproduct:
+:index:`inner product`:
 
 .. math:: x^Ty = \sum_i x_iy_i.
 
@@ -582,7 +582,7 @@ Assuming that :math:`A^T Q A` is full rank,
 
 .. math:: x = \left(A^T Q A\right)^{-1} A^TQb .
 
-\ The matrix :math:`Q` is any matrix for which the innerproduct above is
+The matrix :math:`Q` is any matrix for which the inner product above is
 a valid. However, we will often select :math:`Q` as a diagonal matrix
 containing the reciprocals of the variances (the reason shown below in
 the covariance computation):

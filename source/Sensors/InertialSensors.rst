@@ -4,7 +4,7 @@ Inertial Sensors
 Accelerometers
 ~~~~~~~~~~~~~~
 
-An accelerometer measures acceleration in a particular direction. The
+An :index:`accelerometer` measures acceleration in a particular direction. The
 standard units on acceleration are meters per seconds squared
 (:math:`m/s^2`). The sensor is normally a MEMS unit which are often
 packaged together using two or three sensor units pointed in orthogonal
@@ -21,9 +21,9 @@ digital interface, such as I\ :math:`^2`\ c making it a digital sensor.
    :width: 40%
    :align: center
 
-   Simple accelerometer structure. 
+   Simple accelerometer structure.
 
-A simple application of an accelerometer is an inclineometer or tilt
+A simple application of an accelerometer is an :index:`inclineometer` or tilt
 sensor. These sensors can have a great deal of noise and extracting a
 good signal can be very challenging. Note that it is temping to think
 that this device can provide position information. After all, we learn
@@ -36,7 +36,7 @@ accelerometer does not provide adequate position or velocity estimates.
 Inertial Measurement Unit (IMU)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-An Inertial Measurement Unit or IMU packages accelerometers, gyroscopes
+An :index:`Inertial Measurement Unit` or :index:`IMU` packages accelerometers, gyroscopes
 and possibly a compass together into a single unit. A 6DOF (degrees of
 freedom) IMU will have a three axis accelerometer and three axis
 gyroscope. A 9DOF IMU will have the three axis accelerometer, three axis
@@ -48,7 +48,7 @@ System.
 Attitude and Heading Reference System (AHRS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-AHRS consist of accelerometers, gyroscopes and magnetometers on all
+:index:`AHRS` consist of accelerometers, gyroscopes and magnetometers on all
 three axes. So, AHRS includes an IMU. In addition to the IMU, the AHRS
 has the algorithms to provide attitude and heading information as well
 as the required hardware for the computation. These algorithms include

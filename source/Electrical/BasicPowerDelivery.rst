@@ -2,14 +2,15 @@ Basic Power Delivery
 --------------------
 
 Say that you have a basic electric light circuit (like a flashlight),
-Figure  `[basicpower] <#basicpower>`__-(a). We are able to turn this on
-and off using a switch, Figure \ `[basicpower] <#basicpower>`__-(b).
+:numref:`basicpower`-(a). We are able to turn this on
+and off using a switch, :numref:`basicpower`-(b/c).
 
+.. _`basicpower`:
 .. figure:: ElectricalFigures/basicpower0.*
    :width: 80%
    :align: center
 
-   Basic power delivery a) Direct connection b) Open switch  c) Closed switch.
+   Basic power delivery a) Direct connection  b) Open switch  c) Closed switch.
 
 This is a great system until someone asks to dim the light. Now we are
 faced with how to reduce the voltage across the light. One might think
@@ -18,27 +19,28 @@ an AC not a DC device. So, the next idea is to limit current by placing
 a device along the flow of current that will resist the current flow. We
 can use the component described above called a resistor.
 
+.. _`voltagedivider`:
 .. figure:: ElectricalFigures/basicpower1.*
    :width: 60%
    :align: center
 
    Power control. (a) Resistor to limit current flow and drop voltage.
-   (b) A voltage divider circuit.[voltagedivider
+   (b) A voltage divider circuit.
 
 The problem with this design is that some of the energy is wasted as
 heat in the resistor. For low power circuits, this may not be a problem,
 but for higher power devices like for electric motors, considerable
 energy is wasted as heat. Current through the resistors in
-Figure \ `[voltagedivider] <#voltagedivider>`__-(b) is
+:numref:`voltagedivider`-(b) is
 
 .. math:: \displaystyle i = \frac{V}{R_1+R_2}.
 
 Voltage drop across :math:`R_1` in
-Figure \ `[voltagedivider] <#voltagedivider>`__-(b) is
+:numref:`voltagedivider`-(b) is
 
 .. math:: \displaystyle V_{R_1} = \left(\frac{R_1}{R_1+R_2}\right)V .
 
- Power is
+Power is
 
 .. math:: \displaystyle W = i*V_{R_1} = R_1\left(\frac{V}{R_1+R_2}\right)^2
 
@@ -46,13 +48,14 @@ A quick example:
 ^^^^^^^^^^^^^^^^
 
 Assume we are using a 12V power source and we want to use a voltage
-divider to provide 9V, Figure \ `[divider12to9] <#divider12to9>`__.
+divider to provide 9V, :numref:`divider12to9`.
 
+.. _`divider12to9`:
 .. figure:: ElectricalFigures/vdivider2.*
-   :width: 10%
+   :width: 15%
    :align: center
 
-   Voltage divider to drop 12V to 9V.[divider12to9]
+   Voltage divider to drop 12V to 9V.
 
 Assume that the load is a simple resistor with resistance 10 ohms. Since
 :math:`R_2` is in parallel with the load, we get an effective resistor
@@ -94,20 +97,22 @@ battery life. Another approach is needed.
 
 One solution is to switch on and off the power very quickly, known as
 Pulse Width Modulation, PWM. To see what we mean,
-Figure \ `[circuitpwm] <#circuitpwm>`__ here is a graph of the voltage
+:numref:`circuitpwm` here is a graph of the voltage
 though time.
 
+.. _`circuitpwm`:
 .. figure:: ElectricalFigures/pwm.*
    :width: 60%
    :align: center
 
-   Switching power on and off. [circuitpwm]
+   Switching power on and off.
 
+.. _`circuitpwmduty`:
 .. figure:: ElectricalFigures/pwm_duty.*
    :width: 60%
    :align: center
 
-   On-Off pulsing known as Pulse Width Modulation - PWM.[circuitpwmduty]
+   On-Off pulsing known as Pulse Width Modulation - PWM.
 
 The amount of time the pulse is high compared to low is the duty cycle.
 Duty cycle is often expressed as a percent of the pulse length which is
@@ -117,11 +122,12 @@ the energy waste as compared to using a resistor. If we run the on and
 off fast enough, our eyes will not see the flicker and it will just
 appear dimmer.
 
+.. _`pwmcontrol`:
 .. figure:: ElectricalFigures/pwm_motor.*
    :width: 60%
    :align: center
 
-   PWM control of an electric motor.[pwmcontrol]
+   PWM control of an electric motor.
 
 This is also the method by which we control an electric motor. The
 frequency of this waveform does not change (because the duration of a
@@ -142,29 +148,31 @@ limited to 0.1 Amps or less. Certainly not enough to drive a large
 electric motor which might want to draw many amps. Using a pwm to drive
 a power transistor is the way to get power delivered. One minor problem
 is that this only runs one way. An H-bridge is a clever way to provide a
-reverse current, Figure \ `[hbridgeswitches] <#hbridgeswitches>`__. By
+reverse current, :numref:`hbridgeswitches`. By
 closing S1 and S4, current will flow from left to right,
-Figure \ `[hbridgeswitchesclosed] <#hbridgeswitchesclosed>`__. By
+:numref:`hbridgeswitchesclosed`. By
 closing S3 and S2, current will flow from right to left. Replacing the
 switches with transistors will provide the switching speed required for
 PWM operation.
 
+.. _`pwmfet`:
 .. figure:: ElectricalFigures/transistor-motor.*
    :width: 20%
    :align: center
 
-   Using a transistor to control power.[pwmfet]
+   Using a transistor to control power.
 
+.. _`hbridgeswitches`:
 .. figure:: ElectricalFigures/H_bridge.*
    :width: 40%
    :align: center
 
    H-Bridge, a way to select the direction of current
-   flow.[hbridgeswitches]
+   flow.
 
-
+.. _`hbridgeswitchesclosed`:
 .. figure:: ElectricalFigures/H_bridge_operating.*
    :width: 80%
    :align: center
 
-   Selecting current direction.[hbridgeswitchesclosed]
+   Selecting current direction.

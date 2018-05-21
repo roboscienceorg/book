@@ -16,8 +16,10 @@ will discuss a few of the more popular approaches below.
 MS Robotics Developer Studio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Microsoft Robotics Developers Studio, MSRDS, is a full featured robotics
-development environment. It provides support tools for developing
+Microsoft Robotics Developers Studio, :index:`MSRDS`, is a full featured robotics
+development environment.  First released in 2006 and
+the current stable release in 2012, made this framework an early player in
+the robotics community.  It provides support tools for developing
 applications, supporting communications, visual authoring and
 simulation. MSRDS is a commercial application. The tool includes an
 asynchronous runtime environment which supports threading and
@@ -27,13 +29,15 @@ drag and drop GUI for application development as well as export to C#.
 DSSME is a configuration editor to support application configuration and
 distribution. VSE, Visual Simulation Environment provides 3D simulation
 with physics. Robotics control software may be developed, simulated and
-tested without hardware. MSRDS is an active project. It can found at
+tested without hardware.  No updates have been released since 2012.
+On Sept. 22, 2014 Microsoft suspended their robotics division and so no
+further development is expected.    MSRDS can found at
 http://www.microsoft.com/robotics/.
 
 Webots
 ~~~~~~
 
-Like MSRDS, is a full featured robotics development and simulation
+Like MSRDS, :index:`Webots` is a full featured robotics development and simulation
 environment as well. It is a commercial application and is more oriented
 to instruction/simulation than the others described here. This tool
 provides a large choice of simulated sensors and hardware. Robotic
@@ -48,7 +52,7 @@ http://www.cyberbotics.com.
 Player-Stage
 ~~~~~~~~~~~~
 
-Player is a robotics framework. It provides communications and robot
+:index:`Player` is a robotics framework. It provides communications and robot
 control interfacing. This is open source freely available software.
 Player is one of the leaders in the distributed approach to robotic
 control software. It provides a network interface to a variety of
@@ -61,7 +65,7 @@ package is in Java and the behavior system is written in Python,
 allowing the best tool for the job to be used. Player is still
 maintained, but development ceased in 2010 (mostly due to ROS).
 
-Stage is the simulation system that is loosely coupled with Player. They
+:index:`Stage` is the simulation system that is loosely coupled with Player. They
 are separate but have been extensively used together. Stage is consider
 a 2.5D (more than 2D but less than 3D) simulation environment. Stage is
 oriented towards a world which is described by a two dimensional map of
@@ -85,7 +89,7 @@ http://playerstage.sourceforge.net.
 ROS-Gazebo
 ~~~~~~~~~~
 
-ROS, the Robot Operating System, is an open source robotics framework.
+:index:`ROS`, the :index:`Robot Operating System`, is an open source robotics framework.
 This project grew out of Player and many of the lessons learned with
 Player are found in ROS. ROS provides the communication system, a
 filesystem, distribution system and several thousand packages for device
@@ -134,5 +138,5 @@ C++ are part of the standard Ubuntu distribution. Normally it is not
 critical which version of Python is used (Python 2 versus 3).
 
 .. [#f1] Please don't send me email telling me that this is three languages
-   since C and C++ are "actually" different languages.  I will save you the Google search: 
+   since C and C++ are "actually" different languages.  I will save you the Google search:
    https://stackoverflow.com/questions/14330370/is-c-c-one-language-or-two-languages

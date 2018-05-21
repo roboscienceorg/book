@@ -15,68 +15,64 @@ current flow is measured in Amps and the symbol used is :math:`i`.
 **Resistance** is the measure of the difficulty to pass an electric
 current through that element. It is denoted by :math:`R` and measured in
 units of Ohms. The power in an electrical circuit is measured in Watts
-and Watts = Volts \* Amps. About 770 Watts makes up one horsepower. The
-fundamental components are given in
-Figure \ `[fundamentalcomponents] <#fundamentalcomponents>`__.
+and Watts = Volts * Amps. About 770 Watts makes up one horsepower. The
+fundamental components are given in :numref:`fig:resistor`,
+:numref:`fig:capacitor`, :numref:`fig:inductor`.
 
-.. figure:: ElectricalFigures/Resistor.jpg
-   :width: 20%
+.. _`fig:resistor`:
+.. figure:: ElectricalFigures/Resistor.png
+   :width: 40%
    :align: center
 
-   Resistor (Ohms): resists the current flow, :math:`V = iR` (think of a narrowing in a pipe).
+   Resistor (Ohms): resists the current flow, :math:`V = iR` (think of a narrowing in a pipe
+   (a) Element (b) Resistor circuit diagram.
 
-.. figure:: ElectricalFigures/resistor.*
-   :width: 15%
-   :align: center
 
-   Resistor circuit diagram.
-
-.. figure:: ElectricalFigures/Capacitor.jpg
-   :width: 20%
+.. _`fig:capacitor`:
+.. figure:: ElectricalFigures/Capacitor.png
+   :width: 40%
    :align: center
 
    Capacitor (Farads): stores energy in an electrical field,
    :math:`i = \displaystyle C\frac{dV}{dt}` (think of a storage tank).
+   (a) Element (b) Capacitor circuit diagram.
 
-.. figure:: ElectricalFigures/capacitor.*
-   :width: 15%
-   :align: center
 
-   Capacitor circuit diagram
-
-.. figure:: ElectricalFigures/Inductor.jpg
-   :width: 20%
+.. _`fig:inductor`:
+.. figure:: ElectricalFigures/Inductor.png
+   :width: 40%
    :align: center
 
    Inductor (Henrys): stores energy in a magnetic field,
    :math:`V = \displaystyle L\frac{di}{dt}` (think of a flywheel in the
-   pipe.)
+   pipe.) (a) Element (b) Inductor circuit diagram.
 
-.. figure:: ElectricalFigures/inductor.*
-   :width: 15%
-   :align: center
-
-   Inductor circuit diagram.
 
 
 The fundamental law in circuits is Ohm’s Law,
-Figure \ `[circuitsohmslaw] <#circuitsohmslaw>`__:
+:numref:`circuitsohmslaw`:
 
 .. math:: V = iR
 
 where :math:`V` is in volts, :math:`i` is in amps, :math:`R` is in
 Ohms.
 
+.. _`circuitsohmslaw`:
 .. figure:: ElectricalFigures/Ohms.*
-   :width: 20%
+   :width: 30%
    :align: center
 
    Ohms Law. Note the direction of current flow is the opposite electron
-   flow.[circuitsohmslaw]|
+   flow.
 
+.. _`ohms-law-illustrated`:
 .. figure:: ElectricalFigures/ohms-law-illustrated.*
    :width: 30%
    :align: center
+
+   Using the water metaphor, the water pressure is like voltage, the
+   water flow is like the current and the narrowing of the pipe is
+   similar to the resistor (pipe resistance).
 
 Current flow can be in one direction or vary in direction. These are
 known as direct current (DC) and alternating current (AC).
@@ -103,35 +99,42 @@ lines to an outlet, a transformer is used. You have often heard them as
 they make that characteristic hum. To convert from AC to DC, another
 approach is used. A device called a diode has the property that it
 allows current to flow one way, in essence it is an electrical one way
-valve, Figure \ `[circuitdiode] <#circuitdiode>`__.
+valve, :numref:`circuitdiode`.
 
+.. _`circuitdiode`:
 .. figure:: ElectricalFigures/diode.*
-   :width: 30%
+   :width: 25%
    :align: center
 
-   Diode.[circuitdiode]
+   Diode.
 
+.. _`rectified-ac`:
 .. figure:: ElectricalFigures/diode-rect.*
    :width: 50%
    :align: center
 
+   The change in the current flow after the diode.
+
 A clever connection of four diodes known as a diode bridge reroutes
 current so that it flows in one direction only (will still vary, but at
 least stay the same direction),
-Figure \ `[circuitdiodebridge] <#circuitdiodebridge>`__. This bridge can
+:numref:`circuitdiodebridge`. This bridge can
 also be used to protect inputs to electronic devices in case positive
 and negative lines get reversed.
 
+.. _`circuitdiodebridge`:
 .. figure:: ElectricalFigures/diodebridge.*
-   :width: 50%
+   :width: 60%
    :align: center
 
-   [circuitdiodebridge] A combination of diodes known as a bridge to
+   A combination of diodes known as a bridge to
    convert alternating current into positive current.
 
 .. figure:: ElectricalFigures/acdc.*
-   :width: 30%
+   :width: 60%
    :align: center
+
+   The change in the current flow after the bridge circuit.
 
 The current headed out of the diode bridge flows in one direction, but
 the voltage is still fluctuating. Another device is employed, a
@@ -139,13 +142,15 @@ capacitor. Using the water analogy, think of the capacitor as a storage
 tank. It will smooth out the voltage fluctuations like a pond smooths
 out stream flow. These basic circuit devices are used in a common
 household circuits such as a power supply,
-Figure \ `[powersupply] <#powersupply>`__.
+:numref:`powersupply`.
 
+..  REDO THIS - not public domain
+.. _`powersupply`:
 .. figure:: ElectricalFigures/power1.*
-   :width: 70%
+   :width: 90%
    :align: center
 
-   The power supply circuit.[powersupply]
+   The power supply circuit.
 
 In this circuit, wall power (alternating current at 115 volts) is fed
 into the left side. S1 is the symbol for the on/off switch. The next

@@ -7,7 +7,7 @@ orientation is done through several basic sensing approaches.
 Gyroscopes
 ~~~~~~~~~~
 
-A gyroscope is a heading sensor that gives a measure of orientation with
+A :index:`gyroscope` is a heading sensor that gives a measure of orientation with
 respect to a fixed frame. A standard gyro provides an absolute measure
 of the heading for a mobile robot normally measured in degrees off of
 some fixed heading. The classical mechanical gyroscope uses a spinning
@@ -33,10 +33,10 @@ without a recalibration.
 
    Tuning fork MEMS gyroscope. [gyroscope]
 
-Compass or magnetometer
-~~~~~~~~~~~~~~~~~~~~~~~
+Compass
+~~~~~~~~
 
-The compass is one of the oldest sensors in use dating back 4000 years.
+The :index:`compass` or :index:`magnetometer` is one of the oldest sensors in use dating back 4000 years.
 Early forms would take a small piece of loadstone (natural magnetite)
 and suspend it from a silk thread or place it on wood and float that in
 water. This magnetic rock would orient along the Earth’s field lines and
@@ -62,7 +62,7 @@ magnetic sensing in certain environments.
 Magnetic encoding
 ^^^^^^^^^^^^^^^^^
 
-It is possible to use Hall-effect or other similar devices to do
+It is possible to use :index:`Hall-Effect` or other similar devices to do
 encoding. Small Hall-Effect sensors with sub-degreee accuracy are
 available. Placing a small ceramic magnet on the end of a shaft will
 generate a rotating magnetic field which can be detected with the

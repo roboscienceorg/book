@@ -1,7 +1,7 @@
 Distributed Computation and Communications
 ------------------------------------------
 
-Sockets provide a bidirectional channel between two processes. Although
+:index:`Sockets` provide a bidirectional channel between two processes. Although
 one side was setup like a server and one side like a client, this was
 basically a point to point type of communication. With only two
 processes one could call this peer to peer or client server as well,
