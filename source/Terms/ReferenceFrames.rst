@@ -109,7 +109,7 @@ orientation as shown in Figure :numref:`fig:dependsonpath`.
 
 Assume you decide to replace your auto wheels with caster wheels and
 have someone push you. In this case you can travel from point to
-point with arbitrary orientation. This simple example implies that we
+point with arbitrary orientation. [#f1]_ This simple example implies that we
 have two fundamentally different types of motion. One that depends on
 the path and one that does not. The independence of path boils down to
 the types of motion constraints given by the system. Our goal here is to
@@ -378,3 +378,7 @@ end effector, what is the corresponding vector of joint forces/torques?”
 
 We will not treat forward or inverse force kinematics in this text.
 These concepts are treated in courses in statics and mechanics.
+
+.. rubric:: Footnotes
+
+   [#f1] Like the office chair races in the hallway.

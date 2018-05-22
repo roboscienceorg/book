@@ -5,7 +5,7 @@ When we attempt to integrate multiple sensors or when we compute paths
 from discrete points, the methods use the tools from linear algebra. No
 attempt here is made to be complete or expository. This is intended to
 review the language and concepts only. The reader who is unfamiliar with
-Linear Algebra as a subject is strongly encouraged to explore it. [1]_
+Linear Algebra as a subject is strongly encouraged to explore it. [#f1]_
 Calculus, Linear Algebra and Probability are three legs to the
 mathematical stool every engineer should have.
 
@@ -630,3 +630,7 @@ sum of the weights is one.
 
    Least squares line fit. Uniform weighting in
    blue and weighted to the origin in green.
+
+.. rubric:: Footnotes
+
+   [#f1] Gilbert Strang - Linear Algebra, see the online text.

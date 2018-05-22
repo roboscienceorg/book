@@ -12,9 +12,6 @@ drive systems.
    :maxdepth: 2
 
    FixedWheel
-   MultipleWheel
    DifferentialDrive
-   OmniwheelExample
    DualDifferential
-   FourAxleRobot
    Maneuverability

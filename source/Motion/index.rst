@@ -14,7 +14,6 @@ of Omniwheel systems.
    :maxdepth: 2
 
    Locomotion
-   Wheels
    DriveSystems
    Configuration
    Appendix

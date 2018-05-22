@@ -121,6 +121,6 @@ the other physical restrictions.
 
    Neither configuration of the robot arm can reach the point.
 
-
+.. rubric::  Footnotes
 
 .. [#f3] Cavers will tell you that you can crawl through a vertical gap spanned by the distance of your thumb and your fifth (pinky) finger.  For the average American, this is a very small gap.

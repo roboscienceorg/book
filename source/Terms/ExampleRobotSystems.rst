@@ -608,7 +608,7 @@ instantaneous time:
 
 We can undo the rotation easily. Since :math:`R` is an orthogonal
 matrix, the inverse is easy to
-compute,  for more information see Strang :cite:`strang1988book` .
+compute,  for more information see Strang :cite:`Strang:1988:book` .
 
 .. math::
 
@@ -712,7 +712,7 @@ vehicle. The contribution from the right wheel is
 :math:`\dot{\theta} = r\dot{\phi_1}/(2L)` and the contribution from the
 left wheel is :math:`2L\dot{\theta} = -r\dot{\phi_2}` or
 :math:`\dot{\theta} = -r\dot{\phi_2}/(2L)`, see
-Figure :numref:`[diffdriverotation`. The rotation
+Figure :numref:`diffdriverotation`. The rotation
 about :math:`P` is given by adding the individual contributions:
 
 .. math:: \dot{\theta} =  \frac{r}{2L} (\dot{\phi_1} - \dot{\phi_2}).
@@ -1031,7 +1031,7 @@ independently. Independent of the type of motion, it should be clear now
 that position and orientation are separate and important variables in
 the system which is addressed next.
 
-** Notes **
+.. rubric:: Footnotes
 
 .. [#f1] Well, this is true on one Tuesday afternoon a long time ago with one little comparison of some loop/math code.  Your results may be very different.
 

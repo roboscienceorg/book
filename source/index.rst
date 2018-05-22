@@ -28,12 +28,13 @@ Introduction to Robotics
    Kinematic Modeling <Kinematics/index>
    Motion Control <Control/index>
    Manipulators <Manipulators/index>
-   Filtering/index
-   Kalman/index
-   Particle/index
-   Planning/index
-   Localization/index
-   References/References
+   Sensor Filtering <Filtering/index>
+   Kalman Filter <Kalman/index>
+   Particle Filters <Particle/index>
+   Motion Planning <Planning/index>
+   Localization <Localization/index>
+   References <References/References>
+
 
 .. toctree::
    :maxdepth: 1
