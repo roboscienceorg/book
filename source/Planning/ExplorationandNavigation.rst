@@ -275,11 +275,12 @@ the basic obstacle shape and relative pose. b) Extending the difference
 in the obstacle shape to increase the path difference between Bug 1 and
 Bug2. [complicatedobstacle]|
 
-
+.. _`complicatedobstacledim`:
 .. figure:: PlanningFigures/complicated_obst_dim
-   :alt: Some dimensions for this obstacle. [complicatedobstacledim]
+   :width: 50%
+   :align: center
 
-   Some dimensions for this obstacle. [complicatedobstacledim]
+   Some dimensions for this obstacle.
 
 To make the analysis easier, actual numbers are used,
 Figure \ `[complicatedobstacledim] <#complicatedobstacledim>`__. The
@@ -321,22 +322,20 @@ There is one additional modification to the bug path that can
 intuitively decrease path length. The idea is that when the obstacle no
 longer blocks the goal during the boundary following state, leave the
 obstacle and head for the goal. This is shown in
-Figure \ `[bug1tobug2] <#bug1tobug2>`__. This modification has the bug
+:numref:`bug1tobug2`. This modification has the bug
 leave the obstacle when the obstacle becomes visible.
 
-.. raw:: latex
 
-   \centering
-
+.. _`bug1tobug2`:
 .. figure:: PlanningFigures/bug2tobug3
-   :alt: What about reducing the path even more?[bug1tobug2]
+   :width: 40%
+   :align: center
 
-   What about reducing the path even more?[bug1tobug2]
+   What about reducing the path even more?[]
 
 Bug 3
 ^^^^^
 
-[h!]
 
 A point robot with a tactile ring sensor A path to the
 :math:`q_{\text{goal}}` or a conclusion no such path exists. Turn Left
@@ -347,25 +346,21 @@ many of the same types of problems as Bug 2 suffers from and get trapped
 in the same types of domains. The advantage often is the possible use of
 direct routes which can shorten travel distances.
 
-.. raw:: latex
-
-   \centering
-
+.. _`bug3path`:
 .. figure:: PlanningFigures/bug3
-   :alt: An example of a path using the Bug 3 algorithm.[bug3path]
+   :align: center
+   :width: width
 
-   An example of a path using the Bug 3 algorithm.[bug3path]
+   An example of a path using the Bug 3 algorithm.
 
-However, note that for Figure \ `[bugmaze] <#bugmaze>`__, Bug 2 will
+However, note that for :numref:`bugmaze`, Bug 2 will
 difficulties reaching the goal where Bug 1 and 3 succeed.
 
-.. raw:: latex
 
-   \centering
-
+.. _`bugmaze`:
 .. figure:: PlanningFigures/bugmaze
-   :alt: Trace this with the different bug algorithms: bug 1 and 3
-   succeed and bug 2 fails. [bugmaze]
+   :width: 60%
+   :align: center
 
    Trace this with the different bug algorithms: bug 1 and 3 succeed and
-   bug 2 fails. [bugmaze]
+   bug 2 fails.
