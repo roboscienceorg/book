@@ -294,8 +294,8 @@ algorithm:  :ref:`Lidar Simulation <lidarsim>`
 
    | :math:`k=0`
    | :math:`\Delta\theta = 1/(2\pi R)`
-   | for :math:`\theta=0`  to  :math:`2\pi`
-   |   for :math:`r=0` to :math:`R`
+   | **for** :math:`\theta=0`  to  :math:`2\pi`
+   |   **for** :math:`r=0` to :math:`R`
    |     i = (int) :math:`r \cos \theta`
    |     j = (int) :math:`r\sin\theta`
    |     if Map(i,j) is occupied then

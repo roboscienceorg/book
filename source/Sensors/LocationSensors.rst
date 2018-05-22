@@ -92,7 +92,8 @@ intersecting points and then proceed over all combinations:
 
 The algebra can be simplified by expanding each circle equation
 
-.. math:: x^2 - 2a_ix + a_i^2 + y^2 - 2b_iy + b_i^2 = r_i^2 , \quad x^2 - 2a_jx + a_j^2 + y^2 - 2b_jy + b_j^2 = r_j^2
+.. math:: x^2 - 2a_ix + a_i^2 + y^2 - 2b_iy + b_i^2 = r_i^2 ,
+   \quad x^2 - 2a_jx + a_j^2 + y^2 - 2b_jy + b_j^2 = r_j^2
 
 and computing a difference
 

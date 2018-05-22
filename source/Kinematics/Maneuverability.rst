@@ -233,7 +233,6 @@ DOF. A robot is said to be omnidirectional if it is holonomic and DDOF =
 
 
 .. _`fig:summaryconfigurations`:
-
 .. table:: Summary of some common configurations.
    :widths: auto
 

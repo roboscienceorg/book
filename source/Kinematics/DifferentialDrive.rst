@@ -151,7 +151,7 @@ is needed for) the model. The equations for motion then are
 
 .. math:: \dot{\xi}_I = R(\theta) J^{-1}_{1f}J_2\dot{\phi}
 
-\ where
+where
 
 .. math::
 

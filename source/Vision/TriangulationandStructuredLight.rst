@@ -64,7 +64,7 @@ Calculus, the total derivative for :math:`f(x,y,z)` :
 
 .. math:: df = \frac{\partial f}{\partial x}  dx + \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z} dz
 
-\ can be used to gain an error formula:
+can be used to gain an error formula:
 
 .. math:: E = \Delta f \approx \frac{\partial f}{\partial x} \Delta x + \frac{\partial f}{\partial y} \Delta y + \frac{\partial f}{\partial z} \Delta z .
 
@@ -135,7 +135,6 @@ Summarizing the formulas:
 
 .. math::
    :label:industrialvision
-   :caption: Industrial Vision location formulas.
 
    x = \frac{b u}{f\cot \alpha + u},  \quad
    z = \frac{b f}{f\cot \alpha + u}
@@ -145,7 +144,6 @@ What are :math:`x` and :math:`z` if b = 20cm, f = 2cm, :math:`\alpha` =
 
 .. math:: x = 20*0.7/(2\cot(60)+0.7) = 7.55 cm,
 
-\
 
 .. math::
 
@@ -184,9 +182,9 @@ pattern of light is projected onto the environment. Common patterns are
 dots, stripes and grids. A camera will view the instrumented scene and
 determine the object heights using geometry.
 
-.. _`structuredlight:
+.. _`structuredlight`:
 .. figure:: VisionFigures/structuredlight.*
    :width: 65%
    :align: center
 
-   Structured light.[]]
+   Structured light.

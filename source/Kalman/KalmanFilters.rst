@@ -25,7 +25,7 @@ Prior to the process, the variance estimate for :math:`x_{k-1}` is
 The next thing required is to merge the process prediction with the
 observation data, :math:`z_k` (scalar), this observation has quality
 :math:`\sigma_w^2`. These are fused using
-formula \ `[Eq:scalarrecursiveweighted] <#Eq:scalarrecursiveweighted>`__:
+:numref:`Eq:scalarrecursiveweighted`:
 
 .. math:: S_k = \frac{1}{\tilde{\sigma}_k^2} + \frac{1}{{\sigma}_w^2}
 
@@ -34,7 +34,6 @@ formula \ `[Eq:scalarrecursiveweighted] <#Eq:scalarrecursiveweighted>`__:
    K_{k} = \displaystyle \left[ S_{k}\sigma_{w}^2\right]^{-1} =  \left[ {\sigma}_{w}^2 \left(\frac{1}{\tilde{\sigma}_k^2} + \frac{1}{\sigma_w^2}\right) \right]^{-1}
    =  \left[ {\sigma}_{w}^2 \left(\frac{\tilde{\sigma}_k^2 + \sigma_w^2}{\tilde{\sigma}_k^2  \sigma_w^2}\right) \right]^{-1}
 
-\ 
 
 .. math:: =  \frac{\tilde{\sigma}_k^2}{\tilde{\sigma}_k^2 + \sigma_w^2}
 
@@ -111,9 +110,6 @@ pretend to run the dynamical system and get the observations.
       z[k] = x[k] + q[k-1]
       k = k+1
 
-.. raw:: latex
-
-   \centering
 
 |A. Plot of :math:`x_0`. B. Noisy observation of :math:`x_0`.| |A. Plot
 of :math:`x_0`. B. Noisy observation of :math:`x_0`.|
@@ -133,9 +129,6 @@ Using the fake observations, we can test the filter.
       pf[k] = (1-kal)*pp
       k = k+1
 
-.. raw:: latex
-
-   \centering
 
 |A. Kalman estimate of :math:`x_0`. B. Comparison of state estimate to
 real state.| |A. Kalman estimate of :math:`x_0`. B. Comparison of state
@@ -179,16 +172,16 @@ gaussian state estimator.
 Formally we have a dynamical process
 
 .. math::
+   :label: kalmanderivation1
 
-   \label{kalmanderivation1}
     x_{k+1} = F_k x_k + Gu_k + v_k
 
  where :math:`F_k` is the state transition matrix, :math:`Gu_k` is the
 input control and and observation
 
 .. math::
+   :label:  kalmanderivation2
 
-   \label{kalmanderivation2}
      z_k = Hx_k + w_k
 
  where :math:`H` is the observation matrix. The random variables
@@ -200,8 +193,8 @@ covariance models given by
 The error covariance of the estimate is
 
 .. math::
+   :label: kalmanderivation3
 
-   \label{kalmanderivation3} 
     P_k = E[e_ke_k^T] = E[(x_k - \hat{x}_k)(x_k - \hat{x}_k)^T] .
 
  The state estimate will be denoted :math:`\hat{x}_k` and the process
@@ -225,8 +218,8 @@ where :math:`Tr(P_{k|k})` is the trace of :math:`P_{k|k}`. So, we need
 an expression for :math:`P_{k|k}` in terms of the Kalman gain.
 
 We can plug in the observation,
-`[kalmanderivation1] <#kalmanderivation1>`__ into
-`[kalmanderivation4] <#kalmanderivation4>`__
+:eq:`kalmanderivation1` into
+`kalmanderivation4`
 
 .. math:: \hat{x}_k = \tilde{x}_k + K_k (Hx_k + w_k - H\tilde{x}_k)
 
@@ -343,7 +336,6 @@ Let
 
 .. math:: x = \begin{bmatrix}a \\ b\end{bmatrix}, \quad F = \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix}, \quad G = \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}, \quad H = \begin{bmatrix} 1& 0 \end{bmatrix},
 
-\ 
 
 .. math:: V = \begin{bmatrix} 0.005265&0\\0& 0.005265\end{bmatrix}, \quad W = 0.7225,\quad z_1 = 0.01
 
@@ -361,7 +353,6 @@ Process update:
    =  \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix}\begin{bmatrix} 0\\0\end{bmatrix}
    + \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}\sin (7/100)
 
-\ 
 
 .. math:: \approx \begin{bmatrix} 0.0069942847\\  0.0034971424\end{bmatrix}
 
@@ -371,21 +362,17 @@ Process covariance update:
 
 .. math:: P_{1|0} = \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix}\begin{bmatrix}0 & 0\\ 0&0\end{bmatrix} \begin{bmatrix} 0.9 &0.02 \\ -.01&0.75\end{bmatrix} +\begin{bmatrix} 0.005265&0\\0& 0.005265\end{bmatrix}
 
-\ 
-
 .. math:: = \begin{bmatrix} 0.005265&0\\0& 0.005265\end{bmatrix}.
 
 Innovation and innovation covariance:
 
 .. math:: y_1 = 0.01 - \begin{bmatrix} 1& 0 \end{bmatrix}\hat{x}_{1|0} = 0.01 - \begin{bmatrix} 1& 0 \end{bmatrix}\begin{bmatrix} 0.0069942847\\  0.0034971424\end{bmatrix}
 
-\ 
 
 .. math:: = 0.0030057153
 
 .. math:: S_1 = HP_{1|0} H^\text{T} + W = \begin{bmatrix} 1 & 0\end{bmatrix} \begin{bmatrix} 0.005265&0\\0& 0.005265\end{bmatrix}\begin{bmatrix} 1\\0\end{bmatrix} + 0.7225
 
-\ 
 
 .. math:: =0.728125
 
@@ -396,7 +383,6 @@ Kalman Gain
    K_1 = P_{1|0}H_1^\text{T}S_1^{-1} = \begin{bmatrix} 0.005265&0\\0& 0.005265\end{bmatrix}
    \begin{bmatrix} 1\\0\end{bmatrix}/0.728125
 
-\ 
 
 .. math:: = \begin{bmatrix} 0.00772532 \\ 0.0 \end{bmatrix}
 
@@ -416,11 +402,10 @@ State variable covariance:
    P_{1|1} =
      (I - K_1 H_1) P_{1|0} =  \begin{bmatrix} 0.99227468 & 0.0 \\ 0.0 & 1.0 \end{bmatrix} P_{1|0}
 
-\ 
 
 .. math::
 
-   = \begin{bmatrix} 0.005224326  &  0.0 \\ 
+   = \begin{bmatrix} 0.005224326  &  0.0 \\
      0.0  &  0.005265 \end{bmatrix}
 
 It is useful to visualize the effects of a single Kalman step. The
@@ -431,7 +416,7 @@ system we use is Let
 
 .. math:: x_0 = \begin{bmatrix} 1\\1\end{bmatrix}, \quad P_0 = \begin{bmatrix}0.01& 0\\ 0&0.001\end{bmatrix}, \quad F = \begin{bmatrix} 0.85 &-.1 \\0.02 &0.75\end{bmatrix},
 
-\ 
+
 
 .. math::
 
@@ -445,12 +430,12 @@ update. From the same starting point we run each forward with the
 process update, :math:`\hat{x}_{k|k-1}` many times to generate a
 distribution. The resulting points are different since the process
 update has noise.
-Figure \ `[fig:kalmancloudsa] <#fig:kalmancloudsa>`__\ (a) shows the
+:numref:`fig:kalmancloudsa`(a) shows the
 point cloud (in blue). This process does not have a great deal of noise
 so the cloud is tightly clustered.
-Figure \ `[fig:kalmancloudsa] <#fig:kalmancloudsa>`__\ (b) shows the
+:numref:`fig:kalmancloudsa`(b) shows the
 observation :math:`z_k`.
-Figure \ `[fig:kalmancloudsb] <#fig:kalmancloudsb>`__\ (a) shows the
+:numref:`fig:kalmancloudsb`(a) shows the
 observation update, the fusion of the observation with the state update.
 
 ::
@@ -469,44 +454,28 @@ trusted the :math:`y` process estimate and so weighted the process more
 than the observation. In the :math:`x` estimate, much more of the
 observation was used. So the resulting point cloud has lower variation
 in :math:`y` than :math:`x`.
-Figure \ `[fig:kalmancloudsb] <#fig:kalmancloudsb>`__\ (b) graphs the
+:numref:`fig:kalmancloudsb`(b) graphs the
 error ellipses for the previous point clouds. It is easier to see the
 changes from this than looking at the raw data.
 
-.. raw:: latex
-
-   \centering
-
-.. raw:: latex
-
-   \centering
 
 .. figure:: math/cloud1.pdf
    :alt: Point distribution after process update.
 
    Point distribution after process update.
 
-.. raw:: latex
-
-   \centering
 
 .. figure:: math/cloud2.pdf
    :alt: Observed point distribution.
 
    Observed point distribution.
 
-.. raw:: latex
-
-   \centering
 
 .. figure:: math/cloud3.pdf
    :alt: Final distribution after update step.
 
    Final distribution after update step.
 
-.. raw:: latex
-
-   \centering
 
 .. figure:: math/cloud4.pdf
    :alt: The standard deviation based ellipses.
@@ -542,7 +511,7 @@ into the computation for :math:`x_{k+1}`, the observation noise,
 
 .. math:: x_{k+1} = Fx_k + Gu_k + v_k
 
-\ 
+\
 
 .. math:: z_{k+1} = Hx_k + w_k
 
@@ -623,7 +592,7 @@ certainly can be changed for different applications. As above, let
 
 .. math:: x = \begin{bmatrix}a \\ b\end{bmatrix}, \quad F = \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix}, \quad G = \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}, \quad H = \begin{bmatrix} 1& 0 \end{bmatrix},
 
-\ 
+\
 
 .. math:: V = \begin{bmatrix} 0.075^2&0\\0& 0.075^2\end{bmatrix}, \quad W = 0.85^2,\quad z_1 = 0.01
 
@@ -801,7 +770,7 @@ Assume that you measure and obtain
 
    .. math::
 
-      y_k = z_1 - H\hat{x}_{1|0} = 3.8 - \begin{bmatrix} 0 & 1\end{bmatrix} 
+      y_k = z_1 - H\hat{x}_{1|0} = 3.8 - \begin{bmatrix} 0 & 1\end{bmatrix}
       \begin{bmatrix}4 \\ 4\end{bmatrix} = -.2
 
 -  The matrix :math:`S`
@@ -809,7 +778,7 @@ Assume that you measure and obtain
    .. math::
 
       S_1 = H P_{1|0} H^\text{T} + W_1
-      = \begin{bmatrix} 0 & 1\end{bmatrix} \begin{bmatrix}1.7 & 1.05 \\ 1.05 & 2.1\end{bmatrix} 
+      = \begin{bmatrix} 0 & 1\end{bmatrix} \begin{bmatrix}1.7 & 1.05 \\ 1.05 & 2.1\end{bmatrix}
       \begin{bmatrix}0 \\ 1\end{bmatrix} +0.5 = 2.6
 
 -  The matrix :math:`K` (Kalman Gain)

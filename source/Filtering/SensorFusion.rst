@@ -126,7 +126,7 @@ also gain an estimate of the variance for the estimate, :math:`\hat{x}`
 above:
 
 .. math::
-   :label: Eq:weightaveragevariance
+   :label: `Eq:weightaveragevariance`
 
    \sigma^2 =  \sum_{i=1}^n k_i^2\sigma_i^2 =  \sum_{i=1}^n\left( \frac{1}{\sigma_i^2} \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}\right)^2 \sigma_i^2 $$ $$=  \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-2} \sum_{i=1}^n\left( \frac{1}{\sigma_i^2} \right) =  \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}
 
@@ -183,15 +183,15 @@ The normal curves for the three sensors are
 
 .. math:: P_i(x|\mu, \sigma) = \displaystyle\frac{1}{\sigma_i\sqrt{2\pi}}\, e^{\displaystyle-\frac{(x-\mu_i)^2}{2\sigma_i^2}}
 
-and are given in Figure \ `[normalcurves] <#normalcurves>`__.
+and are given in :numref:`normalcurves`.
 
-
+.. _`normalcurves`:
 .. figure:: FilteringFigures/fusiondemo1.*
    :width: 50%
    :align: center
 
    The normal curves for the three sensors. Sensor A is shown in red,
-   sensor B in green and sensor C in blue.[normalcurves]
+   sensor B in green and sensor C in blue.
 
 Assume the experimental setup was such that the true measurement was
 2.0. The difference between the true measurement and the sensor average
@@ -207,13 +207,13 @@ measurement value:
     y shift (add) =  0.140376647675
     z shift (add) =  -0.0420388951565
 
-
+.. _`Fig:shiftednormalcurves`:
 .. figure:: FilteringFigures/fusiondemo2.*
    :width: 50%
    :align: center
 
-   The shifted curves for the three sensors. [Sensor A is shown in red,
-   sensor B in green and sensor C in blue.][Fig:shiftednormalcurves]
+   The shifted curves for the three sensors. Sensor A is shown in red,
+   sensor B in green and sensor C in blue.
 
 Once you have the standard deviations, we can perform a single
 measurement using the three sensor and then merge the three into a
@@ -279,9 +279,6 @@ Assume you have two sensors, one good one and one that is no accurate at
 all. Does it really make sense to always merge them? Seems like the
 better sensor will always produce a more accurate measurement.
 
-.. raw:: latex
-
-   \normalfont
 
 Given two sensors, does it always make sense to combine their
 measurements? Assume that you have two variances:
@@ -445,9 +442,7 @@ You have now seen two important aspects to the Kalman Filter. The
 concept of sensor fusion, data from different distributions, and the
 concept of recursive filtering.
 
-.. raw:: latex
 
-   \normalfont
 
 Assume that you get successive measurements from three sensors which are
 already corrected for deterministic errors. The data is
@@ -586,7 +581,7 @@ which is
 
 .. math:: \hat{x} = \left(H^TH\right)^{-1} H^T z.
 
-\ The difference between the estimate and the actual value
+The difference between the estimate and the actual value
 
 .. math::
 
@@ -644,7 +639,7 @@ innerproduct:
 
 .. math:: x^Ty = \sum_i x_iy_i.
 
-\ If the inner product is weighted:
+If the inner product is weighted:
 
 .. math:: x^Ty = \sum_i x_i y_i q_i = x^T Q y
 
@@ -981,7 +976,7 @@ datasets. The model is :math:`y = a_1x + a_0`. Application of the data
 set and we have an overconstrained system of equations. Using the left
 pseudoinverse as before we can determine :math:`a_1, a_0`. We may get
 something like :math:`a_1=2.2231`, :math:`a_0 =  1.0124`, see
-Figure \ `[fig:LSnoiseReduction] <#fig:LSnoiseReduction>`__ for data and
+:numref:`fig:LSnoiseReduction` for data and
 plot. How would this be a filter? You can project points onto the line
 via the line projection formula found in calculus: :math:`a = a_1`,
 :math:`b = -1.0`, :math:`c = a_0`,
@@ -995,22 +990,22 @@ via the line projection formula found in calculus: :math:`a = a_1`,
    \end{matrix}
 
 The application of this as a filter is shown in
-Figure \ `[fig:LSnoiseReductionO] <#fig:LSnoiseReductionO>`__.
+:numref:`fig:LSnoiseReductionO`.
 
-
+.. _`fig:LSnoiseReduction`:
 .. figure:: FilteringFigures/LSnoiseReduction.*
    :width: 50%
    :align: center
 
-   [fig:LSnoiseReduction]Dataset and least square fit. The data is in
+   Dataset and least square fit. The data is in
    red, the curve fit is the solid blue line and the projection of the
    data is the blue dots.
 
-
+.. _`fig:LSnoiseReductionO`:
 .. figure:: FilteringFigures/LSnoiseReductionO.*
    :width: 50%
    :align: center
 
-   [fig:LSnoiseReductionO]Projecting data onto the line as a filter.
+   Projecting data onto the line as a filter.
    Green dots are new data, the curve fit is the solid blue line and
    blue dots are their projections.

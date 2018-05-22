@@ -73,21 +73,19 @@ depth first and greedy search approachs to more general domains.
   :math:`{\cal W} \subset B_r(x) \equiv \{ y \in \RR^n | d(x,y) < r\}`
 | for some :math:`0 < r < \infty`.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: path/obstacle
-   :alt: The bot’s direction and the obstacle. How does the bot arrive
-   at the desired destination? [bug_obstacle]
+.. _`bug_obstacle`:
+.. figure:: PlanningFigures/obstacle.*
+   :width: 40%
+   :align: center
 
    The bot’s direction and the obstacle. How does the bot arrive at the
-   desired destination? [bug_obstacle]
+   desired destination?
 
 We will make several assumptions for this section:
 
--  | The robot is a single point.
-   | Thus we can ignore the boundary-obstacle intersection problem.
+-  The robot is a single point.
+   Thus we can ignore the boundary-obstacle intersection problem.
 
 -  The robot is able to detect an obstacle by touching it.
 
@@ -178,53 +176,44 @@ point on the boundary to the goal, but does not mean the line of sight
 
 Bug 1 completely investigates each obstacle. It is exhaustive in terms
 of the boundary search. By looking at the paths in
-Figure \ `[bug1path] <#bug1path>`__, it is appears that Bug 1 is not the
+:numref:`bug1path`, it is appears that Bug 1 is not the
 most efficient path planner. It does not, nor does it claim to, find the
 shortest valid path from the start to the finish. Not all problems are
 even solvable. The planning problem shown in
-Figure \ `[unreachable] <#unreachable>`__ does not have a solution, so
+:numref:`unreachable` does not have a solution, so
 Bug 1 will exit without success on this one.
 
-.. raw:: latex
+.. _`bug1path`:
+.. figure:: PlanningFigures/bug1.*
+   :width: = 50%
+   :align: center
 
-   \centering
+   An example of a path using the Bug 1 algorithm.
 
-.. figure:: path/bug1
-   :alt: An example of a path using the Bug 1 algorithm.[bug1path]
+.. _`unreachable`:
+.. figure:: PlanningFigures/bug1_a.*
+   :align: center
 
-   An example of a path using the Bug 1 algorithm.[bug1path]
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: path/bug1_a
-   :alt: An example of an unreachable goal.[unreachable]
-
-   An example of an unreachable goal.[unreachable]
+   An example of an unreachable goal.
 
 Bug 2
 ^^^^^
 
 The path that Bug 1 takes is clearly not the shortest path from start to
-goal, as shown in Figure \ `[bug12bug2] <#bug12bug2>`__. The first thing
+goal, as shown in :numref:`bug12bug2`. The first thing
 you might ask, is “why go all the way around the obstacle"? Once you go
 around the obstacle and you can resume your original path. Define the
 line between the start point and the goal point as the :math:`m`-line
 (motion to goal line).
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: path/bug1tobug2
-   :alt: Shortening the path by eliminating the circum-navigation used
-   in Bug1. Thus we no longer have an exhaustive search process.
-   [bug12bug2]
+.. _`bug12bug2`:
+.. figure:: PlanningFigures/bug1tobug2.*
+   :width: 40%
+   :align: center
 
    Shortening the path by eliminating the circum-navigation used in
    Bug1. Thus we no longer have an exhaustive search process.
-   [bug12bug2]
+
 
 For the Bug 2 algorithm, motion begins along the :math:`m`-line in the
 direction of the goal. When an obstacle is encountered, motion switches
@@ -243,46 +232,40 @@ A point robot with a tactile sensor A path to the
 :math:`q_{\text{goal}}` or a conclusion no such path exists. Turn Left
 (or right) Let :math:`q^L_{i+1} = m` increment :math:`i`
 
-.. raw:: latex
+.. _`bug2path`:
+.. figure:: PlanningFigures/bug2
+   :width: 50%
+   :align: center
 
-   \centering
-
-.. figure:: path/bug2
-   :alt: An example of a path using the Bug 2 algorithm.[bug2path]
-
-   An example of a path using the Bug 2 algorithm.[bug2path]
+   An example of a path using the Bug 2 algorithm.[]
 
 If free space between the start and goal are not path-wise connected,
 then we have no hope of finding a path between the two points. In other
 words, Bug2 will fail to find a path. This is shown in
-Figure \ `[unreachable2] <#unreachable2>`__.
+:numref: `unreachable2`
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: path/bug2_a
+.. figure:: PlanningFigures/bug2_a
    :alt: An example of an unreachable goal for Bug 2.[unreachable2]
 
    An example of an unreachable goal for Bug 2.[unreachable2]
 
-From Figure \ `[bug2path] <#bug2path>`__, it appears that the length of
+From :numref:`bug2path`, it appears that the length of
 Bug 2’s path would be shorter than the length of Bug 1’s path. This
 seems obvious since we don’t circumnavigate the obstacle, leaving
 roughly have of the obstacle’s perimeter untraversed.
-Figure \ `[complicatedobstacle] <#complicatedobstacle>`__ shows that Bug
+:numref:`complicatedobstacle` shows that Bug
 1 can indeed have a shorter path than Bug 2. The basic shape is given in
-Figure \ `[complicatedobstacle] <#complicatedobstacle>`__-(a). The
+:numref:`complicatedobstacle`-(a). The
 vertical obstacle can be made arbitrarily long. This means that
 traversing around it can have an arbrarily long path. Alternatively in
-Figure \ `[complicatedobstacle] <#complicatedobstacle>`__-(b), we can
+:numref:`complicatedobstacle`-(b), we can
 increase the number of vertical bars. What are the path lengths for Bug
 1 and Bug 2 when they encounter
-Figure \ `[complicatedobstacle] <#complicatedobstacle>`__-(b)?
+:numref:`complicatedobstacle`-(b)?
 
-.. raw:: latex
 
-   \centering
 
 a) |a) A more disceptive obstacle. This provides the basic obstacle
 shape and relative pose. b) Extending the difference in the obstacle
@@ -292,11 +275,8 @@ the basic obstacle shape and relative pose. b) Extending the difference
 in the obstacle shape to increase the path difference between Bug 1 and
 Bug2. [complicatedobstacle]|
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: path/complicated_obst_dim
+.. figure:: PlanningFigures/complicated_obst_dim
    :alt: Some dimensions for this obstacle. [complicatedobstacledim]
 
    Some dimensions for this obstacle. [complicatedobstacledim]
@@ -348,7 +328,7 @@ leave the obstacle when the obstacle becomes visible.
 
    \centering
 
-.. figure:: path/bug2tobug3
+.. figure:: PlanningFigures/bug2tobug3
    :alt: What about reducing the path even more?[bug1tobug2]
 
    What about reducing the path even more?[bug1tobug2]
@@ -371,7 +351,7 @@ direct routes which can shorten travel distances.
 
    \centering
 
-.. figure:: path/bug3
+.. figure:: PlanningFigures/bug3
    :alt: An example of a path using the Bug 3 algorithm.[bug3path]
 
    An example of a path using the Bug 3 algorithm.[bug3path]
@@ -383,7 +363,7 @@ difficulties reaching the goal where Bug 1 and 3 succeed.
 
    \centering
 
-.. figure:: path/bugmaze
+.. figure:: PlanningFigures/bugmaze
    :alt: Trace this with the different bug algorithms: bug 1 and 3
    succeed and bug 2 fails. [bugmaze]
 

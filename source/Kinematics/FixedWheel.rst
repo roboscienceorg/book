@@ -194,7 +194,8 @@ plane (plane orthogonal to the wheel axis) For *No Slip*:
      R(\theta)^{-1}\dot{\xi}_I
 
   \ :math:`= r\dot{\phi}\cos(\gamma)`
-| For *No Slide*:
+
+For *No Slide*:
 
   .. math::
 
@@ -202,7 +203,8 @@ plane (plane orthogonal to the wheel axis) For *No Slip*:
      \cdot R(\theta)^{-1}\dot{\xi}_I
 
   \ :math:`= r\dot{\phi}\sin(\gamma) + r_{sw}\dot{\phi}_{sw}`
-| Note that since :math:`\phi_{sw}` is free (to spin), the no slide
+
+Note that since :math:`\phi_{sw}` is free (to spin), the no slide
   condition is not a constraint in the same manner as the fixed or
   steered wheels.
 

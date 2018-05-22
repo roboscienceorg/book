@@ -15,13 +15,10 @@ aspects here. The solution to the planning problem routes from an
 initial configuration, start location and pose, to a final
 configuration, end location and pose or goal.
 
-.. raw:: latex
-
-   \centering
-   {\it The basic path planning problem refers determining a
-   path in configuration space such that the robot does not collide with
-   any obstacles and the path is consistent with the vehicle
-   constraints.  }
+The basic path planning problem refers determining a
+path in configuration space such that the robot does not collide with
+any obstacles and the path is consistent with the vehicle
+constraints.  
 
 .. toctree::
    :maxdepth: 2

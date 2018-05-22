@@ -105,7 +105,7 @@ front and rear axle velocities.
 
 Implementation of the forward kinematics is easily done and can be
 simulated for sample wheel speeds without use of the brake.
-Figure \ `[fig:DDDpath] <#fig:DDDpath>`__, shows the resulting path for
+:numref:`fig:DDDpath`, shows the resulting path for
 sample wheel inputs which demonstrate the ability to steer the craft.
 The wheel speeds for this figure are
 
@@ -174,7 +174,7 @@ However, clearly there are admissible motions, such as the case in which
 
 .. math:: \begin{array}{l} V_{A_y} = V_{B_y} = V_{C_y} = V_{D_y} = \dot{y},\\[4mm]V_{A_x} = V_{B_x} = V_{C_x} = V_{D_x} = 0, \\[4mm]\dot{\theta} = \alpha = \beta = \gamma = \delta = \dot{x} = 0.\end{array}
 
-\ In other words, a vehicle that already has forward motion could
+In other words, a vehicle that already has forward motion could
 maintain it with all brakes unlocked. Given the constraint that the
 angles must remain equal, the kinematics of the FWS robot are identical
 to those of the DDD robot as expected.

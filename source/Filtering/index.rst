@@ -2,7 +2,7 @@ Filtering and State Estimation
 ==============================
 
 Consider the two robots given in
-Figure \ `[robotsandhumans] <#robotsandhumans>`__. How should we
+:numref:`fig:robotsandhumans`. How should we
 approach designing robots to function in conjunction with humans or
 instead of humans? For example:
 
@@ -55,6 +55,7 @@ of sensing systems. There is a vast array of sensors which can sense or
 measure physical. Accuracy on sensors varies greatly with some very
 accurate and others having considerable errors.
 
+.. _`fig:robotsandhumans`:
 .. figure:: FilteringFigures/PR2.png
    :width: 40%
    :align: center
@@ -62,7 +63,7 @@ accurate and others having considerable errors.
    Examples of two robotics systems that interact with
    humans.
 
-.. not checked
+.. not checked  -  add this to the above
 .. figure:: FilteringFigures/CartBot.png
    :width: 40%
    :align: center
@@ -82,7 +83,6 @@ outside the confines of a factory.
 .. toctree::
    :maxdepth: 2
 
-   SensorNoise
    StateEstimation
    SensorFusion
    Problems
