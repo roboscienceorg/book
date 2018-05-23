@@ -155,12 +155,29 @@ behind this is, the longer the traverse from the boundary to the goal,
 the higher chance we encounter another obstacle, so we slide along the
 boundary until this distance is at a minimum.
 
-A point robot with a tactile sensor A path to the
-:math:`q_{\text{goal}}` or a conclusion no such path exists. From
-:math:`q^L_{i-1}` move toward :math:`q_{\text{goal}}` Exit Follow the
-obstacle boundary Determine the point :math:`q^L_{i}` on the perimeter
-that has the shortest distance to the goal Go to :math:`q^L_{i}`
-Conclude :math:`q_{\text{goal}}` is not reachable and exit
+.. not working
+
+.. _`alg:bug1`:
+.. rubric:: Bug 1 Algorithm :cite:`Choset:2005:PRM`
+
+   | **Input** A point robot with a tactile sensor
+   | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
+   | **while** True **do**
+   |   **repeat**
+   |     From :math:`q^L_{i-1}` move toward :math:`q_{\text{goal}}` along :math:`m`-line
+   |   **until**  :math:`q_{\text{goal}}` is reached *or*  obstacle is encountered at hit point :math:`q^H_{i}`
+   |   **if** Goal is reached **then**  Exit  **endif**
+   |   **repeat**
+   |     Follow obstacle boundary
+   |   **until** :math:`q_{\text{goal}}` is reached or :math:`q^H_{i}` is re-encountered.
+   |   Determine the point :math:`q^L_{i}` on the perimeter that has the shortest distance to the goal
+   |   Go to :math:`q^L_{i}`
+   |   **if** the robot were to move toward the goal **then**
+   |   Conclude :math:`q_{\text{goal}}` is not reachable and exit
+   |   **endif**
+   | **end while**
+
+
 
 By assumption, Bug 1 has contact sensors so will determine the obstacle
 by direct contact. The contact point will be labeled :math:`q^H_i`
@@ -228,16 +245,16 @@ it proceeds along the :math:`m`-line towards the goal or the next
 obstacle. If the bug cannot depart, then conclude that there is no path
 to the goal.
 
-A point robot with a tactile sensor A path to the
-:math:`q_{\text{goal}}` or a conclusion no such path exists. Turn Left
-(or right) Let :math:`q^L_{i+1} = m` increment :math:`i`
+
+
+
 
 .. _`bug2path`:
 .. figure:: PlanningFigures/bug2
    :width: 50%
    :align: center
 
-   An example of a path using the Bug 2 algorithm.[]
+   An example of a path using the Bug 2 algorithm.
 
 If free space between the start and goal are not path-wise connected,
 then we have no hope of finding a path between the two points. In other
@@ -245,11 +262,11 @@ words, Bug2 will fail to find a path. This is shown in
 :numref: `unreachable2`
 
 
-
+.. _`unreachable2`:
 .. figure:: PlanningFigures/bug2_a
-   :alt: An example of an unreachable goal for Bug 2.[unreachable2]
+   :width: 50%
 
-   An example of an unreachable goal for Bug 2.[unreachable2]
+   An example of an unreachable goal for Bug 2.
 
 From :numref:`bug2path`, it appears that the length of
 Bug 2’s path would be shorter than the length of Bug 1’s path. This
@@ -289,9 +306,12 @@ seem real. The path for Bug 1 is given in
 Figure \ `[bug1vsbug2] <#bug1vsbug2>`__-(a) and the path for Bug 2 is
 given in Figure \ `[bug1vsbug2] <#bug1vsbug2>`__-(b).
 
-.. raw:: latex
+.. _`complicatedobstacledim`:
+.. figure:: PlanningFigures/complicated_obst_dim
+   :width: 50%
+   :align: center
 
-   \centering
+   Some dimensions for this obstacle.
 
 | a) |Bug1 can outperform Bug2. [bug1vsbug2]|
 | b) |Bug1 can outperform Bug2. [bug1vsbug2]|
