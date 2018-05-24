@@ -98,7 +98,7 @@ Steering), then your final orientation depends on your path. If you
 drive straight then your final orientation is in line with the line
 between the start and end points. However, you could have made a large
 detour and ended up at another
-orientation as shown in Figure :numref:`fig:dependsonpath`.
+orientation as shown in  :numref:`fig:dependsonpath`.
 
 .. _`fig:dependsonpath`:
 .. figure:: TermsFigures/dependsonpath.*
@@ -240,7 +240,7 @@ the expression (constraint) does not have a holonomic representation.
 
    .. math:: x_1^2 + x_2^2 + x_3^2 - 2t = 0
 
-   \ which means this is a holonomic constraint.
+   which means this is a holonomic constraint.
 
 #. The constraint :math:`x_1 \dot{x}_1 + \dot{x}_1 \dot{x}_2 = 0`? We
    see that the velocity terms are not expressed linearly so this is not

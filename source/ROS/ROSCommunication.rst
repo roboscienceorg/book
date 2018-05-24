@@ -5,7 +5,7 @@ OSRF provides tutorials on ROS, http://wiki.ros.org/ROS/Tutorials. Some
 of that material is repeated here and much greater detail can be found
 in the texts referenced earlier. After installing ROS, you need to setup
 the environment, create and build a basic ROS package, see
-Figure :numref:`fig:ros_install`. These commands are
+:numref:`fig:ros_install`. These commands are
 covered in the Beginner Level steps 1, 3, 4 (in detail). Our goal for
 this section is to illustrate basic ROS communications which requires
 some infrastructure. We will return to the administrative side of ROS
@@ -223,7 +223,7 @@ graph and the topics are the edges. ROS can generate this for you using:
    The graph of nodes and topics for the current ROS
    session.
 
-Figure :numref:`fig:rosgraph` shows the resulting graph.
+ :numref:`fig:rosgraph` shows the resulting graph.
 ROS’s Publish/Subscribe architecture is a many-to-many communication
 protocol. This means that a publisher can talk to many different
 subscribers. Multiple publishers can be on a single topic. It can get
@@ -366,8 +366,8 @@ worry about this when we were running in the interpreter since it was
 running an event loop (waiting for our input). So we need to have
 something to keep the process going. A simple open loop has been added
 to the publisher for the demonstration. On the subscriber side, we also
-need a way to keep the process running. ROS provides a handy command
-``rospy.spin()`` which is an infinite loop and waits for an event like a
+need a way to keep the process running. ROS provides a handy command ``rospy.spin()``
+which is an infinite loop and waits for an event like a
 message published on a topic.
 
 Based on the couple of modifications above, the simple publisher and
@@ -599,8 +599,7 @@ in both scalar and array form as well as some specialized messages for
 sending common data blocks such as position and pose updates. When it is
 possible, one can often get better performance out of sending arrays.
 This next example demonstrates how to send arrays. For this example we
-will send a block of 32bit integers which is the datatype
-``Int32MultiArray``.
+will send a block of 32bit integers which is the datatype ``Int32MultiArray``.
 
 ::
 

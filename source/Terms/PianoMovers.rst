@@ -5,7 +5,7 @@ Assume you want to route an object with a complicated shape through a
 tight sequence of corridors. Routing a complex shape through a narrow
 passage is often referred to as the :index:`piano movers problem`. Take a simple
 example, move the linear robot through the two blocks,
-Figure :numref:`robotmustrotate`. It is clear to the
+:numref:`robotmustrotate`. It is clear to the
 human what has to happen. The robot must rotate. For a holonomic robot,
 this simply means the controller issues a rotation command while
 traveling to the corridor. For a non-holonomic robot, the control system
@@ -29,7 +29,7 @@ fit through a narrow opening. [#f3]_   This introduces a new aspect to
 routing, that of reconfiguration of the robot. Examine a simple
 reconfiguration which is simply a change in orientation. As we saw
 above, each rotation of the robot induces a different configuration
-space. Figure :numref:`robotrotation` shows the idea for
+space. :numref:`robotrotation` shows the idea for
 three different rotation angles, there are three different configuration
 obstacle maps.
 
@@ -48,7 +48,7 @@ rotation angle for the robot - the configuration space is three
 dimensional. To restate, the configuration space includes all of the
 configuration variables :math:`(x,y, \theta)` is now a three dimensional
 configuration space which is shown in
-Figure :numref:`robotrotation3D`.   So, although the
+:numref:`robotrotation3D`.   So, although the
 workspace is two dimensional, the configuration space is three
 dimensional and are different objects.
 
@@ -77,7 +77,7 @@ The construction of configuration space then is built like slices in a
 3D printer. Routing or path planning must be done in the full
 configuration space. For the current example, we must route in 3D which
 will translate to position and orientation routing in the workspace,
-Figure :numref:`obst4`. Path planning or motion planning is
+:numref:`obst4`. Path planning or motion planning is
 addressed in Planning Chapter.
 
 .. _`obst4`:
@@ -101,9 +101,9 @@ to touch an object and from that perspective little inflation is
 required. However the base link of the arm might be very wide and does
 affect the useable workspace. A simple obstacle inflation approach will
 not work with manipulators. The reason is that how you travel affects
-your reach. Figure :numref:`Fig:pathmatters` shows how
+your reach.  :numref:`Fig:pathmatters` shows how
 the path matters to access. A more situation can be found in
-Figure :numref:`Fig:nopaththrough`. Even though the
+:numref:`Fig:nopaththrough`. Even though the
 articulator is small enough to pass through the gap, it cannot due to
 the other physical restrictions.
 

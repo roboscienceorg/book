@@ -234,17 +234,18 @@ The Delta configuration is not just found in *Pick and Place* machines
 but has also become popular with the 3D printing community. This style
 of printer is fast and accurate. Just to get started, we look at a two
 dimensional analog shown in
-Figure :numref:`Fig:paralleltwolink`. The top (red)
+:numref:`Fig:paralleltwolink`. The top (red)
 is fixed and is of length :math:`L_0`. The two links on either side
 shown in dark blue are connected by servos (in green). These links are
 of length :math:`L_1`. The angles are measured from the dotted line (as
 0 degrees) to straight down (90 degrees), see
-Figure :numref:`Fig:paralleltwolink2`. At the
+:numref:`Fig:paralleltwolink2`. At the
 other end of the dark blue links is a free rotational joint (pivot).
 That connects the two light blue links which are joined together at the
 bottom with a rotational joint.
 
 .. Owned by Roboscience
+
 .. _`Fig:paralleltwolink`:
 .. figure:: TermsFigures/2dDelta.*
    :width: 30%
@@ -271,6 +272,7 @@ Figure :numref:`Fig:paralleltwolink2`. As with the
 serial chain manipulator, this is an exercise in trigonometry.
 
 .. Owned by Roboscience
+
 .. _`Fig:paralleltwolink2`:
 .. figure:: TermsFigures/2dDeltaCombined.*
    :width: 80%
@@ -356,6 +358,7 @@ robot as well.
     plt.show()
 
 .. Owned by Roboscience
+
 .. _`Fig:paralleltwolinkWS`:
 .. figure:: TermsFigures/2dDeltaWS.*
    :width: 40%
@@ -481,7 +484,7 @@ configuration space than differential drive systems.
 For this example, we assume we have something like the differential
 drive robot. Assume that you have a simple mobile robot with two driven
 wheels and a third free unpowered wheel which can easily pivot or slide,
-Figure :numref:`fig:ddriverectangular` or :numref:`fig:ddrivecircular`.
+:numref:`fig:ddriverectangular` or :numref:`fig:ddrivecircular`.
 The drive wheels are not
 steered but can be spun at different rates which will steer the robot.
 This system is known as differential drive and is roughly analogous to
@@ -559,6 +562,7 @@ frame. Graphically :math:`\theta` the amount of rotation applied to
 :math:`X_I` to line it up with :math:`X_R`.
 
 .. Owned by Roboscience
+
 .. _`refddframe`:
 .. figure:: TermsFigures/ddframe.*
    :width: 55%
@@ -628,7 +632,7 @@ Working in instantaneous local coordinate enables us to determine the
 motion easily. We then use the rotation matrix to relate the robot
 position in the global frame. To progress in the modeling process, we
 need to know the specifics of the robot, illustrated in
-Figure :numref:`robotdimensions`.
+:numref:`robotdimensions`.
 
 -  Wheel size: :math:`D`, so the radius :math:`r = D/2`
 
@@ -639,6 +643,7 @@ Figure :numref:`robotdimensions`.
    midpoint of the axle.
 
 .. Owned by Roboscience
+
 .. _`robotdimensions`:
 .. figure:: TermsFigures/dddim.*
    :width: 25%
@@ -657,11 +662,12 @@ Next we determine the contribution of each wheel to linear forward
 motion. The relation between linear and angular velocities gives us for
 the right wheel :math:`\dot{x_1} = r\dot{\phi_1}` and for the left
 wheel: :math:`\dot{x_2} = r\dot{\phi_2}`,
-Figure :numref:`axlevelocity`. The differential speeds
+:numref:`axlevelocity`. The differential speeds
 then produce the rotational motion about the robot center and the
 average forward velocity.
 
 .. Owned by Roboscience
+
 .. _`axlevelocity`:
 .. figure:: TermsFigures/ddaxle.*
    :width: 70%
@@ -676,7 +682,7 @@ distances of the wheels to :math:`P`. To see this, we consider a couple
 of cases. If the two wheel velocities are the same, then the average
 works trivially. If the two velocities are different (but constant),
 then the motion of the robot is a circle.
-Figure :numref:`axlevelocity` shows the robot motion.
+:numref:`axlevelocity` shows the robot motion.
 Assuming the outer circle radius is :math:`\rho + 2L` with velocity
 :math:`r\dot{\phi}_1` and the inner circle is radius :math:`\rho` with
 wheel velocity :math:`r\dot{\phi}_2`, we have that the motion of a
@@ -718,6 +724,7 @@ about :math:`P` is given by adding the individual contributions:
 .. math:: \dot{\theta} =  \frac{r}{2L} (\dot{\phi_1} - \dot{\phi_2}).
 
 .. Owned by Roboscience
+
 .. _`diffdriverotation`:
 .. figure:: TermsFigures/ddaxlerot.*
    :width: 20%
@@ -774,8 +781,8 @@ frame:
    \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
    \end{array}}
 
-These are non-holonomic constraints, see
-exercise :numref:`DDisnotHolonomic`.
+These are non-holonomic constraints, this is left as a homework exercise.
+.. see exercise :numref:`DDisnotHolonomic`.
 
 Assume that you have a differential drive robot. If the drive wheel is
 20cm in diameter and turns at 10 rpm (revolutions per minute), what is
@@ -841,46 +848,17 @@ curve of motion.
 
 | Begin at :math:`(x,y,\theta) =(0,0,0)`
 
-+-----------------------------------+-----------------------------------+
-| :math:`t=0  \to 5`:               | :math:`\omega_1 = \omega_2 = 3.0` |
-|                                   | ,                                 |
-|                                   | :math:`\Rightarrow`               |
-+-----------------------------------+-----------------------------------+
-|                                   | :math:`(0,0,0)+(135,0,0)=(135,0,0 |
-|                                   | )`                                |
-+-----------------------------------+-----------------------------------+
-|  :math:`t=5  \to 6`:              | :math:`\omega_1 = - \omega_2 = 2. |
-|                                   | 0`,                               |
-|                                   | :math:`\Rightarrow`               |
-+-----------------------------------+-----------------------------------+
-|                                   | :math:`(135,0,0) + (0,0,3/2) = (1 |
-|                                   | 35,0,3/2)`                        |
-+-----------------------------------+-----------------------------------+
-|  :math:`t=6  \to 10`:             | :math:`\omega_1 = \omega_2 = 3.0` |
-|                                   | ,                                 |
-|                                   | :math:`\Rightarrow`               |
-+-----------------------------------+-----------------------------------+
-|                                   | :math:`(135,0,3/2)+(108\cos 3/2,  |
-|                                   | 108\sin 3/2, 0)`                  |
-+-----------------------------------+-----------------------------------+
-|                                   | :math:`\approx (142.6, 107.7, 1.5 |
-|                                   | )`                                |
-+-----------------------------------+-----------------------------------+
-| :math:`t=10 \to 11`:              | :math:`\omega_1 = -\omega_2 = -2. |
-|                                   | 0`,                               |
-|                                   | :math:`\Rightarrow`               |
-+-----------------------------------+-----------------------------------+
-|                                   | :math:`(142.6, 107.7, 1.5)+(0, 0, |
-|                                   |  -1.5) = (142.6, 107.7, 0)`       |
-+-----------------------------------+-----------------------------------+
-| :math:`t=11 \to 16`:              | :math:`\omega_1 =  \omega_2 = 3.0 |
-|                                   | `,                                |
-|                                   | :math:`\Rightarrow`               |
-+-----------------------------------+-----------------------------------+
-|                                   | :math:`(142.6, 107.7, 0)+(135, 0, |
-|                                   |  0) =                             |
-|                                   |  (277.6, 107.7, 0)`               |
-+-----------------------------------+-----------------------------------+
++------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :math:`t=0  \to 5`:    | :math:`\omega_1 = \omega_2 = 3.0` , :math:`\Rightarrow` :math:`(0,0,0)+(135,0,0)=(135,0,0)`                                                |
++------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+|  :math:`t=5  \to 6`:   | :math:`\omega_1 = - \omega_2 = 2.0`, :math:`\Rightarrow` :math:`(135,0,0) + (0,0,3/2) = (1 35,0,3/2)`                                      |
++------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+|  :math:`t=6  \to 10`:  | :math:`\omega_1 = \omega_2 = 3.0`, :math:`\Rightarrow` :math:`(135,0,3/2)+(108\cos 3/2,108\sin 3/2, 0)` :math:`\approx (142.6, 107.7, 1.5)`|
++------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :math:`t=10 \to 11`:   | :math:`\omega_1 = -\omega_2 = -2.0`, :math:`\Rightarrow` :math:`(142.6, 107.7, 1.5)+(0, 0, -1.5) = (142.6, 107.7, 0)`                      |
++------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| :math:`t=11 \to 16`:   | :math:`\omega_1 =  \omega_2 = 3.0`, :math:`\Rightarrow` :math:`(142.6, 107.7, 0)+(135, 0,0) =  (277.6, 107.7, 0)`                          |
++------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 You may have noticed that these equations related derivatives of the
 parameters and variables. Hence these are known as differential

@@ -60,10 +60,10 @@ The connections between actuators are known as *links*. For this work we
 will assume they are rigid and fixed in size. Connecting links are
 joints. This allows the links to move with respect to each other. There
 are two types of common joints, *rotary* and *linear* joints. The name
-essentially indicates what it does. A rotary actuator allows the
-relative angle between the links to change. A linear actuator changes
+essentially indicates what it does. A :index:`rotary actuator` allows the
+relative angle between the links to change. A :index:`linear actuator` changes
 the length of a link. Examples of rotary joints are :index:`revolute`,
-:index:`cylindrical`, :index:`helical`, :index:`universal` and `index:`spherical`
+:index:`cylindrical`, :index:`helical`, :index:`universal` and :index:`spherical`
 joints :numref:`fig:robotjoints`. Linear joints are
 also referred to as prismatic joints.
 

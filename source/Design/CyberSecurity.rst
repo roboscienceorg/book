@@ -27,7 +27,7 @@ So this means that ROS inherits any security issues found in Linux
 professional working on a distributed network of Linux systems would
 take are steps that need to be considered in any ROS based system. The
 principles are similar,
-Table :numref:`tab:securityplanning` outlines the
+:numref:`tab:securityplanning` outlines the
 steps.
 
 
@@ -84,7 +84,7 @@ Immediately after you can perform the following steps:
 #. Calculate risks
 
 Threats come in many forms. Most of them are not related to malicious
-humans, Table :numref:`tab:systemfailures`. The
+humans,  :numref:`tab:systemfailures`. The
 media will latch onto a DEF CON report about “hacking” into the
 bluetooth on a tire pressure monitor and then accessing some of the
 car’s control system. This leads the media to report that hackers can
@@ -125,7 +125,7 @@ Cost-Benefit analysis takes the risks and converts them to cost by
 estimating the cost of the threat if it occurs. In the cases you can
 estimate the cost and compare this to the cost of building a solution
 which avoids that particular threat,
-Table :numref:`tab:costbene`. Clearly some of the numbers
+:numref:`tab:costbene`. Clearly some of the numbers
 are very rough. Estimating the time and parts to build some system comes
 from experience. If multiple systems are built then the design and
 testing costs can be prorated over all of the production units leaving

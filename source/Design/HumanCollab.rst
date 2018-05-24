@@ -181,7 +181,7 @@ it by providing the robot with humanlike features. Eyes, faces and arms
 all work at a psychological level to make the machine seem more human.
 However, there are clear limits to this increasing humanization which
 can be seen in our psychological response to certain systems. Take
-Actroid, Figure :numref:`Figure:actroid`, which is
+Actroid,  :numref:`Figure:actroid`, which is
 designed to replace a human receptionist. It has been built to look as
 human as possible. The idea expressed by Japanese roboticist Masahiro
 Mori in 1970 is that the more human-like a machine appears, the more

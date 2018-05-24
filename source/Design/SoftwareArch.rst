@@ -2,7 +2,7 @@ Software Architectures
 ----------------------
 
 Consider a typical robot or the architecture of the mobile robot
-described in Figure :numref:`intro-components`. There
+described in  :numref:`intro-components`. There
 is only one computer involved in the sample system. How could
 distributed computing be part of the equation? It is plausible that
 parallel computing could be involved, but at first blush we might
@@ -22,8 +22,7 @@ this development benefits from the last half century.
 
 Think for a moment about traditional program design and execution. The
 process lives in an address space which is defined as all of the memory
-addresses for which the program resides and accesses,
-Fig :numref:`fig:address_space`.
+addresses for which the program resides and accesses, :numref:`fig:address_space`.
 
 .. _`fig:address_space`:
 .. figure:: DesignFigures/address_space.*

@@ -42,7 +42,7 @@ Large robots have become common in industrial environments and are now
 starting to penetrate other markets. Since 1971, OSHA has documented
 over 300,000 work related US fatalities. The fatality number for
 industrial robotics is much lower at roughly 30 deaths for a 30 year
-period, see Table :numref:`tab:deathstats`. [However,
+period, see  :numref:`tab:deathstats`. [However,
 this is not a fair comparison since the overall number of workers around
 industrial robots is much less that the general work population.] A good
 argument can be made that a number of robotic systems place the robot in

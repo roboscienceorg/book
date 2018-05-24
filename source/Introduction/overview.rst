@@ -174,7 +174,8 @@ forms of artificial intelligence that are making robotic agents a
 reality, and appears to be in a rapid growth phase.
 
 .. This figure is owned by RoboScience
-.. figure:: IntroductionFigures/taxon.*
+
+.. figure:: IntroductionFigures/taxon.png
    :width: 40%
    :align: center
 
@@ -302,8 +303,8 @@ Popular Hobby Robots
 
 
 
-Autonomy and SAE
-~~~~~~~~~~~~~~~~
+Autonomy
+~~~~~~~~~
 
 :index:`Autonomy` or :index:`Autonomous` appears quite often in the current press. What
 does this mean? Dictionary.com will define this as “acting independently
@@ -341,11 +342,6 @@ description of these levels can be found at the :index:`NHTSA`
 +-----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-
-
-
-Touching on the fundamental challenges
-======================================
 
 There are plenty of very interesting developments in new materials, new
 mechanical systems and electrical systems. Recently the options for
