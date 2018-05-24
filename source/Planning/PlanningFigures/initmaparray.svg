@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="16cm" viewBox="188 88 407 319" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ff0000" x="256.1" y="275.5" width="137.9" height="51.5"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="256.1" y="275.5" width="137.9" height="51.5"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="458.4" y="274" width="136" height="103"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="458.4" y="274" width="136" height="103"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="326" y="120.5" width="266" height="51.5"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="326" y="120.5" width="266" height="51.5"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="190" y="120" width="136" height="103"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="190" y="120" width="136" height="103"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="191" y1="171.6" x2="594" y2="171.6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="191" y1="223.2" x2="594" y2="223.2"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="191" y1="274.8" x2="594" y2="274.8"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="191" y1="326.4" x2="594" y2="326.4"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="258.167" y1="120" x2="258.167" y2="378"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="325.333" y1="120" x2="325.333" y2="378"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="392.5" y1="120" x2="392.5" y2="378"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="459.667" y1="120" x2="459.667" y2="378"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="526.833" y1="120" x2="526.833" y2="378"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="191" y="120" width="403" height="258"/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="281" y="403">
+    <tspan x="281" y="403">Array Storage of Image Data</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="318" y="107">
+    <tspan x="318" y="107">Initial Map Array</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="219" y="256">
+    <tspan x="219" y="256">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="218.7" y="308.1">
+    <tspan x="218.7" y="308.1">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="420" y="204">
+    <tspan x="420" y="204">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="352.1" y="204.1">
+    <tspan x="352.1" y="204.1">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="486.8" y="204.6">
+    <tspan x="486.8" y="204.6">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="551.5" y="204.1">
+    <tspan x="551.5" y="204.1">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="284.2" y="256.6">
+    <tspan x="284.2" y="256.6">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="419.9" y="308.1">
+    <tspan x="419.9" y="308.1">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="354.5" y="257.1">
+    <tspan x="354.5" y="257.1">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="419.2" y="256.2">
+    <tspan x="419.2" y="256.2">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="551.7" y="256.7">
+    <tspan x="551.7" y="256.7">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="486.4" y="254.2">
+    <tspan x="486.4" y="254.2">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="352.2" y="360.6">
+    <tspan x="352.2" y="360.6">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="421.9" y="362.7">
+    <tspan x="421.9" y="362.7">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="215.4" y="359.2">
+    <tspan x="215.4" y="359.2">0</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="286.1" y="360.7">
+    <tspan x="286.1" y="360.7">0</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="216.6" y="149.2">
+    <tspan x="216.6" y="149.2">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="284" y="148.5">
+    <tspan x="284" y="148.5">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="353" y="147.5">
+    <tspan x="353" y="147.5">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="421.5" y="148.9">
+    <tspan x="421.5" y="148.9">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="488" y="148.3">
+    <tspan x="488" y="148.3">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="553.5" y="150.7">
+    <tspan x="553.5" y="150.7">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="217.6" y="201.2">
+    <tspan x="217.6" y="201.2">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="285" y="200.5">
+    <tspan x="285" y="200.5">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="282.1" y="303.6">
+    <tspan x="282.1" y="303.6">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="349.5" y="302.9">
+    <tspan x="349.5" y="302.9">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="482.6" y="307">
+    <tspan x="482.6" y="307">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="550" y="306.3">
+    <tspan x="550" y="306.3">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="487.1" y="359.4">
+    <tspan x="487.1" y="359.4">-1</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="554.5" y="358.7">
+    <tspan x="554.5" y="358.7">-1</tspan>
+  </text>
+</svg>

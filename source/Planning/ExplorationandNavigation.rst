@@ -44,39 +44,39 @@ is the growth polynomial or exponential? These questions and more arise
 in the study of motion planning as the do in any course on algorithms.
 We will start with some relatively simple problems.
 
-The wonderful text *Principles of Robot
-Motion* :raw-latex:`\cite{Choset:2005:PRM}` begins the study of planning
+The wonderful text *Principles of Robot Motion* 
+:cite:`Choset:2005:PRM` begins the study of planning
 with three basic navigation algorithms or planners that are similar to
 the maze routines presented in the last section. These are adaptations
 of basic planners by Lumelsky and
-Stepanov :raw-latex:`\cite{lumelsky:1987}`. Using very simple models one
+Stepanov :cite:`lumelsky:1987`. Using very simple models one
 can strip out the non-essential elements and focus on the core issues
 related to path planning. Even so, as Choset points out “even a simple
 planner can present interesting and difficult issues." The bug
 algorithms of Lumelsky and Stepanov can illustrate the adaptations of
 depth first and greedy search approachs to more general domains.
 
-| Choset’s notation for the bug algorithms is standard usage and we will
-  be consistent with their choice. The real line or any one dimensional
-  quantity will be indicated by :math:`\RR`; the two dimensional plane
-  by :math:`\RR^2`; and three dimensional space will be denoted by
-  :math:`\RR^3`. Higher dimensional spaces will be denoted in the same
-  manner by :math:`\RR^n`. The robot workspace will be denoted by
-  :math:`{\cal W} \subset \RR^n` and the workspace obstacles
-  (specifically the :math:`i^{th}` obstacle) by
-  :math:`{\cal W}{\cal O}_i`. Free space is then the workspace minus the
-  obstacles: :math:`{\cal W}\setminus \bigcup_i {\cal W}{\cal O}_i`. A
-  point in space has the usual notation :math:`x = (x_1, x_2, x_3)` and
-  we distinguish vectors by using a bracket: :math:`\vec{v} \in \RR^n`
-  or more often :math:`v = [v_1, v_2, \dots , v_n]^T`. A workspace is
-  said to be bounded if
-  :math:`{\cal W} \subset B_r(x) \equiv \{ y \in \RR^n | d(x,y) < r\}`
-| for some :math:`0 < r < \infty`.
+Choset’s notation for the bug algorithms is standard usage and we will
+be consistent with their choice. The real line or any one dimensional
+quantity will be indicated by :math:`\RR`; the two dimensional plane
+by :math:`\RR^2`; and three dimensional space will be denoted by
+:math:`\RR^3`. Higher dimensional spaces will be denoted in the same
+manner by :math:`\RR^n`. The robot workspace will be denoted by
+:math:`{\cal W} \subset \RR^n` and the workspace obstacles
+(specifically the :math:`i^{th}` obstacle) by
+:math:`{\cal W}{\cal O}_i`. Free space is then the workspace minus the
+obstacles: :math:`{\cal W}\setminus \bigcup_i {\cal W}{\cal O}_i`. A
+point in space has the usual notation :math:`x = (x_1, x_2, x_3)` and
+we distinguish vectors by using a bracket: :math:`\vec{v} \in \RR^n`
+or more often :math:`v = [v_1, v_2, \dots , v_n]^T`. A workspace is
+said to be bounded if
+:math:`{\cal W} \subset B_r(x) \equiv \{ y \in \RR^n | d(x,y) < r\}`
+for some :math:`0 < r < \infty`.
 
 
 .. _`bug_obstacle`:
 .. figure:: PlanningFigures/obstacle.*
-   :width: 40%
+   :width: 70%
    :align: center
 
    The bot’s direction and the obstacle. How does the bot arrive at the
@@ -98,7 +98,7 @@ We will make several assumptions for this section:
 Planning or routing problems are often more than just navigating a path
 around obstacles that does not violate vehicle constraints. There are
 additional issues. We might require the algorithm to produce the minimal
-distance path or the minimum travel time path. [1]_ A very common
+distance path or the minimum travel time path. [#f1]_ A very common
 problem that humans must resolve is moving obstacles. Driving is a fine
 example of moving the vehicle along an obstacle free path within the
 vehicle contraints and dealing with other moving vehicles.
@@ -155,16 +155,15 @@ behind this is, the longer the traverse from the boundary to the goal,
 the higher chance we encounter another obstacle, so we slide along the
 boundary until this distance is at a minimum.
 
-.. not working
 
 .. _`alg:bug1`:
-.. rubric:: Bug 1 Algorithm :cite:`Choset:2005:PRM`
+.. topic::  The bug 1 algorithm :cite:`Choset:2005:PRM`
 
    | **Input** A point robot with a tactile sensor
    | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
    | **while** True **do**
    |   **repeat**
-   |     From :math:`q^L_{i-1}` move toward :math:`q_{\text{goal}}` along :math:`m`-line
+   |     From :math:`q^L_{i-1}` move toward :math:`q_{\text{goal}}`
    |   **until**  :math:`q_{\text{goal}}` is reached *or*  obstacle is encountered at hit point :math:`q^H_{i}`
    |   **if** Goal is reached **then**  Exit  **endif**
    |   **repeat**
@@ -176,7 +175,6 @@ boundary until this distance is at a minimum.
    |   Conclude :math:`q_{\text{goal}}` is not reachable and exit
    |   **endif**
    | **end while**
-
 
 
 By assumption, Bug 1 has contact sensors so will determine the obstacle
@@ -202,13 +200,14 @@ Bug 1 will exit without success on this one.
 
 .. _`bug1path`:
 .. figure:: PlanningFigures/bug1.*
-   :width: = 50%
+   :width: 60%
    :align: center
 
    An example of a path using the Bug 1 algorithm.
 
 .. _`unreachable`:
 .. figure:: PlanningFigures/bug1_a.*
+   :width: 60%
    :align: center
 
    An example of an unreachable goal.
@@ -225,7 +224,7 @@ line between the start point and the goal point as the :math:`m`-line
 
 .. _`bug12bug2`:
 .. figure:: PlanningFigures/bug1tobug2.*
-   :width: 40%
+   :width: 80%
    :align: center
 
    Shortening the path by eliminating the circum-navigation used in
@@ -246,11 +245,31 @@ obstacle. If the bug cannot depart, then conclude that there is no path
 to the goal.
 
 
+.. _`alg:bug2`:
+.. topic::  The bug 2 algorithm  :cite:`Choset:2005:PRM`
+
+   | **Input** A point robot with a tactile sensor
+   | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
+   | **while** True **do**
+   |   **repeat**
+   |     From :math:`q^L_{i-1}` move toward :math:`q_{\text{goal}}` along :math:`m`-line
+   |   **until**  :math:`q_{\text{goal}}` is reached *or*  obstacle is encountered at hit point :math:`q^H_{i}`
+   |   **if** Goal is reached **then**  Exit  **endif**
+   |   **repeat**
+   |     Follow obstacle boundary
+   |   **until** $q_{\text{goal}}$ is reached or :math:`q^H_{i}` is re-encountered
+   |     or m-line is re-encountered at a point m, such that :math:`m\neq q^H_{i}` (robot did not reach hit point),
+   |     and :math:`d(m,q_{\text{goal}}) < d(m, q^H_{i})` (robot is closer), and if robot moves toward goal, it would not hit obstacle.
+   |   Let $q^L_{i+1} = m$,  increment i
+   |   **if** the robot were to move toward the goal **then**
+   |     Conclude :math:`q_{\text{goal}}` is not reachable and exit
+   |   **endif**
+   | **end while**
 
 
 
 .. _`bug2path`:
-.. figure:: PlanningFigures/bug2
+.. figure:: PlanningFigures/bug2.*
    :width: 50%
    :align: center
 
@@ -263,8 +282,9 @@ words, Bug2 will fail to find a path. This is shown in
 
 
 .. _`unreachable2`:
-.. figure:: PlanningFigures/bug2_a
+.. figure:: PlanningFigures/bug2_a.*
    :width: 50%
+   :align: center
 
    An example of an unreachable goal for Bug 2.
 
@@ -293,7 +313,7 @@ in the obstacle shape to increase the path difference between Bug 1 and
 Bug2. [complicatedobstacle]|
 
 .. _`complicatedobstacledim`:
-.. figure:: PlanningFigures/complicated_obst_dim
+.. figure:: PlanningFigures/complicated_obst_dim.*
    :width: 50%
    :align: center
 
@@ -307,7 +327,7 @@ Figure \ `[bug1vsbug2] <#bug1vsbug2>`__-(a) and the path for Bug 2 is
 given in Figure \ `[bug1vsbug2] <#bug1vsbug2>`__-(b).
 
 .. _`complicatedobstacledim`:
-.. figure:: PlanningFigures/complicated_obst_dim
+.. figure:: PlanningFigures/complicated_obst_dim.*
    :width: 50%
    :align: center
 
@@ -347,7 +367,7 @@ leave the obstacle when the obstacle becomes visible.
 
 
 .. _`bug1tobug2`:
-.. figure:: PlanningFigures/bug2tobug3
+.. figure:: PlanningFigures/bug2tobug3.*
    :width: 40%
    :align: center
 
@@ -367,7 +387,7 @@ in the same types of domains. The advantage often is the possible use of
 direct routes which can shorten travel distances.
 
 .. _`bug3path`:
-.. figure:: PlanningFigures/bug3
+.. figure:: PlanningFigures/bug3.*
    :align: center
    :width: width
 
@@ -378,9 +398,14 @@ difficulties reaching the goal where Bug 1 and 3 succeed.
 
 
 .. _`bugmaze`:
-.. figure:: PlanningFigures/bugmaze
+.. figure:: PlanningFigures/bugmaze.*
    :width: 60%
    :align: center
 
    Trace this with the different bug algorithms: bug 1 and 3 succeed and
    bug 2 fails.
+
+.. rubric:: Footnotes
+
+.. [#f1] These need not be the same. For example certain paths may be traversed
+   at different speeds depending on location and path geometry.

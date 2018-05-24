@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="36cm" height="18cm" viewBox="-131 52 717 348" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffff00" cx="441.876" cy="321.2" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="441.876" cy="321.2" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 306.938 55.2 C 392.938,55.2 409.212,51 430.212,86 C 451.212,121 401.212,156 395.212,210 C 389.212,264 400.212,279 420.212,325 C 440.212,371 399.938,343.2 312.938,344.2 C 225.938,345.2 349.938,242.2 349.938,192.2 C 349.938,142.2 220.938,55.2 306.938,55.2z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 306.938 55.2 C 392.938,55.2 409.212,51 430.212,86 C 451.212,121 401.212,156 395.212,210 C 389.212,264 400.212,279 420.212,325 C 440.212,371 399.938,343.2 312.938,344.2 C 225.938,345.2 349.938,242.2 349.938,192.2 C 349.938,142.2 220.938,55.2 306.938,55.2"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="546.752" y="182.7">
+    <tspan x="546.752" y="182.7">Goal</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="431.212" y1="313" x2="547.1" y2="193.308"/>
+    <path style="fill: #000000" d="M 431.212 313 C 429.416,311.261 429.359,307.726 431.098,305.93 C 432.837,304.134 436.372,304.077 438.168,305.816 C 439.964,307.555 440.021,311.09 438.282,312.886 C 436.543,314.682 433.008,314.739 431.212,313z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 431.212 313 C 429.416,311.261 429.359,307.726 431.098,305.93 C 432.837,304.134 436.372,304.077 438.168,305.816 C 439.964,307.555 440.021,311.09 438.282,312.886 C 436.543,314.682 433.008,314.739 431.212,313"/>
+    <path style="fill: #000000" d="M 547.1 193.308 C 548.896,195.047 548.953,198.582 547.214,200.378 C 545.475,202.174 541.94,202.231 540.144,200.492 C 538.348,198.753 538.291,195.218 540.03,193.422 C 541.769,191.626 545.304,191.569 547.1,193.308z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 547.1 193.308 C 548.896,195.047 548.953,198.582 547.214,200.378 C 545.475,202.174 541.94,202.231 540.144,200.492 C 538.348,198.753 538.291,195.218 540.03,193.422 C 541.769,191.626 545.304,191.569 547.1,193.308"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="464.5" y="194.808">
+    <tspan x="464.5" y="194.808">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="475.5" y="202.808">
+    <tspan x="475.5" y="202.808">reach</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffff00" cx="-39.416" cy="347.3" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-39.416" cy="347.3" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M -100.354 53.3 C -14.354,53.3 31.646,134.3 29.646,190.3 C 27.646,246.3 -7.354,341.3 -94.354,342.3 C -181.354,343.3 -57.354,240.3 -57.354,190.3 C -57.354,140.3 -186.354,53.3 -100.354,53.3z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -100.354 53.3 C -14.354,53.3 31.646,134.3 29.646,190.3 C 27.646,246.3 -7.354,341.3 -94.354,342.3 C -181.354,343.3 -57.354,240.3 -57.354,190.3 C -57.354,140.3 -186.354,53.3 -100.354,53.3"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="139.46" y="180.8">
+    <tspan x="139.46" y="180.8">Goal</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-12.788" y1="305" x2="140.808" y2="191.408"/>
+    <path style="fill: #000000" d="M -12.788 305 C -14.2745,302.99 -13.751,299.493 -11.741,298.007 C -9.73094,296.52 -6.23438,297.044 -4.74785,299.054 C -3.26133,301.064 -3.78484,304.561 -5.79488,306.047 C -7.80492,307.534 -11.3015,307.01 -12.788,305z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -12.788 305 C -14.2745,302.99 -13.751,299.493 -11.741,298.007 C -9.73094,296.52 -6.23438,297.044 -4.74785,299.054 C -3.26133,301.064 -3.78484,304.561 -5.79488,306.047 C -7.80492,307.534 -11.3015,307.01 -12.788,305"/>
+    <path style="fill: #000000" d="M 140.808 191.408 C 142.295,193.418 141.771,196.915 139.761,198.401 C 137.751,199.888 134.254,199.364 132.768,197.354 C 131.281,195.344 131.805,191.847 133.815,190.361 C 135.825,188.874 139.321,189.398 140.808,191.408z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 140.808 191.408 C 142.295,193.418 141.771,196.915 139.761,198.401 C 137.751,199.888 134.254,199.364 132.768,197.354 C 131.281,195.344 131.805,191.847 133.815,190.361 C 135.825,188.874 139.321,189.398 140.808,191.408"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="51.208" y="209.908">
+    <tspan x="51.208" y="209.908">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="62.208" y="217.908">
+    <tspan x="62.208" y="217.908">reach</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #00ff00" points="426.212,345 424.212,331 421.212,321 413.212,307 406.212,286 440.212,319 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="426.212,345 424.212,331 421.212,321 413.212,307 406.212,286 440.212,319 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="424.212" y="327">
+    <tspan x="424.212" y="327">L</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #00ff00" points="-37.788,350 -12.788,305 -32.788,324 -43.788,332 -70.788,341 -89.788,343 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="-37.788,350 -12.788,305 -32.788,324 -43.788,332 -70.788,341 -89.788,343 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="-46.788" y="346.3">
+    <tspan x="-46.788" y="346.3">L</tspan>
+  </text>
+</svg>
