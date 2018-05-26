@@ -8,100 +8,110 @@ is encountered, the bug will switch to a boundary following mode. With a
 range sensor, there is more than one way to address the transition to
 boundary following mode which we will see. For simplicity, we assume
 that the range sensor has 360 degree infinite orientation resolution:
-:math:`\rho:  \RR^2 \times S^1 \to \RR`
+:math:`\rho:  \Bbb R^2 \times S^1 \to \Bbb R`
 
-.. math:: \rho (x,\theta) = \min_{\lambda\in [0,\infty]} d(x,x+\lambda [\cos\theta , \sin\theta ]^T), \label{LidarRangeEq}
+.. math:: \rho (x,\theta) = \min_{\lambda\in [0,\infty]} d(x,x+\lambda [\cos\theta , \sin\theta ]^T),
+   :label: LidarRangeEq
 
- such that
+such that
 
-.. math:: \quad x+\lambda [\cos\theta , \sin\theta ]^T \in \bigcup_i {\cal W}{\cal O}_i\label{ObsConstrEq}
+.. math:: \quad x+\lambda [\cos\theta , \sin\theta ]^T \in \bigcup_i {\cal W}{\cal O}_i
+   :label: ObsConstrEq
 
- and a finite range:
+and a finite range:
 
 .. math::
+   :label: lidarFiniteRange
 
    \rho_R(x,\theta) = \left\{ \begin{array}{ll} \rho(x,\theta), & \text{ if } \rho(x,\theta) < R \\
                                  \infty, & \text{ otherwise}.
-                                \end{array}\right.  \label{lidarFiniteRange}
+                                \end{array}\right.
 
-.. raw:: latex
+.. _`Fig:lidar_ray`:
+.. figure:: PlanningFigures/lidar_ray.*
+   :width: 50%
+   :align: center
 
-   \centering
+   The LIDAR ray from the location :math:`x` at the angle :math:`\theta`.
 
-.. figure:: planning/lidar_ray
-   :alt: [Fig:lidar_ray]The LIDAR ray from the location :math:`x` at the
-   angle :math:`\theta`.
-
-   [Fig:lidar_ray]The LIDAR ray from the location :math:`x` at the angle
-   :math:`\theta`.
-
-Equation \ `[LidarRangeEq] <#LidarRangeEq>`__ and
-Equation \ `[ObsConstrEq] <#ObsConstrEq>`__ find the shortest distance
+:eq:`LidarRangeEq` and
+:eq:`ObsConstrEq` find the shortest distance
 between the point :math:`x` and all of the points in the obstacle which
 intersect the ray eminating from :math:`x`. A real sensor has a finite
-range. Equation \ `[lidarFiniteRange] <#lidarFiniteRange>`__ truncates
+range. :eq:`lidarFiniteRange` truncates
 the result at some maximum range :math:`R`.
 
 The range sensor returns a polar map, meaning a function
 :math:`\rho = \rho_R(x,\theta)`. This function will be be piecewise
 continuous. Discontinuities will occur by occlusion of one object by
 another or by reaching the maximum range,
-Figure \ `[discontrange] <#discontrange>`__. Having a discrete function
+:numref:`discontrange` and :numref:`discontrangefn`. Having a discrete function
 makes finding discontinuities a bit subtle.
 
-.. raw:: latex
 
-   \centering
+.. _`discontrange`:
+.. figure:: PlanningFigures/range.*
+   :width: 40%
+   :align: center
 
-|Obstacles producing discontituities in the range map. Assume that one
-can determine discontinuities in the distance function
-:math:`\rho_R`.[discontrange]| |Obstacles producing discontituities in
-the range map. Assume that one can determine discontinuities in the
-distance function :math:`\rho_R`.[discontrange]|
+   Obstacles producing discontituities in the range map. Assume that one
+   can determine discontinuities in the distance function
+   :math:`\rho_R`.
+
+.. _`discontrangefn`:
+.. figure:: PlanningFigures/rangefunction.*
+   :width: 50%
+   :align: center
+
+   Range map for the obstacle above.
+
 
 Normally one uses
 
 .. math:: \rho_R(x,\theta_{k+1}) - \rho_R(x,\theta_k) > \delta \geq 1
 
- for some :math:`\delta` as the criterion.
+for some :math:`\delta` as the criterion.
 
-.. raw:: latex
+.. _`discontinuitypoints`:
+.. figure:: PlanningFigures/discont.*
+   :width: 35%
+   :align: center
 
-   \centering
+   Points of discontinuity: :math:`O_1`, :math:`O_2`, ..., :math:`O_n`
 
-(a) |(a) Points of discontinuity: :math:`O_1`, :math:`O_2`, ...,
-:math:`O_n`. (b) Object ambiguity. [discontinuitypoints]| (b) |(a)
-Points of discontinuity: :math:`O_1`, :math:`O_2`, ..., :math:`O_n`. (b)
-Object ambiguity. [discontinuitypoints]|
+.. _`discontinuitypoints_b`:
+.. figure:: PlanningFigures/singleVSdouble.*
+   :width: 80%
+   :align: center
+
+   Object ambiguity.
+
+
 
 Using this idea, we obtain some number of discontinuities, call them
 :math:`O_1`, :math:`O_2`, ..., :math:`O_n`. It is not possible in
 general to tell if :math:`O_1`, :math:`O_2`, ..., :math:`O_n` indicate
 boundaries of separate obstacles,
-Figure \ `[discontinuitypoints] <#discontinuitypoints>`__. Since we are
+:numref:`discontinuitypoints`. Since we are
 only concerned about obstacles that prevent us from moving to the goal,
 we will only focus on those,
-Figure \ `[discontpathblock] <#discontpathblock>`__ (left).
+:numref:`discontpathblock` (left).
 
-.. raw:: latex
 
-   \centering
+.. _`discontpathblock`:
+.. figure:: PlanningFigures/discont2.*
+   :width: 80%
+   :align: center
 
-.. figure:: path/discont2
-   :alt: Sensing an object does not mean it is a problem, only if it
-   blocks the path. The robot will then move toward the discontinuity
-   point :math:`O_i` which most decreases the distance
-   :math:`d(x, O_i) + d(O_i,q_{\text{goal}})` [discontpathblock]
+   Sensing an object does not mean it is  a problem, only if it blocks the path.
+   The robot will then move toward the discontinuity point $O_i$ which most decreases the distance
+   :math:`d(x, O_i) + d(O_i,q_{\text{goal}})`
 
-   Sensing an object does not mean it is a problem, only if it blocks
-   the path. The robot will then move toward the discontinuity point
-   :math:`O_i` which most decreases the distance
-   :math:`d(x, O_i) + d(O_i,q_{\text{goal}})` [discontpathblock]
 
 If the goal is obscured by an obstacle, then the robot moves towards the
 :math:`O_i` that minimizes the heuristic distance:
 :math:`d(x, O_i) + d(O_i,q_{\text{goal}})`. In
-Figure \ `[discontpathblock] <#discontpathblock>`__, two variations are
+:numref:`discontpathblock`, two variations are
 shown. The middle figure shows that :math:`d(x,O_2) + d(O_2,y)` is less
 than :math:`d(x,O_1) + d(O_1,y)`, so :math:`O_2` is the first target for
 motion. In the right figure where the goal :math:`y` has moved,
@@ -117,7 +127,7 @@ discontinuity point discussed above. These two can be merged into just
 motion towards goal where goal is selected from :math:`n = \{ T, O_i\}`,
 :math:`i=1 \dots k` where :math:`T` is defined as the intersection of
 the circle of radius :math:`R` centered at :math:`x` with the line
-segment from :math:`x` to the goal, Figure \ `[defnT] <#defnT>`__.
+segment from :math:`x` to the goal, :numref:`defnT`.
 
 The robot will continue with the motion to goal until it can no longer
 decrease the heuristic distance, then it switches to boundary following.
@@ -128,33 +138,27 @@ distance :math:`d(x,n)+d(n,\text{goal})` will start to increase. If you
 are far from the boundary, you are heading roughly in the direction of
 the goal. Once close enough and with the direction strongly affected by
 the obstacle boundary, it makes sense to just switch to boundary
-following mode. Figure \ `[transitionboundary] <#transitionboundary>`__
+following mode. :numref:`transitionboundary`
 shows the three states. The left figure indicates the robot motion to
 goal in free space. In the middle figure, the robot has sensed the
 obstacle and computed that the lower boundary discontinuity is the one
 to set as the temporary goal.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: path/defnT
-   :alt: The free space point :math:`T` (left). :math:`T` and
-   :math:`O_1` (right). [defnT]
+.. _`defnT`:
+.. figure:: PlanningFigures/defnT.*
+   :width: 50%
+   :align: center
 
    The free space point :math:`T` (left). :math:`T` and :math:`O_1`
    (right). [defnT]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: path/discont4
-   :alt: Motion to goal (left), motion to boundary discontinuity point
-   (middle) and boundary following (right). [transitionboundary]
+.. _`transitionboundary`:
+.. figure:: PlanningFigures/discont4.*
+   :width: 50%
 
    Motion to goal (left), motion to boundary discontinuity point
-   (middle) and boundary following (right). [transitionboundary]
+   (middle) and boundary following (right). 
 
 We define the point :math:`M` which is the closest point on the sensed
 boundary to the goal, Figure \ `[Mdefinition] <#Mdefinition>`__. This is
@@ -378,7 +382,7 @@ The gradient of distance is given by
 
 .. math::
 
-   \nabla D(x) = \begin{bmatrix} \displaystyle \frac{\partial D(x)}{\partial x_1}\\[5mm] 
+   \nabla D(x) = \begin{bmatrix} \displaystyle \frac{\partial D(x)}{\partial x_1}\\[5mm]
    \displaystyle\frac{\partial D(x)}{\partial x_2}\end{bmatrix}
 
  The closest point by definition is the point that is a minimum of the

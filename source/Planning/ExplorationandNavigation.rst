@@ -58,19 +58,19 @@ depth first and greedy search approachs to more general domains.
 
 Choset’s notation for the bug algorithms is standard usage and we will
 be consistent with their choice. The real line or any one dimensional
-quantity will be indicated by :math:`\RR`; the two dimensional plane
-by :math:`\RR^2`; and three dimensional space will be denoted by
-:math:`\RR^3`. Higher dimensional spaces will be denoted in the same
-manner by :math:`\RR^n`. The robot workspace will be denoted by
-:math:`{\cal W} \subset \RR^n` and the workspace obstacles
+quantity will be indicated by :math:`\Bbb R`; the two dimensional plane
+by :math:`\Bbb R^2`; and three dimensional space will be denoted by
+:math:`\Bbb R^3`. Higher dimensional spaces will be denoted in the same
+manner by :math:`\Bbb R^n`. The robot workspace will be denoted by
+:math:`{\cal W} \subset \Bbb R^n` and the workspace obstacles
 (specifically the :math:`i^{th}` obstacle) by
 :math:`{\cal W}{\cal O}_i`. Free space is then the workspace minus the
 obstacles: :math:`{\cal W}\setminus \bigcup_i {\cal W}{\cal O}_i`. A
 point in space has the usual notation :math:`x = (x_1, x_2, x_3)` and
-we distinguish vectors by using a bracket: :math:`\vec{v} \in \RR^n`
+we distinguish vectors by using a bracket: :math:`\vec{v} \in \Bbb R^n`
 or more often :math:`v = [v_1, v_2, \dots , v_n]^T`. A workspace is
 said to be bounded if
-:math:`{\cal W} \subset B_r(x) \equiv \{ y \in \RR^n | d(x,y) < r\}`
+:math:`{\cal W} \subset B_r(x) \equiv \{ y \in \Bbb R^n | d(x,y) < r\}`
 for some :math:`0 < r < \infty`.
 
 
@@ -257,7 +257,7 @@ to the goal.
    |   **if** Goal is reached **then**  Exit  **endif**
    |   **repeat**
    |     Follow obstacle boundary
-   |   **until** $q_{\text{goal}}$ is reached or :math:`q^H_{i}` is re-encountered
+   |   **until** :math:`q_{\text{goal}}` is reached or :math:`q^H_{i}` is re-encountered
    |     or m-line is re-encountered at a point m, such that :math:`m\neq q^H_{i}` (robot did not reach hit point),
    |     and :math:`d(m,q_{\text{goal}}) < d(m, q^H_{i})` (robot is closer), and if robot moves toward goal, it would not hit obstacle.
    |   Let $q^L_{i+1} = m$,  increment i
@@ -278,7 +278,7 @@ to the goal.
 If free space between the start and goal are not path-wise connected,
 then we have no hope of finding a path between the two points. In other
 words, Bug2 will fail to find a path. This is shown in
-:numref: `unreachable2`
+:numref:`unreachable2`.
 
 
 .. _`unreachable2`:
@@ -292,39 +292,37 @@ From :numref:`bug2path`, it appears that the length of
 Bug 2’s path would be shorter than the length of Bug 1’s path. This
 seems obvious since we don’t circumnavigate the obstacle, leaving
 roughly have of the obstacle’s perimeter untraversed.
-:numref:`complicatedobstacle` shows that Bug
+:numref:`complicatedobstacle_a` and :numref:`complicatedobstacle_b` shows that Bug
 1 can indeed have a shorter path than Bug 2. The basic shape is given in
-:numref:`complicatedobstacle`-(a). The
+:numref:`complicatedobstacle_a`. The
 vertical obstacle can be made arbitrarily long. This means that
 traversing around it can have an arbrarily long path. Alternatively in
-:numref:`complicatedobstacle`-(b), we can
+:numref:`complicatedobstacle_b`, we can
 increase the number of vertical bars. What are the path lengths for Bug
 1 and Bug 2 when they encounter
-:numref:`complicatedobstacle`-(b)?
+:numref:`complicatedobstacle_b`?
 
-
-
-a) |a) A more disceptive obstacle. This provides the basic obstacle
-shape and relative pose. b) Extending the difference in the obstacle
-shape to increase the path difference between Bug 1 and Bug2.
-[complicatedobstacle]| b) |a) A more disceptive obstacle. This provides
-the basic obstacle shape and relative pose. b) Extending the difference
-in the obstacle shape to increase the path difference between Bug 1 and
-Bug2. [complicatedobstacle]|
-
-.. _`complicatedobstacledim`:
-.. figure:: PlanningFigures/complicated_obst_dim.*
-   :width: 50%
+.. _`complicatedobstacle_a`:
+.. figure:: PlanningFigures/complicated_obst0.*
+   :width: 15%
    :align: center
 
-   Some dimensions for this obstacle.
+   A more disceptive obstacle.  This provides the basic obstacle shape and relative pose.
+
+.. _`complicatedobstacle_b`:
+.. figure:: PlanningFigures/complicated_obst.*
+   :width: 45%
+   :align: center
+
+   Extending the difference in the obstacle shape to increase the path difference between Bug 1 and Bug2.
+
 
 To make the analysis easier, actual numbers are used,
-Figure \ `[complicatedobstacledim] <#complicatedobstacledim>`__. The
+:numref:`complicatedobstacledim`. The
 units are not really important, but included for those who like it to
 seem real. The path for Bug 1 is given in
-Figure \ `[bug1vsbug2] <#bug1vsbug2>`__-(a) and the path for Bug 2 is
-given in Figure \ `[bug1vsbug2] <#bug1vsbug2>`__-(b).
+:numref:`bug1vsbug2_a` and the path for Bug 2 is
+given in :numref:`bug1vsbug2_b`.
 
 .. _`complicatedobstacledim`:
 .. figure:: PlanningFigures/complicated_obst_dim.*
@@ -333,8 +331,23 @@ given in Figure \ `[bug1vsbug2] <#bug1vsbug2>`__-(b).
 
    Some dimensions for this obstacle.
 
-| a) |Bug1 can outperform Bug2. [bug1vsbug2]|
-| b) |Bug1 can outperform Bug2. [bug1vsbug2]|
+.. _`bug1vsbug2_a`:
+.. figure:: PlanningFigures/complicated_obst_b1.*
+   :width: 50%
+   :align: center
+
+   Bug2's path.
+
+
+.. _`bug1vsbug2_b`:
+.. figure:: PlanningFigures/complicated_obst_b2.*
+   :width: 50%
+   :align: center
+
+   Bug1 can outperform Bug2.
+
+
+
 
 Following Bug 1 we accumulate the distance is 76. [2]_ For Bug 2, we
 obtain the distance is :math:`7.5+26.5n` where :math:`n` is the number
@@ -371,15 +384,35 @@ leave the obstacle when the obstacle becomes visible.
    :width: 40%
    :align: center
 
-   What about reducing the path even more?[]
+   What about reducing the path even more?
 
 Bug 3
 ^^^^^
 
 
-A point robot with a tactile ring sensor A path to the
-:math:`q_{\text{goal}}` or a conclusion no such path exists. Turn Left
-(or right) Let :math:`q^L_{i+1} = m` increment :math:`i`
+.. _`alg:bug3`:
+.. topic::  The bug 3 algorithm
+
+   | **Input** A point robot with a tactile sensor
+   | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
+   | **while** True **do**
+   |   **repeat**
+   |     From :math:`q^L_{i-1}` move toward :math:`q_{\text{goal}}` along :math:`m`-line
+   |   **until**  :math:`q_{\text{goal}}` is reached *or*  obstacle is encountered at hit point :math:`q^H_{i}`
+   |   **if** Goal is reached **then**  Exit  **endif**
+   |   Turn left (or right)
+   |   **repeat**
+   |     Follow obstacle boundary
+   |   **until** :math:`q_{\text{goal}}` is reached or :math:`q^H_{i}` is re-encountered or
+   |   tangent line at a point m points towards the goal, such that :math:`m\neq q^H_{i}` (robot did not reach hit point),
+   |   and :math:`d(m,q_{\text{goal}}) < d(m, q^H_{i})` (robot is closer), and if robot moves toward goal, it would not hit obstacle.
+   |   Let $q^L_{i+1} = m$,  increment i
+   |   **if** the robot were to move toward the goal **then**
+   |     Conclude :math:`q_{\text{goal}}` is not reachable and exit
+   |   **endif**
+   | **end while**
+
+
 
 Bug 3 appears to effectively equivalent to Bug 2. It will suffer from
 many of the same types of problems as Bug 2 suffers from and get trapped
@@ -389,7 +422,7 @@ direct routes which can shorten travel distances.
 .. _`bug3path`:
 .. figure:: PlanningFigures/bug3.*
    :align: center
-   :width: width
+   :width: 50%
 
    An example of a path using the Bug 3 algorithm.
 
