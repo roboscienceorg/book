@@ -146,7 +146,7 @@ to set as the temporary goal.
 
 .. _`defnT`:
 .. figure:: PlanningFigures/defnT.*
-   :width: 50%
+   :width: 70%
    :align: center
 
    The free space point :math:`T` (left). :math:`T` and :math:`O_1`
@@ -155,115 +155,96 @@ to set as the temporary goal.
 
 .. _`transitionboundary`:
 .. figure:: PlanningFigures/discont4.*
-   :width: 50%
+   :width: 85%
+   :align: center
 
    Motion to goal (left), motion to boundary discontinuity point
-   (middle) and boundary following (right). 
+   (middle) and boundary following (right).
 
 We define the point :math:`M` which is the closest point on the sensed
-boundary to the goal, Figure \ `[Mdefinition] <#Mdefinition>`__. This is
+boundary to the goal, :numref:`Mdefinition`. This is
 used in the computation of the departure point.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: path/discont3
-   :alt: M - the closest point on the sensed boundary to the goal. Can
-   be one of the discontinuity points from the ranger or simply a
-   boundary point. [Mdefinition]
+.. _`Mdefinition`:
+.. figure:: PlanningFigures/discont3.*
+   :width: 70%
+   :align: center
 
    M - the closest point on the sensed boundary to the goal. Can be one
    of the discontinuity points from the ranger or simply a boundary
-   point. [Mdefinition]
+   point.
 
 Boundary following mode can get you around the obstacle. The next
 question is when to release and return to motion to goal (or to the next
 obstacle). We define :math:`d_{\text{followed}}` as the shortest
 distance between boundary that has been sensed and the goal,
-Figure \ `[Fig:Dfollowed] <#Fig:Dfollowed>`__.
+:numref:`Fig:Dfollowed`.
 
-.. raw:: latex
+.. _`Fig:Dfollowed`:
+.. figure:: PlanningFigures/d_followed.*
+   :width: 70%
+   :align: center
 
-   \centering
-
-.. figure:: planning/d_followed
-   :alt: The value :math:`d_{\text{followed}}`. [Fig:Dfollowed]
-
-   The value :math:`d_{\text{followed}}`. [Fig:Dfollowed]
+   The value :math:`d_{\text{followed}}`.
 
 Define :math:`\Lambda` as all of the points between the robot, :math:`x`
 and the boundary of the obstacle, :math:`\partial WO` which are visible
 to the robot and within range :math:`R` (the range of the sensor).
 Precisely this is
 :math:`\Lambda = \{ y \in \partial WO: \lambda x + (1-\lambda )y \in Q_{\mbox{free}} \quad \forall \lambda \in [0,1]`,
-Figure \ `[Fig:Dlambda] <#Fig:Dlambda>`__. We define
+:numref:`Fig:Dlambda`.  We define
 :math:`d_{\text{reach}}` as the minimum distance point in
 :math:`\Lambda` to the goal:
 :math:`d_{\mbox{reach}} = \mbox{min}_{c\in\Lambda} d(c,q_{\mbox{goal}})`.
-See
-Figures \ `[Fig:Dreach] <#Fig:Dreach>`__, \ `[Fig:Dreach2] <#Fig:Dreach2>`__
+See :numref:`Fig:Dreach`, :numref:`Fig:Dreach2`
 for a description of this distance.
 
-.. raw:: latex
+.. _`Fig:Dlambda`:
+.. figure:: PlanningFigures/d_lambda.*
+   :width: 30%
+   :align: center
 
-   \centering
+   The region :math:`\Lambda`.
 
-.. figure:: planning/d_lambda
-   :alt: The region :math:`\Lambda`.[Fig:Dlambda]
+.. _`Fig:Dreach`:
+.. figure:: PlanningFigures/d_reach.*
+   :width: 80%
+   :align: center
 
-   The region :math:`\Lambda`.[Fig:Dlambda]
+   The value :math:`d_{\text{reach}}`.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: planning/d_reach
-   :alt: The value :math:`d_{\text{reach}}`.[Fig:Dreach]
-
-   The value :math:`d_{\text{reach}}`.[Fig:Dreach]
-
-.. raw:: latex
-
-   \centering
-
-.. figure:: planning/d_reach2
-   :alt: The value :math:`d_{\text{reach}}` with a different
-   domain.[Fig:Dreach2]
+.. _`Fig:Dreach2`:
+.. figure:: PlanningFigures/d_reach2.*
+   :width: 80%
+   :align: center
 
    The value :math:`d_{\text{reach}}` with a different
-   domain.[Fig:Dreach2]
+   domain.
 
 These values are continuously updated as the robot traverses the
 boundary. When :math:`d_{\text{reach}} < d_{\text{followed}}` then we
 terminate the boundary following and return to motion to goal.
-Figure \ `[Fig:DreachFollowed2] <#Fig:DreachFollowed2>`__ shows when the
+:numref:`Fig:DreachFollowed2` shows when the
 values become equal.
-Figure \ `[Fig:DreachFollowed3] <#Fig:DreachFollowed3>`__ shows when the
+:numref:`Fig:DreachFollowed3` shows when the
 boundary following termination condition is satisfied. The planner is
-summarized in Algorithm \ `[TangentBugAlg] <#TangentBugAlg>`__.
+summarized in Algorithm [TangentBugAlg]_.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: planning/d_reach_followed2
-   :alt: The process and location where
-   :math:`d_{\text{reach}} = d_{\text{followed}}` .[Fig:DreachFollowed2]
+.. _`Fig:DreachFollowed2`:
+.. figure:: PlanningFigures/d_reach_followed2.*
+   :width: 80%
+   :align: center
 
    The process and location where
-   :math:`d_{\text{reach}} = d_{\text{followed}}` .[Fig:DreachFollowed2]
+   :math:`d_{\text{reach}} = d_{\text{followed}}`.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: planning/d_reach_followed3
-   :alt: The process and location where
-   :math:`d_{\text{reach}} < d_{\text{followed}}`.[Fig:DreachFollowed3]
+.. _`Fig:DreachFollowed3`:
+.. figure:: PlanningFigures/d_reach_followed3.*
+   :width: 80%
+   :align: center
 
    The process and location where
-   :math:`d_{\text{reach}} < d_{\text{followed}}`.[Fig:DreachFollowed3]
+   :math:`d_{\text{reach}} < d_{\text{followed}}`.
 
 The bug algorithms are biased towards motion along the original direct
 route. This last algorithm stayed in boundary following mode longer than
@@ -272,30 +253,42 @@ range of the range sensor and is thus “tunable”. An interesting
 experiment would modify the Tangent Bug to have the boundary exit
 behavior the same as Bug 3 and compare paths.
 
-A point robot with a range sensor. A path to the :math:`q_{\text{goal}}`
-or a conclusion no such path exists. Choose a boundary following
-direction which continues in the same direction as the most recent
-motion-to-goal direction. Continuously update :math:`d_\text{reached}`,
-:math:`d_\text{followed}` and :math:`\{O_i\}`. Continuously moves toward
-:math:`n\in O_i` that is in the chosen boundary direction.
 
-.. raw:: latex
+.. _`alg:tangentbug`:
+.. topic::  The tangent bug algorithm
 
-   \centering
+   | **Input** A point robot with a tactile sensor
+   | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
+   | **while** True **do**
+   |   **repeat**
+   |     Continuously move from the point :math:`n\in \{ T, O_i\}` which minimizes :eq:`d(x,n)+d(n,q_{\text{goal}})`.
+   |   **until**  :math:`q_{\text{goal}}` is reached or the direction that minimizes :math:`d(x,n)+d(n,q_{\text{goal}})` begins to increase :math:`d(n,q_{\text{goal}})`
+   |   **if** Goal is reached **then**  Exit  **endif**
+   |   Choose a boundary following direction which continues in the same direction as the most recent motion-to-goal direction.
+   |   **repeat**
+   |     Continuously update :math:`d_\text{reached}`, :math:`d_\text{followed}` and :math:`\{O_i\}`.
+   |     Continuously moves toward :math:`n\in O_i` that is in the chosen boundary direction.
+   |   **until** :math:`q_{\text{goal}}` is reached or the robot completes a full cycle around the obstacle or :math:`d_\text{reached} < d_\text{followed}`.
+   |   **if** the robot were to move toward the goal **then**
+   |     Conclude :math:`q_{\text{goal}}` is not reachable and exit
+   |   **endif**
+   | **end while**
 
-.. figure:: path/finite_range
-   :alt: Finite Sensor Range [finitesensorrange]
 
-   Finite Sensor Range [finitesensorrange]
+.. _`finitesensorrange`:
+.. figure:: PlanningFigures/finite_range.*
+   :width: 70%
+   :align: center
 
-.. raw:: latex
+   Finite Sensor Range
 
-   \centering
 
-.. figure:: path/infinite_range
-   :alt: Infinite Sensor Range. [infinitesensorrange]
+.. _`infinitesensorrange`:
+.. figure:: PlanningFigures/infinite_range.*
+   :width: 70%
+   :align: center
 
-   Infinite Sensor Range. [infinitesensorrange]
+   Infinite Sensor Range.
 
 Implementation
 ^^^^^^^^^^^^^^
@@ -316,20 +309,28 @@ information needs to be computed? How is the path determined?
 We will assume that object boundaries are smooth curves and would be
 locally a function, :math:`y-f(x)`. If this is the case, we can compute
 the tangent and normal directions as shown in
-Figure \ `[offsetcurve] <#offsetcurve>`__-(a). An offset curve is a
+:numref:`offsetcurve_a`. An offset curve is a
 curve that follows the boundary at some fixed distance from the
 boundary. It looks like a level set curve. We can compute the tangents
 and normals for offsets as well,
-Figure \ `[offsetcurve] <#offsetcurve>`__-(b).
+:numref:`offsetcurve_b`.
 
-.. raw:: latex
 
-   \centering
+.. _`offsetcurve_a`:
+.. figure:: PlanningFigures/offset0.*
+   :width: 70%
+   :align: center
 
-(a) |a) We assume that the boundary is a smooth function. b) The normal
-and tangent directions to the offset curve.[offsetcurve]| (b) |a) We
-assume that the boundary is a smooth function. b) The normal and tangent
-directions to the offset curve.[offsetcurve]|
+   We assume that the boundary is a smooth function.
+
+
+.. _`offsetcurve_b`:
+.. figure:: PlanningFigures/offset.*
+   :width: 40%
+   :align: center
+
+   The normal and tangent directions to the offset curve.
+
 
 An offset curve can be found analytically using only the Tangent
 direction vector :math:`v(t)` [where :math:`v` is a basis vector in
@@ -343,7 +344,7 @@ find the offset curve :math:`\dot{c}(t) = v` when :math:`c_0 = (1,2)`.
 
 .. math:: \dot{c}(t)=dc/dt = <dx/dt , dy/dt> = <-y,2x>
 
-\ so (1) :math:`dx/dt = -y` and (2) :math:`dy/dt = 2x`. Differentiate
+so (1) :math:`dx/dt = -y` and (2) :math:`dy/dt = 2x`. Differentiate
 the first equation to get :math:`d^2x/dt^2 = -dy/dt` and then plug into
 the second equation: :math:`d^2x/dt^2 = -2x`. We can solve this equation
 to obtain
@@ -359,7 +360,7 @@ first equation we obtain
 :math:`B = -\sqrt{2}`.
 
 We have already discussed computing an obstacle boundary normal and
-tangent, Figure \ `[turtleboundary] <#turtleboundary>`__, using a ring
+tangent, :numref:`turtleboundary`, using a ring
 of touch sensors. In a real application, you may stop once the tangent
 has been determined. The robot can be steered in that direction. The act
 of driving the robot continuously in the direction of :math:`v` is the
@@ -372,12 +373,12 @@ Simple boundary following using a range sensor
 If a range sensor is available, it is a better choice for determining
 the boundary normal (avoids contact with the obstacle). Assume that you
 are looking to follow the boundary of obstacle 2 in
-Figure \ `[rangeinfo] <#rangeinfo>`__. Let :math:`D(x)` be the distance
+:numref:`rangeinfo`. Let :math:`D(x)` be the distance
 from :math:`x` to the followed obstacle:
 
 .. math:: D(x) = \min_{c\in{\cal W}{\cal O}_i} d(x,c)
 
-\ Look for global minimum to find the point on the followed obstacle.
+Look for global minimum to find the point on the followed obstacle.
 The gradient of distance is given by
 
 .. math::
@@ -385,7 +386,7 @@ The gradient of distance is given by
    \nabla D(x) = \begin{bmatrix} \displaystyle \frac{\partial D(x)}{\partial x_1}\\[5mm]
    \displaystyle\frac{\partial D(x)}{\partial x_2}\end{bmatrix}
 
- The closest point by definition is the point that is a minimum of the
+The closest point by definition is the point that is a minimum of the
 distance function between the ranging device, :math:`x`, and the
 obstacle boundary, :math:`y`. This means that the tangent must be
 orthogonal to the line segment connecting :math:`x` and :math:`y`. Once
@@ -394,14 +395,12 @@ be computed. Assume the direction to :math:`y` is given by
 :math:`\nabla D(x) = <a_1,a_2>`. The travel direction is
 :math:`\pm <a_2, -a_1>` which is orthogonal to :math:`\nabla D`.
 
-.. raw:: latex
+.. _`rangeinfo`:
+.. figure:: PlanningFigures/range2.*
+   :width: 35%
+   :align: center
 
-   \centering
-
-.. figure:: path/range2
-   :alt: Obtaining information from range data.[rangeinfo]
-
-   Obtaining information from range data.[rangeinfo]
+   Obtaining information from range data.
 
 A ranging device in practice returns discrete data. You can detect the
 approximate nearest point on the obstacle boundary, say at index k in
@@ -412,14 +411,23 @@ d[k+1]) into (x,y) points in the robots coordinates:
 
 .. math:: (x_k,y_k) = \left(d[k] \cos (\Delta \theta k + \theta_0), d[k] \sin (\Delta \theta k + \theta_0)\right)
 
- where :math:`\theta_0` is the angle for the start of the sweep. Knowing
+where :math:`\theta_0` is the angle for the start of the sweep. Knowing
 the closest point on the boundary to the robot is again sufficient to
 compute the tangent direction. We can smooth out the boundary motion
-using a boundary motion
-algorithm \ `[alg:boundarymotion] <#alg:boundarymotion>`__
+using  algorithm `Boundary Motion <alg:boundarymotion>`_
 
-List all neighbor cells adjacent to occupied cells. Select neighbor
-according to policy (right or left hand travel): (m,n). Mark (i,j) as
-visited. Set current cell: (m,n) :math:`\to` (i,j). List unvisited
-neighbor cells adjacent to occupied cells. Select neighbor: (m,n) Mark
-(i,j) as visited. Set current cell: (m,n) :math:`\to` (i,j).
+
+.. _`alg:boundarymotion`:
+.. topic::  Boundary Motion
+
+   | List all neighbor cells adjacent to occupied cells.
+   | Select neighbor according to policy (right or left hand travel): (m,n).
+   | Mark (i,j) as visited.
+   | Set current cell: (m,n) :math:`\to` (i,j).
+   | **while** Not arrived at leave point **do**
+   |   **repeat**
+   |     List unvisited neighbor cells adjacent to occupied cells.
+   |     Select neighbor:  {\tt (m,n)}
+   |     Mark {\tt (i,j)} as visited.
+   |     Set current cell: {\tt (m,n)} $\to$ {\tt (i,j)}.
+   |   **end while**

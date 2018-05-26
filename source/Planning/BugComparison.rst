@@ -7,31 +7,24 @@ sensor range would effectively be an infinite range sensor, so we just
 assume we have infinite range. We can reexamine the complicated obstacle
 with the tangent bug.
 
-.. raw:: latex
-
-   \centering
-
-.. figure:: path/complicated_obst_tb
-   :alt: The path of the tangent bug on the difficult obstacle field.
-   [bug1vstb]
+.. _`bug1vstb`:
+.. figure:: PlanningFigures/complicated_obst_tb.*
+   :width: 40%
+   :align: center
 
    The path of the tangent bug on the difficult obstacle field.
-   [bug1vstb]
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: path/complicated_obst_tb2
-   :alt: (left) Bug 1 and Bug 2 suceed. (right) Tangent Bug does not.
-   [bug1vstb2]
+.. _`bug1vstb2`:
+.. figure:: PlanningFigures/complicated_obst_tb2.*
+   :width: 90%
+   :align: center
 
    (left) Bug 1 and Bug 2 suceed. (right) Tangent Bug does not.
-   [bug1vstb2]
 
-From Figure \ `[bug1vstb] <#bug1vstb>`__, we see that Tangent Bug
+From :numref:`bug1vstb`, we see that Tangent Bug
 performs well on the obstacle field that caused so much headache for Bug
-2. Figure \ `[bug1vstb2] <#bug1vstb2>`__ (left) shows a obstacle domain
+2. :numref:`bug1vstb2` (left) shows a obstacle domain
 for which the path for Bug 1 and Bug2 are equivalent and arrive at the
 goal. The bugs begin at the start position and head to goal. Upon
 arrival they turn left and head up over point a. Heading down the back

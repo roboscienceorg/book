@@ -46,7 +46,7 @@ Impacts in grid environments
 
 The last issue that needs to be addressed is object interaction. How
 should we handle an impact? Earlier in the chapter,
-Figure \ `[sizematters] <#sizematters>`__, we saw that for circular
+:numref:`sizematters`, we saw that for circular
 robots, we could just add the radius of the robot to the obstacle and
 then treat the robot as a point mass. For path planning of circular
 robots we can then inflate the obstacle using a truncated flood fill

@@ -20,7 +20,7 @@ depending on robot design. For example a differential drive robot can
 set forward velocity and rotational (turn) velocity. Using the kinematic
 equations (presented later), position and orientation can be computed.
 
-In the Chapter \ `[simulationchapter] <#simulationchapter>`__, we
+In the Chapter `simulationchapter`_, we
 discussed how to determine obstacle impact or collision for a circular
 robot. For a general robot shape, impact is more difficult to compute.
 Collision can be defined as when the distance between the robot and
