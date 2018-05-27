@@ -438,6 +438,354 @@ difficulties reaching the goal where Bug 1 and 3 succeed.
    Trace this with the different bug algorithms: bug 1 and 3 succeed and
    bug 2 fails.
 
+
+Tangent Bug
+^^^^^^^^^^^
+
+The tangent bug algorithm will follow the basic idea in Bug 3, with the
+addition of a range sensor to the bug. As before our bug will have
+motion to goal in the absence of obstacles in the path. When an obstacle
+is encountered, the bug will switch to a boundary following mode. With a
+range sensor, there is more than one way to address the transition to
+boundary following mode which we will see. For simplicity, we assume
+that the range sensor has 360 degree infinite orientation resolution:
+:math:`\rho:  \Bbb R^2 \times S^1 \to \Bbb R`
+
+.. math:: \rho (x,\theta) = \min_{\lambda\in [0,\infty]} d(x,x+\lambda [\cos\theta , \sin\theta ]^T),
+   :label: LidarRangeEq
+
+such that
+
+.. math:: \quad x+\lambda [\cos\theta , \sin\theta ]^T \in \bigcup_i {\cal W}{\cal O}_i
+   :label: ObsConstrEq
+
+and a finite range:
+
+.. math::
+   :label: lidarFiniteRange
+
+   \rho_R(x,\theta) = \left\{ \begin{array}{ll} \rho(x,\theta), & \text{ if } \rho(x,\theta) < R \\
+                                 \infty, & \text{ otherwise}.
+                                \end{array}\right.
+
+.. _`Fig:lidar_ray`:
+.. figure:: PlanningFigures/lidar_ray.*
+   :width: 50%
+   :align: center
+
+   The LIDAR ray from the location :math:`x` at the angle :math:`\theta`.
+
+:eq:`LidarRangeEq` and
+:eq:`ObsConstrEq` find the shortest distance
+between the point :math:`x` and all of the points in the obstacle which
+intersect the ray eminating from :math:`x`. A real sensor has a finite
+range. :eq:`lidarFiniteRange` truncates
+the result at some maximum range :math:`R`.
+
+The range sensor returns a polar map, meaning a function
+:math:`\rho = \rho_R(x,\theta)`. This function will be be piecewise
+continuous. Discontinuities will occur by occlusion of one object by
+another or by reaching the maximum range,
+:numref:`discontrange` and :numref:`discontrangefn`. Having a discrete function
+makes finding discontinuities a bit subtle.
+
+
+.. _`discontrange`:
+.. figure:: PlanningFigures/range.*
+   :width: 40%
+   :align: center
+
+   Obstacles producing discontituities in the range map. Assume that one
+   can determine discontinuities in the distance function
+   :math:`\rho_R`.
+
+.. _`discontrangefn`:
+.. figure:: PlanningFigures/rangefunction.*
+   :width: 50%
+   :align: center
+
+   Range map for the obstacle above.
+
+
+Normally one uses
+
+.. math:: \rho_R(x,\theta_{k+1}) - \rho_R(x,\theta_k) > \delta \geq 1
+
+for some :math:`\delta` as the criterion.
+
+.. _`discontinuitypoints`:
+.. figure:: PlanningFigures/discont.*
+   :width: 35%
+   :align: center
+
+   Points of discontinuity: :math:`O_1`, :math:`O_2`, ..., :math:`O_n`
+
+.. _`discontinuitypoints_b`:
+.. figure:: PlanningFigures/singleVSdouble.*
+   :width: 80%
+   :align: center
+
+   Object ambiguity.
+
+
+
+Using this idea, we obtain some number of discontinuities, call them
+:math:`O_1`, :math:`O_2`, ..., :math:`O_n`. It is not possible in
+general to tell if :math:`O_1`, :math:`O_2`, ..., :math:`O_n` indicate
+boundaries of separate obstacles,
+:numref:`discontinuitypoints`. Since we are
+only concerned about obstacles that prevent us from moving to the goal,
+we will only focus on those,
+:numref:`discontpathblock` (left).
+
+
+.. _`discontpathblock`:
+.. figure:: PlanningFigures/discont2.*
+   :width: 80%
+   :align: center
+
+   Sensing an object does not mean it is  a problem, only if it blocks the path.
+   The robot will then move toward the discontinuity point $O_i$ which most decreases the distance
+   :math:`d(x, O_i) + d(O_i,q_{\text{goal}})`
+
+
+If the goal is obscured by an obstacle, then the robot moves towards the
+:math:`O_i` that minimizes the heuristic distance:
+:math:`d(x, O_i) + d(O_i,q_{\text{goal}})`. In
+:numref:`discontpathblock`, two variations are
+shown. The middle figure shows that :math:`d(x,O_2) + d(O_2,y)` is less
+than :math:`d(x,O_1) + d(O_1,y)`, so :math:`O_2` is the first target for
+motion. In the right figure where the goal :math:`y` has moved,
+:math:`d(x,O_1) + d(O_1,y)` is less than :math:`d(x,O_2) + d(O_2,y)`.
+Thus the target in that case is :math:`O_1`. The points :math:`O_i` are
+continuously updated as the robot moves. New points may enter the list
+and some points may leave.
+
+We have seen two types of motion to goal. One is the free space motion
+where the robot moves towards the goal without an obstacle. The other is
+the motion towards a boundary point which is the minimizing
+discontinuity point discussed above. These two can be merged into just
+motion towards goal where goal is selected from :math:`n = \{ T, O_i\}`,
+:math:`i=1 \dots k` where :math:`T` is defined as the intersection of
+the circle of radius :math:`R` centered at :math:`x` with the line
+segment from :math:`x` to the goal, :numref:`defnT`.
+
+The robot will continue with the motion to goal until it can no longer
+decrease the heuristic distance, then it switches to boundary following.
+The robot follows the same direction in boundary following mode as it
+did in motion to goal mode. As the robot approaches the boundary, the
+direction will change due to pursuit of temporary goal :math:`n`. The
+distance :math:`d(x,n)+d(n,\text{goal})` will start to increase. If you
+are far from the boundary, you are heading roughly in the direction of
+the goal. Once close enough and with the direction strongly affected by
+the obstacle boundary, it makes sense to just switch to boundary
+following mode. :numref:`transitionboundary`
+shows the three states. The left figure indicates the robot motion to
+goal in free space. In the middle figure, the robot has sensed the
+obstacle and computed that the lower boundary discontinuity is the one
+to set as the temporary goal.
+
+.. _`defnT`:
+.. figure:: PlanningFigures/defnT.*
+   :width: 70%
+   :align: center
+
+   The free space point :math:`T` (left). :math:`T` and :math:`O_1`
+   (right). [defnT]
+
+
+.. _`transitionboundary`:
+.. figure:: PlanningFigures/discont4.*
+   :width: 85%
+   :align: center
+
+   Motion to goal (left), motion to boundary discontinuity point
+   (middle) and boundary following (right).
+
+We define the point :math:`M` which is the closest point on the sensed
+boundary to the goal, :numref:`Mdefinition`. This is
+used in the computation of the departure point.
+
+.. _`Mdefinition`:
+.. figure:: PlanningFigures/discont3.*
+   :width: 70%
+   :align: center
+
+   M - the closest point on the sensed boundary to the goal. Can be one
+   of the discontinuity points from the ranger or simply a boundary
+   point.
+
+Boundary following mode can get you around the obstacle. The next
+question is when to release and return to motion to goal (or to the next
+obstacle). We define :math:`d_{\text{followed}}` as the shortest
+distance between boundary that has been sensed and the goal,
+:numref:`Fig:Dfollowed`.
+
+.. _`Fig:Dfollowed`:
+.. figure:: PlanningFigures/d_followed.*
+   :width: 70%
+   :align: center
+
+   The value :math:`d_{\text{followed}}`.
+
+Define :math:`\Lambda` as all of the points between the robot, :math:`x`
+and the boundary of the obstacle, :math:`\partial WO` which are visible
+to the robot and within range :math:`R` (the range of the sensor).
+Precisely this is
+:math:`\Lambda = \{ y \in \partial WO: \lambda x + (1-\lambda )y \in Q_{\mbox{free}} \quad \forall \lambda \in [0,1]`,
+:numref:`Fig:Dlambda`.  We define
+:math:`d_{\text{reach}}` as the minimum distance point in
+:math:`\Lambda` to the goal:
+:math:`d_{\mbox{reach}} = \mbox{min}_{c\in\Lambda} d(c,q_{\mbox{goal}})`.
+See :numref:`Fig:Dreach`, :numref:`Fig:Dreach2`
+for a description of this distance.
+
+.. _`Fig:Dlambda`:
+.. figure:: PlanningFigures/d_lambda.*
+   :width: 30%
+   :align: center
+
+   The region :math:`\Lambda`.
+
+.. _`Fig:Dreach`:
+.. figure:: PlanningFigures/d_reach.*
+   :width: 80%
+   :align: center
+
+   The value :math:`d_{\text{reach}}`.
+
+.. _`Fig:Dreach2`:
+.. figure:: PlanningFigures/d_reach2.*
+   :width: 80%
+   :align: center
+
+   The value :math:`d_{\text{reach}}` with a different
+   domain.
+
+These values are continuously updated as the robot traverses the
+boundary. When :math:`d_{\text{reach}} < d_{\text{followed}}` then we
+terminate the boundary following and return to motion to goal.
+:numref:`Fig:DreachFollowed2` shows when the
+values become equal.
+:numref:`Fig:DreachFollowed3` shows when the
+boundary following termination condition is satisfied. The planner is
+summarized in Algorithm [TangentBugAlg]_.
+
+.. _`Fig:DreachFollowed2`:
+.. figure:: PlanningFigures/d_reach_followed2.*
+   :width: 80%
+   :align: center
+
+   The process and location where
+   :math:`d_{\text{reach}} = d_{\text{followed}}`.
+
+.. _`Fig:DreachFollowed3`:
+.. figure:: PlanningFigures/d_reach_followed3.*
+   :width: 80%
+   :align: center
+
+   The process and location where
+   :math:`d_{\text{reach}} < d_{\text{followed}}`.
+
+The bug algorithms are biased towards motion along the original direct
+route. This last algorithm stayed in boundary following mode longer than
+did the Bug 3 algorithm. This behavior, however, depends on the max
+range of the range sensor and is thus “tunable”. An interesting
+experiment would modify the Tangent Bug to have the boundary exit
+behavior the same as Bug 3 and compare paths.
+
+
+.. _`alg:tangentbug`:
+.. topic::  The tangent bug algorithm
+
+   | **Input** A point robot with a tactile sensor
+   | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
+   | **while** True **do**
+   |   **repeat**
+   |     Continuously move from the point :math:`n\in \{ T, O_i\}` which minimizes :eq:`d(x,n)+d(n,q_{\text{goal}})`.
+   |   **until**  :math:`q_{\text{goal}}` is reached or the direction that minimizes :math:`d(x,n)+d(n,q_{\text{goal}})` begins to increase :math:`d(n,q_{\text{goal}})`
+   |   **if** Goal is reached **then**  Exit  **endif**
+   |   Choose a boundary following direction which continues in the same direction as the most recent motion-to-goal direction.
+   |   **repeat**
+   |     Continuously update :math:`d_\text{reached}`, :math:`d_\text{followed}` and :math:`\{O_i\}`.
+   |     Continuously moves toward :math:`n\in O_i` that is in the chosen boundary direction.
+   |   **until** :math:`q_{\text{goal}}` is reached or the robot completes a full cycle around the obstacle or :math:`d_\text{reached} < d_\text{followed}`.
+   |   **if** the robot were to move toward the goal **then**
+   |     Conclude :math:`q_{\text{goal}}` is not reachable and exit
+   |   **endif**
+   | **end while**
+
+
+.. _`finitesensorrange`:
+.. figure:: PlanningFigures/finite_range.*
+   :width: 70%
+   :align: center
+
+   Finite Sensor Range
+
+
+.. _`infinitesensorrange`:
+.. figure:: PlanningFigures/infinite_range.*
+   :width: 70%
+   :align: center
+
+   Infinite Sensor Range.
+
+
+
+Bug Comparison
+^^^^^^^^^^^^^^
+
+The best paths we have seen from the bug algorithms have been the
+Tangent Bug paths with infinite sensor range. A sufficiently large
+sensor range would effectively be an infinite range sensor, so we just
+assume we have infinite range. We can reexamine the complicated obstacle
+with the tangent bug.
+
+.. _`bug1vstb`:
+.. figure:: PlanningFigures/complicated_obst_tb.*
+   :width: 40%
+   :align: center
+
+   The path of the tangent bug on the difficult obstacle field.
+
+
+.. _`bug1vstb2`:
+.. figure:: PlanningFigures/complicated_obst_tb2.*
+   :width: 90%
+   :align: center
+
+   (left) Bug 1 and Bug 2 suceed. (right) Tangent Bug does not.
+
+From :numref:`bug1vstb`, we see that Tangent Bug
+performs well on the obstacle field that caused so much headache for Bug
+2. :numref:`bug1vstb2` (left) shows a obstacle domain
+for which the path for Bug 1 and Bug2 are equivalent and arrive at the
+goal. The bugs begin at the start position and head to goal. Upon
+arrival they turn left and head up over point a. Heading down the back
+side of the ellipse, Bug 2 will split off when it crosses the
+:math:`M`-line. Bug 2 will then head straight for the goal. Bug 1 will
+continue to circumnavigate the ellipse. After return to the
+:math:`M`-line it too will head to the goal. By construction Bug 1’s
+leave point is the :math:`M`-line as well. Both arrive at the goal.
+
+The right figure shows how the Tangent Bug does not arrive at the goal
+and cycles around the outside. [Had the left side of the figure dropped
+lower, this would have been an example of a longer path, but the Tangent
+Bug would have arrvied at the goal.] In this case, T-Bug leaves the
+start location and heads towards the goal. Although rather subtle, the
+line from the start to goal is slight above the vertical symmetry axis.
+This means that the top of the ellipse, location a, will be the closest
+point of discontinuity for the ranger. Thus it will minimize the
+heuristic traveling to a. The points b and c are the next two
+discontinuities to choose. By construction, the point b minimizes the
+heuristic over the location c. After arriving at c, the robot will
+shortly transition to boundary following mode. This will carry the robot
+around the obstacle back to a location above the starting point. The
+robot will head to the discontinuity a. Any implementation that stores
+locations will note that we have done a cycle and exit or needs to
+switch algorithms.
+
 .. rubric:: Footnotes
 
 .. [#f1] These need not be the same. For example certain paths may be traversed

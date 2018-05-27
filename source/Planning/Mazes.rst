@@ -6,23 +6,28 @@ escape. Even though a maze escape routine is standard fair for a data
 structures course, it is still impressive to see it implemented with a
 robot in a maze.
 
-.. raw:: latex
+.. _`maze0`:
+.. figure:: PlanningFigures/maze0.*
+   :width: 45%
+   :align: center
 
-   \centering
+   A very simple maze.
 
-|a) A very simple maze. b) A more complicated maze. [maze]| |a) A very
-simple maze. b) A more complicated maze. [maze]|
+.. _`maze2`:
+.. figure:: PlanningFigures/maze2.*
+   :width: 45%
+   :align: center
 
-.. raw:: latex
+   A more complicated maze.
 
-   \centering
+.. _`mazesol`:
+.. figure:: PlanningFigures/maze_sol.*
+   :width: 40%
+   :align: center
 
-.. figure:: turtle/maze_sol
-   :alt: Solution path through a maze. [mazesol]
+   Solution path through a maze.
 
-   Solution path through a maze. [mazesol]
-
-Figure \ `[mazesol] <#mazesol>`__ shows a solution path through a maze.
+:numref:`mazesol` shows a solution path through a maze.
 The random mouse algorithm is one approach to finding a route. The
 algorithm has the “mouse” travel straight until a wall is encountered.
 Then the “mouse” randomly selects a new direction to follow. This
@@ -36,63 +41,86 @@ The best known method to traverse a maze is the wall following method.
 The idea is to place your left or right hand on the wall as you traverse
 the maze. If the maze is simply connected, the method is proven to
 provide a path out of the maze. By looking at
-Figure \ `[mazesol] <#mazesol>`__, the solution path partitions the
+:numref:`mazesol`, the solution path partitions the
 maze. A simply connected maze is partitioned into two objects which are
 deformable to a disk. To see this, focus on the right (or in the figure
 the lower) part of the separated maze. Tracing the path,
-Figure \ `[mazesolwall] <#mazesolwall>`__, we record our motion through
+:numref:`mazesolwall`, we record our motion through
 the maze. This path can be extracted,
-Figure \ `[mazesolcircle] <#mazesolcircle>`__ to see that it is indeed a
+:numref:`mazesolcircle` to see that it is indeed a
 circle. The topology as not changed.
 
-.. raw:: latex
+.. _`mazesolwall0`:
+.. figure:: PlanningFigures/maze_sol_wall.*
+   :width: 40%
+   :align: center
 
-   \centering
+   Wall following (right hand) to solve the maze.
 
-|a) Wall following (right hand) to solve the maze. b) Connecting the
-outside to make a circle. [mazesolwall]| |a) Wall following (right hand)
-to solve the maze. b) Connecting the outside to make a circle.
-[mazesolwall]|
+.. _`mazesolwall`:
+.. figure:: PlanningFigures/maze_sol_wall_circle.*
+   :width: 40%
+   :align: center
 
-.. raw:: latex
+   Connecting the outside to make a circle.
 
-   \centering
+.. _`mazesolcircle1`:
+.. figure:: PlanningFigures/maze_sol_wall_circle1.*
+   :width: 40%
+   :align: center
 
-|a) Wall path extracted from the maze. b) Moving the nodes on the path
-to show the circle. [mazesolcircle]| :math:`\to` |a) Wall path extracted
-from the maze. b) Moving the nodes on the path to show the circle.
-[mazesolcircle]|
+   Wall path extracted from the maze.
+
+.. _`mazesolcircle2`:
+.. figure:: PlanningFigures/maze_sol_wall_circle2.*
+   :width: 40%
+   :align: center
+
+   Moving the nodes on the path to show the circle.
+
 
 Since the path is a circle, then the algorithm will transport the robot
 between any two points on the circle. Not having a simply connected maze
 or having interior starting/finishing points can break this method -
 which does not mean it will necessarily fail.
 
-.. raw:: latex
 
-   \centering
+.. _`maze_notsimple`:
+.. figure:: PlanningFigures/maze_notsimple.*
+   :width: 40%
+   :align: center
 
-.. figure:: turtle/maze_notsimple
-   :alt: A maze for which wall following can fail. [maze_notsimple]
-
-   A maze for which wall following can fail. [maze_notsimple]
+   A maze for which wall following can fail.
 
 The Pledge algorithm is designed to address the problem of exiting a
 maze which has non-simply connected components. This algorithm does not
 work in reverse, meaning that it can escape a maze, but not enter one.
 
-Set arbitrary heading. Move forward Select right or left side and place
-that side against the obstacle. Move along obstacle while keeping “hand”
-on obstacle Sum turn angles
 
-.. raw:: latex
 
-   \centering
+.. _`PledgeAlgorithm`:
+.. topic::  Pledge Algorithm
 
+   | **Input** A point robot with a tactile sensor
+   | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
+   | Set arbitrary heading.
+   | **while** No obstacle in front **do**
+   |   **repeat**
+   |     Move forward
+   |   **end while**
+   | Select right or left side and place that side against the obstacle.
+   | **while** Note original heading and sum of turns not zero **do**
+   |   **repeat**
+   |     Move along obstacle while keeping "hand" on obstacle
+   |     Sum turn angles
+   | **end while**
+
+.. _`maze_notsimple_pledge`:
 .. figure:: turtle/maze_notsimple_pledge
-   :alt: The Pledge Algorithm. [maze_notsimple_pledge]
+   :width: 50%
+   :align: center
 
-   The Pledge Algorithm. [maze_notsimple_pledge]
+   The Pledge Algorithm.
 
 The final escape algorithm presented here is Trémaux’s Algorithm. This
 is a form of a recursive backtracker. From Wikipedia:
@@ -153,7 +181,7 @@ cells. In this case it is useful to take the cell as large as possible
 so that corridors or walls are one cell wide. Using the centers of
 unoccupied cells, these are nodes. Adjacent free cells can have their
 center nodes connected. This builds a graph representation, see
-Figure \ `[coarsemap] <#coarsemap>`__. So, now we have a high resolution
+:numref:`coarsemap`. So, now we have a high resolution
 grid map and the corresponding graph representation of free space. This
 concept will be used later in more advanced path planniing algorithms.
 For now we employ a simple path planner.

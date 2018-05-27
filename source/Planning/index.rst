@@ -18,16 +18,13 @@ configuration, end location and pose or goal.
 The basic path planning problem refers determining a
 path in configuration space such that the robot does not collide with
 any obstacles and the path is consistent with the vehicle
-constraints.  
+constraints.
 
 .. toctree::
    :maxdepth: 2
 
    ExplorationandNavigation
-   TangentBug
-   ImageCoordinates
-   BugComparison
-   BugSimulations
+   Implementation
    Mazes
    PotentialFunctions
    Brushfire

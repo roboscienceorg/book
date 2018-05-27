@@ -1,15 +1,16 @@
 Navigation Planner
 ------------------
 
-| Even if we can avoid local minimums, what does one do about a
-  correctly located minimum? Meaning, how can one assure that the
-  minimum of the potential function, once the repulsive potentials are
-  included, stays at the goal location? One approach is to no longer sum
-  potentials, but form products and powers of potential functions. For
-  simplicity, we assume that that the space and the obstacles are
-  spheres. Then you can construct a navigation potential function which
-  is a potential function used for navigation and is a Morse function.
-| Define
+Even if we can avoid local minimums, what does one do about a
+correctly located minimum? Meaning, how can one assure that the
+minimum of the potential function, once the repulsive potentials are
+included, stays at the goal location? One approach is to no longer sum
+potentials, but form products and powers of potential functions. For
+simplicity, we assume that that the space and the obstacles are
+spheres. Then you can construct a navigation potential function which
+is a potential function used for navigation and is a Morse function.
+
+Define
 
   .. math:: \beta_0(q) = -d^2(q,q_0) + r^2_0
 
