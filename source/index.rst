@@ -27,7 +27,6 @@ Introduction to Robotics
    Vehicle Motion <Motion/index>
    Kinematic Modeling <Kinematics/index>
    Motion Control <Control/index>
-   Manipulators <Manipulators/index>
    Sensor Filtering <Filtering/index>
    Kalman Filter <Kalman/index>
    Particle Filters <Particle/index>

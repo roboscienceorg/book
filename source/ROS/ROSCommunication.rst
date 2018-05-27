@@ -223,7 +223,7 @@ graph and the topics are the edges. ROS can generate this for you using:
    The graph of nodes and topics for the current ROS
    session.
 
- :numref:`fig:rosgraph` shows the resulting graph.
+:numref:`fig:rosgraph` shows the resulting graph.
 ROS’s Publish/Subscribe architecture is a many-to-many communication
 protocol. This means that a publisher can talk to many different
 subscribers. Multiple publishers can be on a single topic. It can get

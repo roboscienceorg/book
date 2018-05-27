@@ -115,9 +115,10 @@ work in reverse, meaning that it can escape a maze, but not enter one.
    |     Sum turn angles
    | **end while**
 
+
 .. _`maze_notsimple_pledge`:
-.. figure:: turtle/maze_notsimple_pledge
-   :width: 50%
+.. figure:: PlanningFigures/maze_notsimple_pledge.*
+   :width: 30%
    :align: center
 
    The Pledge Algorithm.
@@ -186,16 +187,13 @@ grid map and the corresponding graph representation of free space. This
 concept will be used later in more advanced path planniing algorithms.
 For now we employ a simple path planner.
 
-.. raw:: latex
+.. _`coursemap`:
+.. figure:: PlanningFigures/finemazecoarse.*
+   :width: 90%
+   :align: center
 
-   \centering
+   The coarsening of the grid map for a maze and the construction of the graph representation.  Left side image is a maze on a finer grid.  The right side image is a coarser grid with graph drawn.
 
-|The coarsening of the grid map for a maze and the construction of the
-graph representation. Left side image is a maze on a finer grid. The
-right side image is a coarser grid with graph drawn. [coarsemap]| |The
-coarsening of the grid map for a maze and the construction of the graph
-representation. Left side image is a maze on a finer grid. The right
-side image is a coarser grid with graph drawn. [coarsemap]|
 
 One of the simpliest planners is the flood fill approach. Begin at the
 endpoint and run a flood fill algorithm. If the flood fill paints the
@@ -232,19 +230,18 @@ breadth first search algorithm applied to the grid map domain. The
 implementation is similar to a flood fill algorithm. The Wavefront
 Algorithm searches for the minimal path from start to goal in structured
 and unstructured domains,
-Figure \ `[fig:struct_unstruct] <#fig:struct_unstruct>`__. Just like a
+:numref:`fig:struct_unstruct`. Just like a
 flood fill, Wavefront is rather simple. Assume that free space is
 represented by white and occupied space is red or black (colored). Zoom
 in so you can see the actual pixels as shown in
-Figure \ `[fig:struct_unstruct] <#fig:struct_unstruct>`__.
+:numref:`fig:struct_unstruct`.
 
-.. raw:: latex
+.. _`fig:struct_unstruct`:
+.. figure:: PlanningFigures/floodfillenvs.*
+   :width: 85%
+   :align: center
 
-   \centering
-
-|Wavefront will apply to maze and unstructured
-domains.[fig:struct_unstruct]| |Wavefront will apply to maze and
-unstructured domains.[fig:struct_unstruct]|
+   Wavefront will apply to maze and unstructured domains.
 
 The process to find the path through the maze is simple. It is completed
 in two stages. Stage one fills the map with distance numbers from the
@@ -255,14 +252,13 @@ program. The second part is the “Descent” algorithm. Think of the fill
 algorithm as building a hill where the start is at the top and the end
 is at the bottom. All we do is walk downhill.
 
-.. raw:: latex
 
-   \centering
+.. _`fig:finemaze`:
+.. figure:: PlanningFigures/finemaze.*
+   :width: 40%
+   :align: center
 
-.. figure:: path/finemaze
-   :alt: Initial Maze. [fig:finemaze]
-
-   Initial Maze. [fig:finemaze]
+   Initial Maze.
 
 The Fill algorithm is easy to state. Label the goal pixel “1". Next,
 label all unlabeled neighbors of the “1" pixel the number “2". Then
@@ -271,21 +267,29 @@ You repeat this process by labeling all of the unlabeled neighbors of
 the pixels with the label “k" the number “k+1". Do this until you run
 out of unlabeled pixels.
 
-.. raw:: latex
 
-   \centering
+.. _`fig:wavefrontprogress`:
+.. figure:: PlanningFigures/finemaze_numbered.png
+   :width: 90%
+   :align: center
 
-| |Wavefront algorithm progress. [fig:wavefrontprogress]| |Wavefront
-  algorithm progress. [fig:wavefrontprogress]|
-| |Wavefront algorithm progress. [fig:wavefrontprogress]| |Wavefront
-  algorithm progress. [fig:wavefrontprogress]|
+   Wavefront algorithm progress.
 
-Label the goal pixel “1".
 
-Begin at start pixel.
+
+.. _`wavefrontfind`:
+.. topic::  Wavefront Descent
+
+   |  Begin at start pixel.
+   | **repeat**
+   |     Pick the neighbor pixel with the smallest label (or value).
+   |     Step to that pixel.
+   | **until** you arrive at goal pixel.
+
+
 
 The first three images in
-Figure \ `[fig:wavefrontprogress] <#fig:wavefrontprogress>`__ give you a
+:numref:`fig:wavefrontprogress` give you a
 few snapshots of the process on a maze. You may note that these numbers
 are just the number of pixel steps from your current location to the
 goal. It is a travel distance. Next is the Descent algorithm. Starting
@@ -293,13 +297,34 @@ at the start point, look around for the pixel with the smallest label or
 value. Step there and repeat the process. Continue stepping downhill
 until you reach the goal pixel.
 
-.. raw:: latex
+.. _`fig:wavefillexample`:
+.. figure:: PlanningFigures/obsmaparray.*
+   :width: 40%
+   :align: center
 
-   \centering
+.. _`fig:wavefillexample1`:
+.. figure:: PlanningFigures/initmaparray.*
+   :width: 40%
+   :align: center
 
-| |Wavefront fill example. [fig:wavefillexample]| |Wavefront fill
-  example. [fig:wavefillexample]|
-| |Wavefront fill example. [fig:wavefillexample]| |Wavefront fill
-  example. [fig:wavefillexample]|
-| |Wavefront fill example. [fig:wavefillexample]| |Wavefront fill
-  example. [fig:wavefillexample]|
+.. _`fig:wavefillexample2`:
+.. figure:: PlanningFigures/goalmaparray.*
+   :width: 40%
+   :align: center
+
+.. _`fig:wavefillexample3`:
+.. figure:: PlanningFigures/fillmaparray.*
+   :width: 40%
+   :align: center
+
+.. _`fig:wavefillexample4`:
+.. figure:: PlanningFigures/startbtmaparray.*
+   :width: 40%
+   :align: center
+
+.. _`fig:wavefillexample5`:
+.. figure:: PlanningFigures/btmaparray.*
+   :width: 40%
+   :align: center
+
+   Wavefront fill example.

@@ -241,7 +241,15 @@ pixels surrounding the center pixel. The graphic below shows the
 standard mathematical notation for plots and graphs :math:`(x,y)` and
 the array notation for the pixels.
 
-|image| |image|
+
+.. figure:: PlanningFigures/imagecoords.*
+   :width: 50%
+   :align: center
+
+.. figure:: PlanningFigures/neighbors.*
+   :width: 50%
+   :align: center
+
 
 C++ easy access of neighbor pixels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

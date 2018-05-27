@@ -1,9 +1,7 @@
 Manipulators: Arms and Legs
 ===========================
 
-.. raw:: latex
-
-   \todo[inline]{Rewrite this chapter}
+.. Rewrite this chapter
 
 Legs
 ----
@@ -40,7 +38,7 @@ moving and standing.
 
 .. raw:: latex
 
-   \centering 
+   \centering
 
 |image|
 
@@ -60,7 +58,7 @@ planning and might fail due to size.
 
 .. raw:: latex
 
-   \centering 
+   \centering
 
 .. figure:: motion/legjoint.png
    :alt: Leg joints and their use.
@@ -86,7 +84,7 @@ area of research.
 
 .. raw:: latex
 
-   \centering 
+   \centering
 
 |image|
 
@@ -101,7 +99,7 @@ Figure \ `[flexiwheel] <#flexiwheel>`__.
 
 .. raw:: latex
 
-   \centering 
+   \centering
 
 .. figure:: motion/shrimp
    :alt: Walking Wheels[shrimp]
@@ -111,7 +109,7 @@ Figure \ `[flexiwheel] <#flexiwheel>`__.
 
 .. raw:: latex
 
-   \centering 
+   \centering
 
 .. figure:: motion/adaptivesuspension
    :alt: Adaptive Suspension[adaptivesuspension]
@@ -121,7 +119,7 @@ Figure \ `[flexiwheel] <#flexiwheel>`__.
 
 .. raw:: latex
 
-   \centering 
+   \centering
 
 .. figure:: motion/flexiwheel
    :alt: Flexible Wheel[flexiwheel]
@@ -206,7 +204,7 @@ Rotations - Rotation matrix
    .. math::
 
       R_x = \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos\theta & -\sin\theta & 0  \\
-               0& \sin\theta & \cos\theta & 0 \\ 
+               0& \sin\theta & \cos\theta & 0 \\
                0& 0& 0& 1 \end{pmatrix}
 
 -  About :math:`y`
@@ -214,7 +212,7 @@ Rotations - Rotation matrix
    .. math::
 
       R_y = \begin{pmatrix}\cos\theta & 0 & -\sin\theta & 0  \\ 0 & 1 & 0 & 0\\
-               \sin\theta &0& \cos\theta & 0 \\ 
+               \sin\theta &0& \cos\theta & 0 \\
                0& 0& 0& 1 \end{pmatrix}
 
 Translation - Translation matrix
@@ -240,8 +238,8 @@ degrees. Find the coordinate transformation. [1]_
 .. math::
 
    R_1 = \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos 30 & -\sin 30 & 0  \\
-            0& \sin 30 & \cos 30 & 0 \\ 
-            0& 0& 0& 1 \end{pmatrix},  \quad R_2 = 
+            0& \sin 30 & \cos 30 & 0 \\
+            0& 0& 0& 1 \end{pmatrix},  \quad R_2 =
             \begin{pmatrix}\cos 45 & -\sin 45 & 0 & 0 \\
             \sin 45 & \cos 45 & 0 & 0\\ 0 &0 & 1 & 0 \\
             0& 0& 0& 1 \end{pmatrix}
@@ -263,7 +261,7 @@ Then the transformation is :math:`M = R_2TR_1`
             0 & 1 & 0 & 3\\ 0 &0 & 1 & 0 \\
             0& 0& 0& 1 \end{pmatrix}
             \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos 30 & -\sin 30 & 0  \\
-            0& \sin 30 & \cos 30 & 0 \\ 
+            0& \sin 30 & \cos 30 & 0 \\
             0& 0& 0& 1 \end{pmatrix}
 
 .. math::
@@ -281,7 +279,7 @@ Then the transformation is :math:`M = R_2TR_1`
    =
    \begin{pmatrix}
             \cos 45 & -\sin 45 \cos 30 & -\sin 45 \sin 30 & -3\sin 45 \\
-            \sin 45 & \cos 45 \cos 30 & -\cos 45 \sin 30 & 3\cos 45\\ 
+            \sin 45 & \cos 45 \cos 30 & -\cos 45 \sin 30 & 3\cos 45\\
             0       & \sin 30 & \cos 30 & 0 \\
             0       & 0& 0& 1 \end{pmatrix}
 
@@ -327,7 +325,7 @@ followed by a rotation about :math:`x` by 60 degrees, :math:`R_2`:
 .. math::
 
    R = R_2R_1= \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos 60 & -\sin 60 & 0  \\
-            0& \sin 60 & \cos 60 & 0 \\ 
+            0& \sin 60 & \cos 60 & 0 \\
             0& 0& 0& 1 \end{pmatrix}\begin{pmatrix}\cos 30 & -\sin 30 & 0 & 0 \\
             \sin 30 & \cos 30 & 0 & 0\\ 0 &0 & 1 & 0 \\
             0& 0& 0& 1 \end{pmatrix}
@@ -343,7 +341,7 @@ by a translation in z by 4 cm, :math:`T`:
 .. math::
 
    M = TR= \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos 60 & -\sin 60 & 0  \\
-            0& \sin 60 & \cos 60 & 0 \\ 
+            0& \sin 60 & \cos 60 & 0 \\
             0& 0& 0& 1 \end{pmatrix}\begin{pmatrix}1 & 0 & 0 & 0 \\
             0 & 1 & 0 & 0\\ 0 &0 & 1 & 4 \\
             0& 0& 0& 1 \end{pmatrix}
@@ -369,10 +367,10 @@ For example, the inverse of the 60 degree rotation mentioned above:
 .. math::
 
    \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos 60 & -\sin 60 & 0  \\
-            0& \sin 60 & \cos 60 & 0 \\ 
-            0& 0& 0& 1 \end{pmatrix}^{-1} = 
+            0& \sin 60 & \cos 60 & 0 \\
+            0& 0& 0& 1 \end{pmatrix}^{-1} =
             \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos 60 & \sin 60 & 0  \\
-            0& -\sin 60 & \cos 60 & 0 \\ 
+            0& -\sin 60 & \cos 60 & 0 \\
             0& 0& 0& 1 \end{pmatrix}
 
 Translation matrices are simple as well. One just negates the
@@ -383,10 +381,10 @@ Thus:
 .. math::
 
    \begin{pmatrix}1 & 0 & 0 & a \\ 0 & 1 & 0 & b  \\
-            0& 0 & 1 & c \\ 
-            0& 0& 0& 1 \end{pmatrix}^{-1} = 
+            0& 0 & 1 & c \\
+            0& 0& 0& 1 \end{pmatrix}^{-1} =
             \begin{pmatrix}1 & 0 & 0 & -a \\ 0 & 1 & 0 & -b  \\
-            0& 0 & 1 & -c \\ 
+            0& 0 & 1 & -c \\
             0& 0& 0& 1 \end{pmatrix}
 
 Thus we can just undo the transformations individually.
@@ -432,11 +430,11 @@ Forward and Inverse Kinematics
 
 Given joint angles and actuator lengths it is straightforward to compute
 end effector position. Thus it is easy to find effector path as a
-function of rotations.\ 
+function of rotations.\
 
 .. math::
 
-   \begin{pmatrix} \theta_1(t), ... , \theta_n(t) 
+   \begin{pmatrix} \theta_1(t), ... , \theta_n(t)
               \end{pmatrix}\to p(t)
 
 It is MUCH harder to find the angle functions if you are given the end
@@ -444,7 +442,7 @@ effector path:
 
 .. math::
 
-   p(t) \to \begin{pmatrix} \theta_1(t), ... , \theta_n(t) 
+   p(t) \to \begin{pmatrix} \theta_1(t), ... , \theta_n(t)
               \end{pmatrix}
 
 | Represent points by :math:`\begin{pmatrix}x\\y\\z\\1 \end{pmatrix}`
@@ -453,7 +451,7 @@ effector path:
 
   .. math::
 
-     \begin{pmatrix}x'\\y'\\z'\\1 \end{pmatrix} = 
+     \begin{pmatrix}x'\\y'\\z'\\1 \end{pmatrix} =
       \begin{pmatrix}\cos 30 & -\sin 30 & 0 & 0 \\
               \sin 30 & \cos 30 & 0 & 0\\ 0 &0 & 1 & 0 \\
               0& 0& 0& 1 \end{pmatrix} \begin{pmatrix}x\\y\\z\\1 \end{pmatrix}
@@ -510,24 +508,24 @@ the next link in the serial chain.
 
    \begin{pmatrix}\cos \theta_{n+1} & -\sin \theta_{n+1} & 0 & 0 \\
             \sin \theta_{n+1} & \cos \theta_{n+1} & 0 & 0\\ 0 &0 & 1 & 0 \\
-            0& 0& 0& 1 \end{pmatrix} 
+            0& 0& 0& 1 \end{pmatrix}
             \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0  \\
-            0& 0 & 1 & d_{n+1} \\ 
+            0& 0 & 1 & d_{n+1} \\
             0& 0& 0& 1 \end{pmatrix}
             \begin{pmatrix}1 & 0 & 0 & a_{n+1} \\ 0 & 1 & 0 & 0  \\
-            0& 0 & 1 & 0 \\ 
+            0& 0 & 1 & 0 \\
             0& 0& 0& 1 \end{pmatrix}
 
 .. math::
 
    \times
     \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos \alpha_{n+1} & -\sin \alpha_{n+1} & 0  \\
-            0& \sin \alpha_{n+1} & \cos \alpha_{n+1} & 0 \\ 
+            0& \sin \alpha_{n+1} & \cos \alpha_{n+1} & 0 \\
             0& 0& 0& 1 \end{pmatrix}
 
 :math:`A_{n+1} =`
 
-| 
+|
 
   .. math::
 
@@ -572,9 +570,9 @@ So,
 
    A = A_1A_2 =
      \begin{pmatrix}\cos (\theta_1+\theta_2) & -\sin (\theta_1+\theta_2) & 0 & a_2 \cos (\theta_1+\theta_2) + a_1 \cos \theta_1 \\
-   \sin (\theta_1 +\theta_2) & \cos (\theta_1 +\theta_2) & 0 & a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1\\ 
+   \sin (\theta_1 +\theta_2) & \cos (\theta_1 +\theta_2) & 0 & a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1\\
             0 &0 & 1 & 0 \\
-            0& 0& 0& 1 
+            0& 0& 0& 1
      \end{pmatrix}
 
 Inverse Kinematics
@@ -584,7 +582,7 @@ How can we use this technology to solve the inverse kinematics problem?
 
 .. math::
 
-   T^{-1} 
+   T^{-1}
      = T_0^{-1} T_{1}^{-1} \dots T_{n-1}^{-1} T_n^{-1}
 
 In each matrix one can solve algebraically for :math:`\theta_i` in terms
@@ -645,24 +643,24 @@ the next link in the serial chain.
 
    \begin{pmatrix}\cos \theta_{n+1} & -\sin \theta_{n+1} & 0 & 0 \\
             \sin \theta_{n+1} & \cos \theta_{n+1} & 0 & 0\\ 0 &0 & 1 & 0 \\
-            0& 0& 0& 1 \end{pmatrix} 
+            0& 0& 0& 1 \end{pmatrix}
             \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0  \\
-            0& 0 & 1 & d_{n+1} \\ 
+            0& 0 & 1 & d_{n+1} \\
             0& 0& 0& 1 \end{pmatrix}
             \begin{pmatrix}1 & 0 & 0 & a_{n+1} \\ 0 & 1 & 0 & 0  \\
-            0& 0 & 1 & 0 \\ 
+            0& 0 & 1 & 0 \\
             0& 0& 0& 1 \end{pmatrix}
 
 .. math::
 
    \times
     \begin{pmatrix}1 & 0 & 0 & 0 \\ 0 & \cos \alpha_{n+1} & -\sin \alpha_{n+1} & 0  \\
-            0& \sin \alpha_{n+1} & \cos \alpha_{n+1} & 0 \\ 
+            0& \sin \alpha_{n+1} & \cos \alpha_{n+1} & 0 \\
             0& 0& 0& 1 \end{pmatrix}
 
 :math:`A_{n+1} =`
 
-| 
+|
 
   .. math::
 
@@ -708,9 +706,9 @@ So,
 .. math::
 
    \begin{pmatrix}\cos (\theta_1+\theta_2) & -\sin (\theta_1+\theta_2) & 0 & a_2 \cos (\theta_1+\theta_2) + a_1 \cos \theta_1 \\
-   \sin (\theta_1 +\theta_2) & \cos (\theta_1 +\theta_2) & 0 & a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1\\ 
+   \sin (\theta_1 +\theta_2) & \cos (\theta_1 +\theta_2) & 0 & a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1\\
             0 &0 & 1 & 0 \\
-            0& 0& 0& 1 
+            0& 0& 0& 1
      \end{pmatrix}
 
 Then we have that the transformation carries the frame to some frame
@@ -719,9 +717,9 @@ description :math:`A = F`:
 .. math::
 
    A = \begin{pmatrix}\cos (\theta_1+\theta_2) & -\sin (\theta_1+\theta_2) & 0 & a_2 \cos (\theta_1+\theta_2) + a_1 \cos \theta_1 \\
-   \sin (\theta_1 +\theta_2) & \cos (\theta_1 +\theta_2) & 0 & a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1\\ 
+   \sin (\theta_1 +\theta_2) & \cos (\theta_1 +\theta_2) & 0 & a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1\\
             0 &0 & 1 & 0 \\
-            0& 0& 0& 1 
+            0& 0& 0& 1
      \end{pmatrix}
 
 .. math::
@@ -751,7 +749,7 @@ How can we use this technology to solve the inverse kinematics problem?
 
 .. math::
 
-   T^{-1} 
+   T^{-1}
      = T_0^{-1} T_{1}^{-1} \dots T_{n-1}^{-1} T_n^{-1}
 
 In each matrix one can solve algebraically for :math:`\theta_i` in terms
@@ -850,7 +848,7 @@ One really wants
 
 .. math::
 
-   \begin{pmatrix} \theta_1(t), ... , \theta_n(t) 
+   \begin{pmatrix} \theta_1(t), ... , \theta_n(t)
               \end{pmatrix} = f^{-1}(p(t), n(t), o(t), a(t))
 
 There is no reason to expect that there exists a solution, that you can
@@ -863,7 +861,7 @@ kinematic formulas are derived in an “ad hoc” manner.
 
   .. math::
 
-     p(t) \to \begin{pmatrix} \theta_1(t), ... , \theta_n(t) 
+     p(t) \to \begin{pmatrix} \theta_1(t), ... , \theta_n(t)
                 \end{pmatrix}
 | Assume that you have :math:`(\theta_1, ..., \theta_n) = f(p,n,o,a)`.
 | For each :math:`t`, solve
@@ -873,11 +871,11 @@ kinematic formulas are derived in an “ad hoc” manner.
      \begin{bmatrix}
       {\theta_1}_k \\ {\theta_2}_k \\ \vdots \\ {\theta_n}_k
      \end{bmatrix}
-     = 
+     =
      \begin{bmatrix}
       {\theta_1}(t_k) \\ {\theta_2}(t_k) \\ \vdots \\ {\theta_n}_k
      \end{bmatrix}
-     = 
+     =
      \begin{bmatrix}
       f_1(p(t_k),n(t_k),o(t_k),a(t_k)) \\
       f_2(p(t_k),n(t_k),o(t_k),a(t_k)) \\ \vdots \\
@@ -894,4 +892,3 @@ kinematic formulas are derived in an “ad hoc” manner.
 .. |image| image:: motion/humanoid.png
    :width: 65.0%
 .. |image| image:: kinematics/DH_frame.png
-

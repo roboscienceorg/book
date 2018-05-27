@@ -28,5 +28,3 @@ constraints.
    Mazes
    PotentialFunctions
    Brushfire
-   NavigationPlanner
-   Problems
