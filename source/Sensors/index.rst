@@ -1,5 +1,9 @@
+.. _`Chap:Sensors`:
+
+
+*******************
 Sensors and Sensing
-===================
+*******************
 
 Robotics is a interdisciplinary subject which relies on mechanical,
 electrical and software systems. Even though the focus of the text is on

@@ -1,5 +1,8 @@
+.. _`Chap:Simulation`:
+
+**********
 Simulation
-===========
+**********
 
 Learning how to operate any robotic system can be rather rough on your
 budget. A sufficiently robust robot that can support the standard array

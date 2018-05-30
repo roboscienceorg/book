@@ -20,6 +20,7 @@ the routing and localization problem are intertwined.
 
 
 .. Image by Roboscience.
+
 .. _`basic-navigation`:
 .. figure:: IntroductionFigures/navigation.*
    :width: 90%
@@ -46,6 +47,7 @@ in motors. Environmental instrumentation can be very successful if
 available.
 
 .. Owned by RoboScience
+
 .. figure:: IntroductionFigures/localization.*
    :width: 85%
    :align: center
@@ -66,6 +68,7 @@ different performance, accuracy, and results.
 
 
 .. Owned by RoboScience
+
 .. _`fig:maptypes`:
 .. figure:: IntroductionFigures/maps.png
    :width: 90%
@@ -81,6 +84,7 @@ system, Figure :numref:`fig:visionautopilot`. This is an active area of researc
 and we touch on it in the next section.
 
 .. This is not verified as public domain
+
 .. _`fig:visionautopilot`:
 .. figure:: IntroductionFigures/bosch.*
    :width: 90%

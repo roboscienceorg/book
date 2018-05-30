@@ -1,5 +1,8 @@
+.. _`Chap:Introduction`:
+
+************
 Introduction
-============
+************
 
 Growing up in the modern age means many things to many people. For those
 of us reading (or writing) a book on robotics, it means getting a

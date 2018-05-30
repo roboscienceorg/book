@@ -191,7 +191,7 @@ recalls the variables and equations derived in
 Chapter \ `[Chap:Motion] <#Chap:Motion>`__.
 
 
-.. figure:: KalmanFigures/dddim.*
+.. figure:: AdvFilteringFigures/dddim.*
    :width: 60%
    :align: center
 
@@ -552,7 +552,7 @@ Kalman (green dots). The second plot is a workspace domain plot of
 
 
 
-.. figure:: KalmanFigures/extendedkalmanfilter1.*
+.. figure:: AdvFilteringFigures/extendedkalmanfilter1.*
    :width: 60%
    :align: center
 
@@ -563,7 +563,7 @@ Kalman (green dots). The second plot is a workspace domain plot of
    is given by the green dots.
 
 
-.. figure:: KalmanFIgures/extendedkalmanfilter2.*
+.. figure:: AdvFilteringFigures/extendedkalmanfilter2.*
    :width: 60%
    :align: center
 

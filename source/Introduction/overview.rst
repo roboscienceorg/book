@@ -277,7 +277,7 @@ Popular Hobby Robots
 
 .. figure:: IntroductionFigures/create2.png
    :width: 35%
-   :align: right
+   :align: center
 
    iRobot Create (image from iRobot).
 
@@ -290,7 +290,7 @@ Popular Hobby Robots
 
 .. figure:: IntroductionFigures/boebot.png
    :width: 35%
-   :align: right
+   :align: center
 
    Parallax Boe Bot (image from Parallax).
 

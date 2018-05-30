@@ -164,6 +164,8 @@ latex_elements = {
     # Latex figure (float) alignment
     #
      'figure_align': 'htbp',
+
+     'docclass' : 'book',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -175,6 +177,7 @@ latex_documents = [
 ]
 
 latex_logo = './valkyrie-robot2.png'
+
 
 # -- Options for manual page output ---------------------------------------
 

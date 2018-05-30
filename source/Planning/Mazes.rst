@@ -297,34 +297,44 @@ at the start point, look around for the pixel with the smallest label or
 value. Step there and repeat the process. Continue stepping downhill
 until you reach the goal pixel.
 
-.. _`fig:wavefillexample`:
+.. _`fig:wavefillex`:
 .. figure:: PlanningFigures/obsmaparray.*
    :width: 40%
    :align: center
 
-.. _`fig:wavefillexample1`:
+   Wave front progression (0)
+
+.. _`fig:wavefillex1`:
 .. figure:: PlanningFigures/initmaparray.*
    :width: 40%
    :align: center
 
-.. _`fig:wavefillexample2`:
+   Wave front progression (1)
+
+.. _`fig:wavefillex2`:
 .. figure:: PlanningFigures/goalmaparray.*
    :width: 40%
    :align: center
 
-.. _`fig:wavefillexample3`:
+   Wave front progression (2)
+
+.. _`fig:wavefillex3`:
 .. figure:: PlanningFigures/fillmaparray.*
    :width: 40%
    :align: center
 
-.. _`fig:wavefillexample4`:
+   Wave front progression (3)
+
+.. _`fig:wavefillex4`:
 .. figure:: PlanningFigures/startbtmaparray.*
    :width: 40%
    :align: center
 
-.. _`fig:wavefillexample5`:
+   Wave front progression (4)
+
+.. _`fig:wavefillex5`:
 .. figure:: PlanningFigures/btmaparray.*
    :width: 40%
    :align: center
 
-   Wavefront fill example.
+   Wavefront fill example complete.

@@ -28,7 +28,7 @@ obstacle becomes zero. In the continuous world, the distance is
 
 .. math:: D(t) = \min \sqrt{(x_R(t)-x_O)^2 + (y_R(t)-y_O)^2}
 
- where :math:`(x_R,y_R)` lies on the robot boundary and
+where :math:`(x_R,y_R)` lies on the robot boundary and
 :math:`(x_O,y_O)` lies on the object boundary. Setting :math:`D=0` and
 solving for :math:`t` then provides the time and location of the
 collision. However, the robot and the obstacle will have some shape
@@ -142,12 +142,12 @@ to obtain
 
 .. math:: x(t) = A\cos\sqrt{2}t + B\sin\sqrt{2}t.
 
- The condition :math:`x(0) = 1` means :math:`x(0) = A = 1`. From the
+The condition :math:`x(0) = 1` means :math:`x(0) = A = 1`. From the
 first equation we obtain
 
 .. math:: y(t) = \sqrt{2}\sin\sqrt{2}t - B\sqrt{2}\cos\sqrt{2}t
 
- Using the second condition, :math:`y(0)=2`, we see that
+Using the second condition, :math:`y(0)=2`, we see that
 :math:`B = -\sqrt{2}`.
 
 We have already discussed computing an obstacle boundary normal and

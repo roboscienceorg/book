@@ -1,5 +1,9 @@
+.. _`Chap:Math`:
+
+*****************************************
 Mathematical and Computational Background
-=========================================
+*****************************************
+
 
 Robotics as an academic subject can be very mathematical in nature. This
 text does not attempt to place the subject on a rigorous mathematical

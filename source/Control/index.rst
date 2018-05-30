@@ -1,5 +1,8 @@
+.. _`Chap:Control`:
+
+**************
 Motion Control
-==============
+**************
 
 One of the core properties of a robot is the ability to move. In this
 chapter we discuss moving the robot in a predetermined or controlled

@@ -2,7 +2,7 @@ Potential Functions
 -------------------
 
 A potential function is a differentiable real-valued function
-:math:`U: \RR^m \to \RR`. We may think of it as an energy and thus the
+:math:`U: {\Bbb R}^m \to {\Bbb R}`. We may think of it as an energy and thus the
 gradient is a force. The gradient
 
 .. math::
@@ -264,7 +264,7 @@ The distance :math:`D(q)` can be determined from a LIDAR sweep if the
 robot is located at :math:`q`.
 
 
-.. figure:: PlanningFIgures/range.*
+.. figure:: PlanningFigures/range.*
    :width: 35%
    :align: center
 
@@ -282,7 +282,7 @@ repulsive potentials that don’t overwhelm the attractive potential.
 
 .. math:: U = (x-5)^2 +(y-6)^2 +  \frac{\gamma}{ (x-3)^2 + (y-4)^2/4 - 1}
 
-.. figure:: PlanningFIgures/potential3.*
+.. figure:: PlanningFigures/potential3.*
    :width: 50%
    :align: center
 
@@ -350,7 +350,7 @@ to adjust for better computed paths.
 
 
 
-.. figure:: PlanningFIgures/potentialavoid1a*
+.. figure:: PlanningFigures/potentialavoid1a.*
    :width: 85%
    :align: center
 

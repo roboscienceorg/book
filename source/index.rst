@@ -9,6 +9,7 @@ Introduction to Robotics
 
    preface.rst
 
+
 .. toctree::
    :maxdepth: 1
    :numbered:
@@ -30,7 +31,6 @@ Introduction to Robotics
    Sensor Filtering <Filtering/index>
    Kalman and Particle Filters <AdvFiltering/index>
    Motion Planning <Planning/index>
-   Localization <Localization/index>
    References <References/References>
 
 
@@ -41,7 +41,7 @@ Introduction to Robotics
 
    The SciPy Library <SciPy/index>
    STDR Simulator <STDR/index>
-   Gazebo 3D Simulator <Gazebo/index>
+..   Gazebo 3D Simulator <Gazebo/index>
 
 
 Index

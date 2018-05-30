@@ -1,5 +1,8 @@
+.. _`Chap:Filtering`:
+
+******************************
 Filtering and State Estimation
-==============================
+******************************
 
 Consider the two robots given in
 :numref:`fig:robotsandhumans`. How should we
@@ -85,4 +88,3 @@ outside the confines of a factory.
 
    StateEstimation
    SensorFusion
-   Problems

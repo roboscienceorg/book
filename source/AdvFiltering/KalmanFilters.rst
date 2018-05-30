@@ -110,13 +110,13 @@ pretend to run the dynamical system and get the observations.
       z[k] = x[k] + q[k-1]
       k = k+1
 
-.. figure:: KalmanFigures/scalarkalmandata1.*
+.. figure:: AdvFilteringFigures/scalarkalmandata1.*
    :width: 50%
    :align: center
 
    Plot of :math:`x_0`.
 
-.. figure:: KalmanFigures/scalarkalmandata2.*
+.. figure:: AdvFilteringFigures/scalarkalmandata2.*
    :width: 50%
    :align: center
 
@@ -139,13 +139,13 @@ Using the fake observations, we can test the filter.
       k = k+1
 
 
-.. figure:: KalmanFigures/scalarkalmandata3.*
+.. figure:: AdvFilteringFigures/scalarkalmandata3.*
    :width: 50%
    :align: center
 
    Kalman estimate of :math:`x_0`.
 
-.. figure:: KalmanFigures/scalarkalmandata4.*
+.. figure:: AdvFilteringFigures/scalarkalmandata4.*
    :width: 50%
    :align: center
 
@@ -476,25 +476,25 @@ error ellipses for the previous point clouds. It is easier to see the
 changes from this than looking at the raw data.
 
 .. _`fig:kalmanclouds1`:
-.. figure:: KalmanFigures/cloud1.*
+.. figure:: AdvFilteringFigures/cloud1.*
    :alt: Point distribution after process update.
 
    Point distribution after process update.
 
 .. _`fig:kalmanclouds2`:
-.. figure:: KalmanFigures/cloud2.*
+.. figure:: AdvFilteringFigures/cloud2.*
    :alt: Observed point distribution.
 
    Observed point distribution.
 
 .. _`fig:kalmanclouds3`:
-.. figure:: KalmanFigures/cloud3.*
+.. figure:: AdvFilteringFigures/cloud3.*
    :alt: Final distribution after update step.
 
    Final distribution after update step.
 
 .. _`fig:kalmanclouds4`:
-.. figure:: KalmanFigures/cloud4.*
+.. figure:: AdvFilteringFigures/cloud4.*
    :alt: The standard deviation based ellipses.
 
    The standard deviation based ellipses.
@@ -669,14 +669,14 @@ The blue dots are a graph of :math:`(x_0)_k`, the red dots are the
 observations :math:`z_k`, and the green dots are the Kalman estimate of
 the state.
 
-.. figure:: KalmanFigures/kalmanexample2.*
+.. figure:: AdvFilteringFigures/kalmanexample2.*
    :width: 75%
    :align: center
 
 The blue dots are a graph of :math:`(x_1)_k`, and the green dots are the
 Kalman estimate of the state.
 
-.. figure:: KalmanFigures/kalmanexample2b.*
+.. figure:: AdvFilteringFigures/kalmanexample2b.*
    :width: 75%
    :align: center
 

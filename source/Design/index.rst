@@ -1,5 +1,8 @@
+.. _`Chap:Design`:
+
+************************
 Robotics Design Elements
-========================
+************************
 
 .. toctree::
    :maxdepth: 2

@@ -1,5 +1,8 @@
+.. _`Chap:Electical`:
+
+*******************
 Electrical Concepts
-====================
+*******************
 
 There are a wealth of useful sensors available to the robotics engineer.
 These include force, pressure, temperature, light, radiation, and more.

@@ -40,13 +40,13 @@ Measurement :math:`\to` Model :math:`\to` Estimate/Predict
 The work we did earlier in fitting curves is one form of this idea. We
 have a model in mind and we then “project” the data onto the model.
 
-.. figure:: KalmanFigures/quadpts.*
+.. figure:: AdvFilteringFigures/quadpts.*
    :width: 60%
    :align: center
 
  :math:`\Rightarrow`
 
-.. figure:: KalmanFigures/quadgraph.*
+.. figure:: AdvFilteringFigures/quadgraph.*
    :width: 60%
    :align: center
 
@@ -56,13 +56,13 @@ Using quadratic model, :math:`y = c_2x^2 + c_1x + c_0`, and least
 squares we find :math:`y = 0.49x^2 - 1.21x + 1.42`. So we can use this
 to extrapolate at :math:`x=5` we have :math:`y = 6.5`.
 
-.. figure:: KalmanFigures/quadpts.*
+.. figure:: AdvFilteringFigures/quadpts.*
    :width: 60%
    :align: center
 
  :math:`\Rightarrow`
 
-.. figure:: KalmanFigures/lscompare.*
+.. figure:: AdvFilteringFigures/lscompare.*
    :width: 60%
    :align: center
 

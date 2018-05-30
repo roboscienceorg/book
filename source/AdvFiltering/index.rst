@@ -1,5 +1,8 @@
-Kalman FIlter
-=============
+.. _`Chap:AdvFiltering`:
+
+*****************************
+Advanced Filtering Techniques
+*****************************
 
 Observation is not the whole story. The robot will be out observing the
 world, but the observations will not be random. For example, if we are

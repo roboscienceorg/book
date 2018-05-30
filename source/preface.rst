@@ -1,5 +1,8 @@
+.. _`Chap:Preface`:
+
+*******
 Preface
-=======
+*******
 
 Historically, the academic study of robotics has been limited to the
 Mechanical Engineering or Electrical Engineering departments. This makes
@@ -17,7 +20,7 @@ Robots* by Siegwart and  Nourbakhsh :cite:`Siegwart:2004:IAM` . It is a really 
 survey text but we found ourselves having to fill in details, add
 content, provide more current examples, provide information on
 frameworks and enhance focus on software. The slides, notes and handouts
-ended up growing into this text. 
+ended up growing into this text.
 
 The word “robotics” encompasses many different meanings and fields. This
 is very different from a subject like Calculus, for example, for which
