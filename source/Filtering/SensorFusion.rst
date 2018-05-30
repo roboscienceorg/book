@@ -35,17 +35,16 @@ define optimality as minimizing the mean square error:
 
 :math:`E[\hat{x}-x]=0` implies :math:`\sum_{i=1}^n k_i = 1`
 
-|
-| An unbiased estimate means that :math:`E(\hat{x}-x) = 0`,
+An unbiased estimate means that :math:`E(\hat{x}-x) = 0`,
 
   .. math:: E[\hat{x}-x] = E\left[\sum_{i=1}^n k_i z_i - x\right] = E\left[\sum_{i=1}^n k_i (x+v_i) - x\right]
-|
 
   .. math::
 
      = E\left[\sum_{i=1}^n k_i x - x + \sum_{i=1}^n k_i v_i\right]
      = \sum_{i=1}^n k_i E[x] - E[x]  + \sum_{i=1}^n k_i E[v_i] = 0
-| since :math:`E(v_i)=0` and :math:`E(x)=x` we have that
+
+since :math:`E(v_i)=0` and :math:`E(x)=x` we have that
 
   .. math:: \sum_{i=1}^n k_i = 1 .
 
@@ -128,7 +127,10 @@ above:
 .. math::
    :label: `Eq:weightaveragevariance`
 
-   \sigma^2 =  \sum_{i=1}^n k_i^2\sigma_i^2 =  \sum_{i=1}^n\left( \frac{1}{\sigma_i^2} \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}\right)^2 \sigma_i^2 $$ $$=  \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-2} \sum_{i=1}^n\left( \frac{1}{\sigma_i^2} \right) =  \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}
+   \sigma^2 =  \sum_{i=1}^n k_i^2\sigma_i^2 =  \sum_{i=1}^n\left( \frac{1}{\sigma_i^2} \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}\right)^2 \sigma_i^2
+
+.. math::
+   =  \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-2} \sum_{i=1}^n\left( \frac{1}{\sigma_i^2} \right) =  \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}
 
 Simple example using uniform variance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -566,7 +568,7 @@ versions of a hidden state :math:`x`, with noise :math:`w` meaning that
 :math:`z = Hx + w`, the observation of :math:`x` subject to noise
 :math:`w`.
 
-Given :math:`k` observations :math:`z` of state :math:`x\in\RR^n`,
+Given :math:`k` observations :math:`z` of state :math:`x\in{\Bbb R}^n`,
 :math:`k>>n`, with noise :math:`w`:
 
 .. math:: z = Hx+w.

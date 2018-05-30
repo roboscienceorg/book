@@ -110,9 +110,18 @@ pretend to run the dynamical system and get the observations.
       z[k] = x[k] + q[k-1]
       k = k+1
 
+.. figure:: KalmanFigures/scalarkalmandata1.*
+   :width: 50%
+   :align: center
 
-|A. Plot of :math:`x_0`. B. Noisy observation of :math:`x_0`.| |A. Plot
-of :math:`x_0`. B. Noisy observation of :math:`x_0`.|
+   Plot of :math:`x_0`.
+
+.. figure:: KalmanFigures/scalarkalmandata2.*
+   :width: 50%
+   :align: center
+
+   Noisy observation of :math:`x_0`.
+
 
 Using the fake observations, we can test the filter.
 
@@ -130,9 +139,20 @@ Using the fake observations, we can test the filter.
       k = k+1
 
 
-|A. Kalman estimate of :math:`x_0`. B. Comparison of state estimate to
-real state.| |A. Kalman estimate of :math:`x_0`. B. Comparison of state
-estimate to real state.|
+.. figure:: KalmanFigures/scalarkalmandata3.*
+   :width: 50%
+   :align: center
+
+   Kalman estimate of :math:`x_0`.
+
+.. figure:: KalmanFigures/scalarkalmandata4.*
+   :width: 50%
+   :align: center
+
+   Comparison of state estimate to
+   real state.
+
+
 
 The Multivariate Kalman Filter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -176,7 +196,7 @@ Formally we have a dynamical process
 
     x_{k+1} = F_k x_k + Gu_k + v_k
 
- where :math:`F_k` is the state transition matrix, :math:`Gu_k` is the
+where :math:`F_k` is the state transition matrix, :math:`Gu_k` is the
 input control and and observation
 
 .. math::
@@ -184,7 +204,7 @@ input control and and observation
 
      z_k = Hx_k + w_k
 
- where :math:`H` is the observation matrix. The random variables
+where :math:`H` is the observation matrix. The random variables
 :math:`v_k`, :math:`w_k` are drawn from Gaussian distributions with
 covariance models given by
 
@@ -197,7 +217,7 @@ The error covariance of the estimate is
 
     P_k = E[e_ke_k^T] = E[(x_k - \hat{x}_k)(x_k - \hat{x}_k)^T] .
 
- The state estimate will be denoted :math:`\hat{x}_k` and the process
+The state estimate will be denoted :math:`\hat{x}_k` and the process
 update to the state is denoted :math:`\tilde{x}_k`
 
 As before we assume that we can write our estimate as a combination of
@@ -251,9 +271,10 @@ solving for the Kalman gain gives
 
 .. math:: K_k = P_{k|k-1}H^T S^{-1}_k .
 
-| We can collect the results into the following algorithm:
-| **Kalman Filter**
-| **Predict:** Prediction or a priori stage
+We can collect the results into the following algorithm:
+**Kalman Filter**
+
+**Predict:** Prediction or a priori stage
 
 -  Predicted state:
    :math:`\hat{x}_{k|k-1} = F_{k}\hat{x}_{k-1|k-1} + G_{k} u_{k}`
@@ -295,30 +316,26 @@ estimates have mean error zero)
 
 where :math:`E[\xi]` is the expected value of :math:`\xi`.
 
-:math:`x_0`, :math:`P_0`
 
-Estimates of :math:`x_k`, :math:`P_k`
+.. _kalmanfilteralg:
+.. topic::  Kalman Algorithm
 
-:math:`k=0`
+   | **Input** :math:`x_0`, :math:`P_0`
+   | **Output** Estimates of :math:`x_k`, :math:`P_k`
+   | :math:`k=0`
+   | **while** (not terminated) **do**
+   |    :math:`k=k+1`
+   |    :math:`x_k = F_{k}x_{k-1} + G_{k} u_{k}`
+   |    :math:`P_{k} = F_{k} P_{k-1} F_{k}^{T} + V_{k}`
+   |    :math:`y_k = z_k - H_kx_{k}`
+   |    :math:`S_k = H_k P_{k} H_k^\text{T} + W_k`
+   |    :math:`K_k = P_{k}H_k^\text{T}S_k^{-1}`
+   |    :math:`x_k =   x_{k} + K_k y_k`
+   |    :math:`P_{k} = (I - K_k H_k) P_{k}`
+   | **end while**
 
-.. raw:: latex
 
-   \WHILE {Not Terminated}
 
-:math:`k=k+1`
-
-:math:`x_k = F_{k}x_{k-1} + G_{k} u_{k}`
-:math:`P_{k} = F_{k} P_{k-1} F_{k}^{T} + V_{k}`
-
-:math:`y_k = z_k - H_kx_{k}`
-
-:math:`S_k = H_k P_{k} H_k^\text{T} + W_k`
-:math:`K_k = P_{k}H_k^\text{T}S_k^{-1}` :math:`x_k =   x_{k} + K_k y_k`
-:math:`P_{k} = (I - K_k H_k) P_{k}`
-
-.. raw:: latex
-
-   \ENDWHILE
 
 Simple Example of a Single Step
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,7 +358,7 @@ Let
 
 .. math:: \quad u_k = \sin (7*k/100), \quad x_0 = \begin{bmatrix} 0\\0\end{bmatrix}, \quad P_0 = \begin{bmatrix}0 & 0\\ 0&0\end{bmatrix}.
 
- Apply the Kalman Filter process and compute :math:`\hat{x}_{1|1}` and
+Apply the Kalman Filter process and compute :math:`\hat{x}_{1|1}` and
 :math:`P_{1|1}`.
 
 Process update:
@@ -410,7 +427,7 @@ State variable covariance:
 
 It is useful to visualize the effects of a single Kalman step. The
 images are provided in
-Figures \ `[fig:kalmancloudsa] <#fig:kalmancloudsa>`__, \ `[fig:kalmancloudsb] <#fig:kalmancloudsb>`__
+:numref:`fig:kalmancloudsa, :numref:fig:kalmancloudsb`
 and the numbers used are not the same as the example above [2]_. The
 system we use is Let
 
@@ -430,12 +447,12 @@ update. From the same starting point we run each forward with the
 process update, :math:`\hat{x}_{k|k-1}` many times to generate a
 distribution. The resulting points are different since the process
 update has noise.
-:numref:`fig:kalmancloudsa`(a) shows the
+:numref:`fig:kalmanclouds1` shows the
 point cloud (in blue). This process does not have a great deal of noise
 so the cloud is tightly clustered.
-:numref:`fig:kalmancloudsa`(b) shows the
+:numref:`fig:kalmanclouds2` shows the
 observation :math:`z_k`.
-:numref:`fig:kalmancloudsb`(a) shows the
+:numref:`fig:kalmanclouds3` shows the
 observation update, the fusion of the observation with the state update.
 
 ::
@@ -454,30 +471,30 @@ trusted the :math:`y` process estimate and so weighted the process more
 than the observation. In the :math:`x` estimate, much more of the
 observation was used. So the resulting point cloud has lower variation
 in :math:`y` than :math:`x`.
-:numref:`fig:kalmancloudsb`(b) graphs the
+:numref:`fig:kalmanclouds4` graphs the
 error ellipses for the previous point clouds. It is easier to see the
 changes from this than looking at the raw data.
 
-
-.. figure:: math/cloud1.pdf
+.. _`fig:kalmanclouds1`:
+.. figure:: KalmanFigures/cloud1.*
    :alt: Point distribution after process update.
 
    Point distribution after process update.
 
-
-.. figure:: math/cloud2.pdf
+.. _`fig:kalmanclouds2`:
+.. figure:: KalmanFigures/cloud2.*
    :alt: Observed point distribution.
 
    Observed point distribution.
 
-
-.. figure:: math/cloud3.pdf
+.. _`fig:kalmanclouds3`:
+.. figure:: KalmanFigures/cloud3.*
    :alt: Final distribution after update step.
 
    Final distribution after update step.
 
-
-.. figure:: math/cloud4.pdf
+.. _`fig:kalmanclouds4`:
+.. figure:: KalmanFigures/cloud4.*
    :alt: The standard deviation based ellipses.
 
    The standard deviation based ellipses.
@@ -511,7 +528,6 @@ into the computation for :math:`x_{k+1}`, the observation noise,
 
 .. math:: x_{k+1} = Fx_k + Gu_k + v_k
 
-\
 
 .. math:: z_{k+1} = Hx_k + w_k
 
@@ -592,7 +608,6 @@ certainly can be changed for different applications. As above, let
 
 .. math:: x = \begin{bmatrix}a \\ b\end{bmatrix}, \quad F = \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix}, \quad G = \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}, \quad H = \begin{bmatrix} 1& 0 \end{bmatrix},
 
-\
 
 .. math:: V = \begin{bmatrix} 0.075^2&0\\0& 0.075^2\end{bmatrix}, \quad W = 0.85^2,\quad z_1 = 0.01
 
@@ -654,12 +669,17 @@ The blue dots are a graph of :math:`(x_0)_k`, the red dots are the
 observations :math:`z_k`, and the green dots are the Kalman estimate of
 the state.
 
-|image|
+.. figure:: KalmanFigures/kalmanexample2.*
+   :width: 75%
+   :align: center
 
 The blue dots are a graph of :math:`(x_1)_k`, and the green dots are the
 Kalman estimate of the state.
 
-|image|
+.. figure:: KalmanFigures/kalmanexample2b.*
+   :width: 75%
+   :align: center
+
 
 The Classic Vehicle on Track Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -860,7 +880,7 @@ physical model is used.
 
 .. math:: K_k = P_kH_k^TS_k^{-1} \to 0
 
-\ This can be a problem for sensors that have drift or some type of
+This can be a problem for sensors that have drift or some type of
 uncorrected deterministic error (DC bias).
 
 The Kalman filter does not correct for drift that occurs in gyros and

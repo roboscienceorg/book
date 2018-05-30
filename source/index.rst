@@ -28,8 +28,7 @@ Introduction to Robotics
    Kinematic Modeling <Kinematics/index>
    Motion Control <Control/index>
    Sensor Filtering <Filtering/index>
-   Kalman Filter <Kalman/index>
-   Particle Filters <Particle/index>
+   Kalman and Particle Filters <AdvFiltering/index>
    Motion Planning <Planning/index>
    Localization <Localization/index>
    References <References/References>

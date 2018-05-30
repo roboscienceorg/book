@@ -1,5 +1,5 @@
 Particle Filters
-================
+----------------
 
 Particle filters are a form of sequential Monte Carlo methods used to
 address the hidden Markov chain and nonlinear filtering problems.

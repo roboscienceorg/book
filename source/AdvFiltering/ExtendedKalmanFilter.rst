@@ -23,7 +23,7 @@ nonlinear process, let :math:`x_k \in R^n`, :math:`u_k \in R^p`,
    \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}  & \dots &
    \frac{\partial f_2}{\partial x_n}  \\[8pt] \vdots & \vdots & \vdots \\[8pt]
    \frac{\partial f_n}{\partial x_1} & \frac{\partial f_n}{\partial x_2}  & \dots &
-   \frac{\partial f_n}{\partial x_n}  \end{bmatrix},  
+   \frac{\partial f_n}{\partial x_n}  \end{bmatrix},
    \displaystyle H_k = \begin{bmatrix} \frac{\partial h_1}{\partial x_1} & \frac{\partial h_1}{\partial x_2}  & \dots &
    \frac{\partial h_1}{\partial x_n}  \\[8pt]
    \frac{\partial h_2}{\partial x_1} & \frac{\partial h_2}{\partial x_2}  & \dots &
@@ -68,7 +68,7 @@ What is the Extended Kalman Filter formulation of the motion model:
 
 .. math:: \begin{array}{l}\dot{x} = y \\\dot{y} = -\cos(x) + 0.4\sin(t)\end{array},
 
-\ and observation
+and observation
 
 .. math:: h(x,y) = \begin{bmatrix}x \\ y\end{bmatrix}
 
@@ -99,7 +99,7 @@ and so
 
 .. math::
 
-   F = \begin{bmatrix} 1 & 0.1 \\ 0.1\sin(x_k) & 1 \end{bmatrix},  \quad 
+   F = \begin{bmatrix} 1 & 0.1 \\ 0.1\sin(x_k) & 1 \end{bmatrix},  \quad
    H = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}
 
 | **EKF:**
@@ -114,12 +114,12 @@ and so
 
    .. math:: =  \begin{bmatrix} 1 & 0.1 \\ 0.1\sin(1) & 1 \end{bmatrix}   \begin{bmatrix} 0.05 & 0 \\ 0 & 0.05   \end{bmatrix} \begin{bmatrix} 1 & 0.1\sin(1) \\ 0.1 & 1 \end{bmatrix} +
 
-   \ 
+   \
 
    .. math::
 
-      \begin{bmatrix} 0.1&0.01\\0.01& 0.1\end{bmatrix}   
-      =  \begin{bmatrix} 0.605   &    0.10207355 \\ 
+      \begin{bmatrix} 0.1&0.01\\0.01& 0.1\end{bmatrix}
+      =  \begin{bmatrix} 0.605   &    0.10207355 \\
        0.10207355  &  0.60354037 \end{bmatrix}
 
 #. Optimal Kalman gain:
@@ -131,12 +131,12 @@ and so
 
    .. math::
 
-      =  \begin{bmatrix} 0.605   &    0.10207355 \\ 
+      =  \begin{bmatrix} 0.605   &    0.10207355 \\
        0.10207355  &  0.60354037 \end{bmatrix}
 
    .. math::
 
-      \times \left(  \begin{bmatrix} 0.605   &    0.10207355 \\ 
+      \times \left(  \begin{bmatrix} 0.605   &    0.10207355 \\
        0.10207355  &  0.60354037 \end{bmatrix}  + \begin{bmatrix} 0.05&0\\0& 0.05\end{bmatrix}\right)^{-1}
 
    .. math::
@@ -155,7 +155,7 @@ and so
 
    .. math::
 
-      \times \left(\begin{pmatrix}1.15 \\ 0.5\end{pmatrix} -  \begin{pmatrix} 1.1 \\ 0.45969769 \end{pmatrix} \right) 
+      \times \left(\begin{pmatrix}1.15 \\ 0.5\end{pmatrix} -  \begin{pmatrix} 1.1 \\ 0.45969769 \end{pmatrix} \right)
         =  \begin{pmatrix} 1.14658048 \\ 0.4974507 \end{pmatrix}
 
 #. Updated estimate covariance:
@@ -172,8 +172,8 @@ and so
 
    .. math::
 
-      \times \begin{bmatrix} 0.605   &    0.10207355 \\ 
-       0.10207355  &  0.60354037 \end{bmatrix} = 
+      \times \begin{bmatrix} 0.605   &    0.10207355 \\
+       0.10207355  &  0.60354037 \end{bmatrix} =
       \begin{bmatrix} 0.04608799&  0.000611 \\
               0.000611  &  0.04607925 \end{bmatrix}
 
@@ -186,22 +186,16 @@ simulated the motion of the robot based on wheel velocity data. Small
 amounts of noise in the wheel velocity data could cause significant
 errors in position estimation. Using the Extended Kalman Filter, we can
 improve the location estimate as well as gain estimates for the
-uncertainty of the location. Figure \ `[Fig:DDagain] <#Fig:DDagain>`__
+uncertainty of the location. :numref:`Fig:DDagain`
 recalls the variables and equations derived in
 Chapter \ `[Chap:Motion] <#Chap:Motion>`__.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: motion/dddim
-   :alt: The variables used in the DD model.
+.. figure:: KalmanFigures/dddim.*
+   :width: 60%
+   :align: center
 
    The variables used in the DD model.
-
-.. raw:: latex
-
-   \hspace{5mm}
 
 .. math::
 
@@ -265,14 +259,14 @@ must compute the matrix :math:`F` from the nonlinear model :math:`f`.
    \displaystyle F_k =
      \begin{bmatrix} \frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2}  &
    \frac{\partial f_1}{\partial x_3}  \\[8pt]
-   \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}  & 
-   \frac{\partial f_2}{\partial x_3}  \\[8pt] 
-   \frac{\partial f_3}{\partial x_1} & \frac{\partial f_3}{\partial x_2}  & 
+   \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}  &
+   \frac{\partial f_2}{\partial x_3}  \\[8pt]
+   \frac{\partial f_3}{\partial x_1} & \frac{\partial f_3}{\partial x_2}  &
    \frac{\partial f_3}{\partial x_3}  \end{bmatrix}
-   \displaystyle  = \begin{bmatrix} 1 & 0  & 
+   \displaystyle  = \begin{bmatrix} 1 & 0  &
    -\frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k)  \\[8pt]
-   0 & 1  & 
-   \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k)  \\[8pt] 
+   0 & 1  &
+   \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k)  \\[8pt]
    0 & 0  & 1  \end{bmatrix}
 
 Assume that you start the robot with pose :math:`[0,0,0]` and you know
@@ -280,7 +274,7 @@ this is exact so
 
 .. math:: P_{0|0} = \begin{bmatrix} 0 & 0 & 0\\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}.
 
-\ Let the process noise and measurement noise covariances be
+Let the process noise and measurement noise covariances be
 
 .. math::
 
@@ -330,33 +324,33 @@ and so we plug in :math:`H` into our process and express:
 
 .. math::
 
-   F = \begin{bmatrix} 1 & 0  & 
+   F = \begin{bmatrix} 1 & 0  &
    -\frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k)  \\[8pt]
-   0 & 1  & 
-   \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k)  \\[8pt] 
+   0 & 1  &
+   \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k)  \\[8pt]
    0 & 0  & 1  \end{bmatrix} =
-   \begin{bmatrix} 1 & 0  & 
+   \begin{bmatrix} 1 & 0  &
    0  \\
-   0 & 1  & 
+   0 & 1  &
    0.6  \\
    0 & 0  & 1  \end{bmatrix}
 
-\ so ...
+so ...
 
 .. math::
 
-   P_{1|0} = \begin{bmatrix} 1 & 0  & 
+   P_{1|0} = \begin{bmatrix} 1 & 0  &
    0  \\
-   0 & 1  & 
+   0 & 1  &
    0.6  \\
    0 & 0  & 1  \end{bmatrix}
    \begin{bmatrix} 0 & 0 & 0\\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}
-   \begin{bmatrix} 1 & 0  & 
+   \begin{bmatrix} 1 & 0  &
    0  \\
-   0 & 1  & 
+   0 & 1  &
    0 \\
    0 & 0.6  & 1  \end{bmatrix}
-   + 
+   +
    \begin{bmatrix} 0.2 & 0.01 & 0.1 \\ 0.01 & 0.2 & 0.01  \\ 0.1 & 0.01 & 0.3 \end{bmatrix}
 
 .. math:: =  \begin{bmatrix} 0.2 & 0.01 & 0.1 \\ 0.01 & 0.2 & 0.01  \\ 0.1 & 0.01 & 0.3 \end{bmatrix}
@@ -368,7 +362,6 @@ and so we plug in :math:`H` into our process and express:
    \begin{bmatrix} 0.25 & 0 & 0.1 \\ 0 & 0.25 & 0.1  \\ 0.1 & 0.1 & 0.4 \end{bmatrix}
    \right]^{-1}
 
-\ 
 
 .. math::
 
@@ -381,7 +374,7 @@ and so we plug in :math:`H` into our process and express:
 .. math::
 
    =
-   \begin{bmatrix} 
+   \begin{bmatrix}
    0.437 & 0.008 & 0.017\\
     0.043 & 0.461 & -0.070\\
     0.032 & -0.084 & 0.433
@@ -392,7 +385,7 @@ the innovation
 
 .. math:: z_k - \hat{x}_{k|k-1} = \begin{pmatrix}-.1\\ 0.025\\ 0.033\end{pmatrix}
 
-\ So,
+So,
 
 .. math:: \hat{x}_{1|1} = \hat{x}_{1|0} + K_k \left(z_k - \hat{x}_{k|k-1}\right)
 
@@ -405,11 +398,11 @@ the innovation
    -0.333
    \end{pmatrix}
    +
-   \begin{bmatrix} 
+   \begin{bmatrix}
    0.437 & 0.008 & 0.017\\
     0.043 & 0.461 & -0.070\\
     0.032 & -0.084 & 0.433
-   \end{bmatrix} 
+   \end{bmatrix}
    \begin{pmatrix}
     -0.1\\
     0.025 \\
@@ -419,7 +412,7 @@ the innovation
 .. math::
 
    \hat{x}_{1|1}
-   = 
+   =
    \begin{pmatrix}
    0.557\\
     0.005\\
@@ -429,22 +422,22 @@ the innovation
 .. math::
 
    P_{1|1} = (I - K ) P_{1|0} =
-   \begin{bmatrix} 
+   \begin{bmatrix}
    0.563 & -0.008 & -0.017\\
     -0.043 & 0.539 & 0.070\\
     -0.032 & 0.084 & 0.567
    \end{bmatrix}
-   \begin{bmatrix} 
-   0.2 & 0.01 & 0.1 \\ 
-   0.01 & 0.2 & 0.01  \\ 
-   0.1 & 0.01 & 0.3 
+   \begin{bmatrix}
+   0.2 & 0.01 & 0.1 \\
+   0.01 & 0.2 & 0.01  \\
+   0.1 & 0.01 & 0.3
    \end{bmatrix}
 
 .. math::
 
    P_{1|1}
    =
-   \begin{bmatrix} 
+   \begin{bmatrix}
    0.111& 0.004& 0.051\\
    0.004& 0.108& 0.022\\
    0.051& 0.022& 0.168
@@ -462,7 +455,7 @@ this is exact so
 
 .. math:: P_{0|0} = \begin{bmatrix} 0 & 0 & 0\\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}.
 
-\ Let the process noise and measurement noise covariances be
+Let the process noise and measurement noise covariances be
 
 .. math::
 
@@ -557,16 +550,11 @@ Kalman (green dots). The second plot is a workspace domain plot of
     plt.plot(x[:,0], x[:,1], 'b-',z[:,0], z[:,1] ,'r.', xf[:,0], xf[:,1],'go')
     plt.show()
 
-.. raw:: latex
 
-   \centering
 
-.. figure:: math/extendedkalmanfilter1.pdf
-   :alt: The Extended Kalman Filter applied to the motion of a
-   differential drive robot. Domain axis is time and vertical axis are
-   the state variables. The simulation pose is given by the blue line,
-   the observation of the pose given by the red dots and the pose
-   estimate is given by the green dots.
+.. figure:: KalmanFigures/extendedkalmanfilter1.*
+   :width: 60%
+   :align: center
 
    The Extended Kalman Filter applied to the motion of a differential
    drive robot. Domain axis is time and vertical axis are the state
@@ -574,17 +562,10 @@ Kalman (green dots). The second plot is a workspace domain plot of
    observation of the pose given by the red dots and the pose estimate
    is given by the green dots.
 
-.. raw:: latex
 
-   \centering
-
-.. figure:: math/extendedkalmanfilter2.pdf
-   :alt: The Extended Kalman Filter applied to the motion of a
-   differential drive robot. This figure plots the :math:`y` state
-   variable against the :math:`x` state variable with :math:`\theta`
-   ignored. The simulation pose is given by the blue line, the
-   observation of the pose given by the red dots and the pose estimate
-   is given by the green dots.
+.. figure:: KalmanFIgures/extendedkalmanfilter2.*
+   :width: 60%
+   :align: center
 
    The Extended Kalman Filter applied to the motion of a differential
    drive robot. This figure plots the :math:`y` state variable against
@@ -599,8 +580,8 @@ Mecanum EKF Example
 | Developing the Extended Kalman Filter for the Mecanum drive is
   basically the same process. The only thing to derive is the matrix
   :math:`F`. Recalling
-  equation \ `[mecanumforwardkinematics] <#mecanumforwardkinematics>`__:
-| 
+  :eq:`mecanumforwardkinematics`:
+|
 
   .. math::
 
@@ -611,7 +592,7 @@ Mecanum EKF Example
                                  \frac{2}{(L_1+L_2) } C
               \end{bmatrix}
 
-| where
+where
   :math:`A = \left( \omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} + \omega_{BR,k} \right)`,
 | :math:`B = \left(-\omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} - \omega_{BR,k}  \right)`,
 | and
@@ -630,7 +611,7 @@ Computing the Jacobian of :math:`f`:
 
    F = \begin{bmatrix} 1 & 0 & \frac{ r\Delta t }{4}  \left[ - A\sin(\theta_{k-1})  - B\cos(\theta_{k-1})  \right] \\[3mm]
    0 & 1 & \frac{ r\Delta t }{4}  \left[ A \cos(\theta_{k-1})  - B \sin(\theta_{k-1})  \right] \\[3mm]
-   0 & 0 & 1 
+   0 & 0 & 1
    \end{bmatrix} .
 
 The rest of the process is identical to the differential drive examples.
@@ -656,7 +637,7 @@ We return to our original nonlinear process,
    \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}  & \dots &
    \frac{\partial f_2}{\partial x_n}  \\[8pt] \vdots & \vdots & \vdots \\[8pt]
    \frac{\partial f_n}{\partial x_1} & \frac{\partial f_n}{\partial x_2}  & \dots &
-   \frac{\partial f_n}{\partial x_n}  \end{bmatrix},  
+   \frac{\partial f_n}{\partial x_n}  \end{bmatrix},
    \displaystyle H_k = \begin{bmatrix} \frac{\partial h_1}{\partial x_1} & \frac{\partial h_1}{\partial x_2}  & \dots &
    \frac{\partial h_1}{\partial x_n}  \\[8pt]
    \frac{\partial h_2}{\partial x_1} & \frac{\partial h_2}{\partial x_2}  & \dots &
@@ -710,21 +691,17 @@ We can map the control noise into process space via
 
 .. math::
 
-   V_k = 
+   V_k =
    \begin{pmatrix}
    \displaystyle\frac{r\Delta t}{2}\cos\theta_k& \displaystyle\frac{r\Delta t}{2}\cos\theta_k\\[8pt]
    \displaystyle\frac{r\Delta t}{2}\sin\theta_k& \displaystyle\frac{r\Delta  t}{2}\sin\theta_k \\[8pt]
-     \displaystyle\frac{r\Delta t}{2L}& -\displaystyle\frac{r\Delta t}{2L} 
+     \displaystyle\frac{r\Delta t}{2L}& -\displaystyle\frac{r\Delta t}{2L}
      \end{pmatrix}
    \begin{pmatrix}
    \sigma_1^2 & 0 \\[8pt]
-   0 & \sigma_2^2   
+   0 & \sigma_2^2
    \end{pmatrix}
    \begin{pmatrix}
    \displaystyle\frac{r\Delta t}{2}\cos\theta_k & \displaystyle\frac{r\Delta t}{2}\sin\theta_k & \displaystyle\frac{r\Delta t}{2L} \\[8pt]
-   \displaystyle \frac{r\Delta t}{2}\cos\theta_k &\displaystyle \frac{r\Delta  t}{2}\sin\theta_k & -\displaystyle\frac{r\Delta t}{2L} 
+   \displaystyle \frac{r\Delta t}{2}\cos\theta_k &\displaystyle \frac{r\Delta  t}{2}\sin\theta_k & -\displaystyle\frac{r\Delta t}{2L}
    \end{pmatrix}
-
-.. raw:: latex
-
-   \FloatBarrier

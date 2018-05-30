@@ -1,13 +1,7 @@
 Models and Dynamical Systems
 ----------------------------
 
-Observation is not the whole story. The robot will be out observing the
-world, but the observations will not be random. For example, if we are
-observing motion, we know that not all types of motion will be possible.
-The basic laws of physics clearly play a role. In addition the design
-and details of the robot also play a role. These constrain the
-possibilities and in doing so, help improve our estimates of the robot
-state. In this section we learn how to model the dynamics of the system.
+In this section we learn how to model the dynamics of the system.
 For our purposes, it is sufficient to use a simplified model of the
 dynamics. We will assume that the system dynamics are linear and the
 variations in the dynamics (the noise) is normal or Gaussian. We will
@@ -20,7 +14,7 @@ Creating Filters from data and models
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Say that you have a lidar at the side a road or railway which you intend
-to track velocity of the passing vehicle. [1]_ The lidar will estimate
+to track velocity of the passing vehicle. [#f1]_ The lidar will estimate
 the distance at the various sweep angles. This can be converted from the
 polar coordinates of the lidar to the rectangular coordinates natural
 for tracking the vehicle. Because of measurement error in
@@ -46,27 +40,36 @@ Measurement :math:`\to` Model :math:`\to` Estimate/Predict
 The work we did earlier in fitting curves is one form of this idea. We
 have a model in mind and we then “project” the data onto the model.
 
-|image|
+.. figure:: KalmanFigures/quadpts.*
+   :width: 60%
+   :align: center
 
  :math:`\Rightarrow`
 
-|image|
+.. figure:: KalmanFigures/quadgraph.*
+   :width: 60%
+   :align: center
 
-| 
-| Using quadratic model, :math:`y = c_2x^2 + c_1x + c_0`, and least
-  squares we find :math:`y = 0.49x^2 - 1.21x + 1.42`. So we can use this
-  to extrapolate at :math:`x=5` we have :math:`y = 6.5`.
 
-|image|
+
+Using quadratic model, :math:`y = c_2x^2 + c_1x + c_0`, and least
+squares we find :math:`y = 0.49x^2 - 1.21x + 1.42`. So we can use this
+to extrapolate at :math:`x=5` we have :math:`y = 6.5`.
+
+.. figure:: KalmanFigures/quadpts.*
+   :width: 60%
+   :align: center
 
  :math:`\Rightarrow`
 
-|image|
+.. figure:: KalmanFigures/lscompare.*
+   :width: 60%
+   :align: center
 
-| 
-| Note that this is very different from using a sinusoidal model and
-  gaining the fit :math:`y= -0.95\sin(1.2x+0.1)+1.525`, where for
-  :math:`x=5` we have :math:`y=1.698`
+
+Note that this is very different from using a sinusoidal model and
+gaining the fit :math:`y= -0.95\sin(1.2x+0.1)+1.525`, where for
+:math:`x=5` we have :math:`y=1.698`
 
 A Physics Example
 ^^^^^^^^^^^^^^^^^
@@ -120,7 +123,7 @@ Then
 .. math::
 
    \begin{pmatrix} \xi_1 \\ \xi_2 \\ \dots \\ \xi_k \end{pmatrix} = \begin{pmatrix} t_1 & 1 \\ t_2 & 1 \\ \vdots & \vdots \\ t_k & 1 \end{pmatrix} \begin{pmatrix}  v_{x,0} \\ x_0 \end{pmatrix}
-   \quad \mbox{and} \quad 
+   \quad \mbox{and} \quad
    \begin{pmatrix} \eta_1 \\ \eta_2 \\ \dots \\ \eta_k \end{pmatrix} = \begin{pmatrix} t_1 & 1 \\ t_2 & 1 \\ \vdots & \vdots \\ t_k & 1 \end{pmatrix} \begin{pmatrix}  v_{y,0} \\ y_0 \end{pmatrix}
 
 The pseudo-inverse is :math:`M = (X^T X)^{-1} X^T`
@@ -134,10 +137,10 @@ which gives the least squares estimate
 
 .. math::
 
-   \begin{pmatrix}  v_{x,0} \\ x_0 \end{pmatrix} =  M  \begin{pmatrix} \xi_1 \\ \xi_2 \\ \dots \\ \xi_k \end{pmatrix} 
-   \quad \mbox{and} 
-   \quad 
-   \begin{pmatrix}  v_{y,0} \\ y_0 \end{pmatrix} = 
+   \begin{pmatrix}  v_{x,0} \\ x_0 \end{pmatrix} =  M  \begin{pmatrix} \xi_1 \\ \xi_2 \\ \dots \\ \xi_k \end{pmatrix}
+   \quad \mbox{and}
+   \quad
+   \begin{pmatrix}  v_{y,0} \\ y_0 \end{pmatrix} =
    M \begin{pmatrix} \eta_1 \\ \eta_2 \\ \dots \\ \eta_k \end{pmatrix}
 
 Physics example with numbers
@@ -150,10 +153,10 @@ first we gain: :math:`t = [1, 2, 3]`, :math:`\xi = [10, 19, 32]`,
 
 .. math::
 
-   \left[\begin{pmatrix} 1 & 2 &  3  \\ 1 & 1 & 1\end{pmatrix} \begin{pmatrix} 1 & 1 \\ 2 & 1  \\ 3 & 1 \end{pmatrix} \right]^{-1} 
+   \left[\begin{pmatrix} 1 & 2 &  3  \\ 1 & 1 & 1\end{pmatrix} \begin{pmatrix} 1 & 1 \\ 2 & 1  \\ 3 & 1 \end{pmatrix} \right]^{-1}
    = \left[\begin{pmatrix} 14 & 6 \\ 6 & 3 \end{pmatrix}\right]^{-1} =  \frac{1}{6} \begin{pmatrix} 3 & -6 \\ -6 & 14 \end{pmatrix}
 
-\ 
+
 
 .. math:: = \begin{pmatrix} 1/2 & -1 \\ -1 & 7/3 \end{pmatrix}
 
@@ -162,7 +165,7 @@ first we gain: :math:`t = [1, 2, 3]`, :math:`\xi = [10, 19, 32]`,
    \begin{pmatrix}  v_{x,0} \\ x_0 \end{pmatrix} = \begin{pmatrix} 1/2 & -1 \\ -1 & 7/3 \end{pmatrix}
    \begin{pmatrix} 1 & 2 &  3  \\ 1 & 1 & 1\end{pmatrix}  \begin{pmatrix} 10 \\ 19 \\ 32 \end{pmatrix}  = \begin{pmatrix} 11 \\ -1.666667\end{pmatrix}
 
-\ and
+and
 
 .. math::
 
@@ -311,3 +314,8 @@ value, :math:`\hat{x}`.
 
 -  Let :math:`P_{k|k}` be the covariance of :math:`\hat{x}_{k|k}`
    (:math:`E[(x_k-\hat{x}_{k|k})(x_k-\hat{x}_{k|k})^T]`)
+
+
+.. rubric:: Footnotes
+
+.. [#f1] Ignoring for the moment that this is a ridiculously expensive way to track velocity.
