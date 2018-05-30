@@ -19,9 +19,9 @@ Introduction to Robotics
    Introduction <Introduction/index>
    Mathematical Background <Math/index>
    Basic Terms and Concepts <Terms/index>
+   Basic Simulation <Simulation/index>
    Robot Design <Design/index>
    Robot Operating System <ROS/index>
-   Basic Simulation <Simulation/index>
    Electronics <Electrical/index>
    Sensors and Sensing <Sensors/index>
    Computer Vision <Vision/index>

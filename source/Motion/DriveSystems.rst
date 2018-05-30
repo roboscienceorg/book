@@ -172,43 +172,43 @@ Applying the rotation to move to global coordinates
 
 So, finally we obtain
 
-  .. math::
-     :label: meccanumforwardkinematics
+.. math::
+   :label:  meccanumCFK
 
-     \begin{bmatrix}\dot{x}\\[3mm] \dot{y}\\[3mm] \dot{\theta} \end{bmatrix}
-     =
-     \frac{ r}{4}
-     \begin{bmatrix}A\cos(\theta)
-       -B\sin(\theta) \\[3mm]
-        A \sin(\theta)
-       +B\cos(\theta)  \\[3mm]
-      \frac{1}{(L_1+L_2) } C
-    \end{bmatrix}
+   \begin{bmatrix}\dot{x}\\[3mm] \dot{y}\\[3mm] \dot{\theta} \end{bmatrix}
+   =
+   \frac{ r}{4}
+   \begin{bmatrix}A\cos(\theta)
+    -B\sin(\theta) \\[3mm]
+     A \sin(\theta)
+    +B\cos(\theta)  \\[3mm]
+   \frac{1}{(L_1+L_2) } C
+   \end{bmatrix}
 
 where
 
-  :math:`A = \left(\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} + \dot{\phi}_{BR}\right)`,
-  :math:`B = \left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} - \dot{\phi}_{BR}\right)`,
+:math:`A = \left(\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} + \dot{\phi}_{BR}\right)`,
+:math:`B = \left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} + \dot{\phi}_{BL} - \dot{\phi}_{BR}\right)`,
 and
-  :math:`C = \left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} - \dot{\phi}_{BL} +\dot{\phi}_{BR} \right)`.
+:math:`C = \left( -\dot{\phi}_{FL} + \dot{\phi}_{FR} - \dot{\phi}_{BL} +\dot{\phi}_{BR} \right)`.
 
-| To perform numerical calculations, we need to discretize the
-  differential equations. Using the same process that we used to gain
-  :eq:`discreteDD`, we discretize the Mecanum
-  equations. As before the time step is :math:`\Delta t`,
-  :math:`x_k = x(t_k)`, :math:`y_k = y(t_k)`,
-  :math:`\theta_k = \theta(t_k)`,
-  :math:`\omega_{FL,k}=\dot{\phi}_{FL}(t_k)` ..., and we have
+To perform numerical calculations, we need to discretize the
+differential equations. Using the same process that we used to gain
+:eq:`discreteDD`, we discretize the Mecanum
+equations. As before the time step is :math:`\Delta t`,
+:math:`x_k = x(t_k)`, :math:`y_k = y(t_k)`,
+:math:`\theta_k = \theta(t_k)`,
+:math:`\omega_{FL,k}=\dot{\phi}_{FL}(t_k)` ..., and we have
 
-  .. math::
-     :label: mecanumforwardkinematics
+.. math::
+   :label:  meccanumDFK
 
-     \begin{bmatrix} x_{k+1}\\[3mm] y_{k+1}\\[3mm] \theta_{k+1} \end{bmatrix}
-     =   \begin{bmatrix} x_{k}\\[3mm] y_{k}\\[3mm] \theta_{k} \end{bmatrix} +
-     \frac{ r\Delta t }{4} \begin{bmatrix} A\cos(\theta_{k})  - B \sin(\theta_{k})   \\[3mm]
-     A\sin(\theta_{k})  + B \cos(\theta_{k})                     \\[3mm]
-                                 \frac{1}{(L_1+L_2) } C
-              \end{bmatrix}
+   \begin{bmatrix} x_{k+1}\\[3mm] y_{k+1}\\[3mm] \theta_{k+1} \end{bmatrix}
+   =   \begin{bmatrix} x_{k}\\[3mm] y_{k}\\[3mm] \theta_{k} \end{bmatrix} +
+   \frac{ r\Delta t }{4} \begin{bmatrix} A\cos(\theta_{k})  - B \sin(\theta_{k})   \\[3mm]
+   A\sin(\theta_{k})  + B \cos(\theta_{k})                     \\[3mm]
+   \frac{1}{(L_1+L_2) } C
+   \end{bmatrix}
 
 where
   :math:`A = \left( \omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} + \omega_{BR,k} \right)`,
