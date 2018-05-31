@@ -1,5 +1,8 @@
+.. _`Chap:Kinematics`:
+
+**************************
 General Kinematic Modeling
-==========================
+**************************
 
 Differential drive is a popular approach for lower cost and smaller
 robots. When the weight or terrain demand four drive wheels, other drive

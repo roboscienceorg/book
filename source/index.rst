@@ -4,33 +4,34 @@ Introduction to Robotics
 #########################
 
 .. toctree::
+   :maxdepth: 2
    :titlesonly:
    :caption: Preliminaries
 
-   preface.rst
+   Preface <Preface/index>
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
    :caption: Contents
 
 
    Introduction <Introduction/index>
-   Mathematical Background <Math/index>
    Basic Terms and Concepts <Terms/index>
-   Basic Simulation <Simulation/index>
-   Robot Design <Design/index>
-   Robot Operating System <ROS/index>
+   Simulation <Simulation/index>
+   Robot Software <ROS/index>
+   Vehicle Motion <Motion/index>
    Electronics <Electrical/index>
    Sensors and Sensing <Sensors/index>
    Computer Vision <Vision/index>
-   Vehicle Motion <Motion/index>
    Kinematic Modeling <Kinematics/index>
    Motion Control <Control/index>
+   System Integration <System/index>
    Sensor Filtering <Filtering/index>
    Kalman and Particle Filters <AdvFiltering/index>
    Motion Planning <Planning/index>
+   Robot Design <Design/index>
    References <References/References>
 
 
@@ -39,6 +40,7 @@ Introduction to Robotics
    :caption: Appendices
    :titlesonly:
 
+   Mathematical Background <Math/index>
    The SciPy Library <SciPy/index>
    STDR Simulator <STDR/index>
 ..   Gazebo 3D Simulator <Gazebo/index>

@@ -60,3 +60,9 @@ thank Stephanie Athow, Kelsey Bellew, Paul Blasi, Julian Brackins, John
 Brink, Andrew Carpenter, Michael Cerv, Marshall Gaucher, Yun Gwon,
 Lawrence Hoffman, Travis Larson, Scott Samson, Derek Stotz and Donovan
 Torgerson for feedback and editing assistance.
+
+.. toctree::
+   :maxdepth: 2
+
+   students.rst
+   instructors.rst

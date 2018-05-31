@@ -1,5 +1,8 @@
+.. _`Chap:Motion`:
+
+**************
 Vehicle Motion
-==============
+**************
 
 In this chapter, we model several motion systems and focus one of the
 most common robot drive systems known as the differential drive. We
@@ -16,4 +19,3 @@ of Omniwheel systems.
    Locomotion
    DriveSystems
    Configuration
-   Appendix

@@ -25,7 +25,7 @@ process lives in an address space which is defined as all of the memory
 addresses for which the program resides and accesses, :numref:`fig:address_space`.
 
 .. _`fig:address_space`:
-.. figure:: DesignFigures/address_space.*
+.. figure:: ROSFigures/address_space.*
    :width: 70%
    :align:  center
 
@@ -55,7 +55,7 @@ computer or a virtual
 computer :numref:`fig:os-abstract`.
 
 .. _`fig:os-abstract`:
-.. figure:: DesignFigures/abstract.*
+.. figure:: ROSFigures/abstract.*
    :width: 70%
    :align: center
 
@@ -209,14 +209,14 @@ debugging lead to layered OS designs such as early NT and
 OS/2, :numref:`fig:os-layered`.
 
 .. _`fig:os-monolithic`:
-.. figure:: DesignFigures/monolithic.*
+.. figure:: ROSFigures/monolithic.*
    :width: 70%
    :align: center
 
    Monolithic
 
 .. _`fig:os-layered`:
-.. figure:: DesignFigures/layered.*
+.. figure:: ROSFigures/layered.*
    :width: 70%
    :align: center
 
@@ -231,7 +231,7 @@ base.
 
 
 .. _`os-microkernel`:
-.. figure:: DesignFigures/mkernel.*
+.. figure:: ROSFigures/mkernel.*
    :width: 70%
    :align: center
 
@@ -375,10 +375,3 @@ without disturbing either the publisher or subscriber. Of course this
 will eliminate request-reply types of communication which should be
 addressed using a direct point to point type of channel. These ideas
 will be fully developed when we cover the Robot Operating System.
-
-Before we proceed with building robots, we need to discuss safety, human
-interaction and human environments. Robots can be very helpful, capable
-even lifesaving devices. However they can pose serious risks which need
-to be recognized and addressed. In addition, there are complexities in
-working with humans and in human environments which need to be addressed
-as well. In this short chapter we examine some of the issues.
