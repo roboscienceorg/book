@@ -1,5 +1,5 @@
-Motion Planning
-----------------
+Basic Motion Planning
+---------------------
 
 Simple Planning
 ~~~~~~~~~~~~~~~

@@ -55,6 +55,7 @@ surgical robots. Typical examples are shown in
 Figure :numref:`fig:fixedvmobile` .
 
 .. First image is public domain, second is owned by SDSMT UAV.
+
 .. _`fig:fixedvmobile`:
 .. figure:: IntroductionFigures/factory-drone.*
    :width: 90%
@@ -228,6 +229,7 @@ Software
 
 
 .. Image by Roboscience.
+
 .. _`intro-components`:
 .. figure:: IntroductionFigures/simplecomponents.png
    :width: 95%
@@ -371,6 +373,7 @@ and flexible models that operate in realtime is a complex task; a task
 that we will touch on in detail later in this text.
 
 .. Image by Roboscience.
+
 .. _`trad-challenge`:
 .. figure:: IntroductionFigures/tradchallenge.*
    :width: 95%
@@ -399,12 +402,13 @@ that we will touch on in detail later in this text.
 
 
 .. This image is public domain
-.. _`Robocup2`:
+
+..
 .. figure:: IntroductionFigures/RUNSWift_AIBOS.*
    :width: 50%
    :align: center
 
-   Robots in RoboCup.
+   Robots in RoboCup, :cite:`Robocup2`
 
 Autonomy presents additional challenges. The environment is very
 dynamic. Objects can enter, leave and change shape. The landscape

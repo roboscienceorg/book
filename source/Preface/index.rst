@@ -16,8 +16,9 @@ need, the Computer Science department at the South Dakota School of
 Mines and Technology decided to include Robotics as part of the Computer
 Science curriculum. We developed a course devoted to robotics. The
 original course began with the text *Introduction to Autonomous Mobile
-Robots* by Siegwart and  Nourbakhsh :cite:`Siegwart:2004:IAM` . It is a really good
-survey text but we found ourselves having to fill in details, add
+Robots* by Siegwart and  Nourbakhsh :cite:`Siegwart:2004:IAM` .
+It is a really good survey text.  The issue that arose was that we
+found ourselves having to fill in details, add
 content, provide more current examples, provide information on
 frameworks and enhance focus on software. The slides, notes and handouts
 ended up growing into this text.

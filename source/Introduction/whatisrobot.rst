@@ -6,8 +6,8 @@ What exactly is a robot?
    :width:  90%
    :align: center
 
-   Two different versions of robots.  a) :index:`Honda Asimo` Robot [Asimo]_
-   b) :index:`Kuka robot` [Kuka]_
+   Two different versions of robots.  a) :index:`Honda Asimo` Robot :cite:`Asimo`
+   b) :index:`Kuka robot` :cite:`Kuka`
 
 
 
@@ -30,14 +30,15 @@ not resemble human beings in appearance or perform functions in a
 humanlike manner*.
 
 .. These images are in the public domain  (Repliee_Q2.jpg & ATHLETE.jpg)
+
 .. figure:: IntroductionFigures/repliee-athlete.*
    :width:  90%
    :align: center
 
    Robots design to replace human effort.  a) :index:`Repliee` Q2 - developed by Osaka
    University and manufactured by
-   Kokoro Company Ltd. [Repliee]_ .  b) The NASA ATHLETE rover
-   as it climbs to the top of a hill. [ATHLETE]_
+   Kokoro Company Ltd. :cite:`Repliee` .  b) The NASA ATHLETE rover
+   as it climbs to the top of a hill. :cite:`ATHLETE`
 
 
 This latter definition includes washing machines, bread makers, and
@@ -58,7 +59,7 @@ and much more.
    :align: center
 
    More examples of assistive robots.  a)  iRobot :index:`Roomba` Discovery 2.1.
-   [Roomba]_  b) NASA experimental drilling robot. [DrillingRover]_
+   :cite:`Roomba`  b) NASA experimental drilling robot. :cite:`DrillingRover`
 
 
 There is no consensus on which machines qualify as robots. However,
@@ -74,8 +75,8 @@ interaction through movement and sensation.
    :align: center
 
    There are a wide range of roles for robots.  a) :index:`Keepon` - therapy robot.
-   [Keepon]_  b) Robot tasked to detonate a buried improvised explosive
-   device. [IED]_
+   :cite:`Keepon`  b) Robot tasked to detonate a buried improvised explosive
+   device. :cite:`IEDbot`
 
 
 Many may expect the robot to perform complex tasks or deal with harsh,
@@ -102,8 +103,8 @@ We can boil down our notion of robot abilities to three things:
    :width:  90%
    :align: center
 
-   Systems which focus on manipulation:  a) :index:`Da Vinci` Surgical System [DaVinci]_ .
-   b) Willow Garage's :index:`PR2` robot.  [PR2]_
+   Systems which focus on manipulation:  a) :index:`Da Vinci` Surgical System :cite:`DaVinci` .
+   b) Willow Garage's :index:`PR2` robot.  :cite:`WGPR2`
 
 
 One interesting phenomenon that could be influencing the lack of a solid
@@ -118,8 +119,8 @@ of a mechatronic device.
    :width:  90%
    :align: center
 
-   Systems which focus on mobility:  a) NASA's :index:`Robonaut`.  [Robonaut]_
-   b) :index:`RoboCup` Standard Platform League (Image from 2010).  [Robocup]_
+   Systems which focus on mobility:  a) NASA's :index:`Robonaut`.  :cite:`Robonaut`
+   b) :index:`RoboCup` Standard Platform League (Image from 2010).  :cite:`Robocup`
 
 
 Robots embody technological magic. So, it is natural that some
@@ -135,8 +136,8 @@ expectation.
 
    Telepresence or remote work is a growth area in robotics.
    a) An Intel IT Labs researcher working on a remote telepresence robot pilot
-   project that uses Suitable Technologies' Beam robot.  [TelePR]_
-   b) ROV working on a subsea structure.  [ROV]_
+   project that uses Suitable Technologies' Beam robot.  :cite:`TelePR`
+   b) ROV working on a subsea structure.  :cite:`ROV`
 
 
 It can be argued that there is nothing new in the subject of robotics -
@@ -154,8 +155,8 @@ we will consider robotics.
    :width: 90%
    :align: center
 
-   Mobility in simple and complex domains.  a) Justus security robot in front of Krakow railway station [Justus]_ .
-   b) Rhex: DARPA project on compliant six legged robots.   [RHex]_
+   Mobility in simple and complex domains.  a) Justus security robot in front of Krakow railway station :cite:`Justus`.
+   b) Rhex: DARPA project on compliant six legged robots.   :cite:`RHex`
 
 
 
@@ -184,7 +185,7 @@ developed. This device is credited as being the first analog computer.
    :width: 40%
    :align: center
 
-   Antikythera Mechanism [Antikythera]_ .
+   Antikythera Mechanism :cite:`Antikythera`.
 
 270 BC
 ''''''
@@ -218,7 +219,7 @@ different drum patterns by moving the pegs to different locations.
    :width: 40%
    :align: center
 
-   Al-Jazari’s Mechanical Musical Boat.  [AlJazari]_
+   Al-Jazari’s Mechanical Musical Boat.  :cite:`AlJazari`.
 
 
 1495
@@ -230,7 +231,8 @@ Leonardo da Vinci draws plans for a mechanical knight.
 ''''
 
 The word *robot* is introduced to the English language through the play
-:index:Rossum’s Universal Robots` by the Czech writer Karel :index:`Čapek`. The play is
+:index:`Rossum’s Universal Robots` by the Czech writer Karel :index:`Capek`.
+The play is
 centered around a factory staffed by intelligent cyborgs. The English
 term robot comes from the Slavic word *robota* which roughly translates
 as work or labor. Credit for the term goes to Karel’s brother Josef.
