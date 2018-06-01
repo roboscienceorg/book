@@ -38,6 +38,7 @@ following example provides some details.
 
 
 
+.. rubric:: Example
 
 Assume that for the triangulation setup in
 :numref:`lasertriangulation`, we have
@@ -49,7 +50,7 @@ What is the error in the distance if we know that :math:`x` has a max of
 20% error? A 20% variation means that our value ranges between
 :math:`[1.6, 2.4]`. We can plug the two values in and see what the range
 in D is. This works because :math:`D` is a monotonic function of both
-:math:`x` and :math:`L`\  [1]_ Plugging these values in we have
+:math:`x` and :math:`L`\  [#f1]_ Plugging these values in we have
 :math:`10 \leq D \leq 15`. Which gives :math:`15/12 - 1 = 0.25` or 25%
 error. If we have 10% error in :math:`L`, it gives
 :math:`10.8 \leq D \leq 13.2` or a 10% error off of :math:`12`. To
@@ -188,3 +189,8 @@ determine the object heights using geometry.
    :align: center
 
    Structured light.
+
+
+.. rubric:: Footnotes
+
+.. [#f1] Monotonic means that $f'>0$ or $f'<0$ in the interval of interest.

@@ -171,7 +171,7 @@ discretize (or approximate) the time variable and the three state
 variables using discrete variables. This simple means we have a sequence
 of numbers :math:`\{x_k\}` instead of a function :math:`x(t)`.
 Technically we should use a different variable, but I will often be
-efficient [1]_ and reuse the variable even though one denotes a function
+efficient [#f1]_ and reuse the variable even though one denotes a function
 of time and one denotes a sequence.
 
 .. math:: t_k \equiv k\Delta t, \quad t_{k+1} = (k+1)\Delta t
@@ -391,7 +391,7 @@ The direction of the robot is the direction of the curve shown in
 
 .. _`intro-tangent`:
 .. figure:: SimulationFigures/tantheta.*
-   :width: 60%
+   :width: 30%
    :align: center
 
    The relation between :math:`\theta` and :math:`\dot{x}`,
@@ -628,3 +628,7 @@ in our controllers. Understanding the IK will help in the controller
 design. The IK can often help isolate aspects of the system dynamics
 which eases controller development or makes it possible to gain a stable
 controller.
+
+.. rubric:: Footnotes
+
+.. [#f1] that would be a *codeword* for sloppy

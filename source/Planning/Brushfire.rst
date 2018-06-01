@@ -42,7 +42,7 @@ connectivity, but ignores diagonal distance.
 Gradient map made by looking at the smallest value in your connectivity.
 
 
-.. figures:: PlanningFigures/brushfire0.*
+.. figure:: PlanningFigures/brushfire0.*
    :width: 95%
    :align: center
 
@@ -146,7 +146,7 @@ and the repulsive potential as
 where :math:`\tilde{D}` is found from the Brushfire Map. The issue is
 that :math:`\tilde{D}` is not a continuous function. It is a piecewise
 constant function and so :math:`\nabla \tilde{D}` is zero on all of the
-interiors of the cells. [4]_
+interiors of the cells. [#f4]_
 
 .. figure:: PlanningFigures/piecewise_const.*
    :width: 40%
@@ -158,7 +158,7 @@ The gradient can be estimated as the difference in cell values. Thus
 
 Because the discrete distance function jumps, it can cause the path to
 oscillate back and forth along the normal direction to the
-obstacle. [5]_ Tuning the potential function can also be challenging.
+obstacle. [#f5]_ Tuning the potential function can also be challenging.
 One may need to adjust weights in the sum:
 
 .. math:: aU_\text{att}(q) + bU_\text{rep}(q)
@@ -250,3 +250,9 @@ reduced path.
    -  Apply wavefront to labeled pixels.
 
    -  Stop wavefront when start pixel is found.
+
+.. rubric:: Footnotes
+
+.. [#f4] Known as zero ``almost everywhere".
+
+.. [#f5] This is due to the switching on and off a large repulsive potential.

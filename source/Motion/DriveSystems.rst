@@ -211,10 +211,10 @@ equations. As before the time step is :math:`\Delta t`,
    \end{bmatrix}
 
 where
-  :math:`A = \left( \omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} + \omega_{BR,k} \right)`,
-| :math:`B = \left(-\omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} - \omega_{BR,k}  \right)`,
-| and
-  :math:`C =  \left( -\omega_{FL,k} + \omega_{FR,k} - \omega_{BL,k} +\omega_{BR,k} \right)`.
+:math:`A = \left( \omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} + \omega_{BR,k} \right)`,
+:math:`B = \left(-\omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} - \omega_{BR,k}  \right)`,
+and
+:math:`C =  \left( -\omega_{FL,k} + \omega_{FR,k} - \omega_{BL,k} +\omega_{BR,k} \right)`.
 
 Inverse Kinematics for the Mecanum
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -411,7 +411,7 @@ designs. Using components like Actobots
 (https://www.servocity.com/actobotics), Lego, or Vex one can quickly
 assemble nearly anything that your mind can dream up. One novel approach
 to all wheel steering is the Syncro Drive
-system :numfig:`fig:syncrodrive`. Using three or four
+system :numref:`fig:syncrodrive`. Using three or four
 steered wheels, the wheels are connected by a chain or cable allowing
 all wheels to be steered. Each wheel is kept in a parallel mode so that
 motion is possible in any direction.

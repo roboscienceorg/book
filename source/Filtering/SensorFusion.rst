@@ -631,7 +631,7 @@ Write out the estimate to see how it compares to the previous one:
 
 which agrees with our earlier work (and below we will show that the
 weighted one works out as well). The strength of this approach is in the
-ease of generalization [1]_.
+ease of generalization [#f1]_.
 
 Weighted Least Squares Observer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -736,7 +736,7 @@ with :math:`W` the covariance of :math:`w` and error covariance
 
 if we take the same weighting as before.
 
-.. _example-1:
+.. _kalman-example-1:
 
 Example
 ^^^^^^^
@@ -1011,3 +1011,7 @@ The application of this as a filter is shown in
    Projecting data onto the line as a filter.
    Green dots are new data, the curve fit is the solid blue line and
    blue dots are their projections.
+
+.. rubric:: Footnotes
+
+.. [#f1] Generalization is not our goal, we have a specific problem to address.

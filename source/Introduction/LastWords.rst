@@ -85,40 +85,40 @@ Below is a list of some texts with a brief description on the focus and
 audience:
 
 - *Principles of Robot Motion*, Choset et al. -
-This is a great book that focuses on the algorithms behind autonomy.
-It presents a more theoretical treatment of mobile systems and does not
-spend much time on the classic kinematic tools like the D-H formalism.
-For most schools, this would be a graduate level text based on the
-mathematics used in the book although this could be used as an elective
-in a senior course if topics were carefully chosen.
-:cite:`Choset:2005:PRM`
+   This is a great book that focuses on the algorithms behind autonomy.
+   It presents a more theoretical treatment of mobile systems and does not
+   spend much time on the classic kinematic tools like the D-H formalism.
+   For most schools, this would be a graduate level text based on the
+   mathematics used in the book although this could be used as an elective
+   in a senior course if topics were carefully chosen.
+   :cite:`Choset:2005:PRM`
 
 - *Autonomous Mobile Robots*, Siegwart & Nourbakhsh -
-This is a good shorter book which restricts itself to exactly what the
-title implies. As indicated in the Preface,
-the text you are reading follows the outline setout by
-Siegwart & Nourbakhsh and both are heavily influenced by Choset’s text.
-The material on wheels and the associated kinematics is more in depth
-than other subjects in the text. Vision, Navigation, Localization and
-Mapping are briefly touched upon but supplementary material is probably
-warranted. :cite:`Siegwart:2004:IAM`
+   This is a good shorter book which restricts itself to exactly what the
+   title implies. As indicated in the Preface,
+   the text you are reading follows the outline setout by
+   Siegwart & Nourbakhsh and both are heavily influenced by Choset’s text.
+   The material on wheels and the associated kinematics is more in depth
+   than other subjects in the text. Vision, Navigation, Localization and
+   Mapping are briefly touched upon but supplementary material is probably
+   warranted. :cite:`Siegwart:2004:IAM`
 
 - *Computational Principles of Mobile Robotics*, Dudek & Jenkin -
-This text is similar in topics and level to Autonomous Mobile Robots.
-Selection between the two would be based on specific topics of interest.
-:cite:`Dudek:2000:CPM`
+   This text is similar in topics and level to Autonomous Mobile Robots.
+   Selection between the two would be based on specific topics of interest.
+   :cite:`Dudek:2000:CPM`
 
 - *Embedded Robotics*, Braunl -
-Braunl’s book surveys the field at a level that a junior in most
-engineering programs could easily understand. It has a wealth of
-information based on the author’s personal experiences. It describes
-many projects and systems at a high level but does not delve deeply into
-the topics. If the hardware discussed in the text were more mainstream
-or current (Arduino, Raspberry Pi, etc), it would make the text much
-more approachable.  :cite:`Braunl:2006:ERM`
+   Braunl’s book surveys the field at a level that a junior in most
+   engineering programs could easily understand. It has a wealth of
+   information based on the author’s personal experiences. It describes
+   many projects and systems at a high level but does not delve deeply into
+   the topics. If the hardware discussed in the text were more mainstream
+   or current (Arduino, Raspberry Pi, etc), it would make the text much
+   more approachable.  :cite:`Braunl:2006:ERM`
 
 - *Introduction to Robotics, Analysis, Control, Applications*, Niku -
-Niku’s text is a great text for the more mechanical side of robotics.
-There is a wealth of material on kinematic models, inverse kinematics,
-and control. There are well done examples for basic kinematics as well.
-:cite:`niku2010introduction`
+   Niku’s text is a great text for the more mechanical side of robotics.
+   There is a wealth of material on kinematic models, inverse kinematics,
+   and control. There are well done examples for basic kinematics as well.
+   :cite:`niku2010introduction`

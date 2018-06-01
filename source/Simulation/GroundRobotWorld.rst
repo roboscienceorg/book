@@ -4,7 +4,7 @@ The Ground Robot World
 One of the main differences many see between a vehicle and a robotic
 vehicle is whether or not a person is “onboard". If you are driving a
 car, then we would not call this a robot. But if your car was remotely
-operated, then some would call it a robotic car.  [2]_ Can we make the
+operated, then some would call it a robotic car.  [#f2]_ Can we make the
 robot simulation remotely operated? In this case we mean, *can this be
 controlled from an external program?* The answer is yes.
 
@@ -146,7 +146,7 @@ straightforward:
         d = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2))-r1-r2
         return d
 
-Where center is a list and r is the radius.  [3]_
+Where center is a list and r is the radius.  [#f3]_
 
 .. _`circlecollide`:
 .. figure:: SimulationFigures/collision.*
@@ -257,7 +257,7 @@ colored pixel. Stop at the first colored pixel. Using the endpoints of
 the line segment (virtual lidar to object pixel), the distance can be
 computed. Let :math:`(n,m)` be the start of the line and let
 :math:`(i,j)` be the location of the object pixel and recall the
-distance is :math:`d = \sqrt{(i-n)^2 + (j-m)^2}`. [4]_
+distance is :math:`d = \sqrt{(i-n)^2 + (j-m)^2}`. [#f4]_
 
 Any actual lidar unit has an effective range, :math:`R`. In simulation
 one could certainly compute :math:`d` as you move out along the ray (or
@@ -306,3 +306,11 @@ algorithm:  :ref:`Lidar Simulation <lidarsim>`
    |   k++
    |   :math:`\theta += \Delta\theta`
    | endfor
+
+.. rubric:: Footnotes
+
+.. [#f2] The author would simply call this a remotely operated car, but either way, teleoperation does change how one looks at a vehicle.
+
+.. [#f3] Keep in mind that the robot graphics circle method draws from the bottom of the circle and so the center for this formula and the one for the circle method need to be adjusted by the radius.
+
+.. [#f4]  If you wanted an integer array you would cast this as an ``int``.

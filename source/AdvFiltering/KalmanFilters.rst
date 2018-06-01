@@ -287,16 +287,14 @@ We can collect the results into the following algorithm:
 -  Innovation or measurement residual:
    :math:`y_k = z_k - H_k\hat{x}_{k|k-1}`
 
--  Innovation (or residual) covariance: :math:`S_k = H_k
-   P_{k|k-1} H_k^\text{T} + W_k`
+-  Innovation (or residual) covariance: :math:`S_k = H_k P_{k|k-1} H_k^\text{T} + W_k`
 
 -  Optimal Kalman gain: :math:`K_k = P_{k|k-1}H_k^\text{T}S_k^{-1}`
 
 -  Updated state estimate
    :math:`\hat{x}_{k|k} =\hat{x}_{k|k-1} + K_k y_k`
 
--  Updated estimate covariance: :math:`P_{k|k} =
-     (I - K_k H_k) P_{k|k-1}`
+-  Updated estimate covariance: :math:`P_{k|k} = (I - K_k H_k) P_{k|k-1}`
 
 The control input is the current control input and depends on how you
 index it as to being :math:`u_k` or :math:`u_{k-1}`. You can think of
@@ -423,12 +421,12 @@ State variable covariance:
 .. math::
 
    = \begin{bmatrix} 0.005224326  &  0.0 \\
-     0.0  &  0.005265 \end{bmatrix}
+   0.0  &  0.005265 \end{bmatrix}
 
 It is useful to visualize the effects of a single Kalman step. The
 images are provided in
-:numref:`fig:kalmancloudsa, :numref:fig:kalmancloudsb`
-and the numbers used are not the same as the example above [2]_. The
+:numref:`fig:kalmancloudsa`, :numref:`fig:kalmancloudsb`
+and the numbers used are not the same as the example above [#f2]_. The
 system we use is Let
 
 .. math:: x_0 = \begin{bmatrix} 1\\1\end{bmatrix}, \quad P_0 = \begin{bmatrix}0.01& 0\\ 0&0.001\end{bmatrix}, \quad F = \begin{bmatrix} 0.85 &-.1 \\0.02 &0.75\end{bmatrix},
@@ -1004,3 +1002,8 @@ the predictive step inaccurate.
 -  :math:`\hat{x}_{k|k} = \hat{x}_{k|k-1}`
 
 -  :math:`P_{k|k} = P_{k|k-1}`
+
+
+.. rubric:: Footnotes
+
+.. [#f2] The numbers were selected to help visualize the process.

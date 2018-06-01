@@ -4,7 +4,7 @@ Introduction to Robotics
 #########################
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :titlesonly:
    :caption: Preliminaries
 
@@ -12,7 +12,7 @@ Introduction to Robotics
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :numbered:
    :caption: Contents
 

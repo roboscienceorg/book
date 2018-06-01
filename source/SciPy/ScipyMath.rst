@@ -8,7 +8,7 @@ collection of numerical methods including special functions,
 integration, optimization, linear algebra, interpolation, and other
 standard mathematics routines. NumPy is an open-source Python package
 supporting data structures and low level algorithms for scientific
-computing which is used by SciPy. [1]_ The main data structure of
+computing which is used by SciPy. [#f1]_ The main data structure of
 interest to us from numpy is an array type and efficient methods to
 access array elements.
 
@@ -65,3 +65,7 @@ Inside the startup directory, I created a file: 05-early.py containing
 which then runs those import commands each time iPython is invoked. In
 this next section, we will review some needed mathematics and introduce
 SciPy as we proceed.
+
+.. rubric:: Footnotes
+
+.. [#f1] Thanks to the NumPy and SciPy online tutorials for great examples.

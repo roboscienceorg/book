@@ -349,7 +349,7 @@ given in :numref:`bug1vsbug2_b`.
 
 
 
-Following Bug 1 we accumulate the distance is 76. [2]_ For Bug 2, we
+Following Bug 1 we accumulate the distance is 76. [#f2]_ For Bug 2, we
 obtain the distance is :math:`7.5+26.5n` where :math:`n` is the number
 of vertical obstacles. The figure shows the case where :math:`n=6` which
 provides a distance of 166 (rounding down). For the specific horizontal
@@ -788,5 +788,6 @@ switch algorithms.
 
 .. rubric:: Footnotes
 
-.. [#f1] These need not be the same. For example certain paths may be traversed
-   at different speeds depending on location and path geometry.
+.. [#f1] These need not be the same. For example certain paths may be traversed at different speeds depending on location and path geometry.
+
+.. [#f2] I am being a bit sloppy.  I have ignored the thickness of the wall in a couple of the distance computations and so will round up here.

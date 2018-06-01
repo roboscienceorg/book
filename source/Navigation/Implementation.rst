@@ -269,7 +269,7 @@ pixels):
     }
 
 Most likely your implementation will not care about the center point.
-But if you explicitly want to skip it, try adding a conditional [3]_. Be
+But if you explicitly want to skip it, try adding a conditional [#f3]_. Be
 very careful about stepping outside map array bounds. Either you need to
 check for stepping outside the array or your loops need to stay inside
 the array. For example, instead of running :math:`i=0` to :math:`i=n`
@@ -281,7 +281,7 @@ Impacts in grid environments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The last issue that needs to be addressed is object interaction. How
-should we handle an impact? In 
+should we handle an impact? In
 :numref:`sizematters`, we saw that for circular
 robots, we could just add the radius of the robot to the obstacle and
 then treat the robot as a point mass. For path planning of circular
@@ -354,3 +354,7 @@ The impact aspect is not really robust. The focus is on planning, not on
 physics. We make no attempt to stop the robot and allow it to pass
 through walls. It is the responsibility of the planner to stop, backup,
 turn and move around.
+
+.. rubric:: Footnotes
+
+.. [#f3]  ``if((i!=0)||(j!=0))``

@@ -12,7 +12,7 @@ nonlinear process, let :math:`x_k \in R^n`, :math:`u_k \in R^p`,
 
 .. math:: z_k = h(x_{k-1})+w_k
 
- where :math:`v_k` has variance :math:`V_k` and :math:`w_k` has variance
+where :math:`v_k` has variance :math:`V_k` and :math:`w_k` has variance
 :math:`W_k`, and let
 
 .. math::
@@ -187,7 +187,7 @@ amounts of noise in the wheel velocity data could cause significant
 errors in position estimation. Using the Extended Kalman Filter, we can
 improve the location estimate as well as gain estimates for the
 uncertainty of the location. :numref:`Fig:DDagain`
-recalls the variables and equations that were derived.  
+recalls the variables and equations that were derived.
 
 
 .. figure:: AdvFilteringFigures/dddim.*
@@ -592,17 +592,17 @@ Mecanum EKF Example
               \end{bmatrix}
 
 where
-  :math:`A = \left( \omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} + \omega_{BR,k} \right)`,
-| :math:`B = \left(-\omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} - \omega_{BR,k}  \right)`,
-| and
-  :math:`C =  \left( -\omega_{FL,k} + \omega_{FR,k} - \omega_{BL,k} +\omega_{BR,k} \right)`.
-  If we define
-  :math:`\xi_k = \left( x_{k} , y_{k} , \theta_{k} \right)^T`,
-  :math:`u_k =\left(  \omega_{FL,k} , \omega_{FR,k} , \omega_{BL,k} ,\omega_{BR,k} \right)^T`
-  and reduce the :math:`k` index by one, then the process can be written
-  compactly as
+:math:`A = \left( \omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} + \omega_{BR,k} \right)`,
+:math:`B = \left(-\omega_{FL,k} + \omega_{FR,k} + \omega_{BL,k} - \omega_{BR,k}  \right)`,
+and
+:math:`C =  \left( -\omega_{FL,k} + \omega_{FR,k} - \omega_{BL,k} +\omega_{BR,k} \right)`.
+If we define
+:math:`\xi_k = \left( x_{k} , y_{k} , \theta_{k} \right)^T`,
+:math:`u_k =\left(  \omega_{FL,k} , \omega_{FR,k} , \omega_{BL,k} ,\omega_{BR,k} \right)^T`
+and reduce the :math:`k` index by one, then the process can be written
+compactly as
 
-  .. math:: \xi_{k} = f(\xi_{k-1}, u_k) .
+.. math:: \xi_{k} = f(\xi_{k-1}, u_k) .
 
 Computing the Jacobian of :math:`f`:
 
@@ -624,7 +624,7 @@ We return to our original nonlinear process,
 
 .. math:: z_k = h(x_{k-1})+w_k
 
- where, :math:`x_k \in R^n`, :math:`u_k \in R^p`, :math:`v_k  \in R^n`,
+where, :math:`x_k \in R^n`, :math:`u_k \in R^p`, :math:`v_k  \in R^n`,
 :math:`w_k  \in R^m`, :math:`v_k` has variance :math:`V_k` and
 :math:`w_k` has variance :math:`W_k`, and let
 

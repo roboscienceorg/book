@@ -71,7 +71,7 @@ Indirect Communication
 ~~~~~~~~~~~~~~~~~~~~~~
 
 You commonly hear people say things like “non-verbals makes up 93% of
-communication” [4]_ (which is now seen as more urban legend or myth).
+communication” [#f4]_ (which is now seen as more urban legend or myth).
 However, non-verbal communication is an important manner in which humans
 communicate. Giving robots the ability to both understand and present
 non-verbal elements helps in the overall goal of safety and confidence.
@@ -135,7 +135,7 @@ a heavy load. Mechanical locks or resistance must be used to prevent
 people getting hurt by robot components falling to a rest position. The
 power up / down problem is part of a larger issue of behavioral
 expectations and consistency. Software is said to be secure if it
-behaves like you expect it to. [5]_ The author believes this is a good
+behaves like you expect it to. [#f5]_ The author believes this is a good
 definition of a secure or trustworthy robot. One that behaves like you
 expect it to behave. This is how individuals learn to trust each other.
 
@@ -266,3 +266,8 @@ augmentation costs or not use the robot. Modern deep learning systems
 may bring changes where it is no longer necessary to instrument the
 region. Until then, design decisions must include environmental
 augmentation.
+
+.. rubric:: Footnotes
+
+.. [#f4] In 1971, Albert Mehrabian published a book, Silent Messages, asserting these numbers.
+.. [#f5] This is a definition by Garfinkle and Spafford, Practical Unix and Internet Security.

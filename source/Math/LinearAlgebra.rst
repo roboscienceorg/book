@@ -5,7 +5,7 @@ When we attempt to integrate multiple sensors or when we compute paths
 from discrete points, the methods use the tools from linear algebra. No
 attempt here is made to be complete or expository. This is intended to
 review the language and concepts only. The reader who is unfamiliar with
-Linear Algebra as a subject is strongly encouraged to explore it. [#f1]_
+Linear Algebra as a subject is strongly encouraged to explore it, [#f1]_.
 Calculus, Linear Algebra and Probability are three legs to the
 mathematical stool every engineer should have.
 
@@ -560,7 +560,7 @@ Traditional least squares is formulated by minimizing using the normal
 
 .. math:: x^Ty = \sum_i x_iy_i.
 
-\ Let :math:`x, y\in R^n`. No weights are referred to as uniform
+Let :math:`x, y\in R^n`. No weights are referred to as uniform
 weighting. Non-uniform weights are just termed as weights. If the inner
 product is weighted:
 
@@ -614,7 +614,8 @@ weight function weights more heavily towards the origin (using
 sum of the weights is one.
 
 .. Owned by Roboscience
-.. _`Fig:weightedLSdata`
+
+.. _`Fig:weightedLSdata`:
 .. figure:: MathFigures/weightedleastsquaredata.*
    :width: 70%
    :align: center
@@ -623,7 +624,8 @@ sum of the weights is one.
 
 
 .. Owned by Roboscience
-.. _`Fig:weightedLSplot`
+
+.. _`Fig:weightedLSplot`:
 .. figure:: MathFigures/weightedleastsquareplot.*
    :width: 70%
    :align: center

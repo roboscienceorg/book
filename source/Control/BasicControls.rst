@@ -40,7 +40,7 @@ keeps the robot headed towards the desired path by using position
 feedback. A simple stop, rotate to orient and drive approach will work
 in very simple applications. How about an approach that corrects as we
 drive? When we drive a car, we continually monitor our position on the
-road and correct as needed. [1]_
+road and correct as needed. [#f1]_
 
 Heading to Goal
 ~~~~~~~~~~~~~~~
@@ -696,7 +696,7 @@ desired speed. :numref:`fig:speedramp0` shows one
 sample ramp function. There are times when one needs coordinated control
 between multiple devices. This is necessary with any vehicle that has
 more than one drive motor, for example a differential drive,
-:numref:`fig:speedramp1.
+:numref:`fig:speedramp1.`
 
 .. _`fig:speedramp1`:
 .. figure:: ControlFigures/changesetpoint.*
@@ -751,3 +751,7 @@ provide a more realistic simulation at the cost of increased
 computation. This includes the control strategy and so in practice you
 may not be able achieve the desired control due to limits on forces
 available.
+
+.. rubric:: Footnotes
+
+.. [#f1] Texting while driving is an example of open loop control.  Not looking at the road means you do not use sensor feedback to correct the path resulting in a collision.

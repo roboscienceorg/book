@@ -57,7 +57,7 @@ Optical Wheel Encoders
 ~~~~~~~~~~~~~~~~~~~~~~
 
 One option to tackle this problem involves using Light Emitting Diodes,
-or LEDs [1]_. The dominant lighting source in electronics and robotics,
+or LEDs [#f1]_. The dominant lighting source in electronics and robotics,
 LEDs can run on very low power, are available in many frequencies and
 can switch on/off quickly. :numref:`circuitled`.
 
@@ -163,3 +163,9 @@ If the receiver is moving the formula for the frequency change is
 .. math:: f_r = f_t / (1 + v/c).
 
 If you know the frequency change you can then compute :math:`v`.
+
+.. rubric:: Footnotes
+
+.. [#f1]  LEDs have a variety of operating specs and you have to read the datasheet to find out about the specific voltage-current properties.   Normally one is given an operating range and one must work out a suitable way to power the diode.   For example,  assume we have and LED which operates in the 3-6 volt range and targeted current level is 20mA.
+   If we select $V = 5$, then the resistor should be $R = V/I = 5/.02 = 250$.
+   Since 250 is not a standard value, we select the closest available resistor value which is $R =270$ ohms.

@@ -33,7 +33,7 @@ The appendix has a brief introduction.
 As mentioned above the basic form of ROS communication is the
 :index:`Publish-Subscribe` mechanism. To see this in action, you need to do three
 things: (1) get ROS running, (2) run a subscriber, (3) run a publisher.
-Step (1) is easy, bring up a terminal window [2]_ and type:
+Step (1) is easy, bring up a terminal window [#f2]_ and type:
 
 ::
 
@@ -629,3 +629,8 @@ will send a block of 32bit integers which is the datatype ``Int32MultiArray``.
     rospy.init_node('listener', anonymous=True)
     rospy.Subscriber("chatter", Int32MultiArray, callback)
     rospy.spin()
+
+
+.. rubric:: Footnotes
+
+.. [#f2] the same type you used above in the installation process

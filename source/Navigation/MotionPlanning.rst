@@ -40,7 +40,7 @@ problem is that the path is tuned to a specific obstacle field. We must
 know the obstacles and their locations prior to moving. A more advanced
 algorithm would be able to take a goal point and using knowledge of the
 current robot location, drive itself to the goal. The basic motion
-algorithm attempts this next step. [5]_
+algorithm attempts this next step. [#f5]_
 
 Basic Motion Algorithm
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -115,3 +115,7 @@ approaches are needed. Before we jump into motion planning, we want to
 understand what view of the world we can get from sensors. This is
 necessary so we know what kind of assumptions can be made when
 developing our algorithms.
+
+.. rubric:: Footnotes
+
+.. [#f5] This algorithm is slightly more general in that it does not need the goal location, but just the direction to the goal during the process.

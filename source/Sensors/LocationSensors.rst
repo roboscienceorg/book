@@ -14,7 +14,7 @@ these ideas with beacon systems as our guiding example.
 :index:`Beacons` are probably the simplest approach to localization. A beacon is
 any type of landmark with a known location. Natural beacons such as
 stars, sun, moon, mountains, streams and other markers have been used
-throughout human existence [2]_. Manmade beacons include towers, signs,
+throughout human existence [#f2]_. Manmade beacons include towers, signs,
 lighthouses and other marked locations.
 
 Indoor beacon systems include using colored or IR lights, RFID tags,
@@ -310,3 +310,7 @@ approaches to this example.
    :align: center
 
    Hough Transform
+
+.. rubric:: Footnote
+
+.. [#f2] One would assume that natural beacons are used by animals as well
