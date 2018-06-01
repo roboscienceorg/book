@@ -193,8 +193,7 @@ The construction of configuration space then is built like slices in a
 3D printer. Routing or path planning must be done in the full
 configuration space. For the current example, we must route in 3D which
 will translate to position and orientation routing in the workspace,
-:numref:`obst4`. Path planning or motion planning is
-addressed in Planning Chapter.
+:numref:`obst4`. 
 
 .. _`obst4`:
 .. figure:: MotionFigures/obst4.*

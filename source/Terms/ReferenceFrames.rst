@@ -381,4 +381,4 @@ These concepts are treated in courses in statics and mechanics.
 
 .. rubric:: Footnotes
 
-   [#f1] Like the office chair races in the hallway.
+.. [#f1] Like the office chair races in the hallway.

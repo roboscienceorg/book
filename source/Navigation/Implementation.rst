@@ -20,7 +20,7 @@ depending on robot design. For example a differential drive robot can
 set forward velocity and rotational (turn) velocity. Using the kinematic
 equations (presented later), position and orientation can be computed.
 
-In the Chapter `simulationchapter`_, we
+Earlier we
 discussed how to determine obstacle impact or collision for a circular
 robot. For a general robot shape, impact is more difficult to compute.
 Collision can be defined as when the distance between the robot and
@@ -281,7 +281,7 @@ Impacts in grid environments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The last issue that needs to be addressed is object interaction. How
-should we handle an impact? Earlier in the chapter,
+should we handle an impact? In 
 :numref:`sizematters`, we saw that for circular
 robots, we could just add the radius of the robot to the obstacle and
 then treat the robot as a point mass. For path planning of circular

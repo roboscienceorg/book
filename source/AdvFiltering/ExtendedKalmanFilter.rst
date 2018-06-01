@@ -180,15 +180,14 @@ and so
 Differential Drive Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In Chapter \ `[Chap:Motion] <#Chap:Motion>`__, we derived the equations
+In Terms Chapter, we derived the equations
 for the motion of the differential drive robot. In that chapter we also
 simulated the motion of the robot based on wheel velocity data. Small
 amounts of noise in the wheel velocity data could cause significant
 errors in position estimation. Using the Extended Kalman Filter, we can
 improve the location estimate as well as gain estimates for the
 uncertainty of the location. :numref:`Fig:DDagain`
-recalls the variables and equations derived in
-Chapter \ `[Chap:Motion] <#Chap:Motion>`__.
+recalls the variables and equations that were derived.  
 
 
 .. figure:: AdvFilteringFigures/dddim.*

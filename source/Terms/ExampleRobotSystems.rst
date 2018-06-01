@@ -25,6 +25,7 @@ probably have some limits, but for now we will assume full
 :math:`360^\circ` motion.
 
 .. Owned by Roboscience
+
 .. _`intro-two-link`:
 .. figure:: TermsFigures/twolinkalt.*
    :width: 60%
@@ -46,6 +47,7 @@ directions wrap back on themselves. This actually makes the
 configuration space a two dimensional torus or “donut”.
 
 .. Owned by Roboscience
+
 .. _`two-link-disk`:
 .. figure:: TermsFigures/twolinkconfigobs.*
    :width: 70%
@@ -55,6 +57,7 @@ configuration space a two dimensional torus or “donut”.
 
 
 .. Owned by Roboscience
+
 .. _`intro-config-axis`:
 .. figure:: TermsFigures/twolinkconfigdomaintorus.*
    :width: 70%
@@ -75,6 +78,7 @@ length :math:`a_1`, :numref:`twolinklabeled`-(b):
 .. math:: \xi =  a_1 \cos \theta_1, \quad \eta = a_1 \sin \theta_1
 
 .. Owned by Roboscience
+
 .. _`twolinklabeled`:
 .. figure:: TermsFigures/twolink2.*
    :width: 85%
@@ -139,6 +143,7 @@ The tangent form has the +/- and gives the elbow up and elbow down
 solutions.
 
 .. Owned by Roboscience
+
 .. _`twolinklabeled2`:
 .. figure:: TermsFigures/twolink3.*
    :width: 40%
@@ -782,7 +787,7 @@ frame:
    \end{array}}
 
 These are non-holonomic constraints, this is left as a homework exercise.
-.. see exercise :numref:`DDisnotHolonomic`.
+
 
 Assume that you have a differential drive robot. If the drive wheel is
 20cm in diameter and turns at 10 rpm (revolutions per minute), what is

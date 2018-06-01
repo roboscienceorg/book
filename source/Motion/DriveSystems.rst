@@ -285,8 +285,7 @@ the same size. The inside and outside wheel on a given axle do not
 rotate at the same speed or point in the same direction. Parallel wheels
 will skid on a turn. The mechanical solution to the problem is listed in
 a patent by Ackermann, but the solution predates by more than a half
-century. We will discuss this issue in greater detail in the motion
-modeling chapter.
+century. We will discuss this issue in greater detail in the Kinematics Chapter.
 
 
 .. figure:: MotionFigures/steered.*

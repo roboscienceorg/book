@@ -54,6 +54,8 @@ another terminal, run Python and type
 
    The two link simulator.
 
+
+.. _`Fig:twolinksimulator2`:
 .. figure:: SimulationFigures/twolinksimulator2.png
    :width: 60%
    :align: center
@@ -62,13 +64,13 @@ another terminal, run Python and type
 
 
 You should see the link arm move as shown in
-:numref:`Fig:twolinksimulator1`-(b). The
+:numref:`Fig:twolinksimulator2`. The
 API is very simple. You need to publish a string formatted as
 "theta1:theta2:pen". The values theta1 and theta2 are in degrees (int or
 float), and pen is an int. Pen is set to 1 to draw and 0 to not draw.
 The program DialCntrl.py is an example of a Tk widget that uses two
 sliders to set the angle,
-:numref:Fig:tksliderexample` (a). To gain
+:numref:`Fig:tksliderexample` (a). To gain
 an understanding of the ROS Node structure, one may list out the ROS
 nodes (example, your numbers will vary):
 
@@ -85,9 +87,10 @@ To view the resulting node graph we can use the ROS tool rqt_graph:
 
     rosrun rqt_graph rqt_graph
 
-In this case it produces Figure \ `[Fig:rosgraph0] <#Fig:rosgraph0>`__.
+In this case it produces :numref:`Fig:rosgraph0`.
 
 .. _`Fig:rosgraph0`
+
 .. figure:: SimulationFigures/rosgraph0.png
    :width: 60%
    :align: center
@@ -178,6 +181,7 @@ Link Simulator.
 
 
 .. _`Fig:rosgraph1`
+
 .. figure:: SimulationFigures/rosgraph1.png
    :width: 70%
    :align: center
@@ -188,7 +192,10 @@ Link Simulator.
 Animation of the Two Link Manipulator
 -------------------------------------
 
-[example_twolinkmanipulator] For the arm in the two link example,
+.. _`example_twolinkmanipulator`:
+.. rubric:: Two Link Manipulator Example
+
+For the arm in the two link example,
 determine the joint angles to trace out a circle centered at (10,8) of
 radius 5. The circle can be parametrized by
 :math:`x(t) = 5\cos (t) + 8`, :math:`y(t) = 3 \sin(t) + 10`,
@@ -287,32 +294,33 @@ simulation program, we use the inverse kinematics node as before
        time.sleep(0.25)
        pub.publish(locs)
 
-
+.. _`Fig:twolinkcoarseexample1`:
 .. figure:: SimulationFigures/twolinkcoarseexample.png
    :width: 60%
    :align: center
 
-    Movement between the points - moving both linearly.
+   Movement between the points - moving both linearly.
 
-.. _`Fig:twolinkcoarseexample`:
+
+.. _`Fig:twolinkcoarseexample2`:
 .. figure:: SimulationFigures/twolinkcoarseexample2.png
    :width: 60%
    :align: center
 
-    Movement between the points - moving the servos sequentially.
+   Movement between the points - moving the servos sequentially.
 
 This simulation gives an idea about how to move the robotic arm and the
 path is correct. The motion however is not smooth. This is because we
 are moving the arm from position to position. This is known as position
 control. If you look at the curve produced, it is not a smooth curve but
 is a curve made of of connected segments like a polygon,
-:numref:`Fig:twolinkcoarseexample`.
+:numref:`Fig:twolinkcoarseexample1`.
 Note that the output is not actually a polygon; the sides are not
 straight line segments.
 
 In between the control points, the system moves according to how the
 controllers are programmed. They will move the joint angles in a linear
 fashion. If they are moved together you will see
-:numref:`Fig:twolinkcoarseexample`(a).
+:numref:`Fig:twolinkcoarseexample1`.
 If they are moved one at a time you will see
-:numref:`Fig:twolinkcoarseexample`(b).
+:numref:`Fig:twolinkcoarseexample2`.

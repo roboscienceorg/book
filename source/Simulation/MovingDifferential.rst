@@ -14,10 +14,10 @@ velocity, but we will assume we have a perfect motor controller for now;
 one that can take a velocity command and achieve that velocity.
 
 In this section we simulate the motion of the differential drive robot
-that we introduced in Chapter \ `[Chap:Terms] <#Chap:Terms>`__ shown in
+that we introduced in the Terms Chapter shown in
 :numref:`ddriveRecalled`.
 
-.. _`ddriveRecalled`
+.. _`ddriveRecalled`:
 .. figure:: SimulationFigures/ddrive.*
    :width: 30%
    :align: center
@@ -28,6 +28,7 @@ and the associated
 equations :eq:`ddkinematicsmodel`
 
 .. math::
+   :label: `ddkinematicsmodel`
 
    \boxed{
    \begin{array}{l}
@@ -120,7 +121,7 @@ differentiable.
 :numref:`fig:piecewisecirculararcs`
 shows a sample path.
 
-.. _`fig:piecewisecirculararcs`
+.. _`fig:piecewisecirculararcs`:
 .. figure:: SimulationFigures/piecewisecircular.*
    :width: 50%
    :align: center
@@ -139,11 +140,12 @@ hand sides for :math:`\dot{x}` and :math:`\dot{y}` normally are not
 integrable. A simple example below demonstrates issues with finding
 antiderivatives.
 
-_`ddexamplenotworkable`:
 Let :math:`\dot{\phi_1} = e^{-t^2}` and
 :math:`\dot{\phi_2} = t`
 
 .. math:: \theta(t) = \theta(0) + \int_0^t \frac{r}{2L} \left(e^{-\tau^2}-\tau\right)d\tau = ???
+   :label: `ddexamplenotworkable`
+
 
 This integral cannot be resolved. Meaning we cannot find an analytic
 antiderivative. It is possible to approximate it either with a Taylor
@@ -222,8 +224,8 @@ starting configuration and wheel velocity measurements, we have the
 following difference equations:
 
 .. math::
+   :label: discreteDD
 
-   \label{discreteDD}
    \begin{array}{l}
     x_{k+1} = x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) \\[5mm]
    y_{k+1} = y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) \\[5mm]
@@ -385,7 +387,7 @@ Solving for :math:`\dot{\phi_2}` and then plugging back in for
    \dot{\phi_2} = -\frac{L\dot{\theta}}{r} \pm \frac{v}{r}
 
 The direction of the robot is the direction of the curve shown in
-Figure \ `[intro-tangent] <#intro-tangent>`__.
+:numref:`intro-tangent`.
 
 .. _`intro-tangent`:
 .. figure:: SimulationFigures/tantheta.*
@@ -433,7 +435,7 @@ Note that the curvature of a parameterized plane curve is given by
 and we can rewrite the inverse kinematic equations, IK, as
 
 .. math::
-   :label:  inverseddequationskappa
+   :label:  `inverseddequationskappa`
 
    \boxed{
    \begin{array}{l}
@@ -464,9 +466,8 @@ Next we compute :math:`\kappa`:
 
 This makes sense since we know the curvature is the reciprocal of the
 radius. By selecting to go counter-clockwise (increasing :math:`\theta`)
-we use “+" in
-equations \ `[inverseddequations] <#inverseddequations>`__. Plugging the
-values into equations \ `[inverseddequations] <#inverseddequations>`__
+we use “+" in :eq:`inverseddequations`. Plugging the
+values into :eq:`inverseddequations`,
 we obtain wheel velocities
 
 .. math::
@@ -562,7 +563,8 @@ And the section of code to check:
 
    The wheel velocities.
 
-.. _`quadraticpathexample3`
+
+.. _`quadraticpathexample3`:
 .. figure:: SimulationFigures/quadpoly1.*
    :width: 60%
    :align:  center
@@ -575,7 +577,7 @@ fixed wheel velocities during the interval between velocity updates. We
 know in the case of the differential drive robot, fixed wheel speeds
 means the robot is driving a line or circle. Therefor the DD robot in
 this case is following a connected path made up of line or circle
-segments, see Figure \ `[fig:piecewiseconst] <#fig:piecewiseconst>`__.
+segments, see :numref:`fig:piecewiseconst`.
 Even when we do have functional forms for the wheel speeds, the
 implementation is still discrete.
 

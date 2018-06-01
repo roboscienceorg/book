@@ -53,9 +53,9 @@ used to just understand the surrounding environment:
 One of the basic functions, localization, is completely dependent on the
 sensors. Decisions about future actions are made based on the sensors.
 Feedback from the actuators is also based on the sensors. Many aspects
-of the system ride on the sensors. The last chapter presented a number
-of sensing systems. There is a vast array of sensors which can sense or
-measure physical. Accuracy on sensors varies greatly with some very
+of the system ride on the sensors. The Sensors Chapter presented a number
+and variety of sensing systems. There is a vast array of sensors which can sense or
+measure physical quantities. Accuracy on sensors varies greatly with some very
 accurate and others having considerable errors.
 
 .. _`fig:robotsandhumans`:

@@ -134,7 +134,7 @@ relative position and forces) within the space. It is common to name the
 design class after the coordinate system which the robot naturally
 operates in. For example, a cartesian design (similar to gantry systems)
 is found with many mills and routers, heavy lift systems, 3D Printers
-and so forth, see Figure :numref:`gantrysample-a`.
+and so forth, see :numref:`gantrysample-a`.
 Actuation occurs in the coordinate directions and is described by
 variable length linear segments (links) or variable positioning along a
 segment. This greatly simplifies the mathematical model of the machine
@@ -144,7 +144,7 @@ In two dimensions, one can rotate a linear actuator about a common
 center producing a radial design which would use a polar coordinate
 description. Adding a linear actuator on the :math:`z` axis gives a
 cylindrical coordinate description,
-Figure :numref:`gantrysample-b`
+:numref:`gantrysample-b`
 
 
 .. _`gantrysample-a`:
@@ -167,7 +167,7 @@ robots. It is built as a sequence of links connect by actuated joints
 terminating at the end-effector. By relating the links to segments and
 joints as nodes, we see that serial link manipulators can be seen as
 graphs with no loops or cycles. The classical robot arm is an example of
-a serial chain manipulator, Figure :numref:`armsample-a`.
+a serial chain manipulator, :numref:`armsample-a`.
 Robot arms normally employ fixed length links and use rotary joints.
 This are often called articulated robots or the arm is called an
 articulator. Very general tools exist to construct mathematical
@@ -192,7 +192,7 @@ equations for position.
 Another popular approach is the :index:`parallel chain manipulator`, which uses
 multiple serial chains to control the end-effector. An example of one,
 called a Delta Robot, can be seen in
-Figure :numref:`armsample-b`.
+:numref:`armsample-b`.
 
 .. _`armsample-c`:
 .. figure:: TermsFigures/Robotarm.jpg
@@ -227,4 +227,4 @@ later in the text when we cover mechanical systems.
    :width: 50%
    :align: center
 
-   Stewart Platform -  micheal meng, grabcad.com
+   Stewart Platform -  Micheal Meng, grabcad.com
