@@ -108,7 +108,7 @@ and normals for offsets as well,
 
 
 .. _`offsetcurve_a`:
-.. figure:: PlanningFigures/offset0.*
+.. figure:: NavigationFigures/offset0.*
    :width: 70%
    :align: center
 
@@ -116,7 +116,7 @@ and normals for offsets as well,
 
 
 .. _`offsetcurve_b`:
-.. figure:: PlanningFigures/offset.*
+.. figure:: NavigationFigures/offset.*
    :width: 40%
    :align: center
 
@@ -187,7 +187,7 @@ be computed. Assume the direction to :math:`y` is given by
 :math:`\pm <a_2, -a_1>` which is orthogonal to :math:`\nabla D`.
 
 .. _`rangeinfo`:
-.. figure:: PlanningFigures/range2.*
+.. figure:: NavigationFigures/range2.*
    :width: 35%
    :align: center
 
@@ -242,11 +242,11 @@ standard mathematical notation for plots and graphs :math:`(x,y)` and
 the array notation for the pixels.
 
 
-.. figure:: PlanningFigures/imagecoords.*
+.. figure:: NavigationFigures/imagecoords.*
    :width: 50%
    :align: center
 
-.. figure:: PlanningFigures/neighbors.*
+.. figure:: NavigationFigures/neighbors.*
    :width: 50%
    :align: center
 

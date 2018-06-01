@@ -21,6 +21,7 @@ Introduction to Robotics
    Basic Terms and Concepts <Terms/index>
    Simulation <Simulation/index>
    Robot Software <ROS/index>
+   Navigation <Navigation/index>
    Vehicle Motion <Motion/index>
    Electronics <Electrical/index>
    Sensors and Sensing <Sensors/index>

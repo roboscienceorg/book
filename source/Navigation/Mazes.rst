@@ -7,21 +7,21 @@ structures course, it is still impressive to see it implemented with a
 robot in a maze.
 
 .. _`maze0`:
-.. figure:: PlanningFigures/maze0.*
+.. figure:: NavigationFigures/maze0.*
    :width: 45%
    :align: center
 
    A very simple maze.
 
 .. _`maze2`:
-.. figure:: PlanningFigures/maze2.*
+.. figure:: NavigationFigures/maze2.*
    :width: 45%
    :align: center
 
    A more complicated maze.
 
 .. _`mazesol`:
-.. figure:: PlanningFigures/maze_sol.*
+.. figure:: NavigationFigures/maze_sol.*
    :width: 40%
    :align: center
 
@@ -51,28 +51,28 @@ the maze. This path can be extracted,
 circle. The topology as not changed.
 
 .. _`mazesolwall0`:
-.. figure:: PlanningFigures/maze_sol_wall.*
+.. figure:: NavigationFigures/maze_sol_wall.*
    :width: 40%
    :align: center
 
    Wall following (right hand) to solve the maze.
 
 .. _`mazesolwall`:
-.. figure:: PlanningFigures/maze_sol_wall_circle.*
+.. figure:: NavigationFigures/maze_sol_wall_circle.*
    :width: 40%
    :align: center
 
    Connecting the outside to make a circle.
 
 .. _`mazesolcircle1`:
-.. figure:: PlanningFigures/maze_sol_wall_circle1.*
+.. figure:: NavigationFigures/maze_sol_wall_circle1.*
    :width: 40%
    :align: center
 
    Wall path extracted from the maze.
 
 .. _`mazesolcircle2`:
-.. figure:: PlanningFigures/maze_sol_wall_circle2.*
+.. figure:: NavigationFigures/maze_sol_wall_circle2.*
    :width: 40%
    :align: center
 
@@ -86,7 +86,7 @@ which does not mean it will necessarily fail.
 
 
 .. _`maze_notsimple`:
-.. figure:: PlanningFigures/maze_notsimple.*
+.. figure:: NavigationFigures/maze_notsimple.*
    :width: 40%
    :align: center
 
@@ -117,7 +117,7 @@ work in reverse, meaning that it can escape a maze, but not enter one.
 
 
 .. _`maze_notsimple_pledge`:
-.. figure:: PlanningFigures/maze_notsimple_pledge.*
+.. figure:: NavigationFigures/maze_notsimple_pledge.*
    :width: 30%
    :align: center
 
@@ -188,7 +188,7 @@ concept will be used later in more advanced path planniing algorithms.
 For now we employ a simple path planner.
 
 .. _`coursemap`:
-.. figure:: PlanningFigures/finemazecoarse.*
+.. figure:: NavigationFigures/finemazecoarse.*
    :width: 90%
    :align: center
 
@@ -237,7 +237,7 @@ in so you can see the actual pixels as shown in
 :numref:`fig:struct_unstruct`.
 
 .. _`fig:struct_unstruct`:
-.. figure:: PlanningFigures/floodfillenvs.*
+.. figure:: NavigationFigures/floodfillenvs.*
    :width: 85%
    :align: center
 
@@ -254,7 +254,7 @@ is at the bottom. All we do is walk downhill.
 
 
 .. _`fig:finemaze`:
-.. figure:: PlanningFigures/finemaze.*
+.. figure:: NavigationFigures/finemaze.*
    :width: 40%
    :align: center
 
@@ -269,7 +269,7 @@ out of unlabeled pixels.
 
 
 .. _`fig:wavefrontprogress`:
-.. figure:: PlanningFigures/finemaze_numbered.png
+.. figure:: NavigationFigures/finemaze_numbered.png
    :width: 90%
    :align: center
 
@@ -298,42 +298,42 @@ value. Step there and repeat the process. Continue stepping downhill
 until you reach the goal pixel.
 
 .. _`fig:wavefillex`:
-.. figure:: PlanningFigures/obsmaparray.*
+.. figure:: NavigationFigures/obsmaparray.*
    :width: 40%
    :align: center
 
    Wave front progression (0)
 
 .. _`fig:wavefillex1`:
-.. figure:: PlanningFigures/initmaparray.*
+.. figure:: NavigationFigures/initmaparray.*
    :width: 40%
    :align: center
 
    Wave front progression (1)
 
 .. _`fig:wavefillex2`:
-.. figure:: PlanningFigures/goalmaparray.*
+.. figure:: NavigationFigures/goalmaparray.*
    :width: 40%
    :align: center
 
    Wave front progression (2)
 
 .. _`fig:wavefillex3`:
-.. figure:: PlanningFigures/fillmaparray.*
+.. figure:: NavigationFigures/fillmaparray.*
    :width: 40%
    :align: center
 
    Wave front progression (3)
 
 .. _`fig:wavefillex4`:
-.. figure:: PlanningFigures/startbtmaparray.*
+.. figure:: NavigationFigures/startbtmaparray.*
    :width: 40%
    :align: center
 
    Wave front progression (4)
 
 .. _`fig:wavefillex5`:
-.. figure:: PlanningFigures/btmaparray.*
+.. figure:: NavigationFigures/btmaparray.*
    :width: 40%
    :align: center
 

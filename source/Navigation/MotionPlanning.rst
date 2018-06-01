@@ -20,14 +20,14 @@ just a matter of starting with the correct orientation and driving for a
 given amount of time.
 
 .. _`fig:simplecurvedpath`:
-.. figure:: SimulationFigures/simplepath.*
+.. figure:: NavigationFigures/simplepath.*
    :width: 50%
    :align: center
 
    Path with arcs
 
 .. _`fig:simplestraightpath`:
-.. figure:: SimulationFigures/simplestraightpath.*
+.. figure:: NavigationFigures/simplestraightpath.*
    :width: 50%
    :align: center
 
@@ -63,14 +63,14 @@ Set heading towards goal Move forward count = 0 Turn right Move forward
 incr count Set heading towards goal
 
 .. _`turtlebasicmotion_a`:
-.. figure:: SimulationFigures/turtleobs.*
+.. figure:: NavigationFigures/turtleobs.*
    :width: 50%
    :align: center
 
    The direct path to the goal.
 
 .. _`turtlebasicmotion_b`:
-.. figure:: SimulationFigures/turtleobs2.*
+.. figure:: NavigationFigures/turtleobs2.*
    :width: 50%
    :align: center
 
@@ -94,14 +94,14 @@ cycle. So, the answer to the question “does this work" is not for all
 cases.
 
 .. _`simple1motionproblem`:
-.. figure:: SimulationFigures/simple1.*
+.. figure:: NavigationFigures/simple1.*
    :width: 50%
    :align: center
 
    Getting trapped in a non-convex solid object.
 
 .. _`simple2motionproblem`:
-.. figure:: SimulationFigures/simple2.*
+.. figure:: NavigationFigures/simple2.*
    :width: 50%
    :align: center
 

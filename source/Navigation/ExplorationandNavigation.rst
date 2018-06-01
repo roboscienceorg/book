@@ -75,7 +75,7 @@ for some :math:`0 < r < \infty`.
 
 
 .. _`bug_obstacle`:
-.. figure:: PlanningFigures/obstacle.*
+.. figure:: NavigationFigures/obstacle.*
    :width: 70%
    :align: center
 
@@ -199,14 +199,14 @@ even solvable. The planning problem shown in
 Bug 1 will exit without success on this one.
 
 .. _`bug1path`:
-.. figure:: PlanningFigures/bug1.*
+.. figure:: NavigationFigures/bug1.*
    :width: 60%
    :align: center
 
    An example of a path using the Bug 1 algorithm.
 
 .. _`unreachable`:
-.. figure:: PlanningFigures/bug1_a.*
+.. figure:: NavigationFigures/bug1_a.*
    :width: 60%
    :align: center
 
@@ -223,7 +223,7 @@ line between the start point and the goal point as the :math:`m`-line
 (motion to goal line).
 
 .. _`bug12bug2`:
-.. figure:: PlanningFigures/bug1tobug2.*
+.. figure:: NavigationFigures/bug1tobug2.*
    :width: 80%
    :align: center
 
@@ -269,7 +269,7 @@ to the goal.
 
 
 .. _`bug2path`:
-.. figure:: PlanningFigures/bug2.*
+.. figure:: NavigationFigures/bug2.*
    :width: 50%
    :align: center
 
@@ -282,7 +282,7 @@ words, Bug2 will fail to find a path. This is shown in
 
 
 .. _`unreachable2`:
-.. figure:: PlanningFigures/bug2_a.*
+.. figure:: NavigationFigures/bug2_a.*
    :width: 50%
    :align: center
 
@@ -303,14 +303,14 @@ increase the number of vertical bars. What are the path lengths for Bug
 :numref:`complicatedobstacle_b`?
 
 .. _`complicatedobstacle_a`:
-.. figure:: PlanningFigures/complicated_obst0.*
+.. figure:: NavigationFigures/complicated_obst0.*
    :width: 15%
    :align: center
 
    A more disceptive obstacle.  This provides the basic obstacle shape and relative pose.
 
 .. _`complicatedobstacle_b`:
-.. figure:: PlanningFigures/complicated_obst.*
+.. figure:: NavigationFigures/complicated_obst.*
    :width: 45%
    :align: center
 
@@ -325,14 +325,14 @@ seem real. The path for Bug 1 is given in
 given in :numref:`bug1vsbug2_b`.
 
 .. _`complicatedobstacledim`:
-.. figure:: PlanningFigures/complicated_obst_dim.*
+.. figure:: NavigationFigures/complicated_obst_dim.*
    :width: 50%
    :align: center
 
    Some dimensions for this obstacle.
 
 .. _`bug1vsbug2_a`:
-.. figure:: PlanningFigures/complicated_obst_b1.*
+.. figure:: NavigationFigures/complicated_obst_b1.*
    :width: 50%
    :align: center
 
@@ -340,7 +340,7 @@ given in :numref:`bug1vsbug2_b`.
 
 
 .. _`bug1vsbug2_b`:
-.. figure:: PlanningFigures/complicated_obst_b2.*
+.. figure:: NavigationFigures/complicated_obst_b2.*
    :width: 50%
    :align: center
 
@@ -380,7 +380,7 @@ leave the obstacle when the obstacle becomes visible.
 
 
 .. _`bug1tobug2`:
-.. figure:: PlanningFigures/bug2tobug3.*
+.. figure:: NavigationFigures/bug2tobug3.*
    :width: 40%
    :align: center
 
@@ -420,7 +420,7 @@ in the same types of domains. The advantage often is the possible use of
 direct routes which can shorten travel distances.
 
 .. _`bug3path`:
-.. figure:: PlanningFigures/bug3.*
+.. figure:: NavigationFigures/bug3.*
    :align: center
    :width: 50%
 
@@ -431,7 +431,7 @@ difficulties reaching the goal where Bug 1 and 3 succeed.
 
 
 .. _`bugmaze`:
-.. figure:: PlanningFigures/bugmaze.*
+.. figure:: NavigationFigures/bugmaze.*
    :width: 60%
    :align: center
 
@@ -469,7 +469,7 @@ and a finite range:
                                 \end{array}\right.
 
 .. _`Fig:lidar_ray`:
-.. figure:: PlanningFigures/lidar_ray.*
+.. figure:: NavigationFigures/lidar_ray.*
    :width: 50%
    :align: center
 
@@ -491,7 +491,7 @@ makes finding discontinuities a bit subtle.
 
 
 .. _`discontrange`:
-.. figure:: PlanningFigures/range.*
+.. figure:: NavigationFigures/range.*
    :width: 40%
    :align: center
 
@@ -500,7 +500,7 @@ makes finding discontinuities a bit subtle.
    :math:`\rho_R`.
 
 .. _`discontrangefn`:
-.. figure:: PlanningFigures/rangefunction.*
+.. figure:: NavigationFigures/rangefunction.*
    :width: 50%
    :align: center
 
@@ -514,14 +514,14 @@ Normally one uses
 for some :math:`\delta` as the criterion.
 
 .. _`discontinuitypoints`:
-.. figure:: PlanningFigures/discont.*
+.. figure:: NavigationFigures/discont.*
    :width: 35%
    :align: center
 
    Points of discontinuity: :math:`O_1`, :math:`O_2`, ..., :math:`O_n`
 
 .. _`discontinuitypoints_b`:
-.. figure:: PlanningFigures/singleVSdouble.*
+.. figure:: NavigationFigures/singleVSdouble.*
    :width: 80%
    :align: center
 
@@ -540,7 +540,7 @@ we will only focus on those,
 
 
 .. _`discontpathblock`:
-.. figure:: PlanningFigures/discont2.*
+.. figure:: NavigationFigures/discont2.*
    :width: 80%
    :align: center
 
@@ -586,7 +586,7 @@ obstacle and computed that the lower boundary discontinuity is the one
 to set as the temporary goal.
 
 .. _`defnT`:
-.. figure:: PlanningFigures/defnT.*
+.. figure:: NavigationFigures/defnT.*
    :width: 70%
    :align: center
 
@@ -595,7 +595,7 @@ to set as the temporary goal.
 
 
 .. _`transitionboundary`:
-.. figure:: PlanningFigures/discont4.*
+.. figure:: NavigationFigures/discont4.*
    :width: 85%
    :align: center
 
@@ -607,7 +607,7 @@ boundary to the goal, :numref:`Mdefinition`. This is
 used in the computation of the departure point.
 
 .. _`Mdefinition`:
-.. figure:: PlanningFigures/discont3.*
+.. figure:: NavigationFigures/discont3.*
    :width: 70%
    :align: center
 
@@ -622,7 +622,7 @@ distance between boundary that has been sensed and the goal,
 :numref:`Fig:Dfollowed`.
 
 .. _`Fig:Dfollowed`:
-.. figure:: PlanningFigures/d_followed.*
+.. figure:: NavigationFigures/d_followed.*
    :width: 70%
    :align: center
 
@@ -641,21 +641,21 @@ See :numref:`Fig:Dreach`, :numref:`Fig:Dreach2`
 for a description of this distance.
 
 .. _`Fig:Dlambda`:
-.. figure:: PlanningFigures/d_lambda.*
+.. figure:: NavigationFigures/d_lambda.*
    :width: 30%
    :align: center
 
    The region :math:`\Lambda`.
 
 .. _`Fig:Dreach`:
-.. figure:: PlanningFigures/d_reach.*
+.. figure:: NavigationFigures/d_reach.*
    :width: 80%
    :align: center
 
    The value :math:`d_{\text{reach}}`.
 
 .. _`Fig:Dreach2`:
-.. figure:: PlanningFigures/d_reach2.*
+.. figure:: NavigationFigures/d_reach2.*
    :width: 80%
    :align: center
 
@@ -672,7 +672,7 @@ boundary following termination condition is satisfied. The planner is
 summarized in Algorithm [TangentBugAlg]_.
 
 .. _`Fig:DreachFollowed2`:
-.. figure:: PlanningFigures/d_reach_followed2.*
+.. figure:: NavigationFigures/d_reach_followed2.*
    :width: 80%
    :align: center
 
@@ -680,7 +680,7 @@ summarized in Algorithm [TangentBugAlg]_.
    :math:`d_{\text{reach}} = d_{\text{followed}}`.
 
 .. _`Fig:DreachFollowed3`:
-.. figure:: PlanningFigures/d_reach_followed3.*
+.. figure:: NavigationFigures/d_reach_followed3.*
    :width: 80%
    :align: center
 
@@ -717,7 +717,7 @@ behavior the same as Bug 3 and compare paths.
 
 
 .. _`finitesensorrange`:
-.. figure:: PlanningFigures/finite_range.*
+.. figure:: NavigationFigures/finite_range.*
    :width: 70%
    :align: center
 
@@ -725,7 +725,7 @@ behavior the same as Bug 3 and compare paths.
 
 
 .. _`infinitesensorrange`:
-.. figure:: PlanningFigures/infinite_range.*
+.. figure:: NavigationFigures/infinite_range.*
    :width: 70%
    :align: center
 
@@ -743,7 +743,7 @@ assume we have infinite range. We can reexamine the complicated obstacle
 with the tangent bug.
 
 .. _`bug1vstb`:
-.. figure:: PlanningFigures/complicated_obst_tb.*
+.. figure:: NavigationFigures/complicated_obst_tb.*
    :width: 40%
    :align: center
 
@@ -751,7 +751,7 @@ with the tangent bug.
 
 
 .. _`bug1vstb2`:
-.. figure:: PlanningFigures/complicated_obst_tb2.*
+.. figure:: NavigationFigures/complicated_obst_tb2.*
    :width: 90%
    :align: center
 

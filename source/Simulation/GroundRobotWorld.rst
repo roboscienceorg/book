@@ -166,7 +166,7 @@ units often low cost ultrasonic ranging sensors would be used.
 
 .. _`turtlesensors`:
 .. figure:: SimulationFigures/turtlesensors.*
-   :width: 50%
+   :width: 20%
    :align: center
 
    A circular robot (like a Create) with touch sensors mounted around

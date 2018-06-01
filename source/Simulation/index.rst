@@ -91,4 +91,3 @@ otherwise code chaos will emerge.
    SimulatingMotion
    MovingDifferential
    GroundRobotWorld
-   MotionPlanning
