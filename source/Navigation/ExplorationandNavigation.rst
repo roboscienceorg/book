@@ -669,7 +669,7 @@ terminate the boundary following and return to motion to goal.
 values become equal.
 :numref:`Fig:DreachFollowed3` shows when the
 boundary following termination condition is satisfied. The planner is
-summarized in Algorithm [TangentBugAlg]_.
+summarized in Algorithm `alg:tangentbug`_.
 
 .. _`Fig:DreachFollowed2`:
 .. figure:: NavigationFigures/d_reach_followed2.*
@@ -702,7 +702,7 @@ behavior the same as Bug 3 and compare paths.
    | **Output** A path to the :math:`q_{\text{goal}}` or a conclusion no such path exists.
    | **while** True **do**
    |   **repeat**
-   |     Continuously move from the point :math:`n\in \{ T, O_i\}` which minimizes :eq:`d(x,n)+d(n,q_{\text{goal}})`.
+   |     Continuously move from the point :math:`n\in \{ T, O_i\}` which minimizes :math:`d(x,n)+d(n,q_{\text{goal}})`.
    |   **until**  :math:`q_{\text{goal}}` is reached or the direction that minimizes :math:`d(x,n)+d(n,q_{\text{goal}})` begins to increase :math:`d(n,q_{\text{goal}})`
    |   **if** Goal is reached **then**  Exit  **endif**
    |   Choose a boundary following direction which continues in the same direction as the most recent motion-to-goal direction.

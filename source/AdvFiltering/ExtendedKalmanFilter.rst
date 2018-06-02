@@ -189,7 +189,7 @@ improve the location estimate as well as gain estimates for the
 uncertainty of the location. :numref:`Fig:DDagain`
 recalls the variables and equations that were derived.
 
-
+.. _`Fig:DDagain`:
 .. figure:: AdvFilteringFigures/dddim.*
    :width: 60%
    :align: center
@@ -576,11 +576,10 @@ Kalman (green dots). The second plot is a workspace domain plot of
 Mecanum EKF Example
 ~~~~~~~~~~~~~~~~~~~
 
-| Developing the Extended Kalman Filter for the Mecanum drive is
-  basically the same process. The only thing to derive is the matrix
-  :math:`F`. Recalling
-  :eq:`mecanumforwardkinematics`:
-|
+Developing the Extended Kalman Filter for the Mecanum drive is
+basically the same process. The only thing to derive is the matrix
+:math:`F`. Recalling   :eq:`meccanumDFK`:
+
 
   .. math::
 

@@ -148,7 +148,8 @@ and so
 
 which is the average.
 
-Example with different variances[dataexamplediffvar]
+.. _`dataexamplediffvar`:
+Example with different variances
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Say you measure something three different ways and you want to merge
@@ -347,7 +348,7 @@ Thus we have
 .. math:: \hat{x}_{n+1} = \hat{x}_n + K_n\left( z_{n+1} - \hat{x}_n\right), \quad K_n = \displaystyle \frac{1}{n+1} .
 
 Take the first column of the data set in
-section \ `[dataexamplediffvar] <#dataexamplediffvar>`__. Assume that
+:numref:`dataexamplediffvar`. Assume that
 you want to do this as a running average over the N points contained in
 the file.
 
@@ -430,13 +431,14 @@ Using :math:`K` we can write a recursive formula for :math:`P_{n+1}`:
 This provides us with a recursive weighted filter:
 
 .. math::
+   :label: Eq:scalarrecursiveweighted
 
    \begin{array}{l}
    K_{n} = \displaystyle P_{n-1} \left(P_{n-1} + \sigma_n^2\right)^{-1} \\[8pt]
    \hat{x}_{n} =  \hat{x}_{n-1} +  K_{n}\left(  z_{n}- \hat{x}_{n-1} \right) \\[8pt]
    P_n = \displaystyle  (1 -   K_n) P_{n-1} ,
    \end{array}
-   \label{Eq:scalarrecursiveweighted}
+
 
  where :math:`P_0 = \sigma_0^2` and :math:`\hat{x}_0 = z_0`.
 

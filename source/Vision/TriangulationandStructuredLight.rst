@@ -69,9 +69,6 @@ can be used to gain an error formula:
 
 .. math:: E = \Delta f \approx \frac{\partial f}{\partial x} \Delta x + \frac{\partial f}{\partial y} \Delta y + \frac{\partial f}{\partial z} \Delta z .
 
-.. raw:: latex
-
-   \normalfont
 
 Using the values from the last example, :math:`f=8`\ mm,
 :math:`L = 3`\ cm and :math:`x = 2`\ mm and the variations, :math:`x`
@@ -166,6 +163,7 @@ to digital converter can be used to provide the numerical value. In
 practice, the relation between voltage and distance is not linear and
 some calibration in software is required.
 
+.. _`fig:SharpIRsensor`:
 .. figure:: VisionFigures/sharpIR.jpg
    :width: 30%
    :align: center

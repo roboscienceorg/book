@@ -698,14 +698,15 @@ between multiple devices. This is necessary with any vehicle that has
 more than one drive motor, for example a differential drive,
 :numref:`fig:speedramp1.`
 
-.. _`fig:speedramp1`:
+.. _`fig:speedramp0`:
 .. figure:: ControlFigures/changesetpoint.*
    :width: 40%
    :align: center
 
    A speed ramp function for a single motor
 
-.. _`fig:speedramp2`:
+
+.. _`fig:speedramp1`:
 .. figure:: ControlFigures/dualmotor1.*
    :width: 40%
    :align: center
@@ -722,14 +723,14 @@ P, PI or PID control; a PID version is shown in
 :numref:`fig:speedramp3`.
 
 
-.. _`fig:speedramp3`:
+.. _`fig:speedramp2`:
 .. figure:: ControlFigures/dualmotor2.*
    :width: 40%
    :align: center
 
    Coordinating two motors with the same ramp function.
 
-.. _`fig:speedramp4`:
+.. _`fig:speedramp3`:
 .. figure:: ControlFigures/dualmotor3.*
    :width: 40%
    :align: center

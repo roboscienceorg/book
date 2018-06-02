@@ -223,7 +223,8 @@ update to the state is denoted :math:`\tilde{x}_k`
 As before we assume that we can write our estimate as a combination of
 the process update and the observation
 
-.. math:: \label{kalmanderivation4} \hat{x}_k = \tilde{x}_k + K_k (z_k - H\tilde{x}_k)
+.. math::  \hat{x}_k = \tilde{x}_k + K_k (z_k - H\tilde{x}_k)
+   :label: kalmanderivation4
 
 The optimal choice of the Kalman gain parameter is to select :math:`K_k`
 to minimize the mean square error
@@ -425,7 +426,7 @@ State variable covariance:
 
 It is useful to visualize the effects of a single Kalman step. The
 images are provided in
-:numref:`fig:kalmancloudsa`, :numref:`fig:kalmancloudsb`
+:numref:`fig:kalmanclouds1` -  :numref:`fig:kalmanclouds3`
 and the numbers used are not the same as the example above [#f2]_. The
 system we use is Let
 

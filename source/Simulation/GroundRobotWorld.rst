@@ -183,13 +183,13 @@ estimate the boundary means that a robot can follow the boundary. The
 tangent to the boundary is required for this task.
 
 .. figure:: SimulationFigures/turtlecollide2.*
-   :width: 50%
+   :width: 30%
    :align: center
 
    Estimating the object boundary.
 
 .. figure:: SimulationFigures/turtlecollide3.*
-   :width: 50%
+   :width: 30%
    :align: center
 
    Bump sensors can only determine
@@ -197,7 +197,7 @@ tangent to the boundary is required for this task.
 
 .. _`turtleboundary`:
 .. figure:: SimulationFigures/tangent.*
-   :width: 50%
+   :width: 40%
    :align: center
 
    Using touch sensors to estimate the boundary normal and tangent.
@@ -218,7 +218,7 @@ Using a range sensor
 ^^^^^^^^^^^^^^^^^^^^
 
 Recall the components in
-Figure \ `[intro-components] <#intro-components>`__. There was not a
+:numref:`intro-components`. There was not a
 touch or impact sensor listed. However, there are two types of range
 sensors shown. One is a :index:`LIDAR` and the other is a Kinect. The next simple
 planner presented assumes that the robot has a ranging device. The

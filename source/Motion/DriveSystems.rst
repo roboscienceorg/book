@@ -43,6 +43,7 @@ and the forward kinematics:
 and the inverse kinematics:
 
 .. math::
+   :label: inverseddequations
 
    \boxed{
    \begin{array}{l}

@@ -617,7 +617,7 @@ instantaneous time:
 
 We can undo the rotation easily. Since :math:`R` is an orthogonal
 matrix, the inverse is easy to
-compute,  for more information see Strang :cite:`Strang:1988:book` .
+compute,  for more information see Strang :cite:`Strang:1988:LA` .
 
 .. math::
 

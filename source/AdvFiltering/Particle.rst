@@ -116,7 +116,7 @@ Gaussian filters (Kalman Filter).
    | :math:`i=1`
    | **for** :math:`m=1` to :math:`M` **do**
    |   :math:`u = r + (m-1)/M`
-   |   **while** :math:`c < u' **do**
+   |   **while** :math:`c < u` **do**
    |     :math:`i = i+1`
    |     :math:`c = c + w^i`
    |   **end while*

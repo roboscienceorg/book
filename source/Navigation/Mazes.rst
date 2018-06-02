@@ -187,7 +187,7 @@ grid map and the corresponding graph representation of free space. This
 concept will be used later in more advanced path planniing algorithms.
 For now we employ a simple path planner.
 
-.. _`coursemap`:
+.. _`coarsemap`:
 .. figure:: NavigationFigures/finemazecoarse.*
    :width: 90%
    :align: center
