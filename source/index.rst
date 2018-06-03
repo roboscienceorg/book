@@ -33,7 +33,7 @@ Introduction to Robotics
    Kalman and Particle Filters <AdvFiltering/index>
    Motion Planning <Planning/index>
    Robot Design <Design/index>
-   References <References/References>
+   References <References/zrefs>
 
 
 .. toctree::
@@ -43,8 +43,8 @@ Introduction to Robotics
 
    Mathematical Background <Math/index>
    The SciPy Library <SciPy/index>
-   STDR Simulator <STDR/index>
-..   Gazebo 3D Simulator <Gazebo/index>
+   Simulation Tools <SimTools/index>
+
 
 
 Index

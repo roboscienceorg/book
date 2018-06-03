@@ -1,8 +1,5 @@
-Simulator
-=========
-
 STDR - Simple Two Dimensional Robot Simulator
----------------------------------------------
+=============================================
 
 Earlier you installed and tested the STDR simulator. Now we will use it
 to simulate a robot moving around in plane. The same ROS
@@ -17,12 +14,12 @@ downloaded and built. There are other ways the robot can be driven
 around which we demonstrate in this section; using either a multiarray
 message or the twist message that contains kinematic parameters.
 
-
-.. figure:: STDRFigures/stdr_gui.png
+.. _`fig:stdr_sim`:
+.. figure:: SimToolsFigures/stdr_gui.png
    :width: 70%
    :align: center
 
-   STDR Simulator.[fig:stdr_sim]
+   STDR Simulator.
 
 The simulator takes velocity commands in the :math:`x` and :math:`y`
 directions and moves the robot with those velocities. This allows for
@@ -34,12 +31,12 @@ robot velocities. It will perform the time steps (integrations) to move
 the robot. It is important that the user provides accurate velocity
 commands based on the wheels and vehicle design.
 
-
-.. figure:: STDRFigures/stdr_basic.*
+.. _`fig:stdr_basic`:
+.. figure:: SimToolsFigures/stdr_basic.*
    :width: 70%
    :align: center
 
-   STDR Communications [fig:stdr_basic]
+   STDR Communications
 
 To get you up and running, we have provided a differential drive robot
 node which will convert wheel commands to correct robot velocities based
@@ -77,30 +74,27 @@ Once roslaunch executes the user will be greeted by an application
 looking similar to the one in `[fig:stdr_sim] <#fig:stdr_sim>`__.
 Roslaunch also starts up the ros master if there isn’t one already
 running on the machine. It also starts up all the nodes and they can be
-viewed in Figure \ `[fig:stdr_node_graph] <#fig:stdr_node_graph>`__.
+viewed in :numref:`fig:stdr_node_graph`.
 This graph shows the ROS nodes running for just the STDR simulator with
 the DDFK node and not any control code you may wish to run. So the
 actual node complexity is a bit more than what
-Figure \ `[fig:stdr_basic] <#fig:stdr_basic>`__ implies since the STDR
+:numref:`fig:stdr_basic` implies since the STDR
 node is really a placeholder for the graph shown in
-Figure \ `[fig:stdr_node_graph] <#fig:stdr_node_graph>`__.
+:numref:`fig:stdr_node_graph`.
 
-
-.. figure:: STDRFigures/stdr_node_graph.png
+.. _`fig:stdr_node_graph`:
+.. figure:: SimToolsFigures/stdr_node_graph.png
    :width: 70%
    :align: center
 
    Nodes running after STDR Simulator launch but before you launch your
-   control code.[fig:stdr_node_graph]
+   control code.
 
 The message topics also get started and can be viewed by doing a
 rostopic list. It is an extensive list and provides a look under the
 hood for the simulator. While getting started you will not need to
 interact with these topics, but later when we are working with sensors,
 you will need to subscribe to some of the sensor topics.
-
-
-
 
 ::
 
@@ -124,7 +118,6 @@ you will need to subscribe to some of the sensor topics.
     /stdr_server/delete_robot/feedback
     /stdr_server/delete_robot/goal
 
-|
 
 ::
 

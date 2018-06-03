@@ -25,7 +25,7 @@ Prior to the process, the variance estimate for :math:`x_{k-1}` is
 The next thing required is to merge the process prediction with the
 observation data, :math:`z_k` (scalar), this observation has quality
 :math:`\sigma_w^2`. These are fused using
-:numref:`Eq:scalarrecursiveweighted`:
+:eq:`eq:scalarrecursiveweighted`:
 
 .. math:: S_k = \frac{1}{\tilde{\sigma}_k^2} + \frac{1}{{\sigma}_w^2}
 

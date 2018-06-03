@@ -201,26 +201,102 @@ called a Delta Robot, can be seen in
 
    Articulated with hand gripper - Chris Christofferson,  grabcad.com
 
-Basic Machine Design
-~~~~~~~~~~~~~~~~~~~~
+Basic Machine Elements
+~~~~~~~~~~~~~~~~~~~~~~
 
-**This section to be developed May/June.**  Fill out with the machine design
-background needed to build basic systems.  This section could be moved
-later in the text when we cover mechanical systems.
+We have been designing and using machines for thousands of years.  There
+is a wealth of very interesting designs to do a myriad of things.  We will
+review a few common designs in terms of basic function.
 
-.. _`jointsample-a`:
-.. figure:: TermsFigures/Ujoint.png
-   :width: 40%
+Sources of force in a robot arise from elecromagnetic devices such as DC
+motors or chemical processes such as internal combustion.
+The force produced is normally not in correct form for use on the
+robot.  It could be in the wrong direction, speed, magnitude of force, etc and
+needs to be changed.  This is where gears, joints, rods and other essential
+components enter the design.
+
+Gears are rotating elements with cut teeth that mesh with each other.  They are
+capable of transmission of power and can change speed, torque or direction.
+Gears can be categorized according to relative relation of their rotation
+axes: parallel axes, intersecting axes, nonparallel-nonintersecting, and
+other.
+
+Parallel axes contain spur gears, helical gears, internal gears and gear rack designs.  Intersecting
+axes include straight and spiral bevel gears, miter gears.  Nonparallel-nonintersecting
+gears have worm gears designs and screw gear designs, :numref:`fig:typesofgears`.
+
+.. _`fig:typesofgears`:
+.. figure:: TermsFigures/typesofgears.jpg
+   :width: 80%
    :align: center
 
-   Universal Joint - Devin Dyke,  grabcad.com
+   Sample of different gear designs.
 
-.. _`jointsample-b`:
-.. figure:: TermsFigures/Flexible.jpg
-   :width: 40%
+Beyond axes, the way the teeth fall on the gear are important.  An external design
+is where the teeth lie on the outside (outer surface) of the gear and internal gears are ones
+where the teeth lie on the inside.   Internal gears are nice in that they don't
+reverse the shaft rotation direction.   The teeth
+can run parallel to the rotation axis such as seen in spur gears or straight cut
+gears.  These are the simpliest designs and only work with parallel axes.
+Helical gears use teeth that are not parallel to the rotation axis.
+
+In spur designs, the teeth mesh with mostly static contact points and the engagement
+is all at once.  Spur gears can be noisy at high rotational speeds.
+Helical or spiral designs the teeth engage more gradually and also slide against
+each other.  This produces less noise or vibrations at the cost of
+higher energy loss and heat production.
+
+Bevel gear designs (especially spiral) are used in differentials to transmit
+driveshaft rotation 90 degrees to axle rotation.   Rack and pinon systems
+can be used to transmit the rotational motion of a steering wheel to the linear
+motion of a rod used to change the wheel angle (steering).  Worm gear designs
+can provide significant torque as well as having the property of self-locking
+which means they are stationary when no power is applied to the worm gear (the
+worm wheel cannot drive the mechanism in reverse).
+
+Most gear designs change angle by 90 degrees (although bevel angles and teeth
+designs can work at other angles).  However the angle is fixed for the specific
+gear.  If thesee angles are not fixed, which happens when suspension systems
+and steering are employed, then one needs joints that can address variable
+angles.  Universal and flexible joints are used to allow for variable changes
+in rotation axes.
+
+.. _`jointsample`:
+.. figure:: TermsFigures/joints.png
+   :width: 70%
    :align: center
 
+   Joint examples.  (Left) Universal Joint - Devin Dyke,  grabcad.com, (Right)
    Flexible joint - Chintan (CK) Patel,  grabcad.com
+
+Changing rotational motion to linear motion is important and for us arises often
+in manufacturing robots such as CNC machines and 3D Printers.  A simple system
+is just a threaded rod and nut design (which is can be seen as a variation of the
+worm gear concept).   By spinning the rod and not allowing the
+nut to spin, the nut will move up or down the rod.  The relative motion
+is determined by the thread pitch.    Because all of the threads
+of the nut are engaged, there can be considerable friction.
+
+An improvement over a threaded rod is the ball screw, :numref:`fig:ballscrew` .
+The idea is to add small
+balls (bearings) between the threads (or teeth if thinking of this like a
+worm gear).  This reduces friction and backlash as well as increases accuracy.
+Using recirculating balls (in a wormdrive design) is how early automobiles
+provided smooth blacklash free and lower force steering.
+
+.. _`fig:ballscrew`:
+.. figure:: TermsFigures/BallScrews-with-detail-insets.jpg
+   :width: 70%
+   :align: center
+
+   Ball Screw -  Glenn McKechnie, June 2006, Wikipedia
+
+Other common methods to transfer rotational motion are sprocket and chains.
+Using different sizes of sprockets attached via the chain provides changes
+in angular speed and torque, called gearing based on the direct analogy to
+gears.  The chains can be attached to tracks and a track or tank drive system is
+produced.   A toothed belt is a variation of this system and is found from
+timing belts and Gilmer belts to the head positioning belts for 3D printers.
 
 .. _`jointsample-c`:
 .. figure:: TermsFigures/Stewart.jpg

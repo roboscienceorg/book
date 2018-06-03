@@ -11,6 +11,7 @@ mechatronics, embedded systems, sensing, signal processing,
 communications, algorithms and planning.
 
 .. This figure is owned by RoboScience
+
 .. figure:: IntroductionFigures/overview.*
    :width: 70%
    :align: center
