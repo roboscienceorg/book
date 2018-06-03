@@ -134,7 +134,7 @@ relative position and forces) within the space. It is common to name the
 design class after the coordinate system which the robot naturally
 operates in. For example, a cartesian design (similar to gantry systems)
 is found with many mills and routers, heavy lift systems, 3D Printers
-and so forth, see :numref:`gantrysample-a`.
+and so forth, see :numref:`gantrysample`-left.
 Actuation occurs in the coordinate directions and is described by
 variable length linear segments (links) or variable positioning along a
 segment. This greatly simplifies the mathematical model of the machine
@@ -144,30 +144,25 @@ In two dimensions, one can rotate a linear actuator about a common
 center producing a radial design which would use a polar coordinate
 description. Adding a linear actuator on the :math:`z` axis gives a
 cylindrical coordinate description,
-:numref:`gantrysample-b`
+:numref:`gantrysample`-right
 
 
-.. _`gantrysample-a`:
-.. figure:: TermsFigures/cartesian.png
-   :width: 70%
+.. _`gantrysample`:
+.. figure:: TermsFigures/cart_cyli.png
+   :width: 90%
    :align: center
 
-   Cartesian design - Muhammad Furqan, grabcad.com
+   Basic designs.  (left) Cartesian design - Muhammad Furqan, grabcad.com
+   (right) Cylindrical design -  Mark Dunn,  grabcad.com
 
-.. _`gantrysample-b`:
-.. figure:: TermsFigures/weldingarm.png
-   :width: 70%
-   :align: center
 
-   Cylindrical design -  Mark Dunn,  grabcad.com
-
-A :index:`serial chain manipulator` is the most common design in industrial
+A :index:`serial chain manipulator` is a common design in industrial
 robots. It is built as a sequence of links connect by actuated joints
 (normally seen as a sequence starting from an attached base and
 terminating at the end-effector. By relating the links to segments and
 joints as nodes, we see that serial link manipulators can be seen as
 graphs with no loops or cycles. The classical robot arm is an example of
-a serial chain manipulator, :numref:`armsample-a`.
+a serial chain manipulator, :numref:`serialparallel`-(left).
 Robot arms normally employ fixed length links and use rotary joints.
 This are often called articulated robots or the arm is called an
 articulator. Very general tools exist to construct mathematical
@@ -175,24 +170,28 @@ descriptions of arm configuration as a function of joint angles. A
 formalism developed by Denavit and Hartenberg can be used to obtain the
 equations for position.
 
-.. _`armsample-a`:
-.. figure:: TermsFigures/ABB_IRB4600.jpg
-   :width: 70%
+.. _`serialparallel`:
+.. figure:: TermsFigures/serialparallel.png
+   :width: 90%
    :align: center
 
-   Articulated -   Ivo Jardim,  grabcad.com
+   Robot arms(left) Articulated -   Ivo Jardim,  grabcad.com,
+   (right) Delta Design -  Ivan Volpe,  grabcad.com
 
-.. _`armsample-b`:
-.. figure:: TermsFigures/SpaceClaim103.jpg
-   :width: 70%
+
+
+.. _`fig:stewart`:
+.. figure:: TermsFigures/Stewart.jpg
+   :width: 50%
    :align: center
 
-   Delta Design -  Ivan Volpe,  grabcad.com
+   Stewart Platform -  Micheal Meng, grabcad.com
 
 Another popular approach is the :index:`parallel chain manipulator`, which uses
-multiple serial chains to control the end-effector. An example of one,
-called a Delta Robot, can be seen in
-:numref:`armsample-b`.
+multiple serial chains to control the end-effector. A couple of examples,
+a Delta Robot, seen in :numref:`serialparallel`-(right) and :numref:`fig:stewart`.
+Combinations of articulators can built to mimic a human hand as seen in
+:numref:`armsample-c`.
 
 .. _`armsample-c`:
 .. figure:: TermsFigures/Robotarm.jpg
@@ -200,6 +199,7 @@ called a Delta Robot, can be seen in
    :align: center
 
    Articulated with hand gripper - Chris Christofferson,  grabcad.com
+
 
 Basic Machine Elements
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -215,6 +215,14 @@ robot.  It could be in the wrong direction, speed, magnitude of force, etc and
 needs to be changed.  This is where gears, joints, rods and other essential
 components enter the design.
 
+In robotics we see many elecrically powered systems.   The main method for converting
+electrical power into mechanical power is to use a rotational motor design.  For
+driving wheels, propellors, or other devices that use rotation energy this works
+very well.  Getting linear motion requires some additional components.  Although
+direct linear motion is possible through a solenoid type design, it is very common
+to find a electric motor and some type of gearing system to create the linear
+motion.
+
 Gears are rotating elements with cut teeth that mesh with each other.  They are
 capable of transmission of power and can change speed, torque or direction.
 Gears can be categorized according to relative relation of their rotation
@@ -227,7 +235,7 @@ gears have worm gears designs and screw gear designs, :numref:`fig:typesofgears`
 
 .. _`fig:typesofgears`:
 .. figure:: TermsFigures/typesofgears.jpg
-   :width: 80%
+   :width: 99%
    :align: center
 
    Sample of different gear designs.
@@ -282,7 +290,7 @@ The idea is to add small
 balls (bearings) between the threads (or teeth if thinking of this like a
 worm gear).  This reduces friction and backlash as well as increases accuracy.
 Using recirculating balls (in a wormdrive design) is how early automobiles
-provided smooth blacklash free and lower force steering.
+provided smooth blacklash free lower force steering.
 
 .. _`fig:ballscrew`:
 .. figure:: TermsFigures/BallScrews-with-detail-insets.jpg
@@ -297,10 +305,3 @@ in angular speed and torque, called gearing based on the direct analogy to
 gears.  The chains can be attached to tracks and a track or tank drive system is
 produced.   A toothed belt is a variation of this system and is found from
 timing belts and Gilmer belts to the head positioning belts for 3D printers.
-
-.. _`jointsample-c`:
-.. figure:: TermsFigures/Stewart.jpg
-   :width: 50%
-   :align: center
-
-   Stewart Platform -  Micheal Meng, grabcad.com
