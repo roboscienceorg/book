@@ -617,7 +617,7 @@ instantaneous time:
 
 We can undo the rotation easily. Since :math:`R` is an orthogonal
 matrix, the inverse is easy to
-compute, :cite:`strang:1988:linalg`
+compute, :cite:`strang:1988:LA`
 
 .. math::
 
@@ -628,7 +628,7 @@ compute, :cite:`strang:1988:linalg`
 
 You may have noted that we are not working with a translation. This is
 not required for the instantaneous coordinates because the derivative
-removes the translation. 
+removes the translation.
 
 
 Equations of Motion

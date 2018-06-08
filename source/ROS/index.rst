@@ -10,11 +10,22 @@ ROS - The Robot Operating System
   abstraction, device drivers, libraries, visualizers, message-passing,
   package management, and more.*
 
-We present a brief summary of ROS. It should be noted that it fails to
-convey the sheer power and complexity of the tasks that it performs, and
+We present a brief summary of ROS, specifically ROS2.
+It should be noted that this introduction is in no way complete, as it
+does not
+convey the sheer power and complexity of ROS/ROS2, and
 the ways in which it goes about doing so. The reader is strongly
-encouraged to look at some of the very good recent texts on
-ROS :cite:`okane:2014:GIR`, :cite:`quigley:2015:PRR`.
+encouraged to look at the
+`ROS2 tutorials <https://github.com/ros2/ros2/wiki/Tutorials>`_ .
+ROS2 was in beta for most of 2017 until Ardent was released in Dec 2017.
+Currently, there is not a significant collection of ROS2 information.
+ROS (ROS1) does have some good references and there is some overlap in
+concepts.  Because of the size of the install base, ROS1 is not leaving
+anytime soon.  A couple of very good recent texts on
+ROS are :cite:`okane:2014:GIR` and :cite:`quigley:2015:PRR`.  For the
+remainder of this text we will only write "ROS" but unless explicitly stated
+we will mean ROS2.
+
 
 It is slightly misleading that ROS includes the phrase “operating
 system” in the title. ROS itself is not an operating system in the
@@ -40,6 +51,6 @@ the core goals of ROS as a whole.
 
    RoboticsFrameworks
    SoftwareArch
-   ROSInstallation
+   ROS2install
    FundamentalROS
    ROSCommunication

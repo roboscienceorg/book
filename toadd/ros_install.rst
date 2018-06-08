@@ -1,25 +1,3 @@
-ROS Installation and Setup
---------------------------
-
-ROS ’s native habitat is Ubuntu. Although there are current efforts to
-port ROS to Windows or OSX, we assume (and strongly advise) that you are
-using Ubuntu. [#f1]_ There are several ways to approach getting ROS on
-your system. A standalone Linux system is the easiest. The author has
-had good success with a virtual machine (Parallels on OSX). Whatever you
-select, the next step is to install ROS. For this chapter we assume you
-are running the Kinetic Kame version of ROS. Kinetic Kame is available
-for Ubuntu Wily (15.10) and Ubuntu Xenial (16.04 LTS).
-
-Installation instructions can be found at
-`ros.org <http://wiki.ros.org/kinetic/Installation/Ubuntu>`__. Please do
-this now if not already completed. We will review the instructions here.
-The final authority on ROS installation is `OSRF <ros.org>`__. The
-instructions below can and will become out of date. They are included
-here for completeness.
-
-Install ROS Kinetic:
-~~~~~~~~~~~~~~~~~~~~
-
 [Enter the following commands in a terminal window]
 
 Setup your computer to accept software from packages.ros.org
@@ -169,7 +147,3 @@ For a joystick controller, here is an example: (ps3 controller)
     roslaunch stdr_launchers sim_with_joy
 
 Note the select button has to be held and left joystick controls.
-
-.. rubric:: Footnotes
-
-.. [#f1] And we mean Ubuntu not just Linux.  Much but not all of  the ROS packages are ported to the other Linux distros.

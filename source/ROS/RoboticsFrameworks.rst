@@ -180,6 +180,6 @@ current version of Ubuntu (possibly in a virtual machine). Python, C and
 C++ are part of the standard Ubuntu distribution. Normally it is not
 critical which version of Python is used (Python 2 versus 3).
 
-.. [#f1] Please don't send me email telling me that this is three languages
+.. [#f1] Please don't send me email telling me that there are more than two languages
    since C and C++ are "actually" different languages.  A discussion can be found:
    https://stackoverflow.com/questions/14330370/is-c-c-one-language-or-two-languages
