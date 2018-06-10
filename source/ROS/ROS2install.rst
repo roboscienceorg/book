@@ -3,11 +3,12 @@ Background
 -----------
 
 ROS1 and 2's native habitat is Ubuntu. ROS2 does install and run on
-on Windows and Mac.  There have been efforts to
+on Windows and Mac, and, there have been efforts to
 port ROS1 to Windows or OSX.  The main simulation tool we will
 introduce later, Veranda, has not been built for Mac or Windows
-as of June, 2018.  Using Ubuntu might be the best choice for the long
-run, however for this chapter we only require ROS2.
+as of June, 2018, so in the next chapter we must use Linux but can use
+any OS for this chapter.  Using Ubuntu might be the best choice for the long
+run, however.
 
 There are several ways to approach getting a Linux install of ROS2.
 A standalone Linux system is the easiest. The author has
@@ -24,6 +25,8 @@ here so we can discuss the steps.
 
 Installing ROS2 via Debian Packages
 ------------------------------------
+
+``Copied from the ROS2 install page``
 
 As of Beta 2 we are building Debian packages for Ubuntu Xenial. They are
 in a temporary repository for testing. The following links and

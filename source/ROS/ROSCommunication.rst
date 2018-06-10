@@ -18,56 +18,46 @@ interpreter. For those not familiar with linux, this is like DOS. The
 shell program is called bash. There are good online references for bash.
 The appendix has a brief introduction.
 
-::
-
-    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main"  > /etc/apt/sources.list.d/ros-latest.list'
-    sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
-    sudo apt-get update
-    sudo apt-get install ros-kinetic-desktop-full
-    sudo rosdep init
-    rosdep update
-    echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
-    source ~/.bashrc
-    sudo apt-get install python-rosinstall
 
 As mentioned above the basic form of ROS communication is the
-:index:`Publish-Subscribe` mechanism. To see this in action, you need to do three
-things: (1) get ROS running, (2) run a subscriber, (3) run a publisher.
-Step (1) is easy, bring up a terminal window [#f2]_ and type:
-
-::
-
-    roscore
+:index:`Publish-Subscribe` mechanism. To see this in action, you need to do two
+things: (1) run a subscriber, (2) run a publisher.   The "pubsub"
+communication will be shown in Python.  ROS2 is only available for
+Python3, so if you don't have Python3, please load it now.
 
 Simple Publisher-Subscriber Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Our first example is going to send a single text message from one
-program to another. Bring up two more terminal windows and type python
+program to another. This material is adapted from the basic examples
+on the ROS2 Github site.  Bring up two more terminal windows and type python
 in each:
 
 ::
 
-    jmcgough@ubuntu:~$ python
-    Python 2.7.12 (default, Jul  1 2016, 15:12:24)
-    [GCC 5.4.0 20160609] on linux2
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
+   alta:~ jmcgough$ python3
+   Python 3.6.5 (default, Apr 25 2018, 14:26:36)
+   [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
 
 In one window type:
 
 ::
 
-    >>> import rospy
-    >>> from std_msgs.msg import String
-    >>> rospy.init_node('talker', anonymous=True)
-    >>> pub = rospy.Publisher('chatter', String, queue_size=10)
+   >>> import rclpy
+   >>> from std_msgs.msg import String
+   >>> rclpy.init(args=None)
+   >>> pnode = rclpy.create_node('minimal_publisher')
+   >>> publisher = pnode.create_publisher(String, 'topic')
 
-The first step imports ROS. The second step brings in the ROS message
-type *String*. Next we establish ourself as a publisher. We are
-publishing on the topic named ’chatter’ and the data will be the ROS
-standard message type ’String’. The last (fourth) line names your node
-’talker’ and sets up the communication with the ROS master. So, your
+The first step imports ROS library. The second step brings in the ROS message
+type *String*.   Next we start up ROS2.  The fourth line creates a ROS node
+and names it.   The fifth line establishes ourself as a publisher and
+sets the topic name and datatype.
+In this example, the topic name is `topic` and the topic datatype is
+the ROS standard message
+type `String`. So, your
 python shell is now a ROS node that can publish on the established
 topic.
 
@@ -75,20 +65,25 @@ In the second window, type:
 
 ::
 
-    >>> import rospy
-    >>> from std_msgs.msg import String
-    >>> def callback(data):
-    ...    print data.data
-    ...
-    >>> rospy.init_node('listener', anonymous=True)
-    >>> rospy.Subscriber("chatter", String, callback)
+   >>> import rclpy
+   >>> from std_msgs.msg import String
+   >>> rclpy.init(args=None)
+   >>> node = rclpy.create_node('min_sub')
+   >>> def chatter_callback(msg):
+   ...   global node
+   ...   node.get_logger().info('This is what I heard: "%s"' % msg.data)
+   ...
+   >>> subscription = node.create_subscription(String, 'topic', chatter_callback)
+   >>> while rclpy.ok():
+   ...   rclpy.spin_once(node)
 
-First two steps are the same as above. The third line defines the
+
+The first four steps are the same as above.  The fifth line defines the
 callback function. This function is called when a message is published
 on the topic that our node has subscribed to. Following the callback
-function, we initialize the node with node name listener and the last
-line has our node subscribe to the “chatter” topic and lists the
-callback function.
+function,  we subscribe to the topic and define the
+callback function to handle the message that has arrived.  The while
+at the end places the node into an event loop to capture the message.
 
 
 .. _`Fig:simplePubSub`:
@@ -103,13 +98,15 @@ Publisher line), type:
 
 ::
 
-    >>> pub.publish("This is a message")
+   >>> msg = String()
+   >>> msg.data = "Hello"
+   >>> publisher.publish(msg)
 
 You should see on the Subscriber window:
 
 ::
 
-    >>> This is a message
+   [INFO] [min_sub]: This is what I heard: "Hello"
 
 You have successfully sent a message from one process (program) to
 another. There is a similarity between writing to a topic and writing to
@@ -117,50 +114,58 @@ a file. The line
 
 ::
 
-    pub = rospy.Publisher('chatter', String, queue_size=10)
+   publisher = pnode.create_publisher(String, 'topic')
 
-is similar to opening a file named chatter and returning the file
-descriptor pub. The full power of Python is available; a simple
+is similar to opening a file named topic and returning the file
+descriptor ``publisher``. The full power of Python is available; a simple
 extension can produce multiple messages. He is a sample of a loop
 containing a publish.
 
 ::
 
-    >>> for i in range(5):
-    ...   message = "Message number " + str(i)
-    ...   pub.publish(message)
-    ...
-    >>>
+   >>> for i in range(5):
+   ...   msg.data = "Message number " + str(i)
+   ...   publisher.publish(msg)
+   ...
+   >>>
 
 This results with the text in the other window:
 
 ::
 
-    Message number 0
-    Message number 1
-    Message number 2
-    Message number 3
-    Message number 4
+   [INFO] [min_sub]: This is what I heard: "Message number 0"
+   [INFO] [min_sub]: This is what I heard: "Message number 1"
+   [INFO] [min_sub]: This is what I heard: "Message number 2"
+   [INFO] [min_sub]: This is what I heard: "Message number 3"
+   [INFO] [min_sub]: This is what I heard: "Message number 4"
 
 We can extend this example so that our talker is talking to two
-listening programs. First we modify our talker to “talk” on two topics,
+listening programs. First we modify our talker to `talk` on two topics,
 by adding the line:
 
 ::
 
-    pub2 = rospy.Publisher('chatter2', String, queue_size=10)
+   >>> publisher2 = pnode.create_publisher(String, 'topic2')
 
-Next we create a new program. Create a new terminal window and enter:
+Next we create a new program to listen to the new
+optic. Create a new terminal window and enter:
 
 .. code-block:: python
 
-    import rospy
+    import rclpy
     from std_msgs.msg import String
-    def callback(data):
-        print data.data
+    rclpy.init(args=None)
+    node = rclpy.create_node('min_sub2')
+    def chatter_callback(msg):
+    ...   global node
+    ...   node.get_logger().info('This is what I heard: "%s"' % msg.data)
+    ...
 
-    rospy.init_node('listener2', anonymous=True)
-    rospy.Subscriber("chatter2", String, callback)
+    subscription = node.create_subscription(String, 'topic2', chatter_callback)
+    >>> while rclpy.ok():
+    ...   rclpy.spin_once(node)
+    ...
+
 
 .. _`Fig:simplePubSub2`:
 .. figure:: ROSFigures/pubsub2.*
@@ -169,35 +174,184 @@ Next we create a new program. Create a new terminal window and enter:
 
    Simple PubSub example cont.
 
-From the “talker” python process you have the two options for
-communication
+From the publisher python process,  setup the new topic
 
 ::
 
-    pub.publish("On the chatter topic")
-    pub2.publish("On the chatter2 topic")
+   >>> publisher2 = pnode.create_publisher(String, 'topic2')
+
+and now you can send to the new node:
+
+::
+
+   >>> msg.data = "Second topic Hello"
+   >>> publisher2.publish(msg)
+
+or you can send to the old node:
+
+::
+
+   >>> msg.data = "First topic Hello"
+   >>> publisher.publish(msg)
+
 
 You should see the output on the two separate listener programs. One
-more modification will illustrate these ideas. On the talker process,
-add the following two lines
+more modification will illustrate these ideas.  The previous examples
+got us up and running.  At this point, it is easy to make small
+changes and run brief experiments in the command interpreter.
 
-::
+However, there is a limit to how convenient it is using
+the interpreter directly.  For the rest of the examples, we switch to
+a more traditional programming style.  This means the code is in a file
+which will be executed as a script and not as individual commands.  A bit
+more like what you do with C, Java or normal Python usage.
 
-    from std_msgs.msg import Int16
-    pub3 = rospy.Publisher('chatter3', Int16, queue_size=10)
+The main difference it makes at this stage is that you no longer have
+the event loop which the Python command interpreter gave you.  You will need
+to supply some type of event loop or have all the commands entered and timed
+as needed.   So the last example will be modified with a small loop added and
+the three programs will be listed below.  If you are reading this from an
+electronic version, you can then cut and paste into your editor.  Otherwise
+the code can be obtained from CODE REPO LINK HERE!!!
 
-and on one of the listeners add
+.. code-block:: python
+   :caption: Two topic publisher example
 
-::
+   import rclpy
+   from std_msgs.msg import String
 
-    from std_msgs.msg import Int16
-    rospy.Subscriber("chatter3", Int16, callback2)
+   rclpy.init(args=None)
 
-Then on the talker type:
+   node = rclpy.create_node('publisher')
+   pub1 = node.create_publisher(String, 'topic1')
+   pub2 = node.create_publisher(String, 'topic2')
+   msg = String()
 
-::
 
-    pub3.publish(42)
+   while True:
+     message = input("> ")
+     if message == 'exit':
+        break
+     msgarr = message.split(',')
+     ch = int(msgarr[1])
+     msg.data = msgarr[0]
+     if ch == 1:
+        pub1.publish(msg)
+     if ch == 2:
+        pub2.publish(msg)
+
+
+   node.destroy_node()
+   rclpy.shutdown()
+
+
+.. code-block:: python
+   :caption: Subscriber 1
+
+   import rclpy
+   from std_msgs.msg import String
+
+   def chatter_callback(msg):
+      global node
+      node.get_logger().info('This is what I heard: "%s"' % msg.data)
+
+   rclpy.init(args=None)
+   node = rclpy.create_node('min_sub1')
+   subscription = node.create_subscription(String, 'topic1', chatter_callback)
+   while rclpy.ok():
+      rclpy.spin_once(node)
+
+
+.. code-block:: python
+   :caption: Subscriber 2
+
+   import rclpy
+   from std_msgs.msg import String
+
+   def chatter_callback(msg):
+      global node
+      node.get_logger().info('This is what I heard: "%s"' % msg.data)
+
+   rclpy.init(args=None)
+   node = rclpy.create_node('min_sub2')
+   subscription = node.create_subscription(String, 'topic2', chatter_callback)
+   while rclpy.ok():
+      rclpy.spin_once(node)
+
+
+Cut and paste these into three different files, pub.py, sub1.py and sub2.py,
+and run in three different terminals.   In pub.py one can type your message, then
+comma, then the topic number (1 or 2):  `message, number` .
+
+
+One can have multiple communication lines between nodes.  We will add
+a third topic to the publisher and have sub1 subscribe to it.   The new versions
+of the publisher and sub1 are given below.
+
+.. code-block:: python
+   :caption: Multi-topic publisher
+
+   import rclpy
+   from std_msgs.msg import String
+   from std_msgs.msg import Int16
+
+   rclpy.init(args=None)
+
+   node = rclpy.create_node('publisher')
+   pub1 = node.create_publisher(String, 'topic1')
+   pub2 = node.create_publisher(String, 'topic2')
+   pub3 = node.create_publisher(Int16, 'topic3')
+   msg = String()
+   var = Int16()
+
+   while True:
+     message = input("> ")
+     if message == 'exit':
+        break
+     msgarr = message.split(',')
+     ch = int(msgarr[1])
+     msg.data = msgarr[0]
+     if ch == 1:
+        pub1.publish(msg)
+     if ch == 2:
+        pub2.publish(msg)
+     if ch == 3:
+        var.data = int(msgarr[0])
+        pub3.publish(var)
+
+
+   node.destroy_node()
+   rclpy.shutdown()
+
+and for sub1.py we modify
+
+.. code-block:: python
+   :caption: Multi-topic subscriber
+
+   import rclpy
+   from std_msgs.msg import String
+   from std_msgs.msg import Int16
+
+   def chatter_callback(msg):
+      global node
+      node.get_logger().info('This is what I heard: "%s"' % msg.data)
+
+   def chatter_callback2(msg):
+      global node
+      node.get_logger().info('This is what I heard: "%s"' % msg.data)
+
+
+   rclpy.init(args=None)
+   node = rclpy.create_node('min_sub1')
+   subscription = node.create_subscription(String, 'topic1', chatter_callback)
+   subscription = node.create_subscription(Int16, 'topic3', chatter_callback2)
+
+   while rclpy.ok():
+      rclpy.spin_once(node)
+
+
+
+Then on the publisher enter:  `42, 3`
 
 .. _`Fig:simplePubSub3`:
 .. figure:: ROSFigures/pubsub3.*
@@ -205,6 +359,9 @@ Then on the talker type:
    :align: center
 
    Simple PubSub example cont.
+
+
+<note>  Updates to here ... more when I work out ros2 tools </note>
 
 You should see the number appear on the listener. You now have a fairly
 complicated connection between three processes. We can express the data
@@ -629,8 +786,3 @@ will send a block of 32bit integers which is the datatype ``Int32MultiArray``.
     rospy.init_node('listener', anonymous=True)
     rospy.Subscriber("chatter", Int32MultiArray, callback)
     rospy.spin()
-
-
-.. rubric:: Footnotes
-
-.. [#f2] the same type you used above in the installation process
