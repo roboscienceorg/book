@@ -3,15 +3,17 @@ ROS Communication
 
 OSRF provides tutorials on ROS, http://wiki.ros.org/ROS/Tutorials. Some
 of that material is repeated here and much greater detail can be found
-in the texts referenced earlier. After installing ROS, you need to setup
-the environment, create and build a basic ROS package, see
-:numref:`fig:ros_install`. These commands are
-covered in the Beginner Level steps 1, 3, 4 (in detail). Our goal for
+in the texts referenced earlier. After installing ROS and setting up
+the environment, one can get started using ROS if you plan to use Python.
+One can use several other languages for development.  Some of those
+languages may require additional setup.  For example, C/C++ require
+additional setup and so you will need to learn about the build
+environment, ROS packages, etc.  These commands are
+covered in the Beginner Level Tutorials online. Our goal for
 this section is to illustrate basic ROS communications which requires
 some infrastructure. We will return to the administrative side of ROS
 after some simple coding examples. Some experience with Linux and the
-command line is useful here. A command line window can be brought up by
-a right click and "
+command line is useful here. 
 
 The terminal or command window brings up the shell or command
 interpreter. For those not familiar with linux, this is like DOS. The

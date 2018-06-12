@@ -1,6 +1,6 @@
 
-Background
------------
+ROS2 Installation and Setup
+---------------------------
 
 ROS1 and 2's native habitat is Ubuntu. ROS2 does install and run on
 on Windows and Mac, and, there have been efforts to
@@ -24,9 +24,9 @@ instructions below can and will become out of date. They are included
 here so we can discuss the steps.
 
 Installing ROS2 via Debian Packages
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-``Copied from the ROS2 install page``
+`Copied from the ROS2 install page`
 
 As of Beta 2 we are building Debian packages for Ubuntu Xenial. They are
 in a temporary repository for testing. The following links and
@@ -38,7 +38,7 @@ Resources: - `Jenkins Instance <http://build.ros2.org/>`__ -
 `arm64 <http://repo.ros2.org/status_page/ros_ardent_uxv8.html>`__)
 
 Setup Sources
--------------
+~~~~~~~~~~~~~
 
 To install the Debian packages you will need to add our Debian
 repository to your apt sources. First you will need to authorize our gpg
@@ -56,7 +56,7 @@ And then add the repository to your sources list:
     sudo sh -c 'echo "deb [arch=amd64,arm64] http://repo.ros2.org/ubuntu/main xenial main" > /etc/apt/sources.list.d/ros2-latest.list'
 
 Install ROS 2 packages
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 The following commands install all ``ros-ardent-*`` package except
 ``ros-ardent-ros1-bridge`` and ``ros-ardent-turtlebot2-*`` since they
@@ -68,7 +68,7 @@ require ROS 1 dependencies. See below for how to also install those.
     sudo apt install `apt list "ros-ardent-*" 2> /dev/null | grep "/" | awk -F/ '{print $1}' | grep -v -e ros-ardent-ros1-bridge -e ros-ardent-turtlebot2- | tr "\n" " "`
 
 Environment setup
------------------
+~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -95,14 +95,14 @@ not work due to a bug in that version of ``argcomplete``:
     sudo pip3 install argcomplete
 
 Choose RMW implementation
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default the RMW implementation ``FastRTPS`` is being used. By setting
 the environment variable ``RMW_IMPLEMENTATION=rmw_opensplice_cpp`` you
 can switch to use OpenSplice instead.
 
 Additional packages using ROS 1 packages
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ``ros1_bridge`` as well as the TurtleBot demos are using ROS 1
 packages. To be able to install them please start by adding the ROS 1
