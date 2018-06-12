@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 707 166"
+<svg width="100%" height="100%" viewBox="0 0 707 114"
     version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g transform="scale(1, 1)">
         
@@ -19,7 +19,7 @@
                     </feMerge>
                 </filter>
             </defs>
-            <ellipse cx="628.50" cy="101.00" rx="68.50" ry="28.00"
+            <ellipse cx="628.50" cy="49.00" rx="68.50" ry="28.00"
             fill="rgb(0, 0, 0)"
             filter="url(#fillShadow-703EFC14-14CA-4171-903A-83F6BE92C1F1)"
             />
@@ -29,7 +29,7 @@
         <!-- ** Ellipse *************** -->
         
         <g>
-            <ellipse cx="628.50" cy="101.00" rx="68.50" ry="28.00"
+            <ellipse cx="628.50" cy="49.00" rx="68.50" ry="28.00"
                 transform="
                     translate(0.5 0.5)
                     "
@@ -57,7 +57,7 @@
                     </feMerge>
                 </filter>
             </defs>
-            <ellipse cx="352.50" cy="101.00" rx="68.50" ry="28.00"
+            <ellipse cx="352.50" cy="49.00" rx="68.50" ry="28.00"
             fill="rgb(0, 0, 0)"
             filter="url(#fillShadow-02CBFD95-BFEA-4B06-BFDB-F9019897FF89)"
             />
@@ -67,7 +67,7 @@
         <!-- ** Ellipse *************** -->
         
         <g>
-            <ellipse cx="352.50" cy="101.00" rx="68.50" ry="28.00"
+            <ellipse cx="352.50" cy="49.00" rx="68.50" ry="28.00"
                 transform="
                     translate(0.5 0.5)
                     "
@@ -95,7 +95,7 @@
                     </feMerge>
                 </filter>
             </defs>
-            <ellipse cx="80.50" cy="101.00" rx="68.50" ry="28.00"
+            <ellipse cx="80.50" cy="49.00" rx="68.50" ry="28.00"
             fill="rgb(0, 0, 0)"
             filter="url(#fillShadow-8E0B58A9-0B96-42E8-9C77-B37D27BAED32)"
             />
@@ -105,7 +105,7 @@
         <!-- ** Ellipse *************** -->
         
         <g>
-            <ellipse cx="80.50" cy="101.00" rx="68.50" ry="28.00"
+            <ellipse cx="80.50" cy="49.00" rx="68.50" ry="28.00"
                 transform="
                     translate(0.5 0.5)
                     "
@@ -124,27 +124,27 @@
         <g>
             <path
                 d="
-                    M44.00 75.00
-                    L117.00 75.00
-                    L117.00 126.00
-                    L44.00 126.00
+                    M44.00 23.00
+                    L117.00 23.00
+                    L117.00 74.00
+                    L44.00 74.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="60.08" y="89.00"
+            <text x="60.08" y="37.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Create
                 </tspan>
             </text>
-            <text x="46.54" y="105.00"
+            <text x="46.54" y="53.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Workspace
                 </tspan>
             </text>
-            <text x="61.26" y="121.00"
+            <text x="61.26" y="69.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Points</tspan>
             </text>
@@ -156,22 +156,22 @@
         <g>
             <path
                 d="
-                    M316.00 84.00
-                    L390.00 84.00
-                    L390.00 118.00
-                    L316.00 118.00
+                    M316.00 32.00
+                    L390.00 32.00
+                    L390.00 66.00
+                    L316.00 66.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="330.51" y="97.00"
+            <text x="330.51" y="45.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Inverse
                 </tspan>
             </text>
-            <text x="318.61" y="113.00"
+            <text x="318.61" y="61.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Kinematics</tspan>
             </text>
@@ -183,22 +183,22 @@
         <g>
             <path
                 d="
-                    M606.00 84.00
-                    L651.00 84.00
-                    L651.00 118.00
-                    L606.00 118.00
+                    M606.00 32.00
+                    L651.00 32.00
+                    L651.00 66.00
+                    L606.00 66.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="607.74" y="97.00"
+            <text x="607.74" y="45.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Check
                 </tspan>
             </text>
-            <text x="606.22" y="114.00"
+            <text x="606.22" y="62.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Values</tspan>
             </text>
@@ -212,11 +212,11 @@
                 <clipPath id="clipPath-B9FD2DCB-65F1-4BD4-B64C-C28ABE5C7737">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M272.50 101.50
-                        L272.50 96.50
-                        L294.50 96.50
-                        L294.50 106.50
-                        L272.50 106.50
+                        M272.50 49.50
+                        L272.50 44.50
+                        L294.50 44.50
+                        L294.50 54.50
+                        L272.50 54.50
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -225,8 +225,8 @@
             
             <path
                 d="
-                    M149.00 101.00
-                    L284.00 101.00
+                    M149.00 49.00
+                    L284.00 49.00
                     "
                 clip-path="url(#clipPath-B9FD2DCB-65F1-4BD4-B64C-C28ABE5C7737)"
                 transform="
@@ -242,10 +242,10 @@
             
             <path
                 d="
-                    M273.09 101.50
-                    L273.09 97.09
-                    L283.50 101.50
-                    L273.09 105.91
+                    M273.09 49.50
+                    L273.09 45.09
+                    L283.50 49.50
+                    L273.09 53.91
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -264,11 +264,11 @@
                 <clipPath id="clipPath-A7CDC699-3A23-4693-8F08-8B9007739CDE">
                     <path d="
                         M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M548.50 101.50
-                        L548.50 96.50
-                        L570.50 96.50
-                        L570.50 106.50
-                        L548.50 106.50
+                        M548.50 49.50
+                        L548.50 44.50
+                        L570.50 44.50
+                        L570.50 54.50
+                        L548.50 54.50
                         Z
                         "
                     clip-rule="evenodd"/>
@@ -277,8 +277,8 @@
             
             <path
                 d="
-                    M421.00 101.00
-                    L560.00 101.00
+                    M421.00 49.00
+                    L560.00 49.00
                     "
                 clip-path="url(#clipPath-A7CDC699-3A23-4693-8F08-8B9007739CDE)"
                 transform="
@@ -294,10 +294,10 @@
             
             <path
                 d="
-                    M549.09 101.50
-                    L549.09 97.09
-                    L559.50 101.50
-                    L549.09 105.91
+                    M549.09 49.50
+                    L549.09 45.09
+                    L559.50 49.50
+                    L549.09 53.91
                     Z
                     "
                 fill="rgb(0, 0, 0)"
@@ -314,17 +314,17 @@
         <g>
             <path
                 d="
-                    M161.00 84.00
-                    L264.00 84.00
-                    L264.00 101.00
-                    L161.00 101.00
+                    M161.00 32.00
+                    L264.00 32.00
+                    L264.00 49.00
+                    L161.00 49.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="161.23" y="97.00"
+            <text x="161.23" y="45.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">WorkspacePath</tspan>
             </text>
@@ -336,39 +336,17 @@
         <g>
             <path
                 d="
-                    M320.00 9.00
-                    L371.00 9.00
-                    L371.00 26.00
-                    L320.00 26.00
+                    M429.00 32.00
+                    L542.00 32.00
+                    L542.00 49.00
+                    L429.00 49.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="320.21" y="22.00"
-            >
-                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Control</tspan>
-            </text>
-        </g>
-        
-        
-        <!-- ** Text *************** -->
-        
-        <g>
-            <path
-                d="
-                    M429.00 84.00
-                    L542.00 84.00
-                    L542.00 101.00
-                    L429.00 101.00
-                    Z
-                    "
-                fill="none"
-                />
-            
-            
-            <text x="429.11" y="97.00"
+            <text x="429.11" y="45.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">ConfigspacePath</tspan>
             </text>
@@ -380,17 +358,17 @@
         <g>
             <path
                 d="
-                    M324.00 143.00
-                    L382.00 143.00
-                    L382.00 160.00
-                    L324.00 160.00
+                    M324.00 91.00
+                    L382.00 91.00
+                    L382.00 108.00
+                    L324.00 108.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="324.21" y="156.00"
+            <text x="324.21" y="104.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">InverseK</tspan>
             </text>
@@ -402,17 +380,17 @@
         <g>
             <path
                 d="
-                    M45.00 143.00
-                    L118.00 143.00
-                    L118.00 160.00
-                    L45.00 160.00
+                    M45.00 91.00
+                    L118.00 91.00
+                    L118.00 108.00
+                    L45.00 108.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="47.54" y="156.00"
+            <text x="47.54" y="104.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Workspace</tspan>
             </text>
@@ -424,93 +402,20 @@
         <g>
             <path
                 d="
-                    M597.00 143.00
-                    L661.00 143.00
-                    L661.00 160.00
-                    L597.00 160.00
+                    M597.00 91.00
+                    L661.00 91.00
+                    L661.00 108.00
+                    L597.00 108.00
                     Z
                     "
                 fill="none"
                 />
             
             
-            <text x="599.27" y="156.00"
+            <text x="599.27" y="104.00"
             >
                 <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">ForwardK</tspan>
             </text>
-        </g>
-        
-        
-        <!-- ** Arc *************** -->
-        
-        <g>
-            <defs>
-                <clipPath id="clipPath-102FF35D-0767-4BF1-BEF5-54CC7B9B569B">
-                    <path d="
-                        M-10000,-10000 h100000 v100000 h-100000 v-100000
-                        M341.50 33.50
-                        L341.50 28.50
-                        L363.50 28.50
-                        L363.50 38.50
-                        L341.50 38.50
-                        Z
-                        "
-                    clip-rule="evenodd"/>
-                </clipPath>
-            </defs>
-            
-            <path
-                d="
-                    M100.00 75.00
-                    C100.00 54.00 226.50 33.00 353.00 33.00
-                    "
-                clip-path="url(#clipPath-102FF35D-0767-4BF1-BEF5-54CC7B9B569B)"
-                transform="
-                    translate(0.5 0.5)
-                    "
-                fill="none"
-                stroke-width="2.00"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke="rgb(0, 0, 0)"
-                />
-            
-            
-            <path
-                d="
-                    M342.09 33.50
-                    L342.09 29.09
-                    L352.50 33.50
-                    L342.09 37.91
-                    Z
-                    "
-                fill="rgb(0, 0, 0)"
-                stroke-width="1.41"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke="rgb(0, 0, 0)"
-                />
-        </g>
-        
-        
-        <!-- ** Arc *************** -->
-        
-        <g>
-            <path
-                d="
-                    M597.00 75.00
-                    C597.00 54.00 475.00 33.00 353.00 33.00
-                    "
-                transform="
-                    translate(0.5 0.5)
-                    "
-                fill="none"
-                stroke-width="2.00"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke="rgb(0, 0, 0)"
-                />
-            
         </g>
         
     </g>

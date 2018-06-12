@@ -132,7 +132,7 @@
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
 					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
 					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
-					c2hhZGMyIFB5dGhvbiBTaGVsbH0=
+					c2hhZGMyIFB5dGhvblwKUHJvZ3JhbX0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -159,7 +159,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{20, 70}, {83, 17}}</string>
+					<string>{{32, 62}, {57, 34}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -468,7 +468,7 @@
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
 					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
 					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
-					c2hhZGMyIFB5dGhvbiBTaGVsbH0=
+					c2hhZGMyIFB5dGhvblwKUHJvZ3JhbX0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -495,7 +495,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{262, 70}, {83, 17}}</string>
+					<string>{{274, 62}, {57, 34}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>
@@ -1032,7 +1032,7 @@
 					dXJhbFxxY1xwYXJ0aWdodGVuZmFjdG9yMAoK
 					XGYwXGZzMjggXGNmMiBcc2hhZFxzaGFkeDQw
 					XHNoYWR5LTQwXHNoYWRyNjBcc2hhZG84NSBc
-					c2hhZGMyIFB5dGhvbiBTaGVsbH0=
+					c2hhZGMyIFB5dGhvblwKUHJvZ3JhbX0=
 					</data>
 					<key>className</key>
 					<string>ResizeText</string>
@@ -1059,7 +1059,7 @@
 					<key>fillType</key>
 					<integer>0</integer>
 					<key>frame</key>
-					<string>{{261, 175}, {83, 17}}</string>
+					<string>{{273, 167}, {57, 34}}</string>
 					<key>hidden</key>
 					<false/>
 					<key>identifier</key>

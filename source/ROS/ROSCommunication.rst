@@ -88,7 +88,7 @@ at the end places the node into an event loop to capture the message.
 
 .. _`Fig:simplePubSub`:
 .. figure:: ROSFigures/pubsub1.*
-   :width: 40%
+   :width: 50%
    :align: center
 
    Simple PubSub example
@@ -169,7 +169,7 @@ optic. Create a new terminal window and enter:
 
 .. _`Fig:simplePubSub2`:
 .. figure:: ROSFigures/pubsub2.*
-   :width: 40%
+   :width: 50%
    :align: center
 
    Simple PubSub example cont.
@@ -200,8 +200,14 @@ more modification will illustrate these ideas.  The previous examples
 got us up and running.  At this point, it is easy to make small
 changes and run brief experiments in the command interpreter.
 
-However, there is a limit to how convenient it is using
-the interpreter directly.  For the rest of the examples, we switch to
+Python ROS Programs
+~~~~~~~~~~~~~~~~~~~
+
+There is a limit to how convenient it is using
+the interpreter directly. The Python interpreter is very handy for developing code and
+experimenting with parameters. However, as the code base grows it makes
+sense to move over to placing the code in a file and running it from the
+bash terminal.  For the rest of the examples, we switch to
 a more traditional programming style.  This means the code is in a file
 which will be executed as a script and not as individual commands.  A bit
 more like what you do with C, Java or normal Python usage.
@@ -209,14 +215,40 @@ more like what you do with C, Java or normal Python usage.
 The main difference it makes at this stage is that you no longer have
 the event loop which the Python command interpreter gave you.  You will need
 to supply some type of event loop or have all the commands entered and timed
-as needed.   So the last example will be modified with a small loop added and
+as needed.  We will focus on the former.
+So the last example above will be modified with a small loop added and
 the three programs will be listed below.  If you are reading this from an
 electronic version, you can then cut and paste into your editor.  Otherwise
 the code can be obtained from CODE REPO LINK HERE!!!
 
+Place the code in a file and at the top of the file enter
+
+::
+
+    #!/usr/bin/env python3
+
+The ``#!`` (called shebang) in the first two bytes tells the operating
+system to use the python interpreter for the file. One new issue is that
+the process will terminate after the last command. We did not need to
+worry about this when we were running in the interpreter since it was
+running an event loop (waiting for our input). So we need to have
+something to keep the process going. A simple open loop has been added
+to the publisher for the demonstration. On the subscriber side, we also
+need a way to keep the process running. ROS provides some commands that allow
+us to set up the event loop.  We will combine a while loop with
+ ``rclpy.spin_once(node)``
+which gives us an infinite loop and waits for an event like a
+message published on a topic.
+
+Based on the couple of modifications above, the simple publisher and
+subscriber example can be written as the following Python programs,
+:numref:`lst:publishercode`, :numref:`lst:subscribercode`.
+
+.. _`lst:publishercode`:
 .. code-block:: python
    :caption: Two topic publisher example
 
+   #!/usr/bin/env python3
    import rclpy
    from std_msgs.msg import String
 
@@ -245,9 +277,11 @@ the code can be obtained from CODE REPO LINK HERE!!!
    rclpy.shutdown()
 
 
+.. _`lst:subscribercode`:
 .. code-block:: python
    :caption: Subscriber 1
 
+   #!/usr/bin/env python3
    import rclpy
    from std_msgs.msg import String
 
@@ -265,6 +299,7 @@ the code can be obtained from CODE REPO LINK HERE!!!
 .. code-block:: python
    :caption: Subscriber 2
 
+   #!/usr/bin/env python3
    import rclpy
    from std_msgs.msg import String
 
@@ -283,6 +318,21 @@ Cut and paste these into three different files, pub.py, sub1.py and sub2.py,
 and run in three different terminals.   In pub.py one can type your message, then
 comma, then the topic number (1 or 2):  `message, number` .
 
+.. _`Fig:simplePubSubProg`:
+.. figure:: ROSFigures/pubsubprog.*
+   :width: 50%
+   :align: center
+
+   Simple PubSub Program example.  Computing the wheel velocties in one
+   program and sending the commmands to another program to implement.
+
+
+Don’t forget to make the two files executable by
+
+::
+
+    chmod +x <filename>
+
 
 One can have multiple communication lines between nodes.  We will add
 a third topic to the publisher and have sub1 subscribe to it.   The new versions
@@ -291,6 +341,7 @@ of the publisher and sub1 are given below.
 .. code-block:: python
    :caption: Multi-topic publisher
 
+   #!/usr/bin/env python3
    import rclpy
    from std_msgs.msg import String
    from std_msgs.msg import Int16
@@ -328,6 +379,7 @@ and for sub1.py we modify
 .. code-block:: python
    :caption: Multi-topic subscriber
 
+   #!/usr/bin/env python3
    import rclpy
    from std_msgs.msg import String
    from std_msgs.msg import Int16
@@ -351,92 +403,53 @@ and for sub1.py we modify
 
 
 
-Then on the publisher enter:  `42, 3`
+Then on the publisher enter:  `42, 3` .   You should see the number 42 echoed
+on the terminal running sub1.
 
 .. _`Fig:simplePubSub3`:
 .. figure:: ROSFigures/pubsub3.*
-   :width: 40%
+   :width: 50%
    :align: center
 
    Simple PubSub example cont.
 
-
-<note>  Updates to here ... more when I work out ros2 tools </note>
-
-You should see the number appear on the listener. You now have a fairly
-complicated connection between three processes. We can express the data
-communication in a data flow graph. The processes are the nodes in the
-graph and the topics are the edges. ROS can generate this for you using:
+To see what topics are defined, you can get a list of them:
 
 ::
 
-    rqt_graph
+   alta:Desktop jmcgough$ ros2 topic list
+   /topic1
+   /topic2
+   /topic3
 
-.. _`fig:rosgraph`:
-.. figure:: ROSFigures/rosgraph.png
-   :width: 75%
-   :align: center
+As of early 2018, the topic list command was under development.  This
+tool is only accurate for nodes and topics on a single computer.  Current
+development by OSRF is to make the topic list work on distributed nodes.
 
-   The graph of nodes and topics for the current ROS
-   session.
 
-:numref:`fig:rosgraph` shows the resulting graph.
-ROS’s Publish/Subscribe architecture is a many-to-many communication
-protocol. This means that a publisher can talk to many different
-subscribers. Multiple publishers can be on a single topic. It can get
-complicated and ``rqt_graph`` might not resolve it well graphically as
-you see that it did not show the multiple topics between the publisher
-(talker) and the subscriber (listener2).
-
-A list of the topics currently managed by ROS can be produced using the
-rostopic command.
+You can listen in on a topic using the rostopic command.
 
 ::
 
-    jmcgough@ubuntu:~$ rostopic list
-    /chatter
-    /chatter2
-    /chatter3
-    /rosout
-    /rosout_agg
+   alta:Desktop jmcgough$ ros2 topic echo /topic1
 
-You can get information on one of the topics:
+Into the publisher python window type:
 
 ::
 
-    jmcgough@ubuntu:~$ rostopic info /chatter
-    Type: std_msgs/String
-
-    Publishers:
-     * /talker_25024_1505313174390 (http://ubuntu:36647/)
-
-    Subscribers:
-     * /listener_25288_1505313198989 (http://ubuntu:41441/)
-
-You can even listen in on a topic using the rostopic command.
-
-::
-
-    jmcgough@ubuntu:~$ rostopic echo /chatter
-
-Into the talker python window type:
-
-::
-
-    pub.publish("Did this echo??")
+    > Hello, 1
 
 and you will see in the rostopic command window:
 
 ::
 
-    data: Did this echo??
-    ---
+    data: Hello
 
 .. list-table:: Data Types
    :widths:  20 20 20
    :align: center
 
-   * - 3 Bool
+   * - Bool
      - Byte
      - ByteMultiArray
    * - Char
@@ -471,107 +484,56 @@ and you will see in the rostopic command window:
      - ...
 
 
-Often we need to publish a message on a periodic basis. To do that you
-need some control over delays and timing. The examples that follow will
-use these functions. The first example is a simple sleep command. The
-argument is a float in seconds.
+Often we need to publish a message on a periodic basis.  It is possible
+to place a delay via python sleep in the publishing loop:
 
 ::
 
-    # sleep for 10 seconds
-    rospy.sleep(10.)
+   while True:
+     message = input("> ")
+     if message == 'exit':
+        break
+     time.sleep(delay)
 
-The variation in using sleep is the Duration function. The first
-argument is seconds and the second field is nanoseconds. Both are
-integers.
+The sleep command will introduce a delay.  This approach will enforce
+at least that time interval, but not exactly that time interval.  The
+process shares the cpu and longer delays can arise when other processes
+slow down the system.   Some robotics applications require that
+the time interval is accurate within some constraint.
 
-::
+To increase the timing accuracy, ROS supports an interrupt based method.
+This approach sets a timer which raises an interrupt.  That interrupt
+causes a function to be called, known as an interrupt handler.  Sample
+code is provided below (adapted from the ROS2 example programs).
 
-    # sleep for duration
-    d = rospy.Duration(10, 0)
-    rospy.sleep(d)
-
-One issue with placing a delay is that the other functions consume some
-CPU time. It is hard to account for that and your effective publish
-frequency might be off some. ROS has a solution using interrupts (best
-effort to maintain correct frequency) that can publish at a prescribed
-frequency. This is done by calling the rate function as shown below.
-
-::
-
-    r = rospy.Rate(10) # 10hz
-    while not rospy.is_shutdown():
-        pub.publish("hello")
-        r.sleep()
-
-Python ROS Programs
-~~~~~~~~~~~~~~~~~~~
-
-The Python interpreter is very handy for developing code and
-experimenting with parameters. However, as the code base grows it makes
-sense to move over to placing the code in a file and running it from the
-bash terminal. Place the code in a file and at the top of the file enter
-
-::
-
-    #!/usr/bin/env python
-
-The ``#!`` (called shebang) in the first two bytes tells the operating
-system to use the python interpreter for the file. One new issue is that
-the process will terminate after the last command. We did not need to
-worry about this when we were running in the interpreter since it was
-running an event loop (waiting for our input). So we need to have
-something to keep the process going. A simple open loop has been added
-to the publisher for the demonstration. On the subscriber side, we also
-need a way to keep the process running. ROS provides a handy command ``rospy.spin()``
-which is an infinite loop and waits for an event like a
-message published on a topic.
-
-Based on the couple of modifications above, the simple publisher and
-subscriber example can be written as the following Python programs,
-:numref:`lst:publishercode`, :numref:`lst:subscribercode`.
-
-.. _`lst:publishercode`:
 .. code-block:: python
-   :caption: Publisher Code
 
-    #!/usr/bin/env python
-    import rospy
-    from std_msgs.msg import String
-    rospy.init_node('talker', anonymous=True)
-    pub = rospy.Publisher('chatter', String, queue_size=10)
-    n = 1
-    while(n > 0):
-        message = raw_input("Message:  ")
-        n = len(message)
-        pub.publish(message)
+   import rclpy
+   from std_msgs.msg import String
+   def timer_callback():
+       global i
+       msg.data = 'Hello World: %d' % i
+       i += 1
+       node.get_logger().info('Publishing: "%s"' % msg.data)
+       publisher.publish(msg)
 
-.. _`lst:subscribercode`:
-.. code-block:: python
-   :caption: Subscriber Code
 
-    #!/usr/bin/env python
-    import rospy
-    from std_msgs.msg import String
-    def callback(data):
-        print data.data
+   rclpy.init(args=None)
+   node = rclpy.create_node('publisher')
+   publisher = node.create_publisher(String, 'topic1')
 
-    rospy.init_node('listener', anonymous=True)
-    rospy.Subscriber("chatter", String, callback)
-    rospy.spin()
+   msg = String()
+   i = 0
+   timer_period = 0.5  # seconds
+   timer = node.create_timer(timer_period, timer_callback)
 
-.. _`Fig:simplePubSubProg`:
-.. figure:: ROSFigures/pubsubprog.*
-   :width: 40%
-   :align: center
+   rclpy.spin(node)
 
-   Simple PubSub Program example
+   node.destroy_timer(timer)
+   node.destroy_node()
+   rclpy.shutdown()
 
-Don’t forget to make the two files executable by
 
-::
-
-    chmod +x <filename>
 
 Publisher - Subscriber for the Two Link Kinematics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -592,7 +554,7 @@ look like a stream of points, a delay is placed
 The node that creates the workspace points is given in
 :numref:`lst:workspacepathcode`. We
 illustrate with the curve :math:`x(t) = 5\cos(t)+8`,
-:math:`y(t) = 3\sin(t)+10`. The interval :math:`[-\pi , \pi]` is
+:math:`y(t) = 3\sin(t)+10`. The interval is
 discretized into intervals of :math:`0.1`. The :math:`(x,y)` points are
 published on the topic named /WorkspacePath.
 
@@ -600,36 +562,42 @@ published on the topic named /WorkspacePath.
 .. code-block:: python
    :caption: Workspace Points
 
+   #!/usr/bin/env python
+   import rclpy
+   from std_msgs.msg import Float32
+   from std_msgs.msg import Int8
+   import math
 
-    #!/usr/bin/env python
-    import rospy
-    from std_msgs.msg import Float32
-    from std_msgs.msg import Int8
-    import numpy as np
-    import math
-    rospy.init_node('Workspace', anonymous=True)
-    pub = rospy.Publisher('WorkspacePath', Float32, queue_size=10)
-    flag = rospy.Publisher('Control', Int8, queue_size=10)
+   def timer_callback():
+     global t, pubx, puby
+     x = 5.0*math.cos(t) + 8.0
+     y = 3.0*math.sin(t) + 10.0
+     xval.data = x
+     yval.data = y
+     node.get_logger().info('Publishing: "%f" , "%f" ' % (x,y) )
+     pubx.publish(xval)
+     puby.publish(yval)
+     t = t+step
 
-    def createdata():
-        #Setup Arrays
-        step = 0.1
-        t = np.arange(-math.pi, math.pi+step, step)
-        x = 5.0*np.cos(t) + 8.0
-        y = 3.0*np.sin(t) + 10.0
-        foo = raw_input("Hit enter to publish")
-        #publish data
-        for i  in range(t.size):
-            pub.publish(x[i])
-            pub.publish(y[i])
-            rospy.sleep(0.25)
+   rclpy.init(args=None)
+   node = rclpy.create_node('Workspace')
+   pubx = node.create_publisher(Float32, 'WorkspacePathX')
+   puby = node.create_publisher(Float32, 'WorkspacePathY')
+   step = 0.1
+   t = 0.0
+   xval = Float32()
+   yval = Float32()
 
-        flag.publish(127)
-        rospy.sleep(3)
+   timer_period = 0.5  # seconds
+   timer = node.create_timer(timer_period, timer_callback)
+
+   rclpy.spin(node)
+
+   node.destroy_timer(timer)
+   node.destroy_node()
+   rclpy.shutdown()
 
 
-    if __name__ == '__main__':
-        createdata()
 
 The next stage of the process is to convert the points from the
 workspace to the configuration space using the inverse kinematic
@@ -641,43 +609,50 @@ in :numref:`lst:inversekinematicscode`.
 .. code-block:: python
    :caption: Inverse Kinematics Code
 
-    #!/usr/bin/env python
-    import rospy
-    from std_msgs.msg import Float32
-    import math
+   #!/usr/bin/env python
+   import rclpy
+   from std_msgs.msg import Float32
+   from std_msgs.msg import Int8
+   import math
 
-    def callback(data):
-        global i, x, y
-        if (i%2 == 0):
-            x = data.data
-        else:
-             y = data.data
-             convert(x,y)
-        i = i+1
+   def callbackX(data):
+       global x, y
+       x = data.data
 
-    def convert(x,y):
-        global pub, a1, a2
-        d = (x*x + y*y - a1*a1 - a2*a2)/(2*a1*a2)
-        t2 = math.atan2(-math.sqrt(1.0-d*d),d)
-        t1 = math.atan2(y,x) - math.atan2(a2*math.sin(t2),a1+a2*math.cos(t2))
-        # print (t1, t2)
-        pub.publish(t1)
-        pub.publish(t2)
+   def callbackY(data):
+       global x, y
+       y = data.data
+       convert(x,y)
 
-    def processdata():
-        global i, x, y, a1, a2, pub
-        rospy.init_node('InverseK', anonymous=True)
-        rospy.Subscriber("WorkspacePath", Float32, callback)
-        pub = rospy.Publisher('ConfigspacePath', Float32, queue_size=10)
+   def convert(x,y):
+       global pub, a1, a2
+       d = (x*x + y*y - a1*a1 - a2*a2)/(2*a1*a2)
+       t2 = math.atan2(-math.sqrt(1.0-d*d),d)
+       t1 = math.atan2(y,x) - math.atan2(a2*math.sin(t2),a1+a2*math.cos(t2))
+       xval.data = t1
+       yval.data = t2
+       node.get_logger().info('Publishing: "%f" , "%f" ' % (t1,t2) )
+       pubcx.publish(xval)
+       pubcy.publish(yval)
 
-        #Initialize global variables
-        a1, a2 = 10.0, 10.0
-        i = 0
-        x, y = 0.0, 0.0
-        rospy.spin()
 
-    if __name__ == '__main__':
-        processdata()
+   global x, y, a1, a2, pub
+   rclpy.init(args=None)
+   node = rclpy.create_node('InverseK')
+   subx = node.create_subscription(Float32, 'WorkspacePathX', callbackX)
+   suby = node.create_subscription(Float32, 'WorkspacePathY', callbackY)
+   pubcx = node.create_publisher(Float32, 'ConfigspacePathX')
+   pubcy = node.create_publisher(Float32, 'ConfigspacePathY')
+   xval = Float32()
+   yval = Float32()
+
+
+   #Initialize global variables
+   a1, a2 = 10.0, 10.0
+   x, y = 0.0, 0.0
+   while rclpy.ok():
+      rclpy.spin_once(node)
+
 
 Finally we would like to check our answer. The angle values from the
 last node are evaluated by the forward kinematics producing
@@ -690,57 +665,43 @@ closely. The code for the verification is given in
 .. code-block:: python
    :caption: Inverse Kinematics Verification
 
-    #!/usr/bin/env python
-    import rospy
-    import numpy as np
-    import pylab as plt
-    from std_msgs.msg import Float32
-    from std_msgs.msg import Int8
-    import math
+   #!/usr/bin/env python
+   import rclpy
+   from std_msgs.msg import Float32
+   from std_msgs.msg import Int8
+   import math
 
-    def callback(data):
-        global i, t1, t2
-        if (i%2 == 0):
-            t1 = data.data
-        else:
-            t2 = data.data
-            convert(t1,t2)
-        i = i+1
 
-    def cbctrl(data):
-        global flag, u, v
-        flag = data.data
-        if (flag == 127):
-            plt.xlim(0,15)
-            plt.ylim(0,15)
-            plt.plot(u,v,'b-')
-            plt.show()
+   def callbackX(data):
+       global t1, t2
+       t1 = data.data
+
+   def callbackY(data):
+       global t1, t2
+       t2 = data.data
+       convert(t1,t2)
+
 
     def convert(t1,t2):
-        global pub, a1, a2, u, v
+        global a1, a2
         x = a1*math.cos(t1) + a2*math.cos(t1+t2)
         y = a1*math.sin(t1) + a2*math.sin(t1+t2)
-        u = np.append(u,x)
-        v = np.append(v,y)
-        # print (x, y)
+        print (x, y)
 
-    def consumedata():
-        global a1, a2, flag, i, t1, t2, u, v
-        rospy.init_node('ForwardK', anonymous=True)
-        rospy.Subscriber("ConfigspacePath", Float32, callback)
-        rospy.Subscriber("Control", Int8, cbctrl)
+   global a1, a2
+   rclpy.init(args=None)
+   node = rclpy.create_node('InverseKcheck')
+   subx = node.create_subscription(Float32, 'ConfigspacePathX', callbackX)
+   suby = node.create_subscription(Float32, 'ConfigspacePathY', callbackY)
 
-        #Initialize global variables
-        a1, a2 = 10.0, 10.0
-        flag = 0
-        i = 0
-        t1, t2 = 0.0, 0.0
-        u = np.array([])
-        v = np.array([])
-        rospy.spin()
+   #Initialize global variables
+   a1, a2 = 10.0, 10.0
+   t1, t2 = 0.0, 0.0
 
-    if __name__ == '__main__':
-        consumedata()
+   while rclpy.ok():
+      rclpy.spin_once(node)
+
+
 
 
 .. _`Fig:twolinkrosexample`:
@@ -760,29 +721,34 @@ will send a block of 32bit integers which is the datatype ``Int32MultiArray``.
 
 ::
 
-    #!/usr/bin/env python
-    import rospy
-    from std_msgs.msg import Int32MultiArray
-    rospy.init_node('talker', anonymous=True)
-    pub = rospy.Publisher('chatter', Int32MultiArray, queue_size=10)
-    a=[1,2,3,4,5]
-    myarray = Int32MultiArray(data=a)
-    pub.publish(myarray)
+   #!/usr/bin/env python
+   import rclpy
+   from std_msgs.msg import Int32MultiArray
+   rclpy.init(args=None)
+   node = rclpy.create_node('Talker')
+   pub = node.create_publisher(Int32MultiArray, 'Chatter')
+
+   a=[1,2,3,4,5]
+   myarray = Int32MultiArray(data=a)
+   pub.publish(myarray)
 
 ::
 
-    #!/usr/bin/env python
-    import rospy
-    from std_msgs.msg import Int32MultiArray
+   #!/usr/bin/env python
+   import rclpy
+   from std_msgs.msg import Int32MultiArray
 
-    def callback(data):
-        print data.data
-        var = data.data
-        n = len(var)
-        for i in range(n):
-            print var[i]
+   def callback(data):
+      print(data.data)
+      var = data.data
+      n = len(var)
+      for i in range(n):
+        print(var[i])
 
 
-    rospy.init_node('listener', anonymous=True)
-    rospy.Subscriber("chatter", Int32MultiArray, callback)
-    rospy.spin()
+   rclpy.init(args=None)
+   node = rclpy.create_node('InverseKcheck')
+   sub = node.create_subscription(Int32MultiArray, 'Chatter', callback)
+
+   while rclpy.ok():
+      rclpy.spin_once(node)
