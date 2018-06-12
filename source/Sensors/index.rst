@@ -13,7 +13,7 @@ chapter we briefly touch on some of the sensors encountered in current
 robots.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Sensing
    PositionandVelocitySensors

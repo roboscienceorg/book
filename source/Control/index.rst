@@ -14,7 +14,7 @@ in its own right, and presents many of the challenges found in most
 mobile robotic systems.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    BasicControls
    Guidance

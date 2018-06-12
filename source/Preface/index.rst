@@ -63,7 +63,7 @@ Lawrence Hoffman, Travis Larson, Scott Samson, Derek Stotz and Donovan
 Torgerson for feedback and editing assistance.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    students.rst
    instructors.rst

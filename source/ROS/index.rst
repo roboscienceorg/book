@@ -47,7 +47,7 @@ the core goals of ROS as a whole.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    RoboticsFrameworks
    SoftwareArch

@@ -13,7 +13,7 @@ possibilities and in doing so, help improve our estimates of the robot
 state.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ModelsandDynamicSystems
    KalmanFilters

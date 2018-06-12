@@ -12,7 +12,7 @@ drive systems.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    FixedWheel
    DifferentialDrive

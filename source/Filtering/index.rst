@@ -84,7 +84,7 @@ found in robots that are intended to go into the world and operate
 outside the confines of a factory.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    StateEstimation
    SensorFusion

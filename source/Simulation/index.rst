@@ -10,10 +10,10 @@ dimensional simulator.  It was designed to have a low barrier to
 entry and overall ease of use.  Veranda uses Box2D, a 2D physics
 engine for more realistic interactions between objects.   It is not
 intended for very high precision work (and does not support 3D).
-For those applications, we suggest Gazebo (see appendix).  
+For those applications, we suggest Gazebo (see appendix).
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    SimulatingMotion
    MovingDifferential

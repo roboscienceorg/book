@@ -13,7 +13,7 @@ working with humans and in human environments which need to be addressed
 as well. In this short chapter we examine some of the issues.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Safety
    HumanCollab

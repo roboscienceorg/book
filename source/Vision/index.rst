@@ -5,7 +5,7 @@ Machine Vision
 **************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    TriangulationandStructuredLight
    StereoCameras

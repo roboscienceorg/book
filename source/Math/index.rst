@@ -14,7 +14,7 @@ proceed to the standard vocabulary that all robotics professionals use.
 Note: This is under significant development.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Begin
    Interpolation

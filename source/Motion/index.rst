@@ -14,7 +14,7 @@ drive systems. This is used to model steered vehicles and several types
 of Omniwheel systems.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Locomotion
    DriveSystems

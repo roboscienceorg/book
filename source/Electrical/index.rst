@@ -14,7 +14,7 @@ well as courses in mechatronics and instrumentation are the next steps
 for the developing roboticist.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ElectricalTerms
    BasicPowerDelivery

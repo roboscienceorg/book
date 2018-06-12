@@ -8,6 +8,6 @@ System Integration
 Robotics
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Assemble

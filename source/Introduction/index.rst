@@ -43,7 +43,7 @@ complicated tasks, we really place the value in what we learn about
 ourselves in the process. A process we embark on here.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    whatisrobot
    overview

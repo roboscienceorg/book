@@ -24,7 +24,7 @@ any obstacles and the path is consistent with the vehicle
 constraints.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    MotionPlanning
    ExplorationandNavigation
