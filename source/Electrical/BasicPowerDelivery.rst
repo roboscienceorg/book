@@ -25,7 +25,7 @@ can use the component described above called a resistor.
    :align: center
 
    Power control. (a) Resistor to limit current flow and drop voltage.
-   (b) A voltage divider circuit.
+   (b) A :index:`voltage divider` circuit.
 
 The problem with this design is that some of the energy is wasted as
 heat in the resistor. For low power circuits, this may not be a problem,
@@ -91,12 +91,12 @@ If :math:`R_2 = 10` Ohms, then :math:`R_1 = 2.5`. The load uses:
 A waste of 19.2 - 8.1 = 11.1 Watts. For circuits that power larger
 motors, this can be a significant problem as it can be very difficult to
 remove the heat. The system will be at risk due to the high
-temperatures, for example burned components and melted circuits, or even
+temperatures, for example burned components and melted solder, or even
 fire. For battery based circuits, this approach significantly reduces
 battery life. Another approach is needed.
 
 One solution is to switch on and off the power very quickly, known as
-Pulse Width Modulation, PWM. To see what we mean,
+:index:`Pulse Width Modulation`, :index:`PWM`. To see what we mean,
 :numref:`circuitpwm` here is a graph of the voltage
 though time.
 
@@ -114,7 +114,7 @@ though time.
 
    On-Off pulsing known as Pulse Width Modulation - PWM.
 
-The amount of time the pulse is high compared to low is the duty cycle.
+The amount of time the pulse is high compared to low is the :index:`duty cycle`.
 Duty cycle is often expressed as a percent of the pulse length which is
 called the period. Why does this matter? By this method, we deliver a
 fraction of the energy which then makes light dimmer. It does not have
@@ -147,7 +147,7 @@ If a computer generates the signal, the computer electronics is probably
 limited to 0.1 Amps or less. Certainly not enough to drive a large
 electric motor which might want to draw many amps. Using a pwm to drive
 a power transistor is the way to get power delivered. One minor problem
-is that this only runs one way. An H-bridge is a clever way to provide a
+is that this only runs one way. An :index:`H-bridge` is a clever way to provide a
 reverse current, :numref:`hbridgeswitches`. By
 closing S1 and S4, current will flow from left to right,
 :numref:`hbridgeswitchesclosed`. By

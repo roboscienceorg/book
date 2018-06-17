@@ -12,9 +12,16 @@ engine for more realistic interactions between objects.   It is not
 intended for very high precision work (and does not support 3D).
 For those applications, we suggest Gazebo (see appendix).
 
+Following the overview and examples with Veranda, we will cover some
+standard techniques in simulation.  It is very helpful to understand
+what is going on inside the simulator.  It also is very useful to know
+how to create your own simulation when none of the current simulation
+tools will suffice.
+
 .. toctree::
    :maxdepth: 1
 
+   Start
    SimulatingMotion
    MovingDifferential
    GroundRobotWorld

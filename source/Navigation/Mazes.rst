@@ -92,7 +92,7 @@ which does not mean it will necessarily fail.
 
    A maze for which wall following can fail.
 
-The Pledge algorithm is designed to address the problem of exiting a
+The :index:`Pledge algorithm` is designed to address the problem of exiting a
 maze which has non-simply connected components. This algorithm does not
 work in reverse, meaning that it can escape a maze, but not enter one.
 
@@ -222,8 +222,8 @@ We see that certain solutions are comprehensive in how they solve the
 problem and others are not. The maze is then the launching point for
 planners which live in unstructured worlds.
 
-Wave-front Planner
-------------------
+:index:`Wave-front Planner`
+---------------------------
 
 In this section we introduce the Wavefront planner. This planner is a
 breadth first search algorithm applied to the grid map domain. The

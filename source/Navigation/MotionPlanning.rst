@@ -9,8 +9,8 @@ preplan the route and then code up a list of motion instructions. For
 differential drive robots, the easiest routes to drive are combinations
 of lines and circles,
 :numref:`fig:simplecurvedpath`. If you have
-a rough idea of the route, place some points along the route, connect
-with line and circle segments. Along those segments, the differential
+a rough idea of the route, place some points along the route and connect
+with line (or circle) segments. Along those segments, the differential
 drive has constant wheel speed. In practice this is difficult since one
 cannot have instant jumps in wheel velocity. This makes accurate turns
 challenging. If stopping and turning in place on the route is
@@ -33,7 +33,8 @@ given amount of time.
 
    Path *without* arcs
 
-There is a clear problem with open loop control. Any variation in the
+There is a clear problem with open loop control (preprogrammed on any path without
+sensor feedback). Any variation in the
 physical system can cause drift. This drift accumulates over time and at
 some point the robot is not driving the intended course. The other
 problem is that the path is tuned to a specific obstacle field. We must
@@ -42,8 +43,8 @@ algorithm would be able to take a goal point and using knowledge of the
 current robot location, drive itself to the goal. The basic motion
 algorithm attempts this next step. [#f5]_
 
-Basic Motion Algorithm
-~~~~~~~~~~~~~~~~~~~~~~
+:index:`Basic Motion Algorithm`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Assuming we have a simple obstacle map, how should we proceed? Try the
 following thought experiment. Pretend that you are in a dark room with
@@ -59,8 +60,26 @@ to pass the obstacle. Hopefully I am clear and I can turn back to my
 original heading. I head in this direction until I run into another
 obstacle and so I just repeat my simple obstacle avoidance approach.
 
-Set heading towards goal Move forward count = 0 Turn right Move forward
-incr count Set heading towards goal
+.. _`alg:basicmotion`:
+.. topic::  Basic Motion Algorithm
+
+   | Set heading towards goal
+   | **while** Not arrived at goal **do**
+   |   **while** No obstacle in front **do**
+   |     Move forward
+   |   end while
+   |   count = 0
+   |   **while** count <= N **do**
+   |     **while** Obstacle in front **do**
+   |       Turn right
+   |     **end while**
+   |     Move forward
+   |     incr count
+   |   **end while**
+   |   Set heading towards goal
+   | **end while**
+
+
 
 .. _`turtlebasicmotion_a`:
 .. figure:: NavigationFigures/turtleobs.*
@@ -76,7 +95,8 @@ incr count Set heading towards goal
 
    Path using the Basic Motion algorithm.
 
-:numref:`turtlebasicmotion` illustrates the
+
+:numref:`turtlebasicmotion_b` illustrates the
 idea. This algorithm is not completely specified. The amount of right
 turn and the distance traveled in the move forward steps is not
 prescribed above. Assuming values can be determined, will this approach
@@ -95,20 +115,20 @@ cases.
 
 .. _`simple1motionproblem`:
 .. figure:: NavigationFigures/simple1.*
-   :width: 50%
+   :width: 30%
    :align: center
 
    Getting trapped in a non-convex solid object.
 
 .. _`simple2motionproblem`:
 .. figure:: NavigationFigures/simple2.*
-   :width: 50%
+   :width: 65%
    :align: center
 
    A collection of convex objects can mimic a non-convex obstacle.
 
 
-In Chapter on Motion Planning, we will fully explore
+In the Chapter on Motion Planning, we will fully explore
 the challenge of motion planning in an environment with obstacles. It is
 easy to see how the thought experiment above can fail and more robust
 approaches are needed. Before we jump into motion planning, we want to

@@ -8,13 +8,13 @@ over used and has its limitations, but it does help in getting started.
 **Voltage** is the electrical pressure in the circuit.
 If we use a water pipe as an
 analogy, you can think of water pressure in the pipe as the voltage. The
-electrical pressure is measured in Volts. The symbol used in computation
-is :math:`v`. **Current** is the flow of electrons along a conductor.
+electrical pressure is measured in :index:`Volts`. The symbol used in computation
+is :math:`v`. :index:`Current` is the flow of electrons along a conductor.
 Again, using the water pipe analogy, think of water flow in a pipe. The
 current flow is measured in Amps and the symbol used is :math:`i`.
 **Resistance** is the measure of the difficulty to pass an electric
 current through that element. It is denoted by :math:`R` and measured in
-units of Ohms. The power in an electrical circuit is measured in Watts
+units of Ohms. The power in an electrical circuit is measured in :index:`Watts`
 and Watts = Volts * Amps. About 770 Watts makes up one horsepower. The
 fundamental components are given in :numref:`fig:resistor`,
 :numref:`fig:capacitor`, :numref:`fig:inductor`.
@@ -24,7 +24,7 @@ fundamental components are given in :numref:`fig:resistor`,
    :width: 40%
    :align: center
 
-   Resistor (Ohms): resists the current flow, :math:`V = iR` (think of a narrowing in a pipe
+   :index:`Resistor` (Ohms): resists the current flow, :math:`V = iR` (think of a narrowing in a pipe
    (a) Element (b) Resistor circuit diagram.
 
 
@@ -33,7 +33,7 @@ fundamental components are given in :numref:`fig:resistor`,
    :width: 40%
    :align: center
 
-   Capacitor (Farads): stores energy in an electrical field,
+   :index:`Capacitor` (Farads): stores energy in an electrical field,
    :math:`i = \displaystyle C\frac{dV}{dt}` (think of a storage tank).
    (a) Element (b) Capacitor circuit diagram.
 
@@ -43,13 +43,13 @@ fundamental components are given in :numref:`fig:resistor`,
    :width: 40%
    :align: center
 
-   Inductor (Henrys): stores energy in a magnetic field,
+   :index:`Inductor` (Henrys): stores energy in a magnetic field,
    :math:`V = \displaystyle L\frac{di}{dt}` (think of a flywheel in the
    pipe.) (a) Element (b) Inductor circuit diagram.
 
 
 
-The fundamental law in circuits is Ohm’s Law,
+The fundamental law in circuits is :index:`Ohm’s Law`,
 :numref:`circuitsohmslaw`:
 
 .. math:: V = iR
@@ -75,7 +75,7 @@ Ohms.
    similar to the resistor (pipe resistance).
 
 Current flow can be in one direction or vary in direction. These are
-known as direct current (DC) and alternating current (AC).
+known as :index:`direct current` (:index:`DC`) and :index:`alternating current` (:index:`AC`).
 
 .. figure:: ElectricalFigures/dc.*
    :width: 60%
@@ -106,7 +106,7 @@ valve, :numref:`circuitdiode`.
    :width: 25%
    :align: center
 
-   Diode.
+   :index:`Diode`.
 
 .. _`rectified-ac`:
 .. figure:: ElectricalFigures/diode-rect.*
@@ -201,7 +201,7 @@ motorcycle batteries.
    :width: 60%
    :align: center
 
-   Batteries:  a) Lead-Acid cell. b) Li-Po c) Battery circuit symbol.
+   Batteries:  a) :index:`Lead-Acid cell`. b) :index:`Li-Po` c) Battery circuit symbol.
 
 .. _`comparebatteries`:
 .. table:: Quick comparison of battery chemistries.

@@ -23,6 +23,7 @@ Introduction to Robotics
    Simulation <Simulation/index>
    Navigation <Navigation/index>
    Vehicle Motion <Motion/index>
+   Real Systems <RealSystems/index>
    Electronics <Electrical/index>
    Sensors and Sensing <Sensors/index>
    Computer Vision <Vision/index>

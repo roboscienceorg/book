@@ -19,7 +19,7 @@ fashion. This means we have some choices on how to represent the world,
 obstacles and other objects, :numref:`fig:enviromodel`.
 
 The environment can be represented in three different manners:
-continuous, discrete and topological. Continuous is how we tend to think
+:index:`continuous`, :index:`discrete` and :index:`topological`. Continuous is how we tend to think
 about the world. All of the locations and distances for objects,
 ourselves and the robots use floating point values. For example, the
 center of the robot would be located by a pair of floating point values
@@ -200,7 +200,7 @@ tangent to the boundary is required for this task.
    :width: 40%
    :align: center
 
-   Using touch sensors to estimate the boundary normal and tangent.
+   Using :index:`touch sensors` to estimate the boundary normal and tangent.
 
 
 Using the normal vector, :math:`\hat{n} = <n_1, n_2>`, the tangent to

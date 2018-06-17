@@ -13,7 +13,7 @@ covered in the Beginner Level Tutorials online. Our goal for
 this section is to illustrate basic ROS communications which requires
 some infrastructure. We will return to the administrative side of ROS
 after some simple coding examples. Some experience with Linux and the
-command line is useful here. 
+command line is useful here.
 
 The terminal or command window brings up the shell or command
 interpreter. For those not familiar with linux, this is like DOS. The
@@ -721,7 +721,9 @@ possible, one can often get better performance out of sending arrays.
 This next example demonstrates how to send arrays. For this example we
 will send a block of 32bit integers which is the datatype ``Int32MultiArray``.
 
-::
+.. _`lst:ROSarraySend`:
+.. code-block:: python
+   :caption: Example of the MultiArray - Publisher
 
    #!/usr/bin/env python
    import rclpy
@@ -734,7 +736,11 @@ will send a block of 32bit integers which is the datatype ``Int32MultiArray``.
    myarray = Int32MultiArray(data=a)
    pub.publish(myarray)
 
-::
+
+.. _`lst:ROSarrayRecv`:
+.. code-block:: python
+   :caption: Example of the MultiArray - Subscriber
+
 
    #!/usr/bin/env python
    import rclpy
@@ -749,7 +755,7 @@ will send a block of 32bit integers which is the datatype ``Int32MultiArray``.
 
 
    rclpy.init(args=None)
-   node = rclpy.create_node('InverseKcheck')
+   node = rclpy.create_node('Subscriber')
    sub = node.create_subscription(Int32MultiArray, 'Chatter', callback)
 
    while rclpy.ok():

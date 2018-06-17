@@ -83,7 +83,7 @@ Constraints and Kinematics
 Constraints on a mechanical system are the conditions which restrict
 possible geometric positions or limits certain motions. The are written
 as expressions of the state variables in the system. It is useful to
-distinguish geometric and kinematic constraints. The term geometric is
+distinguish geometric and :index:`kinematic constraints`. The term geometric is
 concerned only with position where kinematic also includes motion. We
 will use the term *Holonomic* instead of geometric since it is standard
 usage in robotics.
@@ -133,20 +133,20 @@ and positions.
 Holonomic Constraints
 ^^^^^^^^^^^^^^^^^^^^^
 
-A constraint is called holonomic (or geometric) if one can express it as
+A constraint is called :index:`holonomic` (or geometric) if one can express it as
 
 .. math::
    :label: eq:holonomicdefn
 
    f(x_1, x_2, \dots , x_n, t)=0
 
-A :index:`holonomic` constraint only depends on the coordinates and time and
+A holonomic constraint only depends on the coordinates and time and
 does not depend on derivatives. If all the system constraints are
 holonomic then we say the system is *holonomic*. Otherwise we say the
 system is *non-holonomic*. Wikipedia has a nice way of expressing
 non-holonomic:
 
-    A nonholonomic system in physics and mathematics is a system whose
+    A :index:`nonholonomic` system in physics and mathematics is a system whose
     state depends on the path taken in order to achieve it. Such a
     system is described by a set of parameters subject to differential
     constraints, such that when the system evolves along a path in its

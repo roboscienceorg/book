@@ -134,8 +134,8 @@ domain.
 The Bug Algorithms
 ------------------
 
-Bug 1
-^^^^^
+:index:`Bug 1`
+^^^^^^^^^^^^^^
 
 The Bug 1 algorithm is a very simple planner. In the absence of an
 obstacle, it makes sense to head towards the goal, and if an obstacle is
@@ -212,8 +212,8 @@ Bug 1 will exit without success on this one.
 
    An example of an unreachable goal.
 
-Bug 2
-^^^^^
+:index:`Bug 2`
+^^^^^^^^^^^^^^^
 
 The path that Bug 1 takes is clearly not the shortest path from start to
 goal, as shown in :numref:`bug12bug2`. The first thing
@@ -386,8 +386,8 @@ leave the obstacle when the obstacle becomes visible.
 
    What about reducing the path even more?
 
-Bug 3
-^^^^^
+:index:`Bug 3`
+^^^^^^^^^^^^^^
 
 
 .. _`alg:bug3`:
@@ -439,8 +439,8 @@ difficulties reaching the goal where Bug 1 and 3 succeed.
    bug 2 fails.
 
 
-Tangent Bug
-^^^^^^^^^^^
+:index:`Tangent Bug`
+^^^^^^^^^^^^^^^^^^^^
 
 The tangent bug algorithm will follow the basic idea in Bug 3, with the
 addition of a range sensor to the bug. As before our bug will have
