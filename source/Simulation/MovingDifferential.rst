@@ -162,7 +162,7 @@ A numerical approach
 ~~~~~~~~~~~~~~~~~~~~
 
 We will use Euler’s (“Oil-ler’s”) method for solving the differential
-equations. Euler’s method approximates the derivatives with a forward
+equations. :index:`Euler’s method` approximates the derivatives with a forward
 finite difference and converts the differential equation into a
 difference equation. The difference equations are algebraic and can be
 evaluated numerically. This is also known as a finite difference method.
@@ -186,7 +186,7 @@ of time and one denotes a sequence.
 Recall that if :math:`x` is position then :math:`\dot{x}=dx/dt` is
 velocity (and :math:`\ddot{x}=d^2x/dt^2` is acceleration). From basic
 calculus, we recall that we may approximate a derivative using a forward
-finite difference:
+:index:`finite difference`:
 
 .. math:: \dot{x} \approx \frac{x(t+\Delta t) - x(t)}{\Delta t}.
 
