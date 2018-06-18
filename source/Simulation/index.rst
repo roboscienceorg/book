@@ -21,7 +21,8 @@ tools will suffice.
 .. toctree::
    :maxdepth: 1
 
-   Start
    SimulatingMotion
+   Startsim
    MovingDifferential
    GroundRobotWorld
+   Nextsim

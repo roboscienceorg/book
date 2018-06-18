@@ -309,8 +309,11 @@ algorithm:  :ref:`Lidar Simulation <lidarsim>`
 
 .. rubric:: Footnotes
 
-.. [#f2] The author would simply call this a remotely operated car, but either way, teleoperation does change how one looks at a vehicle.
+.. [#f2] The author would simply call this a remotely operated car, but either way,
+   teleoperation does change how one looks at a vehicle.
 
-.. [#f3] Keep in mind that the robot graphics circle method draws from the bottom of the circle and so the center for this formula and the one for the circle method need to be adjusted by the radius.
+.. [#f3] Keep in mind that the robot graphics circle method draws from the
+   bottom of the circle and so the center for this formula and the one for the
+   circle method need to be adjusted by the radius.
 
 .. [#f4]  If you wanted an integer array you would cast this as an ``int``.
