@@ -13,7 +13,8 @@ of the sensors available is the key to understanding, modeling, and
 utilizing this information.
 
 A sensor can be any device that converts energy into a usable signal.
-Sensors fall into two classes: passive and active. **Passive Sensors**
+Sensors fall into two classes: :index:`passive sensors` and
+:index:`active sensors`. **Passive Sensors**
 use energy from the environment to power the measurement. A bump or
 temperature sensor are examples of passive sensing. **Active sensors**
 inject energy into the environment in a particular manner and measure
@@ -24,7 +25,8 @@ placement of beacons or tags. Laser and ultrasonic ranging are examples
 of active sensing.
 
 We can further classify sensors by which part of the robot’s
-environment, internal or external, they are sensing. **Properioceptive
+environment, :index:`properioceptive` or :index:`exterioceptive`,
+they are sensing. **Properioceptive
 Sensors** measure the internal state of the system (robot), such as
 motor speeds, wheel loads, turn angles, battery status, temperature and
 other aspects that are internal to the machine. **Exterioceptive
@@ -34,7 +36,7 @@ and temperature, magnetic fields, accelerations, etc.
 
 Another way to classify sensors is by the data they return. Sensors can
 return information in **analog** or **digital** form. Typically an
-analog sensor will vary voltage (maybe current) as the measured quantity
+:index:`analog sensor` will vary voltage (maybe current) as the measured quantity
 changes value. Normal application is to feed that signal into a device
 known as an ADC or analog to digital converter. The vast array of
 microcontrollers on the market offer built in ADC lines. For example
@@ -46,7 +48,9 @@ number of bits (say 12 bit). This gives the resolution. For a 12 bit
 device, it means that the sampling will break the signal into
 :math:`2^{12}` discrete values or 4096 different levels. More bits means
 better resolution. But it takes more hardware and memory inside so there
-is a tradeoff.
+is a tradeoff.  A :index:`digital sensor` is a sensor that returns the measurement
+already in digitized or packet form and there is no need for an analog to digital
+conversion.
 
 Digital sensors are often analog devices with built in ADC chips. To
 save packaging space they will very often communicate via a bus and not

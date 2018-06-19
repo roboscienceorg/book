@@ -22,7 +22,7 @@ ultrasonic transducers, QR codes, colored tags and other forms of
 environmental instrumentation. Normally this means that the environment
 is modified in some detectable manner. Similar approaches can be done
 outdoors, but since the introduction of GPS, it has dominated the
-localization approaches. GPS, the Global Positioning System, was
+localization approaches. :index:`GPS`, the :index:`Global Positioning System`, was
 developed for the US military for their localization and navigation
 requirements.
 
@@ -211,6 +211,7 @@ you can pick the center or a random point in the search region.
 
 We can use the gradient descent method to find the solution. Set
   :math:`x_0 = 5000`, :math:`y_0=5000`, :math:`k=0`, :math:`t=1`:
+  
 While (:math:`t > t_0`)
 
 -  :math:`u = \nabla E (x_k, y_k) /  \| \nabla E (x_k, y_k) \|`
@@ -291,7 +292,7 @@ While (:math:`t > t_0`)
 
    Gradient Descent
 
-The intersection point is :math:`x = 3120, \quad   y = 6085`. Note that
+The intersection point is :math:`x = 3120`, :math:`y = 6085`. Note that
 this algorithm is not guaranteed to converge on the solution (the global
 minimum). It can get trapped in local minima. To address this problem
 you may re-run the algorithm with different random starting points.

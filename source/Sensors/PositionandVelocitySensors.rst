@@ -56,7 +56,7 @@ and thus provides a measure of rpm.
 Optical Wheel Encoders
 ~~~~~~~~~~~~~~~~~~~~~~
 
-One option to tackle this problem involves using Light Emitting Diodes,
+One option to tackle this problem involves using :index:`Light Emitting Diodes`,
 or LEDs [#f1]_. The dominant lighting source in electronics and robotics,
 LEDs can run on very low power, are available in many frequencies and
 can switch on/off quickly. :numref:`circuitled`.
