@@ -161,7 +161,7 @@ during runtime? How should we formulate and proceed in that case.
 A numerical approach
 ~~~~~~~~~~~~~~~~~~~~
 
-We will use Euler’s (“Oil-ler’s”) method for solving the differential
+We will use Euler’s (*Oil-ler’s*) method for solving the differential
 equations. :index:`Euler’s method` approximates the derivatives with a forward
 finite difference and converts the differential equation into a
 difference equation. The difference equations are algebraic and can be
@@ -466,7 +466,7 @@ Next we compute :math:`\kappa`:
 
 This makes sense since we know the curvature is the reciprocal of the
 radius. By selecting to go counter-clockwise (increasing :math:`\theta`)
-we use “+" in :eq:`inverseddequations`. Plugging the
+we use *+* in :eq:`inverseddequations`. Plugging the
 values into :eq:`inverseddequations`,
 we obtain wheel velocities
 

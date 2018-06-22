@@ -2,7 +2,7 @@ The Ground Robot World
 ----------------------
 
 One of the main differences many see between a vehicle and a robotic
-vehicle is whether or not a person is “onboard". If you are driving a
+vehicle is whether or not a person is *onboard*. If you are driving a
 car, then we would not call this a robot. But if your car was remotely
 operated, then some would call it a robotic car.  [#f2]_ Can we make the
 robot simulation remotely operated? In this case we mean, *can this be

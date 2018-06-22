@@ -378,7 +378,7 @@ effective steering angle, :math:`\theta_S` can be found by
 
 .. _`Fig:ackermansteerangles`:
 .. figure:: MotionFigures/ackermann_steer2.*
-   :width: 60%
+   :width: 40%
    :align: center
 
    The steering angles for the Ackerman
@@ -502,7 +502,7 @@ additionally rotate in place if the axle is allowed to rotate out
 
 .. _`fig:fmotion`:
 .. figure:: MotionFigures/motion.*
-   :width: 60%
+   :width: 50%
    :align: center
 
    The forward motion curves. Left: traditional Dubins Car. Right:
@@ -524,13 +524,9 @@ forward normal direction is given by the axle angles and if the front
 and rear axles are not parallel, then a circular path will occur with
 direction off of the forward direction as seen with parallel axles.
 
-
-.. figure:: MotionFigures/curvature.*
-   :width: 40%
-   :align: center
-
+.. _`fig:turngeo`:
 .. figure:: MotionFigures/curvature2.*
-   :width: 40%
+   :width: 60%
    :align: center
 
    Turn geometry for the DDD (left) and FWS (right) designs.

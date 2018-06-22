@@ -9,3 +9,5 @@ Machine Vision
 
    TriangulationandStructuredLight
    StereoCameras
+
+.. note::  Complete this chapter

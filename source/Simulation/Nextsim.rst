@@ -11,8 +11,8 @@ black.  On the left side of the tool is the open map button.  Navigate to
 the map file and open.  You will be able to set the threshold value for
 free verses obstacle space, as well as the map dimensions.
 
+.. note:: Write the material on using the sensors.
 
+.. note:: Write about Bump sensor (subscribe to topic)
 
-- Bump sensor (subscribe to topic)
-
-- LIDAR sensor
+.. note::  Write LIDAR sensor section

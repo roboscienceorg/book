@@ -1,5 +1,5 @@
-Human Collaboration
--------------------
+Collaboration with Humans
+-------------------------
 
 The National Science Foundation (NSF) announced the second NRI, National Robotics Initiative,
 Ubiquitous Collaborative Robots (NRI-2.0). The first line of the NSF

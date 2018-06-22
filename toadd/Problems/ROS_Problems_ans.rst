@@ -1,11 +1,6 @@
 Problems
 --------
 
-.. raw:: latex
-
-   \setcounter{Exc}{0}
-
-]
 
 Using ROS and Python, write a chat program (call it *chat.py*). First
 prompt the user for their name. Write to all members in the chat group
@@ -131,4 +126,3 @@ from problem 6 to publish the obstacles and display the padding.
 .. |image| image:: ROS/player_button_v3.png
 .. |image| image:: ROS/willow_garage.jpg
 .. |image| image:: ROS/osrf_masthead.png
-

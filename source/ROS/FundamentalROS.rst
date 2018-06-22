@@ -75,7 +75,7 @@ Any data or information that is exchanged between nodes is known as a
 message, which is defined as a combination of primitive data types or
 other messages. Some messages include a common header, which includes a
 sequence number, time stamp and a physical origin known as a frame ID.
-For example, a “Twist” message contains 6 Float64 values; a 3-D vector
+For example, a *Twist* message contains 6 Float64 values; a 3-D vector
 of linear velocities as well as a 3-D vector of angular velocities. This
 message is widely used to describe the velocity of a body in ROS.
 

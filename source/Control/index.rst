@@ -18,3 +18,5 @@ mobile robotic systems.
 
    BasicControls
    Guidance
+
+.. Note:: Rework this chapter.   

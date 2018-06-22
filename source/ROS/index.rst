@@ -27,8 +27,8 @@ remainder of this text we will only write "ROS" but unless explicitly stated
 we will mean ROS2.
 
 
-It is slightly misleading that ROS includes the phrase “operating
-system” in the title. ROS itself is not an operating system in the
+It is slightly misleading that ROS includes the phrase *operating
+system* in the title. ROS itself is not an operating system in the
 traditional sense, but it is much more than just a piece of software.
 The many components combine to form an ecosystem of software which
 warrants its title but is best thought of as middleware. While on the
@@ -54,3 +54,4 @@ the core goals of ROS as a whole.
    ROS2install
    FundamentalROS
    ROSCommunication
+   ROS_Problems

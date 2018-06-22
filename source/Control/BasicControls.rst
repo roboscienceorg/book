@@ -79,7 +79,7 @@ velocities of the form
    \dot{\phi_2} = \frac{1}{r} (v_c-Lk\alpha)
    \end{array}
 
- This gives us
+This gives us
 
 .. math::
 
@@ -95,7 +95,7 @@ robot speed. If so, then :math:`\dot{\beta}` is small. Since
 
 .. math:: \dot{\alpha} = -k\alpha.
 
- The solution to this differential equation is
+The solution to this differential equation is
 
 .. math:: \alpha(t) = \alpha(0) e^{-kt}
 
@@ -113,7 +113,7 @@ the PID control section.
 Classical Controls
 ~~~~~~~~~~~~~~~~~~
 
-Controls is large interdisciplinary subject. Many engineers have
+Controls is a large interdisciplinary subject. Many engineers have
 expressed the sentiment that robotics and controls are the same subject.
 That view is up for debate, however everyone agrees that controls is a
 very important aspect to robotics. In the next few sections, we briefly

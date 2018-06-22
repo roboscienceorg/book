@@ -67,7 +67,7 @@ Switchyard
    :width: 15%
 
 The common API used by player was a major part of the next step on the
-road to ROS, the Stanford project known as “Switchyard.” :index:`Switchyard` was
+road to ROS, the Stanford project known as *Switchyard.* :index:`Switchyard` was
 developed by Morgan Quigley in 2007 under the Stanford Artificial
 Intelligence Robot (STAIR) project. Development of the system was
 shifted to a Stanford robotics start-up known as :index:`Willow Garage` in 2008.
