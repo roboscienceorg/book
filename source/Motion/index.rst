@@ -19,3 +19,4 @@ of Omniwheel systems.
    Locomotion
    DriveSystems
    Configuration
+   Motion_Problems

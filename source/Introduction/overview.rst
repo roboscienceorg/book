@@ -304,7 +304,7 @@ Popular Hobby Robots
   chassis design has been very popular due to its robustness and versatility.
 
 
-
+.. Note:: Add additional robots
 
 Autonomy
 ~~~~~~~~~

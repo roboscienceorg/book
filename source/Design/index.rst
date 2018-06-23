@@ -18,3 +18,5 @@ as well. In this short chapter we examine some of the issues.
    Safety
    HumanCollab
    CyberSecurity
+
+.. Note::  Missing basic design material.   

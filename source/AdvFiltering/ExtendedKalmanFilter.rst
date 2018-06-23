@@ -72,15 +72,15 @@ and observation
 
 .. math:: h(x,y) = \begin{bmatrix}x \\ y\end{bmatrix}
 
- with step size :math:`\Delta t = 0.1,` and noise
+with step size :math:`\Delta t = 0.1,` and noise
 
 .. math:: V = \begin{bmatrix} 0.1&0.01\\0.01& 0.1\end{bmatrix}, \quad , W = \begin{bmatrix} 0.05&0\\0& 0.05\end{bmatrix}.
 
- Assume that the initial values, :math:`t_0 = 0`,
+Assume that the initial values, :math:`t_0 = 0`,
 
 .. math:: x_0 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
 
- and we have a reasonably accurate start
+and we have a reasonably accurate start
 
 .. math:: P_0 = \begin{pmatrix} 0.05 & 0 \\ 0 & 0.05   \end{pmatrix}
 
@@ -114,7 +114,6 @@ and so
 
    .. math:: =  \begin{bmatrix} 1 & 0.1 \\ 0.1\sin(1) & 1 \end{bmatrix}   \begin{bmatrix} 0.05 & 0 \\ 0 & 0.05   \end{bmatrix} \begin{bmatrix} 1 & 0.1\sin(1) \\ 0.1 & 1 \end{bmatrix} +
 
-   \
 
    .. math::
 
@@ -191,7 +190,7 @@ recalls the variables and equations that were derived.
 
 .. _`Fig:DDagain`:
 .. figure:: AdvFilteringFigures/dddim.*
-   :width: 60%
+   :width: 20%
    :align: center
 
    The variables used in the DD model.
@@ -256,7 +255,7 @@ must compute the matrix :math:`F` from the nonlinear model :math:`f`.
 .. math::
 
    \displaystyle F_k =
-     \begin{bmatrix} \frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2}  &
+   \begin{bmatrix} \frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2}  &
    \frac{\partial f_1}{\partial x_3}  \\[8pt]
    \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}  &
    \frac{\partial f_2}{\partial x_3}  \\[8pt]
@@ -442,8 +441,8 @@ So,
    0.051& 0.022& 0.168
    \end{bmatrix}
 
-EKF Python Example[DDEKFexample]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EKF Python Example
+~~~~~~~~~~~~~~~~~~~~
 
 We will take a similar setup as before, with a few values modified, and
 generate the Python code required. For this simulation, we place the

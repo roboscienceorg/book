@@ -19,3 +19,4 @@ for the developing roboticist.
    ElectricalTerms
    BasicPowerDelivery
    ElectricMotors
+   Electrical_Problems

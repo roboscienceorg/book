@@ -41,10 +41,12 @@ connectivity, but ignores diagonal distance.
 
 Gradient map made by looking at the smallest value in your connectivity.
 
-
+.. _`fig:brushfire0`:
 .. figure:: PlanningFigures/brushfire0.*
    :width: 95%
    :align: center
+
+   Brushfire example
 
 A gradient map can be produced at each pixel by finding the neighbor
 pixel with the largest value. Both distance and gradient are now

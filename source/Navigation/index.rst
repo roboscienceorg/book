@@ -5,7 +5,7 @@ Navigation
 **********
 
 It can be argued that the single most important aspect of a robot is its ability to move.
-Roughly motion is a necessary condition but not a sufficient condition.     
+Roughly motion is a necessary condition but not a sufficient condition.
 Motion itself is not complicated. Requiring only servos and motors,
 motion is easily accomplished. The complexity arises through the
 interaction of the environment. In this chapter we explore how robots
@@ -31,3 +31,4 @@ constraints.
    ExplorationandNavigation
    Implementation
    Mazes
+   Navigation_Problems

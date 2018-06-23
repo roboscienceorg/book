@@ -51,7 +51,6 @@ the core goals of ROS as a whole.
 
    RoboticsFrameworks
    SoftwareArch
-   ROS2install
-   FundamentalROS
+   ROS
    ROSCommunication
    ROS_Problems

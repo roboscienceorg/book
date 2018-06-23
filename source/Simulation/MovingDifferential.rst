@@ -140,12 +140,12 @@ hand sides for :math:`\dot{x}` and :math:`\dot{y}` normally are not
 integrable. A simple example below demonstrates issues with finding
 antiderivatives.
 
+
 Let :math:`\dot{\phi_1} = e^{-t^2}` and
 :math:`\dot{\phi_2} = t`
 
 .. math:: \theta(t) = \theta(0) + \int_0^t \frac{r}{2L} \left(e^{-\tau^2}-\tau\right)d\tau = ???
-   :label: `ddexamplenotworkable`
-
+   :label: ddexamplenotworkable
 
 This integral cannot be resolved. Meaning we cannot find an analytic
 antiderivative. It is possible to approximate it either with a Taylor

@@ -20,3 +20,4 @@ robots.
    OrientationSensors
    LocationSensors
    ProximitySensors
+   Sensors_Problems

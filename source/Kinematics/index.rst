@@ -18,3 +18,4 @@ drive systems.
    DifferentialDrive
    DualDifferential
    Maneuverability
+   Kinematics_Problems

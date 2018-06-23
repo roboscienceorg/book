@@ -26,3 +26,4 @@ tools will suffice.
    MovingDifferential
    GroundRobotWorld
    Nextsim
+   Simulation_Problems

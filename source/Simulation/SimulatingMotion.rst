@@ -82,10 +82,8 @@ involved, the interfaces between the device code must be established -
 otherwise code chaos will emerge.
 
 
-Simulating Motion
------------------
-
-As stated before, producing motion is not difficult. Deciding on the
+As stated before, producing motion in a real robot is not difficult.
+Deciding on the
 correct actions and controlling the system are the more challenging
 aspects. The first is known as *Motion Planning* or just *Planning* and
 the second is called *Controls*. To get started we will borrow
