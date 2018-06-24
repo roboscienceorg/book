@@ -200,7 +200,7 @@ Matrix addition and multiplication are defined in the standard manner as
 -  :math:`A+B=\left( \begin{array}{ccc}a_{11}+b_{11}&\dots&a_{1n}+b_{1n}\\ \dots & \dots & \dots \\ a_{n1}+b_{n1} & \dots & a_{nn}+b_{nn}\end{array}\right)`
 
 -  :math:`AB =\left( \begin{array}{ccc}c_{11}&\dots&c_{1n}\\ \dots & \dots & \dots\\ c_{n1} & \dots & c_{nn}\end{array}\right)`,
- where the entries are :math:`c_{ij} = \sum_k a_{ik}b_{kj}`
+where the entries are :math:`c_{ij} = \sum_k a_{ik}b_{kj}`
 
 Matrix vector multiplication occurs often and is given by
 
@@ -213,9 +213,9 @@ The identity element and the matrix transpose are given by
 -  Transpose: :math:`A^T`: :math:`\{ a_{ij}\}^T = \{ a_{ji}\}`
    Example: If :math:`A =
    \left( \begin{array}{ccc}1 & 2 & 3 \\ 4 & 5 & 6
-     \\ 7 & 8 & 9\end{array}\right)` then :math:`A^T =
+   \\ 7 & 8 & 9\end{array}\right)` then :math:`A^T =
    \left( \begin{array}{ccc}1 & 4 & 7 \\ 2 & 5 & 8
-     \\ 3 & 6 & 9\end{array}\right)`
+   \\ 3 & 6 & 9\end{array}\right)`
 
 Some additional matrix terms and properties:
 
@@ -223,20 +223,17 @@ Some additional matrix terms and properties:
 
 -  The transpose formula is given by :math:`(AB)^T=B^TA^T`
 
--  The determinant formula is given by det(\ :math:`AB`) =
- det(\ :math:`A`)det(\ :math:`B`)
+-  The determinant formula is given by det(\ :math:`AB`) = det(\ :math:`A`)det(\ :math:`B`)
 
 -  A symmetric matrix is defined by :math:`A^T = A`
 
--  A symmetric positive definite matrix satisfies :math:`x^T A x >0` for
- :math:`x \neq 0`.
+-  A symmetric positive definite matrix satisfies :math:`x^T A x >0` for :math:`x \neq 0`.
 
 
 Linear Systems
 ~~~~~~~~~~~~~~
 
-One of the most common mathematical operations is solving simultaneous
-linear equations:
+One of the most common mathematical operations is solving simultaneous linear equations:
 
 .. math::
 

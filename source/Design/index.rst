@@ -18,5 +18,7 @@ as well. In this short chapter we examine some of the issues.
    Safety
    HumanCollab
    CyberSecurity
+   Design_Problems
 
-.. Note::  Missing basic design material.   
+.. Note::  Missing basic design material.   Could move some of the soft eng
+   content here as well as core mechanical/electrical design content.

@@ -16,8 +16,7 @@ robots.
    :maxdepth: 1
 
    Sensing
-   PositionandVelocitySensors
-   OrientationSensors
+   PositionVelocityOrientation
    LocationSensors
    ProximitySensors
    Sensors_Problems

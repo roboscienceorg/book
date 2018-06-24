@@ -1,5 +1,5 @@
-Position Sensors
-----------------
+Location Sensors
+-----------------
 
 Beacons
 ~~~~~~~
@@ -211,7 +211,7 @@ you can pick the center or a random point in the search region.
 
 We can use the gradient descent method to find the solution. Set
   :math:`x_0 = 5000`, :math:`y_0=5000`, :math:`k=0`, :math:`t=1`:
-  
+
 While (:math:`t > t_0`)
 
 -  :math:`u = \nabla E (x_k, y_k) /  \| \nabla E (x_k, y_k) \|`

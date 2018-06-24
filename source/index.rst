@@ -3,12 +3,15 @@
 Introduction to Robotics
 #########################
 
+.. Note:: **Draft**  - Completion target date Aug. 1.  Feedback: Jeff McGough  jeff.mcgough@sdsmt.edu
+
 .. toctree::
    :maxdepth: 1
    :titlesonly:
    :caption: Preliminaries
 
    Preface <Preface/index>
+   About this text <Preface/About>
 
 
 .. toctree::

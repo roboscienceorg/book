@@ -520,7 +520,7 @@ One can solve :math:`X^TX a = X^T y`: :math:`a = (X^TX)^{-1} X^T y`
 The curve is approximately :math:`y = 0.49x^2 - 1.21x + 1.42`,
 Figure  :numref:`plot:quadgraph`
 
-.. _`plot:quadgraph`
+.. _`plot:quadgraph`:
 .. figure:: MathFigures/quadgraph.*
    :width: 70%
    :align: center
@@ -635,4 +635,4 @@ sum of the weights is one.
 
 .. rubric:: Footnotes
 
-   [#f1] Gilbert Strang - Linear Algebra, see the online text.
+..   [#f1] Gilbert Strang - Linear Algebra, see the online text.

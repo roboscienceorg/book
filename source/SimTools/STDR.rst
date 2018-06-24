@@ -1,6 +1,8 @@
 STDR - Simple Two Dimensional Robot Simulator
 =============================================
 
+.. Note:: Update for new text.  Keep as ROS 1 material.
+
 Earlier you installed and tested the STDR simulator. Now we will use it
 to simulate a robot moving around in plane. The same ROS
 publish-subscribe interface is used here. As before, you write a control

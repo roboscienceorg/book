@@ -1,9 +1,10 @@
 Simple Python Tk Two Link Simulator
 -----------------------------------
 
+.. Note:: Check to see if this will work with ROS2.  Provide both.
 
-You can download the simulators by following the links on D2L. To get
-started, again you need to be in your Ubuntu session and run the ROS
+You can download the TwoLink simulator by following the links on ``roboscience.org``.
+To get started, again you need to be in your Ubuntu session and run the ROS
 Master:
 
 ::
