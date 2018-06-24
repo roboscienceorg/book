@@ -1,8 +1,8 @@
 Kalman Filters
 --------------
 
-Scalar Kalman Filter
-~~~~~~~~~~~~~~~~~~~~
+:index:`Scalar Kalman Filter`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For the moment assume that :math:`x, F, G, u` are scalars. Also assume
 we have a starting value for the state :math:`x_0` and some estimate of
@@ -157,7 +157,7 @@ Using the fake observations, we can test the filter.
 The Multivariate Kalman Filter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Kalman Filter has two stages. A predictive step based on the system
+The :index:`Kalman Filter` has two stages. A predictive step based on the system
 dynamics and an update based on observations or measurements.
 
 -  *Prediction*: :math:`\hat{x}_{k|k-1}`, :math:`P_{k|k-1}`
@@ -285,12 +285,12 @@ We can collect the results into the following algorithm:
 
 **Update:** Update or a posteriori stage
 
--  Innovation or measurement residual:
+-  :index:`Innovation residual` or :index:`measurement residual`:
    :math:`y_k = z_k - H_k\hat{x}_{k|k-1}`
 
 -  Innovation (or residual) covariance: :math:`S_k = H_k P_{k|k-1} H_k^\text{T} + W_k`
 
--  Optimal Kalman gain: :math:`K_k = P_{k|k-1}H_k^\text{T}S_k^{-1}`
+-  :index:`Optimal Kalman gain`: :math:`K_k = P_{k|k-1}H_k^\text{T}S_k^{-1}`
 
 -  Updated state estimate
    :math:`\hat{x}_{k|k} =\hat{x}_{k|k-1} + K_k y_k`
@@ -962,8 +962,7 @@ step. This means we can define :math:`\hat{x}_{k}  = \hat{x}_{k|k}` and
 :math:`P_{k} = P_{k|k}` and we have a basic formula to merge the sensed
 data. Since we don’t have the time loop (in :math:`k`), we can redefine
 :math:`k` to loop over the sensors. This reduces to exactly the sensor
-fusion algorithm given in
-Section \ `[multivariatesensorfusion] <#multivariatesensorfusion>`__.
+fusion algorithm given in :numref:`multivariatesensorfusion`.
 
 In the last section we discussed the issue regarding unreliable sensor
 readings in the situation where the data is occasionally not available.

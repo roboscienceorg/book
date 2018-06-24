@@ -110,6 +110,8 @@ html_theme = 'bizstyle'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_extra_path =['_cover']
+
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #

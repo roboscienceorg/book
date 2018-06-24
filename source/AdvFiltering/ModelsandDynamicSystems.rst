@@ -175,15 +175,15 @@ and
 So we have that the start location is :math:`(-1.666667, 2.0)` with
 initial velocity of :math:`(11 , 30.5)`.
 
-Linear Dynamical System
-~~~~~~~~~~~~~~~~~~~~~~~
+:index:`Linear Dynamical System`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-An operator, :math:`L`, is said to be linear if for scalars :math:`a,b`
+An operator, :math:`L`, is said to be :index:`linear` if for scalars :math:`a,b`
 and vectors :math:`x,y` we have
 
 .. math:: L(ax+by) = aLx + bLy
 
-A dynamical system
+A :index:`dynamical system`
 
 .. math:: x_k = Lx_{k-1} \quad \text{(discrete)}
 

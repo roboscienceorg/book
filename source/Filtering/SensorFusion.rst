@@ -1,5 +1,5 @@
-Sensor Fusion
--------------
+:index:`Sensor Fusion`
+-----------------------
 
 Simple Example of Sensor Fusion
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,9 +48,10 @@ since :math:`E(v_i)=0` and :math:`E(x)=x` we have that
 
   .. math:: \sum_{i=1}^n k_i = 1 .
 
-[Lem:varianceformula]
+
 
 .. math:: E[(\hat{x}-x)^2] =  \sum_{i=1}^n k_i^2\sigma_i^2
+
 
 where :math:`\sigma_i` are the standard deviations for :math:`v_i`,
 :math:`E((v-E(v))^2)=\sigma^2`.
@@ -71,8 +72,8 @@ where :math:`\sigma_i` are the standard deviations for :math:`v_i`,
    = \sum_{i=1}^n \sum_{j=1}^n k_ik_j E[v_iv_j] = \sum_{i=1}^n k_i^2\sigma_i^2 .
 
 
-Optimal Estimate
-^^^^^^^^^^^^^^^^
+:index:`Optimal Estimate`
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The main goal is to minimize the mean square error subject to the
 constraint of having the unbiased estimate:
@@ -120,7 +121,7 @@ and we obtain the estimate
    \hat{x} = \displaystyle \frac{\displaystyle \sum_{i=1}^n \frac{z_i}{\sigma_i^2}}
    {\displaystyle \sum_{i=1}^n \frac{1}{\sigma_i^2}}.
 
-From Lemma \ `[Lem:varianceformula] <#Lem:varianceformula>`__ we can
+From :eq:`Lem:varianceformula` we can
 also gain an estimate of the variance for the estimate, :math:`\hat{x}`
 above:
 
@@ -312,8 +313,8 @@ For the weighted averaging process, we have that
 
 So there is value in including measurements from lower accuracy sensors.
 
-Recursive Filtering
-~~~~~~~~~~~~~~~~~~~
+:index:`Recursive Filtering`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Say that you have computed an average over a dataset and another value
 is added to the dataset. Using the previous formula, you need to repeat
@@ -369,7 +370,7 @@ the file.
 Note that you did not need to know how many points were in the file to
 get the average. It was built into the iteration formula.
 
-This process can be weighted to produce a running weighted average. We
+This process can be weighted to produce a :index:`running weighted average`. We
 will rework the previous derivation for the case where the weighting is
 not uniform. The running average will be denoted by :math:`\hat{x}_n`
 and the running variance will be denoted by :math:`P_n`
@@ -428,7 +429,7 @@ Using :math:`K` we can write a recursive formula for :math:`P_{n+1}`:
 
 .. math:: P_{n+1} = \displaystyle  (1 -   K_{n+1}) P_{n}
 
-This provides us with a recursive weighted filter:
+This provides us with a :index:`recursive weighted filter`:
 
 .. math::
    :label: Eq:scalarrecursiveweighted
@@ -479,8 +480,9 @@ The recursive approach is given in the code listing below:
 
 The result of running the code: 1.34489795918
 
-Multivariate Recursive Filtering[multivariatesensorfusion]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _`multivariatesensorfusion`:
+:index:`Multivariate Recursive Filtering`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let :math:`W_i` is the variance for the sensor. The previous algorithm
 extends to multiple variables as
@@ -557,8 +559,8 @@ How can you merge these into a single estimate?
    0.00066667&  0.00463772&  0.13332457
    \end{pmatrix}
 
-Least Squares Observer
-~~~~~~~~~~~~~~~~~~~~~~
+:index:`Least Squares Observer`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Least Squares is used because there is noise in the data collection or
 the observations. Here we will summarize the material above and use a

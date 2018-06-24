@@ -1,5 +1,5 @@
-Extended Kalman Filter
-----------------------
+:index:`Extended Kalman Filter`
+--------------------------------
 
 Recall that when we started the section on linear dynamical systems the
 first example was the differential drive dynamics. These equations are
@@ -31,8 +31,8 @@ where :math:`v_k` has variance :math:`V_k` and :math:`w_k` has variance
    \frac{\partial h_m}{\partial x_1} & \frac{\partial h_m}{\partial x_2}  & \dots &
    \frac{\partial h_m}{\partial x_n}  \end{bmatrix}
 
-This is a Taylor expansion approach to dealing with nonlinear mappings.
-For more information about Jacobians,
+This is a :index:`Taylor expansion` approach to dealing with nonlinear mappings.
+For more information about :index:`Jacobians`,
 https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant.
 
 #. Predicted state:
