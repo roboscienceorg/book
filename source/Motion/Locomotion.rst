@@ -14,7 +14,7 @@ have valued wheels in their motion solutions. The earliest recorded
 appearance of wheels is in Mesopotamia (Sumerian) at the mid-4th
 millenium BC. The is evidence of independent discovery in the new world,
 the lack of domesticated large animals prevented any development beyond
-children’s toys. :cite:`wiki:wheel`.
+children’s toys.
 
 Rolling is very efficient, especially compared to dragging or carrying
 materials. At the macroscopic scale, nature has not developed wheels.

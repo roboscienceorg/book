@@ -237,8 +237,7 @@ running an event loop (waiting for our input). So we need to have
 something to keep the process going. A simple open loop has been added
 to the publisher for the demonstration. On the subscriber side, we also
 need a way to keep the process running. ROS provides some commands that allow
-us to set up the event loop.  We will combine a while loop with
- ``rclpy.spin_once(node)``
+us to set up the event loop.  We will combine a while loop with ``rclpy.spin_once(node)``
 which gives us an infinite loop and waits for an event like a
 message published on a topic.
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="39cm" height="18cm" viewBox="74 178 768 350" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="76,192.5 209,193.5 210,274.5 356,274.5 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="78,234.5 165.706,233.8 165.706,317.8 355,317.5 "/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="266" y1="223" x2="384.264" y2="223.924"/>
+    <polygon style="fill: #000000" points="391.764,223.983 381.725,228.904 384.264,223.924 381.803,218.905 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="391.764,223.983 381.725,228.904 384.264,223.924 381.803,218.905 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="303" y="242">
+    <tspan x="303" y="242">Lidar</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="543" y1="220" x2="653.264" y2="220.919"/>
+    <polygon style="fill: #000000" points="660.764,220.981 650.723,225.898 653.264,220.919 650.806,215.898 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="660.764,220.981 650.723,225.898 653.264,220.919 650.806,215.898 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="548" y="216">
+    <tspan x="548" y="216">Feature</tspan>
+    <tspan x="548" y="233.639">Extraction</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="185" y="304">
+    <tspan x="185" y="304">*</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="689" y1="317" x2="347.411" y2="407.506"/>
+    <polygon style="fill: #000000" points="340.161,409.427 348.547,402.033 347.411,407.506 351.109,411.699 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="340.161,409.427 348.547,402.033 347.411,407.506 351.109,411.699 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="376" y="370">
+    <tspan x="376" y="370">Matching</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="365" y1="436" x2="509.264" y2="436"/>
+    <polygon style="fill: #000000" points="516.764,436 506.764,441 509.264,436 506.764,431 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="516.764,436 506.764,441 509.264,436 506.764,431 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="397" y="452">
+    <tspan x="397" y="452">Localization</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="191" y="456">
+    <tspan x="191" y="456">map</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="677,186 736.808,185.808 737.808,266.808 840,267 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="693.514,226.108 693.514,310.108 841,311 "/>
+    <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="708.6" y="298.35">
+      <tspan x="708.6" y="298.35">*</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 10; stroke-dasharray: 4; stroke: #000000" points="388,184 486.808,188.808 487.808,269.808 626,268 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 10; stroke-dasharray: 4; stroke: #000000" points="439,228 443.514,313.108 635,316 "/>
+    <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="461.8" y="298.35">
+      <tspan x="461.8" y="298.35">*</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" points="158.808,401.808 291.808,402.808 292.808,483.808 438.808,483.808 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" points="160.808,443.808 248.514,443.108 248.514,527.108 437.808,526.808 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="235.804,398.992 295.61,398.8 296.61,479.8 398.804,479.992 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="252.318,439.1 252.318,523.1 399.804,523.992 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" points="529.808,399.308 662.808,400.308 663.808,481.308 809.808,481.308 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" points="531.808,441.308 619.514,440.608 619.514,524.608 808.808,524.308 "/>
+    <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="634.4" y="515.35">
+      <tspan x="634.4" y="515.35">*</tspan>
+    </text>
+  </g>
+</svg>

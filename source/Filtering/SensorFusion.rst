@@ -150,8 +150,9 @@ and so
 which is the average.
 
 .. _`dataexamplediffvar`:
+
 Example with different variances
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Say you measure something three different ways and you want to merge
 these measurements into a single estimate. How does one specifically go
@@ -432,7 +433,7 @@ Using :math:`K` we can write a recursive formula for :math:`P_{n+1}`:
 This provides us with a :index:`recursive weighted filter`:
 
 .. math::
-   :label: Eq:scalarrecursiveweighted
+   :label: `scalarrecursiveweighted`
 
    \begin{array}{l}
    K_{n} = \displaystyle P_{n-1} \left(P_{n-1} + \sigma_n^2\right)^{-1} \\[8pt]
@@ -441,7 +442,7 @@ This provides us with a :index:`recursive weighted filter`:
    \end{array}
 
 
- where :math:`P_0 = \sigma_0^2` and :math:`\hat{x}_0 = z_0`.
+where :math:`P_0 = \sigma_0^2` and :math:`\hat{x}_0 = z_0`.
 
 You have now seen two important aspects to the Kalman Filter. The
 concept of sensor fusion, data from different distributions, and the
@@ -481,6 +482,7 @@ The recursive approach is given in the code listing below:
 The result of running the code: 1.34489795918
 
 .. _`multivariatesensorfusion`:
+
 :index:`Multivariate Recursive Filtering`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -657,7 +659,7 @@ If the inner product is weighted:
 
 .. math:: \hat{x} = \left(H^T Q H\right)^{-1} H^TQz .
 
- The matrix :math:`Q` is any matrix for which the innerproduct above is
+The matrix :math:`Q` is any matrix for which the innerproduct above is
 a valid. However, we will select :math:`Q` as a diagonal matrix
 containing the reciprocals of the variances (the reason shown below in
 the covariance computation). We can rework our simple example:

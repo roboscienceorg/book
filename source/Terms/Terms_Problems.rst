@@ -153,7 +153,7 @@ Problems
       Half disk.
 
 #. Is the differential drive motion model given by
-   :eq:`eqn:DDequationsTerms`  holonomic? Why or why not?
+   :eq:`ddkinematicsmodel`  holonomic? Why or why not?
 
 #. When inflating an obstacle, how much do you inflate it by?
 

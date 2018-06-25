@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="26cm" height="10cm" viewBox="161 18 514 199" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffff00" cx="508.8" cy="134.3" rx="38.5" ry="38.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" cx="508.8" cy="134.3" rx="38.5" ry="38.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffff00" cx="253.5" cy="143.5" rx="38.5" ry="38.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" cx="253.5" cy="143.5" rx="38.5" ry="38.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 175 73 C 224,49 269,56 316,80 C 363,104 337,125 284,123 C 231,121 126,97 175,73z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 175 73 C 224,49 269,56 316,80 C 363,104 337,125 284,123 C 231,121 126,97 175,73"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="318.242" cy="49.1224" rx="2.8776" ry="2.8776"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="318.242" cy="49.1224" rx="2.8776" ry="2.8776"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="252.402" y1="144" x2="310.692" y2="59.1812"/>
+    <polygon style="fill: #000000" points="314.94,53.0001 313.397,64.0734 310.692,59.1812 305.155,58.4097 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="314.94,53.0001 313.397,64.0734 310.692,59.1812 305.155,58.4097 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="320.402" y="156">
+    <tspan x="320.402" y="156">M</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="284" y1="123" x2="315.402" y2="145"/>
+    <path style="fill: #000000" d="M 284 123 C 284.861,121.771 286.95,121.404 288.178,122.264 C 289.407,123.125 289.775,125.214 288.914,126.443 C 288.053,127.671 285.964,128.039 284.736,127.178 C 283.507,126.318 283.139,124.229 284,123z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 284 123 C 284.861,121.771 286.95,121.404 288.178,122.264 C 289.407,123.125 289.775,125.214 288.914,126.443 C 288.053,127.671 285.964,128.039 284.736,127.178 C 283.507,126.318 283.139,124.229 284,123"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="253.5" y1="143.5" x2="278.409" y2="126.758"/>
+    <polygon style="fill: #000000" points="282.144,124.247 278.838,130.084 278.409,126.758 275.491,125.105 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="282.144,124.247 278.838,130.084 278.409,126.758 275.491,125.105 "/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 460 20 C 524.464,19 579.464,73 588.464,98 C 597.464,123 536.464,230 487.464,215 C 438.464,200 548.464,156 523.464,103 C 498.464,50 395.536,21 460,20z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 460 20 C 524.464,19 579.464,73 588.464,98 C 597.464,123 536.464,230 487.464,215 C 438.464,200 548.464,156 523.464,103 C 498.464,50 395.536,21 460,20"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="628.964" cy="123.5" rx="4.5" ry="4.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="628.964" cy="123.5" rx="4.5" ry="4.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="526.464" cy="119" rx="4.5" ry="4.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="526.464" cy="119" rx="4.5" ry="4.5"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="636.464" y="131">
+    <tspan x="636.464" y="131">Goal</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="506.464" y="123">
+    <tspan x="506.464" y="123">M</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="332.3" y="56.9">
+    <tspan x="332.3" y="56.9">Goal</tspan>
+  </text>
+</svg>

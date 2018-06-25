@@ -31,6 +31,7 @@ humanlike manner*.
 
 .. These images are in the public domain  (Repliee_Q2.jpg & ATHLETE.jpg)
 
+.. _`figure:actroid`:
 .. figure:: IntroductionFigures/repliee-athlete.*
    :width:  90%
    :align: center
@@ -54,6 +55,7 @@ technologies and medicine to entertainment, from research to education,
 and much more.
 
 .. These images are in the public domain  (Roomba_Discovery.jpg & drill_bot2.jpg)
+
 .. figure:: IntroductionFigures/roomba-drill.*
    :width:  90%
    :align: center
@@ -70,6 +72,7 @@ that environment. Most of us may expect that the robot performs this
 interaction through movement and sensation.
 
 .. These images are in the public domain  (KeeponTophatNextfest2007.jpg & IED_detonator.jpg)
+
 .. figure:: IntroductionFigures/keepon-ied.*
    :width:  90%
    :align: center
@@ -99,6 +102,7 @@ We can boil down our notion of robot abilities to three things:
     manipulator.
 
 .. These images are in the public domain  (Laproscopic_Surgery_Robot.jpg &  PR2_Tabletop.jpg)
+
 .. figure:: IntroductionFigures/davinci-pr2.*
    :width:  90%
    :align: center
@@ -115,6 +119,7 @@ robot. As soon as that capability becomes routine, the device is thought
 of a mechatronic device.
 
 .. These images are in the public domain  (Robonaut2.jpg & RUNSWift_Naos_2010.jpg)
+
 .. figure:: IntroductionFigures/nasa-nao.png
    :width:  90%
    :align: center
@@ -130,6 +135,7 @@ time, we get accustomed to it, and the magic gets replaced with
 expectation.
 
 .. These images are in the public domain  (Beam_telepresence_robot.jpg & ROV_working_on_a_subsea_structure.jpg)
+
 .. figure:: IntroductionFigures/beam-rov.*
    :width:  90%
    :align: center
@@ -151,6 +157,7 @@ we will consider robotics.
 
 
 .. These images are in the public domain (Justus_robot_in_Krakow_Poland_Aug2009.jpg & Rhex.jpg)
+
 .. figure:: IntroductionFigures/justus-rhex.*
    :width: 90%
    :align: center
@@ -181,6 +188,7 @@ In ancient Greece, an orrery known as the :index:`Antikythera` Mechanism is
 developed. This device is credited as being the first analog computer.
 
 .. This image is under creative commons.
+
 .. figure:: IntroductionFigures/antikytheramachine.*
    :width: 40%
    :align: center
@@ -215,6 +223,7 @@ percussion. The drummer could be made to play different rhythms and
 different drum patterns by moving the pegs to different locations.
 
 .. This figure is public domain.
+
 .. figure:: IntroductionFigures/Al-Jazari.*
    :width: 40%
    :align: center

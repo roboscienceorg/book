@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="24cm" height="12cm" viewBox="98 84 465 222" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ff0000" points="101,300 119,281 139,281 155,300 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="101,300 119,281 139,281 155,300 "/>
+  </g>
+  <g>
+    <polygon style="fill: #1e90ff" points="129,286 335,234 340,245 133,296 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="129,286 335,234 340,245 133,296 "/>
+  </g>
+  <g>
+    <polygon style="fill: #1e90ff" points="331,236 433,123 442,129 338,245 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="331,236 433,123 442,129 338,245 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="155" y1="300" x2="353.264" y2="299.047"/>
+    <polygon style="fill: #000000" points="360.764,299.011 350.788,304.059 353.264,299.047 350.74,294.059 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="360.764,299.011 350.788,304.059 353.264,299.047 350.74,294.059 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="340" y1="245" x2="551.542" y2="193.311"/>
+    <polygon style="fill: #000000" points="558.828,191.531 550.3,198.761 551.542,193.311 547.927,189.047 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="558.828,191.531 550.3,198.761 551.542,193.311 547.927,189.047 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 292,298 A 24.0123,24.0123 0 0 0 295.8,270.132"/>
+    <polygon style="fill: #000000" points="291.717,264.433 302.598,267.001 297.475,269.238 296.191,274.679 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="291.717,264.433 302.598,267.001 297.475,269.238 296.191,274.679 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 408,226 A 34.346,34.346 0 0 0 397.8,192.347"/>
+    <polygon style="fill: #000000" points="392.001,187.998 403.181,187.99 398.712,191.347 398.716,196.937 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="392.001,187.998 403.181,187.99 398.712,191.347 398.716,196.937 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="195" y="249">
+    <tspan x="195" y="249">a</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="369" y="163">
+    <tspan x="369" y="163">a</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="205" y="254">
+    <tspan x="205" y="254">1</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="379" y="169">
+    <tspan x="379" y="169">2</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="267" y="290">
+    <tspan x="267" y="290">1</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="388" y="225">
+    <tspan x="388" y="225">2</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="255" y="286">
+    <tspan x="255" y="286">Q</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="377.3" y="219">
+    <tspan x="377.3" y="219">Q</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="458" y="125">
+    <tspan x="458" y="125">End Effector</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #00ff00" points="432.334,123.213 441,117.88 459.666,98.213 443.666,120.213 442,129.546 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="432.334,123.213 441,117.88 459.666,98.213 443.666,120.213 442,129.546 "/>
+  </g>
+</svg>

@@ -39,7 +39,7 @@ kinematics.
 .. _example-1:
 
 Example
-^^^^^^^
+~~~~~~~~
 
 Assume that your planner has provided the following points (0,0),
 (10,50), (30,20). Also assume that you start with zero derivative at

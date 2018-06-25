@@ -1,0 +1,178 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 150 142"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="10.00" y="7.00" width="56.00" height="16.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="10.00" y="117.00" width="56.00" height="16.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M38.00 15.00
+                    L38.00 125.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="4.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="38.00" cy="70.50" rx="8.00" ry="7.50"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M46.00 33.00
+                    L56.00 33.00
+                    L56.00 54.00
+                    L46.00 54.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="46.27" y="48.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">L</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M54.00 61.00
+                    L65.00 61.00
+                    L65.00 81.00
+                    L54.00 81.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="54.16" y="75.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">P</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-49C4B143-5DEE-47D3-A3D5-3E9BD67839CF">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M138.50 83.48
+                        L133.72 82.02
+                        L140.13 60.98
+                        L149.70 63.89
+                        L143.28 84.94
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M66.00 125.00
+                    C66.00 125.00 85.73 125.36 111.00 107.00
+                    C136.27 88.64 141.00 71.00 141.00 71.00
+                    "
+                clip-path="url(#clipPath-49C4B143-5DEE-47D3-A3D5-3E9BD67839CF)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M138.67 82.92
+                    L134.45 81.63
+                    L141.71 72.96
+                    L142.89 84.21
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+    </g>
+</svg>
+

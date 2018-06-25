@@ -696,7 +696,7 @@ desired speed. :numref:`fig:speedramp0` shows one
 sample ramp function. There are times when one needs coordinated control
 between multiple devices. This is necessary with any vehicle that has
 more than one drive motor, for example a differential drive,
-:numref:`fig:speedramp1.`
+:numref:`fig:speedramp1`.
 
 .. _`fig:speedramp0`:
 .. figure:: ControlFigures/changesetpoint.*

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="54cm" height="18cm" viewBox="364 95 1077 347" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffff00" cx="416.938" cy="246" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="416.938" cy="246" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 429 97 C 515,97 561,178 559,234 C 557,290 522,385 435,386 C 348,387 472,284 472,234 C 472,184 343,97 429,97z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 429 97 C 515,97 561,178 559,234 C 557,290 522,385 435,386 C 348,387 472,284 472,234 C 472,184 343,97 429,97"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="467" y1="253" x2="670.814" y2="237.5"/>
+    <path style="fill: #000000" d="M 467 253 C 466.81,250.507 469.114,247.825 471.606,247.635 C 474.099,247.446 476.782,249.749 476.971,252.242 C 477.161,254.734 474.858,257.417 472.365,257.606 C 469.872,257.796 467.19,255.493 467,253z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 467 253 C 466.81,250.507 469.114,247.825 471.606,247.635 C 474.099,247.446 476.782,249.749 476.971,252.242 C 477.161,254.734 474.858,257.417 472.365,257.606 C 469.872,257.796 467.19,255.493 467,253"/>
+    <path style="fill: #000000" d="M 670.814 237.5 C 671.004,239.993 668.7,242.675 666.208,242.865 C 663.715,243.054 661.032,240.751 660.843,238.258 C 660.653,235.766 662.956,233.083 665.449,232.894 C 667.942,232.704 670.624,235.007 670.814,237.5z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 670.814 237.5 C 671.004,239.993 668.7,242.675 666.208,242.865 C 663.715,243.054 661.032,240.751 660.843,238.258 C 660.653,235.766 662.956,233.083 665.449,232.894 C 667.942,232.704 670.624,235.007 670.814,237.5"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="668.814" y="224.5">
+    <tspan x="668.814" y="224.5">Goal</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffff00" cx="754.714" cy="345.9" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="754.714" cy="345.9" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 796.776 100.9 C 882.776,100.9 928.776,181.9 926.776,237.9 C 924.776,293.9 889.776,388.9 802.776,389.9 C 715.776,390.9 839.776,287.9 839.776,237.9 C 839.776,187.9 710.776,100.9 796.776,100.9z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 796.776 100.9 C 882.776,100.9 928.776,181.9 926.776,237.9 C 924.776,293.9 889.776,388.9 802.776,389.9 C 715.776,390.9 839.776,287.9 839.776,237.9 C 839.776,187.9 710.776,100.9 796.776,100.9"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="1036.59" y="228.4">
+    <tspan x="1036.59" y="228.4">Goal</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="577.338" y="227.508">
+    <tspan x="577.338" y="227.508">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="588.338" y="235.508">
+    <tspan x="588.338" y="235.508">reach</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="796.892" y1="319" x2="1036.94" y2="239.008"/>
+    <path style="fill: #000000" d="M 796.892 319 C 796.102,316.628 797.683,313.466 800.055,312.676 C 802.427,311.885 805.589,313.467 806.379,315.839 C 807.169,318.21 805.588,321.372 803.216,322.163 C 800.845,322.953 797.682,321.372 796.892,319z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 796.892 319 C 796.102,316.628 797.683,313.466 800.055,312.676 C 802.427,311.885 805.589,313.467 806.379,315.839 C 807.169,318.21 805.588,321.372 803.216,322.163 C 800.845,322.953 797.682,321.372 796.892,319"/>
+    <path style="fill: #000000" d="M 1036.94 239.008 C 1037.73,241.38 1036.15,244.542 1033.78,245.332 C 1031.4,246.123 1028.24,244.541 1027.45,242.169 C 1026.66,239.798 1028.24,236.636 1030.61,235.845 C 1032.99,235.055 1036.15,236.636 1036.94,239.008z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1036.94 239.008 C 1037.73,241.38 1036.15,244.542 1033.78,245.332 C 1031.4,246.123 1028.24,244.541 1027.45,242.169 C 1026.66,239.798 1028.24,236.636 1030.61,235.845 C 1032.99,235.055 1036.15,236.636 1036.94,239.008"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="954.338" y="240.508">
+    <tspan x="954.338" y="240.508">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="965.338" y="248.508">
+    <tspan x="965.338" y="248.508">reach</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffff00" cx="1194.42" cy="390" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1194.42" cy="390" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 1162.48 102 C 1248.48,102 1294.48,183 1292.48,239 C 1290.48,295 1255.48,390 1168.48,391 C 1081.48,392 1205.48,289 1205.48,239 C 1205.48,189 1076.48,102 1162.48,102z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1162.48 102 C 1248.48,102 1294.48,183 1292.48,239 C 1290.48,295 1255.48,390 1168.48,391 C 1081.48,392 1205.48,289 1205.48,239 C 1205.48,189 1076.48,102 1162.48,102"/>
+  </g>
+  <path style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" d="M 1238.65 366.108 C 1205.65,391.108 1182.65,398.108 1145.92,387.5"/>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="1402.3" y="229.5">
+    <tspan x="1402.3" y="229.5">Goal</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1235.46" y1="368.91" x2="1403.65" y2="240.108"/>
+    <path style="fill: #000000" d="M 1235.46 368.91 C 1233.94,366.925 1234.4,363.42 1236.39,361.9 C 1238.37,360.38 1241.88,360.845 1243.4,362.83 C 1244.92,364.815 1244.45,368.32 1242.47,369.84 C 1240.48,371.36 1236.98,370.895 1235.46,368.91z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1235.46 368.91 C 1233.94,366.925 1234.4,363.42 1236.39,361.9 C 1238.37,360.38 1241.88,360.845 1243.4,362.83 C 1244.92,364.815 1244.45,368.32 1242.47,369.84 C 1240.48,371.36 1236.98,370.895 1235.46,368.91"/>
+    <path style="fill: #000000" d="M 1403.65 240.108 C 1405.17,242.093 1404.7,245.598 1402.72,247.118 C 1400.73,248.638 1397.23,248.173 1395.71,246.188 C 1394.19,244.203 1394.65,240.698 1396.64,239.178 C 1398.62,237.658 1402.13,238.123 1403.65,240.108z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1403.65 240.108 C 1405.17,242.093 1404.7,245.598 1402.72,247.118 C 1400.73,248.638 1397.23,248.173 1395.71,246.188 C 1394.19,244.203 1394.65,240.698 1396.64,239.178 C 1398.62,237.658 1402.13,238.123 1403.65,240.108"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="1314.05" y="258.608">
+    <tspan x="1314.05" y="258.608">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="1325.05" y="266.608">
+    <tspan x="1325.05" y="266.608">reach</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #00ff00" points="447.05,287 467,253 415,246 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="447.05,287 467,253 415,246 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="438" y="269">
+    <tspan x="438" y="269">L</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #00ff00" points="774.892,383 772.05,372 771.892,362 779.892,345 796.892,319 755.806,345.62 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="774.892,383 772.05,372 771.892,362 779.892,345 796.892,319 755.806,345.62 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="761.806" y="352.62">
+    <tspan x="761.806" y="352.62">L</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #00ff00" points="1195.05,401 1238.05,369 1215.05,380 1194.05,390 1170.05,393 1147.05,390 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="1195.05,401 1238.05,369 1215.05,380 1194.05,390 1170.05,393 1147.05,390 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="1195.05" y="401">
+    <tspan x="1195.05" y="401">L</tspan>
+  </text>
+</svg>

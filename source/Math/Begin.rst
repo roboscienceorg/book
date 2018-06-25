@@ -200,6 +200,7 @@ Matrix addition and multiplication are defined in the standard manner as
 -  :math:`A+B=\left( \begin{array}{ccc}a_{11}+b_{11}&\dots&a_{1n}+b_{1n}\\ \dots & \dots & \dots \\ a_{n1}+b_{n1} & \dots & a_{nn}+b_{nn}\end{array}\right)`
 
 -  :math:`AB =\left( \begin{array}{ccc}c_{11}&\dots&c_{1n}\\ \dots & \dots & \dots\\ c_{n1} & \dots & c_{nn}\end{array}\right)`,
+
 where the entries are :math:`c_{ij} = \sum_k a_{ik}b_{kj}`
 
 Matrix vector multiplication occurs often and is given by
@@ -231,7 +232,7 @@ Some additional matrix terms and properties:
 
 
 Linear Systems
-~~~~~~~~~~~~~~
+--------------
 
 One of the most common mathematical operations is solving simultaneous linear equations:
 

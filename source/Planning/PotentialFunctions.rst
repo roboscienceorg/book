@@ -1,7 +1,7 @@
 Potential Functions
 -------------------
 
-A potential function is a differentiable real-valued function
+A :index:`potential function` is a differentiable real-valued function
 :math:`U: {\Bbb R}^m \to {\Bbb R}`. We may think of it as an energy and thus the
 gradient is a force. The gradient
 
@@ -41,7 +41,7 @@ The robot can move downhill using gradient descent:
 
 It will stop when it reaches a critical point, :math:`q^*`:
 :math:`\nabla U(q^*)=0.` This point is a maximum, minimum or saddle
-point. It depends on the eigenvalues of the Hessian
+point. It depends on the eigenvalues of the :index:`Hessian`
 
 .. math::
 
@@ -108,9 +108,9 @@ Constructing Potentials
 As suggested above, we will construct the potential functions from two
 basic types (:numref:`example2potential_a`, :numref:`example2potential_b`):
 
--  Attractive Potential, denoted by :math:`U_\text{att}(q)`, and
+-  :index:`Attractive Potential`, denoted by :math:`U_\text{att}(q)`, and
 
--  Repulsive Potentials, denoted by :math:`U_\text{rep}(q)`.
+-  :index:`Repulsive Potentials`, denoted by :math:`U_\text{rep}(q)`.
 
 The full potential function will then be a combination of the two basic
 types. We will begin by just summing the potentials. This is the easiest

@@ -63,8 +63,10 @@ them when we start. And this idea takes us to a tool known as cubic
 splines - which can be done in an iterative fashion as well as having
 smooth connections.
 
-Cubic Splines[text:cubicspline]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _`text:cubicspline`:
+
+Cubic Splines
+~~~~~~~~~~~~~~
 
 The straight line connection between two points discussed above uses a
 linear polynomial. To gain the smoothness in the transition from point

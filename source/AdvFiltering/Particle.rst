@@ -121,7 +121,7 @@ Gaussian filters (Kalman Filter).
    |   **while** :math:`c < u` **do**
    |     :math:`i = i+1`
    |     :math:`c = c + w^i`
-   |   **end while*
+   |   **end while**
    |   :math:`X = X + \{x_i\}`
    | **end for**
 

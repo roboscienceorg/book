@@ -132,7 +132,7 @@ then using
 Summarizing the formulas:
 
 .. math::
-   :label:industrialvision
+   :label: `industrialvision`
 
    x = \frac{b u}{f\cot \alpha + u},  \quad
    z = \frac{b f}{f\cot \alpha + u}

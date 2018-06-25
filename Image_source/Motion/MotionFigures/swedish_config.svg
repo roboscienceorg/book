@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="23cm" height="9cm" viewBox="-58 58 447 163" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #e5e5e5" points="-40,200 29,80 97.2678,199.813 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-40,200 29,80 97.2678,199.813 "/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="12" y="71" width="34" height="11"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="12" y="71" width="34" height="11"/>
+  </g>
+  <g>
+    <polygon style="fill: #000000" points="-56.399,191.813 -46.7322,185.813 -30.0656,214.146 -40.399,219.48 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-56.399,191.813 -46.7322,185.813 -30.0656,214.146 -40.399,219.48 "/>
+  </g>
+  <g>
+    <polygon style="fill: #000000" points="105.268,184.146 114.268,190.479 96.9344,219.48 86.9344,213.146 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="105.268,184.146 114.268,190.479 96.9344,219.48 86.9344,213.146 "/>
+  </g>
+  <g>
+    <rect style="fill: #e5e5e5" x="274.934" y="59.146" width="95" height="143"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="274.934" y="59.146" width="95" height="143"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="256.934" y="74.146" width="14" height="37"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="256.934" y="74.146" width="14" height="37"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="374.068" y="156.146" width="14" height="37"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="374.068" y="156.146" width="14" height="37"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="256.868" y="156.146" width="14" height="37"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="256.868" y="156.146" width="14" height="37"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="374.002" y="74.146" width="14" height="37"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="374.002" y="74.146" width="14" height="37"/>
+  </g>
+</svg>

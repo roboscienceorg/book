@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="20cm" height="8cm" viewBox="52 43 387 156" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101.95" y1="66.4719" x2="101" y2="152"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="106.864,74.2909 101.975,64.2359 96.8644,74.1798 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="54" y1="124" x2="424.528" y2="124.988"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="416.751,129.967 426.764,124.994 416.777,119.967 "/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="433" y="127">
+    <tspan x="433" y="127">t</tspan>
+  </text>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 103 124 C 121,64 141,64 160,123 C 179,182 198,183 218,124 C 238,65 259,60 279,121 C 299,182 318,183 339,125 C 360,67 381,61 399,126"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 130.345 123.95 C 148.345,63.95 168.345,63.95 187.345,122.95 C 206.346,181.95 221.5,183.5 241.5,124.5 C 261.5,65.5 286.346,59.95 306.346,120.95 C 326.346,181.95 345.346,182.95 366.346,124.95 C 387.346,66.95 408.346,60.95 426.346,125.95"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="194.736" y1="178" x2="206.264" y2="178"/>
+    <polygon style="fill: #000000" points="190.236,178 196.236,175 194.736,178 196.236,181 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="190.236,178 196.236,175 194.736,178 196.236,181 "/>
+    <polygon style="fill: #000000" points="210.764,178 204.764,181 206.264,178 204.764,175 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="210.764,178 204.764,181 206.264,178 204.764,175 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="137.736" y1="68" x2="238.264" y2="68"/>
+    <polygon style="fill: #000000" points="133.236,68 139.236,65 137.736,68 139.236,71 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="133.236,68 139.236,65 137.736,68 139.236,71 "/>
+    <polygon style="fill: #000000" points="242.764,68 236.764,71 238.264,68 236.764,65 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="242.764,68 236.764,71 238.264,68 236.764,65 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="184" y="57">
+    <tspan x="184" y="57">l</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="170" y="196">
+    <tspan x="170" y="196">Phase shift</tspan>
+  </text>
+</svg>

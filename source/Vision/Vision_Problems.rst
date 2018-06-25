@@ -4,7 +4,7 @@ Problems
 
 #. Assume you have a laser triangulation system as shown in
    :numref:`fig:lasertriangulation2` given
-   by :eq:`eqn:industrialvision` and
+   by :eq:`industrialvision` and
    that :math:`f  = 8`\ mm, :math:`b = 30`\ cm. What are the ranges for
    :math:`\alpha` and :math:`u` if we need to measure target distances in a
    region (in cm) :math:`20 < z < 100` and :math:`10 < x < 30`?

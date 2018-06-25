@@ -193,7 +193,7 @@ Our acceptance of, or comfort with, the machine drops as the design
 approaches lifelike accuracy. All cultures (that the author is aware of)
 exhibit this, but varies greatly in the exact boundary of their limits.
 
-.. _`fig:uncannyvwalley`
+.. _`fig:uncannyvwalley`:
 .. figure:: DesignFigures/uncanny.*
    :width: 70%
    :align: center

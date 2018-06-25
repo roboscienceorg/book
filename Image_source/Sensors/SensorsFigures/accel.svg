@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="10cm" height="3cm" viewBox="51 55 183 59" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="107" y="58" width="125.333" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" x="107" y="58" width="125.333" height="54"/>
+  </g>
+  <g>
+    <rect style="fill: #d8e5e5" x="107" y="58" width="9" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="107" y="58" width="9" height="54"/>
+  </g>
+  <g>
+    <rect style="fill: #d8e5e5" x="158.233" y="60.3334" width="9" height="49.3333"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="158.233" y="60.3334" width="9" height="49.3333"/>
+  </g>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 168 85.3333 L 180.8,85.3333 C 179.2,74.6667 177.6,64 185.6,64 C 193.6,64 195.2,85.3333 190.4,85.3333 C 185.6,85.3333 187.2,64 195.2,64 C 203.2,64 204.8,85.3333 200,85.3333 C 195.2,85.3333 196.8,64 204.8,64 C 212.8,64 214.4,85.3333 209.6,85.3333 C 204.8,85.3333 206.4,64 214.4,64 C 222.4,64 220.8,80 219.2,85.3333 L 232,85.3333"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="130.667" y="81">
+    <tspan x="130.667" y="81">C</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="124.236" y1="84.9511" x2="149.431" y2="84.7155"/>
+    <polygon style="fill: #000000" points="121.236,84.9791 125.217,82.9418 124.236,84.9511 125.254,86.9416 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="121.236,84.9791 125.217,82.9418 124.236,84.9511 125.254,86.9416 "/>
+    <polygon style="fill: #000000" points="152.431,84.6875 148.449,86.7248 149.431,84.7155 148.412,82.725 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="152.431,84.6875 148.449,86.7248 149.431,84.7155 148.412,82.725 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="63.6666" y1="85.3334" x2="90.2656" y2="84.8452"/>
+    <polygon style="fill: #000000" points="97.7643,84.7076 87.8577,89.8903 90.2656,84.8452 87.6742,79.892 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="97.7643,84.7076 87.8577,89.8903 90.2656,84.8452 87.6742,79.892 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="51.6666" y="88.6666">
+    <tspan x="51.6666" y="88.6666">a</tspan>
+  </text>
+</svg>

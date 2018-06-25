@@ -43,8 +43,8 @@ Problems
 
 
 #. Let :math:`r=10`, :math:`L=20`. Find the wheel velocities for the
-   differential drive robot following the path described in
-   :numref:`cubicsplineddhw`.
+   differential drive robot following the path described in the previous
+   problem.
 
 #. Drive the DD robot along the following points at uniform speed using a
    cubic spline: (0,0), (1,1), (2,0), (3,-1). Plot the points and the

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="22cm" height="13cm" viewBox="37 32 436 259" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #e6e6fa" cx="104" cy="59.5" rx="62" ry="24.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="104" cy="59.5" rx="62" ry="24.5"/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="54" y="64">
+    <tspan x="54" y="64">User Program</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #e6e6fa" cx="256" cy="58.5" rx="62" ry="24.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="256" cy="58.5" rx="62" ry="24.5"/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="205" y="64">
+    <tspan x="205" y="64">User Program</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #e6e6fa" cx="405" cy="58.5" rx="62" ry="24.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="405" cy="58.5" rx="62" ry="24.5"/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="353" y="65">
+    <tspan x="353" y="65">User Program</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffc0cb" x="39" y="122" width="433" height="83"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="39" y="122" width="433" height="83"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="40" y1="146" x2="472" y2="147"/>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="167" y="142">
+    <tspan x="167" y="142">API  =&gt;  Abstract Machine</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="247" y="181">
+    <tspan x="247" y="181">OS</tspan>
+  </text>
+  <g>
+    <rect style="fill: #bfbfbf" x="39" y="242" width="432" height="48"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="39" y="242" width="432" height="48"/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="193" y="270">
+    <tspan x="193" y="270">Specific hardware</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.44" y1="209.472" x2="255.06" y2="237.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="259.361,215.289 255.47,207.236 251.362,215.181 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="251.139,231.711 255.03,239.764 259.138,231.819 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="104.118" y1="88.4706" x2="104.882" y2="117.529"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="108.268,94.1273 104.059,86.2353 100.271,94.3378 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="100.732,111.873 104.941,119.765 108.729,111.662 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.943" y1="87.4718" x2="255.557" y2="117.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="259.868,93.2865 255.971,85.2359 251.869,93.1839 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="251.632,111.713 255.529,119.764 259.631,111.816 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="405.115" y1="87.4707" x2="405.885" y2="117.529"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="409.261,93.1302 405.057,85.2353 401.264,93.3352 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="401.739,111.87 405.943,119.765 409.736,111.665 "/>
+  </g>
+</svg>

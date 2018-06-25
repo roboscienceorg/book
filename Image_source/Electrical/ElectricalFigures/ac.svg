@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="20cm" height="6cm" viewBox="47 60 393 108" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101.95" y1="66.4719" x2="101" y2="152"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="106.864,74.2909 101.975,64.2359 96.8644,74.1798 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="54" y1="124" x2="424.528" y2="124.988"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="416.751,129.967 426.764,124.994 416.777,119.967 "/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="47" y="84">
+    <tspan x="47" y="84">V</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="433" y="127">
+    <tspan x="433" y="127">t</tspan>
+  </text>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 103 124 C 121,64 141,64 160,123 C 179,182 198,183 218,124 C 238,65 259,60 279,121 C 299,182 318,183 339,125 C 360,67 381,61 399,126"/>
+</svg>

@@ -45,6 +45,7 @@ Introduction to Robotics
    :caption: Appendices
    :titlesonly:
 
+   Appendix <Appendix/AppendixA>
    Mathematical Background <Math/index>
    The SciPy Library <SciPy/index>
    Simulation Tools <SimTools/index>

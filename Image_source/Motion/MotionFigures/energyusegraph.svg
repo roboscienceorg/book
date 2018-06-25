@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="19cm" viewBox="68 54 407 370" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="101" y="101" width="197" height="301"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="101" y="101" width="197" height="301"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="199.5" y1="101" x2="199.5" y2="402"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="100" y1="201" x2="298" y2="200"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="301" x2="298" y2="302"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #00ff00" x1="188" y1="400" x2="296" y2="292"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #0000ff" x1="102" y1="340" x2="209" y2="233"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #ffff00" x1="102" y1="315" x2="295" y2="122"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #ff0000" x1="102" y1="242" x2="163" y2="181"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #ffa500" x1="130" y1="266" x2="227" y2="169"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="99" y="421">
+    <tspan x="99" y="421">1</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="192" y="420">
+    <tspan x="192" y="420">10</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="284" y="421">
+    <tspan x="284" y="421">100</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="76" y="404">
+    <tspan x="76" y="404">0.1</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="86" y="306">
+    <tspan x="86" y="306">1</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="77" y="205">
+    <tspan x="77" y="205">10</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="68" y="113">
+    <tspan x="68" y="113">100</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="84" y="68">
+    <tspan x="84" y="68">Power</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="79" y="83">
+    <tspan x="79" y="83">(hp/ton)</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="317" y="405">
+    <tspan x="317" y="405">Speed (mph)</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ff0000" x="320" y="107" width="9" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="320" y="107" width="9" height="9"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="339" y="116">
+    <tspan x="339" y="116">Crawling/Sliding</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffa500" x="319.6" y="137.5" width="9" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffa500" x="319.6" y="137.5" width="9" height="9"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="338.6" y="146.5">
+    <tspan x="338.6" y="146.5">Running</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffff00" x="322.2" y="166.9" width="9" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffff00" x="322.2" y="166.9" width="9" height="9"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="341.2" y="175.9">
+    <tspan x="341.2" y="175.9">Tire on soft ground</tspan>
+  </text>
+  <g>
+    <rect style="fill: #0000ff" x="321.8" y="196.3" width="9" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x="321.8" y="196.3" width="9" height="9"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="340.8" y="205.3">
+    <tspan x="340.8" y="205.3">Walking</tspan>
+  </text>
+  <g>
+    <rect style="fill: #00ff00" x="322.4" y="225.7" width="9" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x="322.4" y="225.7" width="9" height="9"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="341.4" y="234.7">
+    <tspan x="341.4" y="234.7">Railway wheel</tspan>
+  </text>
+</svg>

@@ -1,7 +1,7 @@
 Brushfire Algorithm
 -------------------
 
-The Brushfire algorithm is used to compute the distances which are used
+The :index:`Brushfire algorithm` is used to compute the distances which are used
 in the repulsive potential. *It is not a planner!.* It will replace the
 :math:`d(p,q)` function above and can be part of other planning
 algorithms. Assume that your map is represented on a grid domain.
@@ -255,6 +255,6 @@ reduced path.
 
 .. rubric:: Footnotes
 
-.. [#f4] Known as zero ``almost everywhere".
+.. [#f4] Known as zero "almost everywhere".
 
 .. [#f5] This is due to the switching on and off a large repulsive potential.
