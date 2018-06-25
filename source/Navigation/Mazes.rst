@@ -47,7 +47,7 @@ deformable to a disk. To see this, focus on the right (or in the figure
 the lower) part of the separated maze. Tracing the path,
 :numref:`mazesolwall`, we record our motion through
 the maze. This path can be extracted,
-:numref:`mazesolcircle` to see that it is indeed a
+:numref:`mazesolcircle2` to see that it is indeed a
 circle. The topology as not changed.
 
 .. _`mazesolwall0`:

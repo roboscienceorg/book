@@ -29,7 +29,6 @@ it is easy to triangulate the depth of the point, :numref:`intro-stereo1`.
    Seeing in three dimensions with a pair of calibrated cameras:
    determining depth using basic Trigonometry.
 
-
 .. figure:: VisionFigures/stereo1a.*
    :width: 50%
    :align: center
@@ -87,7 +86,7 @@ Solving for :math:`x`, we obtain the equation below. Plugging this into
 Once depth for the collection of feature points are known, depth for
 surrounding points is inferred. This allows the construction of a
 disparity map which maps grey scale values to pixel. It is a depth map
-which is shown in Figure \ `[intro-stereo2] <#intro-stereo2>`__. A depth
+which is shown in :numref:`fig:seeing3d-a`. A depth
 map is a useful tool in object identification. The depth map can be used
 for segmentation, the process by which we separate an image into
 distinct components or objects. Once we have the object segmented, then

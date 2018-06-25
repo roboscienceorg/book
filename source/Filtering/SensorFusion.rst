@@ -67,6 +67,7 @@ where :math:`\sigma_i` are the standard deviations for :math:`v_i`,
    E\left[\left(\sum_{i=1}^n k_i v_i \right)^2\right]
 
 .. math::
+   :label: Lem:varianceformula
 
    =E\left[\sum_{i=1}^n \sum_{j=1}^n k_ik_j v_iv_j \right]
    = \sum_{i=1}^n \sum_{j=1}^n k_ik_j E[v_iv_j] = \sum_{i=1}^n k_i^2\sigma_i^2 .
@@ -433,7 +434,7 @@ Using :math:`K` we can write a recursive formula for :math:`P_{n+1}`:
 This provides us with a :index:`recursive weighted filter`:
 
 .. math::
-   :label: `scalarrecursiveweighted`
+   :label: scalarrecursiveweighted
 
    \begin{array}{l}
    K_{n} = \displaystyle P_{n-1} \left(P_{n-1} + \sigma_n^2\right)^{-1} \\[8pt]

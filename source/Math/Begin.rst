@@ -136,7 +136,7 @@ Ellipse
 
 Lissajous
     :math:`x(t) = A\sin(at)`, :math:`y(t) = B \sin(bt)`
-    (Figure `[Fig:intro-path2] <#Fig:intro-path2>`__ :math:`A=1`,
+    (:numref:`Fig:intro-path2`  :math:`A=1`,
     :math:`B=1`, :math:`a=3`, :math:`b=4`). Infinity: :math:`A=1`,
     :math:`B=0.25`, :math:`a=1`, :math:`b=2`
 
@@ -335,8 +335,8 @@ Plug the data into the model:
    \end{bmatrix}}_a     .
 
 .. math::
+   :label: eqn:curvefittingmatrix
 
-   \label{eqn:curvefittingmatrix}
    y = Xa
 
 If :math:`k = n+1`, then this system is square, meaning it has the same

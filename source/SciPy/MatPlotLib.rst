@@ -81,7 +81,7 @@ in the figure function:
     ax = fig.add_subplot(111, projection='3d')
 
 An example of a quadratic
-surface :ref:`plot:basicsurfaceplot` Many
+surface in :numref:`plot:basicsurfaceplot`. Many
 other plot examples can be found at the MatPlotLib website.
 
 ::
@@ -102,7 +102,7 @@ other plot examples can be found at the MatPlotLib website.
     plt.show()
 
 Another example will illustrate both the plotting capability as well as
-linear regression \ `[plot:fitcurveexample] <#plot:fitcurveexample>`__.
+linear regression :numref:`plot:fitcurveexample`.
 
 ::
 
@@ -135,18 +135,21 @@ linear regression \ `[plot:fitcurveexample] <#plot:fitcurveexample>`__.
     plt.ylim(0,20)
     plt.show()
 
-
+.. _`plot:basicsurfaceplot`:
 .. figure:: SciPyFigures/plot_5.*
    :width: 70%
    :align: center
 
-   Surface plot example.[plot:basicsurfaceplot]
+   Surface plot example.
 
+
+.. _`plot:fitcurveexample`:
 .. figure:: SciPyFigures/plot_6.*
    :width: 70%
    :align: center
 
-   Line fit and plot example.[plot:fitcurveexample]
+   Line fit and plot example.
+
 
 Animation
 ~~~~~~~~~

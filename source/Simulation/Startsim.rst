@@ -290,7 +290,7 @@ There are three robots included with the project:
 The Demo Scripts
 ~~~~~~~~~~~~~~~~~~~
 
-The Demo/Scripts folder contains 6 different python scripts which can be run with the default robots. All of them can be run with the command ``python3 [scriptname]``, but some of them require the command line arguments described below. Remember to :ref:`source <sec-sourcing>` ROS2 and the Veranda workspace before running these scripts!
+The Demo/Scripts folder contains 6 different python scripts which can be run with the default robots. All of them can be run with the command ``python3 [scriptname]``, but some of them require the command line arguments described below. Remember to source the setup file for ROS2 and the Veranda workspace before running these scripts!
 
     * ``fig8_differential.py``
 
@@ -333,7 +333,7 @@ The Demo/Scripts folder contains 6 different python scripts which can be run wit
 Enough Talking, Lets Do Some Demos!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here we've outlined a number of demos that you can run right after installing Veranda. Each one will require that you have multiple command line terminals open, and will number them 1-n. The first time you encounter a terminal number, you should ``cd`` into the Veranda workspace and :ref:`source <sec-sourcing>` both ROS2 and the Veranda workspace immediately before continuing the demo. All commands are given in terms of Linux, so you may need to make adjustments!
+Here we've outlined a number of demos that you can run right after installing Veranda. Each one will require that you have multiple command line terminals open, and will number them 1-n. The first time you encounter a terminal number, you should ``cd`` into the Veranda workspace and source the setup file for both ROS2 and the Veranda workspace immediately before continuing the demo. All commands are given in terms of Linux, so you may need to make adjustments!
 
 Demo 1: Driving GPS Turtle in a Figure-8
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

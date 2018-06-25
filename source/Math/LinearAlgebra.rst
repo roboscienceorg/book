@@ -181,6 +181,7 @@ problem for which there are more equations than there are unknowns
 The problem is then
 
 .. math::
+   :label: fig:overdetermined
 
    \begin{array}{c} a_{11}x_1 + a_{12}x_2 + .... + a_{1n}x_n = b_1 \\ a_{21}x_1 + a_{22}x_2 + .... + a_{2n}x_n = b_2 \\ \vdots
      \\ a_{m1}x_1 + a_{m2}x_2 + .... + a_{mn}x_n = b_m \end{array}, m > n
@@ -201,12 +202,12 @@ where
      \\ b_m \end{array}\right) .
 
 
-
+.. _`fig:overdetermined`:
 .. figure:: MathFigures/vrect.*
    :width: 20%
    :align: center
 
-   Overdetermined System of Equations[fig:overdetermined]
+   Overdetermined System of Equations
 
 This leads to a non-square matrix which is not invertible. There is no
 exact solution: :math:`Ax \neq b` for all possible :math:`x` in this
@@ -314,9 +315,9 @@ can do.
 The other variation of the non-square linear system is the
 *underdetermined* problem. In this case we have more columns than rows
 and so has the structure shown in
-Figure  :numref:`Fig:underdetermined]`
+Figure  :numref:`Fig:underdetermined`
 
-.. _`Fig:underdetermined]`:
+.. _`Fig:underdetermined`:
 .. figure:: MathFigures/hrect.*
    :width:  20%
    :align: center
@@ -357,7 +358,7 @@ Applying the pseudo-inverse to the curve fitting problem
 
 We return to our system which arose from the curve fitting problem.
 Recall we had the linear system formulation for the curve fitting
-problem \ `[eqn:curvefittingmatrix] <#eqn:curvefittingmatrix>`__:
+problem :numref:`fig:overdetermined`:
 
 .. math:: y = X a
 
@@ -381,8 +382,11 @@ Once :math:`a` is found then we may use
 
 as the “fit” to the data.
 
-Curve Fit Example[ex:curvefitexample]
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Curve Fit Example
+^^^^^^^^^^^^^^^^^^^
 
 For this example, we have 20 points for which we would like to fit a
 quadratic equation. Assume the data is contained in a file named

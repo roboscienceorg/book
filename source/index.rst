@@ -37,7 +37,7 @@ Introduction to Robotics
    Kalman and Particle Filters <AdvFiltering/index>
    Motion Planning <Planning/index>
    Robot Design <Design/index>
-   References <References/zrefs>
+   References <ZZReferences/zrefs>
 
 
 .. toctree::

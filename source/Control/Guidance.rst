@@ -36,7 +36,6 @@ in turn handed to the speed and heading controller. Between the fine
 grid points, the controller is driving and we are not using the inverse
 kinematics.
 
-.. _example-1:
 
 Example
 ~~~~~~~~
@@ -50,8 +49,8 @@ points on the curve separated by a distance of roughly 1 and not 10 or
 which will match slopes at the three points. First we convert the
 problem into a parametric problem: :math:`(t,x,y)`: (0,0,0), (10,10,50)
 and :math:`(t,x,y)`: (0,10,50), (20,30,20) This was an arbitrary choice
-for the time values. Working on the first segment and following
-:numref:`text:cubicspline`, for
+for the time values. Working on the first segment and
+the spline formulas, for
 :math:`t_0 = 0`, :math:`(x,y) = (0,0)` and
 :math:`(\dot{x}, \dot{y} ) = (1,0)` and for :math:`t_1 = 10`,
 :math:`(x,y) = (10,50)` and :math:`(\dot{x}, \dot{y} ) = (1,1)`. From

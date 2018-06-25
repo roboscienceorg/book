@@ -24,6 +24,8 @@ can easily plot a regular function via
 
 
 .. Owned by Roboscience
+
+.. _`fig:exampleplots`:
 .. figure:: SciPyFigures/plot.*
    :width: 90%
    :align: center
@@ -62,7 +64,12 @@ Code Sample (heart):
     plt.plot(x,y,'r-')
     plt.show()
 
-[cubicsplineexample] Assume you want the spline that connects the points
+.. _`cubicsplineexample`:
+
+Cubic Spline Example
+~~~~~~~~~~~~~~~~~~~~~
+
+Assume you want the spline that connects the points
 (1,-1) with (3,4). Also assume that the derivative at (1,-1) is given by
 :math:`<1,-3>` and at (3,4) is given by :math:`<0,2>`. We can take
 :math:`t_0=0` and :math:`t_1 = 1`. This gives :math:`z = t`,
@@ -112,12 +119,12 @@ See :numref:`cubicsplinefigure` for a plot.
     plt.show()
 
 
+.. _`cubicsplinefigure`:
 .. figure:: SciPyFigures/cubicspline.*
    :width: 70%
    :align: center
 
-   Graph of the spline for
-   example \ `[cubicsplineexample] <#cubicsplineexample>`__.[cubicsplinefigure]
+   Graph of the spline for example  `cubicsplineexample`.
 
 Error Ellipses
 ^^^^^^^^^^^^^^
@@ -198,8 +205,7 @@ how to extract eigenvalues and plot an ellipse.
 Data Plots
 ^^^^^^^^^^
 
-For Figure in
-  subection\ `[ex:curvefitexample] <#ex:curvefitexample>`__:
+To plot the data used in the curve fitting examples:
 
 ::
 
@@ -218,7 +224,7 @@ For Figure in
     plt.plot(x,y, 'ro')
     plt.show()
 
-For Figure in subsection\ `[plot:quadgraph] <#plot:quadgraph>`__:
+For Figure in subsection :numref:`plot:quadgraph`:
 
 ::
 

@@ -73,7 +73,7 @@ For example:
     roslaunch stdr_launchers diff_drive_no_obst_sim.launch
 
 Once roslaunch executes the user will be greeted by an application
-looking similar to the one in `[fig:stdr_sim] <#fig:stdr_sim>`__.
+looking similar to the one in :numref:`fig:stdr_sim`.
 Roslaunch also starts up the ros master if there isn’t one already
 running on the machine. It also starts up all the nodes and they can be
 viewed in :numref:`fig:stdr_node_graph`.

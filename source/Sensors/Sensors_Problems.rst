@@ -42,7 +42,7 @@ Problems
    lidar(pose, objmap, params) in which data is the 1D array of distance
    values to obstacles as a function of angle. Test this on a map with more
    than one obstacle.
-   Appendix :numref:`section:imagemaps` shows how one
+   Appendix A shows how one
    may generate a map in a bit map editor like GIMP and then export in a
    plain text format which is easily read into a Python (Numpy) array.
    [Although you can fill the grid by a python function which sets the
