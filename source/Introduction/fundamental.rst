@@ -163,6 +163,7 @@ requires a map.
 - If I don’t know where I am and I don’t have a map ..then..?
 
 .. Owned by Roboscience
+
 .. _`intro-slam`:
 .. figure:: IntroductionFigures/path_todest.*
    :width: 90%
@@ -179,6 +180,7 @@ environments, however 3D SLAM is an active area of research.
 
 
 .. Public domain
+
 .. _`intro-slam-problem`:
 .. figure:: IntroductionFigures/slam.*
    :width: 90%
@@ -197,6 +199,7 @@ system to perform without adequate data.
 
 
 .. Public domain
+
 .. figure:: IntroductionFigures/mazeforest.*
    :width: 90%
    :align: center
@@ -258,6 +261,7 @@ based on a classical artificial intelligence approach and ones based on
 newer methods in artificial intelligence.
 
 .. Owned by Roboscience
+
 .. figure:: IntroductionFigures/Control.*
    :width: 90%
    :align: center
@@ -275,6 +279,7 @@ the hood”, we tend to view these systems as interacting with the
 environment using a four stage conceptual framework :numref:`fourstage`.
 
 .. Owned by Roboscience
+
 .. _`robotcontrolclassical`:
 .. figure:: IntroductionFigures/classicAIcontrol.*
    :width: 70%
@@ -295,6 +300,7 @@ this case the decision process is completely defined before the robot is
 sent out.
 
 .. Owned by Roboscience
+
 .. _`fourstage`:
 .. figure:: IntroductionFigures/new_old_AI_blend.*
    :width: 70%

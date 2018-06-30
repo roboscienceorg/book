@@ -9,6 +9,7 @@ Machine Vision
 
    TriangulationandStructuredLight
    StereoCameras
+   ML
    Vision_Problems
 
 .. note::  Complete this chapter

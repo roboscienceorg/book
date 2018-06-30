@@ -9,5 +9,6 @@ Real Systems
    :maxdepth: 1
 
    Create
+   SMP
 
-.. Note::  Add other robots
+.. Note::  Add SMP and other robots

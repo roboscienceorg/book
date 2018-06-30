@@ -257,7 +257,7 @@ Laboratory at Tohoku Gakuin University.
 
    Omniwheel balancing robot
 
-|
+
 
 .. figure:: MotionFigures/goodyearsphere.jpg
    :width: 60%
@@ -299,3 +299,114 @@ modeling is more difficult than with wheels. Modeling the skid-steer
 turns requires details about the track system and the surface. Since
 rocks, mud and other aspects of the surface can have significant effects
 on turning friction, models have limited utility.
+
+
+
+Legs
+----
+
+We now move over to a more biological approach. The use of legs in
+locomotion has been very successful. Animals range in sizes from single
+millimeter to multiple meter range. Legs have proved invaluable at many
+space and speed dimensions. In the robotics view, a leg is articulated
+manipulator (serial chain). This means that it requires many of the same
+controls that a robot arm would require, but adapted to the specific
+task of moving the robot. Although a hobby level robot can implement 6
+simple articulators to produce insect like motion, getting natural,
+efficient, robust and fast bipedal and quadrupedal motion is very
+difficult.
+
+Aspects of Articulated Based Motion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Engineers are experimenting with 2 - 8 leg designs to learn more about
+articulator locomotion as well as what it can teach us about the animals
+that have similar designs. We know that for static stability, at least
+three points of contact are required. So, three legs are required to
+stand still. When we move, some of the legs must move forward to
+initiate the gait. If we want three points on the ground, this means six
+legs is the minimum for stable walking. Robots using six or more legs do
+not need a balance control system.
+
+Systems using four legs have a static balance when still, but must use a
+dynamic control approach to maintain balance during the step. This is a
+variation of the inverted pendulum problem which is discussed in the
+chapter on motion control.
+Finally our system of using two legs requires a control system for
+moving and standing.
+
+
+.. figure:: MotionFigures/legs.png
+   :align: center
+   :width: 50%
+
+Increasing the number of legs will increase weight, power requirements,
+coordination problems and control hardware. Adding legs, as mentioned
+before, will help with stability and provide a greater number of contact
+points. Increasing ground contact can increase traction and robustness,
+depending on the contact area, angle of contact, friction, surface
+roughness and friction. For static stability we want the center of mass
+to fall inside the span of the legs. Unlike wheels, the center of mass
+for a leg moves up and down as the robot walks. This decreases power
+efficiency, increases the chance of a shifting center of gravity which
+makes path planing more difficult. In complicated environments, one may
+have to plan the motion of each articulator. The configuration space for
+a 6 legged robot with three servos is 18, which is rather large for path
+planning and might fail due to size.
+
+
+.. figure:: MotionFigures/legjoint.png
+   :width: 50%
+   :align: center
+
+   Leg joints and their use.
+
+-  | Two DOF is required:
+   | lift and swing
+
+-  | Three DOF is needed in most cases:
+   | lift, swing and position
+
+-  | Fourth DOF is needed for stability:
+   | ankle joint - improves balance and walking
+
+Consider a humanoid robot. How complex are they? A leg has a hip (two
+degrees of freedom) and knee plus ankle which gives another two degrees
+of freedom. So a leg is a 4 DOF (degrees of freedom) structure. An arm
+is at least 5 DOF. A head has pan and tilt so at least 2 DOF. This adds
+up to 20 DOF for a humanoid style robot. Motion planning and control is
+challenging for high DOF robots. Good tools for doing this is an active
+area of research.
+
+
+.. figure:: MotionFigures/humanoid.png
+
+There are several attempts to combine legs and wheels. The Shrimp is one
+such design, :numref:`shrimp`. Many fun and interesting
+innovations come from the suspension system. Adaptive (passive or
+active) suspension is a current area of development,
+:numref:`adaptivesuspension`.  Other lines of
+development look to blending sensing with the wheel or suspension
+system. One example is the flexible wheel,
+:numnref:`flexiwheel`.
+
+.. _`shrimp`:
+.. figure:: MotionFigures/shrimp.png
+   :alt: Walking Wheels[shrimp]
+   :width: 50%
+
+   Walking Wheels
+
+.. _`adaptivesuspension`:
+.. figure:: MotionFigures/adaptivesuspension.png
+   :align: center
+   :width: 80%
+
+   Adaptive Suspension
+
+.. _`flexiwheel`:
+.. figure:: MotionFigures/flexiwheel.png
+   :align: center
+   :width: 30%
+
+   Flexible Wheel

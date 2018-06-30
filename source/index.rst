@@ -29,13 +29,15 @@ Introduction to Robotics
    Real Systems <RealSystems/index>
    Electronics <Electrical/index>
    Sensors and Sensing <Sensors/index>
-   Computer Vision <Vision/index>
+   Computer Vision and Machine Learning <Vision/index>
    Kinematic Modeling <Kinematics/index>
    Motion Control <Control/index>
+   Articulated Systems <Manipulators/index>
    System Integration <System/index>
    Sensor Filtering <Filtering/index>
    Kalman and Particle Filters <AdvFiltering/index>
    Motion Planning <Planning/index>
+   Localization and Mapping <Localization/index>
    Robot Design <Design/index>
    References <ZZReferences/zrefs>
 
@@ -45,7 +47,7 @@ Introduction to Robotics
    :caption: Appendices
    :titlesonly:
 
-   Appendix <Appendix/AppendixA>
+   AppendixA <Appendix/AppendixA>
    Mathematical Background <Math/index>
    The SciPy Library <SciPy/index>
    Simulation Tools <SimTools/index>

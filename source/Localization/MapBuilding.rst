@@ -1,7 +1,7 @@
 Map Building
 ------------
 
-This section under development.
+.. Note:: This section under development.
 
 Review some of the issue around building maps.
 
@@ -64,11 +64,13 @@ Preliminaries
 -  Correlate local and global coordinate systems:
    :math:`\begin{pmatrix}x & y & \theta\end{pmatrix}^T`
 
-.. figure:: sensor/coords.png
-   :alt: Coordinate transforms to relate observed obstacle to global
-   map.
+
+.. figure:: LocalizationFigures/coords.png
+   :align: center
+   :width: 50%
 
    Coordinate transforms to relate observed obstacle to global map.
+
 
 .. math::
 
@@ -92,8 +94,7 @@ Preliminaries
 
    -  Find the angle between the two differenced vectors.
 
-   -  Thus :math:`\overline{m} = \frac{1}{2N} \sum \left( m[i][j] +
-        m_{\mbox{local}}[i][j]\right)`.
+   -  Thus :math:`\overline{m} = \frac{1}{2N} \sum \left( m[i][j] + m_{\mbox{local}}[i][j]\right)`.
 
    -  Define
 
@@ -103,17 +104,13 @@ Preliminaries
 
 Can you do template matching on this? How about ICP?
 
-.. raw:: latex
 
-   \centering
+.. figure:: LocalizationFigures/map5.png
 
-|image|
 
-.. raw:: latex
+Where does this fit:
 
-   \centering
-
-Where does this fit: |image|
+.. figure:: LocalizationFigures/map5_cut.png
 
 **Extract features from measurements.**
 
@@ -171,9 +168,3 @@ To compute the probability of a feature corresponding to known landmark:
 #. :math:`\hat{\phi}^i_t =\displaystyle\mbox{atan}\left(\frac{m_{j,y}-y}{m_{j,x}-x}\right) - \theta`
 
 #. :math:`q = \mbox{Gauss}(r^i_t-\hat{r})\mbox{Gauss}(\phi^i_t-\hat{\phi}) \mbox{Gauss}(s^i_t-\hat{s})`
-
-.. |Single and Multiple Hypotheses.| image:: localization/singlehypothesis
-.. |Single and Multiple Hypotheses.| image:: localization/multihypothesis
-.. |image| image:: roadmap/map5.png
-.. |image| image:: roadmap/map5_cut.png
-
