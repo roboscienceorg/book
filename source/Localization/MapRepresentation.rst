@@ -1,7 +1,8 @@
 Map Representation
 ------------------
 
-.. Note:: This section under development.
+.. Note:: This section under development.   Might be best to move this to the
+   simulation section.   
 
 The representation of the environment is reflected in the map. We have
 discussed several methods earlier such as metric or continuous

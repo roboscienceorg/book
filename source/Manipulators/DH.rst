@@ -1,6 +1,31 @@
 Denavit-Hartenberg Parameters
 -----------------------------
 
+.. Note::  Again, these are converted slides and need to be written up
+   properly.   The slow part for these sections is getting good images created.
+
+
+Given joint angles and actuator lengths it is straightforward to compute
+end effector position. Thus it is possible to compute the effector path as a
+function of arm movements.
+
+.. math::
+
+   \begin{pmatrix} \theta_1(t), ... , \theta_n(t)
+              \end{pmatrix}\to p(t)
+
+It is MUCH harder to find the angle functions if you are given the end
+effector path:
+
+.. math::
+
+   p(t) \to \begin{pmatrix} \theta_1(t), ... , \theta_n(t)
+              \end{pmatrix}
+
+
+DH formalism
+~~~~~~~~~~~~~~~~
+
 | Provides a standard way to build kinematic models for a robot.
 | Simple concept.
 | Follow out the links of the manipulator, and see them as rotations and

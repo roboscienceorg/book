@@ -14,7 +14,8 @@ decade of running the class and correcting those errors.
 The goal of this text is several fold.   First, there are limited offerings
 in this space.   You can find K-12 materials on robots, especially with
 the Lego system, easily on the internet.  There is a ton of hobbyist
-sites (Arduino, etc) that are fabulous.  Both lack the completeness
+sites (Arduino, Raspberry Pi, etc) that are fabulous.  The problem is that they
+lack the completeness
 and rigor needed for a college course.  Since robotics is a research
 area, finding graduate level references is not hard, but we have the
 opposite problem of that being too difficult or not sufficiently
@@ -36,7 +37,12 @@ We have worked to balance theory with practice since it seems to help
 the learning and retention process.  There is some mixing of
 topics to keep student interest.  Earlier versions of the course were
 partitioned over fields and application.   Students liked having material
-mixed and then progressing in level.
+mixed and then progressing in level.    So, because of this, the ordering
+of chapters might not be as expected.  We have worked hard to get the student
+up and running in virtual as well as real robots as soon as practical.  Some
+theoretical (important) material is left to later in the text.  One benefit
+is that when students try the simple approaches, and those fail, they more
+easily understand the more advanced and mathematical approaches later. 
 
 It is easier to limit or focus the students
 in the class.  However, a diversity of students makes for a better course.
