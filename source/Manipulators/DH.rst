@@ -5,7 +5,7 @@ Denavit-Hartenberg Parameters
    properly.   The slow part for these sections is getting good images created.
 
 
-Given joint angles and actuator lengths it is straightforward to compute
+Given joint angles and actuator lengths one can compute the
 end effector position. Thus it is possible to compute the effector path as a
 function of arm movements.
 
@@ -14,7 +14,7 @@ function of arm movements.
    \begin{pmatrix} \theta_1(t), ... , \theta_n(t)
               \end{pmatrix}\to p(t)
 
-It is MUCH harder to find the angle functions if you are given the end
+However it is MUCH harder to find the angle functions if you are given the end
 effector path:
 
 .. math::
@@ -23,13 +23,22 @@ effector path:
               \end{pmatrix}
 
 
-DH formalism
-~~~~~~~~~~~~~~~~
+A simple way to relate the end effector to the base for a serial chain
+manipulator is to see each link as a transformation of the base coordinate
+system.  This is the approach suggested by Denavit and Hartenberg.
 
-| Provides a standard way to build kinematic models for a robot.
-| Simple concept.
-| Follow out the links of the manipulator, and see them as rotations and
-  translations of the coordinate system:
+
+Denavit-Hartenberg formalism
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Provides a standard way to build kinematic models for a robot.
+It is a simple concept and the complexity is hidden in the composition
+of linear transformations.  This provides a powerful way to generate
+the kinematic equations in a consistent form.
+
+As suggested above, we follow out the links of the manipulator,
+and see them as rotations and
+translations of the coordinate system:
 
   .. math:: P = P_0 P_1 ...P_{n-1} P_n
 
@@ -62,9 +71,9 @@ translation, translation and a rotation:
 
 -  Rotate about the local z axis angle :math:`\theta`.
 
--  Translate along the z axis amount :math:`d`.
+-  Translate (offset) along the z axis amount :math:`d`.
 
--  Translate along x amount :math:`a`.
+-  Translate (link length) along x amount :math:`a`.
 
 -  Rotate about the new x axis (the joint twist) amount :math:`\alpha`.
 
