@@ -42,7 +42,7 @@ Roboticists often view robots as systems comprised of three components:
 **perception, cognition and actuation**. One could break a text down
 into those three major components. Although it has a certain taxonomic
 appeal, the reality is that these aspects are intertwined and should be
-studied together.
+studied together.  We are finding that in robotics, they must be integrated.
 
 A simplistic taxonomy
 ~~~~~~~~~~~~~~~~~~~~~
@@ -438,3 +438,27 @@ more like random number generators than physical sensors. From moment to
 moment, the picture that an autonomous system has changes due to the
 noise of the sensors. The noise needs to be filtered out while keeping
 relevant data and doing so quickly.
+
+
+Symbiotic Autonomy
+~~~~~~~~~~~~~~~~~~~
+
+The thrust has been to
+attempt solutions to each aspect of the chain of challenges a
+robot will face.   However, current machine learning cannot resolve solutions
+to all of the
+challenges facing an autonomous machine.   So, to mimic how humans would
+address this problem would be to ask another person - either for information
+or actual assistance.   Consider a mail delivery robot that needs to operate
+in a building with an older elevator.  The elevator has a simple push
+button system to call the elevator.    For the robot to move from floor to
+floor, we might want to add the ability to the robot to use the elevator.
+One solution would be to augment the elevator system to talk to the robot
+over wifi or similar.  This would work for one system, but in general since
+we cannot go and overhaul all of the elevators. Another approach might
+be to add some type of manipulator.  This requires a robotic arm, control
+system and vision system.  However a very simple solution is to ask a nearby
+human to press the button.  Although this is a simple thing, it illustrates
+that a robot does not need all of the expertise and capabilty.  It can ask
+the internet, other robots or humans around for information.  It can ask humans
+for physical assistance.  We will call this symbiotic autonomy.  

@@ -388,7 +388,7 @@ active) suspension is a current area of development,
 :numref:`adaptivesuspension`.  Other lines of
 development look to blending sensing with the wheel or suspension
 system. One example is the flexible wheel,
-:numnref:`flexiwheel`.
+:numref:`flexiwheel`.
 
 .. _`shrimp`:
 .. figure:: MotionFigures/shrimp.png

@@ -108,6 +108,7 @@ modeled after our own capability.
 
 
 .. Public domain
+
 .. figure:: IntroductionFigures/vision_redobjs.*
    :width: 90%
    :align: center
@@ -118,6 +119,7 @@ modeled after our own capability.
 
 
 .. Public domain
+
 .. figure:: IntroductionFigures/road.*
    :width: 90%
    :align: center
@@ -463,3 +465,27 @@ We tend to use animals as models for robot capability. Placing a rodent
 in a maze was done early on to test memory and learning skills. It gives
 a benchmark to compare robot and animal capability, as well as providing
 a comparison.
+
+Transparency and Verbalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When we send an autonomous machine out to perform some task, we may need
+information from the robot about the details and decisions that occurred
+during the task.  We may need to know why the robot was late on arrival
+or why it did not retrieve the requested item.  Or maybe we need to know
+updates on the environment that was just sensed.  The concept of transparency
+is to provide the humans interacting with the robots the information about how
+the task was performed just like we do with each other.  For example, when
+a friend says "sorry I am late, I was delaye dby traffic".
+
+Robots are capable of logging everything. All of the
+sensory data, the internal and external configuration data, decisions based
+on that data and so on.  All of this is stored in large files populated
+by numbers.  For humans this is not very useful.   Imagine your late arriving
+friend giving you a gigabyte of data that contains freeway traffic density
+and velocities of 50 millisecond samples.  We want our robots to convert this
+into human terms.  We want the robot to say "due to high volume of cars, the
+traffic slowed down and I was delayed."   This is known as verbalization.
+It is an application of natural language processing applied to the data logs
+in the robot.   It is an active but important intersection of co-robotics
+and machine learning.
