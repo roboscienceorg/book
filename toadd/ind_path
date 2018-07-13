@@ -1,0 +1,63 @@
+If the mixed partial approach is not working out,
+we can borrow the concepts of independence of path and
+conservative vector fields from calculus.
+Equation :eq:`eq:differential` is related to the
+differential form you studied in line integrals.
+
+.. math::
+   :label:  eq:differentialform
+
+   df = \sum_{i=1}^{n} a_i (x,t) d x_i + a_t(x,t) dt .
+
+To be a holonomic constraint, we need that
+Equation :eq:`eq:differentialform` to be a total
+derivative (exact differential) or that by using an integrating factor
+can be made into a total derivative (exact differential). If you are
+able to convert an expression to the form in
+Equation :eq:`eq:holonomicdefn` then we know that we
+have a holonomic constraint.
+
+Maybe the expression is not holonomic or you just don’t see how to
+integrate it. Recall that this is related to the independence of path
+concept from calculus. There you could integrate over different paths
+(same start and end points). If the values differed, then you did not
+have independence of path meaning you did not have an exact differential
+(stated in Calculus as lacking a potential function). Let :math:`C_1`
+and :math:`C_2` be two parameterizations of two different paths with the
+same starting and ending points. Then if the path integrals differ:
+
+.. math:: \int_{C_1} F \neq \int_{C_2} F
+
+the expression (constraint) does not have a holonomic representation.
+
+**Example:** Which of the following are holonomic?
+
+
+#. The constraint :math:`x_1 \dot{x}_1 + \dot{x}_1 \dot{x}_2 = 0`? We
+   see that the velocity terms are not expressed linearly so this is not
+   non-holonomic. We illustrate the idea of integrating over two paths
+   to show how that idea works. Define :math:`C_1` to the the path from
+   (0,0) to (1,1) via :math:`x_1(t)=t`, :math:`x_2(t)=t`,
+   :math:`0\leq t \leq 1`. Define :math:`C_2` to be the path
+   :math:`x_1(t)=t`, :math:`x_2(t)=0`, :math:`0\leq t \leq 1` plus
+   :math:`x_1(t)=1`, :math:`x_2(t) = t`, :math:`0\leq t \leq 1`. The
+   line integral of the constraint
+   :math:`F = x_1 \dot{x}_1 + \dot{x}_1 \dot{x}_2` over the two paths
+   gives
+
+   .. math:: \int_{C_1} F \neq \int_{C_2} F
+
+   which implies the constraint cannot be an exact derivative of some
+   potential. This confirms that the constraint is not holonomic.
+
+
+#. The constraint :math:`(x_1 + x_2 )\dot{x}_1 + (2x_1)\dot{x}_2= 0`.
+   This is linear. Using the same paths as the example 2, the line
+   integral of the constraint
+   :math:`F = (x_1 + x_2 )\dot{x}_1 + (2x_1)\dot{x}_2` over the two
+   paths gives
+
+   .. math:: \int_{C_1} F \neq \int_{C_2} F.
+
+   Thus this is not holonomic.
+

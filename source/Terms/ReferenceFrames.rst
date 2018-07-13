@@ -124,21 +124,40 @@ Kinematic Constraints
 
 A constraint is called kinematic if one can express it as
 
-.. math:: F(x_1, x_2, \dots, x_n, \dot{x}_1, \dot{x}_2, \dots , \dot{x}_n, t)=0
+.. math:: f(x_1, x_2, \dots, x_n, \dot{x}_1, \dot{x}_2, \dots , \dot{x}_n, t)=0
 
-:math:`F` is a function in phase space for the system. This constraint
+:math:`f` is a function in phase space for the system. This constraint
 places restrictions on motion through the expression relating velocities
 and positions.
+
+Pfaffian Constraints
+^^^^^^^^^^^^^^^^^^^^^
+
+Often the constraints appear linear in the velocity terms as
+
+.. math:: \sum_i F_i(x) \dot{x}_i = 0
+
+and are known as Pfaffian constraints.  This can be written as
+:math:`F \cdot \dot{x} = 0`.  Which states that the motion of the
+system, :math:`\dot{x}`, is orthogonal to the vector field :math:`F`.  For
+multiple constraints, these can be bundled as rows into a constraint
+matrix :math:`\bf{F}`:
+
+.. math:: {\bf F} \dot{x} = 0
+
+so the motion :math:`\dot{x}` is along the nullspace of :math:`\bf F`.
+
 
 Holonomic Constraints
 ^^^^^^^^^^^^^^^^^^^^^
 
-A constraint is called :index:`holonomic` (or geometric) if one can express it as
+A constraint is called :index:`holonomic` (or geometric) if it is integrable
+or one can express it as
 
 .. math::
    :label: eq:holonomicdefn
 
-   f(x_1, x_2, \dots , x_n, t)=0
+   h(x_1, x_2, \dots , x_n, t)=0
 
 A holonomic constraint only depends on the coordinates and time and
 does not depend on derivatives. If all the system constraints are
@@ -155,8 +174,27 @@ non-holonomic:
     of the path, the system itself may not have returned to its original
     state.
 
-Holonomic may be used to reduce the number of degrees of freedom. For
-example, if we want to remove :math:`{\displaystyle x_{k}\,\!}` in the
+A holonomic constraint implies a kinematic constraint:
+
+.. math::  \frac{d h(x)}{dt} = \sum_{i=1}^n \frac{\partial h(x)}{\partial x_i} \dot{x}_i
+   = \sum_i f_i(x) \dot{x}_i , ~~ \mbox{where} ~~ f_i(x) = \frac{\partial h(x)}{\partial x_i}
+
+But it is not true in general the other way around. It should
+be clear that if the expression is not in Pfaffian form, then it cannot integrated.
+This integrability
+is a special case.  If the Pfaffian expression, :math:`\sum_i f_i(x) \dot{x}_i`
+is holonomic, then using a non-zero
+integrating factor :math:`\sigma(x)`, we can integrate and express as
+
+.. math:: H(x) = c
+
+This implies that the mechanical system is constrained to a level surface
+of :math:`H` which depends on the initial configuration of the system.  This
+reduces the degrees of freedom to :math:`n-1`.  Having k holonomic constraints
+then reduces the degrees of freedom to :math:`n-k`.
+
+An example of how a holonomic constraint may be used to reduce the number of
+degrees of freedom is helpful. If we want to remove :math:`{\displaystyle x_{k}\,\!}` in the
 constraint equation :math:`{\displaystyle f_{i}\,\!}` we algebraically
 rearrange the expression into the form
 
@@ -187,91 +225,157 @@ robot. Non-holonomic constraints restrict the motion without restricting
 the workspace. Holonomic constraints reduce the dimensionality of the
 workspace and restricts the motion of the robot.
 
+Integrability Conditions
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 If the kinematic constraint is holonomic, then it comes from
-differentiating some function :math:`f(t,x)`. We consider first order
+differentiating some function :math:`f(t,x)`. So, we consider only first order
 expressions,
 
 .. math::
    :label: eq:differential
 
-   \frac{df}{dt} = \sum_{i=1}^{n} a_i (x,t) \dot{x_i} + a_t(x,t) .
+   \frac{df}{dt} = \sum_{i=1}^{n} \frac{\partial f(t,x)}{\partial x_i} \dot{x_i}
+   + \frac{\partial f(t,x)}{\partial t}
+   = \sum_{i=1}^{n} a_i (x,t) \dot{x_i} + a_t(x,t) =0.
 
-These expressions are linear in the velocity terms, :math:`\dot{x_i}`.
+These expressions are Pfaffian (linear in the velocity terms, :math:`\dot{x_i}`).
 If your kinematic expression is nonlinear in velocities terms, it did
 not come from differentiation of a holonomic constraint. That is enough
-to eliminate many expressions as candidates. If one is in doubt about an
-expression, we can borrow the concepts of independence of path and
-conservative vector fields from calculus.
-Equation :eq:`eq:differential` is related to the
-differential form you studied in line integrals.
+to eliminate many expressions as candidates.
+
+Since the terms :math:`a_i` are the partials :math:`\partial f / \partial x_i`,
+the mixed partials
+are equal
+
+.. math::  \frac{\partial^2 f}{\partial x_i \partial x_j}
+   = \frac{\partial^2 f}{\partial x_j \partial x_i} \Rightarrow
+   \frac{\partial a_j}{\partial x_i} = \frac{\partial a_i}{\partial x_j}
+
+Because the constraints are set to zero, it is possible that a common
+factor has been divided out
+
+.. math::  \sum_{i=1}^{n} a_i (x,t) \dot{x_i} + a_t(x,t)
+   = \sum_{i=1}^{n} \sigma(x) b_i (x,t) \dot{x_i} + \sigma(x) b_t(x,t)
+   = \sigma(x) \sum_{i=1}^{n} b_i (x,t) \dot{x_i} + b_t(x,t) = 0
 
 .. math::
-   :label:  eq:differentialform
+   \Rightarrow  \sum_{i=1}^{n} b_i (x,t) \dot{x_i} + b_t(x,t) = 0
 
-   df = \sum_{i=1}^{n} a_i (x,t) d x_i + a_t(x,t) dt .
+when :math:`\sigma(x) \neq 0`.
 
-To be a holonomic constraint, we need that
-Equation :eq:`eq:differentialform` to be a total
-derivative (exact differential) or that by using an integrating factor
-can be made into a total derivative (exact differential). If you are
-able to convert an expression to the form in
-Equation :eq:`eq:holonomicdefn` then we know that we
-have a holonomic constraint.
+The term :math:`\sigma` is known as an integrating factor and it complicates
+the second partial test.   Given a Pfaffian expression,
 
-Maybe the expression is not holonomic or you just don’t see how to
-integrate it. Recall that this is related to the independence of path
-concept from calculus. There you could integrate over different paths
-(same start and end points). If the values differed, then you did not
-have independence of path meaning you did not have an exact differential
-(stated in Calculus as lacking a potential function). Let :math:`C_1`
-and :math:`C_2` be two parameterizations of two different paths with the
-same starting and ending points. Then if the path integrals differ:
+.. math::
+   \sum_{i=1}^{n} b_i (x,t) \dot{x_i} + b_t(x,t) = 0
 
-.. math:: \int_{C_1} F \neq \int_{C_2} F
+the second partial test appears as
 
-the expression (constraint) does not have a holonomic representation.
+.. math::
+   :label:  holonomycondition
 
-**Example:** Which of the following are holonomic?
+   \frac{\partial \left( \sigma(x)b_j \right)}{\partial x_i}
+   = \frac{\partial \left( \sigma(x)b_i \right)}{\partial x_j}
 
-#. The constraint
-   :math:`x_1 \dot{x}_1 + x_2 \dot{x}_2 + x_3 \dot{x}_3 = 1`? This
-   constraint can be integrated to :math:`x_1^2 + x_2^2 + x_3^2 = 2t`.
-   This can be expressed as
 
-   .. math:: x_1^2 + x_2^2 + x_3^2 - 2t = 0
+**Examples**:  are the following holonomic?
 
+#. :math:`x_2\dot{x_1} + x_1\dot{x_2} = 0`.  Since
+
+   .. math::  \frac{\partial (x_2)}{\partial x_2} =  \frac{\partial (x_1)}{\partial x_1} \Rightarrow 1 = 1
+
+   it is holonomic.  Integrate the first expression wrt to :math:`x_1` and we obtain
+   :math:`h(x) = x_1x_2 + c`.  Differentiate wrt to :math:`x_2` to verify no missing terms.
+
+#. :math:`x_1 \dot{x}_1 + x_2 \dot{x}_2 + x_3 \dot{x}_3 = 0`.
+   There are several mixed partials to check.  This
+   constraint can be integrated to :math:`x_1^2 + x_2^2 + x_3^2 = c`.
    which means this is a holonomic constraint.
 
-#. The constraint :math:`x_1 \dot{x}_1 + \dot{x}_1 \dot{x}_2 = 0`? We
-   see that the velocity terms are not expressed linearly so this is not
-   non-holonomic. We illustrate the idea of integrating over two paths
-   to show how that idea works. Define :math:`C_1` to the the path from
-   (0,0) to (1,1) via :math:`x_1(t)=t`, :math:`x_2(t)=t`,
-   :math:`0\leq t \leq 1`. Define :math:`C_2` to be the path
-   :math:`x_1(t)=t`, :math:`x_2(t)=0`, :math:`0\leq t \leq 1` plus
-   :math:`x_1(t)=1`, :math:`x_2(t) = t`, :math:`0\leq t \leq 1`. The
-   line integral of the constraint
-   :math:`F = x_1 \dot{x}_1 + \dot{x}_1 \dot{x}_2` over the two paths
-   gives
+#. :math:`\dot{x}_1/x_2 + \dot{x}_2 / x_1 = 0`
+   Note that the mixed partials do not agree.   Multiply the expression
+   by :math:`x_1x_2` (a guess) and check
 
-   .. math:: \int_{C_1} F \neq \int_{C_2} F
+   .. math::  \frac{\partial (x_1)}{\partial x_2} =  \frac{\partial (x_2)}{\partial x_1}
 
-   which implies the constraint cannot be an exact derivative of some
-   potential. This confirms that the constraint is not holonomic.
+   So the term :math:`x_1x_2` is called the integrating factor and the
+   constraint is holonomic.
 
-#. The constraint :math:`x_1 \dot{x}_2 + x_2 \dot{x}_1 = 0`? This one
-   can be expressed as :math:`d/dt~[ x_1 x_2 ] = 0`. This can be
-   integrated to :math:`x_1x_2 = k` and hence is holonomic.
+#. :math:`x_1\dot{x_1} + x_1x_2\dot{x_2} = 0`
+   We try guessing a couple of integrating factors but none succeed.   We seek a function :math:`\sigma(x)` so that
 
-#. The constraint :math:`(x_1 + x_2 )\dot{x}_1 + (2x_1)\dot{x}_2= 0`.
-   This is linear. Using the same paths as the example 2, the line
-   integral of the constraint
-   :math:`F = (x_1 + x_2 )\dot{x}_1 + (2x_1)\dot{x}_2` over the two
-   paths gives
+   .. math::  \frac{\partial (\sigma (x) x_1)}{\partial x_2} =  \frac{\partial (\sigma(x)x_1 x_2)}{\partial x_1}
 
-   .. math:: \int_{C_1} F \neq \int_{C_2} F.
+   Expand and solve for :math:`\sigma`
 
-   \ Thus this is not holonomic.
+   .. math::  \frac{\partial (\sigma (x) x_1)}{\partial x_2} = x_1 \frac{\partial (\sigma (x))}{\partial x_2}
+
+   and
+
+   .. math::  \frac{\partial (\sigma(x)x_1 x_2)}{\partial x_1} = x_1 x_2\frac{\partial (\sigma (x))}{\partial x_1} + \sigma(x) x_2
+
+   We can equate these
+
+   .. math::  x_1\frac{\partial (\sigma (x))}{\partial x_2} = x_1 x_2\frac{\partial (\sigma (x))}{\partial x_1} + \sigma(x) x_2
+
+   We try a simplification by assuming a form on :math:`\sigma(x) = \sigma_1(x_1)\sigma_2(x_2)`.
+   Divide the entire expression by :math:`\sigma_1(x_1)\sigma_2(x_2)x_1x_2` and we obtain
+
+   .. math::  \frac{1}{x_2 \sigma_2}\frac{\partial (\sigma_2 )}{\partial x_2} = \frac{1}{\sigma_1}\frac{\partial (\sigma_1)}{\partial x_1} + \frac{1}{x_1}
+
+   The right side is a function of only :math:`x_1` and the left side only of :math:`x_2`.  The only way for them
+   to be equal is if they are constant.  Set each side to a constant, :math:`\lambda` and solve the two resulting
+   ordinary differential equations.  This gives us both :math:`\sigma`'s.
+
+   .. math::  \sigma_1 = \frac{c_1}{x_1}e^{\lambda x_1} , ~~ \sigma_2 = c_2 e^{\lambda x_2^2/2}
+      \Rightarrow  \sigma = \frac{c}{x_1}e^{\lambda (x_1 - x_2^2/2)}
+
+   So we conclude this expression is holonomic.  We also see that this was a very complicated route and there were multiple
+   stages in which this process would stall.  The general approach to finding an integrating factor requires finding an analytic
+   solution to a quasi-linear first order partial differential equation which in general is not possible.  In our application
+   we try a few tricks to solve for the integrating factor and then look to see if we can prove none exists.  The next example
+   will illustrate this.
+
+#. :math:`\dot{x_1} + \dot{x_2} + x_1\dot{x_3} = 0`.  Using :eq:`holonomycondition` we gain the following equations
+
+   .. math:: \frac{\partial \sigma}{\partial x_2} = \frac{\partial \sigma}{\partial x_1}
+
+   .. math:: \frac{\partial \sigma}{\partial x_3} = \sigma + x_1\frac{\partial \sigma}{\partial x_1}
+
+   .. math:: \frac{\partial \sigma}{\partial x_3} = x_1\frac{\partial \sigma}{\partial x_2}
+
+   Setting the second two equations equal
+
+   .. math:: \sigma + x_1\frac{\partial \sigma}{\partial x_1} = x_1\frac{\partial \sigma}{\partial x_2}
+
+   Then use the first equation
+
+   .. math:: \sigma + x_1\frac{\partial \sigma}{\partial x_1} = x_1\frac{\partial \sigma}{\partial x_1}
+
+   one concludes that :math:`\sigma \equiv 0` and so this constraint is *non-holonomic*.
+
+#. The vertical rolling wheel produces a constraint of the form :math:`\sin \theta \dot{x} - \cos\theta \dot{y} = 0` where
+   :math:`(x,y)` is the location of the wheel (contact point) in the plane and :math:`\theta` is the orientation of the wheel.
+   [This will be discussed in detail later.]
+
+   Apply :eq:`holonomycondition` and we have
+
+   .. math:: \sin\theta \frac{\partial \sigma}{\partial y} = -\cos\theta \frac{\partial \sigma}{\partial x}
+
+   .. math:: \cos\theta \frac{\partial \sigma}{\partial \theta} = \sigma \sin\theta
+
+   .. math:: \sin\theta \frac{\partial \sigma}{\partial \theta} = -\sigma \cos\theta
+
+   Squaring the last two equations and adding together, we gain :math:`\partial \sigma / \partial \theta = \pm \sigma`
+   and plugging this back in to either gives :math:`\pm (\cos\theta) \sigma = (\sin\theta) \sigma`.  As with the previous example
+   we can conclude that :math:`\sigma = 0` so the constraint is non-holonomic.
+
+
+Systems of Pfaffian constraints are a more complicated matter.  It is possible to have a collection of constraints which are individually
+non-holonomic, but the collection turns out to be integrable.   The theory is outside the scope of this text and when we need a result
+we will quote the literature. 
+
 
 Forward Position Kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^

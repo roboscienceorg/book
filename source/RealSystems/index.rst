@@ -8,6 +8,7 @@ Real Systems
 .. toctree::
    :maxdepth: 1
 
+   Custom
    Create
    SMP
 
