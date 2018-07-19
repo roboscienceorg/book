@@ -223,7 +223,10 @@ holonomic robots, the controllable degrees of freedom is equal to total
 degrees of freedom. Kinematic constraints restrict movement of the
 robot. Non-holonomic constraints restrict the motion without restricting
 the workspace. Holonomic constraints reduce the dimensionality of the
-workspace and restricts the motion of the robot.
+workspace and restricts the motion of the robot.   Having a non-holonomic
+constraint means that there are restrictions on velocity but less so on
+position.  So local movement is restricted, but global positioning is less
+resricted.  
 
 Integrability Conditions
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -374,7 +377,7 @@ the second partial test appears as
 
 Systems of Pfaffian constraints are a more complicated matter.  It is possible to have a collection of constraints which are individually
 non-holonomic, but the collection turns out to be integrable.   The theory is outside the scope of this text and when we need a result
-we will quote the literature. 
+we will quote the literature.
 
 
 Forward Position Kinematics
