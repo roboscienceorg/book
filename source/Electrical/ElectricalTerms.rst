@@ -47,6 +47,102 @@ fundamental components are given in :numref:`fig:resistor`,
    :math:`V = \displaystyle L\frac{di}{dt}` (think of a flywheel in the
    pipe.) (a) Element (b) Inductor circuit diagram.
 
+.. list-table:: Resistor color codes
+   :widths:  15 12 12 12 20 12
+   :header-rows: 1
+   :align: center
+
+   * - Color
+     - 1st Band
+     - 2nd Band
+     - (3rd Band)
+     - Multiplier
+     - Tolerance
+   * - Black
+     - 0
+     - 0
+     - 0
+     - :math:`10^0` = 1
+     -
+   * - Brown
+     - 1
+     - 1
+     - 1
+     - :math:`10^1` = 10
+     - 1%
+   * - Red
+     - 2
+     - 2
+     - 2
+     - :math:`10^2` = 100
+     -
+   * - Orange
+     - 3
+     - 3
+     - 3
+     - :math:`10^3` = 1000
+     -
+   * - Yellow
+     - 4
+     - 4
+     - 4
+     - :math:`10^4` = 10000
+     -
+   * - Green
+     - 5
+     - 5
+     - 5
+     - :math:`10^5` = 100000
+     - 0.5%
+   * - Blue
+     - 6
+     - 6
+     - 6
+     - :math:`10^6` = 1000000
+     - 0.25%
+   * - Violet
+     - 7
+     - 7
+     - 7
+     - :math:`10^7` = 10000000
+     - 0.1%
+   * - Gray
+     - 8
+     - 8
+     - 8
+     - :math:`10^8` = 100000000
+     -
+   * - White
+     - 9
+     - 9
+     - 9
+     - :math:`10^9` = 1000000000
+     -
+   * - Gold
+     -
+     -
+     -
+     - :math:`10^{-1}` = 0.1
+     - 5%
+   * - Silver
+     -
+     -
+     -
+     - :math:`10^{-2}` = 0.01
+     - 10%
+
+.. _`resistorbands`:
+.. figure:: ElectricalFigures/resistorbands.*
+   :width: 30%
+   :align: center
+
+   The color bands on a resistor.  To read, you place the tolerance band to the
+   right (it is normally the band closest to the edge).  In this example we
+   have brown, black, red, gold.   This is a four band resistor.  The first
+   three bands (or four bands if it is a five band resistor)
+   will indicate resistance and the last will give tolerance.  Band 1
+   is brown (1), Band 2 is black (0) and band 3 is red (100):  10*100 = 1000 ohms
+   and 5% tolerance.
 
 
 The fundamental law in circuits is :index:`Ohm’s Law`,
@@ -144,13 +240,13 @@ out stream flow. These basic circuit devices are used in a common
 household circuits such as a power supply,
 :numref:`powersupply`.
 
-..  REDO THIS - not public domain
+
 .. _`powersupply`:
-.. figure:: ElectricalFigures/power1.*
-   :width: 90%
+.. figure:: ElectricalFigures/powersupply.*
+   :width: 80%
    :align: center
 
-   The power supply circuit.
+   The power supply circuit to provide a fixed 5 volts.
 
 In this circuit, wall power (alternating current at 115 volts) is fed
 into the left side. S1 is the symbol for the on/off switch. The next
@@ -315,8 +411,8 @@ voltage very carefully, because it decreases rapidly once the charge
 gets low.
 
 .. _`fig:lipovoltage`:
-.. figure:: ElectricalFigures/lipovoltage.*
-   :width: 50%
+.. figure:: ElectricalFigures/batterydischarge.*
+   :width: 40%
    :align: center
 
    LiPo Voltage VS Charge.

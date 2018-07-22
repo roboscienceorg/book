@@ -158,7 +158,10 @@ In reality the wave will not be square.  The light source and the sensitivity
 of the detector as well as the thresholding might trigger high for much greater
 percentage of the time. Sometimes their is sufficient light that
 the system never pulls low (or the opposite).  This is the reason you may need to use the pattern
-shown in :numref:`squarewave` (b).
+shown in :numref:`squarewave` (b).   Hooking the output of the sensor to a
+oscilloscope can give you an idea of the wave shape.   [You will need to run the
+motor and encoder.  Mount them, hook a power supply and then hook to the oscilloscope.
+If youn have a clean square wave - great.]
 
 There are two common ways that reading the GPIO input can be done.  One is known
 as :index:`polling` and the other as :index:`interrupts`. *Polling* requires that the hardware
@@ -239,15 +242,19 @@ and, you need to do this on both channels.
    :width: 75%
    :align: center
 
-   The two sensed waves that are 90 degrees out of phase.
+   The two square waves that are 90 degrees out of phase.
 
 Using a row of detectors and more complicated patterns, it is possible to
 create an :index:`absolute encoder`.  These encoders know position as well as velocity.
-This is important when absolute position is required.  A partial absolute system can
+This is important when absolute position is required.  Instead of a balck stripe
+a pattern of dots following the Grey code is used.  Grey code is popular because
+you only have one bit change with each increment or rotation.
+
+A partial absolute system can
 be easily added to any incremental encoder.  A third detector can look for a black or
 white dot on the outer part of the ring.  This can generate a pulse for each
 complete rotation of the wheel.  This will allow corrections to any possible
-counting or missed interrupts errors.  
+counting or missed interrupts errors.
 
 
 These designs are not limited
