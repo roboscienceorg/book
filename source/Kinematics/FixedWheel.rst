@@ -40,17 +40,10 @@ derivations will start in the robot or local coordinate system and so
 the velocity vectors will need to be rotated into the robot coordinates:
 :math:`\dot{\xi}_R = R(\theta)^{-1}\dot{\xi}_I`.
 
-There are two basic constraints we will apply to derive the kinematic
-equations. The first is *no slip* which will mean that the wheel has
-perfect traction and the distance around the wheel translates into the
-linear distance. This condition is broken when we lose traction on
-surfaces with ice, snow or mud. The next constraint is the *no slide*
-constraint. This constraint means that we always move in the direction
-the wheel is pointed and not in the axle direction. This constraint can
-be violated on slick surfaces where the rotational motion of the craft
-causes the vehicle to slide sideways. For this section we will assume
-that we have no slip and no slide conditions enforced for the basic
-wheel.
+Recall earlier we introduced the *no slip* and *no slide* constraints.
+Here we  will apply the two constraints to derive the fundamental kinematic
+equations for each wheel.  Those equations will be combined to build the
+equations of motion for the particular drive system and hence the vehicle.
 
 We begin with the no slip constraint. All of the motion of the vehicle
 must be accounted for by wheel motion. This means that the total motion

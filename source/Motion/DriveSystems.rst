@@ -1,7 +1,71 @@
 Drive Systems
 -------------
 
-The most common drive system in robotics is the differential drive.
+There are as many different drives systems as ways to mount wheels on frames.
+Well, almost.  What we will do here is to cover a few common designs and leave
+the more exotic systems to the mechanical engineering literature.  Vehicle
+design is fun and we could devote many pages to the subject.  However, in
+practice we really only see a limited number of drive systems and those are the
+one we will discuss. So, we get started with a simple system, the bicycle,
+which we will use to introduce some basic concepts.  Then we present the
+equations of motion for the differential drive, omniwheel designs and the
+front wheel steered designs.   The derivations for these systems are
+presented in the Kinematics chapter later on.
+
+Basic constraints and the ICR
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We will assume two basic contraints about our wheels.
+The first is *no slip* which will mean that the wheel has
+perfect traction and the distance around the wheel translates into the
+same linear distance. This condition is broken when we lose traction on
+surfaces with ice, snow or mud. The next constraint is the *no slide*
+constraint. This constraint means that we always move in the direction
+the wheel is pointed and not in the axle direction. This constraint can
+be violated on slick surfaces where the rotational motion of the craft
+causes the vehicle to slide sideways, again on ice, snow or mud.
+There are a couple of common vehicle designs that explicitly violate one
+or both conditions in order to turn.  Examples include tank or treaded
+systems and skid steer systems like Bobcats.  Many hobby robots have
+four driven but not steered wheels which are skid steer.  This is not
+a bad thing, just that we cannot use the kinematic equations based on the
+no slip / no slide to model steered motion.   In practice this is not
+a significant problem.
+
+.. figure:: MotionFigures/ICR0.*
+   :width: 15%
+   :align: center
+
+   No slide condition means the wheel motion is in the direction of v.  No
+   slip means the distance traveled is the same as the wheel arc distance traveled.
+
+The no-slide assumption means that there is no motion in the direction
+of the axle. All of the motion is perpendicular to the axle. This means
+for each wheel, the no slide constraint generates a zero motion line
+orthogonal to the wheel plane.
+
+
+The intersection of the zero motion
+lines is the ICR - Instantaneous Center of Rotation. Having a common
+intersection, an ICR, implies that each wheel is moving on a concentric
+circle. If the zero motion lines do not intersect at a single point,
+then no motion is possible when we have no-slip and no-slide for our
+wheels. We can easily see that this is the case for the simple steering
+approach shown above. The rear wheels have overlapping zero motion
+lines. The front wheels have parallel non-overlapping zero motion lines.
+
+
+.. figure:: MotionFigures/ICR1.*
+   :width: 70%
+   :align: center
+
+   ICR - Instantaneous Center of Rotation.
+
+
+Differential Drive
+~~~~~~~~~~~~~~~~~~
+
+One of the most common drive system in robotics is the differential drive.
 Differential drive is a two wheeled drive system. For stability a third
 support must be employed. A castor wheel or ball is normally used. The
 well known Rumba floor cleaning robot uses this system. It is stable,
@@ -16,11 +80,8 @@ variables involved in the model.
 
    The differential drive robot dimensions and variables.
 
-Differential Drive
-~~~~~~~~~~~~~~~~~~
-
 Recall the Differential Drive
-robot :numref:`fig:ddriveRecalled2`
+robot setup :numref:`fig:ddriveRecalled2`:
 
 .. _`fig:ddriveRecalled2`:
 .. figure:: MotionFigures/ddrive.*
@@ -343,26 +404,6 @@ has claim to the invention.
    and rotate at a different speed than the inside
    wheel.
 
-Recall that we had the no-slip and no-slide assumptions for our wheels.
-The no-slide assumption means that there is no motion in the direction
-of the axle. All of the motion is perpendicular to the axle. This means
-for each wheel, the sliding constraint generates a zero motion line
-(orthogonal to the wheel plane). The intersection of the zero motion
-lines is the ICR - Instantaneous Center of Rotation. Having a common
-intersection, an ICR, implies that each wheel is moving on a concentric
-circle. If the zero motion lines do not intersect at a single point,
-then no motion is possible when we have no-slip and no-slide for our
-wheels. We can easily see that this is the case for the simple steering
-approach shown above. The rear wheels have overlapping zero motion
-lines. The front wheels have parallel non-overlapping zero motion lines.
-
-
-.. figure:: MotionFigures/icr.*
-   :width: 60%
-   :align: center
-
-   ICR - Instantaneous Center of Rotation.
-
 To satisfy the constraint placed on by the ICR, the steering system must
 satisfy the Ackerman equation:
 
@@ -394,7 +435,7 @@ to the wheels is called the *kingpins*. The cross piece between the
 Kingpins is called the *tie rod*.
 
 
-.. figure:: MotionFigures/icr2.*
+.. figure:: MotionFigures/icr-acker.*
    :width: 60%
    :align: center
 
@@ -559,5 +600,3 @@ removes both financial and electrical costs associated with the
 eliminated systems. For the FWS system, we can purchase a normally
 locked brake. Power is applied only when adjustments are required thus
 removing the need for holding current.
-
-.. _sec:paths:

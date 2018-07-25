@@ -20,22 +20,22 @@ Introduction to Robotics
    :caption: Contents
 
 
-   Introduction to Robotics <Introduction/index>
-   Basic Terms and Concepts <Terms/index>
-   Robot Software and Robot Operating System <ROS/index>
-   Simulation Concepts and Tools <Simulation/index>
-   Navigation in Simple Domains <Navigation/index>
-   Vehicle Components, Systems and Motion <Motion/index>
-   Applications to Real Systems <RealSystems/index>
-   Basic Electrical Concepts and Electronics <Electrical/index>
+   Introduction <Introduction/index>
+   Basic Terms <Terms/index>
+   Robot Software <ROS/index>
+   Simulation <Simulation/index>
+   Navigation <Navigation/index>
+   Vehicle Motion <Motion/index>
+   Example Systems <RealSystems/index>
+   Electrical Concepts <Electrical/index>
    Sensors and Sensing <Sensors/index>
-   Computer Vision and Machine Learning <Vision/index>
-   Basic Motion Control <Control/index>
-   Robot Design, Safety and Security <Design/index>
+   Computer Vision <Vision/index>
+   Motion Control <Control/index>
+   Robot Design <Design/index>
    System Integration and Testing <System/index>
-   Derivation of Kinematic Models <Kinematics/index>
-   Model Derivation of Articulated Systems <Manipulators/index>
-   Signal Processing and Sensor Filtering <Filtering/index>
+   Kinematic Models <Kinematics/index>
+   Articulated Systems <Manipulators/index>
+   Signals and Filtering <Filtering/index>
    Kalman and Particle Filters <AdvFiltering/index>
    Motion Planning <Planning/index>
    Localization and Mapping <Localization/index>
