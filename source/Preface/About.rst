@@ -1,8 +1,25 @@
 About this text
 ---------------
 
-This is an electronic text to accompany a undergraduate university course in
-robotics.   The lack of materials drove the creation of this work.
+:index:`Robotics` is an engineering discipline stemming from the fusion of
+science and art.  One of the most interesting and exciting aspects of robotics
+is how many different fields it touches.  At some institutions, for example
+Worcester Polytechnic Institute (WPI), it is now a undergraduate degree
+program. Many courses can be taught within the field to cover the different
+aspects just like what we do with Electrical or Mechanical Engineering.  So
+any attempt at a survey course is challenging.  This book is not a really
+a great survey of the field.  For such a large field, a survey would be a
+long list of titles, authors, researchers and so on.  There would be no
+room to "get down into the weeds".  We want the student (reader) to also
+get in the detail and acquire real skills.  To do that, we must focus.  So,
+the book is oriented around mobile robots.  You will see that our coverage of
+manipulators is very thin.  Fortunately, there are fabulous texts on manipulators
+available.
+
+Our goal is to get the reader to the point where they can build a simple
+mobile robot which can interact with the environment.   This requires
+covering basics of sensing, computation and motion.   Our target will be
+the creation of autonomous vehicles.  
 
 There are many issues to resolve with this book.   Many small ones and some
 large ones.   The obvious problems relate to content, coverage, background and

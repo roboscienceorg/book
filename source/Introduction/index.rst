@@ -24,7 +24,7 @@ with our willingness to look beyond our differences with acceptance,
 compassion and grace. If technology can bring us together, then it has
 succeeded in helping us far beyond our wildest dreams.
 
-Robotics is a shining example of technical optimism - a belief that the
+:index:`Robotics` is a shining example of technical optimism - a belief that the
 human condition can be improved through sufficiently advanced
 technology. It is the premise that a machine can engage in the
 difficult, the tedious, and the dangerous; leaving humans out of harms
@@ -34,13 +34,14 @@ tools, we are indisputably the master tool users on the planet. Tools
 extend our grasp, our strength and our speed. We know of no technology
 that aims to extend human capability like robotics does.
 
-:index:`Robotics` is an engineering discipline stemming from the fusion of
-science and art. Humans have an insatiable curiosity, a drive to create,
+Humans have an insatiable curiosity, a drive to create,
 and a considerable amount of self-interest. Building machines which look
 like us, act like us and do things like us was the engineering manifest
 destiny. Although we have succeeded in building machines that do
 complicated tasks, we really place the value in what we learn about
 ourselves in the process. A process we embark on here.
+
+
 
 .. toctree::
    :maxdepth: 1

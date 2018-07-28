@@ -141,6 +141,8 @@ html_copy_source = False
 html_show_sourcelink = False
 #html_show_sphinx = False
 
+html_last_updated_fmt = '%b %d, %Y, %X'
+
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.

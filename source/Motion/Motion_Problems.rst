@@ -13,8 +13,6 @@ Problems
    Ackerman steering approach. What would the pros and cons for this system
    compared to a single Ackerman drive?
 
-#. What are the motion equations for the Syncro Drive System as a function
-   of wheel velocity and wheel turn angle? Use :math:`r` for wheel radius.
 
 #. Assume that you have a rectangular Mechanum robot with
    :math:`L_1 = 0.30`\ m, :math:`L_2 = 0.20`\ m and :math:`r=0.08`\ m. Find
@@ -58,7 +56,7 @@ Problems
    :math:`\dot{\phi}_1 = 0.25t^2`, :math:`\dot{\phi}_2 = 0.5t`. The
    starting location is [0,0] with :math:`\theta = 0`.
 
-   #. Plot the path of the robot on :math:`0\leq t \leq 5`. It should end
+   a. Plot the path of the robot on :math:`0\leq t \leq 5`. It should end
       up somewhere near [50,60].
 
    #. Assume that you have Gaussian noise added to the omegas each time you
@@ -111,12 +109,6 @@ Problems
           ell.set_alpha(0.1)    #  make the ellipse lighter
           a.add_artist(ell)   #  add this to the plot
 
-#. Derive :eq:`meccanumCFK`.
-
-#. Assume that you have a square robot which is 50 cm per side and uses
-   four 15 cm diameter omniwheels with\ :math:`\gamma=0` configuration. The
-   wheels are mounted at each corner at :math:`45^\circ` to the sides.
-   Find the kinematic equations of motion.
 
 #. Describe the different styles of Swedish wheel.
 
@@ -126,7 +118,7 @@ Problems
    cm) the given paths (path units in m). Plot the paths and compare to the
    actual functions to verify.
 
-   #. :math:`y=(3/2)x + 5/2`
+   a. :math:`y=(3/2)x + 5/2`
 
    #. :math:`y = x^{2/3}`
 

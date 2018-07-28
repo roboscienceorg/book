@@ -1,7 +1,7 @@
 
 
-Introduction to Robotics
-#########################
+Introduction to Mobile Robotics
+###############################
 
 .. Note:: **Draft**  - Completion target date Aug. 1.  Feedback: Jeff McGough  jeff.mcgough@sdsmt.edu
 
@@ -32,7 +32,7 @@ Introduction to Robotics
    Computer Vision <Vision/index>
    Motion Control <Control/index>
    Robot Design <Design/index>
-   System Integration and Testing <System/index>
+   System Integration <System/index>
    Kinematic Models <Kinematics/index>
    Articulated Systems <Manipulators/index>
    Signals and Filtering <Filtering/index>

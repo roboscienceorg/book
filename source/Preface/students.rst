@@ -4,7 +4,7 @@ Student Notes
 =============
 
 These notes are intended for both formal students and casual readers.  In
-2009, SDSMT Computer Science offered a Robotics course for the first time.
+2009, SDSMT Computer Science offered a Mobile Robotics course for the first time.
 As mentioned above, we used *Introduction to Autonomous Mobile
 Robots* by Siegwart and  Nourbakhsh :cite:`Siegwart:2004:IAM` .
 This book has evolved from course notes.  There is a significant lack

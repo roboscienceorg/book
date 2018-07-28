@@ -20,7 +20,7 @@ Problems
 #. Assume that you have a finite number of convex solid obstacles (solid
    means you are not starting inside). Prove or provide a counter-example.
 
-   #. Will Bug 1 succeed in navigating from any start point to any goal
+   a. Will Bug 1 succeed in navigating from any start point to any goal
       point?
 
    #. Will Bug 2 succeed in navigating from any start point to any goal
@@ -38,10 +38,10 @@ Problems
 
 #. Is it possible to have a single non-convex obstacle trap Bug 1 or Bug 2?
 
-#. Assume that you have a grid domain and the obstacles are represented in
-the grid map. Write a Python program to implement:
+#. Assume that you have a grid domain and the obstacles are represented in the
+   grid map. Write a Python program to implement:
 
-   #. Bug 1
+   a. Bug 1
 
    #. Bug 2
 
@@ -51,7 +51,7 @@ the grid map. Write a Python program to implement:
 
 #. Implement the following in Veranda:
 
-   #. Bug 1
+   a. Bug 1
 
    #. Bug 2
 

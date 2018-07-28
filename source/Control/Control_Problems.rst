@@ -4,7 +4,7 @@ Problems
 #. In Veranda, drive along :math:`x(t) = 2t-1` and :math:`y(t) = 3t +4` with
    unit speed (:math:`r=1`, :math:`L=4`) with
 
-   #. Basic bot
+   a. Basic bot
 
    #. DD Robot
 
@@ -56,7 +56,7 @@ Problems
    between axles (front to back) is 40cm. What should the wheel velocities
    be if
 
-   #. you want to drive at an angle of 20 degrees to the right of the
+   a. you want to drive at an angle of 20 degrees to the right of the
       forward line for the vehicle at 10 cm/sec (but not change
       orientation),
 
@@ -65,7 +65,7 @@ Problems
 
 #. Assume you have a planner that has provided the following points (2,9),
    (12,13), (23, 40). Also asume that you start with zero derivative at
-   (2,9) and pass through (12, 13) with slpe :math:`m = 2.5` and have slope
+   (2,9) and pass through (12, 13) with slope :math:`m = 2.5` and have slope
    :math:`m = 0` at (23,40).
 
 #. Assume you have a planner that has provided the following points (7,13),
