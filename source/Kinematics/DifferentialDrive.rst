@@ -164,6 +164,6 @@ where
    :width: 40%
    :align: center
 
-   The Omniwheel can be configured in a three wheel
+   The Omniwheel can be configured in a three wheel system.
 
 .. _subsec:twoaxle:

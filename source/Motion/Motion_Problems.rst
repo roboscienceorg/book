@@ -1,9 +1,10 @@
 Problems
 --------
 
-#. Write a Python function to compute wheel angles in the Ackerman system.
-   The function should have arguments (theta, l1, l2). The function should
-   return .
+#. Write a Python function to compute wheel angles in the Ackerman system
+   given the desired vehicle turn angle and frame parameters.
+   This the function should have arguments `(theta, l1, l2)` and function should
+   return the two wheel angles `(theta_l, theta_r)`.
 
 #. What are the motion equations for the Ackerman drive? [Meaning forward
    and angular velocity as a function of wheel speed.] Assume wheel radius
@@ -122,9 +123,12 @@ Problems
 
    #. :math:`y = x^{2/3}`
 
-   #. :math:`(x-3)^2/16 + (y-2)^2/9 = 1`
+#. What are the wheel velocity formulas for a four wheel Mechanum robot,
+   (:math:`r=3`, :math:`L_1 = 10`, :math:`L_2=10` all in cm) which
+   drives in the circular path :math:`(x-3)^2/16 + (y-2)^2/9 = 1` and always
+   faces the center of the circle.  
 
-#. In Veranda, drive the Mecanum robot along a square with corners (0,0),
+#. In Veranda, drive a Mecanum robot along a square with corners (0,0),
    (10,0), (10,10), (0,10), :math:`L_1 = 0.30`, :math:`L_2 = 0.20` and
    :math:`r=0.08`. You should stop and “turn” at a corner, but keep the
    robot faced in the x-axis direction. Drive the edges at unit speed. Use

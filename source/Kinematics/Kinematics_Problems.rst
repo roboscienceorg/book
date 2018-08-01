@@ -13,3 +13,5 @@ Problems
 
 #. What are the motion equations for the Syncro Drive System as a function
    of wheel velocity and wheel turn angle? Use :math:`r` for wheel radius.
+
+#. Derive the equations of motion for the three wheel omniwheel robot, :numref:`Fig:Tribot`.

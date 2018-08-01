@@ -52,7 +52,9 @@ circle. If the zero motion lines do not intersect at a single point,
 then no motion is possible when we have no-slip and no-slide for our
 wheels. We can easily see that this is the case for the simple steering
 approach shown above. The rear wheels have overlapping zero motion
-lines. The front wheels have parallel non-overlapping zero motion lines.
+lines. The front wheels have parallel non-overlapping zero motion lines.  All
+intersect at the ICR.  Note that parallel lines intersect at infinity
+so we don't have to have a  finite intesection. 
 
 
 .. figure:: MotionFigures/ICR1.*
@@ -60,6 +62,8 @@ lines. The front wheels have parallel non-overlapping zero motion lines.
    :align: center
 
    ICR - Instantaneous Center of Rotation.
+
+
 
 
 Differential Drive
@@ -75,7 +79,7 @@ variables involved in the model.
 
 .. _`ddrive_pre`:
 .. figure:: MotionFigures/ddexample.*
-   :width: 40%
+   :width: 30%
    :align: center
 
    The differential drive robot dimensions and variables.
