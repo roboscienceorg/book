@@ -3,7 +3,6 @@
 Introduction to Mobile Robotics
 ###############################
 
-.. Note:: **Draft**  - Completion target date Aug. 1.  Feedback: Jeff McGough  jeff.mcgough@sdsmt.edu
 
 .. toctree::
    :maxdepth: 1
@@ -52,6 +51,14 @@ Introduction to Mobile Robotics
    The SciPy Library <SciPy/index>
    Simulation Tools <SimTools/index>
 
+.. Note:: **Draft**  - Feedback: Jeff McGough  jeff.mcgough@sdsmt.edu
+   Most of the content is loaded.  The chapters on *Example Systems* and
+   *System Integration* still need to be developed.  The *Computer Vision*
+   and *Localization and Mapping* chapters need significant rework.  We will
+   continue to update as material is added.  This will have the effect of
+   changing page, equation and problem numbers.  Starting August 20th, we will
+   have links to previous versions (html tree, html zip and pdf) for those
+   teaching courses and need fixed numbering for the duration.  
 
 
 Index

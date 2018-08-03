@@ -122,3 +122,11 @@ audience:
    There is a wealth of material on kinematic models, inverse kinematics,
    and control. There are well done examples for basic kinematics as well.
    :cite:`niku2010introduction`
+
+
+And then of course you need to watch as many bad science fiction robot
+films as possible ...
+
+.. figure:: IntroductionFigures/Robotmonster_poster.jpg
+   :width: 65%
+   :align: center

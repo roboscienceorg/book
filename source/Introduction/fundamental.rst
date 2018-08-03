@@ -489,3 +489,137 @@ traffic slowed down and I was delayed."   This is known as verbalization.
 It is an application of natural language processing applied to the data logs
 in the robot.   It is an active but important intersection of co-robotics
 and machine learning.
+
+
+Self Driving Cars
+~~~~~~~~~~~~~~~~~~
+
+Although self-driving cars really fits as part of the previous discussion,
+we would like to address it specifically here.  Of all of the robots
+that the population will encounter over the next decade, it is the
+self-driving vehicle that will be most common.   We already have robotic
+vacuum cleaners in the home.  Having a humanoid robot in home is still
+outside current technology.  Not everyone will interact with manufacturing
+robots either.  But automobiles are everywhere and a good example to
+illustrate the concepts presented in this text.
+
+According to  `asirt.org` 1.3 million people globally die in automobile accidents
+each year.  Another 20-50 million are injured. Globally it sits in the top
+10 causes of death.   It is expected that the numbers will rise of the next
+couple of decades.    The population is increasing and so is population density.  Not only does
+this increase accidents, it increases travel time.   Commute time to work
+is significant for some cities and occupations.
+
+Automation of the vehicle has promise to address both of these concerns.
+The system will not get drowsey, intoxicated, distracted, or angry.  This
+has clear potential to reduce accidents.  The driver is freed to focus
+attention on other activities during the commute.
+Individuals who have issues that prevent them from driving can now commute
+and are no longer hostage to external services.  Cars that can communicate
+with each other are able to smooth traffic flow, increase flow rates and
+provide early warnings to other vehicles when dangers are detected.
+
+Self-driving cars have a long history.   In the 1950s GE imagined vast
+highway systems that automated travel.  In the mid-1990's Mercedes experimented
+with driverless technologies and achieved some impressive results.
+The public started to hear more about autonomous vehicles with the DARPA
+Grand Challenge.
+
+Fast forward to today and we have virtually every auto manufacturer working
+on some level of autonomy for their products.  We now have hundreds of thousands
+of miles traveled in a variety of conditions.  Clearly highway miles are the
+easiest, but we have successes in cities and other dense obstacle rich locations.
+
+What is needed to self-drive?
+Here are the steps:
+
+* Sense the surroundings
+* Model the environment
+* Find vehicle location and pose
+* Plan action
+* Execute action
+
+.. figure:: IntroductionFigures/selfdriving.*
+   :width: 95%
+   :align: center
+
+   Software chain for self-driving cars.
+
+The sensor we are most familiar with is the camera.   The camera produces
+a sequence of images for which we apply a series of software techniques
+known as computer vision.   In the driving application this is how we would
+perform lane detection.  It also is part of the road sign identification
+system and in general, obstacle identification.
+
+Some classical tools can be used, but the state of the art is moving towards
+using Deep Neural Networks (DNNs) and specifically Convolutional Neural Networks
+(CNNs).  For example, we may feed a DNN lots of various road sign images so
+the network learns to recognize stop signs, yield signs, route markers and so
+forth.
+
+A very critical task is lane identification.   Through a series of standard
+operations the bounding lines of the lane are extracted from the road image.
+The midline of the lane is estmated for later use in driving the car.
+
+A single camera is a fabulous sensor, but there are some really critical things
+that the camera cannot do.  Fundamentally the camera is a 2D sensor.  It is not
+able to resolve the 3D world, specifically the depths of sensed objects.
+It is also unable to
+resolve the absolute scale of objects in the image.  If you happen to know
+the size of the object, then you can infer the distance based on image
+height.  However, this is really only practical in the near field due
+to the errors introduced by the pixelated image (more in the computer vision
+chapter).
+
+One solution to this would be to use two cameras, known as stereo vision, just
+like we do.   One can approximate the two camera concept by moving one camera
+around which is known as *structure from motion*.  Limitations in hardware
+and computational complexity pushed the industry to try other sensors to
+measure distances and velocities directly.
+
+Two popular distance or range sensors are radar and lidar.  They use radio waves
+or light to measure the effective distance and through some mathematical techniques
+can also determine velocities.   Radar is fairly inexpensive, at least in
+comparison to lidar.  Lidar has very high accuracy and can produce millimeter
+resolution maps.   Both operate at high data rates.  Compared to lidar, radar is unaffected by
+light, snow, rain, fog and other conditions and combined with the lower cost, is
+a popular option.
+
+Other systems such as sonar can also be deployed.   Each has pros and cons which
+will be discussed in detail in the sensor chapter.   In addition to ranging
+sensors, the vehicle will have a collection of other devices
+that perfom direct measurement of wheel speeds, have knowlege
+of orientation through a compass, know forces through an accelerometer, rotation
+rates through a gyroscope and position using a high accuracy GPS.
+
+That said, we now have significant amount of information.  Some of this
+information is redundant.   That is a good thing since we can use the
+redudancy to increase our accuracy.   This process is called sensor fusion.
+We can deduce the current state of our vehicle (speed, orientation, etc) by
+combining all of these data streams (and even using camera data) with a
+:index:`Kalman Filter`.
+
+Using this state information and combining it with a map is how we determine
+our location.   If you
+have an accurate map with known landmarks, then we can trilaterate to determine
+our location.   The localization process can also be done with modifications of the
+Kalman Filter or using another tool known as the :index:`Particle Filter`.
+
+At this stage in the pipeline, we know where we are on the map and where we are on the
+road (recall the computer vision aspect).   The lane detection algorithm
+will tells us about road curvature, obstacles, other vehicles and their states
+and so forth.  Other modules would be predicting collisions with other moving or
+stationary objects.
+
+Next we need to look at our goals and compare to our current state.  We may want
+head to a certain location, avoid other cars, stop at stop lights, and obey
+other traffic laws.  So the motion planning system or path planning code will
+determine the next course of action.  This would be desired velocity, turn angle,
+and braking.
+
+Those motion decisions are sent to the servo and motor controllers which will
+translate the coded signals into higher voltage electrical power.  Sensors
+measure the response and the controller adjusts to get the desired result.  This
+is known as controls and is our final step in the pipeline.
+This is all there is, although the elements of a real system
+may be more complicated they are essentially the elements described above.
