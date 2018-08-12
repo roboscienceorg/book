@@ -123,10 +123,15 @@ audience:
    and control. There are well done examples for basic kinematics as well.
    :cite:`niku2010introduction`
 
+The cultural attitudes are strongly affected by books and film:
+
+.. figure:: IntroductionFigures/poster1.png
+   :width: 85%
+   :align: center
 
 And then of course you need to watch as many bad science fiction robot
 films as possible ...
 
 .. figure:: IntroductionFigures/Robotmonster_poster.jpg
-   :width: 65%
+   :width: 45%
    :align: center
