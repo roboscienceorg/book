@@ -1,4 +1,4 @@
-# MetaBook
+# Book
 
 This is main source for the Roboscience materials.
 
