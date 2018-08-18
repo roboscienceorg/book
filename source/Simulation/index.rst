@@ -22,9 +22,9 @@ tools will suffice.
    :maxdepth: 1
 
    SimulatingMotion
+   VerandaTutorial
    Startsim
    MovingDifferential
    GroundRobotWorld
    Nextsim
-   VerandaTutorial
    Simulation_Problems
