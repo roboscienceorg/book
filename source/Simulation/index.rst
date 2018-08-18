@@ -26,4 +26,5 @@ tools will suffice.
    MovingDifferential
    GroundRobotWorld
    Nextsim
+   VerandaTutorial
    Simulation_Problems
