@@ -129,9 +129,9 @@ The cultural attitudes are strongly affected by books and film:
    :width: 85%
    :align: center
 
-And then of course you need to watch as many bad science fiction robot
-films as possible ...
+.. And then of course you need to watch as many bad science fiction robot
+.. films as possible ...
 
-.. figure:: IntroductionFigures/Robotmonster_poster.jpg
-   :width: 45%
-   :align: center
+.. .. figure:: IntroductionFigures/Robotmonster_poster.jpg
+..    :width: 45%
+..    :align: center
