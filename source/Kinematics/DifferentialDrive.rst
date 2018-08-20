@@ -161,7 +161,7 @@ where
 
 .. _`Fig:Tribot`:
 .. figure:: KinematicsFigures/tribot.*
-   :width: 40%
+   :width: 30%
    :align: center
 
    The Omniwheel can be configured in a three wheel system.

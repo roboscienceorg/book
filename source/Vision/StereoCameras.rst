@@ -23,7 +23,7 @@ it is easy to triangulate the depth of the point, :numref:`intro-stereo1`.
 
 .. _`intro-stereo1`:
 .. figure:: VisionFigures/stereo1.*
-   :width: 80%
+   :width: 50%
    :align: center
 
    Seeing in three dimensions with a pair of calibrated cameras:

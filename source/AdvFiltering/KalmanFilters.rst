@@ -475,25 +475,30 @@ changes from this than looking at the raw data.
 
 .. _`fig:kalmanclouds1`:
 .. figure:: AdvFilteringFigures/cloud1.*
-   :alt: Point distribution after process update.
+   :width: 50%
+   :align: center
 
    Point distribution after process update.
 
 .. _`fig:kalmanclouds2`:
 .. figure:: AdvFilteringFigures/cloud2.*
-   :alt: Observed point distribution.
+   :width: 50%
+   :align: center
 
    Observed point distribution.
 
 .. _`fig:kalmanclouds3`:
 .. figure:: AdvFilteringFigures/cloud3.*
-   :alt: Final distribution after update step.
+   :width: 50%
+   :align: center
 
    Final distribution after update step.
 
 .. _`fig:kalmanclouds4`:
 .. figure:: AdvFilteringFigures/cloud4.*
-   :alt: The standard deviation based ellipses.
+   :width: 50%
+   :align: center
+
 
    The standard deviation based ellipses.
 

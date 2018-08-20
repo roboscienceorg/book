@@ -1,0 +1,1 @@
+for i in `ls -1 *.eps`; do ps2pdf -dEPSCrop ${i%.*}.eps ${i%.*}.pdf ; done
