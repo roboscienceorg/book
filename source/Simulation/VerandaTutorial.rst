@@ -3,7 +3,7 @@ Tutorial: Simulating with Veranda
 
 This section of the book will walk you through the entire process
 of designing your own robot and programming it to drive and produce
-sensor feedback.
+sensor feedback. The tutorial assumes you have ROS installed in the default location: ``/opt/ros/ardent``.
 
 Part 0: Install and Run Veranda
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -238,7 +238,8 @@ step, because we need to set up the ROS environment first.
 
 .. code:: bash
 
-    > source ~/veranda/install/setup.bash
+    > source /opt/ros/ardent/setup.bash
+    > source ~/veranda/local_setup.bash
     > export RMW_IMPLEMENTATION=rmw_opensplice_cpp
     > python3 circle.py
 
@@ -247,7 +248,7 @@ to send and receive messages, you can stop it with ``Ctrl-C``
 
 .. TIP::
 
-    You don't need to do ``source ~/veranda/install/setup.bash`` and ``export RMW_IMPLEMENTATION=rmw_opensplice_cpp`` every time you run your code, just the first time. After you have
+    You don't need to do the two ``source [path]`` commands and the ``export RMW_IMPLEMENTATION`` every time you run your code, just the first time. After you have
     sourced the environment for a specific terminal, those environment variables will stay set up!
 
 .. IMPORTANT::

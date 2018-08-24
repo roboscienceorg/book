@@ -46,8 +46,9 @@ drive the robot.   The first step is to source the setup file:
 
 ::
 
+   source /opt/ros/ardent/setup.bash
    cd <veranda directory>
-   source setup.bash
+   source local_setup.bash
    python3 Scripts/fig8_differential.py
 
 This should drive the robot in a figure 8 shaped path.   You will see other
