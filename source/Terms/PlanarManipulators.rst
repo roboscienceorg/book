@@ -183,7 +183,7 @@ The inverse kinematics (IK) are
    \theta_2 = \tan^{-1}\frac{\pm\sqrt{1-D^2}}{D}
 
 Note the kinematic equations only involve the position variables and not
-the velocities so they holonomic constraints.
+the velocities so they are holonomic constraints.
 
 Let :math:`a_1 = 15`, :math:`a_2 = 10`, :math:`x=10`, :math:`y=8`. Find
 :math:`\theta_1` and :math:`\theta_2`:
@@ -219,7 +219,10 @@ The Python code to do the computations is
     In [11]: print x1, y1
     10.0 8.0
 
-[Be careful with Python 2, don’t forget to include the “.0”s.]
+Note that all angles in this text are in radians unless explicitly stated
+as degrees.  This is to be consistent with standard math sources as well
+as the default for most programming languages.
+Also, be careful with Python 2, don’t forget to include the “.0”s.
 
 Dual Two Link Parallel Manipulator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

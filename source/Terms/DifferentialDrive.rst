@@ -363,6 +363,71 @@ curve of motion.
    A differential drive robot with constant wheel
    velocity drives in straight lines and circles.
 
+
+We can attempt to formally integrate the differential drive equations
+
+.. math::
+
+   \dot{\theta} =\frac{d\theta}{dt} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
+
+integrate from 0 to t (and be careful about integration variables)
+
+.. math::
+
+   \int_0^t\frac{d\theta}{d\tau}\, d\tau = \int_0^t\frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})\, d\tau
+
+and we have
+
+.. math::
+
+   \theta(t) - \theta(0) = \int_0^t\frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})\, d\tau
+
+Assume that you know :math:`\phi_i(t)` (or if you know :math:`\dot{\phi}_i(t)`), then what can you say?
+
+From :math:`\dot{\phi}_i(t)` we can compute :math:`\theta` by integrating the last equation:
+
+.. math::
+
+   \theta(t) = \theta(0) + \int_0^t \frac{r}{2L} \left(\frac{d\phi_1}{d\tau}-\frac{d\phi_2}{d\tau}\right)d\tau
+
+Using this result we can write down formulas for :math:`x` and :math:`y`
+
+.. math::
+
+   x(t)  = x(0)+\displaystyle\int_0^t \frac{r}{2} \left(\frac{d\phi_1}{d\tau}+\frac{d\phi_2}{d\tau}\right)\cos(\theta(\tau))d\tau
+
+.. math::
+
+   y(t)  = y(0) + \displaystyle\int_0^t\frac{r}{2} \left(\frac{d\phi_1}{d\tau}+\frac{d\phi_2}{d\tau}\right)\sin(\theta(\tau))d\tau
+
+
+These equations are easy to integrate if you know the wheel velocities are constants.  First integrate the :math:`\theta` equation:
+
+.. math:: \theta(t) = (r/2L)(\omega_1 - \omega_2)t + \theta_0
+
+This can be plugged into the x and y equations and then integrated:
+
+.. math:: x(t) = \frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[\sin((r/2L)(\omega_1 - \omega_2)t + \theta_0) - \sin(\theta_0)\right] + x(0)
+
+.. math:: y(t) = -\frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[\cos((r/2L)(\omega_1 - \omega_2)t + \theta_0) - \cos(\theta_0)\right]+ y(0)
+
+Thus the solution is a sequence of circular arcs.
+
+From these solutions (and from the differential equations as well), you can see that there is a problem when :math:`\omega_1=\omega_2`
+or when :math:`\omega_1 = -\omega_2`.  These are exactly the cases we are often given.
+However, the equations are trivial (meaning they reduce) for these special cases.
+When :math:`\omega_1 = \omega_2`,
+
+.. math:: d\theta / dt = 0
+
+and when :math:`\omega_1 = -\omega_2`
+
+.. math::  dx/dt=0 ,  dy/dt=0.
+
+So, you can just
+work out the solution from rate-time-distance formulas.
+
+
 | Solve these equations for the given values of
   :math:`\omega_1=\dot{\phi_1}` and :math:`\omega_2=\dot{\phi_2}` below.
   Assume that the wheels are 18cm in diameter and L is 12cm. Find an

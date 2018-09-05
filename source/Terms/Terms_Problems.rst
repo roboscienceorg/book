@@ -7,14 +7,14 @@ Problems
 
 #. Define domain and range.
 
-#. Is the following constraint holonomic: :math:`\dot{x}_2\sin(x_1) + x_2 \cos(x_1)\dot{x}_1 = 1`.
+#. Is the following constraint holonomic: :math:`\dot{x}_2\sin(x_1) + x_2 \cos(x_1)\dot{x}_1 = 0`.
 
 #. Sketch the workspace of a two-link manipulator centered at the origin with :math:`a_1 = 15` and :math:`a_2 = 10`.
 
 #. Assume that you have a two link planar manipulator. :math:`\theta_1` is
-   the angle between the x axis (measured clockwise as positive) and the
+   the angle between the x axis (measured counter-clockwise as positive) and the
    first link arm. :math:`\theta_2` is the angle between the second link
-   arm and the first link arm (again measured clockwise as positive). Given
+   arm and the first link arm (again measured counter-clockwise as positive). Given
    the length of the first link :math:`a_1 = 12` and the second link
    :math:`a_2 = 7` solve the following:
 

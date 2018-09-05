@@ -22,6 +22,7 @@ tools will suffice.
    :maxdepth: 1
 
    SimulatingMotion
+   TwoLinkSim
    VerandaTutorial
    Startsim
    MovingDifferential

@@ -226,7 +226,7 @@ the workspace. Holonomic constraints reduce the dimensionality of the
 workspace and restricts the motion of the robot.   Having a non-holonomic
 constraint means that there are restrictions on velocity but less so on
 position.  So local movement is restricted, but global positioning is less
-resricted.  
+resricted.
 
 Integrability Conditions
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -281,15 +281,36 @@ the second partial test appears as
    \frac{\partial \left( \sigma(x)b_j \right)}{\partial x_i}
    = \frac{\partial \left( \sigma(x)b_i \right)}{\partial x_j}
 
+Integration
+~~~~~~~~~~~~
+
+To find the antiderivative, one can follow a fixed process.   Assume that you are
+given the form :math:`a_1(x_1,x_2) \dot{x_1} + a_2(x_1,x_2)\dot{x_2} = 0`.  Since
+:math:`a_1` comes from a partial derivative with respect to :math:`x_1` then we should
+integrate with respect to that variable.   This gives us some function :math:`A_1`.
+We can do a similar process for :math:`a_2` and gain :math:`A_2`.  We use both
+:math:`a_2` and :math:`A_2` to find the correct term.
 
 **Examples**:  are the following holonomic?
+
+#. :math:`\dot{x_1} + \dot{x_2} = 0`.   For this example, you can just integrate
+   and see that :math:`x_1 + x_2=c` is the antiderivative.  So it is holonomic.
+
+#. :math:`x_2e^{x_1}\dot{x_1} + e^{x_1}\dot{x_2} = 0`.  Yes. Since
+
+   .. math::  \frac{\partial (x_2e^{x_1})}{\partial x_2} =  \frac{\partial (e^{x_1})}{\partial x_1}
+
+   Integrate the first expression, :math:`x_2e^{x_1}`, wrt to :math:`x_1` and we obtain
+   :math:`h(x) = x_2e^{x_1} + c`.  Differentiate wrt to :math:`x_2` to verify no missing terms.
+
 
 #. :math:`x_2\dot{x_1} + x_1\dot{x_2} = 0`.  Since
 
    .. math::  \frac{\partial (x_2)}{\partial x_2} =  \frac{\partial (x_1)}{\partial x_1} \Rightarrow 1 = 1
 
-   it is holonomic.  Integrate the first expression wrt to :math:`x_1` and we obtain
+   it is holonomic.  Integrate the first expression, :math:`x_2`, wrt to :math:`x_1` and we obtain
    :math:`h(x) = x_1x_2 + c`.  Differentiate wrt to :math:`x_2` to verify no missing terms.
+
 
 #. :math:`x_1 \dot{x}_1 + x_2 \dot{x}_2 + x_3 \dot{x}_3 = 0`.
    There are several mixed partials to check.  This
