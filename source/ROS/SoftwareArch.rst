@@ -338,6 +338,10 @@ long we need something like the Dewey Decimal system in the library. Of
 course we know that as the scale of node types increases, the
 predetermined mapping will eventually break.
 
+.. figure:: ROSFigures/distrcomp.*
+   :width: 90%
+   :align: center
+
 One might think to run everything through a central server. Of course
 this produces a significant bottleneck and will not scale at all. A
 centralized system will not work. The system needs to be dynamic and
