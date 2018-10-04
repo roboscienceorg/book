@@ -6,7 +6,7 @@ Preface
 
 Historically, the academic study of robotics has been limited to the
 Mechanical Engineering or Electrical Engineering departments. This makes
-perfect sence if the target field is manufacturing. Often requiring
+perfect sense if the target field is manufacturing. Often requiring
 significant power, reliable repetition or precise positioning, these
 departments focused on machine design, controls and targeted
 instrumentation. Leaving the factory floor, however, requires a great

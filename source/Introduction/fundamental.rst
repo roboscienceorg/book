@@ -476,7 +476,7 @@ or why it did not retrieve the requested item.  Or maybe we need to know
 updates on the environment that was just sensed.  The concept of transparency
 is to provide the humans interacting with the robots the information about how
 the task was performed just like we do with each other.  For example, when
-a friend says "sorry I am late, I was delaye dby traffic".
+a friend says "sorry I am late, I was delayed by traffic".
 
 Robots are capable of logging everything. All of the
 sensory data, the internal and external configuration data, decisions based
@@ -588,7 +588,7 @@ a popular option.
 Other systems such as sonar can also be deployed.   Each has pros and cons which
 will be discussed in detail in the sensor chapter.   In addition to ranging
 sensors, the vehicle will have a collection of other devices
-that perfom direct measurement of wheel speeds, have knowlege
+that perfom direct measurement of wheel speeds, have knowledge
 of orientation through a compass, know forces through an accelerometer, rotation
 rates through a gyroscope and position using a high accuracy GPS.
 

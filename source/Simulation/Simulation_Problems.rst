@@ -21,7 +21,7 @@ Problems
 
    #. Write a program that uses the differential drive kinematics to derive
       the robot linear and angular velocities. Publish the velocities using
-      the ROS standard twist message and name the topic ``/RobotVel``. This
+      the ROS message and name the topic ``/RobotVel``. This
       node should be named ``ForwardK``. Assume that :math:`D=10`,
       :math:`L=20` and the robot starts at (0,0,0).
 

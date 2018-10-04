@@ -50,7 +50,7 @@ sophisticated machine that, as stated above, replaces human effort**.
 Nothing else really defines robotics as well.
 
 Regardless of definition, these machines surround us. Today we can see
-them used in from manufacturing to exploration, from assistive
+them used from manufacturing to exploration, from assistive
 technologies and medicine to entertainment, from research to education,
 and much more.
 
@@ -265,7 +265,7 @@ Unimation placed its first robot arm in a General Motors plant in 1961.
 
 The 1960’s saw significant experimentation with manipulator designs,
 feedback systems and actuator types. One such example of a robotic
-manipulator is the Stanford Hydrolic Arm and Stanford Manipulator,
+manipulator is the Stanford Hydraulic Arm and Stanford Manipulator,
 designed in 1969 by Victor Scheinman, a Mechanical Engineering student
 working in the Stanford Artificial Intelligence Lab (SAIL).
 

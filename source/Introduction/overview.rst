@@ -239,7 +239,7 @@ Software
    The small mobile robot illustrates the three aspects of
    robotic systems: sensing, computing and actuating.
 
-Figure :numref:`intro-components` shows the basic hardware elements of a typical
+:numref:`intro-components` shows the basic hardware elements of a typical
 low cost small mobile robot. We can see sensors, software and effectors
 in this unit. There are two sensing systems described in Figure
 :numref:`intro-components`. The familiar sensor is the Microsoft Kinect. The
@@ -461,4 +461,4 @@ system and vision system.  However a very simple solution is to ask a nearby
 human to press the button.  Although this is a simple thing, it illustrates
 that a robot does not need all of the expertise and capabilty.  It can ask
 the internet, other robots or humans around for information.  It can ask humans
-for physical assistance.  We will call this symbiotic autonomy.  
+for physical assistance.  We will call this symbiotic autonomy.

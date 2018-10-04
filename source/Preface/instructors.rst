@@ -20,7 +20,7 @@ and rigor needed for a college course.  Since robotics is a research
 area, finding graduate level references is not hard, but we have the
 opposite problem of that being too difficult or not sufficiently
 general in scope.   [And honestly, even
-some undergraduate texts that are outside your personal area of expertise
+some undergraduate texts outside your personal area of expertise
 can feel like a graduate text.]
 
 The second goal was to create a text aimed at students with more of a
@@ -42,12 +42,12 @@ of chapters might not be as expected.  We have worked hard to get the student
 up and running in virtual as well as real robots as soon as practical.  Some
 theoretical (important) material is left to later in the text.  One benefit
 is that when students try the simple approaches, and those fail, they more
-easily understand the more advanced and mathematical approaches later. 
+easily understand the more advanced and mathematical approaches later.
 
 It is easier to limit or focus the students
 in the class.  However, a diversity of students makes for a better course.
 The problem then is that you cannot assume all students have the same background.
-In the version we offer at SDSMT, we list Data Structures and Differential Equations.
+In the version we offer at SDSMT, we have Data Structures and Differential Equations as background.
 However, we want students from Mechanical and Electrical Engineering to
 participate and at SDSMT they normally don't take Data Structures.  Likewise,
 many Computer Science students will not have Differential Equations in their

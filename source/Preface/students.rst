@@ -18,13 +18,13 @@ software has been powerful enough to attempt to deal with the complexity
 found in unstructured environments outside manufacturing.  The landscape is
 changing and with the advent of self-driving cars and other autonomous
 systems, the need for computer scientists in robotics is accelerating.
-This book attempts to balance the competiting forces of presenting a
+This book attempts to balance the competing forces of presenting a
 complete thorough coverage with the normal constraints on time and
 resources.  Robotics covers many different disciplines.  Some specific
 techniques can require a great deal of mathematics or other specialized
 skill.  Our goal is to get you up and running as quickly as possible
 without sacrificing the core concepts needed to progress later.  We will
-iterate through the subject prceeding deeper on each pass.
+iterate through the subject preceeding deeper on each pass.
 
 With this approach we can get you running with a robotic system without months
 of theory.  But we will come back and build on what you have learned.
@@ -35,7 +35,7 @@ and so forth.  This approach was well criticized on Medium.com with a
 burrito analogy.   Imagine having the burrito with all of the beans on
 one end, then a section of only meat, a section of cheese and the other end
 was the sauce and seasoning.  Not very appealing.  Our goal is, when it
-makes sense, to "mix it up".  Not only do this avoid boredom, it should
+makes sense, to "mix it up".  Not only does this avoid boredom, it should
 help with understanding how to integrate the concepts.
 
 We have developed the chapters to be as independent as possible.  So, one
