@@ -23,9 +23,9 @@ tools will suffice.
 
    SimulatingMotion
    TwoLinkSim
-   VerandaTutorial
+   BuildDriveTutorial
    Startsim
    MovingDifferential
+   ObstacleSensorTutorial
    GroundRobotWorld
-   Nextsim
    Simulation_Problems
