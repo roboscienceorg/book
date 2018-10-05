@@ -8,10 +8,10 @@ Real Systems
 .. toctree::
    :maxdepth: 1
 
-   Custom
+   Geekbot
    Create
    SMP
 
 .. Note::  Add SMP and other robots.  This chapter is not yet written.
    It is listed here so we don't forget :)  Links above are not populated
-   yet.  
+   yet.

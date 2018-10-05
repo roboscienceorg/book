@@ -1,4 +1,4 @@
-Building your own system
+The Trossen Geekbot
 -------------------------
 
 .. Note::  Write this section.
