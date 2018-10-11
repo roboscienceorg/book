@@ -8,7 +8,8 @@ Real Systems
 .. toctree::
    :maxdepth: 1
 
-   Geekbot
+   RealRobots
+   GeekBots
    Create
    SMP
 
