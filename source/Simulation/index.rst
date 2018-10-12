@@ -4,7 +4,7 @@
 Simulation
 **********
 
-In this chapter we intoduce the simulation tool, Veranda, and cover
+In this chapter we introduce the simulation tool, Veranda, and cover
 the basic elements to simulate robot motion.   Veranda is a two
 dimensional simulator.  It was designed to have a low barrier to
 entry and overall ease of use.  Veranda uses Box2D, a 2D physics
@@ -16,11 +16,18 @@ Following the overview and examples with Veranda, we will cover some
 standard techniques in simulation.  It is very helpful to understand
 what is going on inside the simulator.  It also is very useful to know
 how to create your own simulation when none of the current simulation
-tools will suffice.
+tools will suffice.  Before we get going on the simulation tools,
+an overview of SciPy is done to get everyone up to speed.
+
+
 
 .. toctree::
    :maxdepth: 1
 
+   ScipyMath
+   LinearAlgebra
+   Probability
+   MatPlotLib
    SimulatingMotion
    TwoLinkSim
    BuildDriveTutorial

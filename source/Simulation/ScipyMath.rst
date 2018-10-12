@@ -2,7 +2,14 @@
 SciPy and Mathematics
 ---------------------
 
-SciPy, , is a collection of open-source packages for Scientific
+The following material assumes that you are familiar with Python. Python
+reads like pseudocode and so it is possible to follow along without a
+background in Python if you have seen some other programming language. A
+quick introduction is given in the Appendices for those who want to ramp
+up before reading on.
+
+
+SciPy, is a collection of open-source packages for Scientific
 Computing. One of the packages, redundantly named, SciPy library is a
 collection of numerical methods including special functions,
 integration, optimization, linear algebra, interpolation, and other

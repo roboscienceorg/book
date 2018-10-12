@@ -48,7 +48,6 @@ Introduction to Mobile Robotics
 
    AppendixA <Appendix/AppendixA>
    Mathematical Background <Math/index>
-   The SciPy Library <SciPy/index>
    Simulation Tools <SimTools/index>
 
 .. Note:: **Draft**  - Feedback: Jeff McGough  jeff.mcgough@sdsmt.edu
@@ -58,7 +57,7 @@ Introduction to Mobile Robotics
    continue to update as material is added.  This will have the effect of
    changing page, equation and problem numbers.  Starting August 20th, we will
    have links to previous versions (html tree, html zip and pdf) for those
-   teaching courses and need fixed numbering for the duration.  
+   teaching courses and need fixed numbering for the duration.
 
 
 Index
