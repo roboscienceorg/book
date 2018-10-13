@@ -101,4 +101,5 @@ We return to the two examples in the previous section, the Two Link
 Manipulator and the Mobile Disk Robot. Using these two systems, we will
 introduce methods to simulate motion. These very basic systems can be
 used as the prototypes for developing a simulation and for the simple
-motion planning algorithms.
+motion planning algorithms.   First we need to give an overview of NumPy,
+SciPy and MatPlotLib.

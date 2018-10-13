@@ -24,15 +24,14 @@ an overview of SciPy is done to get everyone up to speed.
 .. toctree::
    :maxdepth: 1
 
-   ScipyMath
-   LinearAlgebra
-   Probability
-   MatPlotLib
    SimulatingMotion
+   ScipyMath
    TwoLinkSim
    BuildDriveTutorial
    Startsim
    MovingDifferential
+   Noise
    ObstacleSensorTutorial
    GroundRobotWorld
+   MatPlotLib
    Simulation_Problems

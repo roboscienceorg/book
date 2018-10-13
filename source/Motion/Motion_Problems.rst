@@ -94,22 +94,23 @@ Problems
 
           from scipy import linalg
           from matplotlib.patches import Ellipse
+          s = 2.447651936039926
           #  assume final locations are in x & y
           mat = np.array([x,y])
           #  find covariance matrix
           cmat = np.cov(mat)
           # compute eigenvals and eigenvects of covariance
           eval, evec = linalg.eigh(cmat)
+          r1 = 2*s*sqrt(evals[0])
+          r2 = 2*s*sqrt(evals[1])
           #  find ellipse rotation angle
           angle = 180*atan2(evec[0,1],evec[0,0])/np.pi
           # create ellipse
-          ell = Ellipse((np.mean(x),np.mean(y)),
-                       eval[0],eval[1],angle)
+          ell = Ellipse((np.mean(x),np.mean(y)),r1,r2,angle)
           #  make the ellipse subplot
           a = plt.subplot(111, aspect='equal')
           ell.set_alpha(0.1)    #  make the ellipse lighter
           a.add_artist(ell)   #  add this to the plot
-
 
 #. Describe the different styles of Swedish wheel.
 
@@ -126,7 +127,7 @@ Problems
 #. What are the wheel velocity formulas for a four wheel Mechanum robot,
    (:math:`r=3`, :math:`L_1 = 10`, :math:`L_2=10` all in cm) which
    drives in the circular path :math:`(x-3)^2/16 + (y-2)^2/9 = 1` and always
-   faces the center of the circle.  
+   faces the center of the circle.
 
 #. In Veranda, drive a Mecanum robot along a square with corners (0,0),
    (10,0), (10,10), (0,10), :math:`L_1 = 0.30`, :math:`L_2 = 0.20` and
