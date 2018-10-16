@@ -151,7 +151,7 @@ our robots.
 
 .. _`Fig:motorfeedback`:
 .. figure:: ControlFigures/feedback.*
-   :width: 40%
+   :width: 85%
    :align: center
 
    Feedback and Control for motor speed.

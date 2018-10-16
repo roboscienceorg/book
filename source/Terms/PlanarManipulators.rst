@@ -126,10 +126,18 @@ Using a trig formula:
 
 Dividing the sin and cos expressions to get tan and then inverting:
 
-.. math:: \theta_2 = \tan^{-1}\frac{\pm\sqrt{1-D^2}}{D}
+.. math:: \theta_2 = \tan^{-1}\frac{\pm\sqrt{1-D^2}}{D} = \mbox{atan2}(\pm\sqrt{1-D^2},D)
 
-The tangent form has the +/- and gives the elbow up and elbow down
-solutions.
+The +/-  gives the elbow up and elbow down solutions.  A source of errors arises with
+the arctan or inverse tangent of the ratio.  The inverse function is multivalued and
+calculators (as with most software) will return a single value known as the principle
+value.   However, you may want one of the different values.  The problem normally
+is that since :math:`-y/-x = y/x` the inverse tangent function will not know which
+quadrant to select.  So it may hand you a value that is off by :math:`\pm \pi`.
+We suggest that you use atan2 in your calculations
+instead of atan which will isolate quadrant and also
+avoid the divide by zero problem.  We will do the mathematics with :math:`\tan^{-1}`, but
+keep our code using atan2.
 
 .. Owned by Roboscience
 
@@ -140,7 +148,8 @@ solutions.
 
    The interior angles for the two link manipulator.
 
-From Figure :numref:`twolinklabeled2`, we have
+Continuing with the derivation,
+from Figure :numref:`twolinklabeled2`, we have
 
 .. math::
    :label: eqn:theta1step1
@@ -222,7 +231,44 @@ The Python code to do the computations is
 Note that all angles in this text are in radians unless explicitly stated
 as degrees.  This is to be consistent with standard math sources as well
 as the default for most programming languages.
-Also, be careful with Python 2, don’t forget to include the “.0”s.
+Be careful with Python 2, don’t forget to include the “.0”s.  Most of all,
+be very careful with arctan.  It can bite you.  Here is an example ...
+
+Assume that :math:`(x,y) = (9,10)` and :math:`(a_1, a_2) = (15,15)`.
+We compute
+
+.. math::
+
+   \begin{array}{l}
+   D = \displaystyle  \frac{x^2 + y^2 - a_1^2 - a_2^2}{2a_1a_2 }
+   = \displaystyle \frac{9^2 + 10^2 - 15^2 - 15^2}{2(15)(15) } = -0.5977777777777777 \\[4pt]
+   \theta_2 = \tan^{-1}\displaystyle\frac{-\sqrt{1-D^2}}{D}  = 0.9300701118289644 \\[4pt]
+   \theta_1 = \tan^{-1}\displaystyle\frac{y}{x} - \tan^{-1} \displaystyle\frac{a_2\sin \theta_2}{a_1 + a_2\cos\theta_2}
+            = 0.3729461690939078
+   \end{array}
+
+Now check our answers ...
+
+.. math::
+
+   \begin{matrix}
+   x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1 = 17.93773762042545 \\
+   y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1 = 19.9308195782505
+   \end{matrix}
+
+Not close.  What happened?  The first problem was that in :math:`\displaystyle\frac{-\sqrt{1-D^2}}{D}`
+which is :math:`\displaystyle\frac{-0.801...}{-0.597...}`
+becomes :math:`\displaystyle\frac{0.801...}{0.597...}`
+and then atan returns a quadrant I angle of 0.930070... .  We needed
+:math:`\theta_2 = 0.93007 + \pi = 4.0716`.  Then you get :math:`\theta_1 = 1.94374...`.
+
+.. math::
+
+   \begin{matrix}
+   x = a_2\cos (\theta_1+\theta_2) + a_1 \cos \theta_1 = 9.0 \\
+   y = a_2 \sin (\theta_1 +\theta_2) + a_1\sin \theta_1 = 9.99999 \approx 10
+   \end{matrix}
+
 
 Dual Two Link Parallel Manipulator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

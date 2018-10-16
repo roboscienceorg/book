@@ -1,67 +1,489 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="21cm" height="15cm" viewBox="190 68 420 281" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 192 150 C 253.752,150 316.248,76 368.264,76"/>
-    <path style="fill: #0000ff" d="M 192 150 C 192,148.5 193.5,147 195,147 C 196.5,147 198,148.5 198,150 C 198,151.5 196.5,153 195,153 C 193.5,153 192,151.5 192,150z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 192 150 C 192,148.5 193.5,147 195,147 C 196.5,147 198,148.5 198,150 C 198,151.5 196.5,153 195,153 C 193.5,153 192,151.5 192,150"/>
-    <polygon style="fill: #0000ff" points="375.764,76 365.764,81 368.264,76 365.764,71 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="375.764,76 365.764,81 368.264,76 365.764,71 "/>
-  </g>
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 377 77 C 453.36,77 530.64,119 597.264,119"/>
-    <path style="fill: #0000ff" d="M 377 77 C 377,75.5 378.5,74 380,74 C 381.5,74 383,75.5 383,77 C 383,78.5 381.5,80 380,80 C 378.5,80 377,78.5 377,77z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 377 77 C 377,75.5 378.5,74 380,74 C 381.5,74 383,75.5 383,77 C 383,78.5 381.5,80 380,80 C 378.5,80 377,78.5 377,77"/>
-    <polygon style="fill: #0000ff" points="604.764,119 594.764,124 597.264,119 594.764,114 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="604.764,119 594.764,124 597.264,119 594.764,114 "/>
-  </g>
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" d="M 380 250 C 457,260 533.754,322.336 600.378,322.336"/>
-    <path style="fill: #00ff00" d="M 380 250 C 380.193,248.512 381.874,247.218 383.361,247.411 C 384.849,247.605 386.143,249.285 385.95,250.773 C 385.757,252.26 384.076,253.555 382.589,253.361 C 381.101,253.168 379.807,251.488 380,250z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" d="M 380 250 C 380.193,248.512 381.874,247.218 383.361,247.411 C 384.849,247.605 386.143,249.285 385.95,250.773 C 385.757,252.26 384.076,253.555 382.589,253.361 C 381.101,253.168 379.807,251.488 380,250"/>
-    <polygon style="fill: #00ff00" points="607.878,322.336 597.878,327.336 600.378,322.336 597.878,317.336 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="607.878,322.336 597.878,327.336 600.378,322.336 597.878,317.336 "/>
-  </g>
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" d="M 193.114 244.336 C 254.866,244.336 317.248,146 369.264,146"/>
-    <path style="fill: #ff0000" d="M 193.114 244.336 C 193.114,242.836 194.614,241.336 196.114,241.336 C 197.614,241.336 199.114,242.836 199.114,244.336 C 199.114,245.836 197.614,247.336 196.114,247.336 C 194.614,247.336 193.114,245.836 193.114,244.336z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" d="M 193.114 244.336 C 193.114,242.836 194.614,241.336 196.114,241.336 C 197.614,241.336 199.114,242.836 199.114,244.336 C 199.114,245.836 197.614,247.336 196.114,247.336 C 194.614,247.336 193.114,245.836 193.114,244.336"/>
-    <polygon style="fill: #ff0000" points="376.764,146 366.764,151 369.264,146 366.764,141 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" points="376.764,146 366.764,151 369.264,146 366.764,141 "/>
-  </g>
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 378.114 173.336 C 454.474,173.336 531.754,215.336 598.378,215.336"/>
-    <path style="fill: #0000ff" d="M 378.114 173.336 C 378.114,171.836 379.614,170.336 381.114,170.336 C 382.614,170.336 384.114,171.836 384.114,173.336 C 384.114,174.836 382.614,176.336 381.114,176.336 C 379.614,176.336 378.114,174.836 378.114,173.336z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 378.114 173.336 C 378.114,171.836 379.614,170.336 381.114,170.336 C 382.614,170.336 384.114,171.836 384.114,173.336 C 384.114,174.836 382.614,176.336 381.114,176.336 C 379.614,176.336 378.114,174.836 378.114,173.336"/>
-    <polygon style="fill: #0000ff" points="605.878,215.336 595.878,220.336 598.378,215.336 595.878,210.336 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="605.878,215.336 595.878,220.336 598.378,215.336 595.878,210.336 "/>
-  </g>
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" d="M 195.114 344.672 C 256.866,344.672 315.248,247 367.264,247"/>
-    <path style="fill: #ff0000" d="M 195.114 344.672 C 195.114,343.172 196.614,341.672 198.114,341.672 C 199.614,341.672 201.114,343.172 201.114,344.672 C 201.114,346.172 199.614,347.672 198.114,347.672 C 196.614,347.672 195.114,346.172 195.114,344.672z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" d="M 195.114 344.672 C 195.114,343.172 196.614,341.672 198.114,341.672 C 199.614,341.672 201.114,343.172 201.114,344.672 C 201.114,346.172 199.614,347.672 198.114,347.672 C 196.614,347.672 195.114,346.172 195.114,344.672"/>
-    <polygon style="fill: #ff0000" points="374.764,247 364.764,252 367.264,247 364.764,242 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" points="374.764,247 364.764,252 367.264,247 364.764,242 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="380" y1="294" x2="380" y2="278.736"/>
-    <polygon style="fill: #000000" points="380,271.236 385,281.236 380,278.736 375,281.236 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="380,271.236 385,281.236 380,278.736 375,281.236 "/>
-  </g>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="197" y="116">
-    <tspan x="197" y="116">Planned </tspan>
-    <tspan x="197" y="133.639">Path</tspan>
-  </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="199" y="208">
-    <tspan x="199" y="208">Actual</tspan>
-    <tspan x="199" y="225.639">Path</tspan>
-  </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="203.8" y="304.5">
-    <tspan x="203.8" y="304.5">Actual</tspan>
-    <tspan x="203.8" y="322.139">Path</tspan>
-  </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="390" y="294">
-    <tspan x="390" y="294">Corrected</tspan>
-    <tspan x="390" y="311.639">Path</tspan>
-  </text>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 342 360"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-5B8A493F-2CBE-4E8C-A371-0C30B21C12CD">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M126.62 252.93
+                        L129.66 258.10
+                        L114.14 267.23
+                        L108.06 256.88
+                        L123.58 247.76
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M117.00 257.00
+                    C117.00 257.00 136.08 245.79 169.00 251.00
+                    C201.92 256.21 220.75 276.67 254.00 279.00
+                    C287.25 281.33 331.00 264.00 331.00 264.00
+                    "
+                clip-path="url(#clipPath-5B8A493F-2CBE-4E8C-A371-0C30B21C12CD)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(255, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M121.41 260.92
+                    C118.54 259.88 116.62 256.61 117.11 253.60
+                    C117.61 250.59 120.34 248.99 123.21 250.02
+                    C126.08 251.05 128.00 254.32 127.51 257.33
+                    C127.01 260.34 124.28 261.95 121.41 260.92
+                    Z
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(255, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <path
+                d="
+                    M4.00 130.00
+                    C4.00 130.00 4.00 130.00 4.00 130.00
+                    C4.00 130.00 26.73 97.52 53.00 77.00
+                    C79.27 56.48 117.00 44.00 117.00 44.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 128, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-CE780C36-5F31-4ADF-8CDF-40DA081B744E">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M126.62 39.93
+                        L129.66 45.10
+                        L114.14 54.23
+                        L108.06 43.88
+                        L123.58 34.76
+                        Z
+                        M320.78 56.27
+                        L319.01 51.59
+                        L339.57 43.77
+                        L343.12 53.12
+                        L322.56 60.94
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M117.00 44.00
+                    C117.00 44.00 136.08 32.79 169.00 38.00
+                    C201.92 43.21 220.75 63.67 254.00 66.00
+                    C287.25 68.33 331.00 51.00 331.00 51.00
+                    "
+                clip-path="url(#clipPath-CE780C36-5F31-4ADF-8CDF-40DA081B744E)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 128, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M121.41 47.92
+                    C118.54 46.88 116.62 43.61 117.11 40.60
+                    C117.61 37.59 120.34 35.99 123.21 37.02
+                    C126.08 38.05 128.00 41.32 127.51 44.33
+                    C127.01 47.34 124.28 48.95 121.41 47.92
+                    Z
+                    "
+                fill="rgb(0, 128, 0)"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 128, 0)"
+                />
+            
+            <path
+                d="
+                    M321.33 56.06
+                    L319.76 51.93
+                    L331.07 52.36
+                    L322.90 60.18
+                    Z
+                    "
+                fill="rgb(0, 128, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 128, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M47.00 14.00
+                    L211.00 14.00
+                    L211.00 35.00
+                    L47.00 35.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="47.17" y="30.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Desired Point/Path</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-3CAEEFE3-7011-4BFD-9EB6-B9860BC06F21">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M108.11 122.80
+                        L105.28 118.67
+                        L123.41 106.22
+                        L129.07 114.46
+                        L110.94 126.92
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M4.00 228.00
+                    C4.00 228.00 4.00 228.00 4.00 228.00
+                    C4.00 228.00 22.43 195.57 46.00 172.00
+                    C69.57 148.43 117.00 115.00 117.00 115.00
+                    "
+                clip-path="url(#clipPath-3CAEEFE3-7011-4BFD-9EB6-B9860BC06F21)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(255, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M108.59 122.46
+                    L106.09 118.83
+                    L117.18 116.57
+                    L111.09 126.10
+                    Z
+                    "
+                fill="none"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(255, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-B09E8696-0B00-4A0E-BD3A-D33538CCF2BB">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M126.62 137.93
+                        L129.66 143.10
+                        L114.14 152.23
+                        L108.06 141.88
+                        L123.58 132.76
+                        Z
+                        M320.78 154.27
+                        L319.01 149.59
+                        L339.57 141.77
+                        L343.12 151.12
+                        L322.56 158.94
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M117.00 142.00
+                    C117.00 142.00 136.08 130.79 169.00 136.00
+                    C201.92 141.21 220.75 161.67 254.00 164.00
+                    C287.25 166.33 331.00 149.00 331.00 149.00
+                    "
+                clip-path="url(#clipPath-B09E8696-0B00-4A0E-BD3A-D33538CCF2BB)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(255, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M121.41 145.92
+                    C118.54 144.88 116.62 141.61 117.11 138.60
+                    C117.61 135.59 120.34 133.99 123.21 135.02
+                    C126.08 136.05 128.00 139.32 127.51 142.33
+                    C127.01 145.34 124.28 146.95 121.41 145.92
+                    Z
+                    "
+                fill="rgb(255, 0, 0)"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(255, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M321.33 154.06
+                    L319.76 149.93
+                    L331.07 150.36
+                    L322.90 158.18
+                    Z
+                    "
+                fill="rgb(255, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(255, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M125.00 105.00
+                    L185.00 105.00
+                    L185.00 126.00
+                    L125.00 126.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="126.47" y="121.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Missed</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-03982B3D-C443-45C9-AA47-B8C1749B8D83">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M108.11 242.80
+                        L105.28 238.67
+                        L123.41 226.22
+                        L129.07 234.46
+                        L110.94 246.92
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M4.00 348.00
+                    C4.00 348.00 4.00 348.00 4.00 348.00
+                    C4.00 348.00 22.43 315.57 46.00 292.00
+                    C69.57 268.43 117.00 235.00 117.00 235.00
+                    "
+                clip-path="url(#clipPath-03982B3D-C443-45C9-AA47-B8C1749B8D83)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 255)"
+                />
+            
+            
+            <path
+                d="
+                    M108.59 242.46
+                    L106.09 238.83
+                    L117.18 236.57
+                    L111.09 246.10
+                    Z
+                    "
+                fill="none"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 255)"
+                />
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-C30515BC-0B27-45CE-93BA-8191C2D410C3">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M126.24 231.33
+                        L129.64 236.27
+                        L114.81 246.48
+                        L108.01 236.59
+                        L122.84 226.39
+                        Z
+                        M320.34 267.84
+                        L319.16 262.98
+                        L340.53 257.77
+                        L342.90 267.49
+                        L321.52 272.70
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M117.00 236.00
+                    C117.00 236.00 136.80 222.37 169.00 231.00
+                    C201.20 239.63 213.28 264.64 246.00 271.00
+                    C278.72 277.36 331.00 264.00 331.00 264.00
+                    "
+                clip-path="url(#clipPath-C30515BC-0B27-45CE-93BA-8191C2D410C3)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 255)"
+                />
+            
+            
+            <path
+                d="
+                    M121.61 239.66
+                    C118.67 238.84 116.52 235.71 116.80 232.67
+                    C117.08 229.64 119.69 227.84 122.63 228.67
+                    C125.56 229.49 127.72 232.62 127.44 235.66
+                    C127.16 238.69 124.55 240.49 121.61 239.66
+                    Z
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 255)"
+                />
+            
+            <path
+                d="
+                    M320.91 267.70
+                    L319.87 263.41
+                    L331.03 265.24
+                    L321.96 271.99
+                    Z
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 255)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M124.00 206.00
+                    L283.00 206.00
+                    L283.00 227.00
+                    L124.00 227.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="124.10" y="222.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Controller Adjusts</tspan>
+            </text>
+        </g>
+        
+    </g>
 </svg>
+
