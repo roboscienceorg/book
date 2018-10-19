@@ -69,6 +69,9 @@ np.random.multivariate_normal.
            [-1.07647896,  0.90586496]])
     >>>
 
+Creating your own distribution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 If you want to do this by hand:
 
 #. Generate the random numbers for each variable.
@@ -124,6 +127,9 @@ If you want to do this by hand:
 The previous gives you a method to generate random values from a distribution.
 Next we want to use them for various simulation events, normally to understand
 the system in the presence of noise.
+
+Noise in the DD Robot
+^^^^^^^^^^^^^^^^^^^^^^^
 
 The differential drive robot has two control inputs, the right and left wheel
 speeds.  To simulate motion with noise, we can inject small random values
@@ -255,7 +261,7 @@ paths and the inside loop creates the points on a specific path.
          thpath[k][i] = thv
          i = i+1
 
-This can be visulized by
+This can be visualized by
 
 ::
 
