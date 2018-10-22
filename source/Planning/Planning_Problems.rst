@@ -1,12 +1,6 @@
 Problems
 --------
 
-#. Write a Python program to implement the Wavefront algorithm.
-
-   #. Demonstrate on a map with multiple obstacles.
-
-   #. Compare to the :math:`A^*` approach in the previous exercise.
-
 #. Let the domain be the rectangle :math:`0\leq x \leq 15` and
    :math:`0 \leq y \leq 10`. Place the start position at (0,5). Place the
    end position at (15,5). Assume you have a disk centered at (6,4) with

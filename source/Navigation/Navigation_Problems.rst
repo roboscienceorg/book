@@ -60,3 +60,10 @@ Problems
    #. Tangent Bug
 
    Use a video screen capture program to record the results.
+
+
+#. Write a Python program to implement the Wavefront algorithm.
+
+   #. Demonstrate on a map with multiple obstacles.
+
+   #. Compare to the :math:`A^*` approach in the previous exercise.

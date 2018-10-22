@@ -1,6 +1,35 @@
 Problems
 --------
 
+#. Using python, drive the DD robot along the following points at uniform speed with
+   a p-controller: (0,0), (1,1), (2,0), (3,-1).  Ramp up at the first point and ramp down
+   to stop at the last point.    Plot the points and the robot’s path.
+
+#. Create a list of 12 points that trace a figure 8.
+   Using python, drive the DD robot along the list of points.
+   Ramp up at the first point and ramp down
+   to stop at the last point.    Plot the points and the robot’s path.
+
+
+#. Write a Python program to navigate a robot using the Wavefront algorithm.
+   Demonstrate on a map with multiple obstacles.
+
+
+#. Using Veranda, drive the DD robot along the following points at uniform speed with
+   a p-controller: (0,0), (1,1), (2,0), (3,-1).  Ramp up at the first point and ramp down
+   to stop at the last point.    Plot the points and the robot’s path.
+
+#. Create a list of 12 points that trace a figure 8.
+   Using Veranda, drive the DD robot along the list of points.
+   Ramp up at the first point and ramp down
+   to stop at the last point.    Plot the points and the robot’s path.
+
+
+#. Using Veranda, navigate a robot via the Wavefront algorithm.
+   Demonstrate on a map with multiple obstacles.
+
+
+
 #. In Veranda, drive along :math:`x(t) = 2t-1` and :math:`y(t) = 3t +4` with
    unit speed (:math:`r=1`, :math:`L=4`) with
 
@@ -13,8 +42,7 @@ Problems
    Use a video screen capture program to record the results.
 
 #. Assume that your path planner provided 20 points for a path. The
-   :math:`x` and :math:`y` arrays are given below. Pilot a DD robot along
-   the path. Plot the data and the robot’s path.
+   :math:`x` and :math:`y` arrays are given below.
 
    ::
 
@@ -41,10 +69,8 @@ Problems
        9.22141768   8.18619806   5.76331083   3.81212651   1.08743568
       -1.32495576  -3.92211759  -7.07911689 -10.18134814 -13.76897354]
 
-
-#. Let :math:`r=10`, :math:`L=20`. Find the wheel velocities for the
-   differential drive robot following the path described in the previous
-   problem.
+   Let :math:`r=10`, :math:`L=20`. Use a linear control approach to
+   direct a DD robot to follow the path.
 
 #. Drive the DD robot along the following points at uniform speed using a
    cubic spline: (0,0), (1,1), (2,0), (3,-1). Plot the points and the
@@ -66,9 +92,9 @@ Problems
 #. Assume you have a planner that has provided the following points (2,9),
    (12,13), (23, 40). Also asume that you start with zero derivative at
    (2,9) and pass through (12, 13) with slope :math:`m = 2.5` and have slope
-   :math:`m = 0` at (23,40).
+   :math:`m = 0` at (23,40).   Find the spline.
 
 #. Assume you have a planner that has provided the following points (7,13),
    (10,20), (25,5). Assume that your previous point was (2,0), you want to
    pass through (10, 20), with slope :math:`m = -2`, and have slope
-   :math:`m = 3` at (25,5).
+   :math:`m = 3` at (25,5).   Find the spline.

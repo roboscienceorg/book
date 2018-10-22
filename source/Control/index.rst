@@ -17,7 +17,6 @@ mobile robotic systems.
    :maxdepth: 1
 
    BasicControls
-   Guidance
    Control_Problems
 
 .. Note:: Rework this chapter.

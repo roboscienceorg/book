@@ -31,4 +31,5 @@ constraints.
    ExplorationandNavigation
    Implementation
    Mazes
+   Guidance
    Navigation_Problems

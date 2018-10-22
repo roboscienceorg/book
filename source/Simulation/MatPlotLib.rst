@@ -349,65 +349,6 @@ Code Sample (heart):
 
 .. _`cubicsplineexample`:
 
-Cubic Spline Example
-^^^^^^^^^^^^^^^^^^^^^^
-
-Assume you want the spline that connects the points
-(1,-1) with (3,4). Also assume that the derivative at (1,-1) is given by
-:math:`<1,-3>` and at (3,4) is given by :math:`<0,2>`. We can take
-:math:`t_0=0` and :math:`t_1 = 1`. This gives :math:`z = t`,
-:math:`\dot{z} = 1`, :math:`a = 1 - 2 = -1`, :math:`b = 2`,
-:math:`c = -8`, :math:`d = 3`. This gives us the two splines for the
-parametric description of the curve:
-
-.. math:: x(t) = (1-t) + 3t + t(1-t)[-1(1-t) + 2t]  = -3 t^3+4 t^2+t+1
-
-.. math:: y(t) = -(1-t) + 4t + t(1-t)[-4(1-t)+3t] =  -11 t^3+19 t^2-3 t-1
-
-.. math:: \dot{x} = -9t^2+8t+1, \quad \ddot{x} =   -18t+8
-
-.. math:: \dot{y} =   -33t^2 +38t -3, \quad \ddot{y} =  -66t+38
-
-See :numref:`cubicsplinefigure` for a plot.
-
-::
-
-    t0, t1 = 0, 1
-    x0, y0 = 1, -1
-    x1, y1 = 3, 4
-    xd0 , yd0 = 1, -3
-    xd1 = 0
-    yd1 = 2
-    dt = (t1-t0)
-    dx = (x1-x0)
-    dy = (y1-y0)
-    a = xd0*dt- dx
-    b = -xd1*dt+dx
-    c = yd0*dt-dy
-    d = -yd1*dt+dy
-    t = np.linspace(t0,t1,100)
-    dotz = 1.0/dt
-    z = (dotz)*(t-t0)
-    x = (1-z)*x0 + z*x1+z*(1-z)*(a*(1-z)+b*z)
-    y = (1-z)*y0 + z*y1+z*(1-z)*(c*(1-z)+d*z)
-    ptx = np.array([x0,x1])
-    pty = np.array([y0,y1])
-
-    plt.figure()
-    plt.xlim(0,4)
-    plt.ylim(-2,5)
-    plt.plot(ptx,pty, 'ro',x,y,'g-')
-    plt.legend(['Data', 'Interpolant'],loc='best')
-    plt.title('Cubic Spline')
-    plt.show()
-
-
-.. _`cubicsplinefigure`:
-.. figure:: SciPyFigures/cubicspline.*
-   :width: 70%
-   :align: center
-
-   Graph of the spline for example  `cubicsplineexample`.
 
 Error Ellipses
 ^^^^^^^^^^^^^^
