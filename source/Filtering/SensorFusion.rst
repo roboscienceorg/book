@@ -33,7 +33,7 @@ define optimality as minimizing the mean square error:
 
 .. math:: E[(\hat{x}-x)^2].
 
-:math:`E[\hat{x}-x]=0` implies :math:`\sum_{i=1}^n k_i = 1`
+**Lemma 1**   :math:`E[\hat{x}-x]=0` implies :math:`\sum_{i=1}^n k_i = 1`
 
 An unbiased estimate means that :math:`E(\hat{x}-x) = 0`,
 
@@ -50,7 +50,7 @@ since :math:`E(v_i)=0` and :math:`E(x)=x` we have that
 
 
 
-.. math:: E[(\hat{x}-x)^2] =  \sum_{i=1}^n k_i^2\sigma_i^2
+**Lemma 2**  :math:`E[(\hat{x}-x)^2] =  \sum_{i=1}^n k_i^2\sigma_i^2`
 
 
 where :math:`\sigma_i` are the standard deviations for :math:`v_i`,
@@ -562,6 +562,271 @@ How can you merge these into a single estimate?
    0.00066667&  0.00463772&  0.13332457
    \end{pmatrix}
 
+
+
+Model based filtering
+^^^^^^^^^^^^^^^^^^^^^^^
+
+You have  seen two important aspects to the Kalman Filter which we will derive later.
+The concept of sensor fusion which is merging data from different distributions and
+the concept of recursive filtering which follows a Markov formulation.    Next we look at how
+projecting data onto a model or fitting to a model can act as a filter.
+
+Assume that you have a model and data points :math:`P` and :math:`Q`.
+We can "filter" by projecting the data onto the model (curve).
+
+.. figure:: FilteringFigures/proj2model.*
+   :width:  50%
+   :align: center
+
+
+Say that you have a data set:  :math:`(x_i, y_i),\quad  i=1, \dots, k.` and you want to
+fit a model to it (project onto a model):
+
+.. math:: y = a_n x^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0 , \quad\quad  k >> n
+
+or in general
+
+.. math:: y = a_n \phi_n(x) + a_{n-1}\phi_{n-1}(x) + \dots + a_0 \phi_0(x)
+
+How does one use the data to find the coefficients of the model?
+
+Plug the data into the model:
+
+.. math::
+   \begin{array}{l}
+   y_1 = a_n x_1^n + a_{n-1}x_1^{n-1} + \dots + a_1x_1 + a_0 \\[3mm]
+   y_2 = a_n x_2^n + a_{n-1}x_2^{n-1} + \dots + a_1x_2 + a_0 \\[3mm]
+   \vdots \\[3mm]
+   y_{k-1} = a_n x_{k-1}^n + a_{n-1}x_{k-1}^{n-1} + \dots + a_{k-1}x_{k-1} + a_0 \\[3mm]
+   y_k = a_n x_k^n + a_{n-1}x_k^{n-1} + \dots + a_1x_k + a_0
+  \end{array}
+
+This can be rewritten in the language of linear algebra:
+
+Plug the data into the model:
+
+.. math::
+   \underbrace{\begin{bmatrix} y_1 \\[3mm] y_2 \\[3mm] \vdots \\[3mm] y_k \end{bmatrix}}_y =
+   \underbrace{ \begin{bmatrix} x_1^n & x_1^{n-1} & \dots & x_1 & 1 \\[3mm]
+   x_2^n & x_2^{n-1} & \dots & x_2 & 1 \\[3mm]
+   \vdots &\vdots & & \vdots & \vdots\\[3mm]
+   x_k^n & x_k^{n-1} & \dots & x_k & 1
+   \end{bmatrix} }_X
+   \underbrace{\begin{bmatrix}
+    a_n \\[3mm] a_{n-1} \\[3mm] \vdots \\[3mm] a_1 \\[3mm] a_0
+   \end{bmatrix}}_a
+
+
+The problem is that this system is not usually square and so one cannot just invert the matrix :math:`X`
+to find the coefficients :math:`a_j`.   Expressing our system as
+
+.. math:: y = X a
+
+We assume that we have many data points but wish a low degree polynomial
+to fit the data points, :math:`k >> n+1` where :math:`k` is the number
+of points and :math:`n` is the degree of the polynomial. This is an
+overdetermined problem and presents us with a non-square matrix
+:math:`A`. We form the normal equations
+
+.. math:: X^T y = X^TXa
+
+we obtain a solvable system. If :math:`X^T X` is of full rank, then we
+can invert
+
+.. math:: a = \left(X^T X\right)^{-1} X^Ty
+
+Once :math:`a` is found then we may use
+
+.. math:: \hat{y} = a_n x^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0
+
+as the "fit" to the data.
+
+
+Before we put this to use, we should address the question
+"is :math:`X^TX` of full rank?"  What does this mean?
+Here it means that the columns must be linearly independent. The geometric
+structure of the system looks like:
+
+.. figure:: FilteringFigures/vrect.*
+   :width: 15%
+   :align: center
+
+
+It is clear that if we have more rows than columns, the rows cannot be linearly independent.
+The columns might be L.I.. If they are not then two of the basis elements :math:`\phi_i(x)` and :math:`\phi_j(x)`
+are the same and we have repeated one.
+
+For this example, we have 20 points for which we would like to fit a
+quadratic equation. Assume the data is contained in a file named
+"data.txt" (with the same formatting), we can plot this using:
+
+
+
+:math:`x_i` :math:`y_i`
+
+::
+
+    0.026899  1.367895
+    0.115905  1.295606
+    0.250757  1.156797
+    0.413750  1.144025
+    0.609919  0.862480
+    0.669044  0.827181
+    0.868043  0.693536
+    1.080695  0.528216
+    1.233052  0.549789
+    1.312322  0.741778
+    1.402371  0.879171
+    1.724433  0.784356
+    1.844290  0.912907
+    1.901078  0.902587
+    2.117728  1.032718
+    2.235872  1.133116
+    2.331574  1.331071
+    2.607533  1.768845
+    2.719074  1.723766
+    2.853608  1.898702
+
+.. figure:: FilteringFigures/quadpts.*
+   :width:  65%
+   :align: center
+
+
+Assume that the model for the data is :math:`y = a_2x^2 + a_1x +a_0`.
+Find :math:`a_2, a_1, a_0`. Note that the system arises:
+
+
+  .. math::
+
+     \begin{array}{c}
+        (0.026899, 1.367895) \to\quad 1.367895 = a_2(0.026899)^2 + a_1(0.026899) + a_0\\
+        (0.115905,  1.295606) \to\quad  1.295606 = a_2(0.115905)^2 + a_1(0.115905) + a_0\\
+         (0.250757, 1.156797) \to\quad   1.156797 = a_2(0.250757)^2 + a_1(0.250757) + a_0\\
+        \vdots
+       \end{array}
+
+which can be written as
+
+.. math::
+
+   \begin{bmatrix}
+   (0.026899)^2 & 0.026899 & 1\\
+   (0.115905)^2 & 0.115905 & 1\\
+   (0.250757)^2 & 0.250757 & 1\\
+   \vdots & \vdots & \vdots
+   \end{bmatrix}
+   \begin{bmatrix}
+    a_2 \\ a_1 \\ a_0
+   \end{bmatrix}
+   =
+   \begin{bmatrix}
+    1.367895\\
+     1.295606\\
+    1.156797\\
+   \vdots
+   \end{bmatrix}
+
+
+
+
+
+The Normal Equations can be formed
+
+.. math::
+
+   \begin{bmatrix}
+    (0.026899)^2 & (0.115905)^2 & (0.250757)^2 & \dots \\
+    0.026899& 0.115905 & 0.250757 & \dots \\
+   1 & 1 & 1 & \dots
+   \end{bmatrix}
+   \begin{bmatrix}
+   (0.026899)^2 & 0.026899 & 1\\
+   (0.115905)^2 & 0.115905 & 1\\
+   (0.250757)^2 & 0.250757 & 1\\
+   \vdots & \vdots & \vdots
+   \end{bmatrix}
+   \begin{bmatrix}
+    a_2 \\ a_1 \\ a_0
+   \end{bmatrix}
+
+.. math::
+
+   =
+   \begin{bmatrix}
+    (0.026899)^2 & (0.115905)^2 & (0.250757)^2 & \dots \\
+    0.026899& 0.115905 & 0.250757 & \dots \\
+   1 & 1 & 1 & \dots
+   \end{bmatrix}
+   \begin{bmatrix}
+    1.367895\\
+     1.295606\\
+    1.156797\\
+   \vdots
+   \end{bmatrix}
+
+
+One can solve :math:`X^TX a = X^T y`: :math:`a = (X^TX)^{-1} X^T y`
+
+
+  .. math::
+
+     \begin{bmatrix}
+     286.78135686  & 122.11468009 &  55.44347326 \\
+      122.11468009 &  55.44347326  & 28.317947 \\
+       55.44347326 &  28.317947  &   20.
+     \end{bmatrix}
+     \begin{bmatrix}
+     a_2 \\ a_1 \\ a_0
+     \end{bmatrix}
+     =
+     \begin{bmatrix}
+       72.4241925 \\  33.380646 \\ 21.534542
+     \end{bmatrix}
+
+.. math::
+
+   \begin{bmatrix}
+   a_2 \\ a_1 \\ a_0
+   \end{bmatrix}
+   \approx
+   \begin{bmatrix}
+    0.4930957 \\ -1.212858 \\ 1.42706\\
+   \end{bmatrix}
+
+The curve is approximately :math:`y = 0.49x^2 - 1.21x + 1.42`,
+Figure  :numref:`plot:quadgraph`
+
+.. _`plot:quadgraph`:
+.. figure:: FilteringFigures/quadgraph.*
+   :width: 70%
+   :align: center
+
+   The plot of :math:`y = 0.49x^2 - 1.21x + 1.42`.
+
+::
+
+   N = len(xl)
+   x = np.array(xl)
+   y = np.array(yl)
+   xx = x*x
+   A = np.array([xx, x, np.ones((N))]).T
+   AT = np.array([xx, x, np.ones((N))])
+   AA = np.dot(AT,A)
+   ATy = np.dot(AT,y)
+
+   c = linalg.solve(AA,ATy)
+   t = np.arange(0,3, 0.1)
+   tt = t*t
+   B = np.array([tt,t,np.ones(len(t))]).T
+   s = np.dot(B,c)
+   plt.plot(t,s, 'b-', x,y, 'ro')
+   plt.xlim(0,3)
+   plt.ylim(0,2)
+   plt.show()
+
+
+
 :index:`Least Squares Observer`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -574,7 +839,6 @@ familiar example. Assume that you have a collection of similar sensors
 versions of a hidden state :math:`x`, with noise :math:`w` meaning that
 :math:`z = Hx + w`, the observation of :math:`x` subject to noise
 :math:`w`.
-
 Given :math:`k` observations :math:`z` of state :math:`x\in{\Bbb R}^n`,
 :math:`k>>n`, with noise :math:`w`:
 

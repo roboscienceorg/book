@@ -18,5 +18,3 @@ mobile robotic systems.
 
    BasicControls
    Control_Problems
-
-.. Note:: Rework this chapter.

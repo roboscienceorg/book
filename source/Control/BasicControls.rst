@@ -388,7 +388,7 @@ manner as it does alone.
    :width: 40%
    :align: center
 
-   This figure needs to be replaced!!!
+   Proportional control.
 
 
 PID - Integral Term
@@ -413,7 +413,7 @@ windup.
    :width: 40%
    :align: center
 
-   This figure needs to be replaced!!!
+   Proportional-Integral control.
 
 
 PID - Derivative Term
@@ -439,7 +439,7 @@ are sufficiently large.
    :width: 40%
    :align: center
 
-   This figure needs to be replaced!!!
+   Proportional-Integral-Derivative control.
 
 
 PI Control Discretization
