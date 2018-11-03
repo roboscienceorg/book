@@ -8,3 +8,4 @@ To build the html:   make html
 
 To build the pdf:    make latexpdf
 
+Our goal is to build a useful and modular curriculum.   So, instead of just forking the distro in silence, how about you contact us.  We might be able to add the content you want and end up with a better product overall.  We might also be able to setup for custom builds.  Thanks. 
