@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="8cm" height="11cm" viewBox="143 37 148 220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <rect style="fill: #ffffff" x="144.625" y="38" width="74" height="217"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="144.625" y="38" width="74" height="217"/>
-  </g>
-  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="160" y1="44" x2="160" y2="247"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="175.205" y1="42.7048" x2="175.223" y2="247.562"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="189.405" y1="44.4048" x2="189.223" y2="247.562"/>
-  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="203.354" y1="45.2298" x2="203.348" y2="247.688"/>
-  <g>
-    <rect style="fill: #ffffff" x="233" y="113" width="13" height="65"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="233" y="113" width="13" height="65"/>
-  </g>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="259" y="148">
-    <tspan x="259" y="148">=</tspan>
-  </text>
-  <g>
-    <rect style="fill: #ffffff" x="279" y="38" width="11" height="213"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="279" y="38" width="11" height="213"/>
-  </g>
+<!-- Created by diasvg.py -->
+<svg width="7.369cm" height="10.950cm" viewBox="7.181 1.850 14.550 12.800"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="7.231" y="1.900" width="3.700" height="10.850" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="7.231" y="1.900" width="3.700" height="10.850" fill="none" stroke="#000000" stroke-width="0.100" />
+<line x1="8.000" y1="2.200" x2="8.000" y2="12.350" stroke="#000000" stroke-width="0.100" />
+<line x1="8.760" y1="2.135" x2="8.761" y2="12.378" stroke="#000000" stroke-width="0.100" />
+<line x1="9.470" y1="2.220" x2="9.461" y2="12.378" stroke="#000000" stroke-width="0.100" />
+<line x1="10.168" y1="2.261" x2="10.167" y2="12.384" stroke="#000000" stroke-width="0.100" />
+<rect x="11.650" y="5.650" width="0.650" height="3.250" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="11.650" y="5.650" width="0.650" height="3.250" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="12.950" y="7.400"  fill="#000000" text-anchor="start" font-size="0.80" font-family="Symbol" font-style="normal" font-weight="400">
+=</text>
+<rect x="13.950" y="1.900" width="0.550" height="10.650" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.950" y="1.900" width="0.550" height="10.650" fill="none" stroke="#000000" stroke-width="0.100" />
 </svg>

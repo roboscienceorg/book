@@ -205,7 +205,7 @@ where
 
 .. _`fig:overdetermined`:
 .. figure:: MathFigures/vrect.*
-   :width: 20%
+   :width: 30%
    :align: center
 
    Overdetermined System of Equations
@@ -320,7 +320,7 @@ Figure  :numref:`Fig:underdetermined`
 
 .. _`Fig:underdetermined`:
 .. figure:: MathFigures/hrect.*
-   :width:  20%
+   :width:  30%
    :align: center
 
    An underdetermined system
@@ -347,12 +347,20 @@ gives us the result. Admittedly this version is less intuitive.
 Pseudo-Inverse Formulas
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-| Left Moore-Penrose Pseudo-Inverse (:math:`A` has linearly independent
-  columns):
-| :math:`A^+ = \left(A^TA\right)^{-1} A^T`, and :math:`A^+ A =I`
-| Right Moore-Penrose Pseudo-Inverse (:math:`A` has linearly independent
-  rows):
-| :math:`A^+ = A^T \left(AA^T\right)^{-1}`, and :math:`A A^+ =I`
+
+
+#. Left Moore-Penrose Pseudo-Inverse (:math:`A` has linearly independent columns):  :math:`A^+ = \left(A^TA\right)^{-1} A^T :`  :math:`A^+ A =I`
+
+   .. image:: MathFigures/vrectsoln.*
+      :align: center
+      :width: 75%
+
+
+#. Right Moore-Penrose Pseudo-Inverse (:math:`A` has linearly independent rows):  :math:`A^+ = A^T \left(AA^T\right)^{-1}:` :math:`A A^+ =I`
+
+   .. image:: MathFigures/hrectsoln.*
+      :align: center
+      :width: 75%
 
 
 

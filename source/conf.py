@@ -173,7 +173,7 @@ latex_elements = {
 
         \newdateformat{mydate}{\shortmonthname[\THEMONTH]  \twodigit{\THEDAY}, \THEYEAR}
 
-        \def\myrelease{1.0}
+        \def\myrelease{1.4}
 
         \pagestyle{fancyplain}
         \fancyhf{}

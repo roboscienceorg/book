@@ -649,7 +649,7 @@ Here it means that the columns must be linearly independent. The geometric
 structure of the system looks like:
 
 .. figure:: FilteringFigures/vrect.*
-   :width: 15%
+   :width: 30%
    :align: center
 
 
@@ -689,7 +689,7 @@ quadratic equation. Assume the data is contained in a file named
     2.853608  1.898702
 
 .. figure:: FilteringFigures/quadpts.*
-   :width:  65%
+   :width:  85%
    :align: center
 
 
@@ -824,6 +824,53 @@ Figure  :numref:`plot:quadgraph`
    plt.xlim(0,3)
    plt.ylim(0,2)
    plt.show()
+
+
+A couple of figures can help.  For the following, we generate a segment of
+a curve :math:`y=x^2-2x+1` and add some noise.  In :numref:`plot:noisycurve1`
+the points with the added noise are show in red and the least squares quadratic
+fit is shown in blue.
+
+.. _`plot:noisycurve1`:
+.. figure:: FilteringFigures/noisycurve1.*
+   :width: 90%
+   :align: center
+
+   A data set with noise shown in red and the least squares fit is shown in blue.
+
+Going a bit further, the noise is extracted and shown in yellow.  The blue curve
+is the least squares fit and the green curve is the original polynomial.
+
+.. _`plot:noisycurve2`:
+.. figure:: FilteringFigures/noisycurve2.*
+   :width: 90%
+   :align: center
+
+   The red curve is the sample or noisy set.  The blue curve is the least squares
+   interpolant.   Subtracting the interpolant from the original set gives us the
+   noise curve shown in yellow.  The original data is shown in green.
+
+
+
+Moore-Penrose Pseudo-Inverse
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Recall from linear algebra that we have two types of pseudo-inverses.  One that acts on the left
+one that acts on the right.   They each address complementary problems in least squares
+solutions to non-square systems.  These are reproduced here for convenience.
+
+#. Left Moore-Penrose Pseudo-Inverse:  :math:`H^+ = \left(H^TH\right)^{-1} H^T :`  :math:`H^+ H =I`
+
+   .. image:: FilteringFigures/vrectsoln.*
+      :align: center
+      :width: 75%
+
+
+#. Right Moore-Penrose Pseudo-Inverse:  :math:`H^+ = H^T \left(HH^T\right)^{-1}:` :math:`H H^+ =I`
+
+   .. image:: FilteringFigures/hrectsoln.*
+      :align: center
+      :width: 75%
 
 
 
