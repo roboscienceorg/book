@@ -167,26 +167,3 @@ Draw a tree using python and turtle graphics: write a recursive drawing
 function to graphically display a tree.
 
 What is the built in turtle command to close the Tk window?
-
-NA
-
-.. |image| image:: netpbm/Tiny6pixel.png
-   :width: 20.0%
-.. |image| image:: slam/projection
-   :width: 45.0%
-.. |image| image:: slam/projection_a
-   :width: 45.0%
-.. |image| image:: slam/projection2
-   :width: 45.0%
-.. |image| image:: slam/projection2a
-   :width: 45.0%
-.. |image| image:: slam/projection_blur
-   :width: 90.0%
-.. |image| image:: slam/projection2_blur
-   :width: 90.0%
-.. |image| image:: slam/projection2a_blur
-   :width: 90.0%
-.. |Graph of the spline and spline’s curvature for example [singlesplinenaturalexample].[singlesplinenatural]| image:: motion/singlesplinenat
-   :width: 52.0%
-.. |Graph of the spline and spline’s curvature for example [singlesplinenaturalexample].[singlesplinenatural]| image:: motion/singlesplinenatk
-   :width: 52.0%

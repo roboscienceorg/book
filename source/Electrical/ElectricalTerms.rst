@@ -20,7 +20,7 @@ fundamental components are given in :numref:`fig:resistor`,
 :numref:`fig:capacitor`, :numref:`fig:inductor`.
 
 .. _`fig:resistor`:
-.. figure:: ElectricalFigures/Resistor.png
+.. figure:: ElectricalFigures/Resistor.*
    :width: 40%
    :align: center
 
@@ -29,7 +29,7 @@ fundamental components are given in :numref:`fig:resistor`,
 
 
 .. _`fig:capacitor`:
-.. figure:: ElectricalFigures/Capacitor.png
+.. figure:: ElectricalFigures/Capacitor.*
    :width: 40%
    :align: center
 
@@ -39,7 +39,7 @@ fundamental components are given in :numref:`fig:resistor`,
 
 
 .. _`fig:inductor`:
-.. figure:: ElectricalFigures/Inductor.png
+.. figure:: ElectricalFigures/Inductor.*
    :width: 40%
    :align: center
 

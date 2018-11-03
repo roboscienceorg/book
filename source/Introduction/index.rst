@@ -1,4 +1,9 @@
 .. _`Chap:Introduction`:
+.. raw:: latex
+
+   \mainmatter
+   \lfoot[\thepage]{\rightmark}
+   \rfoot[\leftmark]{\thepage}
 
 ************
 Introduction

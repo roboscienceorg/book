@@ -52,7 +52,8 @@ figure below, the solid line is a vector space is, and the dotted is
 not. A vector space must include the zero element and the dotted line
 does not.
 
-.. _`fig:lineisnotvectorspace`:
+.. _`fig:lineisnotalwaysvectorspace`:
+
 .. figure:: MathFigures/lines.*
    :width: 40%
    :align: center
