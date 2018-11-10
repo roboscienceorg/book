@@ -350,17 +350,26 @@ say 5MHz and 10MHz, you can see that it does not help much. You need
 frequencies that are different enough. As long as our values are
 relatively prime, frequency selection is pretty open. Factors of 12 are
 2, 3, 4. So 5 Mhz would work (as would 17 Mhz and many others) for some
-distance out. Using 5Mhz, we have a wavelength of 60 meters. For the
-moment assume the distance was 26.389 (which would be a phase shift of
-0.4398), then the 5Mhz would produce distances of
+distance out. Using 5Mhz, we have a wavelength of 60 meters.
 
-.. math:: 26.389+60m, \quad m=0,1,2 ...
+Assume that you use the 5Mhz frequency and you measure a phase
+shift of 158.334 degrees.  This must correspond to the distances
 
-as values. To find where the wavelengths give the same value, set
+.. math::
+
+   (158.334/360)*60 + 60m \approx 26.389 +60m , \quad m=0,1,2 ...  \\
+   = 26.389, 86.389, 146.389, 206.389, ...
+
+These agree at 26.389.  Since we cut the distance in half, the object must be
+at D = 13.1945.
+You might wonder if that was the only overlap.  We did not go out very far
+and it could be possible that it repeats.
+
+To find where the two give the same value, set
 
 .. math:: 1.398 + 25n = 26.389 + 60m,
 
- and obtain
+and obtain
 
 .. math:: m = 5(n-1)/12.
 
@@ -378,8 +387,6 @@ simple Python program to check. Step up the values:
     ...
 
 The output becomes
-
-2
 
 ::
 
@@ -404,8 +411,8 @@ The output becomes
     n =  18   m =  7.08333333333
     n =  19   m =  7.5
 
-So :math:`m=5`. This gives isolation out to about 165 meters using two
-waves with a much shorter wavelength.
+So :math:`m=5`. This gives isolation out to about 26.389 + 60(5) = 326.389 meters
+using the two frequences.  Remember to cut this in half, so uniqueness range is 163 meters.
 
 Just as with sonar, errors can arise based on the hardware construction
 and the reflected object surface. Confidence in the range (phase/time

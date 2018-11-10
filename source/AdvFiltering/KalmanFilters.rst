@@ -333,6 +333,11 @@ where :math:`E[\xi]` is the expected value of :math:`\xi`.
    | **end while**
 
 
+.. figure:: AdvFilteringFigures/pointmapcloud.*
+   :width: 50%
+   :align: center
+
+   Single Step of Kalman process.
 
 
 Simple Example of a Single Step
@@ -440,6 +445,21 @@ system we use is Let
 
 .. math:: W = \begin{bmatrix} 0.035^2&0\\0& 0.035^2\end{bmatrix}, \quad  a = \begin{bmatrix} 0.01\\ 0.02\end{bmatrix} ,\quad z = \hat{x}  +a+ w_k.
 
+
+.. figure:: AdvFilteringFigures/kalmanupdatedia.*
+   :width: 75%
+   :align: center
+
+   Parts of the single Kalman step - estimate.
+
+
+.. figure:: AdvFilteringFigures/kalmanupdatedia2.*
+   :width: 75%
+   :align: center
+
+   Parts of the single Kalman step - covariances.
+
+
 Starting with a single point, we move this forward using the process
 update. From the same starting point we run each forward with the
 process update, :math:`\hat{x}_{k|k-1}` many times to generate a
@@ -505,6 +525,13 @@ changes from this than looking at the raw data.
 Kalman Code and Generation of Testing Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: AdvFilteringFigures/kalmanblock.*
+   :width: 50%
+   :align: center
+
+   Kalman Code as a black box.
+
+
 The development of filtering software needs to have datasets to test the
 software. The early stages of software development are about removing
 simple errors such as syntax errors. In the absence of a real robot
@@ -531,10 +558,16 @@ into the computation for :math:`x_{k+1}`, the observation noise,
 
 .. math:: x_{k+1} = Fx_k + Gu_k + v_k
 
-
 .. math:: z_{k+1} = Hx_k + w_k
 
-These can be computed together.
+.. figure:: AdvFilteringFigures/KalmanSimulationBlock.*
+   :width: 95%
+   :align: center
+
+   Simulation and testing.
+
+
+These can be computed together.  Either way, the simulation portion is
 
 ::
 
@@ -616,11 +649,23 @@ certainly can be changed for different applications. As above, let
 
 .. math:: \quad u_k = \sin (7*k/100), \quad x_0 = \begin{bmatrix} 0\\0\end{bmatrix}, \quad P_0 = \begin{bmatrix}0 & 0\\ 0&0\end{bmatrix}.
 
+The includes ...
+
+::
+
+   from math import *
+   import numpy as np
+   import pylab as plt
+   from scipy import interpolate
+   from scipy import stats
+
+The simulation variables ...
+
 ::
 
     #  Create fake dataset for experiment
     N = 100
-    t = np.linspace(0, 7, 100)
+    t = np.linspace(0, 7, N)
     u = 0.1*np.sin(t)
     mu1, sigma1 = 0.0, 0.075
     mu2, sigma2 = 0.0, 0.85
@@ -630,6 +675,9 @@ certainly can be changed for different applications. As above, let
     FT = F.T
     G = np.array([u, 0.5*u]).T
 
+The filter variables
+
+::
 
     H = np.array([1,0])
     HT = H.T
@@ -638,6 +686,10 @@ certainly can be changed for different applications. As above, let
     P = np.zeros((N,2,2))
     z = np.zeros(N)
     xf = np.zeros((N,2))
+
+The simulation ...
+
+::
 
     k = 1
     while (k<N):

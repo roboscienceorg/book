@@ -1,0 +1,222 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 329 76"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B9D6E14C-7F0B-4213-9F3E-DDC58181D824">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="92.00" y="14.00" width="143.00" height="49.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B9D6E14C-7F0B-4213-9F3E-DDC58181D824)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="92.00" y="14.00" width="143.00" height="49.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="122.27" y="42.77"
+            >
+                <tspan style="font-family:ArialMT; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 255)">Kalman Filter</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-67A76018-90FF-43E5-BD95-AFB9696E0C8A">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M80.50 39.50
+                        L80.50 34.50
+                        L102.50 34.50
+                        L102.50 44.50
+                        L80.50 44.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M31.00 39.00
+                    L92.00 39.00
+                    "
+                clip-path="url(#clipPath-67A76018-90FF-43E5-BD95-AFB9696E0C8A)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M81.09 39.50
+                    L81.09 35.09
+                    L91.50 39.50
+                    L81.09 43.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M18.00 28.00
+                    L27.00 28.00
+                    L27.00 49.00
+                    L18.00 49.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="18.00" y="43.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">z</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-A8EA928D-17DD-4C82-8ED0-38E7597C53E1">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M284.50 39.50
+                        L284.50 34.50
+                        L306.50 34.50
+                        L306.50 44.50
+                        L284.50 44.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M235.00 39.00
+                    L296.00 39.00
+                    "
+                clip-path="url(#clipPath-A8EA928D-17DD-4C82-8ED0-38E7597C53E1)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M285.09 39.50
+                    L285.09 35.09
+                    L295.50 39.50
+                    L285.09 43.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M298.00 28.00
+                    L307.00 28.00
+                    L307.00 49.00
+                    L298.00 49.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="298.00" y="43.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">x</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M299.00 21.00
+                    L307.00 21.00
+                    L307.00 42.00
+                    L299.00 42.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="298.78" y="36.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">^</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+
