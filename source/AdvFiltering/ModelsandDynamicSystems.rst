@@ -257,7 +257,7 @@ elements:
       E(x_k) =
       Fx_{k-1}+Gu_k,
 
-    :math:`p(x_k|u_k, x_{k-1})`
+:math:`p(x_k|u_k, x_{k-1})`
 
    .. math::
 
