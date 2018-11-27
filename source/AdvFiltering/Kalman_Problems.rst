@@ -58,7 +58,9 @@ Problems
       \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
       \end{array}
 
-   The covariance of the state transition is :math:`V`. Assume that you
+   Select :math:`\Delta t = 0.2` (time increment) and convert to discrete equations.
+   After conversion, assume the  covariance of the state transition is :math:`V`.
+   Also assume that you
    have a local GPS system that gives :math:`(x,y)` data subject to
    Gaussian noise with covariance :math:`W`. The units on the noise are
    given in cm. If you want to use meters then you will need to divide your
@@ -76,9 +78,12 @@ Problems
                   t=11 -> 16: omega1 =  omega2 = 3,
 
 
-      assuming that you have Gaussian noise on the omegas per time step.
-      Select :math:`\Delta t = 0.2` (time increment). Test with a standard
-      deviation of 0.1 on both wheels.
+      assuming that you have Gaussian noise in the process that is described by:
+
+      .. math::
+
+         `V = \begin{bmatrix}.05 &  .02 & 0.01\\.02& .05& 0.01\\ 0.01& 0.01& .1\end{bmatrix}`
+
 
    #. Write out the formulas for the Extended Kalman Filter.
 
@@ -123,10 +128,3 @@ Problems
 
    #. Write out the EKF process to track the location of the robot and the
       discovered landmarks. You should assume that you start at (0,0,0).
-
-   | Graph the set :math:`z=Hx` where :math:`H = [1, -2]^T` and
-     :math:`z=1`. Let :math:`\hat{x} = (3,2)` and
-     :math:`\Delta x = H^T (HH^T)^{-1}(z - H\hat{x})`.
-   | Plot :math:`\hat{x}`, :math:`\Delta x` and :math:`\hat{x}+\Delta x`.
-     Hint: If :math:`A = \begin{bmatrix}a & b \\ c & d\end{bmatrix}` then
-     :math:`A^{-1} = \frac{1}{ad-bc}\begin{bmatrix}d & -b \\ -c & a\end{bmatrix}`

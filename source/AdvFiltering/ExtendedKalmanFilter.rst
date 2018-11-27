@@ -17,7 +17,7 @@ where :math:`v_k` has variance :math:`V_k` and :math:`w_k` has variance
 
 .. math::
 
-   \displaystyle F_k =
+   F_k = \partial f / \partial x = \displaystyle
      \begin{bmatrix} \frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2}  & \dots &
    \frac{\partial f_1}{\partial x_n}  \\[8pt]
    \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}  & \dots &
@@ -61,6 +61,28 @@ https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant.
       P_{k|k} =
         (I - K_k H_k) P_{k|k-1}
 
+Summed up into a procedure, we have:
+
+.. _extkalmanfilteralg:
+.. topic::  EFK Algorithm
+
+   | **Input** :math:`x_0`, :math:`P_0`
+   | **Output** Estimates of :math:`x_k`, :math:`P_k`
+   | :math:`k=0`
+   | **while** (not terminated) **do**
+   |    :math:`k=k+1`
+   |    :math:`x_k = f(\hat{x}_{k-1|k-1}, u_{k})`
+   |    :math:`F_k =  \mbox{Jacobian}(f)|_{x_k}`
+   |    :math:`P_{k} = F_{k} P_{k-1} F_{k}^{T} + V_{k}`
+   |    :math:`H_k = \mbox{Jacobian}(h)|_{x_k}`
+   |    :math:`y_k = z_k - H_k x_{k}`
+   |    :math:`S_k = H_k P_{k} H_k^\text{T} + W_k`
+   |    :math:`K_k = P_{k}H_k^\text{T}S_k^{-1}`
+   |    :math:`x_k =   x_{k} + K_k y_k`
+   |    :math:`P_{k} = (I - K_k H_k) P_{k}`
+   | **end while**
+
+
 Short Example
 ~~~~~~~~~~~~~
 
@@ -82,7 +104,7 @@ Assume that the initial values, :math:`t_0 = 0`,
 
 and we have a reasonably accurate start
 
-.. math:: P_0 = \begin{pmatrix} 0.05 & 0 \\ 0 & 0.05   \end{pmatrix}
+.. math:: P_0 = \begin{pmatrix} 0.5 & 0 \\ 0 & 0.5   \end{pmatrix}
 
 Using a basic Euler formulation we replace the derivative:
 
@@ -217,13 +239,17 @@ discretize the equations.
 
 The discretized variables are
 
-.. math:: t_k \equiv k\Delta t, \quad t_{k+1} = (k+1)\Delta t
+.. math::
 
-.. math:: x_k \equiv x(t_k), \hspace*{1cm} y_k \equiv y(t_k)
+   t_k \equiv k\Delta t, \quad t_{k+1} = (k+1)\Delta t
 
 .. math::
 
-   \omega_{1, k}\equiv \dot{\phi}_{1}(t_k), \hspace*{1cm}
+   x_k \equiv x(t_k), \quad y_k \equiv y(t_k)
+
+.. math::
+
+   \omega_{1, k}\equiv \dot{\phi}_{1}(t_k),  \quad
    \omega_{2, k}\equiv \dot{\phi}_{2}(t_k)
 
 The discrete approximations to the differential drive equations are:
@@ -231,9 +257,9 @@ The discrete approximations to the differential drive equations are:
 .. math::
 
    \begin{array}{l}
-    x_{k+1} = x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) \\[5mm]
-   y_{k+1} = y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) \\[5mm]
-   \theta_{k+1} = \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k})
+   \displaystyle x_{k+1} = x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) \\[2mm]
+   \displaystyle y_{k+1} = y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) \\[2mm]
+   \displaystyle \theta_{k+1} = \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k})
    \end{array}
 
 The next step is to linearize the process dynamics. This means that we
@@ -247,24 +273,24 @@ must compute the matrix :math:`F` from the nonlinear model :math:`f`.
 .. math::
 
    f(x_k,u_k) = \begin{bmatrix}
-                  x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) \\[5mm]
-   y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) \\[5mm]
+                  x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) \\[3mm]
+   y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) \\[3mm]
    \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k})
                 \end{bmatrix}
 
 .. math::
 
    \displaystyle F_k =
-   \begin{bmatrix} \frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2}  &
-   \frac{\partial f_1}{\partial x_3}  \\[8pt]
-   \frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2}  &
-   \frac{\partial f_2}{\partial x_3}  \\[8pt]
-   \frac{\partial f_3}{\partial x_1} & \frac{\partial f_3}{\partial x_2}  &
-   \frac{\partial f_3}{\partial x_3}  \end{bmatrix}
+   \begin{bmatrix} \displaystyle  \frac{\partial f_1}{\partial x_1} & \displaystyle  \frac{\partial f_1}{\partial x_2}  &
+   \displaystyle \frac{\partial f_1}{\partial x_3}  \\[5pt]
+   \displaystyle  \frac{\partial f_2}{\partial x_1} & \displaystyle \frac{\partial f_2}{\partial x_2}  &
+   \displaystyle \frac{\partial f_2}{\partial x_3}  \\[5pt]
+   \displaystyle  \frac{\partial f_3}{\partial x_1} & \displaystyle \frac{\partial f_3}{\partial x_2}  &
+   \displaystyle \frac{\partial f_3}{\partial x_3}  \end{bmatrix}
    \displaystyle  = \begin{bmatrix} 1 & 0  &
-   -\frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k)  \\[8pt]
+   -\frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k)  \\[5pt]
    0 & 1  &
-   \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k)  \\[8pt]
+   \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k)  \\[5pt]
    0 & 0  & 1  \end{bmatrix}
 
 Assume that you start the robot with pose :math:`[0,0,0]` and you know
@@ -304,6 +330,9 @@ and so we plug in :math:`H` into our process and express:
 #. :math:`\hat{x}_{k|k} =\hat{x}_{k|k-1} + K_k \left(z_k - \hat{x}_{k|k-1}\right)`
 
 #. :math:`P_{k|k} =   (I - K_k ) P_{k|k-1}`
+
+Note that the steps above ONLY apply to when you can observe all three
+variables making :math:`H` the identity matrix.
 
 .. math::
 

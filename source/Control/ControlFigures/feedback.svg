@@ -1,80 +1,348 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="28cm" height="7cm" viewBox="52 44 548 140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <rect style="fill: #e6e6fa" x="350" y="92" width="75" height="33"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="350" y="92" width="75" height="33"/>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="28cm"
+   height="7cm"
+   viewBox="52 44 548 140"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="feedback.svg">
+  <metadata
+     id="metadata118">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs116" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1062"
+     inkscape:window-height="621"
+     id="namedview114"
+     showgrid="false"
+     inkscape:zoom="0.87885424"
+     inkscape:cx="496.06299"
+     inkscape:cy="124.01575"
+     inkscape:window-x="148"
+     inkscape:window-y="29"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <g
+     id="g4">
+    <rect
+       style="fill: #e6e6fa"
+       x="350"
+       y="92"
+       width="75"
+       height="33"
+       id="rect6" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="350"
+       y="92"
+       width="75"
+       height="33"
+       id="rect8" />
   </g>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="365" y="114">
-    <tspan x="365" y="114">Motor</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="365"
+     y="114"
+     id="text10">
+    <tspan
+       x="365"
+       y="114"
+       id="tspan12"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Motor</tspan>
   </text>
-  <line style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" x1="425" y1="108.5" x2="498" y2="110"/>
-  <g>
-    <rect style="fill: #ffa500" x="455" y="95" width="10" height="30"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="455" y="95" width="10" height="30"/>
+  <line
+     style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000"
+     x1="425"
+     y1="108.5"
+     x2="498"
+     y2="110"
+     id="line14" />
+  <g
+     id="g16">
+    <rect
+       style="fill: #ffa500"
+       x="455"
+       y="95"
+       width="10"
+       height="30"
+       id="rect18" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="455"
+       y="95"
+       width="10"
+       height="30"
+       id="rect20" />
   </g>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="434" y="88">
-    <tspan x="434" y="88">Encoder</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="434"
+     y="88"
+     id="text22">
+    <tspan
+       x="434"
+       y="88"
+       id="tspan24"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Encoder</tspan>
   </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="507" y="113">
-    <tspan x="507" y="113">Actual Speed</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="507"
+     y="113"
+     id="text26">
+    <tspan
+       x="507"
+       y="113"
+       id="tspan28"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Actual Speed</tspan>
   </text>
-  <g>
-    <rect style="fill: #3232ff" x="267" y="97" width="52" height="23"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="267" y="97" width="52" height="23"/>
+  <g
+     id="g30">
+    <rect
+       style="fill: #3232ff"
+       x="267"
+       y="97"
+       width="52"
+       height="23"
+       id="rect32" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="267"
+       y="97"
+       width="52"
+       height="23"
+       id="rect34" />
   </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="319" y1="108.5" x2="340.264" y2="108.5"/>
-    <polygon style="fill: #000000" points="347.764,108.5 337.764,113.5 340.264,108.5 337.764,103.5 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="347.764,108.5 337.764,113.5 340.264,108.5 337.764,103.5 "/>
+  <g
+     id="g36">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="319"
+       y1="108.5"
+       x2="340.264"
+       y2="108.5"
+       id="line38" />
+    <polygon
+       style="fill: #000000"
+       points="347.764,108.5 337.764,113.5 340.264,108.5 337.764,103.5 "
+       id="polygon40" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="347.764,108.5 337.764,113.5 340.264,108.5 337.764,103.5 "
+       id="polygon42" />
   </g>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="273" y="92">
-    <tspan x="273" y="92">Motor</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="273"
+     y="92"
+     id="text44">
+    <tspan
+       x="273"
+       y="92"
+       id="tspan46"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Motor</tspan>
   </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="273" y="135">
-    <tspan x="273" y="135">Driver</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="273"
+     y="135"
+     id="text48">
+    <tspan
+       x="273"
+       y="135"
+       id="tspan50"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Driver</tspan>
   </text>
-  <g>
-    <rect style="fill: #e2bf9e" x="189" y="65" width="30" height="87"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="189" y="65" width="30" height="87"/>
+  <g
+     id="g52">
+    <rect
+       style="fill: #e2bf9e"
+       x="189"
+       y="65"
+       width="30"
+       height="87"
+       id="rect54" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="189"
+       y="65"
+       width="30"
+       height="87"
+       id="rect56" />
   </g>
-  <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="460.296,125.992 461,164 162,165 162,131 179.264,131 "/>
-    <polygon style="fill: #000000" points="186.764,131 176.764,136 179.264,131 176.764,126 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="186.764,131 176.764,136 179.264,131 176.764,126 "/>
+  <g
+     id="g58">
+    <polyline
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="460.296,125.992 461,164 162,165 162,131 179.264,131 "
+       id="polyline60" />
+    <polygon
+       style="fill: #000000"
+       points="186.764,131 176.764,136 179.264,131 176.764,126 "
+       id="polygon62" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="186.764,131 176.764,136 179.264,131 176.764,126 "
+       id="polygon64" />
   </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="219" y1="108.5" x2="257.264" y2="108.5"/>
-    <polygon style="fill: #000000" points="264.764,108.5 254.764,113.5 257.264,108.5 254.764,103.5 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="264.764,108.5 254.764,113.5 257.264,108.5 254.764,103.5 "/>
+  <g
+     id="g66">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="219"
+       y1="108.5"
+       x2="257.264"
+       y2="108.5"
+       id="line68" />
+    <polygon
+       style="fill: #000000"
+       points="264.764,108.5 254.764,113.5 257.264,108.5 254.764,103.5 "
+       id="polygon70" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="264.764,108.5 254.764,113.5 257.264,108.5 254.764,103.5 "
+       id="polygon72" />
   </g>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="253" y="181">
-    <tspan x="253" y="181">Speed feedback</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="253"
+     y="181"
+     id="text74">
+    <tspan
+       x="253"
+       y="181"
+       id="tspan76"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Speed feedback</tspan>
   </text>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="157" y1="92" x2="179.269" y2="91.3041"/>
-    <polygon style="fill: #000000" points="186.765,91.0698 176.926,96.3798 179.269,91.3041 176.614,86.3846 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="186.765,91.0698 176.926,96.3798 179.269,91.3041 176.614,86.3846 "/>
+  <g
+     id="g78">
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x1="157"
+       y1="92"
+       x2="179.269"
+       y2="91.3041"
+       id="line80" />
+    <polygon
+       style="fill: #000000"
+       points="186.765,91.0698 176.926,96.3798 179.269,91.3041 176.614,86.3846 "
+       id="polygon82" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="186.765,91.0698 176.926,96.3798 179.269,91.3041 176.614,86.3846 "
+       id="polygon84" />
   </g>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="52" y="95">
-    <tspan x="52" y="95">Desired Speed</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="52"
+     y="95"
+     id="text86">
+    <tspan
+       x="52"
+       y="95"
+       id="tspan88"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Desired Speed</tspan>
   </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="169" y="58">
-    <tspan x="169" y="58">Controller</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="169"
+     y="58"
+     id="text90">
+    <tspan
+       x="169"
+       y="58"
+       id="tspan92"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Controller</tspan>
   </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="198" y="94">
-    <tspan x="198" y="94">V</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="198"
+     y="94"
+     id="text94">
+    <tspan
+       x="198"
+       y="94"
+       id="tspan96"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">V</tspan>
   </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="196.4" y="135.4">
-    <tspan x="196.4" y="135.4">V</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="196.4"
+     y="135.4"
+     id="text98">
+    <tspan
+       x="196.4"
+       y="135.4"
+       id="tspan100"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">V</tspan>
   </text>
-  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="205" y="98">
-    <tspan x="205" y="98">d</tspan>
+  <text
+     font-size="11.2889"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="205"
+     y="98"
+     id="text102">
+    <tspan
+       x="205"
+       y="98"
+       id="tspan104">d</tspan>
   </text>
-  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="203" y="139">
-    <tspan x="203" y="139">m</tspan>
+  <text
+     font-size="11.2889"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="203"
+     y="139"
+     id="text106">
+    <tspan
+       x="203"
+       y="139"
+       id="tspan108">m</tspan>
   </text>
-  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="230" y="99">
-    <tspan x="230" y="99">u(t)</tspan>
+  <text
+     font-size="14.1111"
+     style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal"
+     x="230"
+     y="99"
+     id="text110">
+    <tspan
+       x="230"
+       y="99"
+       id="tspan112"
+       style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">u(t)</tspan>
   </text>
 </svg>

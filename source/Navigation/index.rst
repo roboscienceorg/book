@@ -31,5 +31,6 @@ constraints.
    ExplorationandNavigation
    Implementation
    Mazes
+   Wavefront
    Guidance
    Navigation_Problems

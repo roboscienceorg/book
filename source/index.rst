@@ -54,10 +54,13 @@ Introduction to Mobile Robotics
    Most of the content is loaded.  The chapters on *Example Systems* and
    *System Integration* still need to be developed.  The *Computer Vision*
    and *Localization and Mapping* chapters need significant rework.  We will
-   continue to update as material is added.  This will have the effect of
-   changing page, equation and problem numbers.  Starting August 20th, we will
-   have links to previous versions (html tree, html zip and pdf) for those
-   teaching courses and need fixed numbering for the duration.
+   continue to update as material is added.   This material is currently
+   used for CSC/CENG 415/515  Introduction to Robotics taught at the South Dakota
+   School of Mines and Technology.  There is a slide deck for the course
+   which roughly tracks this text (the text is ahead in edits and organization).
+   When the current course ends, the slide deck will be made available as well.
+   We are currently evaluating running this as an online course.  Thoughts
+   on this are welcome.   
 
 
 Index

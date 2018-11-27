@@ -91,7 +91,10 @@ Also assume that you have process noise with standard deviation of
 
 When we don’t have actual experimental data, we need to simulate the
 data. To illustrate the filter, we will create a noisy dataset; we
-pretend to run the dynamical system and get the observations.
+pretend to run the dynamical system and get the observations.  Later on
+in the multivariate content, much greater detail is given to the creation
+of noisy data.  For now, focus on the filter aspect and not on the creation
+of :math:`z`.
 
 ::
 
@@ -159,6 +162,8 @@ The Multivariate Kalman Filter
 The :index:`Kalman Filter` has two stages. A predictive step based on the system
 dynamics and an update based on observations or measurements.
 
+The full Kalman Filter has the following objects to track:
+
 -  *Prediction*: :math:`\hat{x}_{k|k-1}`, :math:`P_{k|k-1}`
 
 -  *Update*: :math:`\hat{x}_{k|k}`, :math:`P_{k|k}`
@@ -219,7 +224,53 @@ The error covariance of the estimate is
 The state estimate will be denoted :math:`\hat{x}_k` and the process
 update to the state is denoted :math:`\tilde{x}_k`
 
-As before we assume that we can write our estimate as a combination of
+Before we go into the details on the filter design, a couple of comments
+about the matrices given in the dynamical process.
+
+   The matrix :math:`F` is given by the model of the physical process.  It
+   is a square matrix with dimension :math:`n \times n` where :math:`n` is the
+   number of state variables (the length of :math:`x`).    When you are
+   given a continuous dynamical system, make sure you first discretize the
+   problem.  Only then can you extract the correct matrix :math:`F`.
+
+   The matrix :math:`G` is more of a placeholder for now.  We assume that
+   we have some type of control input :math:`Gu_k` but for our discussion
+   you don't need to write this in any special form as long as you add the
+   control values into the process update.  Meaning you don't need to figure
+   out matrix :math:`G` to do the process update step.
+
+   The matrix :math:`H` is the observation matrix.  This acts to relate the
+   observed variables to the state variables.  For example, say that you have
+   a state vector of :math:`(x_1, x_2, x_3)` and can observe all three as
+   :math:`z = (z_{x_1}, z_{x_2}, z_{x_3})`.  Then
+
+   .. math::  H = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0\\ 0 & 0 &1 \end{bmatrix}.
+
+   However, if we observe :math:`x_1` and :math:`x_3` as  :math:`z = (z_{x_1}, z_{x_3})` then
+
+   .. math::  H = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 &1 \end{bmatrix}
+
+   or if we only observe :math:`x_2` as  :math:`z = (z_{x_2})`  then
+
+   .. math::  H = \begin{bmatrix} 0 & 1 & 0  \end{bmatrix}
+
+   Note what the matrix :math:`H` does in the following product :math:`H A H^T` for
+   the observation :math:`z = (z_{x_1}, z_{x_3})`:
+
+   .. math::
+
+      H A H^T = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 &1 \end{bmatrix}
+      \begin{bmatrix} a & b & c \\ d & e & f\\ g & h &i \end{bmatrix}
+      \begin{bmatrix} 1 & 0 \\ 0 & 0  \\ 0 & 1 \end{bmatrix}
+      =
+      \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 &1 \end{bmatrix}
+      \begin{bmatrix} a & c \\ d  & f\\ g &i \end{bmatrix}
+      =
+      \begin{bmatrix} a & c \\ g &i \end{bmatrix}
+
+
+
+Moving on to the derivation, we assume that we can write our estimate as a combination of
 the process update and the observation
 
 .. math::  \hat{x}_k = \tilde{x}_k + K_k (z_k - H\tilde{x}_k)
@@ -238,8 +289,7 @@ where :math:`Tr(P_{k|k})` is the trace of :math:`P_{k|k}`. So, we need
 an expression for :math:`P_{k|k}` in terms of the Kalman gain.
 
 We can plug in the observation,
-:eq:`kalmanderivation1` into
-`kalmanderivation4`
+:eq:`kalmanderivation1` into :eq:`kalmanderivation4`
 
 .. math:: \hat{x}_k = \tilde{x}_k + K_k (Hx_k + w_k - H\tilde{x}_k)
 
@@ -272,6 +322,7 @@ solving for the Kalman gain gives
 .. math:: K_k = P_{k|k-1}H^T S^{-1}_k .
 
 We can collect the results into the following algorithm:
+
 **Kalman Filter**
 
 **Predict:** Prediction or a priori stage
@@ -447,14 +498,14 @@ system we use is Let
 
 
 .. figure:: AdvFilteringFigures/kalmanupdatedia.*
-   :width: 75%
+   :width: 65%
    :align: center
 
    Parts of the single Kalman step - estimate.
 
 
 .. figure:: AdvFilteringFigures/kalmanupdatedia2.*
-   :width: 75%
+   :width: 65%
    :align: center
 
    Parts of the single Kalman step - covariances.
@@ -567,17 +618,143 @@ into the computation for :math:`x_{k+1}`, the observation noise,
    Simulation and testing.
 
 
-These can be computed together.  Either way, the simulation portion is
+The point is that the observations :math:`z` can be computed after we compute the :math:`x`
+values or they can be computed together in the loop.  It does not matter in this
+case.
+
+For this next example we modify the last example in a couple of ways.
+We will observe both variables.  This will have the effect of making
+the innovation covariance :math:`S` a matrix and we will need to compute
+a matrix inverse.  Next we will use a non-diagonal noise covariance for
+:math:`V` and :math:`W`.
+
+We use these values to run a simulation which then produces the observations
+we need to feed into the Kalman filter.
+The code block below will generate a list of values which can
+be used as the observations for a run of a Kalman filtering algorithm.
+Let
+
+.. math::
+
+   x = \begin{bmatrix}a \\ b\end{bmatrix}, \quad
+   F = \begin{bmatrix} 0.85 &-.01 \\0.02 &0.65\end{bmatrix}, \quad
+   G = \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}, \quad
+   H = \begin{bmatrix} 1& 0 \\ 0 & 1 \end{bmatrix},
+
+
+.. math::
+
+   V = \begin{bmatrix} 0.2 & 0.02 \\ 0.02 & 0.35 \end{bmatrix}, \quad
+   W = \begin{bmatrix}  0.4 & 0.0 \\ 0.0 & 0.4  \end{bmatrix} .
+
+.. math::
+
+   \quad Gu_k = \begin{bmatrix}0.2\sin(0.025k) \\ 0.075\cos(0.025k) \end{bmatrix}, \quad
+   x_0 = \begin{bmatrix} 0\\0\end{bmatrix}, \quad
+   P_0 = \begin{bmatrix}0 & 0\\ 0&0\end{bmatrix}.
+
+The includes ...
 
 ::
 
-    k = 1
-    while (k<N):
-      q = np.random.normal(mu1,sigma1,2)
-      r = np.random.normal(mu1,sigma1, 1)
-      x[k] = np.dot(F,x[k-1]) + G[k-1] + q
-      z[k] = np.dot(H,x[k]) + r
-      k = k+1
+   from math import *
+   import numpy as np
+   import pylab as plt
+   from scipy import linalg
+
+
+The simulation variables ...
+
+::
+
+   #  Create fake dataset for experiment
+   N = 200
+   t = np.linspace(0, 10, N)
+   u1 = 0.75*np.sin(0.5*t)
+   u2 = 0.5*np.cos(0.5*t)
+   mu1 = [0.0,0.0]
+   mu2 = [0.0,0.0]
+   x = np.zeros((N,2))
+   z = np.zeros((N,2))
+   F = np.array([[0.85,-0.01],[0.02,0.65]])
+   FT = F.T
+   G = np.array([u1, u2]).T
+
+The filter variables
+
+::
+
+   H = np.array([[1,0],[0,1]])
+   HT = H.T
+   V = np.array([[0.2,0.02],[0.02,0.35]])
+   W = np.array([[0.4,0.0],[0.0,0.4]])
+   P = np.zeros((N,2,2))
+   xf = np.zeros((N,2))
+
+
+The simulation ...
+
+::
+
+   k = 1
+   while (k<N):
+     q = np.random.multivariate_normal(mu1,V,1)
+     r = np.random.multivariate_normal(mu2,W, 1)
+     x[k] = np.dot(F,x[k-1]) + G[k] + q
+     z[k] = np.dot(H,x[k]) + r
+     k = k+1
+   # done with fake data
+
+The code block above provides the array z which is then piped into the
+Kalman Filter
+
+::
+
+   k = 1
+   while (k<N):
+     xp = np.dot(F,xf[k-1]) + G[k]
+     pp = np.dot(F,np.dot(P[k-1],FT)) + V
+     y = z[k] - np.dot(H,xp)
+     S = np.dot(H,np.dot(pp,HT)) + W
+     kal = np.dot(np.dot(pp,HT), linalg.inv(S))
+     xf[k] = xp + np.dot(kal,y)
+     P[k] = pp - np.dot(kal,np.dot(H,pp))
+     k = k+1
+
+
+::
+
+   t = np.arange(0,N,1)
+   plt.xlabel('k')
+   plt.ylabel('x0')
+   plt.plot(t, x[:,0], 'b-', t,z[:,0],'r.', t, xf[:,0],'g-')
+   plt.savefig("kalmandemo2_x.pdf",format="pdf")
+   plt.show()
+
+   plt.xlabel('k')
+   plt.ylabel('x1')
+   plt.plot(t, x[:,1], 'b-', t,z[:,1],'r.', t, xf[:,1],'g-')
+   plt.savefig("kalmandemo2_y.pdf",format="pdf")
+   plt.show()
+
+The blue dots are a graph of :math:`(x_0)_k`, the red dots are the
+observations :math:`z_k`, and the green dots are the Kalman estimate of
+the state.
+
+.. figure:: AdvFilteringFigures/kalmandemo2_x.*
+   :width: 75%
+   :align: center
+
+The blue dots are a graph of :math:`(x_1)_k`, and the green dots are the
+Kalman estimate of the state.
+
+.. figure:: AdvFilteringFigures/kalmandemo2_y.*
+   :width: 75%
+   :align: center
+
+
+How to inject noise
+~~~~~~~~~~~~~~~~~~~~
 
 You may have noticed that we have added noise to the end of the
 expression. Why add? Why not multiply? Assume that we have two signals
@@ -634,107 +811,6 @@ is some zero mean noise term. This would get changed by the term
 
 For now, we just assume we can lump the two together with a modified
 process noise term.
-
-The linear dynamical system in the prevous example can be simulated
-which will produce data that can be used in Kalman filtering software
-testing. The code block below will generate a list of values which can
-be used as the observations for a run of a Kalman filtering algorithm.
-The numbers in the various arrays come from the example above, but
-certainly can be changed for different applications. As above, let
-
-.. math:: x = \begin{bmatrix}a \\ b\end{bmatrix}, \quad F = \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix}, \quad G = \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}, \quad H = \begin{bmatrix} 1& 0 \end{bmatrix},
-
-
-.. math:: V = \begin{bmatrix} 0.075^2&0\\0& 0.075^2\end{bmatrix}, \quad W = 0.85^2,\quad z_1 = 0.01
-
-.. math:: \quad u_k = \sin (7*k/100), \quad x_0 = \begin{bmatrix} 0\\0\end{bmatrix}, \quad P_0 = \begin{bmatrix}0 & 0\\ 0&0\end{bmatrix}.
-
-The includes ...
-
-::
-
-   from math import *
-   import numpy as np
-   import pylab as plt
-   from scipy import interpolate
-   from scipy import stats
-
-The simulation variables ...
-
-::
-
-    #  Create fake dataset for experiment
-    N = 100
-    t = np.linspace(0, 7, N)
-    u = 0.1*np.sin(t)
-    mu1, sigma1 = 0.0, 0.075
-    mu2, sigma2 = 0.0, 0.85
-    var1 = sigma1*sigma1
-    x = np.zeros((N,2))
-    F = np.array([[0.9,-0.01],[0.02,0.75]])
-    FT = F.T
-    G = np.array([u, 0.5*u]).T
-
-The filter variables
-
-::
-
-    H = np.array([1,0])
-    HT = H.T
-    V = np.array([[var1,0],[0,var1]])
-    W = sigma2*sigma2
-    P = np.zeros((N,2,2))
-    z = np.zeros(N)
-    xf = np.zeros((N,2))
-
-The simulation ...
-
-::
-
-    k = 1
-    while (k<N):
-      q = np.random.normal(mu1,sigma1,2)
-      r = np.random.normal(mu1,sigma1, 1)
-      x[k] = np.dot(F,x[k-1]) + G[k-1] + q
-      z[k] = np.dot(H,x[k]) + r
-      k = k+1
-    # done with fake data
-
-The code block above provides the array z which is then piped into the
-Kalman Filter
-
-::
-
-    k = 1
-    while (k<N):
-      xp = np.dot(F,xf[k-1]) + G[k-1]
-      pp = np.dot(F,np.dot(P[k-1],FT)) + V
-      y = z[k] - np.dot(H,xp)
-      S = np.dot(H,np.dot(pp,HT)) + W
-      kal = np.dot(pp,HT)/S
-      xf[k] = xp + y*kal
-      P[k] = pp - np.outer(kal,np.dot(H,pp))
-      k = k+1
-
-    t = np.arange(0,N,1)
-    plt.plot(t, x[:,0], 'bo', t,z,'ro', t, xf[:,0],'g-')
-    plt.show()
-
-The blue dots are a graph of :math:`(x_0)_k`, the red dots are the
-observations :math:`z_k`, and the green dots are the Kalman estimate of
-the state.
-
-.. figure:: AdvFilteringFigures/kalmanexample2.*
-   :width: 75%
-   :align: center
-
-The blue dots are a graph of :math:`(x_1)_k`, and the green dots are the
-Kalman estimate of the state.
-
-.. figure:: AdvFilteringFigures/kalmanexample2b.*
-   :width: 75%
-   :align: center
-
 
 The Classic Vehicle on Track Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

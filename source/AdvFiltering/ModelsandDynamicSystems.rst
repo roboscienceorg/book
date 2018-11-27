@@ -218,6 +218,9 @@ This follows from noting that :math:`\cos(\theta)` and
 :math:`\sin(\theta)` are nonlinear functions of the state variable
 :math:`\theta`.
 
+Dynamics with Noise
+~~~~~~~~~~~~~~~~~~~
+
 Let :math:`x_k` be the current state and :math:`z_k` be the observation.
 We study the linear system with noise:
 
@@ -231,10 +234,7 @@ We study the linear system with noise:
 where :math:`v_k`, :math:`w_k` are assumed to be zero mean Gaussian
 noise with covariance matrices :math:`V_k` and :math:`W_k` respectively.
 
-Dynamics with Noise
-~~~~~~~~~~~~~~~~~~~
-
-There are many possibilities for a linear dynamical system. We are
+We are
 interested in tracking not just the estimate of the state, but the
 state’s distribution as well since the addition of noise produces random
 variations in values. The simplest distribution to track is a Normal or
@@ -314,6 +314,26 @@ value, :math:`\hat{x}`.
 
 -  Let :math:`P_{k|k}` be the covariance of :math:`\hat{x}_{k|k}`
    (:math:`E[(x_k-\hat{x}_{k|k})(x_k-\hat{x}_{k|k})^T]`)
+
+
+At the risk of being redundant, we need to address a common misunderstanding.
+The state vector :math:`x` is not something that normally can be observed.
+We would not need to do any type of filtering if we could observe it.  The
+observation of :math:`x` is :math:`z`.  It differs from :math:`x` in two
+primary manners.  First there is noise in the observation.  Meaning that
+:math:`x` and :math:`z` differ by the added noise.  Second, we don't
+observe all of the components of :math:`x`.  Some are missing.  This means
+that the lengths of the vectors for :math:`x` and :math:`z` are often
+different.
+
+For the algorithms in the next couple of sections, we will be estimating
+:math:`x` by using :math:`z`.   So :math:`z` is an input variable.  To develop
+code, we need to test on actual data sets, so we will need to create
+some fake :math:`z` to run our tests.  The creation of the :math:`z` data
+is not part of any of the filters.  This is no different than when you
+create unit tests.  They are essential to the development process, but not
+part of the primary codebase.
+
 
 
 .. rubric:: Footnotes

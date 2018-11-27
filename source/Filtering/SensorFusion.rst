@@ -236,7 +236,7 @@ on standard deviations.
    \hat{x} = \displaystyle \frac{\displaystyle \sum_{i=1}^n \frac{z_i}{\sigma_i^2}}{\displaystyle
    \sum_{i=1}^n \frac{1}{\sigma_i^2}} =
    \displaystyle \frac{\displaystyle  \frac{ 2.02137}{0.08698^2} + \frac{2.04363}{0.04282^2}    + \frac{2.13049}{0.17674^2}  }{\displaystyle
-    \frac{ 1}{0.08698^2} + \frac{1}{0.04282^2}    + \frac{1}{0.17674^2}  } = 2.1063 .
+    \frac{ 1}{0.08698^2} + \frac{1}{0.04282^2}    + \frac{1}{0.17674^2}  } = 2.0434 .
 
 The variance for this measurement is given by :math:`\sigma^2 =`
 
@@ -244,7 +244,7 @@ The variance for this measurement is given by :math:`\sigma^2 =`
 
    \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}
     = \left( {\displaystyle
-    \frac{ 1}{0.08698^2} + \frac{1}{0.04282^2}    + \frac{1}{0.17674^2}  } \right)
+    \frac{ 1}{0.08698^2} + \frac{1}{0.04282^2}    + \frac{1}{0.17674^2}  } \right)^{-1}
     \approx 0.03754^2
 
 Note that the standard deviation is lower than all three of the
