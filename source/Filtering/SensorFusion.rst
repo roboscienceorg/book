@@ -245,7 +245,7 @@ The variance for this measurement is given by :math:`\sigma^2 =`
    \left(\displaystyle\sum_{i=1}^n \displaystyle \frac{1}{\sigma_i^2}\right)^{-1}
     = \left( {\displaystyle
     \frac{ 1}{0.08698^2} + \frac{1}{0.04282^2}    + \frac{1}{0.17674^2}  } \right)^{-1}
-    \approx 0.03754^2
+    \approx 0.0375404^2
 
 Note that the standard deviation is lower than all three of the
 estimates, meaning the fused measurement is more accurate than any of

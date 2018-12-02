@@ -101,15 +101,15 @@ of :math:`z`.
     N = 100
     mu1, sigma1 = 0.0, 0.2
     mu2, sigma2 = 0.0, 0.75
-    r = np.random.normal(mu1,sigma1, N)
-    q = np.random.normal(mu2,sigma2, N)
-    x = np.zeros(N)
-    z = np.zeros(N)
+    process_noise = np.random.normal(mu1,sigma1, N)
+    observation_noise = np.random.normal(mu2,sigma2, N)
+    x_sim = np.zeros(N)
+    z_sim = np.zeros(N)
     u = np.arange(N)
     k = 1
     while (k<N):
-      x[k] = x[k-1] + 0.5*(N-1.75*u[k])/N + r[k-1]
-      z[k] = x[k] + q[k-1]
+      x_sim[k] = x_sim[k-1] + 0.5*(N-1.75*u[k])/N + process_noise[k-1]
+      z_sim[k] = x_sim[k] + observation_noise[k-1]
       k = k+1
 
 .. figure:: AdvFilteringFigures/scalarkalmandata1.*
@@ -129,15 +129,15 @@ Using the fake observations, we can test the filter.
 
 ::
 
-    xf = np.zeros(N)
-    pf = np.zeros(N)
+    x_filtered = np.zeros(N)
+    covariance_filtered = np.zeros(N)
     k = 1
     while (k<N):
-      xp = xf[k-1] + 0.5*(N-1.75*u[k])/N
-      pp = pf[k-1] + sigma1*sigma1
-      kal = pp/(pp + sigma2*sigma2)
-      xf[k] = xp + kal*(z[k-1] - xp)
-      pf[k] = (1-kal)*pp
+      x_process_update = x_filtered[k-1] + 0.5*(N-1.75*u[k])/N
+      variance_update = pf[k-1] + sigma1*sigma1
+      kal_gain = variance_update/(variance_update + sigma2*sigma2)
+      x_filtered[k] = x_process_update + kal_gain*(z_sim[k-1] - x_process_update)
+      covariance_filtered[k] = (1-kal_gain)*variance_update
       k = k+1
 
 
@@ -366,6 +366,19 @@ estimates have mean error zero)
 where :math:`E[\xi]` is the expected value of :math:`\xi`.
 
 
+Assume that you have the following Gaussian process and observation:
+
+.. math::
+
+   \begin{array}{l}
+   x_k = Fx_{k-1} + Gu_k + v_k\\
+   z_k = Hx_k + w_k
+   \end{array}
+
+
+then
+
+
 .. _kalmanfilteralg:
 .. topic::  Kalman Algorithm
 
@@ -390,27 +403,36 @@ where :math:`E[\xi]` is the expected value of :math:`\xi`.
 
    Single Step of Kalman process.
 
+The Kalman code generally looks like
+
+::
+
+   k = 1
+   while (k<N):
+     x_process_update = np.dot(F,x_estimate[k-1]) + G[k]
+     P_variance_update = np.dot(F,np.dot(P_variance[k-1],FT)) + V
+     innovation = z_observation[k] - np.dot(H,x_process_update)
+     Innovation_covariance = np.dot(H,np.dot(P_variance_update,HT)) + W
+     Kal_gain = np.dot(np.dot(P_variance_update,HT), linalg.inv(Innovation_covariance))
+     x_estimate[k] = x_process_update + np.dot(Kal_gain,y)
+     P_variance[k] = P_variance_update - np.dot(Kal_gain,np.dot(H,P_variance_update ))
+     k = k+1
+
+
 
 Simple Example of a Single Step
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Assume that you have the following Gaussian process and observation:
-
-.. math::
-
-   \begin{array}{l}
-   x_k = Fx_{k-1} + Gu_k + v_k\\
-   z_k = Hx_k + w_k
-   \end{array}
-
 Let
 
-.. math:: x = \begin{bmatrix}a \\ b\end{bmatrix}, \quad F = \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix}, \quad G = \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}, \quad H = \begin{bmatrix} 1& 0 \end{bmatrix},
+.. math:: x = \begin{bmatrix}a \\ b\end{bmatrix}, \quad F = \begin{bmatrix} 0.9 &-.01 \\0.02 &0.75\end{bmatrix},
+   \quad G = \begin{bmatrix} 0.1\\ 0.05\end{bmatrix}, \quad H = \begin{bmatrix} 1& 0 \end{bmatrix},
 
 
 .. math:: V = \begin{bmatrix} 0.005265&0\\0& 0.005265\end{bmatrix}, \quad W = 0.7225,\quad z_1 = 0.01
 
-.. math:: \quad u_k = \sin (7*k/100), \quad x_0 = \begin{bmatrix} 0\\0\end{bmatrix}, \quad P_0 = \begin{bmatrix}0 & 0\\ 0&0\end{bmatrix}.
+.. math:: \quad u_k = \sin (7*k/100), \quad x_0 = \begin{bmatrix} 0\\0\end{bmatrix},
+   \quad P_0 = \begin{bmatrix}0 & 0\\ 0&0\end{bmatrix}.
 
 Apply the Kalman Filter process and compute :math:`\hat{x}_{1|1}` and
 :math:`P_{1|1}`.
@@ -527,13 +549,13 @@ observation update, the fusion of the observation with the state update.
 ::
 
     for i in range(M):
-        xp = np.dot(F,xf0) + G + np.random.normal(mu1,sigma1, 2)
-        pp = np.dot(F,np.dot(P,FT)) + V
-        z = np.dot(F,xf0) + G + a + np.random.normal(mu2,sigma2, 2)
-        res = z - xp
-        S = pp + W
-        kal = np.dot(pp,linalg.inv(S))
-        xf = xp + np.dot(kal,res)
+        x_process_update = np.dot(F,x_initial) + G + np.random.normal(mu1,sigma1, 2)
+        P_variance_update = np.dot(F,np.dot(P_initial,FT)) + V
+        z_test_data = np.dot(F,_initial) + G + a + np.random.normal(mu2,sigma2, 2)
+        innovation = z_test_data - x_process_update
+        Innovation_variance = P_variance_update + W
+        kal_gain = np.dot(pp,linalg.inv(Innovation_variance))
+        x_filter = x_process_update + np.dot(kal_gain,innovation)
 
 You will notice that it is not circular. The covariance matrix really
 trusted the :math:`y` process estimate and so weighted the process more
@@ -669,13 +691,13 @@ The simulation variables ...
 
    #  Create fake dataset for experiment
    N = 200
-   t = np.linspace(0, 10, N)
+   t = np.linspace(0, 10, N)  # for control input
    u1 = 0.75*np.sin(0.5*t)
    u2 = 0.5*np.cos(0.5*t)
    mu1 = [0.0,0.0]
    mu2 = [0.0,0.0]
-   x = np.zeros((N,2))
-   z = np.zeros((N,2))
+   x_sim = np.zeros((N,2))
+   z_sim = np.zeros((N,2))
    F = np.array([[0.85,-0.01],[0.02,0.65]])
    FT = F.T
    G = np.array([u1, u2]).T
@@ -689,7 +711,7 @@ The filter variables
    V = np.array([[0.2,0.02],[0.02,0.35]])
    W = np.array([[0.4,0.0],[0.0,0.4]])
    P = np.zeros((N,2,2))
-   xf = np.zeros((N,2))
+   x_estimate = np.zeros((N,2))
 
 
 The simulation ...
@@ -698,10 +720,10 @@ The simulation ...
 
    k = 1
    while (k<N):
-     q = np.random.multivariate_normal(mu1,V,1)
-     r = np.random.multivariate_normal(mu2,W, 1)
-     x[k] = np.dot(F,x[k-1]) + G[k] + q
-     z[k] = np.dot(H,x[k]) + r
+     process_noise = np.random.multivariate_normal(mu1,V,1)
+     observation_noise = np.random.multivariate_normal(mu2,W, 1)
+     x_sim[k] = np.dot(F,x_sim[k-1]) + G[k] + process_noise
+     z_sim[k] = np.dot(H,x_sim[k]) + observation_noise
      k = k+1
    # done with fake data
 
@@ -712,13 +734,13 @@ Kalman Filter
 
    k = 1
    while (k<N):
-     xp = np.dot(F,xf[k-1]) + G[k]
-     pp = np.dot(F,np.dot(P[k-1],FT)) + V
-     y = z[k] - np.dot(H,xp)
-     S = np.dot(H,np.dot(pp,HT)) + W
-     kal = np.dot(np.dot(pp,HT), linalg.inv(S))
-     xf[k] = xp + np.dot(kal,y)
-     P[k] = pp - np.dot(kal,np.dot(H,pp))
+     x_process_update = np.dot(F,x_estimate[k-1]) + G[k]
+     P_variance_update = np.dot(F,np.dot(P_variance[k-1],FT)) + V
+     innovation = z_observation[k] - np.dot(H,x_process_update)
+     Innovation_covariance = np.dot(H,np.dot(P_variance_update,HT)) + W
+     Kal_gain = np.dot(np.dot(P_variance_update,HT), linalg.inv(Innovation_covariance))
+     x_estimate[k] = x_process_update + np.dot(Kal_gain,y)
+     P_variance[k] = P_variance_update - np.dot(Kal_gain,np.dot(H,P_variance_update ))
      k = k+1
 
 
@@ -727,13 +749,13 @@ Kalman Filter
    t = np.arange(0,N,1)
    plt.xlabel('k')
    plt.ylabel('x0')
-   plt.plot(t, x[:,0], 'b-', t,z[:,0],'r.', t, xf[:,0],'g-')
+   plt.plot(t, x_sim[:,0], 'b-', t,z_sim[:,0],'r.', t, x_estimate[:,0],'g-')
    plt.savefig("kalmandemo2_x.pdf",format="pdf")
    plt.show()
 
    plt.xlabel('k')
    plt.ylabel('x1')
-   plt.plot(t, x[:,1], 'b-', t,z[:,1],'r.', t, xf[:,1],'g-')
+   plt.plot(t, x_sim[:,1], 'b-', t, z_sim[:,1],'r.', t, x_estimate[:,1],'g-')
    plt.savefig("kalmandemo2_y.pdf",format="pdf")
    plt.show()
 
@@ -906,8 +928,7 @@ Next we compute one iteration of the Kalman Filter.
 
    .. math::
 
-      = \begin{bmatrix}1 & 0.5 \\ 0 &
-        1\end{bmatrix}
+      = \begin{bmatrix}1 & 0.5 \\ 0 & 1\end{bmatrix}
       \begin{bmatrix}1 & 0 \\ 0 & 2\end{bmatrix}
       \begin{bmatrix}1 & 0 \\ 0.5 & 1\end{bmatrix} +
       \begin{bmatrix}0.2 & 0.05 \\ 0.05 & 0.1\end{bmatrix}
@@ -955,6 +976,31 @@ Assume that you measure and obtain
       -  \begin{bmatrix}0.404 \\ 0.808\end{bmatrix} \begin{bmatrix} 0 & 1\end{bmatrix} \right)
       \begin{bmatrix}1.7 & 1.05 \\ 1.05 & 2.1\end{bmatrix}
       =\begin{bmatrix}.4242 & .8484 \\ .8484 & 1.6968\end{bmatrix}
+
+
+The Kalman Gain
+~~~~~~~~~~~~~~~~~~~
+
+The Kalman Gain selects the amount of process update to be used compared to
+the amount of observation to be used.   It is weighting each one to produce
+the best possible estimate of state based on the current understanding of
+the errors on both.
+
+
+The Kalman Gain can be written as
+
+.. math::
+   K_k = P_{k}H_k^\text{T}\left( H_k P_{k} H_k^\text{T} + W_k \right)^{-1}.
+
+
+If all of these variables were *scalars*, we can get a feel for the bounds on the
+Kalman Gain:
+
+.. math::
+   K_k = P_{k}H_k / \left( H_k^2 P_{k} + W_k \right)
+
+When :math:`W_k = 0` then :math:`K_k = 1/H_k` and as :math:`W_k \to \infty`
+then :math:`K_k = 1`, so :math:`1/H_k < K_k < 1`.
 
 Some issues to address
 ~~~~~~~~~~~~~~~~~~~~~~
