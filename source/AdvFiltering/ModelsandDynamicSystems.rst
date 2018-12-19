@@ -146,10 +146,10 @@ which gives the least squares estimate
 Physics example with numbers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Assume that we had the following data: (1, 10, 22), (2, 19, 60), (3, 32,
-51) and that :math:`F_x=0` and :math:`F_y = -2`, :math:`m=0.25`. So
+Assume that we had the following data: :math:`(t,x,y) =  (1, 10, 22), (2, 19, 60), (3, 32,
+51)` and that :math:`F_x=0` and :math:`F_y = -2`, :math:`m=0.25`. So
 first we gain: :math:`t = [1, 2, 3]`, :math:`\xi = [10, 19, 32]`,
-:math:`\eta = [26, 46, 12]`. We first compute
+:math:`\eta = [26, 76, 87]`. We first compute
 
 .. math::
 
@@ -170,7 +170,7 @@ and
 .. math::
 
    \begin{pmatrix}  v_{y,0} \\ y_0 \end{pmatrix} = \begin{pmatrix} 1/2 & -1 \\ -1 & 7/3 \end{pmatrix}
-   \begin{pmatrix} 1 & 2 &  3  \\ 1 & 1 & 1\end{pmatrix} \begin{pmatrix} 28 \\ 46 \\ 12\end{pmatrix} = \begin{pmatrix} 30.5 \\ 2.0\end{pmatrix}
+   \begin{pmatrix} 1 & 2 &  3  \\ 1 & 1 & 1\end{pmatrix} \begin{pmatrix} 26 \\ 76 \\ 87\end{pmatrix} = \begin{pmatrix} 30.5 \\ 2.0\end{pmatrix}
 
 So we have that the start location is :math:`(-1.666667, 2.0)` with
 initial velocity of :math:`(11 , 30.5)`.

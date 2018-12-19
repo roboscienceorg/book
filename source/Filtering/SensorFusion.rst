@@ -963,7 +963,7 @@ If the inner product is weighted:
 
 .. math:: x^Ty = \sum_i x_i y_i q_i = x^T Q y
 
- then the weighted least squares solution to
+then the weighted least squares solution to
 
 .. math:: z = Hx + w
 

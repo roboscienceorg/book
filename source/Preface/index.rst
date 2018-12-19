@@ -59,8 +59,8 @@ chapter development: Scott Logan, Caleb Jamison, Chris Smith, Remington
 Bullis, Joe Lillo, Lisa Woody and Kali Regenold. I would also like to
 thank Stephanie Athow, Kelsey Bellew, Paul Blasi, Julian Brackins, John
 Brink, Andrew Carpenter, Michael Cerv, Marshall Gaucher, Yun Gwon,
-Lawrence Hoffman, Travis Larson, Scott Samson, Derek Stotz and Donovan
-Torgerson for feedback and editing assistance.
+Lawrence Hoffman, Travis Larson, Scott Samson, Derek Stotz, Donovan
+Torgerson and Kyle Macmillan for feedback and editing assistance.
 
 .. toctree::
    :maxdepth: 1
