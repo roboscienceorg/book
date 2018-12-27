@@ -1,5 +1,5 @@
-Models and Dynamical Systems
-----------------------------
+Models, Dynamical Systems and Filters
+---------------------------------------
 
 In this section we learn how to model the dynamics of the system.
 For our purposes, it is sufficient to use a simplified model of the
@@ -333,6 +333,165 @@ some fake :math:`z` to run our tests.  The creation of the :math:`z` data
 is not part of any of the filters.  This is no different than when you
 create unit tests.  They are essential to the development process, but not
 part of the primary codebase.
+
+
+:index:`Scalar Kalman Filter`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For the moment assume that :math:`x, F, G, u` are scalars. Also assume
+we have a starting value for the state :math:`x_0` and some estimate of
+the error in that starting value, :math:`\sigma_0^2`. The error in the
+process is measured and has variance :math:`\sigma_v^2`, meaning
+:math:`v_k` is drawn from a zero mean Gaussian distribution with
+variance :math:`\sigma_v^2` which gives us the process:
+
+.. math:: x_k = Fx_{k-1} + Gu_k  + v_k .
+
+The estimate of state based on the process is simply
+
+.. math:: \tilde{x}_k = F\hat{x}_{k-1} + Gu_k .
+
+Prior to the process, the variance estimate for :math:`x_{k-1}` is
+:math:`\sigma_{k-1}^2`. What happens? It is transformed via
+
+.. math:: \tilde{\sigma}_{k}^2 = (F \sigma_{k-1})^2 + \sigma_v^2 = F^2\sigma_{k-1}^2 + \sigma_v^2 .
+
+The next thing required is to merge the process prediction with the
+observation data, :math:`z_k` (scalar), this observation has quality
+:math:`\sigma_w^2`. These are fused using :eq:`scalarrecursiveweighted` into
+
+.. math:: S_k = \frac{1}{\tilde{\sigma}_k^2} + \frac{1}{{\sigma}_w^2}
+
+.. math::
+
+   K_{k} = \displaystyle \left[ S_{k}\sigma_{w}^2\right]^{-1} =  \left[ {\sigma}_{w}^2 \left(\frac{1}{\tilde{\sigma}_k^2} + \frac{1}{\sigma_w^2}\right) \right]^{-1}
+   =  \left[ {\sigma}_{w}^2 \left(\frac{\tilde{\sigma}_k^2 + \sigma_w^2}{\tilde{\sigma}_k^2  \sigma_w^2}\right) \right]^{-1}
+
+
+.. math:: =  \frac{\tilde{\sigma}_k^2}{\tilde{\sigma}_k^2 + \sigma_w^2}
+
+.. math:: \hat{x}_{k} =  \tilde{x}_{k-1} +  K_{k}\left(  z_{k}- \tilde{x}_{k-1} \right)
+
+.. math:: \displaystyle \sigma_k^{2} = (1 - K_k)\tilde{\sigma}_k^{2}
+
+We can summarize the process
+
+.. math::
+
+   \begin{array}{l}
+   x_k = Fx_{k-1} + Gu_k + v_k\\
+   z_k = x_k + w_k
+   \end{array}
+
+in the standard notation of the Kalman Filter. Let the process noise
+:math:`v_k` have variance :math:`V = \sigma_v^2` and the observation
+noise :math:`w_k` have variance :math:`W = \sigma_w^2`. We track the
+estimate (or mean) :math:`\hat{x}_{k|k}` and the variance
+:math:`p_{k|k}`. We will also make the following substitutions:
+:math:`P_{k-1|k-1} = \sigma_{k-1}^2`,
+:math:`P_{k|k-1} = \tilde{\sigma}_k^2` and
+:math:`P_{k|k} = \sigma_{k}^2`.
+
+The Scalar Kalman Filter Algorithm
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the case where the state vector to be estimated is a scalar, the derivation
+is much easier and sets the stage for the multivariate version shown in the
+next section.   
+
+
+-  Predicted state:
+   :math:`\hat{x}_{k|k-1} = F\hat{x}_{k-1|k-1} + G u_{k}`
+
+-  Predicted estimate error: :math:`P_{k|k-1} = F^2 P_{k-1|k-1}  + V`
+
+-  Optimal Kalman gain: :math:`K_k = P_{k|k-1}/( P_{k|k-1}  + W)`
+
+-  Updated state estimate
+   :math:`\hat{x}_{k|k} =\hat{x}_{k|k-1} + K_k (z_k - \hat{x}_{k|k-1})`
+
+-  Updated estimate variance: :math:`P_{k|k} = (1 - K_k) P_{k|k-1}`
+
+Example
+^^^^^^^
+
+Assume that you are given a simple scalar process on
+:math:`0 \leq k < N`:
+
+.. math:: x_k = x_{k-1} + u_k
+
+where the control input is
+
+.. math:: u_k = 0.5*(1 - 1.75k/N).
+
+Also assume that you have process noise with standard deviation of
+:math:`0.2` and observation noise with standard deviation of
+:math:`0.75`.
+
+When we don’t have actual experimental data, we need to simulate the
+data. To illustrate the filter, we will create a noisy dataset; we
+pretend to run the dynamical system and get the observations.  Later on
+in the multivariate content, much greater detail is given to the creation
+of noisy data.  For now, focus on the filter aspect and not on the creation
+of :math:`z`.
+
+::
+
+    N = 100
+    mu1, sigma1 = 0.0, 0.2
+    mu2, sigma2 = 0.0, 0.75
+    process_noise = np.random.normal(mu1,sigma1, N)
+    observation_noise = np.random.normal(mu2,sigma2, N)
+    x_sim = np.zeros(N)
+    z_sim = np.zeros(N)
+    u = np.arange(N)
+    k = 1
+    while (k<N):
+      x_sim[k] = x_sim[k-1] + 0.5*(N-1.75*u[k])/N + process_noise[k-1]
+      z_sim[k] = x_sim[k] + observation_noise[k-1]
+      k = k+1
+
+.. figure:: AdvFilteringFigures/scalarkalmandata1.*
+   :width: 50%
+   :align: center
+
+   Plot of :math:`x_0`.
+
+.. figure:: AdvFilteringFigures/scalarkalmandata2.*
+   :width: 50%
+   :align: center
+
+   Noisy observation of :math:`x_0`.
+
+
+Using the fake observations, we can test the filter.
+
+::
+
+    x_filtered = np.zeros(N)
+    covariance_filtered = np.zeros(N)
+    k = 1
+    while (k<N):
+      x_process_update = x_filtered[k-1] + 0.5*(N-1.75*u[k])/N
+      variance_update = pf[k-1] + sigma1*sigma1
+      kal_gain = variance_update/(variance_update + sigma2*sigma2)
+      x_filtered[k] = x_process_update + kal_gain*(z_sim[k-1] - x_process_update)
+      covariance_filtered[k] = (1-kal_gain)*variance_update
+      k = k+1
+
+
+.. figure:: AdvFilteringFigures/scalarkalmandata3.*
+   :width: 50%
+   :align: center
+
+   Kalman estimate of :math:`x_0`.
+
+.. figure:: AdvFilteringFigures/scalarkalmandata4.*
+   :width: 50%
+   :align: center
+
+   Comparison of state estimate to
+   real state.
 
 
 
