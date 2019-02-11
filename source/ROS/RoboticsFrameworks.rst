@@ -84,11 +84,12 @@ Player are found in ROS. ROS provides the communication system, a
 filesystem, distribution system and several thousand packages for device
 support, robot control, machine vision, sensor fusion, mapping,
 localization, etc. ROS was supported by Willow Garage (robotics company
-out of Stanford), but now maintained by the
+out of Stanford), but now maintained by the Open Source Robotics Foundation.
 
 ROS is able to connect to Stage however the current focus is on Gazebo.
 Gazebo is an open source 3D simulation envirnoment for robotics (which
-began life with Player). It includes full physics simulation with the
+began life with Player).  
+It includes a full physics engine such as ODE, Bullet, Simbody, and DART.
 
 ROS and Gazebo are extensions in some sense to Player-Stage. The idea of
 developing code in simulation then redirecting to real hardware is
