@@ -480,6 +480,24 @@ The recursive approach is given in the code listing below:
 
     print xhat
 
+
+.. code-block:: julia
+
+    using PyCall
+    np = pyimport("numpy" )  
+    z=np.array([1.5,1.3,1.4])
+    sigma=np.array([0.1,0.05,0.15])
+    p = sigma[1]^2
+    xhat = z[1]
+
+
+    for i = 1:2
+      kal = p/(p + sigma[i+1]^2)
+      xhat = xhat + kal*(z[i+1] - xhat)
+      p = (1-kal)*p
+    end
+    println(xhat)
+
 The result of running the code: 1.34489795918
 
 .. _`multivariatesensorfusion`:
@@ -551,6 +569,25 @@ How can you merge these into a single estimate?
     kal = np.dot(P,linalg.inv(S))
     x = x + np.dot(kal,y)
     P = P - np.dot(kal,P)
+
+
+.. code-block:: julia
+    using PyCall
+    np = pyimport("numpy" ) 
+    using LinearAlgebra
+
+    z1 = np.array([0.9,2.1,2.8])
+    z2 = np.array([1.1, 2.0,3.1])
+    w1 = np.array([[0.2,0.02,0.002],[0.02, 0.3, 0.01],[0.002,0.01,0.4]])
+    w2 = np.array([[0.1,0.01,0.001],[0.01, 0.16, 0.008],[0.001,0.008,0.2]])
+    x = z1
+    P = w1
+    y = z2 - x
+    S = P + w2
+    kal = np.dot(P,inv(S))
+    x = x + np.dot(kal,y)
+    P = P - np.dot(kal,P)
+    print("x: ", x, "p: ", p)
 
 .. math:: x = \begin{pmatrix} 1.03333333&  2.03420425,& 3.00056428\end{pmatrix}
 
