@@ -217,6 +217,30 @@ The Python code
         y[i] = y[i-1] + 0.075*(z[i] - y[i-1])
         i = i+1
 
+
+.. code-block:: julia
+
+
+    using PyCall
+    np = pyimport("numpy" )
+
+    N = 1000
+    sigma = 1.0
+    n = np.random.normal(0,sigma,N)
+    t = np.linspace(0,12,N)
+    x = np.sin(t)
+    z = x + n
+    y = np.zeros(N)
+
+    y[1] = z[1]
+    i = 1
+    while(i < N)
+        y[i] = y[i] + 0.075*(z[i] - y[i])
+        i = i+1
+    end
+    
+    
+    
 .. _`fig:noisysignal1`:
 .. figure:: FilteringFigures/noisefilter1.*
    :width: 50%
