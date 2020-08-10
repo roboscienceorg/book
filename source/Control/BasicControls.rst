@@ -335,9 +335,6 @@ endpoint is (40,60). The result is given in
 
 
 
-    using PyCall
-        np = pyimport("numpy")
-
         r = 20.0
         l = 12.0
         dt  = 0.01
@@ -351,9 +348,9 @@ endpoint is (40,60). The result is given in
         k1 = 2.0
         k2 = 0.2
 
-        x = np.zeros(N)
-        y = np.zeros(N)
-        th = np.zeros(N)
+        x = zeros(N)
+        y = zeros(N)
+        th = zeros(N)
 
         i = 1
         while(i<N)
@@ -378,8 +375,9 @@ endpoint is (40,60). The result is given in
             y[i+1] = y[i] + dy
             th[i+1] = th[i] + dth
             i = i+1
-            end
+            end   
         end
+
 
 A simple modification can take a sequence of points and navigate the
 robot along the path of points. Place the goal points into an array. Set
@@ -660,12 +658,9 @@ signed angle between vectors. Using the cross product:
 
 
 
-    using PyCall
-    math = pyimport("math")
-
     function angle(u1, u2, v1, v2)
-           n1 = math.sqrt(u1*u1+u2*u2)
-           n2 = math.sqrt(v1*v1+v2*v2)
+           n1 = sqrt(u1*u1+u2*u2)
+           n2 = sqrt(v1*v1+v2*v2)
            dot = u1*v1+u2*v2
            cross = u1*v2 - v1*u2
            if cross == 0.0
@@ -677,7 +672,7 @@ signed angle between vectors. Using the cross product:
            if cross < 0
             sign =-1
            end
-           theta = sign*math.acos(dot/(n1*n2))
+           theta = sign*acos(dot/(n1*n2))
            return theta
     end
 
