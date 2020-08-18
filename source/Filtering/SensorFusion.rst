@@ -488,7 +488,6 @@ The recursive approach is given in the code listing below:
     p = sigma[1]^2
     xhat = z[1]
 
-
     for i = 1:2
       kal = p/(p + sigma[i+1]^2)
       xhat = xhat + kal*(z[i+1] - xhat)
