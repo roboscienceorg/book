@@ -493,7 +493,7 @@ The recursive approach is given in the code listing below:
       xhat = xhat + kal*(z[i+1] - xhat)
       p = (1-kal)*p
     end
-    println(xhat)s
+    println(xhat)
 
 The result of running the code: 1.34489795918
 
