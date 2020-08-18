@@ -483,10 +483,8 @@ The recursive approach is given in the code listing below:
 
 .. code-block:: julia
 
-    using PyCall
-    np = pyimport("numpy" )  
-    z=np.array([1.5,1.3,1.4])
-    sigma=np.array([0.1,0.05,0.15])
+    z = Float64[1.5,1.3,1.4]
+    sigma = Float64[0.1,0.05,0.15]
     p = sigma[1]^2
     xhat = z[1]
 
@@ -496,7 +494,7 @@ The recursive approach is given in the code listing below:
       xhat = xhat + kal*(z[i+1] - xhat)
       p = (1-kal)*p
     end
-    println(xhat)
+    println(xhat)s
 
 The result of running the code: 1.34489795918
 
