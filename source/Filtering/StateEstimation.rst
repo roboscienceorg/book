@@ -221,16 +221,17 @@ The Python code
 .. code-block:: julia
 
 
-    using PyCall
-    np = pyimport("numpy" )
+    using Random, Distributions
 
     N = 1000
     sigma = 1.0
-    n = np.random.normal(0,sigma,N)
-    t = np.linspace(0,12,N)
-    x = np.sin(t)
+    r = Normal(0, sigma)
+    n = rand(r, N)
+   
+    t = LinRange(0,12,N)
+    x = sin.(t)
     z = x + n
-    y = np.zeros(N)
+    y = zeros(N)
 
     y[1] = z[1]
     i = 1
