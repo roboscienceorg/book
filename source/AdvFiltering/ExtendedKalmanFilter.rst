@@ -532,6 +532,43 @@ To create the observation data we have a simulation:
       z[k,2] = x[k,2] + r[2]
       k = k+1
 
+
+
+.. code-block:: julia
+
+        using Random, Distributions
+
+        N = 101
+        d = Normal(0.0, 0.025)
+        e = Normal(0.0, 0.85)
+        mu1, sigma1 = 0.0, 0.025
+        mu2, sigma2 = 0.0, 0.85
+        var1 = sigma1*sigma1
+        var2 = sigma2*sigma2
+        dt = 0.1
+        r = 4
+        dd = r*dt/2.0
+        L = 6
+        x = zeros(N,3)
+        z = zeros(N,3)
+        t = LinRange(0, 10, 100)
+        w1 = 1.5*sin.(t)
+        w2 = 1.0*cos.(t)
+
+        k = 2
+        while (k<N)
+          q = rand(d,3)
+          r = rand(e,3)
+          x[k,1] = x[k-1,1] + dd*(w1[k]+w2[k])*cos(x[k-1,3]) + q[1]
+          x[k,2] = x[k-1,2] + dd*(w1[k]+w2[k])*sin(x[k-1,3]) + q[2]
+          x[k,3] = x[k-1,3] + dd*(w1[k]-w2[k])/L + q[3]
+          z[k,1] = x[k,1] + r[1]
+          z[k,2] = x[k,2] + r[2]
+          z[k,3] = x[k,3] + r[3]
+          k = k+1
+        end
+
+
 The code to implement the Extended Kalman Filter is very similar to the
 regular Kalman filter. The only difference is the inclusion of the
 Jacobians for the process and observations. The observation is a linear
