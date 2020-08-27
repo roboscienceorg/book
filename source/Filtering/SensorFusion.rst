@@ -571,22 +571,23 @@ How can you merge these into a single estimate?
 .. code-block:: julia
 
 
-    using PyCall
-    np = pyimport("numpy" ) 
     using LinearAlgebra
 
-    z1 = np.array([0.9,2.1,2.8])
-    z2 = np.array([1.1, 2.0,3.1])
-    w1 = np.array([[0.2,0.02,0.002],[0.02, 0.3, 0.01],[0.002,0.01,0.4]])
-    w2 = np.array([[0.1,0.01,0.001],[0.01, 0.16, 0.008],[0.001,0.008,0.2]])
+    z1 = Float64[0.9,2.1,2.8]
+    z2 = Float64[1.1, 2.0,3.1]
+    w1 = Float64[0.2 0.02 0.002; 0.02 0.3 0.01; 0.002 0.01 0.4]
+    w2 = Float64[0.1 0.01 0.001; 0.01 0.16 0.008; 0.001 0.008 0.2]
+    
     x = z1
     P = w1
     y = z2 - x
     S = P + w2
-    kal = np.dot(P,inv(S))
-    x = x + np.dot(kal,y)
-    P = P - np.dot(kal,P)
-    print("x: ", x, "p: ", p)
+    kal = (P * inv(S))
+    
+    x = x + (kal * y)
+    print(x)
+    P = P - (kal * P)
+    println("x: ", x, "P: ", P)
 
 .. math:: x = \begin{pmatrix} 1.03333333&  2.03420425,& 3.00056428\end{pmatrix}
 
