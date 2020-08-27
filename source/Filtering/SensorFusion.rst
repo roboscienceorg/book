@@ -585,7 +585,6 @@ How can you merge these into a single estimate?
     kal = (P * inv(S))
     
     x = x + (kal * y)
-    print(x)
     P = P - (kal * P)
     println("x: ", x, "P: ", P)
 
