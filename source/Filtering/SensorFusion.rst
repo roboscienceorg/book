@@ -525,6 +525,18 @@ extends to multiple variables as
       P = P - np.dot(kal,P)
       i = i+1
 
+
+.. code-block:: julia
+
+    while (i<n)
+      y = z[i] - x
+      S = P + W[i]
+      kal = (P * inv(S))
+      x = x + (kal * y)
+      P = P - (kal * P)
+      i = i+1
+    end
+
 Sample Data Fusion
 ^^^^^^^^^^^^^^^^^^
 
