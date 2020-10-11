@@ -907,6 +907,32 @@ Figure  :numref:`plot:quadgraph`
    plt.show()
 
 
+
+.. code-block:: julia    
+
+   gr()
+   using LinearAlgebra
+
+   N = length(xl)
+   x = Float64[xl;]
+   y = Float64[yl;]
+   xx = x.*x
+   # A is equivalent to AT in Python vice versa
+   A = transpose(Float64[xx x ones(N)])
+   AT = Float64[xx x ones(N)]
+   AA = (A * AT)
+   ATy = (A * y)
+
+   c = (AA\ATy)
+   t = Float64[0:0.1:2.9;]
+   tt = t.*t
+   # This B is the same as the B transpose in python
+   B = Float64[tt t ones(length(t))]
+   s = (B * c)
+   p = plot(t,s)
+   plot!(p,x,y, seriestype = scatter, xlims = (0,3), ylims = (0,2) )
+
+
 A couple of figures can help.  For the following, we generate a segment of
 a curve :math:`y=x^2-2x+1` and add some noise.  In :numref:`plot:noisycurve1`
 the points with the added noise are show in red and the least squares quadratic
