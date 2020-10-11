@@ -281,6 +281,40 @@ already have three Numpy arrays (the sensor data arrays) filled with the
     bottom = np.dot(sdarray2,np.ones((3)))
     print "Estimate = ", top/bottom
 
+
+
+.. code-block:: julia
+
+    using Statistics
+    using Formatting
+
+    a_shift = 2.0 - mean(sensor_a_data)
+    b_shift = 2.0 - mean(sensor_b_data)
+    c_shift = 2.0 - mean(sensor_c_data)
+
+    a_std = std(sensor_a_data)
+    b_std = std(sensor_b_data)
+    c_std = std(sensor_c_data)
+
+    x = sensor_a + a_shift
+    y = sensor_b + b_shift
+    z = sensor_c + c_shift
+
+    println("Measurement: ")
+    printfmt("{:.5f}   {:.5f}    {:.5f}", sensor_a, sensor_b, sensor_c)
+    println()
+    println( "Corrected measurement: ")
+    printfmt("{:.5f}   {:.5f}    {:.5f}", x, y, z)
+    println()
+
+    cdarray = Float64[x, y, z]
+    sdarray = Float64[a_std b_std c_std]
+    sdarray2 = sdarray .* sdarray
+    top = (sdarray2 * cdarray)
+    bottom = (sdarray2 * ones(3))
+    println("Estimate = ", top/bottom)
+    
+    
 Assume you have two sensors, one good one and one that is no accurate at
 all. Does it really make sense to always merge them? Seems like the
 better sensor will always produce a more accurate measurement.
@@ -595,7 +629,6 @@ How can you merge these into a single estimate?
     y = z2 - x
     S = P + w2
     kal = (P * inv(S))
-    
     x = x + (kal * y)
     P = P - (kal * P)
     println("x: ", x, "P: ", P)
