@@ -617,47 +617,48 @@ Kalman (green dots). The second plot is a workspace domain plot of
 
 
 .. code-block:: julia 
-    gr()
-    using LinearAlgebra
 
-    
-    H = Float64[1 0 0; 0 1 0; 0 0 1]
-    HT = transpose(H)
-    V = Float64[var1 0 0; 0 var1 0; 0 0 var1]
-    W = Float64[var2 0 0; 0 var2 0; 0 0 var2]
-    P = zeros(3,3)
-    xf = zeros(N,3)
-    xp = zeros(3)
-    sp = zeros(3)
+        gr()
+        using LinearAlgebra
 
-    k = 2
-    while (k<=N)
-          xp[1] = xf[k-1,1] + dd*(w1[k]+w2[k])*cos(xf[k-1,3])
-          xp[2] = xf[k-1,2] + dd*(w1[k]+w2[k])*sin(xf[k-1,3])
-          xp[3] = xf[k-1,3] + dd*(w1[k]-w2[k])/L
-          F1 = [1.0,0.0, -dd*(w1[k]+w2[k])*sin(xf[k-1,3])]
-          F2 =[0,1,dd*(w1[k]+w2[k])*cos(xf[k-1,3])]
-          F = Float64[F1 F2 [0, 0, 1];]
-          FT = transpose(F)
-          pp = (F * (P * FT)) + V
-          y = z[k,:] - (H * xp)
-          S = (H * (pp * HT)) + W
-          SI = inv(S)
-          kal = (pp * (HT * SI))
-          xf[k,:] = xp + (kal * y)
-          P = pp - (kal * (H * pp))
-          k = k+1
-    
-    end
 
-    t = [0:1:N-1;]
-    p1 = plot(t, xf,line =(8,:green))
-    plot!(p1,t,x, c = :blue)
-    display(scatter!(t,z, markersize = 3, c = :red))
+        H = Float64[1 0 0; 0 1 0; 0 0 1]
+        HT = transpose(H)
+        V = Float64[var1 0 0; 0 var1 0; 0 0 var1]
+        W = Float64[var2 0 0; 0 var2 0; 0 0 var2]
+        P = zeros(3,3)
+        xf = zeros(N,3)
+        xp = zeros(3)
+        sp = zeros(3)
 
-    p2 = plot(x[:,1], x[:,2], line =(2,:blue))
-    scatter!(xf[:,1], xf[:,2], markersize = 4, c = :green)
-    display(scatter!(z[:,1], z[:,2], markersize = 3, c = :red))
+        k = 2
+        while (k<=N)
+              xp[1] = xf[k-1,1] + dd*(w1[k]+w2[k])*cos(xf[k-1,3])
+              xp[2] = xf[k-1,2] + dd*(w1[k]+w2[k])*sin(xf[k-1,3])
+              xp[3] = xf[k-1,3] + dd*(w1[k]-w2[k])/L
+              F1 = [1.0,0.0, -dd*(w1[k]+w2[k])*sin(xf[k-1,3])]
+              F2 =[0,1,dd*(w1[k]+w2[k])*cos(xf[k-1,3])]
+              F = Float64[F1 F2 [0, 0, 1];]
+              FT = transpose(F)
+              pp = (F * (P * FT)) + V
+              y = z[k,:] - (H * xp)
+              S = (H * (pp * HT)) + W
+              SI = inv(S)
+              kal = (pp * (HT * SI))
+              xf[k,:] = xp + (kal * y)
+              P = pp - (kal * (H * pp))
+              k = k+1
+
+        end
+
+        t = [0:1:N-1;]
+        p1 = plot(t, xf,line =(8,:green))
+        plot!(p1,t,x, c = :blue)
+        display(scatter!(t,z, markersize = 3, c = :red))
+
+        p2 = plot(x[:,1], x[:,2], line =(2,:blue))
+        scatter!(xf[:,1], xf[:,2], markersize = 4, c = :green)
+        display(scatter!(z[:,1], z[:,2], markersize = 3, c = :red))
 
 
 
