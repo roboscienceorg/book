@@ -721,13 +721,10 @@ get :math:`\sigma = 0.25` back - if the sample size large enough.
         b1sub = b1 - 20 * c
         a2sub = a2 - c
         b2sub = b2 - 20 * c
-        println(std(a1sub))
-
-        println(std(b1sub))
-
-        println(std(a2sub))
-
-        println(std(b2sub))
+        std(a1sub)
+        std(b1sub)
+        std(a2sub)
+        std(b2sub)
 
 
 The multiplication by the signal will amplify the noise by the signal
