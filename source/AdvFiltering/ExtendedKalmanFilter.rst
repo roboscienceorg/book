@@ -539,8 +539,6 @@ To create the observation data we have a simulation:
         using Random, Distributions
 
         N = 100
-        d = Normal(0.0, 0.025)
-        e = Normal(0.0, 0.85)
         mu1, sigma1 = 0.0, 0.025
         mu2, sigma2 = 0.0, 0.85
         var1 = sigma1*sigma1
@@ -557,8 +555,8 @@ To create the observation data we have a simulation:
 
         k = 2
         while (k<=N)
-          q = rand(d,3)
-          r = rand(e,3)
+          q = rand(Normal(0.0, 0.025),3)
+          r = rand(Normal(0.0, 0.85),3)
           x[k,1] = x[k-1,1] + dd*(w1[k]+w2[k])*cos(x[k-1,3]) + q[1]
           x[k,2] = x[k-1,2] + dd*(w1[k]+w2[k])*sin(x[k-1,3]) + q[2]
           x[k,3] = x[k-1,3] + dd*(w1[k]-w2[k])/L + q[3]
