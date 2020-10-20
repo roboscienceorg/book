@@ -532,6 +532,11 @@ The includes ...
    import numpy as np
    import pylab as plt
    from scipy import linalg
+   
+
+.. code-block:: julia 
+       using Random, Distributions   
+       using LinearAlgebra
 
 
 The simulation variables ...
@@ -550,6 +555,22 @@ The simulation variables ...
    F = np.array([[0.85,-0.01],[0.02,0.65]])
    FT = F.T
    G = np.array([u1, u2]).T
+   
+
+
+.. code-block:: julia 
+
+       N = 200
+       t = LinRange(0, 10, N)  # for control input
+       u1 = 0.75*sin.(0.5*t)
+       u2 = 0.5*cos.(0.5*t)
+       mu1 = [0.0, 0.0]
+       mu2 = [0.0, 0.0]
+       x_sim = zeros(N,2)
+       z_sim = zeros(N,2)
+       F = Float64[0.85 -0.01; 0.02 0.65]
+       FT = transpose(F) 
+       G = (Float64[u1 u2;])
 
 The filter variables
 
@@ -561,6 +582,16 @@ The filter variables
    W = np.array([[0.4,0.0],[0.0,0.4]])
    P = np.zeros((N,2,2))
    x_estimate = np.zeros((N,2))
+ 
+ 
+.. code-block:: julia
+
+       H = Float64[1 0; 0 1;]
+       HT = transpose(H)
+       V = Float64[0.2 0.02; 0.02 0.35]
+       W = Float64[0.4 0.0; 0.0 0.4]
+       P = zeros(N,2,2)
+       x_estimate = zeros(N,2)
 
 
 The simulation ...
@@ -575,6 +606,18 @@ The simulation ...
      z_sim[k] = np.dot(H,x_sim[k]) + observation_noise
      k = k+1
    # done with fake data
+   
+   
+.. code-block:: julia   
+       k = 2
+       while (k <= N)
+         process_noise = rand(MvNormal(mu1, V), 1)
+         observation_noise = rand(MvNormal(mu2, W), 1)
+         x_sim[k,:] = (F * x_sim[k-1,:]) .+ G[k] + process_noise
+         z_sim[k,:] = (H * x_sim[k,:]) + observation_noise
+         k = k+1
+        end
+        # done with fake data
 
 The code block above provides the array z which is then piped into the
 Kalman Filter
@@ -664,6 +707,28 @@ get :math:`\sigma = 0.25` back - if the sample size large enough.
     0.73517338736953186
     >>> np.std(b2sub)
     14.687819454616823
+    
+    
+    
+.. code-block:: julia 
+        c = cos.(t) 
+        n = rand(Normal(0, 0.25), 200)
+        a1 = c + n
+        b1 = 20 * c + n
+        a2 = n .* c
+        b2 = 20 * n .* c
+        a1sub = a1 - c
+        b1sub = b1 - 20 * c
+        a2sub = a2 - c
+        b2sub = b2 - 20 * c
+        println(std(a1sub))
+
+        println(std(b1sub))
+
+        println(std(a2sub))
+
+        println(std(b2sub))
+
 
 The multiplication by the signal will amplify the noise by the signal
 strength and this changes the effective standard deviation. We will for
