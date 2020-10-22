@@ -535,8 +535,9 @@ The includes ...
    
 
 .. code-block:: julia 
-       using Random, Distributions   
-       using LinearAlgebra
+
+        using Random, Distributions   
+        using LinearAlgebra
 
 
 The simulation variables ...
@@ -560,6 +561,7 @@ The simulation variables ...
 
 .. code-block:: julia 
 
+       #  Create fake dataset for experiment
        N = 200
        t = LinRange(0, 10, N)  # for control input
        u1 = 0.75*sin.(0.5*t)
@@ -609,6 +611,7 @@ The simulation ...
    
    
 .. code-block:: julia   
+
        k = 2
        while (k <= N)
          process_noise = rand(MvNormal(mu1, V), 1)
@@ -711,6 +714,7 @@ get :math:`\sigma = 0.25` back - if the sample size large enough.
     
     
 .. code-block:: julia 
+
         c = cos.(t) 
         n = rand(Normal(0, 0.25), 200)
         a1 = c + n
