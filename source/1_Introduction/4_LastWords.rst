@@ -67,7 +67,7 @@ put it into practice; then relate it to other concepts. Later we return
 and go into more detail, put that into practice and relate it to more
 involved concepts. This process will cycle through the sense, plan, act
 aspects - just as a real robotic system would. In short, I am applying
-Agile development to you. You are being rapid prototyped into a
+Agile development to you. You are being 'rapid prototyped' into a
 roboticist.
 
 Supplementary Reading
