@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="15cm" height="8cm" viewBox="58 21 289 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="81" y1="164" x2="81.9305" y2="33.7358"/>
+    <polygon style="fill: #000000" points="81.984,26.236 86.9125,36.2715 81.9305,33.7358 76.9127,36.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="81.984,26.236 86.9125,36.2715 81.9305,33.7358 76.9127,36.2 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="60" y1="142" x2="335.264" y2="141.034"/>
+    <polygon style="fill: #000000" points="342.764,141.008 332.782,146.043 335.264,141.034 332.746,136.043 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="342.764,141.008 332.782,146.043 335.264,141.034 332.746,136.043 "/>
+  </g>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 81.5,106 A 24.2851,24.2851 0 0 0 110,89"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="110" y1="40" x2="138" y2="40"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="111" y1="41" x2="111" y2="92"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="136.6" y1="40" x2="137" y2="70"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="187" y1="40" x2="232" y2="40"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 137 67 C 152,93 178,84 187,40"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="230.6" y1="41" x2="230" y2="85"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 229.966 83.1802 C 243,130 267,125 280,85"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="278.6" y1="42" x2="279" y2="90"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="277.6" y1="42" x2="298" y2="42"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="295.608" y1="42.0082" x2="295" y2="75"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 296,76 A 34.5514,34.5514 0 0 0 326,108"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="308" y="97">
+    <tspan x="308" y="97"></tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:serif;font-style:normal;font-weight:normal" x="92" y="120">
+    <tspan x="92" y="120">WO</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="115" y="124">
+    <tspan x="115" y="124">3</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:serif;font-style:normal;font-weight:normal" x="144.6" y="95.6">
+    <tspan x="144.6" y="95.6">WO</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="167.6" y="99.6">
+    <tspan x="167.6" y="99.6">1</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:serif;font-style:normal;font-weight:normal" x="237.6" y="129.6">
+    <tspan x="237.6" y="129.6">WO</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="261" y="133">
+    <tspan x="261" y="133">2</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:serif;font-style:normal;font-weight:normal" x="300.3" y="120.8">
+    <tspan x="300.3" y="120.8">WO</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="323.3" y="124.8">
+    <tspan x="323.3" y="124.8">3</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="105" y="156">
+    <tspan x="105" y="156">O</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="175" y="101">
+    <tspan x="175" y="101"></tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="115" y="161">
+    <tspan x="115" y="161">1</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="132.3" y="157.3">
+    <tspan x="132.3" y="157.3">O</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="142.3" y="162.3">
+    <tspan x="142.3" y="162.3">2</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="177.3" y="156.362">
+    <tspan x="177.3" y="156.362">O</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="187.3" y="161.362">
+    <tspan x="187.3" y="161.362">3</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="222.6" y="156.562">
+    <tspan x="222.6" y="156.562">O</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="232.6" y="161.562">
+    <tspan x="232.6" y="161.562">4</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="295.9" y="157.762">
+    <tspan x="295.9" y="157.762">O</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="305.9" y="162.762">
+    <tspan x="305.9" y="162.762">6</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="271.1" y="155.7">
+    <tspan x="271.1" y="155.7">O</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="281.1" y="160.7">
+    <tspan x="281.1" y="160.7">5</tspan>
+  </text>
+</svg>

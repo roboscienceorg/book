@@ -1,0 +1,437 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 697 88"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B4DA45BD-F72E-4E38-9337-65643C98D8F4">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M45.25 74.00
+                    C26.33 74.00 11.00 60.12 11.00 43.00
+                    L11.00 43.00
+                    C11.00 25.88 26.33 12.00 45.25 12.00
+                    L113.75 12.00
+                    C132.67 12.00 148.00 25.88 148.00 43.00
+                    L148.00 43.00
+                    C148.00 60.12 132.67 74.00 113.75 74.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B4DA45BD-F72E-4E38-9337-65643C98D8F4)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M45.25 74.00
+                    C26.33 74.00 11.00 60.12 11.00 43.00
+                    L11.00 43.00
+                    C11.00 25.88 26.33 12.00 45.25 12.00
+                    L113.75 12.00
+                    C132.67 12.00 148.00 25.88 148.00 43.00
+                    L148.00 43.00
+                    C148.00 60.12 132.67 74.00 113.75 74.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="30.66" y="36.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Perceive the </tspan>
+            </text>
+            <text x="57.52" y="61.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">world</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-68E5C935-B0C6-474C-BE2B-ED2A2532A398">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M224.25 74.00
+                    C205.33 74.00 190.00 60.12 190.00 43.00
+                    L190.00 43.00
+                    C190.00 25.88 205.33 12.00 224.25 12.00
+                    L292.75 12.00
+                    C311.67 12.00 327.00 25.88 327.00 43.00
+                    L327.00 43.00
+                    C327.00 60.12 311.67 74.00 292.75 74.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-68E5C935-B0C6-474C-BE2B-ED2A2532A398)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M224.25 74.00
+                    C205.33 74.00 190.00 60.12 190.00 43.00
+                    L190.00 43.00
+                    C190.00 25.88 205.33 12.00 224.25 12.00
+                    L292.75 12.00
+                    C311.67 12.00 327.00 25.88 327.00 43.00
+                    L327.00 43.00
+                    C327.00 60.12 311.67 74.00 292.75 74.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="217.48" y="36.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Recognize </tspan>
+            </text>
+            <text x="229.84" y="61.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">objects</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-DCDB9AFE-8CDB-4205-9513-5D8CCEC6888A">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M400.25 74.00
+                    C381.33 74.00 366.00 60.12 366.00 43.00
+                    L366.00 43.00
+                    C366.00 25.88 381.33 12.00 400.25 12.00
+                    L468.75 12.00
+                    C487.67 12.00 503.00 25.88 503.00 43.00
+                    L503.00 43.00
+                    C503.00 60.12 487.67 74.00 468.75 74.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-DCDB9AFE-8CDB-4205-9513-5D8CCEC6888A)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M400.25 74.00
+                    C381.33 74.00 366.00 60.12 366.00 43.00
+                    L366.00 43.00
+                    C366.00 25.88 381.33 12.00 400.25 12.00
+                    L468.75 12.00
+                    C487.67 12.00 503.00 25.88 503.00 43.00
+                    L503.00 43.00
+                    C503.00 60.12 487.67 74.00 468.75 74.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="390.50" y="36.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Know state </tspan>
+            </text>
+            <text x="397.65" y="61.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">and pose</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-747879FF-1E5D-465A-973C-B76261292637">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M576.25 74.00
+                    C557.33 74.00 542.00 60.12 542.00 43.00
+                    L542.00 43.00
+                    C542.00 25.88 557.33 12.00 576.25 12.00
+                    L644.75 12.00
+                    C663.67 12.00 679.00 25.88 679.00 43.00
+                    L679.00 43.00
+                    C679.00 60.12 663.67 74.00 644.75 74.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-747879FF-1E5D-465A-973C-B76261292637)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M576.25 74.00
+                    C557.33 74.00 542.00 60.12 542.00 43.00
+                    L542.00 43.00
+                    C542.00 25.88 557.33 12.00 576.25 12.00
+                    L644.75 12.00
+                    C663.67 12.00 679.00 25.88 679.00 43.00
+                    L679.00 43.00
+                    C679.00 60.12 663.67 74.00 644.75 74.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="563.52" y="48.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Plan activity</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-7E33F34F-121F-4091-A017-1B96CE9D0254">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M178.50 43.50
+                        L178.50 38.50
+                        L200.50 38.50
+                        L200.50 48.50
+                        L178.50 48.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M148.00 43.00
+                    L190.00 43.00
+                    "
+                clip-path="url(#clipPath-7E33F34F-121F-4091-A017-1B96CE9D0254)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M179.09 43.50
+                    L179.09 39.09
+                    L189.50 43.50
+                    L179.09 47.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-9EBBCFD5-9980-47B7-B438-9826B6002425">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M354.50 43.50
+                        L354.50 38.50
+                        L376.50 38.50
+                        L376.50 48.50
+                        L354.50 48.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M327.00 43.00
+                    L366.00 43.00
+                    "
+                clip-path="url(#clipPath-9EBBCFD5-9980-47B7-B438-9826B6002425)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M355.09 43.50
+                    L355.09 39.09
+                    L365.50 43.50
+                    L355.09 47.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-B5C50200-2E67-489D-B18A-86DC0F69AE5E">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M530.50 43.50
+                        L530.50 38.50
+                        L552.50 38.50
+                        L552.50 48.50
+                        L530.50 48.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M503.00 43.00
+                    L542.00 43.00
+                    "
+                clip-path="url(#clipPath-B5C50200-2E67-489D-B18A-86DC0F69AE5E)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M531.09 43.50
+                    L531.09 39.09
+                    L541.50 43.50
+                    L531.09 47.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+    </g>
+</svg>
+

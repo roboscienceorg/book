@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="10cm" height="10cm" viewBox="364 150 196 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffff00" cx="417.438" cy="247.5" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="417.438" cy="247.5" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 506.438 153 C 529.438,143 561,178 559,234 C 557,290 461.876,359 426.438,348 C 391,337 472,284 472,234 C 472,184 483.438,163 506.438,153z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 506.438 153 C 529.438,143 561,178 559,234 C 557,290 461.876,359 426.438,348 C 391,337 472,284 472,234 C 472,184 483.438,163 506.438,153"/>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="447.938,289.25 461.938,269.75 469.938,248.25 415,246 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="447.938,289.25 461.938,269.75 469.938,248.25 415,246 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="438" y="269">
+    <tspan x="438" y="269">L</tspan>
+  </text>
+</svg>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="34cm" height="13cm" viewBox="80 -7 662 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="100.02" y1="26.4721" x2="100.98" y2="237.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="105.056,34.2132 100.01,24.236 95.0557,34.2587 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="95.9444,229.787 100.99,239.764 105.944,229.741 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="85.4721" y1="221" x2="330.528" y2="221"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="93.2361,216 83.2361,221 93.2361,226 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="322.764,226 332.764,221 322.764,216 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="100" y1="220" x2="261" y2="157"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="262" y1="157" x2="299" y2="39"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x1="100" y1="220" x2="297" y2="42"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="220" y="158">
+    <tspan x="220" y="158">a</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="261" y="108">
+    <tspan x="261" y="108">a</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="228" y="163">
+    <tspan x="228" y="163">1</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="267" y="115">
+    <tspan x="267" y="115">2</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" d="M 254,221 A 53.3655,53.3655 0 0 0 243.12,168.188"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="252.341,169.736 241.629,166.531 245.492,177.023 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:wasy10;font-style:normal;font-weight:normal" x="360" y="134">
+    <tspan x="360" y="134"></tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="303" y="103">
+    <tspan x="303" y="103">Q</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="258.2" y="190.75">
+    <tspan x="258.2" y="190.75">Q</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="270" y="197">
+    <tspan x="270" y="197">1</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #0000ff" x1="262" y1="157" x2="354" y2="122"/>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" d="M 315,136 A 44.1211,44.1211 0 0 0 287.217,96.4363"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="296.138,93.5467 285.15,95.6131 293.396,103.163 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="311" y="113">
+    <tspan x="311" y="113">2</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="374" y="41">
+    <tspan x="374" y="41"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="310" y="41">
+    <tspan x="310" y="41">(x,y)</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="341.75" y="222">
+    <tspan x="341.75" y="222">x</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="98.75" y="9">
+    <tspan x="98.75" y="9">y</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="472.82" y1="24.1721" x2="473.78" y2="235.228"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="477.856,31.9132 472.81,21.936 467.856,31.9587 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="468.744,227.487 473.79,237.464 478.744,227.441 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="458.272" y1="218.7" x2="703.328" y2="218.7"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="466.036,213.7 456.036,218.7 466.036,223.7 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="695.564,223.7 705.564,218.7 695.564,213.7 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="472.8" y1="217.7" x2="633.8" y2="154.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="634.8" y1="154.7" x2="671.8" y2="36.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x1="472.8" y1="217.7" x2="669.8" y2="39.7"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="592.8" y="155.7">
+    <tspan x="592.8" y="155.7">a</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="633.8" y="105.7">
+    <tspan x="633.8" y="105.7">a</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="600.8" y="160.7">
+    <tspan x="600.8" y="160.7">1</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="639.8" y="112.7">
+    <tspan x="639.8" y="112.7">2</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" d="M 626.8,218.7 A 53.3655,53.3655 0 0 0 615.92,165.888"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="625.141,167.436 614.429,164.231 618.292,174.723 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:wasy10;font-style:normal;font-weight:normal" x="732.8" y="131.7">
+    <tspan x="732.8" y="131.7"></tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="696.8" y="83.7">
+    <tspan x="696.8" y="83.7">Q</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="631" y="188.45">
+    <tspan x="631" y="188.45">Q</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="642.8" y="194.7">
+    <tspan x="642.8" y="194.7">1</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #0000ff" x1="634.8" y1="154.7" x2="726.8" y2="119.7"/>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" d="M 701,125 A 78.8133,78.8133 0 0 0 671.56,64.698"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="680.863,65.0426 669.82,63.2996 675.051,73.1803 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="705" y="94">
+    <tspan x="705" y="94">2</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="746.8" y="38.7">
+    <tspan x="746.8" y="38.7"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="682.8" y="38.7">
+    <tspan x="682.8" y="38.7">(x,y)</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #0000ff" x1="673.8" y1="40.7" x2="674" y2="157"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="683.05" y="194">
+    <tspan x="683.05" y="194">(x,h)</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="681.55" y1="185.7" x2="646.752" y2="159.824"/>
+    <polygon style="fill: #000000" points="644.344,158.034 648.748,158.816 646.752,159.824 646.361,162.026 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="644.344,158.034 648.748,158.816 646.752,159.824 646.361,162.026 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="714.55" y="219.7">
+    <tspan x="714.55" y="219.7">x</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="471.55" y="6.7">
+    <tspan x="471.55" y="6.7">y</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #0000ff" x1="636.89" y1="153.29" x2="740" y2="154.5"/>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" d="M 709,154 A 22.8469,22.8469 0 0 0 705.909,133.314"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" points="708.916,132.809 704.63,131.53 706.178,135.726 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="716" y="140">
+    <tspan x="716" y="140">Q</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="723.812" y="148.213">
+    <tspan x="723.812" y="148.213">1</tspan>
+  </text>
+</svg>

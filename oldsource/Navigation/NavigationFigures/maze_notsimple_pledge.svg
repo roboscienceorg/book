@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="13cm" height="11cm" viewBox="340 71 257 216" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="341" y="72" width="255" height="177"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="341" y="72" width="255" height="177"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="363" y="91" width="209" height="140"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="363" y="91" width="209" height="140"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="456" y="244" width="25" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="456" y="244" width="25" height="9"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="453.3" y="84.9" width="25" height="10.1"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="453.3" y="84.9" width="25" height="10.1"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="435" y="129">
+    <tspan x="435" y="129">Start</tspan>
+  </text>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #00ff00" points="474,125 563,125 564,224 368,224 367,97 460,97 460,86 357,86 357,236 590,235 590,245 468.5,244 467,284 "/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="473" y="281">
+    <tspan x="473" y="281">End</tspan>
+  </text>
+</svg>

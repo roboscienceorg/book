@@ -1,0 +1,231 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 579 367"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-68953090-1A4E-4AE0-9D74-AFB07F6E7E3C">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="58.79" y="115.79" width="125.00" height="179.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-68953090-1A4E-4AE0-9D74-AFB07F6E7E3C)"
+            transform="rotate(346 121.29 205.29)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="58.79" y="115.79" width="125.00" height="179.00"
+                transform="
+                    translate(0.5 0.5)
+                    rotate(346 121.29 205.29)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Polygon SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-AB2192F1-1889-430A-8797-AB56BEB399BF">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M466.00 52.00
+                    L567.00 124.00
+                    L530.00 224.00
+                    L401.00 224.00
+                    L364.00 124.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-AB2192F1-1889-430A-8797-AB56BEB399BF)"
+            transform="rotate(18 465.50 138.00)"
+            />
+        </g>
+        
+        
+        <!-- ** Polygon *************** -->
+        
+        <g>
+            <path
+                d="
+                    M466.00 52.00
+                    L567.00 124.00
+                    L530.00 224.00
+                    L401.00 224.00
+                    L364.00 124.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    rotate(18 465.50 138.00)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-6E75B75A-C4E9-486B-B1F1-81C93CFE7DE7">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M18.49 352.11
+                        L18.73 358.11
+                        L0.74 358.81
+                        L0.27 346.82
+                        L18.26 346.12
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M8.00 352.00
+                    L239.00 343.00
+                    "
+                clip-path="url(#clipPath-6E75B75A-C4E9-486B-B1F1-81C93CFE7DE7)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M10.13 356.68
+                    C8.09 354.42 7.94 350.62 9.80 348.20
+                    C11.66 345.79 14.82 345.66 16.86 347.93
+                    C18.91 350.19 19.05 353.99 17.19 356.41
+                    C15.33 358.82 12.17 358.95 10.13 356.68
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M239.00 343.00
+                    L329.00 27.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-75D4AF86-8ACE-4BC3-877C-784D57B86AD1">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M546.51 36.97
+                        L546.83 30.98
+                        L564.81 31.93
+                        L564.17 43.91
+                        L546.20 42.96
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M329.00 25.00
+                    L556.00 37.00
+                    "
+                clip-path="url(#clipPath-75D4AF86-8ACE-4BC3-877C-784D57B86AD1)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M546.83 30.98
+                    L556.82 31.51
+                    L556.18 43.49
+                    L546.20 42.96
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+    </g>
+</svg>
+

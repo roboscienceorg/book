@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="14cm" height="11cm" viewBox="115 73 273 215" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path style="fill: #ffffff" d="M 187 95 C 222,93 263,165 256,201 C 249,237 215,280 184,281 C 153,282 119,232 117,191 C 115,150 152,97 187,95z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 187 95 C 222,93 263,165 256,201 C 249,237 215,280 184,281 C 153,282 119,232 117,191 C 115,150 152,97 187,95"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 189 117 C 224,115 242,182 236,201 C 230,220 205,260 182,259 C 159,258 134,213 136,187 C 138,161 154,119 189,117z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 189 117 C 224,115 242,182 236,201 C 230,220 205,260 182,259 C 159,258 134,213 136,187 C 138,161 154,119 189,117"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="270.332" y1="123.592" x2="245.668" y2="265.408"/>
+    <polygon style="fill: #000000" points="271.617,116.203 274.83,126.912 270.332,123.592 264.977,125.198 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="271.617,116.203 274.83,126.912 270.332,123.592 264.977,125.198 "/>
+    <polygon style="fill: #000000" points="244.383,272.797 241.17,262.088 245.668,265.408 251.023,263.802 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="244.383,272.797 241.17,262.088 245.668,265.408 251.023,263.802 "/>
+  </g>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="204" y="329">
+    <tspan x="204" y="329"></tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="253" y="284">
+    <tspan x="253" y="284">Tangent</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="256" y1="201" x2="343.338" y2="211.805"/>
+    <polygon style="fill: #000000" points="350.781,212.725 340.243,216.46 343.338,211.805 341.47,206.536 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="350.781,212.725 340.243,216.46 343.338,211.805 341.47,206.536 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="148" y="89">
+    <tspan x="148" y="89">Offset curve</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="327" y="198">
+    <tspan x="327" y="198">Normal</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="170" y="188">
+    <tspan x="170" y="188">WO</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="155" y="264">
+    <tspan x="155" y="264">W*</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="158.666" y1="247.917" x2="151.334" y2="257.083"/>
+    <polygon style="fill: #000000" points="159.603,246.746 159.135,248.933 158.666,247.917 157.573,247.683 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="159.603,246.746 159.135,248.933 158.666,247.917 157.573,247.683 "/>
+    <polygon style="fill: #000000" points="150.397,258.254 150.865,256.067 151.334,257.083 152.427,257.317 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="150.397,258.254 150.865,256.067 151.334,257.083 152.427,257.317 "/>
+  </g>
+</svg>

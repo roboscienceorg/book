@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="14cm" height="8cm" viewBox="89 41 276 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="226.5" cy="115.5" rx="136.5" ry="73.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="226.5" cy="115.5" rx="136.5" ry="73.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="225.5" cy="110.5" rx="70.5" ry="24.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="225.5" cy="110.5" rx="70.5" ry="24.5"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="275.352" y1="127.824" x2="298" y2="180"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 275.352,127.824 A 30.6019,30.6019 0 0 0 297,181"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 95,131 A 208.853,208.853 0 0 0 363,115.5"/>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="294" y="137">
+    <tspan x="294" y="137">q</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="319.3" y="135">
+    <tspan x="319.3" y="135">q</tspan>
+  </text>
+  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="326" y="138">
+    <tspan x="326" y="138">1</tspan>
+  </text>
+  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="302" y="140">
+    <tspan x="302" y="140">2</tspan>
+  </text>
+</svg>

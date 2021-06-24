@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="6cm" height="6cm" viewBox="137 57 107 111" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="198.5" cy="115.5" rx="41.5" ry="40.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="198.5" cy="115.5" rx="41.5" ry="40.5"/>
+  </g>
+  <g>
+    <path style="fill: #000000" d="M 218 69 C 231,72 246,88 238,85 C 230,82 205,66 218,69z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 218 69 C 231,72 246,88 238,85 C 230,82 205,66 218,69"/>
+  </g>
+  <g>
+    <path style="fill: #000000" d="M 225 160 C 235,155 250,139 237,145 C 224,151 215,165 225,160z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 225 160 C 235,155 250,139 237,145 C 224,151 215,165 225,160"/>
+  </g>
+  <g>
+    <path style="fill: #000000" d="M 148 104 C 151,90 155,122 151,132 C 147,142 145,118 148,104z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 148 104 C 151,90 155,122 151,132 C 147,142 145,118 148,104"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="235" y="70">
+    <tspan x="235" y="70">1</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="137" y="121">
+    <tspan x="137" y="121">2</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="237" y="164">
+    <tspan x="237" y="164">3</tspan>
+  </text>
+</svg>

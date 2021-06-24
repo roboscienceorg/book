@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="9cm" viewBox="29 59 318 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffa500" x="242.666" y="89" width="29" height="19" rx="4" ry="4"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="242.666" y="89" width="29" height="19" rx="4" ry="4"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="279" y="61" width="14" height="169"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="279" y="61" width="14" height="169"/>
+  </g>
+  <g>
+    <rect style="fill: #d8e5e5" x="31" y="133" width="224" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="31" y="133" width="224" height="26"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #000000" x1="255" y1="146" x2="279" y2="145.5"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="303" y="101">
+    <tspan x="303" y="101">Wheel</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="120" y="151">
+    <tspan x="120" y="151">Chassis</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #a52a2a" points="215,122 253.666,122.333 254,84 265.334,84 265.334,133 215.334,133 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="215,122 253.666,122.333 254,84 265.334,84 265.334,133 215.334,133 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x1="204.666" y1="94" x2="242.666" y2="94"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="204.6" y1="97.3334" x2="242.334" y2="97"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x1="204.676" y1="101" x2="242.676" y2="101"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="204.608" y1="104.333" x2="242.342" y2="104"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="234.666" y="83">
+    <tspan x="234.666" y="83">IR</tspan>
+  </text>
+</svg>

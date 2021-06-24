@@ -1,0 +1,590 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 539 238"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-CF35718E-5454-4127-BD2E-641BB2F4D494">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="11.00" y="150.00" width="49.00" height="60.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-CF35718E-5454-4127-BD2E-641BB2F4D494)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="11.00" y="150.00" width="49.00" height="60.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(153, 102, 51)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-9AB04990-67F1-4756-ADD4-4C9EBBB2DC6F">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M80.75 190.00
+                    C49.41 190.00 24.00 183.06 24.00 174.50
+                    L24.00 174.50
+                    C24.00 165.94 49.41 159.00 80.75 159.00
+                    L194.25 159.00
+                    C225.59 159.00 251.00 165.94 251.00 174.50
+                    L251.00 174.50
+                    C251.00 183.06 225.59 190.00 194.25 190.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-9AB04990-67F1-4756-ADD4-4C9EBBB2DC6F)"
+            transform="rotate(6 137.50 174.50)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M80.75 190.00
+                    C49.41 190.00 24.00 183.06 24.00 174.50
+                    L24.00 174.50
+                    C24.00 165.94 49.41 159.00 80.75 159.00
+                    L194.25 159.00
+                    C225.59 159.00 251.00 165.94 251.00 174.50
+                    L251.00 174.50
+                    C251.00 183.06 225.59 190.00 194.25 190.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    rotate(6 137.50 174.50)
+                    "
+                fill="rgb(255, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-45D90C91-2A74-4C0D-A1B4-E7E741074229">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M273.42 145.27
+                    C242.08 145.27 216.67 138.33 216.67 129.77
+                    L216.67 129.77
+                    C216.67 121.21 242.08 114.27 273.42 114.27
+                    L386.92 114.27
+                    C418.26 114.27 443.67 121.21 443.67 129.77
+                    L443.67 129.77
+                    C443.67 138.33 418.26 145.27 386.92 145.27
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-45D90C91-2A74-4C0D-A1B4-E7E741074229)"
+            transform="rotate(329 330.17 129.77)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M273.42 145.27
+                    C242.08 145.27 216.67 138.33 216.67 129.77
+                    L216.67 129.77
+                    C216.67 121.21 242.08 114.27 273.42 114.27
+                    L386.92 114.27
+                    C418.26 114.27 443.67 121.21 443.67 129.77
+                    L443.67 129.77
+                    C443.67 138.33 418.26 145.27 386.92 145.27
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    rotate(329 330.17 129.77)
+                    "
+                fill="rgb(255, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-6B56801F-4DB6-4C3D-8726-0B7374235A49">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M372.50 196.00
+                    C357.86 196.00 346.00 184.14 346.00 169.50
+                    L346.00 117.50
+                    C346.00 102.86 357.86 91.00 372.50 91.00
+                    L425.50 91.00
+                    C440.14 91.00 452.00 102.86 452.00 117.50
+                    L452.00 169.50
+                    C452.00 184.14 440.14 196.00 425.50 196.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-6B56801F-4DB6-4C3D-8726-0B7374235A49)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M372.50 196.00
+                    C357.86 196.00 346.00 184.14 346.00 169.50
+                    L346.00 117.50
+                    C346.00 102.86 357.86 91.00 372.50 91.00
+                    L425.50 91.00
+                    C440.14 91.00 452.00 102.86 452.00 117.50
+                    L452.00 169.50
+                    C452.00 184.14 440.14 196.00 425.50 196.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(255, 128, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-E53943AB-4CA5-45CC-A3C4-523F74840F21">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M65.27 123.77
+                    C33.93 123.77 8.52 116.83 8.52 108.27
+                    L8.52 108.27
+                    C8.52 99.71 33.93 92.77 65.27 92.77
+                    L178.77 92.77
+                    C210.11 92.77 235.52 99.71 235.52 108.27
+                    L235.52 108.27
+                    C235.52 116.83 210.11 123.77 178.77 123.77
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-E53943AB-4CA5-45CC-A3C4-523F74840F21)"
+            transform="rotate(329 122.02 108.27)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M65.27 123.77
+                    C33.93 123.77 8.52 116.83 8.52 108.27
+                    L8.52 108.27
+                    C8.52 99.71 33.93 92.77 65.27 92.77
+                    L178.77 92.77
+                    C210.11 92.77 235.52 99.71 235.52 108.27
+                    L235.52 108.27
+                    C235.52 116.83 210.11 123.77 178.77 123.77
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    rotate(329 122.02 108.27)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-BD3989B5-BA9C-459B-BF42-5BEC1D93FC35">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <path
+                d="
+                    M259.75 78.00
+                    C228.41 78.00 203.00 71.06 203.00 62.50
+                    L203.00 62.50
+                    C203.00 53.94 228.41 47.00 259.75 47.00
+                    L373.25 47.00
+                    C404.59 47.00 430.00 53.94 430.00 62.50
+                    L430.00 62.50
+                    C430.00 71.06 404.59 78.00 373.25 78.00
+                    Z
+                    "
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-BD3989B5-BA9C-459B-BF42-5BEC1D93FC35)"
+            transform="rotate(4 316.50 62.50)"
+            />
+        </g>
+        
+        
+        <!-- ** Rounded Rectangle *************** -->
+        
+        <g>
+            <path
+                d="
+                    M259.75 78.00
+                    C228.41 78.00 203.00 71.06 203.00 62.50
+                    L203.00 62.50
+                    C203.00 53.94 228.41 47.00 259.75 47.00
+                    L373.25 47.00
+                    C404.59 47.00 430.00 53.94 430.00 62.50
+                    L430.00 62.50
+                    C430.00 71.06 404.59 78.00 373.25 78.00
+                    Z
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    rotate(4 316.50 62.50)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-FD988356-02EB-4230-BD64-388F0364843B">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="36.50" cy="158.50" rx="7.50" ry="7.50"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-FD988356-02EB-4230-BD64-388F0364843B)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="36.50" cy="158.50" rx="7.50" ry="7.50"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-88027DCB-A667-4E89-AF2D-32BDAB4492F2">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="213.00" cy="55.00" rx="5.00" ry="5.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-88027DCB-A667-4E89-AF2D-32BDAB4492F2)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="213.00" cy="55.00" rx="5.00" ry="5.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-10A9DF7F-70F9-481A-8D5F-BF6A4E8C957F">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="240.00" cy="183.00" rx="5.00" ry="5.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-10A9DF7F-70F9-481A-8D5F-BF6A4E8C957F)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="240.00" cy="183.00" rx="5.00" ry="5.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 0, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M14.00 210.00
+                    L57.00 210.00
+                    L57.00 233.00
+                    L14.00 233.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="14.65" y="228.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:19px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Base</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M355.00 130.00
+                    L443.00 130.00
+                    L443.00 154.00
+                    L355.00 154.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="356.99" y="149.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:20px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Obstacle</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-77E672F8-E798-4F42-B89A-5526CD393DB7">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M431.90 66.14
+                        L433.33 66.59
+                        L431.83 71.36
+                        L428.97 70.46
+                        L430.47 65.69
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M443.00 31.00
+                    L431.00 69.00
+                    "
+                clip-path="url(#clipPath-77E672F8-E798-4F42-B89A-5526CD393DB7)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="1.00 2.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M432.14 68.90
+                    C431.41 69.28 430.50 69.00 430.12 68.26
+                    C429.74 67.53 430.02 66.62 430.76 66.24
+                    C431.49 65.86 432.40 66.14 432.78 66.88
+                    C433.16 67.61 432.88 68.52 432.14 68.90
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M442.00 7.00
+                    L534.00 7.00
+                    L534.00 32.00
+                    L442.00 32.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="442.65" y="27.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:21px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Endpoint</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

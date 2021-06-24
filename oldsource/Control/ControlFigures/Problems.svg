@@ -1,0 +1,314 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 368 212"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-A9023B55-3F88-4FB2-9ACC-09DFAA4A6A98">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M41.00 20.00
+                        L37.00 20.00
+                        L37.00 -1.00
+                        L45.00 -1.00
+                        L45.00 20.00
+                        Z
+                        M41.00 198.00
+                        L45.00 198.00
+                        L45.00 219.00
+                        L37.00 219.00
+                        L37.00 198.00
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M41.00 9.00
+                    L41.00 209.00
+                    "
+                clip-path="url(#clipPath-A9023B55-3F88-4FB2-9ACC-09DFAA4A6A98)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M41.00 20.00
+                    L37.00 20.00
+                    L41.00 10.00
+                    L45.00 20.00
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M41.00 198.00
+                    L45.00 198.00
+                    L41.00 208.00
+                    L37.00 198.00
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-F6ACB74C-F77D-49DC-B2D6-3B145F3C9422">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M13.00 177.00
+                        L13.00 181.00
+                        L-8.00 181.00
+                        L-8.00 173.00
+                        L13.00 173.00
+                        Z
+                        M316.00 177.00
+                        L316.00 173.00
+                        L337.00 173.00
+                        L337.00 181.00
+                        L316.00 181.00
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M2.00 177.00
+                    L327.00 177.00
+                    "
+                clip-path="url(#clipPath-F6ACB74C-F77D-49DC-B2D6-3B145F3C9422)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M13.00 177.00
+                    L13.00 181.00
+                    L3.00 177.00
+                    L13.00 173.00
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M316.00 177.00
+                    L316.00 173.00
+                    L326.00 177.00
+                    L316.00 181.00
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Smart Path *************** -->
+        
+        <g>
+            <path
+                d="
+                    M41.00 132.00
+                    C41.00 132.00 82.32 133.02 113.00 120.00
+                    C143.68 106.98 204.55 65.56 235.00 52.00
+                    C265.45 38.44 300.00 40.00 300.00 40.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M301.00 15.00
+                    L301.00 177.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="8.00 4.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M42.00 132.00
+                    L301.00 132.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="8.00 4.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M303.00 40.00
+                    L42.00 39.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-dasharray="8.00 4.00 "
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M328.00 170.00
+                    L362.00 170.00
+                    L362.00 187.00
+                    L328.00 187.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="328.12" y="183.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Time</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M17.00 124.00
+                    L41.00 124.00
+                    L41.00 141.00
+                    L17.00 141.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="17.80" y="137.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">SP1</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M17.00 32.00
+                    L39.00 32.00
+                    L39.00 48.00
+                    L17.00 48.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="17.66" y="44.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">SP2</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

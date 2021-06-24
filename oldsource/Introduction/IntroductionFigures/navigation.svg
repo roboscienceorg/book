@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="31cm" height="9cm" viewBox="98 293 603 168" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="100,298.5 233,299.5 234,380.5 380,380.5 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="102,340.5 189.706,339.8 189.706,423.8 379,423.5 "/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" points="103,318.5 222,325.5 207,397.5 329.343,416.468 "/>
+    <polygon style="fill: #000000" points="333.79,417.157 327.402,419.203 329.343,416.468 328.321,413.274 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="333.79,417.157 327.402,419.203 329.343,416.468 328.321,413.274 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="413.808,294.308 546.808,295.308 547.808,376.308 693.808,376.308 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="415.808,336.308 503.514,335.608 503.514,419.608 692.808,419.308 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #ffc0cb" points="417,314.5 525.514,314.3 525.514,398.3 697,398.5 "/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" points="418.808,314.308 486,318.5 530,308.5 521,355.5 531,403.5 591,394.5 654,402.5 692.368,395.679 "/>
+    <polygon style="fill: #000000" points="696.798,394.891 691.416,398.895 692.368,395.679 690.366,392.988 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="696.798,394.891 691.416,398.895 692.368,395.679 690.366,392.988 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="162" y="455.5">
+    <tspan x="162" y="455.5">Dead Reckoning</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="466" y="457.5">
+    <tspan x="466" y="457.5">Modified Environment</tspan>
+  </text>
+</svg>

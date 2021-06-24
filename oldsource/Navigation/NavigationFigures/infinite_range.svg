@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="38cm" height="12cm" viewBox="163 110 760 239" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path style="fill: #ff0000" d="M 246 190 C 281,199 339,276 285,293 C 231,310 211,181 246,190z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 246 190 C 281,199 339,276 285,293 C 231,310 211,181 246,190"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 446 224 C 475,229 481,340 418,299 C 355,258 417,219 446,224z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 446 224 C 475,229 481,340 418,299 C 355,258 417,219 446,224"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 614.534 112 C 634.534,112 708,203 713,275 C 718,347 648,345 596,340 C 544,335 634.534,297 633.534,260 C 632.534,223 594.534,112 614.534,112z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 614.534 112 C 634.534,112 708,203 713,275 C 718,347 648,345 596,340 C 544,335 634.534,297 633.534,260 C 632.534,223 594.534,112 614.534,112"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="919" cy="241" rx="2.5" ry="2.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="919" cy="241" rx="2.5" ry="2.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="167" cy="242" rx="2.5" ry="2.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="167" cy="242" rx="2.5" ry="2.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 817.502 227 C 837.502,227 909.502,162 889.502,162 C 869.502,162 797.502,227 817.502,227z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 817.502 227 C 837.502,227 909.502,162 889.502,162 C 869.502,162 797.502,227 817.502,227"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="168.768" y1="243.768" x2="267.502" y2="300"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="267.502" y1="300" x2="441.502" y2="313"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="439.666" y1="312.666" x2="603.502" y2="348"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 602.404 348.04 C 627.404,348.04 646.502,352 685.502,341"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="917.232" y1="242.768" x2="682.738" y2="341.708"/>
+</svg>

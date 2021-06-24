@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="17cm" height="8cm" viewBox="71 6 331 143" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #0000ff" cx="197" cy="102" rx="4.5" ry="16.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="197" cy="102" rx="4.5" ry="16.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="196.7" cy="44.2" rx="4.5" ry="16.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="196.7" cy="44.2" rx="4.5" ry="16.5"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="88" y1="103" x2="223" y2="102"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="112" y="60">
+    <tspan x="112" y="60"></tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #0000ff" cx="382.302" cy="44.3024" rx="4.5" ry="16.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="382.302" cy="44.3024" rx="4.5" ry="16.5"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 386.602 89.1024 C 393.602,86.1024 382.602,109.102 372.602,114.102 C 362.602,119.102 379.602,92.1024 386.602,89.1024z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 386.602 89.1024 C 393.602,86.1024 382.602,109.102 372.602,114.102 C 362.602,119.102 379.602,92.1024 386.602,89.1024"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="290.602" y1="45.1024" x2="401" y2="45"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="394.602" y1="111.102" x2="294" y2="35"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="293.602" y="60.1024">
+    <tspan x="293.602" y="60.1024"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="289.602" y="61.1024">
+    <tspan x="289.602" y="61.1024">ICR</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="84.2074" y1="45.7074" x2="219.208" y2="44.7074"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="100" y="77">
+    <tspan x="100" y="77">ICR</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="94" y1="73" x2="78.4721" y2="73"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="86.2361,68 76.2361,73 86.2361,78 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="196.5" cy="74.5" rx="1.5" ry="2.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="196.5" cy="74.5" rx="1.5" ry="2.5"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="206" y="78">
+    <tspan x="206" y="78">P</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #000000" cx="379.7" cy="75.1" rx="1.5" ry="2.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="379.7" cy="75.1" rx="1.5" ry="2.5"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="389.2" y="78.6">
+    <tspan x="389.2" y="78.6">P</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="197" y1="21" x2="197.965" y2="142.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="192.903,134.804 197.982,144.764 202.903,134.725 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="365" y1="8" x2="346.667" y2="129.578"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="342.88,121.155 346.333,131.789 352.769,122.646 "/>
+  </g>
+</svg>

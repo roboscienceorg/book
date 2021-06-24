@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="12cm" height="7cm" viewBox="184 99 239 121" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #d8e5e5" x="200" y="121" width="115" height="19"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200" y="121" width="115" height="19"/>
+  </g>
+  <g>
+    <rect style="fill: #d8e5e5" x="199.7" y="182.9" width="115" height="19"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="199.7" y="182.9" width="115" height="19"/>
+  </g>
+  <g>
+    <rect style="fill: #d8e5e5" x="315" y="121" width="18" height="81"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="315" y="121" width="18" height="81"/>
+  </g>
+  <g>
+    <rect style="fill: #7f7f7f" x="333.034" y="156" width="77" height="11"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="333.034" y="156" width="77" height="11"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 381.7,192.667 A 31.9775,31.9775 0 1 0 388.607,129.858"/>
+    <polygon style="fill: #000000" points="381.473,130.919 389.225,122.862 388.541,128.41 392.57,132.285 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="381.473,130.919 389.225,122.862 388.541,128.41 392.57,132.285 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="188.367" y1="128.667" x2="188.367" y2="107.236"/>
+    <polygon style="fill: #000000" points="188.367,104.236 190.367,108.236 188.367,107.236 186.367,108.236 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="188.367,104.236 190.367,108.236 188.367,107.236 186.367,108.236 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="189.836" y1="214.3" x2="189.836" y2="192.869"/>
+    <polygon style="fill: #000000" points="189.836,217.3 187.836,213.3 189.836,214.3 191.836,213.3 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="189.836,217.3 187.836,213.3 189.836,214.3 191.836,213.3 "/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="41cm" height="22cm" viewBox="-248 -28 804 425" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="331.5" y="144.042" width="223" height="157"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="331.5" y="144.042" width="223" height="157"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-246.5" y="141.042" width="263" height="133"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-246.5" y="141.042" width="263" height="133"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="117.5" y="-26.958" width="119" height="82"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="117.5" y="-26.958" width="119" height="82"/>
+  </g>
+  <g>
+    <polygon style="fill: #1e90ff" points="157,-7 197,-0.6834 211.666,10.6498 197.333,22.9832 156.667,32.6498 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="157,-7 197,-0.6834 211.666,10.6498 197.333,22.9832 156.667,32.6498 "/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 430.334 161.983 C 527.334,164.983 531.334,173.983 520.334,233.984 C 509.334,293.984 514.334,312.984 425.334,245.984 C 336.334,178.983 333.334,158.983 430.334,161.983z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 430.334 161.983 C 527.334,164.983 531.334,173.983 520.334,233.984 C 509.334,293.984 514.334,312.984 425.334,245.984 C 336.334,178.983 333.334,158.983 430.334,161.983"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M -114.667 172.984 C 42.3334,136.983 9.3334,251.984 -113.667,248.984 C -236.666,245.984 -271.666,208.984 -114.667,172.984z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -114.667 172.984 C 42.3334,136.983 9.3334,251.984 -113.667,248.984 C -236.666,245.984 -271.666,208.984 -114.667,172.984"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-116.5" y1="102" x2="442.5" y2="102"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="177" y1="55.042" x2="176.5" y2="101"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-114.5" y1="103" x2="-115" y2="141.042"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="442.5" y1="104" x2="443" y2="144.042"/>
+  <g>
+    <rect style="fill: #ffffff" x="109.5" y="138.8" width="138" height="257.2"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="109.5" y="138.8" width="138" height="257.2"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 176.537 162.8 C 196.537,162.8 194.537,386.8 180.537,382.8 C 166.537,378.8 180.537,356.8 158.537,344.8 C 136.537,332.8 162.537,325.966 166.537,294.8 C 170.537,263.634 156.537,162.8 176.537,162.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 176.537 162.8 C 196.537,162.8 194.537,386.8 180.537,382.8 C 166.537,378.8 180.537,356.8 158.537,344.8 C 136.537,332.8 162.537,325.966 166.537,294.8 C 170.537,263.634 156.537,162.8 176.537,162.8"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="176.311" y1="101.811" x2="175.5" y2="137"/>
+</svg>

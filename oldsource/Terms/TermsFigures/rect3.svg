@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="22cm" height="18cm" viewBox="132 38 435 344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #a52a2a" x="233" y="54" width="79" height="115"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="233" y="54" width="79" height="115"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="338" y1="106" x2="382.529" y2="105.091"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="374.868,110.249 384.764,105.046 374.664,100.251 "/>
+  </g>
+  <g>
+    <polygon style="fill: #0000ff" points="134,92.0126 140,70.0126 206,79.0126 200,100.013 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="134,92.0126 140,70.0126 206,79.0126 200,100.013 "/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="437" y="39.0126" width="129" height="144" rx="6" ry="6"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="437" y="39.0126" width="129" height="144" rx="6" ry="6"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="235.398" y="248" width="79" height="115"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="235.398" y="248" width="79" height="115"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="340.398" y1="300" x2="384.927" y2="299.091"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="377.266,304.249 387.162,299.046 377.062,294.251 "/>
+  </g>
+  <g>
+    <polygon style="fill: #0000ff" points="152,270.012 166,251.012 215,288.012 200,306.012 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="152,270.012 166,251.012 215,288.012 200,306.012 "/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="449" y="214.012" width="104" height="167" rx="20" ry="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="449" y="214.012" width="104" height="167" rx="20" ry="20"/>
+  </g>
+</svg>

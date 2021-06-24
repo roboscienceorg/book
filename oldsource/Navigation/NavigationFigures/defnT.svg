@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="35cm" height="12cm" viewBox="53 10 697 231" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffff00" cx="519.764" cy="119.8" rx="56" ry="56"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="519.764" cy="119.8" rx="56" ry="56"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="574.964" cy="126" rx="43.5" ry="114"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="574.964" cy="126" rx="43.5" ry="114"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffff00" cx="110.463" cy="104" rx="56" ry="56"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="110.463" cy="104" rx="56" ry="56"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="109.463" y1="103" x2="341.464" y2="132"/>
+    <path style="fill: #000000" d="M 341.464 132 C 341.154,134.481 338.363,136.651 335.882,136.341 C 333.402,136.031 331.231,133.24 331.541,130.76 C 331.851,128.279 334.642,126.108 337.123,126.418 C 339.603,126.729 341.774,129.519 341.464,132z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 341.464 132 C 341.154,134.481 338.363,136.651 335.882,136.341 C 333.402,136.031 331.231,133.24 331.541,130.76 C 331.851,128.279 334.642,126.108 337.123,126.418 C 339.603,126.729 341.774,129.519 341.464,132"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="171.463" y="102">
+    <tspan x="171.463" y="102">T</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="522.714" y1="118.495" x2="748.764" y2="148.8"/>
+    <path style="fill: #000000" d="M 748.764 148.8 C 748.432,151.278 745.622,153.423 743.144,153.091 C 740.666,152.759 738.52,149.949 738.853,147.471 C 739.185,144.993 741.995,142.848 744.473,143.18 C 746.951,143.512 749.096,146.322 748.764,148.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 748.764 148.8 C 748.432,151.278 745.622,153.423 743.144,153.091 C 740.666,152.759 738.52,149.949 738.853,147.471 C 739.185,144.993 741.995,142.848 744.473,143.18 C 746.951,143.512 749.096,146.322 748.764,148.8"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="578.764" y="118.8">
+    <tspan x="578.764" y="118.8">T</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="519" y="191">
+    <tspan x="519" y="191">O</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="530" y="196">
+    <tspan x="530" y="196">1</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #000000" cx="534.5" cy="174.5" rx="4.5" ry="4.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="534.5" cy="174.5" rx="4.5" ry="4.5"/>
+  </g>
+</svg>

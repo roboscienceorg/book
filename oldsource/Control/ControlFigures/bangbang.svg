@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="12cm" height="8cm" viewBox="78 74 226 160" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="100.028" y1="105.736" x2="100.495" y2="217.75"/>
+    <polygon style="fill: #000000" points="100.009,101.236 103.034,107.223 100.028,105.736 97.0344,107.249 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="100.009,101.236 103.034,107.223 100.028,105.736 97.0344,107.249 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="86" y1="200" x2="289.26" y2="199.758"/>
+    <polygon style="fill: #000000" points="293.76,199.753 287.764,202.76 289.26,199.758 287.756,196.76 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="293.76,199.753 287.764,202.76 289.26,199.758 287.756,196.76 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="97" y="88">
+    <tspan x="97" y="88">V</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="105" y="94">
+    <tspan x="105" y="94">m</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="99" y1="143" x2="286.996" y2="143.233"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #00ff00" x1="100.495" y1="214.75" x2="161.662" y2="214.566"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #00ff00" x1="191.953" y1="215.354" x2="222.496" y2="215.75"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #00ff00" x1="248.996" y1="215.734" x2="279.996" y2="216.25"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="78.995" y="144">
+    <tspan x="78.995" y="144">V</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="85.995" y="149">
+    <tspan x="85.995" y="149">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="101.496" y="230.5">
+    <tspan x="101.496" y="230.5">u(t)</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="161.162" y1="107.567" x2="160.828" y2="225"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="191.328" y1="106.567" x2="191.736" y2="223.976"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="221.662" y1="108.067" x2="222.136" y2="224.776"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="249.496" y1="107.4" x2="249.704" y2="224.076"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="298.496" y="203.9">
+    <tspan x="298.496" y="203.9">t</tspan>
+  </text>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 99.995 198.75 C 129.995,196.75 158.995,108.75 161.495,123.25 C 163.995,137.75 179.032,165.271 191.532,165.271 C 204.032,165.271 220.496,118.25 222.996,124.75 C 225.496,131.25 241.994,158.75 249.996,158.75 C 257.996,158.75 273.996,133.75 281.496,122.25"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="131.681" y1="107.003" x2="131.348" y2="224.436"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="281.346" y1="107.002" x2="281.554" y2="223.678"/>
+</svg>
