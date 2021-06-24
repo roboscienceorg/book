@@ -1,0 +1,652 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 615 352"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-9126C11C-A3A8-436C-9197-2733F4241229">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="308.00" cy="43.00" rx="98.00" ry="30.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-9126C11C-A3A8-436C-9197-2733F4241229)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="308.00" cy="43.00" rx="98.00" ry="30.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="247.84" y="37.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Motion Planning  &amp;
+                </tspan>
+            </text>
+            <text x="275.45" y="56.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Autonomy</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-18794429-41CF-4B03-8851-1179D8655BCD">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="107.00" cy="149.00" rx="98.00" ry="30.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-18794429-41CF-4B03-8851-1179D8655BCD)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="107.00" cy="149.00" rx="98.00" ry="30.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(255, 255, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="80.69" y="153.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Controls</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-AA854067-F237-44E5-B1BC-F5D9EDA5F300">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="155.00" cy="305.00" rx="98.00" ry="30.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-AA854067-F237-44E5-B1BC-F5D9EDA5F300)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="155.00" cy="305.00" rx="98.00" ry="30.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(255, 128, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="114.30" y="299.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Kinematics &amp;
+                </tspan>
+            </text>
+            <text x="124.91" y="318.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Dynamics</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-BE1469E8-593D-48AF-8E09-093CE94C4205">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="503.00" cy="146.00" rx="98.00" ry="30.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-BE1469E8-593D-48AF-8E09-093CE94C4205)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="503.00" cy="146.00" rx="98.00" ry="30.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(255, 0, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="471.62" y="140.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Sensing &amp;
+                </tspan>
+            </text>
+            <text x="448.55" y="159.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Signal Processing</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-CB0D9EF2-0938-4AAB-8B84-040A25C2AD92">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="466.00" cy="305.00" rx="98.00" ry="30.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-CB0D9EF2-0938-4AAB-8B84-040A25C2AD92)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="466.00" cy="305.00" rx="98.00" ry="30.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="417.50" y="299.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Mechatronics &amp;
+                </tspan>
+            </text>
+            <text x="403.64" y="318.50"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Embedded Systems</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-DD5069C4-BCB6-42E1-AF06-CF6456340058">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="308.00" cy="189.00" rx="60.00" ry="60.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-DD5069C4-BCB6-42E1-AF06-CF6456340058)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="308.00" cy="189.00" rx="60.00" ry="60.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(255, 0, 0)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="273.17" y="194.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Robotics</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-D0B6022A-696B-4DBE-ADED-9FA5968E5BAE">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M308.50 85.50
+                        L303.50 85.50
+                        L303.50 63.50
+                        L313.50 63.50
+                        L313.50 85.50
+                        Z
+                        M308.50 117.50
+                        L313.50 117.50
+                        L313.50 139.50
+                        L303.50 139.50
+                        L303.50 117.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M308.00 73.00
+                    L308.00 129.00
+                    "
+                clip-path="url(#clipPath-D0B6022A-696B-4DBE-ADED-9FA5968E5BAE)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M308.50 84.91
+                    L304.09 84.91
+                    L308.50 74.50
+                    L312.91 84.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M308.50 118.09
+                    L312.91 118.09
+                    L308.50 128.50
+                    L304.09 118.09
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-2078D388-44A0-470B-9340-83C3931E426D">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M372.16 156.65
+                        L373.34 161.51
+                        L351.97 166.73
+                        L349.60 157.02
+                        L370.97 151.79
+                        Z
+                        M393.84 151.35
+                        L392.66 146.49
+                        L414.03 141.27
+                        L416.40 150.98
+                        L395.03 156.21
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M360.00 159.00
+                    L405.00 148.00
+                    "
+                clip-path="url(#clipPath-2078D388-44A0-470B-9340-83C3931E426D)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M371.59 156.79
+                    L372.64 161.08
+                    L361.47 159.26
+                    L370.54 152.50
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M394.41 151.21
+                    L393.36 146.92
+                    L404.53 148.74
+                    L395.46 155.50
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-FE3F0042-9135-4119-B1E8-A9E8F53E3FC2">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M218.29 152.76
+                        L217.35 157.67
+                        L195.74 153.53
+                        L197.62 143.71
+                        L219.23 147.85
+                        Z
+                        M241.71 157.24
+                        L242.65 152.33
+                        L264.26 156.47
+                        L262.38 166.29
+                        L240.77 162.15
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M206.00 150.00
+                    L253.00 159.00
+                    "
+                clip-path="url(#clipPath-FE3F0042-9135-4119-B1E8-A9E8F53E3FC2)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M217.71 152.65
+                    L216.88 156.98
+                    L207.48 150.69
+                    L218.54 148.31
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M242.29 157.35
+                    L243.12 153.02
+                    L252.52 159.31
+                    L241.46 161.69
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-8D6AF6DD-1511-4467-A81C-5008FE494EC2">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M279.93 255.13
+                        L275.50 252.80
+                        L285.72 233.32
+                        L294.57 237.97
+                        L284.35 257.45
+                        Z
+                        M259.07 294.87
+                        L263.50 297.20
+                        L253.28 316.68
+                        L244.43 312.03
+                        L254.65 292.55
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M285.00 244.00
+                    L253.00 305.00
+                    "
+                clip-path="url(#clipPath-8D6AF6DD-1511-4467-A81C-5008FE494EC2)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M280.20 254.61
+                    L276.29 252.56
+                    L285.04 245.39
+                    L284.11 256.66
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M258.80 295.39
+                    L262.71 297.44
+                    L253.96 304.61
+                    L254.89 293.34
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-F1B9EE96-4579-4C3C-87E7-4A27E85E2B91">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M342.94 255.20
+                        L338.48 257.46
+                        L328.51 237.85
+                        L337.43 233.32
+                        L347.39 252.93
+                        Z
+                        M363.06 294.80
+                        L367.52 292.54
+                        L377.49 312.15
+                        L368.57 316.68
+                        L358.61 297.07
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M337.00 244.00
+                    L368.00 305.00
+                    "
+                clip-path="url(#clipPath-F1B9EE96-4579-4C3C-87E7-4A27E85E2B91)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M342.67 254.68
+                    L338.74 256.68
+                    L337.95 245.39
+                    L346.61 252.68
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            <path
+                d="
+                    M363.33 295.32
+                    L367.26 293.32
+                    L368.05 304.61
+                    L359.39 297.32
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+    </g>
+</svg>
+

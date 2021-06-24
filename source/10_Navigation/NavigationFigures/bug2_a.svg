@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="18cm" height="9cm" viewBox="56 74 353 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path style="fill: #ffffff" d="M 114 131 C 203,149 261,118 316,135 C 371,152 319,225 274,237 C 229,249 155,234 111,208 C 67,182 25,113 114,131z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 10; stroke: #ff0000" d="M 114 131 C 203,149 261,118 316,135 C 371,152 319,225 274,237 C 229,249 155,234 111,208 C 67,182 25,113 114,131"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="368" y="90">
+    <tspan x="368" y="90">q</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="379" y="98">
+    <tspan x="379" y="98">goal</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #0000ff" cx="361" cy="104" rx="6.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="361" cy="104" rx="6.5" ry="5.5"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="180.2" y="203.95">
+    <tspan x="180.2" y="203.95">q</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="190.2" y="211.95">
+    <tspan x="190.2" y="211.95">start</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #0000ff" cx="168.2" cy="190.95" rx="6.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="168.2" cy="190.95" rx="6.5" ry="5.5"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="174.945" y1="188.125" x2="290.787" y2="139.602"/>
+    <polygon style="fill: #000000" points="294.938,137.864 290.562,142.949 290.787,139.602 288.244,137.415 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="294.938,137.864 290.562,142.949 290.787,139.602 288.244,137.415 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 281 138 C 215,145 193,151 110.685,140.826"/>
+    <polygon style="fill: #000000" points="106.219,140.274 112.542,138.033 110.685,140.826 111.806,143.988 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="106.219,140.274 112.542,138.033 110.685,140.826 111.806,143.988 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 105 141 C 61,124 49,159 122.308,205.398"/>
+    <polygon style="fill: #000000" points="126.111,207.804 119.436,207.13 122.308,205.398 122.645,202.06 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="126.111,207.804 119.436,207.13 122.308,205.398 122.645,202.06 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 130 209 C 196,238 285,251 320.573,190.799"/>
+    <polygon style="fill: #000000" points="322.862,186.925 322.393,193.617 320.573,190.799 317.227,190.564 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="322.862,186.925 322.393,193.617 320.573,190.799 317.227,190.564 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 326 183 C 337,145 332,165 326.302,154.871"/>
+    <polygon style="fill: #000000" points="324.096,150.949 329.653,154.708 326.302,154.871 324.423,157.649 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="324.096,150.949 329.653,154.708 326.302,154.871 324.423,157.649 "/>
+  </g>
+</svg>

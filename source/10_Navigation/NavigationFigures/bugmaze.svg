@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="24cm" height="12cm" viewBox="1 -169 475 225" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ff0000" x="219" y="-91.8394" width="25" height="79"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="219" y="-91.8394" width="25" height="79"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="281.1" y="-119.139" width="25" height="79"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="281.1" y="-119.139" width="25" height="79"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="306" y="-118.839" width="112" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="306" y="-118.839" width="112" height="26"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="395" y="-93.8394" width="23" height="97"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="395" y="-93.8394" width="23" height="97"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="219" y="-15.8395" width="199" height="22"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="219" y="-15.8395" width="199" height="22"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="88.1" y="-144.839" width="25" height="145"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="88.1" y="-144.839" width="25" height="145"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="156.2" y="-90.8394" width="25" height="145"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="156.2" y="-90.8394" width="25" height="145"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="88" y="-167.839" width="386" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="88" y="-167.839" width="386" height="26"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="451.1" y="-141.839" width="23" height="174"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="451.1" y="-141.839" width="23" height="174"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="181" y="32.1606" width="294" height="22"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="181" y="32.1606" width="294" height="22"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #7f7f7f" x1="11.25" y1="-57.5" x2="355" y2="-58.8394"/>
+    <path style="fill: #7f7f7f" d="M 11.25 -57.5 C 11.2422,-59.5 13.2344,-61.5078 15.2344,-61.5156 C 17.2344,-61.5233 19.2421,-59.5312 19.2499,-57.5312 C 19.2577,-55.5312 17.2655,-53.5234 15.2656,-53.5156 C 13.2656,-53.5078 11.2578,-55.5 11.25,-57.5z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" d="M 11.25 -57.5 C 11.2422,-59.5 13.2344,-61.5078 15.2344,-61.5156 C 17.2344,-61.5233 19.2421,-59.5312 19.2499,-57.5312 C 19.2577,-55.5312 17.2655,-53.5234 15.2656,-53.5156 C 13.2656,-53.5078 11.2578,-55.5 11.25,-57.5"/>
+    <path style="fill: #7f7f7f" d="M 355 -58.8394 C 355.008,-56.8394 353.016,-54.8316 351.016,-54.8238 C 349.016,-54.8161 347.008,-56.8082 347,-58.8082 C 346.992,-60.8082 348.984,-62.816 350.984,-62.8238 C 352.984,-62.8316 354.992,-60.8394 355,-58.8394z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" d="M 355 -58.8394 C 355.008,-56.8394 353.016,-54.8316 351.016,-54.8238 C 349.016,-54.8161 347.008,-56.8082 347,-58.8082 C 346.992,-60.8082 348.984,-62.816 350.984,-62.8238 C 352.984,-62.8316 354.992,-60.8394 355,-58.8394"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="13.25" y="-58.5">
+    <tspan x="13.25" y="-58.5"></tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="1.25" y="-38.5">
+    <tspan x="1.25" y="-38.5">Start</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="337.25" y="-40.5">
+    <tspan x="337.25" y="-40.5">Goal</tspan>
+  </text>
+</svg>

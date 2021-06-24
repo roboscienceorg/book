@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="13cm" height="7cm" viewBox="83 159 242 125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="201" x2="101" y2="218.917"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="83" y1="218.917" x2="119" y2="218.917"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="92" y1="226.083" x2="110" y2="226.083"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="110" y1="208.167" x2="110" y2="215.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="105.5" y1="211.75" x2="114.5" y2="211.75"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="226.083" x2="101" y2="244"/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="101,201 100,161 294.1,160.107 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="101,244 100.1,282.4 293.3,280.908 "/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="233" cy="220" rx="12.5" ry="12.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="233" cy="220" rx="12.5" ry="12.5"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="245.5" y1="220" x2="294" y2="220"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="171.1" y1="220.4" x2="220.5" y2="220"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="172" y1="160" x2="172" y2="178"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="172,220 172,202 184,178 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="139" y="194">
+      <tspan x="139" y="194"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="294.1" y1="160.107" x2="294.1" y2="178.107"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="294.1,220.107 294.1,202.107 306.1,178.107 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="261.1" y="194.107">
+      <tspan x="261.1" y="194.107"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="172.2" y1="220.508" x2="172.2" y2="238.508"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="172.2,280.508 172.2,262.508 184.2,238.508 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="139.2" y="254.508">
+      <tspan x="139.2" y="254.508"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="293.3" y1="220.908" x2="293.3" y2="238.908"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="293.3,280.908 293.3,262.908 305.3,238.908 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="260.3" y="254.908">
+      <tspan x="260.3" y="254.908"></tspan>
+    </text>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="214" y="249">
+    <tspan x="214" y="249">Motor</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="192" y="192">
+    <tspan x="192" y="192">S1</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="192" y="258">
+    <tspan x="192" y="258">S2</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="271" y="192">
+    <tspan x="271" y="192">S3</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="269" y="258">
+    <tspan x="269" y="258">S4</tspan>
+  </text>
+</svg>

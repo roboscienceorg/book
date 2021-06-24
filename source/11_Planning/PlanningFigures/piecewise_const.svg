@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="12cm" height="11cm" viewBox="-2735 -4050 228 213" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-2699.77" y1="-4009.76" x2="-2699.99" y2="-3844.24"/>
+    <polygon style="fill: #000000" points="-2699.76,-4014.26 -2696.77,-4008.26 -2699.77,-4009.76 -2702.77,-4008.27 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2699.76,-4014.26 -2696.77,-4008.26 -2699.77,-4009.76 -2702.77,-4008.27 "/>
+    <polygon style="fill: #000000" points="-2700,-3839.74 -2702.99,-3845.74 -2699.99,-3844.24 -2696.99,-3845.73 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2700,-3839.74 -2702.99,-3845.74 -2699.99,-3844.24 -2696.99,-3845.73 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-2514.74" y1="-3864.33" x2="-2726.26" y2="-3864.75"/>
+    <polygon style="fill: #000000" points="-2510.24,-3864.32 -2516.24,-3861.34 -2514.74,-3864.33 -2516.23,-3867.34 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2510.24,-3864.32 -2516.24,-3861.34 -2514.74,-3864.33 -2516.23,-3867.34 "/>
+    <polygon style="fill: #000000" points="-2730.76,-3864.76 -2724.76,-3867.74 -2726.26,-3864.75 -2724.77,-3861.74 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2730.76,-3864.76 -2724.76,-3867.74 -2726.26,-3864.75 -2724.77,-3861.74 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2680,-3863.38 -2680,-3881.16 -2660,-3881.5 -2660.32,-3900.84 -2640,-3901.16 -2640,-3920.16 -2620,-3920.16 -2620,-3939.84 -2599.32,-3940.16 -2599.32,-3961.16 -2580.32,-3961.16 -2580.66,-3979.16 -2560,-3979.16 -2559.66,-3999.84 -2539.66,-3999.5 -2539.66,-4019.84 "/>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2704.94" y="-4022.32">
+    <tspan x="-2704.94" y="-4022.32">D</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2704.94" y="-4036.32">
+    <tspan x="-2704.94" y="-4036.32">~</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2682.94" y="-3846.32">
+    <tspan x="-2682.94" y="-3846.32">Distance from obstacle</tspan>
+  </text>
+</svg>

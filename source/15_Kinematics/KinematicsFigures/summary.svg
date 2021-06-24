@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="27cm" height="6cm" viewBox="89 43 534 118" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #dcdcff" x="341.9" y="64.1" width="53" height="78"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="341.9" y="64.1" width="53" height="78"/>
+  </g>
+  <g>
+    <rect style="fill: #dcdcff" x="243" y="64" width="53" height="78"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="243" y="64" width="53" height="78"/>
+  </g>
+  <g>
+    <polygon style="fill: #dcdcff" points="103,140 153,63 203,141 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="103,140 153,63 203,141 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="153" cy="61" rx="12" ry="12"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="153" cy="61" rx="12" ry="12"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="103" cy="140" rx="12" ry="12"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="103" cy="140" rx="12" ry="12"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="203" cy="141" rx="12" ry="12"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="203" cy="141" rx="12" ry="12"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="269" cy="63" rx="12" ry="12"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="269" cy="63" rx="12" ry="12"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="301" cy="139" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="301" cy="139" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="237" cy="139" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="237" cy="139" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="365" cy="65" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="365" cy="65" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="392.9" cy="140.1" rx="12" ry="12"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="392.9" cy="140.1" rx="12" ry="12"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="344" cy="140" rx="12" ry="12"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="344" cy="140" rx="12" ry="12"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="350.472" y1="48" x2="378.528" y2="48"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="352.236,46 348.236,48 352.236,50 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="376.764,50 380.764,48 376.764,46 "/>
+  </g>
+  <g>
+    <rect style="fill: #dcdcff" x="444.8" y="63.1892" width="53" height="78"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="444.8" y="63.1892" width="53" height="78"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="469.9" cy="64.0892" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="469.9" cy="64.0892" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="455.372" y1="47.0892" x2="483.428" y2="47.0892"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="457.136,45.0892 453.136,47.0892 457.136,49.0892 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="481.664,49.0892 485.664,47.0892 481.664,45.0892 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="503" cy="138" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="503" cy="138" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="439" cy="138" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="439" cy="138" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <rect style="fill: #dcdcff" x="545.4" y="62.1" width="53" height="78"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="545.4" y="62.1" width="53" height="78"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="570.4" cy="61.1" rx="12" ry="12"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="570.4" cy="61.1" rx="12" ry="12"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="603.4" cy="137.1" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="603.4" cy="137.1" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="539.4" cy="137.1" rx="5.5" ry="15.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="539.4" cy="137.1" rx="5.5" ry="15.5"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 524.687,156.405 A 31.9066,31.9066 0 0 0 554.113,156.405"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="527.14,156.075 522.722,155.386 524.821,159.334 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="553.979,159.334 556.078,155.386 551.66,156.075 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 589.687,156.416 A 31.9066,31.9066 0 0 0 619.113,156.416"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="592.14,156.086 587.722,155.397 589.821,159.345 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="618.979,159.345 621.078,155.397 616.66,156.086 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="149" y="113">
+    <tspan x="149" y="113">A</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="267" y="112">
+    <tspan x="267" y="112">B</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="364" y="112">
+    <tspan x="364" y="112">C</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="466" y="111">
+    <tspan x="466" y="111">D</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="569" y="109">
+    <tspan x="569" y="109">E</tspan>
+  </text>
+</svg>

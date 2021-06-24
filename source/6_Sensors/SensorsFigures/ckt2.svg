@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="8cm" height="10cm" viewBox="123 24 149 183" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="200,63 200,81.8423 193,83.9359 207,88.1231 193,92.3102 207,96.4974 193,100.685 207,104.872 200,106.965 200,125.808 "/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="200" y1="63" x2="200" y2="41.2361"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="205,41.2361 200,31.2361 195,41.2361 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="212" y="38">
+    <tspan x="212" y="38">V</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="173.5" y1="126" x2="173.5" y2="138.6"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="173.5,168 173.5,155.4 165.1,138.6 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="196.6" y="151">
+      <tspan x="196.6" y="151"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="200.5" y1="166.667" x2="200.5" y2="186.667"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="186" y1="186.667" x2="215" y2="186.667"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="190.858" y1="196.667" x2="210.143" y2="196.667"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="195.715" y1="206.667" x2="205.285" y2="206.667"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="173.5" y1="126" x2="232.93" y2="125.835"/>
+    <polygon style="fill: #000000" points="240.43,125.814 230.444,130.842 232.93,125.835 230.416,120.842 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="240.43,125.814 230.444,130.842 232.93,125.835 230.416,120.842 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="246" y="129">
+    <tspan x="246" y="129">Out</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="152.999" y1="148.778" x2="159.301" y2="148.883"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="148.083,143.695 152.999,148.778 147.916,153.694 "/>
+    <polygon style="fill: #000000" points="159.251,151.883 165.3,148.983 159.351,145.884 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="159.251,151.883 165.3,148.983 159.351,145.884 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="123" y="153.611">
+    <tspan x="123" y="153.611">SW</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="219" y="96.6108">
+    <tspan x="219" y="96.6108">R</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="200.35" y1="127" x2="200.35" y2="143.4"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="187.85" y1="143.4" x2="212.85" y2="143.4"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="187.85" y1="151.6" x2="212.85" y2="151.6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="200.35" y1="151.6" x2="200.35" y2="168"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="173.5" y1="168" x2="200.35" y2="168"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="217.85" y="152">
+    <tspan x="217.85" y="152">C</tspan>
+  </text>
+</svg>

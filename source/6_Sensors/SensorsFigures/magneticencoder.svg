@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="12cm" height="9cm" viewBox="35 101 230 170" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #bbbdc1" x="120" y="164" width="115" height="45"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="120" y="164" width="115" height="45"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="159.5" y="189.5">
+    <tspan x="159.5" y="189.5">Motor</tspan>
+  </text>
+  <g>
+    <rect style="fill: #0000ff" x="252" y="103" width="11" height="167"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="252" y="103" width="11" height="167"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 8; stroke: #000000" x1="235" y1="186.5" x2="252" y2="186.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 8; stroke: #000000" x1="108" y1="187" x2="120" y2="186.5"/>
+  <g>
+    <rect style="fill: #d4b6d5" x="104" y="176" width="5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="104" y="176" width="5" height="20"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="114" y1="194" x2="114" y2="240"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="107" y="254">
+    <tspan x="107" y="254">Shaft</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="106" y1="170" x2="106" y2="136"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="95" y="131">
+    <tspan x="95" y="131">Small magnet</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffd700" x="83" y="175" width="10" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="83" y="175" width="10" height="20"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="35" y="189">
+    <tspan x="35" y="189">Sensor</tspan>
+  </text>
+</svg>

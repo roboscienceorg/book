@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="26cm" height="10cm" viewBox="68 64 505 194" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="139" y="65" width="86" height="134"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="139" y="65" width="86" height="134"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="71" y1="106" x2="139" y2="106"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="69.5" y1="159.6" x2="137.5" y2="159.6"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="70" y1="141.2" x2="138" y2="141.2"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="69.5" y1="123.8" x2="137.5" y2="123.8"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="225" y1="132" x2="292" y2="133"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="174.567" y1="199.005" x2="174" y2="234"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="186.083" y1="199.616" x2="185.516" y2="234.61"/>
+  <g>
+    <rect style="fill: #ffffff" x="418.9" y="65.9" width="86" height="134"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="418.9" y="65.9" width="86" height="134"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="350.9" y1="106.9" x2="418.9" y2="106.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="349.4" y1="160.5" x2="417.4" y2="160.5"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="349.9" y1="142.1" x2="417.9" y2="142.1"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="349.4" y1="124.7" x2="417.4" y2="124.7"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="504.9" y1="132.9" x2="571.9" y2="133.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="454.466" y1="199.906" x2="453.9" y2="234.9"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="465.982" y1="200.516" x2="465.416" y2="235.51"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="417" y1="125" x2="504.9" y2="132.9"/>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="451" y="254">
+    <tspan x="451" y="254">01</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="353" y="105">
+    <tspan x="353" y="105">00</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="352" y="123">
+    <tspan x="352" y="123">01</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="351" y="140">
+    <tspan x="351" y="140">10</tspan>
+  </text>
+  <text font-size="8.46667" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="352" y="158">
+    <tspan x="352" y="158">11</tspan>
+  </text>
+</svg>

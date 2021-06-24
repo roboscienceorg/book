@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="13cm" viewBox="176 68 304 242" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="178" y="70" width="301" height="239"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="178" y1="149.667" x2="479" y2="149.667"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="178" y1="229.333" x2="479" y2="229.333"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="278.333" y1="70" x2="278.333" y2="309"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="378.667" y1="70" x2="378.667" y2="309"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="178" y="70" width="301" height="239"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="313" y="175">
+    <tspan x="313" y="175">(x,y)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="398.7" y="173.1">
+    <tspan x="398.7" y="173.1">(x+1,y)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="301" y="211">
+    <tspan x="301" y="211">A[i][j]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="391.7" y="212.1">
+    <tspan x="391.7" y="212.1">A[i][j+1]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="204.7" y="175.1">
+    <tspan x="204.7" y="175.1">(x-1,y)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="194.7" y="211.1">
+    <tspan x="194.7" y="211.1">A[i][j-1]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="308" y="251">
+    <tspan x="308" y="251">(x,y-1)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="391.7" y="252.1">
+    <tspan x="391.7" y="252.1">(x+1,y-1)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="292" y="289">
+    <tspan x="292" y="289">A[i+1][j]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="381.7" y="287.1">
+    <tspan x="381.7" y="287.1">A[i+1][j+1]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="198.7" y="252.1">
+    <tspan x="198.7" y="252.1">(x-1,y-1)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="184.7" y="286.1">
+    <tspan x="184.7" y="286.1">A[i+1][j-1]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="302.7" y="101.5">
+    <tspan x="302.7" y="101.5">(x,y+1)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="390.4" y="101.6">
+    <tspan x="390.4" y="101.6">(x+1,y+1)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="294.7" y="134.5">
+    <tspan x="294.7" y="134.5">A[i-1][j]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="383.4" y="133.6">
+    <tspan x="383.4" y="133.6">A[i-1][j+1]</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="198.4" y="100.6">
+    <tspan x="198.4" y="100.6">(x-1,y+1)</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="187.4" y="132.6">
+    <tspan x="187.4" y="132.6">A[i-1][j-1]</tspan>
+  </text>
+</svg>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="30cm" height="11cm" viewBox="76 201 595 204" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #00ff00" x="118" y="352" width="526" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="118" y="352" width="526" height="52"/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="259" y="380">
+    <tspan x="259" y="380">Kernel</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffc0cb" cx="130" cy="226" rx="52" ry="23"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="130" cy="226" rx="52" ry="23"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffc0cb" cx="223" cy="278.9" rx="52" ry="23"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="223" cy="278.9" rx="52" ry="23"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffa500" cx="326" cy="226.9" rx="52" ry="23"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="326" cy="226.9" rx="52" ry="23"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffa500" cx="424" cy="275.9" rx="52" ry="23"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="424" cy="275.9" rx="52" ry="23"/>
+  </g>
+  <g>
+    <ellipse style="fill: #1e90ff" cx="526" cy="226.9" rx="52" ry="23"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="526" cy="226.9" rx="52" ry="23"/>
+  </g>
+  <g>
+    <ellipse style="fill: #1e90ff" cx="618" cy="281.9" rx="52" ry="23"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="618" cy="281.9" rx="52" ry="23"/>
+  </g>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="112" y="222">
+    <tspan x="112" y="222">Win32</tspan>
+    <tspan x="112" y="242">app</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="127" y="222">
+    <tspan x="127" y="222"></tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="75" y="71.9">
+    <tspan x="75" y="71.9"></tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="202" y="275.9">
+    <tspan x="202" y="275.9">Win32</tspan>
+    <tspan x="202" y="295.9">server</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="306" y="224">
+    <tspan x="306" y="224">POSIX</tspan>
+    <tspan x="306" y="244">app</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="405" y="271.9">
+    <tspan x="405" y="271.9">POSIX</tspan>
+    <tspan x="405" y="291.9">server</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="511" y="223">
+    <tspan x="511" y="223">OS2</tspan>
+    <tspan x="511" y="243">app</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="596" y="278.9">
+    <tspan x="596" y="278.9">OS2</tspan>
+    <tspan x="596" y="298.9">server</tspan>
+  </text>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" points="130,267.236 130,382 223,382 223,320.136 "/>
+    <polygon style="fill: #ffffff" points="138,267.236 130,251.236 122,267.236 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="138,267.236 130,251.236 122,267.236 "/>
+    <polygon style="fill: #ffffff" points="231,320.136 223,304.136 215,320.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="231,320.136 223,304.136 215,320.136 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" points="324,272.136 324,386.9 424,386.9 424,317.136 "/>
+    <polygon style="fill: #ffffff" points="332,272.136 324,256.136 316,272.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="332,272.136 324,256.136 316,272.136 "/>
+    <polygon style="fill: #ffffff" points="432,317.136 424,301.136 416,317.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="432,317.136 424,301.136 416,317.136 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" points="526,268.136 526,383.9 618,383.9 618,323.136 "/>
+    <polygon style="fill: #ffffff" points="534,268.136 526,252.136 518,268.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="534,268.136 526,252.136 518,268.136 "/>
+    <polygon style="fill: #ffffff" points="626,323.136 618,307.136 610,323.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="626,323.136 618,307.136 610,323.136 "/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="19cm" height="6cm" viewBox="18 59 371 107" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="40" y1="161" x2="40" y2="66.4721"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="45,74.2361 40,64.2361 35,74.2361 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="19" y1="140" x2="381.528" y2="140"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="373.764,145 383.764,140 373.764,135 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="39,89 142,89 141,139 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="249,139 249,89 354.2,88.8 353.2,138.8 "/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="48.736" y1="146.968" x2="243.264" y2="146.032"/>
+    <polygon style="fill: #000000" points="44.236,146.989 50.2215,143.96 48.736,146.968 50.2504,149.96 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="44.236,146.989 50.2215,143.96 48.736,146.968 50.2504,149.96 "/>
+    <polygon style="fill: #000000" points="247.764,146.011 241.778,149.04 243.264,146.032 241.75,143.04 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="247.764,146.011 241.778,149.04 243.264,146.032 241.75,143.04 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="58" y="163">
+    <tspan x="58" y="163">One full period or waveform</tspan>
+  </text>
+</svg>

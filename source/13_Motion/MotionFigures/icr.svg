@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="23cm" height="6cm" viewBox="58 -45 446 103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #0000ff" cx="126.5" cy="39.5" rx="4.5" ry="16.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="126.5" cy="39.5" rx="4.5" ry="16.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="82.7" cy="40.2" rx="4.5" ry="16.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="82.7" cy="40.2" rx="4.5" ry="16.5"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 88 -37 C 96,-46 90,-21 81,-12 C 72,-3 80,-28 88,-37z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 88 -37 C 96,-46 90,-21 81,-12 C 72,-3 80,-28 88,-37"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 135 -38 C 142,-41 131,-18 121,-13 C 111,-8 128,-35 135,-38z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 135 -38 C 142,-41 131,-18 121,-13 C 111,-8 128,-35 135,-38"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="60" y1="41" x2="251" y2="40"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="235" y1="53" x2="64" y2="-36"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="232" y1="57" x2="105" y2="-43"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="112" y="60">
+    <tspan x="112" y="60"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="213" y="33">
+    <tspan x="213" y="33">ICR</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #0000ff" cx="352.006" cy="37.2044" rx="4.5" ry="16.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="352.006" cy="37.2044" rx="4.5" ry="16.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="308.206" cy="37.9044" rx="4.5" ry="16.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="308.206" cy="37.9044" rx="4.5" ry="16.5"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 313.506 -39.2956 C 321.506,-48.2956 315.506,-23.2956 306.506,-14.2957 C 297.506,-5.29568 305.506,-30.2956 313.506,-39.2956z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 313.506 -39.2956 C 321.506,-48.2956 315.506,-23.2956 306.506,-14.2957 C 297.506,-5.29568 305.506,-30.2956 313.506,-39.2956"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="285.506" y1="38.7044" x2="476.506" y2="37.7044"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="460.506" y1="50.7044" x2="289.506" y2="-38.2956"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="337.506" y="57.7044">
+    <tspan x="337.506" y="57.7044"></tspan>
+  </text>
+  <g>
+    <path style="fill: #0000ff" d="M 355.848 -36.776 C 363.848,-45.776 357.848,-20.776 348.848,-11.7761 C 339.848,-2.7761 347.848,-27.776 355.848,-36.776z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 355.848 -36.776 C 363.848,-45.776 357.848,-20.776 348.848,-11.7761 C 339.848,-2.7761 347.848,-27.776 355.848,-36.776"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="502.848" y1="53.224" x2="331.848" y2="-35.776"/>
+</svg>

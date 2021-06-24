@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="9cm" height="10cm" viewBox="108 12 175 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="109" y="77" width="114" height="72"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="109" y="77" width="114" height="72"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="169" y="60" width="42" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="169" y="60" width="42" height="9"/>
+  </g>
+  <g>
+    <rect style="fill: #000000" x="170.2" y="155.7" width="42" height="9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.2" y="155.7" width="42" height="9"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="191.026" y1="33.4721" x2="191.974" y2="193.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="196.072,41.2063 191.013,31.236 186.072,41.2654 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="186.928,185.794 191.987,195.764 196.928,185.735 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="118.5" cy="110.5" rx="6.5" ry="6.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="118.5" cy="110.5" rx="6.5" ry="6.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="190" cy="111" rx="6.5" ry="4.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="190" cy="111" rx="6.5" ry="4.5"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="174" y="115">
+    <tspan x="174" y="115">P</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="194.596" y1="110.818" x2="258.528" y2="110.988"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="250.751,115.967 260.764,110.994 250.777,105.967 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="199" y="105">
+    <tspan x="199" y="105">a</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Symbol;font-style:normal;font-weight:normal" x="203" y="46">
+    <tspan x="203" y="46">b</tspan>
+  </text>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 212,109 A 16.789,16.789 0 0 0 193,88"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="180" y="94">
+    <tspan x="180" y="94">L</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="265" y="114">
+    <tspan x="265" y="114">X</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="274" y="119">
+    <tspan x="274" y="119">R</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="189" y="24">
+    <tspan x="189" y="24">Y</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="195" y="31">
+    <tspan x="195" y="31">R</tspan>
+  </text>
+</svg>

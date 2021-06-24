@@ -1,0 +1,407 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 366 213"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B68D5AFD-D209-481A-B774-22B5D1CDE848">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="61.00" cy="47.00" rx="50.00" ry="25.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B68D5AFD-D209-481A-B774-22B5D1CDE848)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="61.00" cy="47.00" rx="50.00" ry="25.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M20.00 39.00
+                    L103.00 39.00
+                    L103.00 56.00
+                    L20.00 56.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="20.09" y="52.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Python Shell</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M40.00 81.00
+                    L82.00 81.00
+                    L82.00 98.00
+                    L40.00 98.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="41.34" y="94.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Talker</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B2EF6FD8-6BBF-4E39-B0FE-951DC5EF7FD9">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="303.00" cy="47.00" rx="50.00" ry="25.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B2EF6FD8-6BBF-4E39-B0FE-951DC5EF7FD9)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="303.00" cy="47.00" rx="50.00" ry="25.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M262.00 39.00
+                    L345.00 39.00
+                    L345.00 56.00
+                    L262.00 56.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="262.09" y="52.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Python Shell</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M275.00 82.00
+                    L329.00 82.00
+                    L329.00 99.00
+                    L275.00 99.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="275.05" y="95.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Listener</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-DA31539C-C04F-49A3-A5D1-5205AE7A0012">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M241.50 48.42
+                        L241.54 43.42
+                        L263.53 43.57
+                        L263.46 53.57
+                        L241.47 53.42
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M111.00 47.00
+                    L253.00 48.00
+                    "
+                clip-path="url(#clipPath-DA31539C-C04F-49A3-A5D1-5205AE7A0012)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M242.09 48.42
+                    L242.12 44.01
+                    L252.50 48.49
+                    L242.05 52.83
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M154.00 31.00
+                    L204.00 31.00
+                    L204.00 48.00
+                    L154.00 48.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="155.74" y="44.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Chatter</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B4FAFDA8-DBAC-4C7C-95B4-1630E1C9B715">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="302.00" cy="152.00" rx="50.00" ry="25.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B4FAFDA8-DBAC-4C7C-95B4-1630E1C9B715)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="302.00" cy="152.00" rx="50.00" ry="25.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M261.00 144.00
+                    L344.00 144.00
+                    L344.00 161.00
+                    L261.00 161.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="261.09" y="157.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Python Shell</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M271.00 187.00
+                    L334.00 187.00
+                    L334.00 204.00
+                    L271.00 204.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="271.12" y="200.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Listener2</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-67CC53F2-FFF2-4570-A648-8697C9046CCE">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M241.64 147.39
+                        L243.77 142.87
+                        L263.68 152.23
+                        L259.42 161.28
+                        L239.51 151.91
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M82.00 72.00
+                    L252.00 152.00
+                    "
+                clip-path="url(#clipPath-67CC53F2-FFF2-4570-A648-8697C9046CCE)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M242.17 147.64
+                    L244.05 143.65
+                    L251.60 152.07
+                    L240.29 151.63
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M148.02 91.00
+                    L206.98 91.00
+                    L206.98 108.00
+                    L148.02 108.00
+                    Z
+                    "
+                transform="
+                    rotate(29 177.50 99.50)
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="148.02" y="104.00"
+            transform="rotate(29 177.50 99.50)"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Chatter2</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

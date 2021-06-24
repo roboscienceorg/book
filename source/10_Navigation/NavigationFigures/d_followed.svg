@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="54cm" height="15cm" viewBox="42 49 1067 292" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffff00" cx="493.1" cy="215.3" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="493.1" cy="215.3" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 472.162 51.3 C 558.162,51.3 604.162,132.3 602.162,188.3 C 600.162,244.3 565.162,339.3 478.162,340.3 C 391.162,341.3 515.162,238.3 515.162,188.3 C 515.162,138.3 386.162,51.3 472.162,51.3z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 472.162 51.3 C 558.162,51.3 604.162,132.3 602.162,188.3 C 600.162,244.3 565.162,339.3 478.162,340.3 C 391.162,341.3 515.162,238.3 515.162,188.3 C 515.162,138.3 386.162,51.3 472.162,51.3"/>
+  </g>
+  <path style="fill: none; fill-opacity:0; stroke-width: 8; stroke: #0000ff" d="M 506.6 165.8 C 527.6,189.8 507.6,214.8 477.6,264.8"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="511.162" y1="191.3" x2="713.976" y2="191.8"/>
+    <path style="fill: #000000" d="M 511.162 191.3 C 511.168,188.8 513.674,186.306 516.174,186.312 C 518.674,186.319 521.168,188.825 521.162,191.325 C 521.156,193.825 518.65,196.318 516.15,196.312 C 513.65,196.306 511.156,193.8 511.162,191.3z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 511.162 191.3 C 511.168,188.8 513.674,186.306 516.174,186.312 C 518.674,186.319 521.168,188.825 521.162,191.325 C 521.156,193.825 518.65,196.318 516.15,196.312 C 513.65,196.306 511.156,193.8 511.162,191.3"/>
+    <path style="fill: #000000" d="M 713.976 191.8 C 713.97,194.3 711.464,196.794 708.964,196.788 C 706.464,196.781 703.97,194.275 703.976,191.775 C 703.982,189.275 706.488,186.782 708.988,186.788 C 711.488,186.794 713.982,189.3 713.976,191.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 713.976 191.8 C 713.97,194.3 711.464,196.794 708.964,196.788 C 706.464,196.781 703.97,194.275 703.976,191.775 C 703.982,189.275 706.488,186.782 708.988,186.788 C 711.488,186.794 713.982,189.3 713.976,191.8"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="711.976" y="178.8">
+    <tspan x="711.976" y="178.8">Goal</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="618.976" y="173.8">
+    <tspan x="618.976" y="173.8">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="629.976" y="181.8">
+    <tspan x="629.976" y="181.8">followed</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffff00" cx="95.1" cy="206.3" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="95.1" cy="206.3" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 111.162 51.3 C 197.162,51.3 243.162,132.3 241.162,188.3 C 239.162,244.3 204.162,339.3 117.162,340.3 C 30.162,341.3 154.162,238.3 154.162,188.3 C 154.162,138.3 25.162,51.3 111.162,51.3z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 111.162 51.3 C 197.162,51.3 243.162,132.3 241.162,188.3 C 239.162,244.3 204.162,339.3 117.162,340.3 C 30.162,341.3 154.162,238.3 154.162,188.3 C 154.162,138.3 25.162,51.3 111.162,51.3"/>
+  </g>
+  <path style="fill: none; fill-opacity:0; stroke-width: 8; stroke: #0000ff" d="M 148 211 C 142,231 139,230 127,248"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="146.6" y1="206.3" x2="352.976" y2="191.8"/>
+    <path style="fill: #000000" d="M 146.6 206.3 C 146.425,203.806 148.743,201.137 151.237,200.962 C 153.731,200.787 156.4,203.105 156.575,205.599 C 156.751,208.093 154.432,210.762 151.938,210.937 C 149.444,211.112 146.775,208.794 146.6,206.3z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 146.6 206.3 C 146.425,203.806 148.743,201.137 151.237,200.962 C 153.731,200.787 156.4,203.105 156.575,205.599 C 156.751,208.093 154.432,210.762 151.938,210.937 C 149.444,211.112 146.775,208.794 146.6,206.3"/>
+    <path style="fill: #000000" d="M 352.976 191.8 C 353.151,194.294 350.833,196.963 348.339,197.138 C 345.845,197.313 343.176,194.995 343.001,192.501 C 342.825,190.007 345.144,187.338 347.638,187.163 C 350.132,186.988 352.801,189.306 352.976,191.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 352.976 191.8 C 353.151,194.294 350.833,196.963 348.339,197.138 C 345.845,197.313 343.176,194.995 343.001,192.501 C 342.825,190.007 345.144,187.338 347.638,187.163 C 350.132,186.988 352.801,189.306 352.976,191.8"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="350.976" y="178.8">
+    <tspan x="350.976" y="178.8">Goal</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="257.976" y="173.8">
+    <tspan x="257.976" y="173.8">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="268.976" y="181.8">
+    <tspan x="268.976" y="181.8">followed</tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffff00" cx="812.7" cy="282.6" rx="51.5" ry="51.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="812.7" cy="282.6" rx="51.5" ry="51.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 830.762 50.6 C 916.762,50.6 962.762,131.6 960.762,187.6 C 958.762,243.6 923.762,338.6 836.762,339.6 C 749.762,340.6 873.762,237.6 873.762,187.6 C 873.762,137.6 744.762,50.6 830.762,50.6z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 830.762 50.6 C 916.762,50.6 962.762,131.6 960.762,187.6 C 958.762,243.6 923.762,338.6 836.762,339.6 C 749.762,340.6 873.762,237.6 873.762,187.6 C 873.762,137.6 744.762,50.6 830.762,50.6"/>
+  </g>
+  <path style="fill: none; fill-opacity:0; stroke-width: 8; stroke: #0000ff" d="M 866 162 C 903,189 793,301 809,335"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="869.762" y1="190.6" x2="1072.58" y2="191.1"/>
+    <path style="fill: #000000" d="M 869.762 190.6 C 869.768,188.1 872.274,185.606 874.774,185.612 C 877.274,185.619 879.768,188.125 879.762,190.625 C 879.756,193.125 877.25,195.618 874.75,195.612 C 872.25,195.606 869.756,193.1 869.762,190.6z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 869.762 190.6 C 869.768,188.1 872.274,185.606 874.774,185.612 C 877.274,185.619 879.768,188.125 879.762,190.625 C 879.756,193.125 877.25,195.618 874.75,195.612 C 872.25,195.606 869.756,193.1 869.762,190.6"/>
+    <path style="fill: #000000" d="M 1072.58 191.1 C 1072.57,193.6 1070.06,196.094 1067.56,196.088 C 1065.06,196.081 1062.57,193.575 1062.58,191.075 C 1062.58,188.575 1065.09,186.082 1067.59,186.088 C 1070.09,186.094 1072.58,188.6 1072.58,191.1z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1072.58 191.1 C 1072.57,193.6 1070.06,196.094 1067.56,196.088 C 1065.06,196.081 1062.57,193.575 1062.58,191.075 C 1062.58,188.575 1065.09,186.082 1067.59,186.088 C 1070.09,186.094 1072.58,188.6 1072.58,191.1"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="1070.58" y="178.1">
+    <tspan x="1070.58" y="178.1">Goal</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="977.576" y="173.1">
+    <tspan x="977.576" y="173.1">d</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="988.576" y="181.1">
+    <tspan x="988.576" y="181.1">followed</tspan>
+  </text>
+</svg>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="26cm" height="9cm" viewBox="51 7 506 164" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffff00" x="53" y="104" width="70" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="53" y="104" width="70" height="26"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x1="123" y1="117" x2="496.028" y2="118.482"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" points="494.256,120.475 498.264,118.491 494.272,116.475 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="528.5" cy="119.556" rx="27.5" ry="47.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="528.5" cy="119.556" rx="27.5" ry="47.5"/>
+  </g>
+  <g>
+    <rect style="fill: #add8e6" x="167" y="8.05594" width="110" height="42"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="167" y="8.05594" width="110" height="42"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="179" y="25.056">
+    <tspan x="179" y="25.056">Phase</tspan>
+    <tspan x="179" y="42.6949">Measurement</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="203" y1="95.056" x2="244" y2="135.056"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #ff0000" points="228.018,54.5281 228.252,114.056 500.252,113.056 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" points="231.032,58.2802 228.009,52.2921 225.032,58.3038 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="172.252" y1="61.7921" x2="172.252" y2="106.32"/>
+    <polygon style="fill: #000000" points="172.252,57.2921 175.252,63.2921 172.252,61.7921 169.252,63.2921 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="172.252,57.2921 175.252,63.2921 172.252,61.7921 169.252,63.2921 "/>
+    <polygon style="fill: #000000" points="172.252,110.82 169.252,104.82 172.252,106.32 175.252,104.82 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="172.252,110.82 169.252,104.82 172.252,106.32 175.252,104.82 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="158.252" y="89.056">
+    <tspan x="158.252" y="89.056">L</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="234.324" y1="151.42" x2="491.152" y2="150.029"/>
+    <polygon style="fill: #000000" points="229.824,151.444 235.808,148.411 234.324,151.42 235.84,154.411 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="229.824,151.444 235.808,148.411 234.324,151.42 235.84,154.411 "/>
+    <polygon style="fill: #000000" points="495.652,150.004 489.668,153.037 491.152,150.029 489.636,147.037 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="495.652,150.004 489.668,153.037 491.152,150.029 489.636,147.037 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="224.252" y1="137.056" x2="223.252" y2="164.056"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="498.388" y1="136.492" x2="497.388" y2="163.492"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="377.252" y="167.056">
+    <tspan x="377.252" y="167.056">D</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="509.252" y="121.056">
+    <tspan x="509.252" y="121.056">Target</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="72.252" y="121.056">
+    <tspan x="72.252" y="121.056">Laser</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x1="223.252" y1="118.056" x2="222.124" y2="56.7909"/>
+    <polygon style="fill: #ff0000" points="222.041,52.2917 225.151,58.2354 222.124,56.7909 219.152,58.3459 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" points="222.041,52.2917 225.151,58.2354 222.124,56.7909 219.152,58.3459 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="221.252" y="130.056">
+    <tspan x="221.252" y="130.056">s</tspan>
+  </text>
+</svg>

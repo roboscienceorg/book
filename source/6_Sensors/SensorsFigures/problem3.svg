@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="36cm" height="9cm" viewBox="112 5 720 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #00ff00" x="724.58" y="45" width="74.4199" height="57"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x="724.58" y="45" width="74.4199" height="57"/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="703.58" y="44" width="19" height="58"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffa500" x="703.58" y="44" width="19" height="58"/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="603" y="45" width="98" height="57"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffff00" x="603" y="45" width="98" height="57"/>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="574" y="45" width="28" height="57"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x="574" y="45" width="28" height="57"/>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="182" y="46" width="253" height="19"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="182" y="46" width="253" height="19"/>
+  </g>
+  <g>
+    <rect style="fill: #ffa500" x="181" y="62" width="254" height="19"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="181" y="62" width="254" height="19"/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="184" y="82" width="252" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="184" y="82" width="252" height="20"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="201.946" y1="29.4718" x2="201" y2="108"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="206.852,37.2954 201.973,27.2359 196.853,37.1749 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="180" y1="101" x2="452.528" y2="101.984"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="444.746,106.956 454.764,101.992 444.782,96.9559 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="214" y="19">
+    <tspan x="214" y="19">Vout</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="492.238" y1="66.4" x2="524.502" y2="66.4"/>
+    <polygon style="fill: #000000" points="532.002,66.4 522.002,71.4 524.502,66.4 522.002,61.4 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="532.002,66.4 522.002,71.4 524.502,66.4 522.002,61.4 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="574.288" y1="30.2838" x2="573.342" y2="108.812"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="579.194,38.1074 574.315,28.0479 569.195,37.9869 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="552.342" y1="101.812" x2="824.87" y2="102.796"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="817.088,107.768 827.106,102.804 817.124,97.7679 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="558.338,44.1882 602.338,44.1882 603.238,102.4 724.58,101 723.58,43 803.08,43.9 "/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="568.83" y="23.4">
+    <tspan x="568.83" y="23.4">Digital line</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="245.83" y1="123.136" x2="245.83" y2="146.4"/>
+    <polygon style="fill: #000000" points="245.83,118.636 248.83,124.636 245.83,123.136 242.83,124.636 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="245.83,118.636 248.83,124.636 245.83,123.136 242.83,124.636 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="240.83" y="162.4">
+    <tspan x="240.83" y="162.4">Button</tspan>
+    <tspan x="240.83" y="180.039">pressed</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="344.166" y1="123.536" x2="344.166" y2="146.8"/>
+    <polygon style="fill: #000000" points="344.166,119.036 347.166,125.036 344.166,123.536 341.166,125.036 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="344.166,119.036 347.166,125.036 344.166,123.536 341.166,125.036 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="339.166" y="162.8">
+    <tspan x="339.166" y="162.8">Button</tspan>
+    <tspan x="339.166" y="180.439">released</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="597.336" y1="121.236" x2="597.336" y2="144.5"/>
+    <polygon style="fill: #000000" points="597.336,116.736 600.336,122.736 597.336,121.236 594.336,122.736 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="597.336,116.736 600.336,122.736 597.336,121.236 594.336,122.736 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="592.336" y="160.5">
+    <tspan x="592.336" y="160.5">Button</tspan>
+    <tspan x="592.336" y="178.139">pressed</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="687.672" y1="122.636" x2="687.672" y2="145.9"/>
+    <polygon style="fill: #000000" points="687.672,118.136 690.672,124.136 687.672,122.636 684.672,124.136 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="687.672,118.136 690.672,124.136 687.672,122.636 684.672,124.136 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="682.672" y="161.9">
+    <tspan x="682.672" y="161.9">Button</tspan>
+    <tspan x="682.672" y="179.539">released</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="203" y1="46" x2="244" y2="46"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 243 46 C 246,95 247,85 259,103"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="414.1" y1="45.5592" x2="455.1" y2="45.5592"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 413 45 C 369,62 411,79 348,101"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="115" y="95">
+    <tspan x="115" y="95">Low logic</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="115" y="77">
+    <tspan x="115" y="77">Unknown</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="112" y="59">
+    <tspan x="112" y="59">High logic</tspan>
+  </text>
+</svg>

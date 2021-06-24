@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 810 224"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="9.00" y="8.00" width="240.00" height="209.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-A78AE802-63CE-41C7-9EE3-DE4E53F2BA3C">
+                        <path d="
+                            M9.00 8.00
+                            L249.00 8.00
+                            L249.00 217.00
+                            L9.00 217.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="discretemap.pdf" x="9.50" y="8.50" width="240.00" height="209.00"
+                    clip-path="url(#clipPath-image-A78AE802-63CE-41C7-9EE3-DE4E53F2BA3C)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="268.00" y="10.00" width="228.00" height="207.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-E3515130-27BB-4360-8DC6-84D07B464E82">
+                        <path d="
+                            M268.00 10.00
+                            L496.00 10.00
+                            L496.00 217.00
+                            L268.00 217.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="metricmap.pdf" x="268.50" y="10.50" width="228.00" height="207.00"
+                    clip-path="url(#clipPath-image-E3515130-27BB-4360-8DC6-84D07B464E82)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="512.00" y="10.00" width="291.00" height="154.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-DAE03E71-1D26-452E-A3C2-B1F6F6F30B66">
+                        <path d="
+                            M512.00 10.00
+                            L803.00 10.00
+                            L803.00 164.00
+                            L512.00 164.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="topomap.pdf" x="512.50" y="10.50" width="291.00" height="154.00"
+                    clip-path="url(#clipPath-image-DAE03E71-1D26-452E-A3C2-B1F6F6F30B66)"
+                    />
+            </g>
+        </g>
+        
+    </g>
+</svg>
+

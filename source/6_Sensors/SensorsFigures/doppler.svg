@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="14cm" height="7cm" viewBox="-5 71 270 134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="144.2" cy="138" rx="65.8" ry="65.8"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="139.4" cy="137" rx="52.6" ry="52.6"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="134.6" cy="138" rx="39.4" ry="39.4"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="128.8" cy="137" rx="26" ry="26"/>
+  <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="123" cy="137" rx="13" ry="13"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="124.764" y1="137.333" x2="64.736" y2="137.034"/>
+    <path style="fill: #000000" d="M 124.764 137.333 C 124.759,138.333 123.754,139.328 122.754,139.323 C 121.754,139.318 120.759,138.313 120.764,137.313 C 120.769,136.313 121.774,135.318 122.774,135.323 C 123.774,135.328 124.769,136.333 124.764,137.333z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 124.764 137.333 C 124.759,138.333 123.754,139.328 122.754,139.323 C 121.754,139.318 120.759,138.313 120.764,137.313 C 120.769,136.313 121.774,135.318 122.774,135.323 C 123.774,135.328 124.769,136.333 124.764,137.333"/>
+    <polygon style="fill: #000000" points="60.236,137.011 66.2509,134.041 64.736,137.034 66.221,140.041 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="60.236,137.011 66.2509,134.041 64.736,137.034 66.221,140.041 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="-4.9007" y="129">
+    <tspan x="-4.9007" y="129">Transmitter</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="199.433" y1="173.594" x2="199.433" y2="176.928"/>
+    <path style="fill: #000000" d="M 199.433 176.928 C 197.933,176.928 196.433,175.428 196.433,173.928 C 196.433,172.428 197.933,170.928 199.433,170.928 C 200.933,170.928 202.433,172.428 202.433,173.928 C 202.433,175.428 200.933,176.928 199.433,176.928z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 199.433 176.928 C 197.933,176.928 196.433,175.428 196.433,173.928 C 196.433,172.428 197.933,170.928 199.433,170.928 C 200.933,170.928 202.433,172.428 202.433,173.928 C 202.433,175.428 200.933,176.928 199.433,176.928"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="203.668" y="185.8">
+    <tspan x="203.668" y="185.8">Receiver</tspan>
+  </text>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="29cm" height="9cm" viewBox="-209 -145 563 170" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ff0000" cx="-49.6406" cy="-27.3412" rx="27.5" ry="49.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-49.6406" cy="-27.3412" rx="27.5" ry="49.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="28.8594" cy="-83.8412" rx="20" ry="57"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="28.8594" cy="-83.8412" rx="20" ry="57"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-200.14" y1="-40.8412" x2="-1.59661" y2="-89.5227"/>
+    <polygon style="fill: #000000" points="5.68762,-91.3087 -2.83399,-84.0712 -1.59661,-89.5227 -5.21538,-93.7835 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="5.68762,-91.3087 -2.83399,-84.0712 -1.59661,-89.5227 -5.21538,-93.7835 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="-208.14" y="-32.8412">
+    <tspan x="-208.14" y="-32.8412">x</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="100.159" y1="-40.0412" x2="297.931" y2="-90.9157"/>
+    <polygon style="fill: #000000" points="305.194,-92.7841 296.755,-85.4505 297.931,-90.9157 294.264,-95.1352 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="305.194,-92.7841 296.755,-85.4505 297.931,-90.9157 294.264,-95.1352 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="92.1594" y="-32.0412">
+    <tspan x="92.1594" y="-32.0412">x</tspan>
+  </text>
+  <g>
+    <path style="fill: #ff0000" d="M 252.86 -76.8412 C 290.86,-78.8412 263.86,-48.8412 284.86,-43.8412 C 305.86,-38.8412 306.86,-147.841 335.86,-142.841 C 364.86,-137.841 363.86,3.15878 284.86,22.1588 C 205.86,41.1588 214.86,-74.8412 252.86,-76.8412z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 252.86 -76.8412 C 290.86,-78.8412 263.86,-48.8412 284.86,-43.8412 C 305.86,-38.8412 306.86,-147.841 335.86,-142.841 C 364.86,-137.841 363.86,3.15878 284.86,22.1588 C 205.86,41.1588 214.86,-74.8412 252.86,-76.8412"/>
+  </g>
+</svg>

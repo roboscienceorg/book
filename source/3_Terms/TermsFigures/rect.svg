@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="20cm" height="8cm" viewBox="145 116 390 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #a52a2a" x="226" y="126" width="79" height="115"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="226" y="126" width="79" height="115"/>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="147" y="130" width="45" height="24"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="147" y="130" width="45" height="24"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="431.2" y="130.9" width="79" height="115"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="431.2" y="130.9" width="79" height="115"/>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="407" y="130" width="23.2" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="407" y="130" width="23.2" height="116"/>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="406.2" y="118" width="127.8" height="12.9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="406.2" y="118" width="127.8" height="12.9"/>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="510.2" y="131.9" width="23.2" height="114.1"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="510.2" y="131.9" width="23.2" height="114.1"/>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="406.2" y="246.9" width="127.8" height="12.9"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="406.2" y="246.9" width="127.8" height="12.9"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="331" y1="178" x2="375.529" y2="177.091"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="367.868,182.249 377.764,177.046 367.664,172.251 "/>
+  </g>
+</svg>

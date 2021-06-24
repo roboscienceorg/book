@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="32cm" height="9cm" viewBox="139 108 629 171" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path style="fill: #ff0000" d="M 319 118 C 339,118 330,149 298,195 C 266,241 499,202 307,258 C 115,314 299,118 319,118z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 319 118 C 339,118 330,149 298,195 C 266,241 499,202 307,258 C 115,314 299,118 319,118"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="401" cy="182" rx="7" ry="7"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="401" cy="182" rx="7" ry="7"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 4; stroke-dasharray: 4; stroke: #000000" d="M 307 197 C 294.366,213.4 329,214 372.034,215.655"/>
+    <polygon style="fill: #000000" points="376.531,215.828 370.42,218.595 372.034,215.655 370.651,212.6 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="376.531,215.828 370.42,218.595 372.034,215.655 370.651,212.6 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="384" y1="215" x2="393.391" y2="193.139"/>
+    <polygon style="fill: #000000" points="395.167,189.004 395.556,195.701 393.391,193.139 390.043,193.333 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="395.167,189.004 395.556,195.701 393.391,193.139 390.043,193.333 "/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M 677.3 117.749 C 697.3,117.749 688.3,148.749 656.3,194.749 C 624.3,240.748 857.3,201.748 665.3,257.748 C 473.3,313.748 657.3,117.749 677.3,117.749z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 677.3 117.749 C 697.3,117.749 688.3,148.749 656.3,194.749 C 624.3,240.748 857.3,201.748 665.3,257.748 C 473.3,313.748 657.3,117.749 677.3,117.749"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="760" cy="182" rx="7" ry="7"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="760" cy="182" rx="7" ry="7"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 240.51 273.252 C 202,266 211,238 239.658,187.849"/>
+    <polygon style="fill: #000000" points="241.891,183.941 241.518,190.639 239.658,187.849 236.309,187.662 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="241.891,183.941 241.518,190.639 239.658,187.849 236.309,187.662 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 381.3 218.372 C 416.3,239.372 322.3,261.372 249.933,274.197"/>
+    <polygon style="fill: #000000" points="245.502,274.982 250.886,270.981 249.933,274.197 251.933,276.889 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="245.502,274.982 250.886,270.981 249.933,274.197 251.933,276.889 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="140" y1="178" x2="236.264" y2="178"/>
+    <polygon style="fill: #000000" points="240.764,178 234.764,181 236.264,178 234.764,175 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="240.764,178 234.764,181 236.264,178 234.764,175 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="498" y1="178" x2="595.572" y2="177.34"/>
+    <polygon style="fill: #000000" points="600.072,177.309 594.092,180.35 595.572,177.34 594.052,174.35 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="600.072,177.309 594.092,180.35 595.572,177.34 594.052,174.35 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 4; stroke-dasharray: 4; stroke: #000000" d="M 247 179 C 267,152 280,139 298.264,122.927"/>
+    <polygon style="fill: #000000" points="301.643,119.954 299.12,126.17 298.264,122.927 295.157,121.666 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="301.643,119.954 299.12,126.17 298.264,122.927 295.157,121.666 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 605.698 176 C 625.698,149 638.698,136 658.641,118.45"/>
+    <polygon style="fill: #000000" points="662.019,115.477 659.497,121.693 658.641,118.45 655.533,117.189 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="662.019,115.477 659.497,121.693 658.641,118.45 655.533,117.189 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 663.334 113.8 C 707,93 696.002,147.701 680.606,172.01"/>
+    <polygon style="fill: #000000" points="678.198,175.812 678.874,169.137 680.606,172.01 683.943,172.348 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="678.198,175.812 678.874,169.137 680.606,172.01 683.943,172.348 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 4; stroke-dasharray: 4; stroke: #000000" d="M 305.968 115.256 C 349.634,94.4558 338.634,149.456 313.535,187.941"/>
+    <polygon style="fill: #000000" points="311.077,191.71 311.842,185.045 313.535,187.941 316.867,188.323 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="311.077,191.71 311.842,185.045 313.535,187.941 316.867,188.323 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="677.308" y1="181.587" x2="737.267" y2="182.588"/>
+    <polygon style="fill: #000000" points="741.766,182.663 735.717,185.563 737.267,182.588 735.817,179.563 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="741.766,182.663 735.717,185.563 737.267,182.588 735.817,179.563 "/>
+  </g>
+</svg>

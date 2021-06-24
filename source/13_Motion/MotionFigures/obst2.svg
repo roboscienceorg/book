@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="47cm" height="20cm" viewBox="89 29 922 385" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #a52a2a" x="233" y="54" width="79" height="115"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="233" y="54" width="79" height="115"/>
+  </g>
+  <g>
+    <polygon style="fill: #0000ff" points="91,175 173,254 192,236 111,154 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="91,175 173,254 192,236 111,154 "/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="235.1" y="216.5" width="79" height="115"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="235.1" y="216.5" width="79" height="115"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 177,220 A 54.8747,54.8747 0 0 0 202.515,181.435"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="207.154,189.549 202.848,179.231 197.177,188.867 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="344" y1="189" x2="376.528" y2="189"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="368.764,194 378.764,189 368.764,184 "/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="427.2" y="30.5" width="129.8" height="183.5" rx="20" ry="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="427.2" y="30.5" width="129.8" height="183.5" rx="20" ry="20"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="426.2" y="177.5" width="129.8" height="183.5" rx="20" ry="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="426.2" y="177.5" width="129.8" height="183.5" rx="20" ry="20"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="634" y="38.5" width="137" height="158.5" rx="10" ry="10"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="634" y="38.5" width="137" height="158.5" rx="10" ry="10"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="635" y="190.5" width="135" height="156.5" rx="10" ry="10"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" x="635" y="190.5" width="135" height="156.5" rx="10" ry="10"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="832" y="208" width="178" height="133"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="832" y="208" width="178" height="133"/>
+  </g>
+  <g>
+    <rect style="fill: #a52a2a" x="831.3" y="50.2" width="178" height="133"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="831.3" y="50.2" width="178" height="133"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="476" y="411">
+    <tspan x="476" y="411">Slice 1</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="686" y="409">
+    <tspan x="686" y="409">Slice 2</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="898" y="410">
+    <tspan x="898" y="410">Slice 3</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="462" y="395">
+    <tspan x="462" y="395">Rotation 1</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="672" y="394">
+    <tspan x="672" y="394">Rotation 2</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="884" y="394">
+    <tspan x="884" y="394">Rotation 3</tspan>
+  </text>
+</svg>

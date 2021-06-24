@@ -1,0 +1,776 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 493 389"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-575DCAEE-4E2F-4C09-AF5E-844C5CE34328">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M257.21 264.56
+                        L255.52 259.86
+                        L276.22 252.41
+                        L279.60 261.82
+                        L258.90 269.27
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M18.00 350.00
+                    L268.00 260.00
+                    "
+                clip-path="url(#clipPath-575DCAEE-4E2F-4C09-AF5E-844C5CE34328)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M257.76 264.37
+                    L256.27 260.21
+                    L267.56 260.84
+                    L259.26 268.52
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M24.00 355.00
+                    L35.00 355.00
+                    L35.00 376.00
+                    L24.00 376.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="24.29" y="371.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">x</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M34.00 366.00
+                    L90.00 366.00
+                    L90.00 383.00
+                    L34.00 383.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="34.25" y="379.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k-1|k-1</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M273.00 260.00
+                    L284.00 260.00
+                    L284.00 281.00
+                    L273.00 281.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="273.29" y="276.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">x</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M284.00 271.00
+                    L323.00 271.00
+                    L323.00 288.00
+                    L284.00 288.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="284.23" y="284.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k|k-1</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="15.50" cy="352.50" rx="7.50" ry="7.50"
+                fill="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="275.50" cy="256.50" rx="7.50" ry="7.50"
+                fill="rgb(0, 255, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M356.00 201.00
+                    L379.00 201.00
+                    L379.00 221.00
+                    L356.00 221.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="356.04" y="216.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Hx</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M379.00 211.00
+                    L418.00 211.00
+                    L418.00 228.00
+                    L379.00 228.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="379.23" y="224.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k|k-1</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="348.50" cy="194.50" rx="7.50" ry="7.50"
+                fill="rgb(0, 255, 255)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-E956008B-D32E-4F3B-B59C-92DCFD993797">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M332.18 210.06
+                        L329.03 206.17
+                        L346.12 192.32
+                        L352.42 200.09
+                        L335.32 213.94
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M283.00 249.00
+                    L341.00 202.00
+                    "
+                clip-path="url(#clipPath-E956008B-D32E-4F3B-B59C-92DCFD993797)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M332.63 209.69
+                    L329.85 206.26
+                    L340.72 203.13
+                    L335.41 213.12
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="330.50" cy="40.50" rx="7.50" ry="7.50"
+                fill="rgb(255, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M323.00 6.00
+                    L333.00 6.00
+                    L333.00 26.00
+                    L323.00 26.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="323.13" y="21.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">z</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M333.00 16.00
+                    L341.00 16.00
+                    L341.00 33.00
+                    L333.00 33.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="333.20" y="29.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-E33EA6CD-FD53-4E48-8D4C-DA713DEE62C1">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M337.00 44.00
+                        C339.00 41.00 338.00 38.00 336.00 35.00
+                        C333.00 32.00 328.00 32.00 325.00 35.00
+                        C322.00 38.00 322.00 43.00 325.00 46.00
+                        C326.00 46.00 327.00 47.00 327.00 47.00
+                        C328.00 52.00 328.00 56.00 329.00 61.00
+                        C331.00 61.00 332.00 61.00 334.00 60.00
+                        C336.00 60.00 337.00 60.00 339.00 60.00
+                        C338.00 55.00 338.00 49.00 337.00 44.00
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M349.00 181.00
+                    L331.00 41.00
+                    "
+                clip-path="url(#clipPath-E33EA6CD-FD53-4E48-8D4C-DA713DEE62C1)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M333.95 59.82
+                    L329.57 60.38
+                    L332.63 49.49
+                    L338.33 59.26
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M125.00 312.00
+                    L145.00 312.00
+                    L145.00 332.00
+                    L125.00 332.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="125.23" y="327.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Fx</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M142.00 322.00
+                    L198.00 322.00
+                    L198.00 339.00
+                    L142.00 339.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="142.25" y="335.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k-1|k-1</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M195.00 309.00
+                    L242.00 309.00
+                    L242.00 329.00
+                    L195.00 329.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="196.33" y="324.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)"> + Gu</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M242.00 318.00
+                    L250.00 318.00
+                    L250.00 335.00
+                    L242.00 335.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="242.20" y="331.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M413.00 92.00
+                    L451.00 92.00
+                    L451.00 112.00
+                    L413.00 112.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="414.05" y="107.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">- Hx</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M450.00 102.00
+                    L489.00 102.00
+                    L489.00 119.00
+                    L450.00 119.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="450.23" y="115.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k|k-1</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M356.00 90.00
+                    L404.00 90.00
+                    L404.00 110.00
+                    L356.00 110.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="357.28" y="105.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">y  = z</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M402.00 100.00
+                    L410.00 100.00
+                    L410.00 117.00
+                    L402.00 117.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="402.20" y="113.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M365.00 102.00
+                    L373.00 102.00
+                    L373.00 119.00
+                    L365.00 119.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="365.20" y="115.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="315.50" cy="111.50" rx="7.50" ry="7.50"
+                fill="rgb(0, 0, 255)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-B9F82921-BEA3-4033-84A5-4F46403CB973">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M305.77 131.18
+                        L300.90 130.05
+                        L305.91 108.62
+                        L315.65 110.90
+                        L310.64 132.32
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M279.00 243.00
+                    L308.00 119.00
+                    "
+                clip-path="url(#clipPath-B9F82921-BEA3-4033-84A5-4F46403CB973)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M305.90 130.61
+                    L301.60 129.61
+                    L308.27 120.47
+                    L310.20 131.62
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M228.00 170.00
+                    L270.00 170.00
+                    L270.00 188.00
+                    L228.00 188.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="228.18" y="184.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:16px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)"> + Ky</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M270.00 179.00
+                    L278.00 179.00
+                    L278.00 196.00
+                    L270.00 196.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="270.20" y="192.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M180.00 166.00
+                    L191.00 166.00
+                    L191.00 187.00
+                    L180.00 187.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="180.29" y="182.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">x</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M191.00 177.00
+                    L230.00 177.00
+                    L230.00 194.00
+                    L191.00 194.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="191.23" y="190.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k|k-1</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M274.00 94.00
+                    L285.00 94.00
+                    L285.00 115.00
+                    L274.00 115.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="274.29" y="110.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">x</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M285.00 106.00
+                    L307.00 106.00
+                    L307.00 123.00
+                    L285.00 123.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="285.20" y="119.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">k|k</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="38cm" height="38cm" viewBox="-274 -160 749 749" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #d8e5e5" cx="101" cy="215" rx="373.5" ry="373.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="101" cy="215" rx="373.5" ry="373.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="96.5" cy="214.5" rx="24" ry="24"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="96.5" cy="214.5" rx="24" ry="24"/>
+  </g>
+  <g>
+    <polygon style="fill: #1e90ff" points="92.653,210.212 298.652,158.211 303.652,169.211 96.653,220.212 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="92.653,210.212 298.652,158.211 303.652,169.211 96.653,220.212 "/>
+  </g>
+  <g>
+    <polygon style="fill: #1e90ff" points="294.652,160.211 396.652,47.211 405.652,53.211 301.652,169.211 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="294.652,160.211 396.652,47.211 405.652,53.211 301.652,169.211 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="403.164" cy="46.7278" rx="3.5" ry="3.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="403.164" cy="46.7278" rx="3.5" ry="3.5"/>
+  </g>
+  <g>
+    <path style="fill: #ff0000" d="M -155.24 -58.5 C -136.24,-76.5 25.7596,-184.5 -33.2404,-105.5 C -92.2404,-26.5 53.7596,117.5 28.7596,138.5 C 3.75966,159.5 -115.24,-4.5 -201.24,47.5 C -287.24,99.5 -174.24,-40.5 -155.24,-58.5z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" d="M -155.24 -58.5 C -136.24,-76.5 25.7596,-184.5 -33.2404,-105.5 C -92.2404,-26.5 53.7596,117.5 28.7596,138.5 C 3.75966,159.5 -115.24,-4.5 -201.24,47.5 C -287.24,99.5 -174.24,-40.5 -155.24,-58.5"/>
+  </g>
+</svg>

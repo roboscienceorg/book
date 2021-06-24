@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="10cm" height="13cm" viewBox="51 20 186 242" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="140" y="124" width="42" height="110"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="140" y="124" width="42" height="110"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="130" y1="94" x2="145" y2="94"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="145" y1="79" x2="145" y2="109"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="145" y1="84" x2="160" y2="74"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="145" y1="104" x2="160" y2="114"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="155,114 160,114 158.077,109.385 "/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="161.167,114.648 161.167,133.054 154.667,135.099 167.667,139.189 154.667,143.279 167.667,147.369 154.667,151.459 167.667,155.549 161.167,157.594 161.167,176 "/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 161 175 L 161,187 C 166.5,185.5 172,184 172,191.5 C 172,199 161,200.5 161,196 C 161,191.5 172,193 172,200.5 C 172,208 161,209.5 161,205 C 161,200.5 172,202 172,209.5 C 172,217 161,218.5 161,214 C 161,209.5 172,211 172,218.5 C 172,226 163.75,224.5 161,223 L 161,235"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="161" y1="235" x2="161" y2="248"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="150" y1="248" x2="172" y2="248"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="153.685" y1="254.5" x2="168.315" y2="254.5"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="157.37" y1="261" x2="164.63" y2="261"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="160" y1="74" x2="160" y2="40"/>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="155" y="35">
+    <tspan x="155" y="35">V</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="130" y1="94" x2="95" y2="94"/>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="51" y="100">
+    <tspan x="51" y="100">PWM</tspan>
+  </text>
+  <text font-size="16" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="190" y="181">
+    <tspan x="190" y="181">Motor</tspan>
+  </text>
+</svg>

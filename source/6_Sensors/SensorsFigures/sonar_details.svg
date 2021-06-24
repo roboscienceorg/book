@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="10cm" height="8cm" viewBox="79 62 189 158" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #d8e5e5" points="123.957,98.118 172.957,97.118 150.957,196.118 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="123.957,98.118 172.957,97.118 150.957,196.118 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="101" y1="201" x2="200" y2="202"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="123" y1="202" x2="178" y2="202"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="81" y1="201" x2="219" y2="199"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 104 201 C 88,195 96.0428,172 109,173 C 121.957,174 126.957,181.118 135,139 C 143.043,96.882 153.915,96.2362 163.957,138.118 C 174,180 180.957,179 193,173 C 205.042,167 212,194 193,204"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:middle;font-family:Utopia;font-style:normal;font-weight:normal" x="146.957" y="75.118">
+    <tspan x="146.957" y="75.118">Measurement </tspan>
+    <tspan x="146.957" y="92.7569">cone</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="161.957" y="216.118">
+    <tspan x="161.957" y="216.118">Amplitude (dB)</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="150.957" y1="196.118" x2="196.957" y2="122.118"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="154.438" y1="197.898" x2="228.958" y2="153.118"/>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="196.957" y="118.118">
+    <tspan x="196.957" y="118.118">30</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="229.958" y="154.118">
+    <tspan x="229.958" y="154.118">60</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="210.958" y="110.118">
+    <tspan x="210.958" y="110.118">o</tspan>
+  </text>
+  <text font-size="11.2889" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="244.058" y="147.568">
+    <tspan x="244.058" y="147.568">o</tspan>
+  </text>
+</svg>
