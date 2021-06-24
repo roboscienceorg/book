@@ -17,5 +17,4 @@ for the developing roboticist.
    :maxdepth: 1
 
    ElectricalTerms
-   ElectricMotors
    Electrical_Problems
