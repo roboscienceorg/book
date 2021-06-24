@@ -43,14 +43,22 @@ multiple robotic platforms, operating systems, and applications as well
 as small program footprints and efficient scaling. These pillars form
 the core goals of ROS as a whole.
 
+Next, we introduce the simulation tool, Veranda, and cover
+the basic elements to simulate robot motion.   Veranda is a two
+dimensional simulator.  It was designed to have a low barrier to
+entry and overall ease of use.  Veranda uses Box2D, a 2D physics
+engine for more realistic interactions between objects.   It is not
+intended for very high precision work (and does not support 3D).
+For those applications, we suggest Gazebo (see appendix).
 
 
 
 .. toctree::
    :maxdepth: 1
 
-   RoboticsFrameworks
-   SoftwareArch
    ROS
    ROSCommunication
+   BuildDriveTutorial
+   Startsim
+   ObstacleSensorTutorial
    ROS_Problems
