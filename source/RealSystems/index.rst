@@ -10,7 +10,7 @@ Real Systems
 
    RealRobots
    GeekBots
-   Create
+   create
    SMP
 
 .. Note::  Add SMP and other robots.  This chapter is not yet written.
