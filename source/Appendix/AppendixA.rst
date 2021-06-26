@@ -448,7 +448,7 @@ Check your installation (initial execution takes extra time)
 
     gazebo
 
-.. figure:: ../Terms/TermsFigures/twolinkexample2.*
+.. figure:: ../3_Terms/TermsFigures/twolinkexample2.*
    :width: 50%
    :align: center
 
@@ -555,7 +555,7 @@ We provide a similar example to what was done in the Python Chapter.
     plt.show()
 
 .. _`mobileexamplefig`:
-.. figure:: ../Terms/TermsFigures/mobileexample.*
+.. figure:: ../3_Terms/TermsFigures/mobileexample.*
    :align: center
    :width: 85%
 

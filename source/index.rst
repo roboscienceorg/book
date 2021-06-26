@@ -48,6 +48,7 @@ Introduction to Robotics
    AppendixA <Appendix/AppendixA>
    Mathematical Background <Math/index>
    Electrical Concepts <Electrical/index>
+   Python <Python/index>
    ROS <ROS/index>
    Simulation Tools <SimTools/index>
    Example Systems <RealSystems/index>

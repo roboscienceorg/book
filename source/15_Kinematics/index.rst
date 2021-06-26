@@ -17,5 +17,6 @@ drive systems.
    FixedWheel
    DifferentialDrive
    DualDifferential
+   Constraints
    Maneuverability
    Kinematics_Problems

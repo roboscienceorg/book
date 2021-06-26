@@ -316,7 +316,11 @@ frame:
    \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
    \end{array}}
 
-These are non-holonomic constraints, this is left as a homework exercise.
+In Chapter 15 we will define these as non-holonomic constraints which 
+we will find places restrictions on the type of motion we can expect.
+In this case, the position and orientation of this robot are not 
+independent quantities which may restrict the motions and orientations 
+we have when moving in obstacle dense regions.  
 
 
 Assume that you have a differential drive robot. If the drive wheel is
@@ -363,7 +367,10 @@ curve of motion.
    A differential drive robot with constant wheel
    velocity drives in straight lines and circles.
 
-
+What can be said about these equations? Can these be partially solved so
+we can run simulations? Our first attempt is to solve the differential
+equations by integration. Starting with the third equation, the one for
+the angular velocity,
 We can attempt to formally integrate the differential drive equations
 
 .. math::
@@ -411,21 +418,52 @@ This can be plugged into the x and y equations and then integrated:
 
 .. math:: y(t) = -\frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[\cos((r/2L)(\omega_1 - \omega_2)t + \theta_0) - \cos(\theta_0)\right]+ y(0)
 
-Thus the solution is a sequence of circular arcs.
+
 
 From these solutions (and from the differential equations as well), you can see that there is a problem when :math:`\omega_1=\omega_2`
 or when :math:`\omega_1 = -\omega_2`.  These are exactly the cases we are often given.
-However, the equations are trivial (meaning they reduce) for these special cases.
-When :math:`\omega_1 = \omega_2`,
+This solution is a sequence of circular arcs. For the special case where
+:math:`\omega_1=\omega_2=\omega`, we have that :math:`d\theta / dt = 0`,
+so,
 
-.. math:: d\theta / dt = 0
+.. math::
 
-and when :math:`\omega_1 = -\omega_2`
+   \begin{array}{l}
+    x = r\omega\cos(\theta_0)t + x_0\\[2mm]
+    y = r\omega\sin(\theta_0)t + y_0\\[2mm]
+   \theta = \theta_0 .
+   \end{array}
 
-.. math::  dx/dt=0 ,  dy/dt=0.
+And when :math:`\omega_1 = -\omega_2 = \omega`, we have :math:`dx/dt=0`
+and :math:`dy/dt=0`, so
+
+.. math::
+
+   \begin{array}{l}
+    x = x_0\\[2mm]
+    y = y_0\\[2mm]
+   \theta = \displaystyle \frac{r\omega}{L} t + \omega_0 .
+   \end{array}
+
 
 So, you can just
 work out the solution from rate-time-distance formulas.
+As long as you have piecewise constant angular velocities on the wheels,
+you have the robot path made up from circular arcs. A simulation program
+can connect these up to produce a path for any sequence of wheel
+velocities. The path is made up of combinations of lines and arcs. Note
+that a pivot in place is possible so the resulting path need not be
+differentiable.
+:numref:`fig:piecewisecirculararcs`
+shows a sample path.
+
+.. _`fig:piecewisecirculararcs`:
+.. figure:: TermsFigures/piecewisecircular.*
+   :width: 50%
+   :align: center
+
+   Piecewise circular/linear arc paths
+
 
 
 | Solve these equations for the given values of

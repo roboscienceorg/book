@@ -20,4 +20,6 @@ ZeroMQ and SciPy are introduced.
 
    1_RoboticsFrameworks
    2_SoftwareArch
-   5_ScipyMath
+   3_Distributed
+   4_ZeroMQ
+

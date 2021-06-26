@@ -16,7 +16,7 @@ will discuss a few of the more popular approaches below.
 
 Player
 ~~~~~~
-.. image:: SciPyFigures/player_button_v3.png
+.. image:: ToolsFigures/player_button_v3.png
    :width: 15%
 
 The beginnings of ROS date back to the Player project, which was founded
@@ -63,7 +63,7 @@ http://playerstage.sourceforge.net.
 
 Switchyard
 ~~~~~~~~~~
-.. image:: SciPyFigures/willow_garage.jpg
+.. image:: ToolsFigures/willow_garage.jpg
    :width: 15%
 
 The common API used by player was a major part of the next step on the
@@ -107,7 +107,7 @@ essentially the same.
 
 OSRF
 ~~~~
-.. image:: SciPyFigures/osrf_masthead.png
+.. image:: ToolsFigures/osrf_masthead.png
    :width: 15%
 
 In 2012, development of ROS began to shift from Willow Garage to the
@@ -165,8 +165,10 @@ a best programming language in general. Arguments about a best language
 are left to novices attempting to justify the language they most
 recently learned. Programming languages are tools like pliers,
 screwdrivers and hammers. It depends on what you want to do, what
-resources you have available and your personal skill set. Some languages
-are more popular however, like C and C++. The C family is used heavily
+resources you have available and your personal skill set. Currently C, C++ and Python are some of the most popular languages 
+in robotics.   
+
+The C family is used heavily
 since it has a small footprint  and is very
 efficient.    C is the major language for embedded systems (C fits on microcontrollers). 
 Nearly all systems have a C compiler and maybe only a C compiler.  
@@ -174,15 +176,26 @@ Nearly all systems have a C compiler and maybe only a C compiler.
 C++ provides the object oriented approach to a code base and
 is widely adopted in industry.  Both
 remain in the most popular programming language lists even though they
-have been around for some time. Python is an object oriented scripting
+have been around for some time. 
+
+Python is an object oriented scripting
 language and is has wide adoption due to ease of learning, ease of use,
 and very compact reabable syntax.  Python now is one of the leading 
 languages in high school and college courses.  
 
 Recent languages like Java and C# are
 popular when the robot has a full computer available as a controller.
-One can even find older languages like BASIC and FORTH as well. 
-That said, currently C, C++ and Python are the most popular languages 
-in robotics.
+One can even find older languages like BASIC and FORTH as well. Choice
+of a language for development will depend on the available languages, 
+the requirements of the system,  available libraries and support tools, the skills of the developer and team, and many other details.   Having multiple languages
+deployed may also be needed since no one language or library can cover the 
+requirements.  
+
+This text will focus on the concepts (mathematics) and algorithms and is not
+concenred with integration into a specific environment.  This text will use the 
+Python 
+language which can illustrate the ideas, reasonably easy to work with, and supports 
+the various numerical operations.
+
 
  

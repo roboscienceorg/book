@@ -24,7 +24,7 @@ detour and ended up at another
 orientation as shown in  :numref:`fig:dependsonpath`.
 
 .. _`fig:dependsonpath`:
-.. figure:: TermsFigures/dependsonpath.*
+.. figure:: KinematicsFigures/dependsonpath.*
    :width: 40%
    :align: center
 
@@ -205,7 +205,7 @@ the second partial test appears as
    = \frac{\partial \left( \sigma(x)b_i \right)}{\partial x_j}
 
 Integration
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 To find the antiderivative, one can follow a fixed process.   Assume that you are
 given the form :math:`a_1(x_1,x_2) \dot{x_1} + a_2(x_1,x_2)\dot{x_2} = 0`.  Since

@@ -207,32 +207,9 @@ Let :math:`a_1 = 15`, :math:`a_2 = 10`, :math:`x=10`, :math:`y=8`. Find
 | :math:`x = 10*\cos(1.394087-2.137278) + 15*\cos(1.394087) = 10.000`
 | :math:`y = 10*\sin(1.394087-2.137278) + 15*\sin(1.394087) = 8.000`
 
-The Julia code to do the computations is
+The  code to do the computations is 
 
-::
-
-    a1,a2 = 15.0,10.0
-    x,y = 10.0,8.0
-    d =  (x*x+y*y-a1*a1-a2*a2)/(2*a1*a2)
-    -0.5366666666666666
-
-    t2 = atan(-sqrt(1.0-d*d),d)
-    t1 = atan(y,x) - atan(a2*sin(t2),a1+a2*cos(t2))
-    println(t1,",   ", t2)
-    1.394086718832381                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ,   -2.137278040920749
-
-
-    x1 = a2*cos(t1+t2) + a1*cos(t1)
-    y1 = a2*sin(t1+t2) + a1*sin(t1)
-    println(x1, ",  ", y1)
-    10.0,  8.000000000000002
-
-Python code
-
-.. hidden-code-block:: python
-    :starthidden: True
-    :label: [Python show/hide]
-
+.. code-block:: python
 
     In [1]: from math import *
     In [2]: a1,a2 = 15.0,10.0
@@ -381,56 +358,11 @@ these values in the forward kinematics and then gathers the resulting
 :math:`(x,y)` values. Like the serial manipulator, this is a holonomic
 robot as well.
 
-.. _`lst:computeconfigdomain`:
-.. code-block:: julia
-   :caption: Configuration Domain Code
-
-    using Plots
-    gr()
-
-    # Set the link lengths
-    L0 = 8
-    L1 = 5
-    L2 = 10
-    
-    N = 20
-
-    # Initialize the arrays
-    xlist = zeros(N*N)
-    ylist = zeros(N*N)
-
-    # Loop over the two angles,
-    #  stepping about 1.8 degrees each step
-    for i = 1:N
-        for j = 1:N
-            th1 = pi*i/(2*N)
-            th2 = pi*j/(2*N)
-
-            a = -L1*cos(th1) - L0/2.0
-            b = L1*sin(th1)
-            c = L1*cos(th2) + L0/2.0
-            d = L1*sin(th2)
-
-            dx = c-a
-            dy = b-d
-            u = sqrt(dx*dx+dy*dy)
-            v = sqrt(L2*L2 - 0.25*u*u)
-
-            x = (a+c)/2.0 + v*dy/u
-            y = (b+d)/2.0 + v*dx/u
-            
-            k = i*(N-1) + j
-            xlist[k] = x
-            ylist[k] = y
-        end
-    end
-    plot(xlist,ylist, seriestype = :scatter, label = "Valid Domain")
-
-    
 
 .. code-block:: python
+   :name: lst:computeconfigdomain
    :caption: Configuration Domain Code
-
+   :dedent: 1
 
     from math import *
     import matplotlib.pyplot as plt
@@ -502,37 +434,14 @@ where
 for a specific pair of :math:`(x,y)` values.
 
 
-.. code-block:: julia
-   :caption: Inverse Kinematics Code for Parallel Two Link
-   :name: lst:IKParallelTwoLink
-
-
-
-    # Set the link lengths and starting location
-    L0 = 8
-    L1 = 5
-    L2 = 10
-    x = 0.2
-    y = 0.1*x + 10
-
-    # Compute IK
-    G = sqrt((x-L0/2.0)*(x-L0/2.0)+y*y)
-    H = sqrt((x+L0/2.0)*(x+L0/2.0)+y*y)
-
-    alpha = acos((G*G + L0*L0 - H*H)/(2.0*G*L0))
-    beta = acos((H*H + L0*L0 - G*G)/(2.0*H*L0))
-    gamma = acos((G*G + L1*L1 - L2*L2)/(2.0*G*L1))
-    eta = acos((H*H + L1*L1 - L2*L2)/(2.0*H*L1))
-
-    th1 = pi - beta - eta
-    th2 = pi - alpha - gamma
-
-    println(th1, ",  ", th2)
-
+   
     
-    
+   
 .. code-block:: python
-
+   :caption: Configuration Domain Code
+   :name: lst:IKParallelTwoLink
+   :dedent: 1
+   
     from math import *
     # Set the link lengths and starting location
     L0 = 8
@@ -553,7 +462,7 @@ for a specific pair of :math:`(x,y)` values.
     th1 = pi - beta - eta
     th2 = pi - alpha - gamma
 
-    print th1, th2
+    print(th1, th2)
     
     
 If we want to convert a list of :math:`(x,y)` points like we saw in
@@ -566,44 +475,16 @@ operators are overloaded and the iteration is done elementwise. Although
 Python is normally much slower than a C equivalent, numpy is highly
 optimized and the code runs close to the speed of C. [#f1]_
 
-
-.. code-block:: julia
-   :caption: Inverse Kinematics Code for Parallel Two Link 
-   :name: lst:IKParallelTwoLinkNP
-
-
-    # Set the link lengths and
-    L0 = 8
-    L1 = 5
-    L2 = 10
-    x = -3.0
-    while (x < 3)
-      y = 0.1*x + 10
-
-      # Work out the IK
-      G = np.sqrt((x-L0/2.0)*(x-L0/2.0)+y*y)
-      H = np.sqrt((x+L0/2.0)*(x+L0/2.0)+y*y)
-
-      alpha = np.arccos((G*G + L0*L0 - H*H)/(2.0*G*L0))
-      beta = np.arccos((H*H + L0*L0 - G*G)/(2.0*H*L0))
-      gamma = np.arccos((G*G + L1*L1 - L2*L2)/(2.0*G*L1))
-      eta = np.arccos((H*H + L1*L1 - L2*L2)/(2.0*H*L1))
-
-      th1 = pi - beta - eta
-      th2 = pi - alpha - gamma
-
-      println(th1, ",  ", th2) 
-      x += 0.2
-
-    
     
 .. code-block:: python
+   :dedent: 1
+   :name: lst:IKParallelTwoLinkNP
    :caption: Inverse Kinematics Code for Parallel Two Link Using Numpy
 
 
     import numpy as np
     from math import *
-    # Set the link lengths and
+    # Set the link lengths ...
     L0 = 8
     L1 = 5
     L2 = 10
@@ -622,7 +503,7 @@ optimized and the code runs close to the speed of C. [#f1]_
     th1 = pi - beta - eta
     th2 = pi - alpha - gamma
 
-    print th1, th2
+    print(th1, th2)
 
 
 

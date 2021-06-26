@@ -41,99 +41,21 @@ where :math:`\dot{\phi_1}` and :math:`\dot{\phi_2}` are the right and
 left wheel rotational speeds (respectively), :math:`r` is wheel radius
 and :math:`2L` is the axle length.
 
-What can be said about these equations? Can these be partially solved so
-we can run simulations? Our first attempt is to solve the differential
-equations by integration. Starting with the third equation, the one for
-the angular velocity,
 
-.. math:: \dot{\theta} =\frac{d\theta}{dt} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
-
-integrate from :math:`0` to :math:`t` (and be careful about integration
-variables)
-
-.. math:: \int_0^t\frac{d\theta}{d\tau}\, d\tau = \int_0^t\frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})\, d\tau
-
-and we have
+Our work last chapter has given us
 
 .. math:: \theta(t) = \theta(0) + \int_0^t \frac{r}{2L} \left(\frac{d\phi_1}{d\tau}-\frac{d\phi_2}{d\tau}\right)d\tau
 
-Normally one can determine :math:`\dot{\phi_i}`, but it might not have a
-standard functional form. These values are wheel velocities and do
-correspond with the standard collection of calculus functions. For the
-moment, assume that you know :math:`\phi_i(t)`, then what can you say?
-From :math:`\dot{\phi}_i(t)` we can compute :math:`\theta` by
-integrating the last equation. This will be used in the formulas for
-:math:`x` and :math:`y`. Integrating the formulas for :math:`x` and
-:math:`y`
+If you have the mathematical form to determine :math:`\dot{\phi_i}`, you can proceed like in the last chapter.  But it might not have a
+standard functional form.    In general,
+looking for an analytic function for the position is not possible.
+Practically you don’t actually have a function representation of
+:math:`\phi(t)`.  We are normally sampling the wheel angular velocity
+during runtime. How should we formulate and proceed in that case?
 
-.. math::
 
-   \begin{array}{l}
-    x(t)  = x(0)+\displaystyle\int_0^t \frac{r}{2} \left(\frac{d\phi_1}{d\tau}+\frac{d\phi_2}{d\tau}\right)\cos(\theta(\tau))d\tau \\[5mm]
-   y(t)  = y(0) + \displaystyle\int_0^t\frac{r}{2} \left(\frac{d\phi_1}{d\tau}+\frac{d\phi_2}{d\tau}\right)\sin(\theta(\tau))d\tau
-   \end{array}
 
-These equations are easy to integrate if you know the wheel velocities
-are constants. First integrate the :math:`\theta` equation:
-
-.. math:: \theta(t) = (r/2L)(\omega_1 - \omega_2)t + \theta(0).
-
-Theta can be plugged into the :math:`x` and :math:`y` equations and
-integrated, under the assumption that :math:`\omega_1\neq \omega_2` or
-:math:`\omega_1 \neq -\omega_2`:
-
-.. math::
-   :label: `DDmotionEqnsConstVel2`
-
-   x(t) = \frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[ \sin((r/2L)(\omega_1 - \omega_2)t + \theta(0)) -
-    \sin(\theta(0))\right] - x(0)
-
-.. math:: y(t) = -\frac{L(\omega_1 + \omega_2)}{(\omega_1 - \omega_2)} \left[ \cos((r/2L)(\omega_1 - \omega_2)t + \theta(0)) - \cos( \theta(0)) \right] - y(0)
-
-This solution is a sequence of circular arcs. For the special case where
-:math:`\omega_1=\omega_2=\omega`, we have that :math:`d\theta / dt = 0`,
-so,
-
-.. math::
-
-   \begin{array}{l}
-    x = r\omega\cos(\theta_0)t + x_0\\[2mm]
-    y = r\omega\sin(\theta_0)t + y_0\\[2mm]
-   \theta = \theta_0 .
-   \end{array}
-
-And when :math:`\omega_1 = -\omega_2 = \omega`, we have :math:`dx/dt=0`
-and :math:`dy/dt=0`, so
-
-.. math::
-
-   \begin{array}{l}
-    x = x_0\\[2mm]
-    y = y_0\\[2mm]
-   \theta = \displaystyle \frac{r\omega}{L} t + \omega_0 .
-   \end{array}
-
-As long as you have piecewise constant angular velocities on the wheels,
-you have the robot path made up from circular arcs. A simulation program
-can connect these up to produce a path for any sequence of wheel
-velocities. The path is made up of combinations of lines and arcs. Note
-that a pivot in place is possible so the resulting path need not be
-differentiable.
-:numref:`fig:piecewisecirculararcs`
-shows a sample path.
-
-.. _`fig:piecewisecirculararcs`:
-.. figure:: SimulationFigures/piecewisecircular.*
-   :width: 50%
-   :align: center
-
-   Piecewise circular/linear arc paths
-
-In practice it is not possible to instantaneously jump wheel speeds.
-Inertia in the system (mass, inductance, power limits) means that it is
-not possible to instantaneous jumps in velocity. In addition, it is not
-possible to have perfect velocities when surfaces and power are not
-consistent. So what if we relax the constant velocity assumption. This
+So what if we relax the constant velocity assumption. This
 gives rise to two additional issues. The first is that you may not be
 able to gain an antiderivative of the wheel velocities to find
 :math:`\theta(t)`. If you are able to find :math:`\theta`, the right
@@ -153,11 +75,12 @@ antiderivative. It is possible to approximate it either with a Taylor
 expansion or numerical formulation, but it is an example of a vast
 number of functions which we must stop at this step.
 
-There is another problem that this example indicates. In general,
-looking for an analytic function for the position is not possible.
-Practically you don’t actually have a function representation of
-:math:`\phi(t)` and are normally measuring the wheel angular velocity
-during runtime? How should we formulate and proceed in that case.
+In practice it is not possible to instantaneously jump wheel speeds as we did in our analytical approach previously.  
+Inertia in the system (mass, inductance, power limits) means that it is
+not possible to instantaneous jumps in velocity. In addition, it is not
+possible to have perfect velocities when surfaces and power are not
+consistent. 
+
 
 A numerical approach
 ~~~~~~~~~~~~~~~~~~~~

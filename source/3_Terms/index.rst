@@ -22,9 +22,8 @@ independently like a skid steer “Bobcat”.
 .. toctree::
    :maxdepth: 1
 
-   Terms
-   ReferenceFrames
-   PlanarManipulators
-   DifferentialDrive
-   Constraints
-   Terms_Problems
+   1_Terms
+   2_ReferenceFrames
+   3_PlanarManipulators
+   4_DifferentialDrive
+   5_Terms_Problems
