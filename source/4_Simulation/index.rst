@@ -16,9 +16,9 @@ the reconstruction of the robot's environment.
 .. toctree::
    :maxdepth: 1
 
-   SimulatingMotion
-   TwoLinkSim
-   MovingDifferential
-   Noise
-   GroundRobotWorld
-   Simulation_Problems
+   1_SimulatingMotion
+   2_TwoLinkSim
+   3_MovingDifferential
+   4_Noise
+   5_GroundRobotWorld
+   6_Simulation_Problems

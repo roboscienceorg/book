@@ -15,11 +15,11 @@ as well. In this short chapter we examine some of the issues.
 .. toctree::
    :maxdepth: 1
 
-   Safety
-   HumanCollab
-   CyberSecurity
-   HumanImpact
-   Design_Problems
+   1_Safety
+   2_HumanCollab
+   3_CyberSecurity
+   4_HumanImpact
+   5_Design_Problems
 
 .. Note::  Missing basic design material.   Could move some of the soft eng
    content here as well as core mechanical/electrical design content.
