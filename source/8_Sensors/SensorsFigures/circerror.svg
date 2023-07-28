@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="14cm" viewBox="345 79 310 276" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="345" y="352">
+    <tspan x="345" y="352">(0,0)</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="482" y="206">
+    <tspan x="482" y="206">(x,y)</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="363" y1="334" x2="478.93" y2="188.612"/>
+    <polygon style="fill: #000000" points="483.606,182.748 481.281,193.684 478.93,188.612 473.462,187.45 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="483.606,182.748 481.281,193.684 478.93,188.612 473.462,187.45 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="585" y="153">
+    <tspan x="585" y="153">(x + y )</tspan>
+  </text>
+  <text font-size="10.7244" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="626" y="148">
+    <tspan x="626" y="148">2</tspan>
+  </text>
+  <text font-size="10.7244" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="597" y="147">
+    <tspan x="597" y="147">2</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="486.808" y1="180.519" x2="552.192" y2="99.4805"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="486.837,175.706 485.404,182.26 491.506,179.474 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="552.163,104.294 553.596,97.7403 547.494,100.526 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="538" y="153">
+    <tspan x="538" y="153">6838</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="577" y="151">
+    <tspan x="577" y="151">-</tspan>
+  </text>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="518" y1="81" x2="583" y2="128"/>
+  <text font-size="10.7244" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="637" y="144">
+    <tspan x="637" y="144">1/2</tspan>
+  </text>
+</svg>

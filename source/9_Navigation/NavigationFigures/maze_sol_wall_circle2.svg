@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   xml:space="preserve"
+   width="493.75"
+   height="493.75"
+   viewBox="0 0 493.75 493.75"
+   sodipodi:docname="maze_sol_wall_circle2.svg"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="0.47797468"
+     inkscape:cx="246.875"
+     inkscape:cy="246.875"
+     inkscape:window-x="79"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g10" /><g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="maze_sol_wall_circle2"
+     transform="matrix(1.25,0,0,-1.25,0,493.75)"><g
+       id="g12"
+       transform="scale(0.1,0.1)"><path
+         d="M 3897.57,1970.05 C 3897.57,905.504 3034.59,42.5195 1970.05,42.5195 905.504,42.5195 42.5195,905.504 42.5195,1970.05 c 0,1064.54 862.9845,1927.52 1927.5305,1927.52 1064.54,0 1927.52,-862.98 1927.52,-1927.52"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path14"
+         inkscape:connector-curvature="0" /><path
+         d="M 3897.57,1970.05 C 3897.57,905.504 3034.59,42.5195 1970.05,42.5195 905.504,42.5195 42.5195,905.504 42.5195,1970.05 c 0,1064.54 862.9845,1927.52 1927.5305,1927.52 1064.54,0 1927.52,-862.98 1927.52,-1927.52 z"
+         style="fill:none;stroke:#00ff00;stroke-width:85.03800201;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path16"
+         inkscape:connector-curvature="0" /></g></g></svg>

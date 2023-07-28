@@ -1,0 +1,257 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 334 108"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B68D5AFD-D209-481A-B774-22B5D1CDE848">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="61.00" cy="37.00" rx="50.00" ry="25.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B68D5AFD-D209-481A-B774-22B5D1CDE848)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="61.00" cy="37.00" rx="50.00" ry="25.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M40.00 30.00
+                    L82.00 30.00
+                    L82.00 47.00
+                    L40.00 47.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="41.34" y="43.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Talker</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-B2EF6FD8-6BBF-4E39-B0FE-951DC5EF7FD9">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="268.00" cy="37.00" rx="50.00" ry="25.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-B2EF6FD8-6BBF-4E39-B0FE-951DC5EF7FD9)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="268.00" cy="37.00" rx="50.00" ry="25.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M240.00 31.00
+                    L294.00 31.00
+                    L294.00 48.00
+                    L240.00 48.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="240.05" y="44.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:14px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Listener</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-DA31539C-C04F-49A3-A5D1-5205AE7A0012">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M206.50 38.39
+                        L206.55 33.39
+                        L228.55 33.59
+                        L228.45 43.59
+                        L206.45 43.39
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M111.00 37.00
+                    L218.00 38.00
+                    "
+                clip-path="url(#clipPath-DA31539C-C04F-49A3-A5D1-5205AE7A0012)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M207.09 38.39
+                    L207.13 33.98
+                    L217.50 38.49
+                    L207.05 42.81
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M142.00 21.00
+                    L192.00 21.00
+                    L192.00 38.00
+                    L142.00 38.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="143.74" y="34.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Chatter</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M32.00 71.00
+                    L92.00 71.00
+                    L92.00 103.00
+                    L32.00 103.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="44.72" y="83.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Wheel
+                </tspan>
+            </text>
+            <text x="34.13" y="98.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:12px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Velocities</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M240.00 70.00
+                    L297.00 70.00
+                    L297.00 104.00
+                    L240.00 104.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="247.02" y="83.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Python
+                </tspan>
+            </text>
+            <text x="241.88" y="99.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:13px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Program</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

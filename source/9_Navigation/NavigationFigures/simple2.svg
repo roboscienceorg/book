@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="7cm" viewBox="-25 137 404 140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-16,192 150,192 160.507,227 137.507,245 102.507,236 92.5066,179 132.844,185.008 "/>
+    <polygon style="fill: #000000" points="137.295,185.671 130.918,187.754 132.844,185.008 131.802,181.819 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="137.295,185.671 130.918,187.754 132.844,185.008 131.802,181.819 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="238.006" cy="194" rx="6.5" ry="6.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" cx="238.006" cy="194" rx="6.5" ry="6.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="-16.9934" cy="191" rx="6.5" ry="6.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" cx="-16.9934" cy="191" rx="6.5" ry="6.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="161.507" cy="182" rx="14" ry="14"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="161.507" cy="182" rx="14" ry="14"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="174.507" cy="229" rx="14" ry="14"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="174.507" cy="229" rx="14" ry="14"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="140.507" cy="258" rx="14" ry="14"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="140.507" cy="258" rx="14" ry="14"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="94.5066" cy="248" rx="14" ry="14"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="94.5066" cy="248" rx="14" ry="14"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="155.35" y1="240.682" x2="180.507" y2="265"/>
+    <polygon style="fill: #000000" points="152.114,237.554 158.513,239.567 155.35,240.682 154.343,243.881 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="152.114,237.554 158.513,239.567 155.35,240.682 154.343,243.881 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="180.507" y="274">
+    <tspan x="180.507" y="274">Shorter than cutoff distance</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="102.138" y1="169.304" x2="128.507" y2="152"/>
+    <polygon style="fill: #000000" points="98.3761,171.773 101.746,165.973 102.138,169.304 105.038,170.989 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="98.3761,171.773 101.746,165.973 102.138,169.304 105.038,170.989 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="130.507" y="151">
+    <tspan x="130.507" y="151">Cutoff distance</tspan>
+  </text>
+</svg>

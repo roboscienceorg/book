@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="33.250cm" height="18.200cm" viewBox="-6.985 -0.800 26.265 17.400"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="-6.935" y="-0.750" width="33.150" height="18.100" fill="#D8E5E5" stroke="none" stroke-width="0"/>
+<rect x="-6.935" y="-0.750" width="33.150" height="18.100" fill="none" stroke="#000000" stroke-width="0.100" />
+<line x1="4.775" y1="13.900" x2="13.852" y2="11.018" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="13.558,11.373 13.959,10.984 13.406,10.897 "/>
+<line x1="14.015" y1="7.950" x2="14.483" y2="4.771" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="14.673,5.192 14.499,4.661 14.179,5.119 "/>
+<line x1="5.650" y1="13.900" x2="10.992" y2="13.852" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="10.606,14.105 11.103,13.851 10.601,13.606 "/>
+<line x1="5.100" y1="9.900" x2="6.360" y2="7.547" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="6.397,8.007 6.412,7.449 5.956,7.771 "/>
+<line x1="5.640" y1="10.325" x2="13.350" y2="7.850" stroke="#0000FF" stroke-width="0.500" />
+<ellipse cx="4.725" cy="14.125" rx="0.875" ry="0.425" fill="#0000FF" stroke="none"  /><ellipse cx="4.725" cy="14.125" rx="0.875" ry="0.425" fill="none" stroke="#000000"  stroke-width="0.100" /><rect x="3.900" y="10.450" width="1.750" height="3.450" fill="#0000FF" stroke="none" stroke-width="0"/>
+<rect x="3.900" y="10.450" width="1.750" height="3.450" fill="none" stroke="#0000FF" stroke-width="0.100" />
+<ellipse cx="4.765" cy="10.325" rx="0.875" ry="0.425" fill="#FFFFFF" stroke="none"  /><ellipse cx="4.765" cy="10.325" rx="0.875" ry="0.425" fill="none" stroke="#000000"  stroke-width="0.100" /><ellipse cx="14.015" cy="8.125" rx="0.875" ry="0.175" fill="#0000FF" stroke="none"  /><ellipse cx="14.015" cy="8.125" rx="0.875" ry="0.175" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="14.364" y1="7.400" x2="18.740" y2="1.550" stroke="#0000FF" stroke-width="0.500" />
+<line x1="14.284" y1="7.751" x2="19.905" y2="5.726" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="19.624,6.093 20.010,5.688 19.455,5.622 "/>
+<line x1="4.775" y1="10.450" x2="4.717" y2="4.574" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="4.971,4.959 4.716,4.462 4.471,4.964 "/>
+<rect x="13.265" y="7.450" width="1.600" height="0.700" fill="#0000FF" stroke="none" stroke-width="0"/>
+<rect x="13.265" y="7.450" width="1.600" height="0.700" fill="none" stroke="#0000FF" stroke-width="0.100" />
+<ellipse cx="14.055" cy="7.225" rx="0.810" ry="0.225" fill="#FFFFFF" stroke="none"  /><ellipse cx="14.055" cy="7.225" rx="0.810" ry="0.225" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="14.065" y1="7.450" x2="12.971" y2="3.216" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="13.310,3.530 12.943,3.108 12.826,3.655 "/>
+<text x="4.470" y="3.930"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="4.970" y="4.330"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="6.475" y="7.105"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="6.975" y="7.505"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="14.820" y="4.580"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="15.320" y="4.980"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="12.925" y="2.805"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="13.425" y="3.205"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="20.180" y="5.630"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="20.680" y="6.030"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d ="M 10.215,13.800 A 2.492,2.492 0 0,0 10.098,12.657 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="10.495,12.905 10.061,12.552 10.039,13.110 "/>
+<text x="11.365" y="14.250"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="11.865" y="14.650"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="17.570" y="5.328"  fill="#000000" text-anchor="start" font-size="1.13" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+q</text>
+<text x="18.120" y="5.478"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d ="M 17.127,6.482 A 2.492,2.492 0 0,0 17.010,5.339 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="17.407,5.586 16.973,5.234 16.951,5.792 "/>
+<line x1="4.915" y1="6.550" x2="12.801" y2="4.116" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.504,4.469 12.908,4.083 12.357,3.992 "/>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d ="M 9.865,5.650 A 0.617,0.617 0 0,0 9.765,4.426 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="9.968,3.976 9.662,4.444 10.220,4.408 "/>
+<text x="8.015" y="4.300"  fill="#000000" text-anchor="start" font-size="1.13" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+a</text>
+<text x="8.620" y="4.659"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="10.715" y="13.050"  fill="#000000" text-anchor="start" font-size="1.13" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+q</text>
+<text x="11.265" y="13.200"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="14.015" y1="8.250" x2="14.165" y2="10.950" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<text x="1.215" y="12.500"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+d</text>
+<text x="1.765" y="12.700"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="2.819" y1="11.274" x2="2.861" y2="13.426" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="3.077,11.657 2.817,11.162 2.577,11.666 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="2.603,13.043 2.863,13.538 3.103,13.034 "/>
+<line x1="-5.135" y1="13.850" x2="4.065" y2="14.250" stroke="#0000FF" stroke-width="0.500" />
+<text x="8.665" y="10.200"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Link i-1</text>
+<text x="15.965" y="2.350"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Link i</text>
+<text x="-3.485" y="13.250"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Link i-2</text>
+<text x="8.615" y="8.300"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+a</text>
+<text x="9.115" y="8.700"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="-1.130" y="15.080"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+a</text>
+<text x="-0.630" y="15.480"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-2</text>
+<text x="15.925" y="3.605"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+a</text>
+<text x="16.565" y="3.850"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+</svg>

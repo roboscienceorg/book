@@ -1,72 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="35cm" height="13cm" viewBox="192 49 692 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="252" y1="63.7361" x2="252" y2="288.264"/>
-    <polygon style="fill: #000000" points="252,56.2361 257,66.2361 252,63.7361 247,66.2361 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="252,56.2361 257,66.2361 252,63.7361 247,66.2361 "/>
-    <polygon style="fill: #000000" points="252,295.764 247,285.764 252,288.264 257,285.764 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="252,295.764 247,285.764 252,288.264 257,285.764 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="202.736" y1="246" x2="488.264" y2="246"/>
-    <polygon style="fill: #000000" points="195.236,246 205.236,241 202.736,246 205.236,251 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="195.236,246 205.236,241 202.736,246 205.236,251 "/>
-    <polygon style="fill: #000000" points="495.764,246 485.764,251 488.264,246 485.764,241 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="495.764,246 485.764,251 488.264,246 485.764,241 "/>
-  </g>
-  <g>
-    <rect style="fill: #0000ff" x="254" y="104" width="141" height="141"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="254" y="104" width="141" height="141"/>
-  </g>
-  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="381" y="265">
-    <tspan x="381" y="265">2</tspan>
-  </text>
-  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="766" y="145">
-    <tspan x="766" y="145"></tspan>
-  </text>
-  <text font-size="19.1911" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="392" y="265">
-    <tspan x="392" y="265">p</tspan>
-  </text>
-  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="227.3" y="111.3">
-    <tspan x="227.3" y="111.3">2</tspan>
-  </text>
-  <text font-size="19.1911" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="238.3" y="111.3">
-    <tspan x="238.3" y="111.3">p</tspan>
-  </text>
-  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="492" y="237">
-    <tspan x="492" y="237">1</tspan>
-  </text>
-  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="278" y="71">
-    <tspan x="278" y="71">2</tspan>
-  </text>
-  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="265" y="65">
-    <tspan x="265" y="65">Q</tspan>
-  </text>
-  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="478.3" y="233">
-    <tspan x="478.3" y="233">Q</tspan>
-  </text>
-  <g>
-    <ellipse style="fill: #ffffff" cx="745.8" cy="172.9" rx="136.5" ry="73.5"/>
-    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="745.8" cy="172.9" rx="136.5" ry="73.5"/>
-  </g>
-  <g>
-    <ellipse style="fill: #ffffff" cx="744.8" cy="167.9" rx="70.5" ry="24.5"/>
-    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="744.8" cy="167.9" rx="70.5" ry="24.5"/>
-  </g>
-  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 817.3,237.4 A 28.9371,28.9371 0 1 0 794.651,185.224"/>
-  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" d="M 794.651,185.224 A 30.6022,30.6022 0 0 0 816.3,238.4"/>
-  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 614.3,188.4 A 208.853,208.853 0 0 0 882.3,172.9"/>
-  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="813.3" y="194.4">
-    <tspan x="813.3" y="194.4">q</tspan>
-  </text>
-  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="841.6" y="192.4">
-    <tspan x="841.6" y="192.4">q</tspan>
-  </text>
-  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="850" y="195">
-    <tspan x="850" y="195">1</tspan>
-  </text>
-  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="821.3" y="197.4">
-    <tspan x="821.3" y="197.4">2</tspan>
-  </text>
+<!-- Created by diasvg.py -->
+<svg width="34.568cm" height="12.359cm" viewBox="9.600 2.591 44.168 14.950"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<line x1="12.600" y1="3.187" x2="12.600" y2="14.413" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="12.600,2.812 12.850,3.312 12.600,3.187 12.350,3.312 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="12.600,2.812 12.850,3.312 12.600,3.187 12.350,3.312 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="12.600,14.788 12.350,14.288 12.600,14.413 12.850,14.288 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="12.600,14.788 12.350,14.288 12.600,14.413 12.850,14.288 "/>
+<line x1="10.137" y1="12.300" x2="24.413" y2="12.300" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="9.762,12.300 10.262,12.050 10.137,12.300 10.262,12.550 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="9.762,12.300 10.262,12.050 10.137,12.300 10.262,12.550 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="24.788,12.300 24.288,12.550 24.413,12.300 24.288,12.050 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="24.788,12.300 24.288,12.550 24.413,12.300 24.288,12.050 "/>
+<rect x="12.700" y="5.200" width="7.050" height="7.050" fill="#0000FF" stroke="none" stroke-width="0"/>
+<rect x="12.700" y="5.200" width="7.050" height="7.050" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="19.050" y="13.250"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+2</text>
+<text x="19.600" y="13.250"  fill="#000000" text-anchor="start" font-size="1.20" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+p</text>
+<text x="11.365" y="5.565"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+2</text>
+<text x="11.915" y="5.565"  fill="#000000" text-anchor="start" font-size="1.20" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+p</text>
+<text x="24.600" y="11.850"  fill="#000000" text-anchor="start" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+1</text>
+<text x="13.900" y="3.550"  fill="#000000" text-anchor="start" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+2</text>
+<text x="13.250" y="3.250"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+Q</text>
+<text x="23.915" y="11.650"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+Q</text>
+<ellipse cx="37.290" cy="8.645" rx="6.825" ry="3.675" fill="#FFFFFF" stroke="none"  /><ellipse cx="37.290" cy="8.645" rx="6.825" ry="3.675" fill="none" stroke="#000000"  stroke-width="0.100" /><ellipse cx="37.240" cy="8.395" rx="3.525" ry="1.225" fill="#FFFFFF" stroke="none"  /><ellipse cx="37.240" cy="8.395" rx="3.525" ry="1.225" fill="none" stroke="#000000"  stroke-width="0.100" /><path stroke="#000000" fill="none" stroke-width="0.100"  d ="M 40.865,11.870 A 1.447,1.447 0 0,0 39.733,9.261 "/>
+<path stroke="#000000" fill="none" stroke-width="0.100" stroke-dasharray="0.10,0.10" d ="M 39.733,9.261 A 1.530,1.530 0 0,0 40.815,11.920 "/>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d ="M 30.715,9.420 A 10.443,10.443 0 0,0 44.115,8.645 "/>
+<text x="40.665" y="9.720"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+q</text>
+<text x="42.080" y="9.620"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+q</text>
+<text x="42.500" y="9.750"  fill="#000000" text-anchor="start" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+1</text>
+<text x="41.065" y="9.870"  fill="#000000" text-anchor="start" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+2</text>
 </svg>

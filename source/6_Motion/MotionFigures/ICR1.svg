@@ -1,0 +1,403 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 511 162"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="479.50" cy="125.50" rx="164.50" ry="164.50"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="475.50" cy="122.50" rx="187.50" ry="187.50"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-1B2CD47D-BFF6-44AC-99DC-8A1D540B622F">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="23.50" cy="31.00" rx="6.50" ry="22.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-1B2CD47D-BFF6-44AC-99DC-8A1D540B622F)"
+            transform="rotate(31 23.50 31.00)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="23.50" cy="31.00" rx="6.50" ry="22.00"
+                transform="
+                    translate(0.5 0.5)
+                    rotate(31 23.50 31.00)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-F44E7D80-3DD0-47F7-9536-53DF20AE00B6">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="23.50" cy="127.00" rx="6.50" ry="22.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-F44E7D80-3DD0-47F7-9536-53DF20AE00B6)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="23.50" cy="127.00" rx="6.50" ry="22.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M24.00 128.00
+                    L200.00 127.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M24.00 32.00
+                    L200.00 138.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-2D3F2E70-AA50-4F44-BC0F-787CF30977D1">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="183.00" cy="127.50" rx="5.00" ry="5.50"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-2D3F2E70-AA50-4F44-BC0F-787CF30977D1)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="183.00" cy="127.50" rx="5.00" ry="5.50"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(128, 0, 128)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M183.00 99.00
+                    L214.00 99.00
+                    L214.00 120.00
+                    L183.00 120.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="183.00" y="114.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">ICR</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-A17CB3A3-93CF-4741-91EA-00EC2C7DA4B1">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="315.00" cy="29.00" rx="6.50" ry="22.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-A17CB3A3-93CF-4741-91EA-00EC2C7DA4B1)"
+            transform="rotate(31 315.00 29.00)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="315.00" cy="29.00" rx="6.50" ry="22.00"
+                transform="
+                    translate(0.5 0.5)
+                    rotate(31 315.00 29.00)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-56CDBCAF-7AE2-4BE3-B43F-E97E1D513B58">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="314.50" cy="125.00" rx="6.50" ry="22.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-56CDBCAF-7AE2-4BE3-B43F-E97E1D513B58)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="314.50" cy="125.00" rx="6.50" ry="22.00"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M315.00 126.00
+                    L491.00 125.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M315.00 30.00
+                    L491.00 136.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-0E2A3920-03B9-4C17-9B65-6FBE6FADA606">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="475.00" cy="125.50" rx="5.00" ry="5.50"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-0E2A3920-03B9-4C17-9B65-6FBE6FADA606)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="475.00" cy="125.50" rx="5.00" ry="5.50"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="rgb(128, 0, 128)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M475.00 97.00
+                    L506.00 97.00
+                    L506.00 118.00
+                    L475.00 118.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="475.00" y="112.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">ICR</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

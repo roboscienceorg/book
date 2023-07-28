@@ -1,0 +1,433 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 162"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-27765148-41A5-40A8-9683-08168F356FE2">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M100.00 38.00
+                        L100.00 33.00
+                        L122.00 33.00
+                        L122.00 43.00
+                        L100.00 43.00
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M40.00 38.00
+                    L112.00 38.00
+                    "
+                clip-path="url(#clipPath-27765148-41A5-40A8-9683-08168F356FE2)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="3.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M100.27 38.00
+                    L100.27 33.27
+                    L111.00 38.00
+                    L100.27 42.73
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.73"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-2070F3AD-B3E9-4663-81F8-27A34474CAE4">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M101.00 132.00
+                        L101.00 127.00
+                        L123.00 127.00
+                        L123.00 137.00
+                        L101.00 137.00
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M41.00 132.00
+                    L113.00 132.00
+                    "
+                clip-path="url(#clipPath-2070F3AD-B3E9-4663-81F8-27A34474CAE4)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="3.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M101.27 132.00
+                    L101.27 127.27
+                    L112.00 132.00
+                    L101.27 136.73
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.73"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-DCDAEDE6-2C0D-4DF6-9359-7C105C8B755A">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="3.0" dy="3.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="115.00" y="22.00" width="100.00" height="33.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-DCDAEDE6-2C0D-4DF6-9359-7C105C8B755A)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="115.00" y="22.00" width="100.00" height="33.00"
+                fill="rgb(0, 255, 255)"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="125.77" y="44.50"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Low Pass</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Rectangle SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-F748DA04-222A-4C51-AE04-3DDECC9C15EB">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="3.0" dy="3.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <rect x="115.00" y="116.00" width="100.00" height="33.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-F748DA04-222A-4C51-AE04-3DDECC9C15EB)"
+            />
+        </g>
+        
+        
+        <!-- ** Rectangle *************** -->
+        
+        <g>
+            <rect x="115.00" y="116.00" width="100.00" height="33.00"
+                fill="rgb(0, 255, 255)"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <text x="122.62" y="138.50"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">High Pass</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M219.00 39.00
+                    L289.00 39.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="3.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M219.00 132.00
+                    L289.00 132.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="3.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-9CA57486-0075-480F-A10C-8389DED73E83">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="3.0" dy="3.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="290.00" cy="86.00" rx="21.00" ry="21.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-9CA57486-0075-480F-A10C-8389DED73E83)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="290.00" cy="86.00" rx="21.00" ry="21.00"
+                fill="rgb(0, 255, 255)"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M290.00 39.00
+                    L290.00 65.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="3.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <path
+                d="
+                    M290.00 133.00
+                    L290.00 107.00
+                    "
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="3.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M281.00 72.00
+                    L300.00 72.00
+                    L300.00 100.00
+                    L281.00 100.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="281.36" y="94.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:23px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">+</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-BA366506-CA5A-41CD-8602-614C20138B66">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M380.00 88.00
+                        L380.00 83.00
+                        L402.00 83.00
+                        L402.00 93.00
+                        L380.00 93.00
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M312.00 88.00
+                    L392.00 88.00
+                    "
+                clip-path="url(#clipPath-BA366506-CA5A-41CD-8602-614C20138B66)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="3.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                transform="translate(0.5 0.5)"
+                d="
+                    M380.27 88.00
+                    L380.27 83.27
+                    L391.00 88.00
+                    L380.27 92.73
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.73"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M12.00 12.00
+                    L89.00 12.00
+                    L89.00 33.00
+                    L12.00 33.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="12.20" y="28.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Sensor A</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M13.00 106.00
+                    L88.00 106.00
+                    L88.00 127.00
+                    L13.00 127.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="13.23" y="122.00"
+            >
+                <tspan style="font-family:LucidaGrande; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Sensor B</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

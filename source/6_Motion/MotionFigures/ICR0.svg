@@ -1,0 +1,168 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 108 178"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Ellipse SHADOW *************** -->
+        
+        <g>
+            <defs>
+                <filter id="fillShadow-1B2CD47D-BFF6-44AC-99DC-8A1D540B622F">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.4" />
+                    <feOffset dx="2.0" dy="2.0" />
+                    <!-- <feFlood flood-color="rgb(0, 0, 0);" flood-opacity="0.33" /> -->
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <ellipse cx="24.50" cy="109.00" rx="6.50" ry="22.00"
+            fill="rgb(0, 0, 0)"
+            filter="url(#fillShadow-1B2CD47D-BFF6-44AC-99DC-8A1D540B622F)"
+            transform="rotate(31 24.50 109.00)"
+            />
+        </g>
+        
+        
+        <!-- ** Ellipse *************** -->
+        
+        <g>
+            <ellipse cx="24.50" cy="109.00" rx="6.50" ry="22.00"
+                transform="
+                    translate(0.5 0.5)
+                    rotate(31 24.50 109.00)
+                    "
+                fill="rgb(0, 255, 255)"
+                stroke-width="1.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-5D414E73-53DB-4385-957F-0C5C7A829043">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M25.00 110.00
+                    L85.00 148.00
+                    "
+                clip-path="url(#clipPath-5D414E73-53DB-4385-957F-0C5C7A829043)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M83.64 140.22
+                    L87.36 156.78
+                    M77.22 150.36
+                    L93.78 146.64
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-2C763F2A-12EF-4A50-A473-6908A71E5157">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M75.13 28.67
+                        L70.89 26.02
+                        L82.57 7.37
+                        L91.05 12.68
+                        L79.37 31.32
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M24.00 109.00
+                    L81.00 18.00
+                    "
+                clip-path="url(#clipPath-2C763F2A-12EF-4A50-A473-6908A71E5157)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M75.44 28.17
+                    L71.70 25.83
+                    L80.97 19.35
+                    L79.18 30.52
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M45.00 45.00
+                    L54.00 45.00
+                    L54.00 66.00
+                    L45.00 66.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="45.00" y="60.00"
+            >
+                <tspan style="font-family:ArialMT; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">v</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

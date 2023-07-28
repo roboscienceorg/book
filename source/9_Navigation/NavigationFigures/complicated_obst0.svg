@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="7cm" height="21cm" viewBox="133 -148 134 414" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 10; stroke-linejoin: round; stroke: #ff0000" d="M 202.975,258.05 A 2,2 0 0 0 204.95,260.024"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 10; stroke-linejoin: round; stroke: #ff0000" x1="202" y1="181" x2="202.975" y2="258.05"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 10; stroke-linejoin: round; stroke: #ff0000" d="M 257.023,260.675 A 2,2 0 0 0 259.047,258.723"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 10; stroke-linejoin: round; stroke: #ff0000" x1="204.95" y1="260.024" x2="257.023" y2="260.675"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 10; stroke-linejoin: round; stroke: #ff0000" x1="259.047" y1="258.723" x2="260" y2="218.7"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="139" cy="200" rx="4.5" ry="4"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" cx="139" cy="200" rx="4.5" ry="4"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="261" cy="200.7" rx="4.5" ry="4.2"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #000000" cx="261" cy="200.7" rx="4.5" ry="4.2"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linejoin: round; stroke: #d8e5e5" x1="144.495" y1="200.032" x2="255.505" y2="200.668"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 10; stroke-linejoin: round; stroke: #ff0000" x1="232" y1="220.7" x2="232" y2="-142.3"/>
+</svg>

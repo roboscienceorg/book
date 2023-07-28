@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="59.200cm" height="34.500cm" viewBox="-5.690 5.750 53.510 40.250"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="-5.640" y="5.800" width="59.100" height="34.400" fill="#D8E5E5" stroke="none" stroke-width="0"/>
+<rect x="-5.640" y="5.800" width="59.100" height="34.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<line x1="46.295" y1="29.140" x2="47.170" y2="26.859" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="47.264,27.311 47.210,26.754 46.797,27.132 "/>
+<line x1="46.214" y1="29.091" x2="51.743" y2="26.451" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="51.501,26.844 51.844,26.403 51.285,26.393 "/>
+<line x1="46.245" y1="29.090" x2="45.151" y2="24.856" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="45.490,25.170 45.123,24.748 45.006,25.295 "/>
+<text x="47.200" y="26.070"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="47.700" y="26.470"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="44.255" y="23.795"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="44.755" y="24.195"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="52.160" y="26.520"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="52.660" y="26.920"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<line x1="-2.550" y1="31.950" x2="-2.617" y2="26.944" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-2.362,27.328 -2.619,26.832 -2.862,27.335 "/>
+<text x="-2.915" y="25.895"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="-2.415" y="26.295"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="-0.210" y="32.020"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="0.290" y="32.420"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="-2.540" y1="31.842" x2="8.280" y2="27.202" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="8.022,27.585 8.383,27.158 7.825,27.125 "/>
+<text x="0.330" y="29.670"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+a</text>
+<text x="0.830" y="30.070"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d ="M 44.445,30.460 A 0.617,0.617 0 0,0 44.345,29.236 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="44.548,28.786 44.242,29.254 44.800,29.218 "/>
+<text x="43.795" y="31.210"  fill="#000000" text-anchor="start" font-size="1.13" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+a</text>
+<text x="44.400" y="31.569"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="-2.723" y1="17.370" x2="6.268" y2="17.375" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="5.880,17.625 6.380,17.375 5.880,17.125 "/>
+<line x1="-2.773" y1="17.220" x2="-0.879" y2="14.263" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-0.878,14.725 -0.818,14.169 -1.299,14.455 "/>
+<line x1="-2.798" y1="17.170" x2="-2.856" y2="8.849" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-2.604,9.235 -2.857,8.737 -3.104,9.239 "/>
+<text x="-3.153" y="7.800"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="-2.653" y="8.200"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="-0.448" y="13.925"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="0.052" y="14.325"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="7.142" y="17.775"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="7.642" y="18.175"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="17.842" y1="17.245" x2="18.559" y2="13.420" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="18.733,13.847 18.579,13.310 18.242,13.755 "/>
+<line x1="17.817" y1="17.095" x2="17.759" y2="8.774" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="18.011,9.160 17.758,8.662 17.511,9.164 "/>
+<text x="17.462" y="7.725"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="17.962" y="8.125"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<text x="18.717" y="12.650"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="19.217" y="13.050"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="17.767" y1="17.295" x2="26.743" y2="13.634" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="26.478,14.013 26.846,13.592 26.289,13.550 "/>
+<line x1="17.980" y1="17.423" x2="26.972" y2="17.428" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="26.583,17.678 27.083,17.428 26.583,17.178 "/>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d ="M 23.295,17.323 A 4.675,4.675 0 0,0 23.025,15.687 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="23.409,15.949 22.988,15.582 22.946,16.139 "/>
+<text x="23.795" y="16.573"  fill="#000000" text-anchor="start" font-size="1.13" font-family="Standard Symbols PS" font-style="normal" font-weight="400">
+q</text>
+<text x="24.345" y="16.723"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="17.919" y1="17.214" x2="19.814" y2="14.257" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="19.815,14.719 19.874,14.163 19.394,14.449 "/>
+<line x1="38.685" y1="18.195" x2="38.627" y2="9.874" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="38.879,10.260 38.626,9.762 38.379,10.264 "/>
+<text x="38.330" y="8.825"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="38.830" y="9.225"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="38.635" y1="18.395" x2="49.519" y2="13.738" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="49.261,14.121 49.622,13.694 49.064,13.661 "/>
+<line x1="49.725" y1="10.195" x2="49.625" y2="13.700" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<line x1="38.029" y1="15.374" x2="38.071" y2="17.871" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="38.285,15.757 38.027,15.262 37.785,15.766 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="37.815,17.488 38.073,17.983 38.315,17.479 "/>
+<line x1="38.705" y1="14.772" x2="49.525" y2="10.132" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="49.267,10.515 49.628,10.088 49.070,10.055 "/>
+<text x="35.825" y="16.995"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+d</text>
+<text x="36.375" y="17.195"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="38.683" y1="14.720" x2="39.400" y2="10.895" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="39.574,11.322 39.421,10.785 39.083,11.230 "/>
+<text x="39.708" y="10.875"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="40.208" y="11.275"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="-2.617" y1="31.820" x2="-1.900" y2="27.995" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-1.726,28.422 -1.879,27.885 -2.217,28.330 "/>
+<text x="-1.592" y="27.975"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="-1.092" y="28.375"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="-2.413" y1="35.027" x2="-0.224" y2="35.002" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-0.609,35.257 -0.112,35.001 -0.615,34.757 "/>
+<line x1="-2.463" y1="34.877" x2="-1.607" y2="33.297" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-1.572,33.757 -1.553,33.198 -2.011,33.519 "/>
+<line x1="-2.488" y1="34.827" x2="-2.545" y2="32.024" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-2.288,32.407 -2.548,31.912 -2.787,32.417 "/>
+<text x="16.759" y="34.100"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="17.259" y="34.500"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="14.428" y1="33.922" x2="25.249" y2="29.282" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="24.991,29.665 25.351,29.238 24.793,29.205 "/>
+<text x="17.299" y="31.750"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+a</text>
+<text x="17.799" y="32.150"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="14.555" y1="37.107" x2="16.745" y2="37.082" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="16.360,37.337 16.857,37.081 16.354,36.837 "/>
+<line x1="14.505" y1="36.957" x2="15.362" y2="35.377" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="15.397,35.837 15.415,35.278 14.957,35.599 "/>
+<line x1="14.530" y1="36.957" x2="14.473" y2="34.154" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="14.731,34.537 14.471,34.042 14.231,34.547 "/>
+<line x1="25.269" y1="29.280" x2="25.202" y2="24.274" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="25.457,24.658 25.200,24.162 24.957,24.665 "/>
+<text x="24.904" y="23.225"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+z</text>
+<text x="25.404" y="23.625"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="25.202" y1="29.150" x2="25.919" y2="25.325" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="26.093,25.752 25.939,25.215 25.602,25.660 "/>
+<text x="26.227" y="25.305"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="26.727" y="25.705"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="25.441" y1="29.197" x2="32.145" y2="26.240" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="31.891,26.626 32.248,26.195 31.689,26.168 "/>
+<text x="27.075" y="13.725"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="27.575" y="14.125"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="49.950" y="10.145"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="50.450" y="10.545"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="8.725" y="27.065"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="9.225" y="27.465"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="32.400" y="26.285"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+x</text>
+<text x="32.900" y="26.685"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i</text>
+<text x="37.585" y="34.075"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+y</text>
+<text x="38.085" y="34.475"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="35.255" y1="33.897" x2="46.075" y2="29.256" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="45.817,29.639 46.178,29.212 45.620,29.180 "/>
+<text x="38.125" y="31.725"  fill="#000000" text-anchor="start" font-size="1.06" font-family="sans" font-style="normal" font-weight="400">
+a</text>
+<text x="38.625" y="32.125"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+i-1</text>
+<line x1="35.382" y1="37.081" x2="37.571" y2="37.057" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="37.186,37.311 37.683,37.056 37.180,36.811 "/>
+<line x1="35.332" y1="36.931" x2="36.188" y2="35.351" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="36.223,35.812 36.241,35.253 35.783,35.573 "/>
+<line x1="35.307" y1="36.881" x2="35.249" y2="34.078" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="35.507,34.461 35.247,33.966 35.007,34.471 "/>
+<text x="21.145" y="19.176"  fill="#000000" text-anchor="start" font-size="1.27" font-family="sans" font-style="normal" font-weight="400">
+Step 1</text>
+<text x="42.740" y="19.266"  fill="#000000" text-anchor="start" font-size="1.27" font-family="sans" font-style="normal" font-weight="400">
+Step 2</text>
+<text x="22.045" y="37.426"  fill="#000000" text-anchor="start" font-size="1.27" font-family="sans" font-style="normal" font-weight="400">
+Step 3</text>
+<text x="43.440" y="37.266"  fill="#000000" text-anchor="start" font-size="1.27" font-family="sans" font-style="normal" font-weight="400">
+Step 4</text>
+<text x="-1.780" y="19.091"  fill="#000000" text-anchor="start" font-size="1.27" font-family="sans" font-style="normal" font-weight="400">
+Starting Frame</text>
+<text x="2.170" y="36.791"  fill="#000000" text-anchor="start" font-size="1.27" font-family="sans" font-style="normal" font-weight="400">
+Midway</text>
+</svg>

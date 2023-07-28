@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="25cm" height="11cm" viewBox="93 97 487 206" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ff0000" points="200,99 499,99 500,301 199,302 200,259 450,259 451,142 200,142 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="200,99 499,99 500,301 199,302 200,259 450,259 451,142 200,142 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="559.5" cy="199.5" rx="5.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="559.5" cy="199.5" rx="5.5" ry="5.5"/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="548" y="184">
+    <tspan x="548" y="184">Goal</tspan>
+  </text>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 95 178 C 185,204 273.384,201 359.264,201"/>
+    <path style="fill: #000000" d="M 95 178 C 95.4163,176.559 97.2737,175.534 98.7148,175.95 C 100.156,176.367 101.181,178.224 100.764,179.665 C 100.348,181.106 98.4906,182.131 97.0495,181.715 C 95.6085,181.298 94.5837,179.441 95,178z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 95 178 C 95.4163,176.559 97.2737,175.534 98.7148,175.95 C 100.156,176.367 101.181,178.224 100.764,179.665 C 100.348,181.106 98.4906,182.131 97.0495,181.715 C 95.6085,181.298 94.5837,179.441 95,178"/>
+    <polygon style="fill: #000000" points="366.764,201 356.764,206 359.264,201 356.764,196 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="366.764,201 356.764,206 359.264,201 356.764,196 "/>
+  </g>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="397" y="207">
+    <tspan x="397" y="207">x</tspan>
+  </text>
+</svg>

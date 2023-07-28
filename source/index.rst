@@ -1,7 +1,7 @@
 
 
-Introduction to Mobile Robotics
-###############################
+Introduction to Robotics
+#########################
 
 
 .. toctree::
@@ -18,49 +18,35 @@ Introduction to Mobile Robotics
    :numbered:
    :caption: Contents
 
+   Introduction <1_Introduction/index>
+   Preliminaries <2_Preliminaries/index>
+   Fundamental Concepts <3_Concepts/index>
+   Software and Simulation <4_Simulation/index>
+   Robot Design <5_Design/index>
+   Vehicle Motion <6_Motion/index>
+   Kinematic Models <7_Kinematics/index>
+   Sensors and Sensing <8_Sensors/index>
+   Navigation <9_Navigation/index>
+   Motion Planning <10_Planning/index>
+   Motion Control <11_Control/index>
+   State Estimation <12_Filtering/index>
+   Localization and Mapping <13_Localization/index>
+   Machine Learning <14_MachineLearning/index>
 
-   Introduction <Introduction/index>
-   Basic Terms <Terms/index>
-   Robot Software <ROS/index>
-   Simulation <Simulation/index>
-   Navigation <Navigation/index>
-   Vehicle Motion <Motion/index>
-   Example Systems <RealSystems/index>
-   Electrical Concepts <Electrical/index>
-   Sensors and Sensing <Sensors/index>
-   Computer Vision <Vision/index>
-   Motion Control <Control/index>
-   Robot Design <Design/index>
-   System Integration <System/index>
-   Kinematic Models <Kinematics/index>
-   Articulated Systems <Manipulators/index>
-   Signals and Filtering <Filtering/index>
-   Kalman and Particle Filters <AdvFiltering/index>
-   Motion Planning <Planning/index>
-   Localization and Mapping <Localization/index>
-   References <ZZReferences/zrefs>
+
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Appendices
    :titlesonly:
+   :caption: Appendices
 
+   References <zReferences/zrefs>
    AppendixA <Appendix/AppendixA>
-   Mathematical Background <Math/index>
+   Electrical Concepts <Electrical/index>
+   ROS <ROS/index>
    Simulation Tools <SimTools/index>
-
-.. Note:: **Draft**  - Feedback: Jeff McGough  jeff.mcgough@sdsmt.edu
-   Most of the content is loaded.  The chapters on *Example Systems* and
-   *System Integration* still need to be developed.  The *Computer Vision*
-   and *Localization and Mapping* chapters need significant rework.  We will
-   continue to update as material is added.   This material is currently
-   used for CSC/CENG 415/515  Introduction to Robotics taught at the South Dakota
-   School of Mines and Technology.  There is a slide deck for the course
-   which roughly tracks this text (the text is ahead in edits and organization).
-   When the current course ends, the slide deck will be made available as well.
-   We are currently evaluating running this as an online course.  Thoughts
-   on this are welcome.   
+   Example Systems <RealSystems/index>
 
 
 Index

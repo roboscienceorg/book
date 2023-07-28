@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="20cm" height="9cm" viewBox="230 200 386 177" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ff0000" cx="416.5" cy="271.5" rx="74.5" ry="70.2122"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="416.5" cy="271.5" rx="74.5" ry="70.2122"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="611" cy="288" rx="4" ry="5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="611" cy="288" rx="4" ry="5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="236" cy="288" rx="4.5" ry="4.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="236" cy="288" rx="4.5" ry="4.5"/>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="240.5,288 338,288 351,343 376,338 395,376 608.172,291.536 "/>
+</svg>

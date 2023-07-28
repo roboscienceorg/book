@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="20cm" height="13cm" viewBox="21 33 382 244" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="65" y="62" width="330" height="188"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="65" y1="99.6" x2="395" y2="99.6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="65" y1="137.2" x2="395" y2="137.2"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="65" y1="174.8" x2="395" y2="174.8"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="65" y1="212.4" x2="395" y2="212.4"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="106.25" y1="62" x2="106.25" y2="250"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="147.5" y1="62" x2="147.5" y2="250"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="188.75" y1="62" x2="188.75" y2="250"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="230" y1="62" x2="230" y2="250"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="271.25" y1="62" x2="271.25" y2="250"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="312.5" y1="62" x2="312.5" y2="250"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="353.75" y1="62" x2="353.75" y2="250"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="65" y="62" width="330" height="188"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="236" y1="46" x2="274.264" y2="46"/>
+    <polygon style="fill: #000000" points="281.764,46 271.764,51 274.264,46 271.764,41 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="281.764,46 271.764,51 274.264,46 271.764,41 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="221" y="52">
+    <tspan x="221" y="52">j</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="43" y="150">
+    <tspan x="43" y="150">i</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="45" y1="167" x2="45" y2="200.264"/>
+    <polygon style="fill: #000000" points="45,207.764 40,197.764 45,200.264 50,197.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="45,207.764 40,197.764 45,200.264 50,197.764 "/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="21" y="58">
+    <tspan x="21" y="58">(0,0)</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="354" y="52">
+    <tspan x="354" y="52">(7,0)</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="23" y="239">
+    <tspan x="23" y="239">(0,4)</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="356" y="273">
+    <tspan x="356" y="273">(7,4)</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="23" y="114">
+    <tspan x="23" y="114">row</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="125" y="52">
+    <tspan x="125" y="52">column</tspan>
+  </text>
+</svg>
