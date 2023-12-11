@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="8cm" height="15cm" viewBox="146 8 154 282" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #7f7f7f" x="174" y="65" width="94" height="199"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="174" y="65" width="94" height="199"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 185 91 C 219,91 294,146 258,146 C 222,146 151,91 185,91z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 185 91 C 219,91 294,146 258,146 C 222,146 151,91 185,91"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 185.176 134.7 C 219.176,134.7 294.176,189.7 258.176,189.7 C 222.176,189.7 151.176,134.7 185.176,134.7z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 185.176 134.7 C 219.176,134.7 294.176,189.7 258.176,189.7 C 222.176,189.7 151.176,134.7 185.176,134.7"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 184.376 177.4 C 218.376,177.4 293.376,232.4 257.376,232.4 C 221.376,232.4 150.376,177.4 184.376,177.4z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 184.376 177.4 C 218.376,177.4 293.376,232.4 257.376,232.4 C 221.376,232.4 150.376,177.4 184.376,177.4"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 185.576 48.1 C 219.576,48.1 294.576,103.1 258.576,103.1 C 222.576,103.1 151.576,48.1 185.576,48.1z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 185.576 48.1 C 219.576,48.1 294.576,103.1 258.576,103.1 C 222.576,103.1 151.576,48.1 185.576,48.1"/>
+  </g>
+  <g>
+    <path style="fill: #0000ff" d="M 186.776 220.8 C 220.776,220.8 295.776,275.8 259.776,275.8 C 223.776,275.8 152.776,220.8 186.776,220.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 186.776 220.8 C 220.776,220.8 295.776,275.8 259.776,275.8 C 223.776,275.8 152.776,220.8 186.776,220.8"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="148" y1="32" x2="299" y2="121"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="221" y1="9" x2="221" y2="289"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 220,22 A 44.8747,44.8747 0 0 0 167,41"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="194" y="32">
+    <tspan x="194" y="32">g</tspan>
+  </text>
+</svg>

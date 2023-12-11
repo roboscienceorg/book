@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="14cm" height="12cm" viewBox="-25 78 270 225" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ff0000" points="-1,80 202,80 201,302 0,301 -0.993486,262 161,262 161,119 -1,119 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1,80 202,80 201,302 0,301 -0.993486,262 161,262 161,119 -1,119 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-16,192 150,192 150,244 103.007,244 143.035,223.116 "/>
+    <polygon style="fill: #000000" points="147.024,221.034 143.092,226.469 143.035,223.116 140.317,221.15 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="147.024,221.034 143.092,226.469 143.035,223.116 140.317,221.15 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="238.006" cy="194" rx="6.5" ry="6.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" cx="238.006" cy="194" rx="6.5" ry="6.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #00ff00" cx="-16.9934" cy="191" rx="6.5" ry="6.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" cx="-16.9934" cy="191" rx="6.5" ry="6.5"/>
+  </g>
+</svg>

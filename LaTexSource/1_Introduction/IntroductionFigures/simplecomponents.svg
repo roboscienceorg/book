@@ -1,0 +1,1039 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 703 468"
+    version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1, 1)">
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="0.00" y="134.00" width="184.00" height="138.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-9928D8BC-C3C5-40F8-BFE9-276DD2421FC4">
+                        <path d="
+                            M0.00 134.00
+                            L184.00 134.00
+                            L184.00 272.00
+                            L0.00 272.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="kinect.jpg" x="0.50" y="134.50" width="184.00" height="138.00"
+                    clip-path="url(#clipPath-image-9928D8BC-C3C5-40F8-BFE9-276DD2421FC4)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="31.00" y="269.00" width="121.00" height="121.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-3C231EA4-9C4C-4FA8-8AEC-1B813CC4D985">
+                        <path d="
+                            M31.00 269.00
+                            L152.00 269.00
+                            L152.00 390.00
+                            L31.00 390.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="lidar.jpg" x="31.50" y="269.50" width="121.00" height="121.00"
+                    clip-path="url(#clipPath-image-3C231EA4-9C4C-4FA8-8AEC-1B813CC4D985)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="217.00" y="242.00" width="245.00" height="176.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-44478912-0C42-415F-B294-0D3A4A169572">
+                        <path d="
+                            M217.00 242.00
+                            L462.00 242.00
+                            L462.00 418.00
+                            L217.00 418.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="asus.png" x="217.50" y="242.50" width="245.00" height="176.00"
+                    clip-path="url(#clipPath-image-44478912-0C42-415F-B294-0D3A4A169572)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="604.00" y="249.00" width="77.00" height="77.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-E70393FA-91A9-4345-8B2F-EC6D3DE3E45B">
+                        <path d="
+                            M604.00 249.00
+                            L681.00 249.00
+                            L681.00 326.00
+                            L604.00 326.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="motor.jpg" x="604.50" y="249.50" width="77.00" height="77.00"
+                    clip-path="url(#clipPath-image-E70393FA-91A9-4345-8B2F-EC6D3DE3E45B)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="523.00" y="305.00" width="85.00" height="85.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-37AE48B6-A6FD-4FEE-8557-FDF68EA4D9D8">
+                        <path d="
+                            M523.00 305.00
+                            L608.00 305.00
+                            L608.00 390.00
+                            L523.00 390.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="servo.jpg" x="523.50" y="305.50" width="85.00" height="85.00"
+                    clip-path="url(#clipPath-image-37AE48B6-A6FD-4FEE-8557-FDF68EA4D9D8)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="487.00" y="211.00" width="90.00" height="78.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-20CA11EB-DAF3-4839-827C-9C332A969BAF">
+                        <path d="
+                            M487.00 211.00
+                            L577.00 211.00
+                            L577.00 289.00
+                            L487.00 289.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="motor_controller.jpg" x="487.50" y="211.50" width="90.00" height="78.00"
+                    clip-path="url(#clipPath-image-20CA11EB-DAF3-4839-827C-9C332A969BAF)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="478.00" y="187.00" width="109.00" height="-53.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-0797CEBA-DBAE-4680-8D97-1D5879C12397">
+                        <path d="
+                            M478.00 187.00
+                            L587.00 187.00
+                            L587.00 134.00
+                            L478.00 134.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DCDC.jpg" x="478.50" y="134.50" width="109.00" height="53.00"
+                    clip-path="url(#clipPath-image-0797CEBA-DBAE-4680-8D97-1D5879C12397)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="568.00" y="27.00" width="115.00" height="86.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-CAA96628-03D5-48D6-A955-F0C8B757155F">
+                        <path d="
+                            M568.00 27.00
+                            L683.00 27.00
+                            L683.00 113.00
+                            L568.00 113.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="battery2.jpg" x="568.50" y="27.50" width="115.00" height="86.00"
+                    clip-path="url(#clipPath-image-CAA96628-03D5-48D6-A955-F0C8B757155F)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="294.00" y="138.00" width="91.00" height="83.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-808FEC69-C72E-4125-90A4-609413C1130D">
+                        <path d="
+                            M294.00 138.00
+                            L385.00 138.00
+                            L385.00 221.00
+                            L294.00 221.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="psu.jpg" x="294.50" y="138.50" width="91.00" height="83.00"
+                    clip-path="url(#clipPath-image-808FEC69-C72E-4125-90A4-609413C1130D)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Image *************** -->
+        
+        <g>
+            <rect x="283.00" y="6.00" width="113.00" height="68.00"
+                fill="none"
+                />
+            
+            <g>
+                <defs>
+                    <clipPath id="clipPath-image-62EE41FC-1C7F-4FA6-8D93-DBF690E20ECF">
+                        <path d="
+                            M283.00 6.00
+                            L396.00 6.00
+                            L396.00 74.00
+                            L283.00 74.00
+                            Z
+                            "
+                        />
+                    </clipPath>
+                </defs>
+                
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="battery.jpg" x="283.50" y="6.50" width="113.00" height="68.00"
+                    clip-path="url(#clipPath-image-62EE41FC-1C7F-4FA6-8D93-DBF690E20ECF)"
+                    />
+            </g>
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-CF1D49F0-60BB-46A0-9926-F033C491B611">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M344.50 95.50
+                        L349.50 95.50
+                        L349.50 117.50
+                        L339.50 117.50
+                        L339.50 95.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M344.00 72.00
+                    L344.00 107.00
+                    "
+                clip-path="url(#clipPath-CF1D49F0-60BB-46A0-9926-F033C491B611)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M344.50 96.09
+                    L348.91 96.09
+                    L344.50 106.50
+                    L340.09 96.09
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-8F931312-42CA-4B6F-B93B-A03D30FE555D">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M338.50 238.50
+                        L343.50 238.50
+                        L343.50 260.50
+                        L333.50 260.50
+                        L333.50 238.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M338.00 218.00
+                    L338.00 250.00
+                    "
+                clip-path="url(#clipPath-8F931312-42CA-4B6F-B93B-A03D30FE555D)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M338.50 239.09
+                    L342.91 239.09
+                    L338.50 249.50
+                    L334.09 239.09
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-CFD4688F-5533-4680-A744-987C83CC951F">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M241.50 262.87
+                        L244.26 258.70
+                        L262.60 270.86
+                        L257.07 279.19
+                        L238.74 267.04
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M165.00 212.00
+                    L251.00 269.00
+                    "
+                clip-path="url(#clipPath-CFD4688F-5533-4680-A744-987C83CC951F)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M241.99 263.19
+                    L244.42 259.51
+                    L250.67 268.95
+                    L239.55 266.87
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-56D445FC-10E6-493E-B976-2282FE1D5B77">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M228.50 288.50
+                        L228.50 283.50
+                        L250.50 283.50
+                        L250.50 293.50
+                        L228.50 293.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M147.00 288.00
+                    L240.00 288.00
+                    "
+                clip-path="url(#clipPath-56D445FC-10E6-493E-B976-2282FE1D5B77)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M229.09 288.50
+                    L229.09 284.09
+                    L239.50 288.50
+                    L229.09 292.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-03C720F6-AAF2-4F99-827B-F17C3BA11F2F">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M551.28 133.32
+                        L554.69 136.98
+                        L538.59 151.98
+                        L531.78 144.66
+                        L547.87 129.66
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M586.00 100.00
+                    L542.00 141.00
+                    "
+                clip-path="url(#clipPath-03C720F6-AAF2-4F99-827B-F17C3BA11F2F)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M550.85 133.72
+                    L553.86 136.95
+                    L543.23 140.82
+                    L547.84 130.49
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-947072A6-DA9D-40A1-864B-33D920A3D329">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M533.50 199.50
+                        L538.50 199.50
+                        L538.50 221.50
+                        L528.50 221.50
+                        L528.50 199.50
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M533.00 181.00
+                    L533.00 211.00
+                    "
+                clip-path="url(#clipPath-947072A6-DA9D-40A1-864B-33D920A3D329)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M533.50 200.09
+                    L537.91 200.09
+                    L533.50 210.50
+                    L529.09 200.09
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-9AF66618-CD9E-4CDB-8394-FF6AAE3BC588">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M592.79 277.87
+                        L593.89 272.99
+                        L615.35 277.82
+                        L613.16 287.57
+                        L591.70 282.74
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M564.00 271.00
+                    L604.00 280.00
+                    "
+                clip-path="url(#clipPath-9AF66618-CD9E-4CDB-8394-FF6AAE3BC588)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M593.36 277.99
+                    L594.33 273.69
+                    L603.52 280.28
+                    L592.40 282.30
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-2DD1B33F-60CF-41AA-8C05-C920902AFE4D">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M562.60 293.65
+                        L567.54 292.86
+                        L571.02 314.58
+                        L561.14 316.16
+                        L557.67 294.44
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M560.00 280.00
+                    L564.00 305.00
+                    "
+                clip-path="url(#clipPath-2DD1B33F-60CF-41AA-8C05-C920902AFE4D)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M562.70 294.23
+                    L567.06 293.53
+                    L564.34 304.51
+                    L558.34 294.93
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Line *************** -->
+        
+        <g>
+            <defs>
+                <clipPath id="clipPath-0CCBFB8F-24D5-4B25-AC24-1FD1654A3C0B">
+                    <path d="
+                        M-10000,-10000 h100000 v100000 h-100000 v-100000
+                        M466.97 253.83
+                        L465.58 249.03
+                        L486.72 242.92
+                        L489.50 252.53
+                        L468.36 258.64
+                        Z
+                        "
+                    clip-rule="evenodd"/>
+                </clipPath>
+            </defs>
+            
+            <path
+                d="
+                    M395.00 274.00
+                    L478.00 250.00
+                    "
+                clip-path="url(#clipPath-0CCBFB8F-24D5-4B25-AC24-1FD1654A3C0B)"
+                transform="
+                    translate(0.5 0.5)
+                    "
+                fill="none"
+                stroke-width="2.00"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="rgb(0, 0, 0)"
+                />
+            
+            
+            <path
+                d="
+                    M467.53 253.67
+                    L466.31 249.43
+                    L477.54 250.78
+                    L468.76 257.91
+                    Z
+                    "
+                fill="rgb(0, 0, 0)"
+                stroke-width="1.41"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke="rgb(0, 0, 0)"
+                />
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M67.00 157.00
+                    L117.00 157.00
+                    L117.00 182.00
+                    L67.00 182.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="66.84" y="174.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Kinect</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M68.00 247.00
+                    L115.00 247.00
+                    L115.00 270.00
+                    L68.00 270.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="67.84" y="263.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:17px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">LIDAR</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M384.00 26.00
+                    L441.00 26.00
+                    L441.00 76.00
+                    L384.00 76.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="394.82" y="43.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">CPU
+                </tspan>
+            </text>
+            <text x="383.85" y="68.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Battery</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M289.00 112.00
+                    L399.00 112.00
+                    L399.00 137.00
+                    L289.00 137.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="289.00" y="129.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Power Supply</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M520.00 26.00
+                    L577.00 26.00
+                    L577.00 76.00
+                    L520.00 76.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="523.84" y="43.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Motor
+                </tspan>
+            </text>
+            <text x="519.85" y="68.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Battery</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M595.00 148.00
+                    L653.00 148.00
+                    L653.00 173.00
+                    L595.00 173.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="594.99" y="165.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">DC-DC</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M558.00 206.00
+                    L693.00 206.00
+                    L693.00 231.00
+                    L558.00 231.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="612.52" y="223.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Controller</tspan>
+            </text>
+            <text x="607.52" y="223.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)"> </tspan>
+            </text>
+            <text x="558.20" y="223.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Motor</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M626.00 335.00
+                    L683.00 335.00
+                    L683.00 360.00
+                    L626.00 360.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="626.01" y="352.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">Motors</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M50.00 429.00
+                    L134.00 429.00
+                    L134.00 462.00
+                    L50.00 462.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="49.99" y="452.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:24px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 255)">Sensing</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M293.00 430.00
+                    L395.00 430.00
+                    L395.00 461.00
+                    L293.00 461.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="293.11" y="452.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:23px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 255)">Cognition</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M519.00 430.00
+                    L618.00 430.00
+                    L618.00 461.00
+                    L519.00 461.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="519.10" y="452.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:23px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 255)">Actuation</tspan>
+            </text>
+        </g>
+        
+        
+        <!-- ** Text *************** -->
+        
+        <g>
+            <path
+                d="
+                    M274.00 244.00
+                    L309.00 244.00
+                    L309.00 269.00
+                    L274.00 269.00
+                    Z
+                    "
+                fill="none"
+                />
+            
+            
+            <text x="273.82" y="261.00"
+            >
+                <tspan style="font-family:Avenir-Book; font-size:18px; font-style:normal; font-weight:normal;" fill="rgb(0, 0, 0)">CPU</tspan>
+            </text>
+        </g>
+        
+    </g>
+</svg>
+

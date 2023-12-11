@@ -1,0 +1,288 @@
+\hypertarget{simulation-with-noise}{%
+\section{Simulation with Noise}\label{simulation-with-noise}}
+
+You will see later on we go to great efforts to remove noise from a
+dataset. So, it might seem odd to have a section on generating noise.
+However, it is very useful to be able to generate noise for more
+realistic simulations and to test the filters that are intended to
+remove the noise. The Numpy library supports the generation of random
+numbers as well as some convenient functions to draw numbers from
+certain types of distributions. Most of our work will use normal
+distributions. The numpy function random.normal will generate random
+(well, approximately) values drawn from a normal distribution. For
+example, the following code will generate a scatter plot, see
+\texttt{fig:samplescatterplot}. The figure on the left is a plot of 100
+values. The figure on the right is a perturbation of a simple line.
+
+\hypertarget{lst:randomnumbers}{%
+\label{lst:randomnumbers}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{using} \BuiltInTok{Random}\OperatorTok{,}\NormalTok{ Distributions}\OperatorTok{,}\NormalTok{ Plots}
+\BuiltInTok{Random}\NormalTok{.seed}\OperatorTok{!}\NormalTok{(}\FloatTok{123}\NormalTok{) }\CommentTok{\# Setting the seed}
+\NormalTok{mu1 }\OperatorTok{=} \FloatTok{1.0}
+\NormalTok{sigma1 }\OperatorTok{=} \FloatTok{0.5}
+\NormalTok{d1 }\OperatorTok{=}\NormalTok{ Normal(mu1}\OperatorTok{,}\NormalTok{ sigma1)}
+\NormalTok{mu2 }\OperatorTok{=} \FloatTok{2.0}
+\NormalTok{sigma2 }\OperatorTok{=} \FloatTok{1.0}
+\NormalTok{d2 }\OperatorTok{=}\NormalTok{ Normal(mu2}\OperatorTok{,}\NormalTok{ sigma2)}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ rand(d1}\OperatorTok{,}\FloatTok{100}\NormalTok{)}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ rand(d2}\OperatorTok{,}\FloatTok{100}\NormalTok{)}
+\NormalTok{p1}\OperatorTok{=}\NormalTok{scatter(x}\OperatorTok{,}\NormalTok{y}\OperatorTok{,}\NormalTok{ratio}\OperatorTok{=}\FloatTok{1}\NormalTok{)}
+
+\NormalTok{error }\OperatorTok{=}\NormalTok{ rand(Normal(mu1}\OperatorTok{,}\NormalTok{ sigma1)}\OperatorTok{,}\FloatTok{100}\NormalTok{)}
+\NormalTok{x }\OperatorTok{=} \DataTypeTok{LinRange}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{5}\OperatorTok{,}\FloatTok{100}\NormalTok{)}
+\NormalTok{y }\OperatorTok{=} \FloatTok{2} \OperatorTok{.*}\NormalTok{ x.}\OperatorTok{+}\FloatTok{1.0}\NormalTok{ .}\OperatorTok{+}\NormalTok{ error}
+\NormalTok{p2 }\OperatorTok{=}\NormalTok{ scatter(x}\OperatorTok{,}\NormalTok{y}\OperatorTok{,}\NormalTok{ratio}\OperatorTok{=}\FloatTok{1}\NormalTok{)}
+\NormalTok{plot(p1}\OperatorTok{,}\NormalTok{p2}\OperatorTok{,}\NormalTok{ layout}\OperatorTok{=}\NormalTok{(}\FloatTok{1}\OperatorTok{,}\FloatTok{2}\NormalTok{))}
+\NormalTok{savefig(}\StringTok{"random.svg"}\NormalTok{)}
+\NormalTok{readline()}
+
+
+
+
+
+
+
+
+\NormalTok{Scatter }\KeywordTok{type}\NormalTok{ plots.  a) A scatter }\KeywordTok{type}\NormalTok{ plot.}
+\NormalTok{b)  line with lots of noise.}
+\end{Highlighting}
+\end{Shaded}
+
+Above we are sampling from a single normal distribution (univariate),
+however, later on we will need to sample from multivariate distribution.
+We provide the algorithm below or this can be done with
+np.random.multivariate\_normal.
+
+\hypertarget{lst:randomnumberswithparameters}{%
+\label{lst:randomnumberswithparameters}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{using}\NormalTok{ Distributions}\OperatorTok{,}\NormalTok{ LinearAlgebra}
+
+\NormalTok{mean }\OperatorTok{=}\NormalTok{ [}\FloatTok{0.0} \OperatorTok{;} \FloatTok{0.0}\NormalTok{]}
+\NormalTok{covar }\OperatorTok{=}\NormalTok{ [}\FloatTok{.5} \FloatTok{.05}\OperatorTok{;} \FloatTok{.05} \FloatTok{1.0}\NormalTok{]}
+\NormalTok{d }\OperatorTok{=}\NormalTok{ MvNormal(mean}\OperatorTok{,}\NormalTok{ covar)}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ rand(d}\OperatorTok{,}\FloatTok{10}\NormalTok{)}
+\NormalTok{println(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{noise-in-the-dd-robot}{%
+\subsection{Noise in the DD Robot}\label{noise-in-the-dd-robot}}
+
+The differential drive robot has two control inputs, the right and left
+wheel speeds. To simulate motion with noise, we can inject small random
+values into each iteration of the simulation. Assume that we have random
+values (or vector) \(\epsilon_i\), \(i=1,2,3\) drawn from some normal
+distribution \(N(\mu,\sigma)\). Note that the distribution \(N\) in this
+example is a Gaussian distribution, but it need not be in general.
+
+Recall the basic discrete motion equations for the differential drive:
+
+\[\begin{aligned}
+\begin{array}{l}
+ x_{k+1} = x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) \\[2mm]
+y_{k+1} = y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) \\[2mm]
+\theta_{k+1} = \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k})
+\end{array}
+\end{aligned}\]
+
+Noise can be injected directly into the state variables
+\((x,y,\theta)\):
+
+\[\begin{aligned}
+\begin{array}{l}
+ x_{k+1} = x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) + \epsilon_1\\[2mm]
+y_{k+1} = y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) + \epsilon_2\\[2mm]
+\theta_{k+1} = \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k}) + \epsilon_3
+\end{array}
+\end{aligned}\]
+
+You will note that we are adding a small amount of noise at each
+iteration step. This is not the same as adding the noise at the end
+since for the iterative process with noise injected at each step, the
+noise modifies the path at each step and has a cumulative effect. Adding
+noise at the end, will just create an end distribution which mirrors the
+distribution that the noise was drawn from. However, noise injected into
+the DD forward kinematics time step is subject to a non-linear process
+and the final distribution is not Gaussian.
+
+Simulation with random variables can be very helpful in understanding
+the exact impact of noise in a particular state's update. It also models
+the aggregate noise from various sources into a single additive term. If
+one wants to study the effects of just noise in the wheel speed, then we
+inject the noise into the \(\omega\) terms:
+
+\[\begin{aligned}
+\begin{array}{l}
+ x_{k+1} = x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k} + \epsilon_1)\cos(\theta_k)\\[2mm]
+y_{k+1} = y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k}  + \epsilon_1)\sin(\theta_k)\\[2mm]
+\theta_{k+1} = \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k} + \epsilon_2)
+\end{array}
+\end{aligned}\]
+
+Using \texttt{noisedd}, we can illustrate adding noise. This example
+uses a robot with r=20, L = 12, \(\Delta t = 0.01\) and has a simple
+turn:
+
+\[\begin{aligned}
+\begin{array}{l}
+\phi_1 = 1.0, \phi_2 = 1.0,   0 \leq t < 1.5 \\
+\phi_1 = 2.0, \phi_2 = 1.0    1.5 \leq t < 3.0 \\
+\phi_1 = 1.0, \phi_2 = 1.0    3.0 \leq t
+\end{array}
+\end{aligned}\]
+
+\hypertarget{lst:wheelvelocityfn}{%
+\label{lst:wheelvelocityfn}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{using}\NormalTok{ Distributions}\OperatorTok{,}\NormalTok{ Plots}\OperatorTok{,}\NormalTok{ StatsPlots}
+
+\KeywordTok{function}\NormalTok{ wheels(t)}
+   \KeywordTok{if}\NormalTok{ (t }\OperatorTok{\textless{}} \FloatTok{1.5}\NormalTok{)}
+\NormalTok{       w1 }\OperatorTok{=} \FloatTok{1.0}
+\NormalTok{       w2 }\OperatorTok{=} \FloatTok{1.0}
+       \KeywordTok{return}\NormalTok{ w1}\OperatorTok{,}\NormalTok{ w2}
+   \KeywordTok{end}
+   \KeywordTok{if}\NormalTok{ (t }\OperatorTok{\textless{}} \FloatTok{3}\NormalTok{)}
+\NormalTok{       w1 }\OperatorTok{=} \FloatTok{2.0}
+\NormalTok{       w2 }\OperatorTok{=} \FloatTok{1.0}
+       \KeywordTok{return}\NormalTok{ w1}\OperatorTok{,}\NormalTok{ w2}
+   \KeywordTok{end}
+\NormalTok{   w1 }\OperatorTok{=} \FloatTok{1.0}
+\NormalTok{   w2 }\OperatorTok{=} \FloatTok{1.0}
+   \KeywordTok{return}\NormalTok{ w1}\OperatorTok{,}\NormalTok{ w2}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+The setup for the simulation is
+
+\hypertarget{lst:setuparrays}{%
+\label{lst:setuparrays}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{r }\OperatorTok{=} \FloatTok{20.0}
+\NormalTok{l }\OperatorTok{=} \FloatTok{12.0}
+\NormalTok{N }\OperatorTok{=} \FloatTok{10}
+\NormalTok{dt }\OperatorTok{=} \FloatTok{0.01}
+\NormalTok{Tend }\OperatorTok{=} \FloatTok{5}
+\NormalTok{NumP }\OperatorTok{=} \DataTypeTok{Int}\NormalTok{(Tend}\OperatorTok{/}\NormalTok{dt)}
+
+\NormalTok{mu1}\OperatorTok{,}\NormalTok{ sigma1 }\OperatorTok{=} \FloatTok{0.0}\OperatorTok{,} \FloatTok{0.05}
+\NormalTok{mu2}\OperatorTok{,}\NormalTok{ sigma2 }\OperatorTok{=} \FloatTok{0.0}\OperatorTok{,} \FloatTok{0.01}
+\NormalTok{d1 }\OperatorTok{=}\NormalTok{ Normal(mu1}\OperatorTok{,}\NormalTok{ sigma1)}
+\NormalTok{d2 }\OperatorTok{=}\NormalTok{ Normal(mu2}\OperatorTok{,}\NormalTok{ sigma2)}
+\NormalTok{tp }\OperatorTok{=} \DataTypeTok{LinRange}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\NormalTok{Tend}\OperatorTok{,}\NormalTok{NumP)}
+
+\NormalTok{xpath  }\OperatorTok{=}\NormalTok{ zeros(N}\OperatorTok{,}\NormalTok{NumP)}
+\NormalTok{ypath }\OperatorTok{=}\NormalTok{ zeros(N}\OperatorTok{,}\NormalTok{NumP)}
+\NormalTok{thpath }\OperatorTok{=}\NormalTok{ zeros(N}\OperatorTok{,}\NormalTok{NumP)}
+\end{Highlighting}
+\end{Shaded}
+
+We selected the same noise range for the \(x,y\) variables but a smaller
+range for the \(\theta\) variable. Small changes in \(\theta\) variable
+can have a greater impact on the final location than small changes in
+\(x,y\). The arrays xpath, ypath and thpath are declared as two
+dimensional arrays. This is so we can store multiple paths. Meaning we
+are storing \(N\) paths which are comprised of \(Nump\) points.
+
+To create the paths we run a double loop, where the outside loop is over
+the paths and the inside loop creates the points on a specific path.
+
+\hypertarget{lst:generatepoints}{%
+\label{lst:generatepoints}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{for}\NormalTok{ k }\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\NormalTok{N}
+\NormalTok{    th }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{    x }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{    y }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{    errx }\OperatorTok{=}\NormalTok{ rand(d1}\OperatorTok{,}\NormalTok{NumP)}
+\NormalTok{    erry }\OperatorTok{=}\NormalTok{ rand(d1}\OperatorTok{,}\NormalTok{NumP)}
+\NormalTok{    errth }\OperatorTok{=}\NormalTok{ rand(d2}\OperatorTok{,}\NormalTok{NumP)}
+    \KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{2}\OperatorTok{:}\NormalTok{NumP}
+\NormalTok{        w1}\OperatorTok{,}\NormalTok{w2 }\OperatorTok{=}\NormalTok{ wheels(tp[i])}
+\NormalTok{        dx }\OperatorTok{=}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2.0}\NormalTok{)}\OperatorTok{*}\NormalTok{(w1}\OperatorTok{+}\NormalTok{w2)}\OperatorTok{*}\NormalTok{cos(th) }\OperatorTok{+}\NormalTok{ errx[i]}
+\NormalTok{        dy }\OperatorTok{=}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2.0}\NormalTok{)}\OperatorTok{*}\NormalTok{(w1}\OperatorTok{+}\NormalTok{w2)}\OperatorTok{*}\NormalTok{sin(th) }\OperatorTok{+}\NormalTok{ erry[i]}
+\NormalTok{        dth }\OperatorTok{=}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\NormalTok{(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{l))}\OperatorTok{*}\NormalTok{(w1}\OperatorTok{{-}}\NormalTok{w2) }\OperatorTok{+}\NormalTok{ errth[i]}
+\NormalTok{        x }\OperatorTok{=}\NormalTok{ x }\OperatorTok{+}\NormalTok{ dx}
+\NormalTok{        y }\OperatorTok{=}\NormalTok{ y }\OperatorTok{+}\NormalTok{ dy}
+\NormalTok{        th }\OperatorTok{=}\NormalTok{ th }\OperatorTok{+}\NormalTok{ dth}
+\NormalTok{        xpath[k}\OperatorTok{,}\NormalTok{i] }\OperatorTok{=}\NormalTok{ x}
+\NormalTok{        ypath[k}\OperatorTok{,}\NormalTok{i] }\OperatorTok{=}\NormalTok{ y}
+\NormalTok{        thpath[k}\OperatorTok{,}\NormalTok{i] }\OperatorTok{=}\NormalTok{ th}
+    \KeywordTok{end}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+This can be visualized by
+
+\hypertarget{lst:plotpoints}{%
+\label{lst:plotpoints}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot(}\FloatTok{0}\OperatorTok{,}\FloatTok{0}\OperatorTok{,}\NormalTok{legend}\OperatorTok{=}\ExtensionTok{false}\NormalTok{)}
+\KeywordTok{for}\NormalTok{ j}\OperatorTok{=}\FloatTok{1}\OperatorTok{:}\NormalTok{N}
+\NormalTok{    plot}\OperatorTok{!}\NormalTok{(xpath[j}\OperatorTok{,:}\NormalTok{]}\OperatorTok{,}\NormalTok{ ypath[j}\OperatorTok{,:}\NormalTok{]}\OperatorTok{,}\NormalTok{ legend}\OperatorTok{=}\ExtensionTok{false}\NormalTok{)}
+\KeywordTok{end}
+
+\NormalTok{p }\OperatorTok{=}\NormalTok{ plot}\OperatorTok{!}\NormalTok{(title}\OperatorTok{=}\StringTok{"Paths with noise"}\NormalTok{)}
+\NormalTok{display(p)}
+\NormalTok{readline()}
+\end{Highlighting}
+\end{Shaded}
+
+which is shown in \texttt{multiplepathsnoise}.
+
+\begin{quote}
+Multiple paths from the same starting point using a noisy model.
+\end{quote}
+
+We can keep adding additional paths to see the distribution of the final
+locations. It gets too hard to see what it going on, so we only plot the
+last point on a particular path. The noise free path is also included
+and result is shown in \texttt{multipleendpts}.
+
+\begin{quote}
+Showing the noise free path and the endpoints for the noisy paths.
+\end{quote}
+
+For linear Gaussian processs, if we ran this millions of times and then
+produced a histogram of the results, we would see a 2D normal
+distribution emerge. Cross sections of the 2D normal would be ellipses.
+The larger the ellipse the greater confidence value we have. Since this
+is \emph{not} a linear process, we don't expect a normal distribution,
+but we do expect some distribution. So we will treat this in a similar
+fashion. To compute the error ellipse for the 95\% confidence, we store
+the final points in parallel arrays for xpts and ypts, and run the
+following code block:
+
+\hypertarget{lst:covarianceellipse}{%
+\label{lst:covarianceellipse}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{A }\OperatorTok{=}\NormalTok{ [xpts ypts]}
+\NormalTok{cmat }\OperatorTok{=}\NormalTok{ cov(A)}
+\NormalTok{mx }\OperatorTok{=}\NormalTok{ mean(xpts)}
+\NormalTok{my }\OperatorTok{=}\NormalTok{ mean(ypts)}
+\NormalTok{covellipse([mx}\OperatorTok{,}\NormalTok{my]}\OperatorTok{,}\NormalTok{ cmat}\OperatorTok{,}\NormalTok{ n\_std}\OperatorTok{=}\FloatTok{2}\NormalTok{)}
+\NormalTok{plot}\OperatorTok{!}\NormalTok{(xp}\OperatorTok{,}\NormalTok{yp}\OperatorTok{,}\NormalTok{ legend}\OperatorTok{=}\ExtensionTok{false}\NormalTok{)}
+\NormalTok{p }\OperatorTok{=}\NormalTok{ scatter}\OperatorTok{!}\NormalTok{(xpts}\OperatorTok{,}\NormalTok{ ypts)}
+\NormalTok{display(p)}
+\NormalTok{savefig(}\StringTok{"ellipsepath.svg"}\NormalTok{)}
+\NormalTok{readline()}
+\end{Highlighting}
+\end{Shaded}
+
+What this does is to take the two data sets, x and y and compute the
+covariance matrix, stored in cmat.
+
+\begin{quote}
+The error ellipse.
+\end{quote}

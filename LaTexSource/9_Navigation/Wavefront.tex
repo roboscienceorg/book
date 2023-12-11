@@ -1,0 +1,78 @@
+\hypertarget{wave-front-planner}{%
+\section{\texorpdfstring{\texttt{Wave-front\ Planner}}{Wave-front Planner}}\label{wave-front-planner}}
+
+In this section we introduce the Wavefront planner. This planner is a
+breadth first search algorithm applied to the grid map domain. The
+implementation is similar to a flood fill algorithm. The Wavefront
+Algorithm searches for the minimal path from start to goal in structured
+and unstructured domains, \texttt{fig:struct\_unstruct}. Just like a
+flood fill, Wavefront is rather simple. Assume that free space is
+represented by white and occupied space is red or black (colored). Zoom
+in so you can see the actual pixels as shown in
+\texttt{fig:struct\_unstruct}.
+
+\begin{quote}
+Wavefront will apply to maze and unstructured domains.
+\end{quote}
+
+The process to find the path through the maze is simple. It is completed
+in two stages. Stage one fills the map with distance numbers from the
+goal. Stage two steps down the distances until the goal is reached.
+Tracking the steps generates the path. So, we have two parts. First is
+an algorithm called ``Fill'' which is like a flood fill in your paint
+program. The second part is the ``Descent'' algorithm. Think of the fill
+algorithm as building a hill where the start is at the top and the end
+is at the bottom. All we do is walk downhill.
+
+\begin{quote}
+Initial Maze.
+\end{quote}
+
+The Fill algorithm is easy to state. Label the goal pixel ``1". Next,
+label all unlabeled neighbors of the ``1" pixel the number ``2". Then
+label all of the unlabeled neighbors of the ``2" pixel the number ``3".
+You repeat this process by labeling all of the unlabeled neighbors of
+the pixels with the label ``k" the number ``k+1". Do this until you run
+out of unlabeled pixels.
+
+\begin{quote}
+Wavefront algorithm progress.
+\end{quote}
+
+The first three images in \texttt{fig:wavefrontprogress} give you a few
+snapshots of the process on a maze. You may note that these numbers are
+just the number of pixel steps from your current location to the goal.
+It is a travel distance. Next is the Descent algorithm. Starting at the
+start point, look around for the pixel with the smallest label or value.
+Step there and repeat the process. Continue stepping downhill until you
+reach the goal pixel.
+
+\begin{quote}
+Begin at goal pixel.\\
+Label the goal pixel 1\\
+\textbf{repeat}\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}Label
+all of the unlabeled neighbors of the pixels with the label "k" using
+the label "k+1".\\
+\textbf{until} you run out of unlabeled pixels
+
+Begin at start pixel.\\
+\textbf{repeat}\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}Pick
+the neighbor pixel with the smallest label (or value).\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}Step
+to that pixel.\\
+\textbf{until} you arrive at goal pixel.
+
+Wave front progression (0)
+
+Wave front progression (1)
+
+Wave front progression (2)
+
+Wave front progression (3)
+
+Wave front progression (4)
+
+Wavefront fill example complete.
+\end{quote}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="45cm" height="13cm" viewBox="-313 40 882 251" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffff00" cx="467.868" cy="256.084" rx="31.5" ry="31.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="467.868" cy="256.084" rx="31.5" ry="31.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="496" cy="166" rx="24" ry="124"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="496" cy="166" rx="24" ry="124"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="564" cy="230" rx="4.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="564" cy="230" rx="4.5" ry="5.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffff00" cx="-215.39" cy="164.3" rx="31.5" ry="31.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-215.39" cy="164.3" rx="31.5" ry="31.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="-131.141" cy="166.8" rx="24" ry="124"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-131.141" cy="166.8" rx="24" ry="124"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="-63.1408" cy="230.8" rx="4.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="-63.1408" cy="230.8" rx="4.5" ry="5.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffff00" cx="145.909" cy="200.1" rx="31.5" ry="31.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="145.909" cy="200.1" rx="31.5" ry="31.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="193.159" cy="166.6" rx="24" ry="124"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="193.159" cy="166.6" rx="24" ry="124"/>
+  </g>
+  <g>
+    <ellipse style="fill: #000000" cx="261.16" cy="230.6" rx="4.5" ry="5.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="261.16" cy="230.6" rx="4.5" ry="5.5"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-311.14" y1="122.8" x2="-211.456" y2="166"/>
+    <path style="fill: #000000" d="M -311.14 122.8 C -310.146,120.506 -306.858,119.206 -304.564,120.2 C -302.27,121.195 -300.97,124.482 -301.965,126.776 C -302.959,129.07 -306.247,130.37 -308.54,129.376 C -310.834,128.382 -312.134,125.094 -311.14,122.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -311.14 122.8 C -310.146,120.506 -306.858,119.206 -304.564,120.2 C -302.27,121.195 -300.97,124.482 -301.965,126.776 C -302.959,129.07 -306.247,130.37 -308.54,129.376 C -310.834,128.382 -312.134,125.094 -311.14,122.8"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-5.84084" y1="122.697" x2="109.544" y2="173"/>
+    <path style="fill: #000000" d="M -5.84084 122.697 C -4.84176,120.406 -1.55099,119.113 0.740696,120.112 C 3.03239,121.111 4.325,124.402 3.32592,126.694 C 2.32684,128.985 -0.963925,130.278 -3.25562,129.279 C -5.54731,128.28 -6.83992,124.989 -5.84084,122.697z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -5.84084 122.697 C -4.84176,120.406 -1.55099,119.113 0.740696,120.112 C 3.03239,121.111 4.325,124.402 3.32592,126.694 C 2.32684,128.985 -0.963925,130.278 -3.25562,129.279 C -5.54731,128.28 -6.83992,124.989 -5.84084,122.697"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x1="107.544" y1="173" x2="150.544" y2="208"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="304.118" y1="121.682" x2="419.504" y2="171.984"/>
+    <path style="fill: #000000" d="M 304.118 121.682 C 305.117,119.39 308.408,118.097 310.7,119.096 C 312.991,120.095 314.284,123.386 313.285,125.678 C 312.286,127.97 308.995,129.262 306.703,128.263 C 304.412,127.264 303.119,123.973 304.118,121.682z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 304.118 121.682 C 305.117,119.39 308.408,118.097 310.7,119.096 C 312.991,120.095 314.284,123.386 313.285,125.678 C 312.286,127.97 308.995,129.262 306.703,128.263 C 304.412,127.264 303.119,123.973 304.118,121.682"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #00ff00" x1="417.504" y1="171.984" x2="460.504" y2="206.984"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" d="M 459.502 208 C 469.502,232 458.502,247 474.502,275"/>
+</svg>

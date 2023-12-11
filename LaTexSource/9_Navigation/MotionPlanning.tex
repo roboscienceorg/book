@@ -1,0 +1,113 @@
+\hypertarget{basic-motion-planning}{%
+\section{Basic Motion Planning}\label{basic-motion-planning}}
+
+\hypertarget{simple-planning}{%
+\subsection{Simple Planning}\label{simple-planning}}
+
+When controlling the robot without feedback, open loop control, we
+preplan the route and then code up a list of motion instructions. For
+differential drive robots, the easiest routes to drive are combinations
+of lines and circles, \texttt{fig:simplecurvedpath}. If you have a rough
+idea of the route, place some points along the route and connect with
+line (or circle) segments. Along those segments, the differential drive
+has constant wheel speed. In practice this is difficult since one cannot
+have instant jumps in wheel velocity. This makes accurate turns
+challenging. If stopping and turning in place on the route is
+acceptable, paths with just straight lines are the easiest to develop,
+\texttt{fig:simplestraightpath}. Then is is just a matter of starting
+with the correct orientation and driving for a given amount of time.
+
+\begin{quote}
+Path with arcs
+
+Path \emph{without} arcs
+\end{quote}
+
+There is a clear problem with open loop control (preprogrammed on any
+path without sensor feedback). Any variation in the physical system can
+cause drift. This drift accumulates over time and at some point the
+robot is not driving the intended course. The other problem is that the
+path is tuned to a specific obstacle field. We must know the obstacles
+and their locations prior to moving. A more advanced algorithm would be
+able to take a goal point and using knowledge of the current robot
+location, drive itself to the goal. The basic motion algorithm attempts
+this next step.\footnote{This algorithm is slightly more general in that
+  it does not need the goal location, but just the direction to the goal
+  during the process.}
+
+\hypertarget{basic-motion-algorithm}{%
+\subsection{\texorpdfstring{\texttt{Basic\ Motion\ Algorithm}}{Basic Motion Algorithm}}\label{basic-motion-algorithm}}
+
+Assuming we have a simple obstacle map, how should we proceed? Try the
+following thought experiment. Pretend that you are in a dark room with
+tall boxes. Also pretend that you can hear a phone ringing and you can
+tell what direction it is. How would you navigate to the phone? Figuring
+that I can feel my way, I would start walking towards the phone. I keep
+going as long as there are no obstructions in my way. When I meet an
+obstacle, without sight (or a map) I can't make any sophisticated
+routing decisions. So, I decide to turn right a bit and head that way.
+If that is blocked, then I turn right a bit again. I can continue
+turning right until the path is clear. Now I should take a few steps in
+this direction to pass the obstacle. Hopefully I am clear and I can turn
+back to my original heading. I head in this direction until I run into
+another obstacle and so I just repeat my simple obstacle avoidance
+approach.
+
+\begin{quote}
+Set heading towards goal\\
+\textbf{while} Not arrived at goal \textbf{do}\\
+\hspace*{0.333em}\hspace*{0.333em}*\emph{while}* No obstacle in front
+\textbf{do}\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}Move
+forward\\
+\hspace*{0.333em}\hspace*{0.333em}end while\\
+\hspace*{0.333em}\hspace*{0.333em}count = 0\\
+\hspace*{0.333em}\hspace*{0.333em}*\emph{while}* count \textless= N
+\textbf{do}\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}*\emph{while}*
+Obstacle in front \textbf{do}\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}Turn
+right\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}*\emph{end
+while}*\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}Move
+forward\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}incr
+count\\
+\hspace*{0.333em}\hspace*{0.333em}*\emph{end while}*\\
+\hspace*{0.333em}\hspace*{0.333em}Set heading towards goal\\
+\textbf{end while}
+
+The direct path to the goal.
+
+Path using the Basic Motion algorithm.
+\end{quote}
+
+\texttt{turtlebasicmotion\_b} illustrates the idea. This algorithm is
+not completely specified. The amount of right turn and the distance
+traveled in the move forward steps is not prescribed above. Assuming
+values can be determined, will this approach work? We expect success
+when faced with convex obstacles but not necessarily for non-convex
+obstacles, \texttt{simple1motionproblem}. Using
+\texttt{simple1motionproblem} as a guide, we can construct a collection
+of convex obstacles which still foil the algorithm; this is expressed in
+\texttt{simple2motionproblem}. The robot bounces from obstacle to
+obstacle like a pinball and is wrapped around. Leaving the last obstacle
+the robot reaches the cutoff distance and then switches back to the
+``motion to goal" state. However, this sets up a cycle. So, the answer
+to the question ``does this work" is not for all cases.
+
+\begin{quote}
+Getting trapped in a non-convex solid object.
+
+A collection of convex objects can mimic a non-convex obstacle.
+\end{quote}
+
+In the Chapter~on Motion Planning, we will fully explore the challenge
+of motion planning in an environment with obstacles. It is easy to see
+how the thought experiment above can fail and more robust approaches are
+needed. Before we jump into motion planning, we want to understand what
+view of the world we can get from sensors. This is necessary so we know
+what kind of assumptions can be made when developing our algorithms.
+
+\textbf{Footnotes}

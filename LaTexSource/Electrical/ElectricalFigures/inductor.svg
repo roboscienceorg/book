@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="3cm" height="3cm" viewBox="68 100 60 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 69.6776 100 L 69.6776,112 C 79.6776,110.5 89.6776,109 89.6776,116.5 C 89.6776,124 69.6776,125.5 69.6776,121 C 69.6776,116.5 89.6776,118 89.6776,125.5 C 89.6776,133 69.6776,134.5 69.6776,130 C 69.6776,125.5 89.6776,127 89.6776,134.5 C 89.6776,142 69.6776,143.5 69.6776,139 C 69.6776,134.5 89.6776,136 89.6776,143.5 C 89.6776,151 74.6776,149.5 69.6776,148 L 69.6776,160"/>
+  <text font-size="20.32" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="116.678" y="135">
+    <tspan x="116.678" y="135">L</tspan>
+  </text>
+</svg>

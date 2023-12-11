@@ -1,0 +1,300 @@
+\hypertarget{mathematical-notation}{%
+\section{Mathematical Notation}\label{mathematical-notation}}
+
+This text will use italicized letters for the variables in formulas:
+\(x\). We will not distinguish scalar (single) variables from vector
+(array) variables. Scalar and vector quantities will normally be lower
+case (unless we need to be consistent with a well known formula). When
+possible, elements of a vector will be indexed using a subscript
+\(x_k\). Matrices will be indicated using italicized uppercase, \(M\).
+Discrete time steps will be indicated by superscripts, \(x^k\).
+
+\texttt{Notation} related to robotics:
+
+\begin{itemize}
+\tightlist
+\item
+  Real line: \({\mathbb R}\)
+\item
+  Plane: \({\mathbb R}^2\)
+\item
+  Space: \({\mathbb R}^3\)
+\item
+  Workspace: \({\cal W}\)
+\item
+  Workspace Obstacles: \({\cal W}{\cal O}_i\)
+\item
+  Free space: \({\cal W}\setminus \bigcup_i {\cal W}{\cal O}_i\)
+\item
+  Point in space: \(x \in {\mathbb R}^n\)
+  \(x = (x_1, x_2, x_3, \dots, x_n)\)
+\item
+  Vector: \(\vec{v} \in {\mathbb R}^n\),
+  \(v = [v_1, v_2, \dots , v_n]^T\).
+\item
+  Bounded workspace: \({\cal W} \subset B_r(x)\)
+  \(\equiv \{ y \in {\mathbb R}^n | d(x,y) < r\}\) for some
+  \(0 < r < \infty\).
+\end{itemize}
+
+We will use several forms of notation for derivatives. Let \(f(x)\) be a
+differentiable function, both Newton's notation, \(f'(x)\), and
+Leibniz's notation, \(df/dx\), will be employed. Specifically for
+derivatives of functions of time, we will also use the superscript dot
+notation, \(\dot{g}\). The dot product and cross product of two vectors
+will be denoted by \(x \cdot y\) and \(x \times y\) respectively. Matrix
+vector and matrix matrix products will be denoted by \(Ax\) and \(AB\).
+The normal matrix multiplication is implied. Rarely will we need to do
+element-wise matrix and vector operations. Those will be written out
+since they don't occur often enough to warrant custom notation.
+
+There is a temptation for some authors to present material in the most
+abstract setting possible. It can be argued that this provides the most
+general case (widest application). In addition, one should remove the
+specifics of any application so the abstract formulation represents the
+core concept at its purest form. In many cases this is true. At times it
+is also true that the author is trying to impress his or her audience
+with their mathematical talent using an assault of symbols. At times I
+am sure you will feel this way, but we have made significant effort to
+keep the mathematical level in the first two years of an engineering
+curriculum (Calculus, Differential Equations, Linear Algebra,
+Probability).
+
+\hypertarget{parametric-form}{%
+\subsection{\texorpdfstring{\texttt{Parametric}
+Form}{Parametric Form}}\label{parametric-form}}
+
+Say you want to traverse a path \(C\), shown in Figure~
+\texttt{Fig:intro-path}
+
+\begin{quote}
+A path for an explicitly defined function.
+
+A path for a parametric function.
+\end{quote}
+
+The path \(C\) often will come from some function description of the
+curve \(y = f(x)\). This type of description will work for many paths,
+but fails for a great number of interesting paths like circles:
+\(x^2 + y^2 = 1\). We want the robot to wander around in the plane
+crossing our own path which certainly is not the graph of a function.
+So, we must move to a parametric description of the path (actually a
+piecewise parametric description).
+
+The first step is to write in \texttt{parametric\ form}: \(x(t)\),
+\(y(t)\). Example: convert \(y=x^2\) to parametric
+
+\[\mbox{Let } x = t  \quad \to \quad y = x^2 = t^2\]
+
+Note that there are an infinite number of choices. Let
+
+\begin{quote}
+\[\begin{aligned}
+\begin{array}{l}
+x = 2t  \quad \to \quad y = x^2 = 4t^2 \\
+x = e^t  \quad  \to \quad y = x^2 = e^{2t} \\
+x = \tan(t) \quad \to \quad y = x^2 = \tan^2(t)
+\end{array}
+\end{aligned}\]
+\end{quote}
+
+and so forth.
+
+All the parametric forms provide the same curve, same shape, same
+geometry. They vary in the speed. Think of the function form telling you
+the shape, like the shape of a road, but not the velocity. The
+parametric form gives you both path shape and velocity. We will assume
+that you can find parametric functions \(x = \phi(t)\) and
+\(y = \psi(t)\) such that the graph is \(y=f(x)\) which generates the
+path \(C\) of interest.
+
+\hypertarget{example-functions}{%
+\subsubsection{Example Functions}\label{example-functions}}
+
+Some examples of parametric forms may help in getting good at writing
+these down.
+
+\begin{description}
+\item[Line]
+\(x(t) = t\), \(y(t) = mt + b\), where \(m\) is the slope and \(b\) is
+the intercept.
+\item[Circle]
+\(x(t) = R \cos(t) + h\), \(y(t) = R \sin(t) + k\), where the radius is
+\(R\) and the center is \((h,k)\).
+\item[Ellipse]
+\(x(t) = A \cos(t) + h\), \(y(t) = B \sin(t) + k\), where \(A\) and
+\(B\) describe the major and minor axes and the center is \((h,k)\).
+\item[Lissajous]
+\(x(t) = A\sin(at)\), \(y(t) = B \sin(bt)\) (\texttt{Fig:intro-path2}
+\(A=1\), \(B=1\), \(a=3\), \(b=4\)). Infinity: \(A=1\), \(B=0.25\),
+\(a=1\), \(b=2\)
+\item[Root]
+\(x(t) =  t^2\), \(y(t) = t\).
+\item[Heart]
+\(x(t) = 16\sin^3(t)\),
+\(y(t) = 13\cos(t) - 5\cos(2t) -2\cos(3t) - \cos(4t)\)
+\end{description}
+
+\hypertarget{calculus}{%
+\subsection{Calculus}\label{calculus}}
+
+Robotics requires good calculus skills (along with linear algebra,
+differential equations and probablity).
+
+The derivative of a function \(x(t)\) is
+
+\[\displaystyle \frac{dx}{dt}\]
+
+This text will follow the standard notation for derivatives:
+
+\[f'(x) \equiv \displaystyle \frac{df}{dx}\]
+
+\[\dot{x} \equiv \displaystyle \frac{dx}{dt}\]
+
+The chain rule will be used very often
+
+\[\displaystyle \frac{d}{dt} f(g(t))  = f'(g(t)) \frac{dg}{dt}\]
+
+For example
+
+\[\displaystyle \frac{d}{dt} \sin(\theta(t))  = \cos(\theta(t)) \dot{\theta}\]
+
+Since the digital systems use discrete data, we often must use a
+discrete approximation of the derivative. This is also known as a
+\texttt{finite\ difference}. The following approximations will be used:
+
+\[\frac{dx}{dt} \approx \frac{x(t+\Delta t) - x(t)}{\Delta t}\]
+
+If our data lies on a grid: \(t_k\) where \(t_k - t_{k-1} = \Delta t\),
+or \(t_k \equiv k\Delta t\) and let \(x(t_k) \to x_k\) we have:
+
+\[\frac{dx}{dt} \approx \frac{x(t_k+\Delta t) - x(t_k)}{\Delta t} = \frac{x_{k+1} - x_k}{\Delta t}\]
+
+This is known as a \texttt{forward\ difference}. A
+\texttt{backwards\ difference} is
+
+\[\frac{dx}{dt} \approx \frac{x_{k} - x_{k-1}}{\Delta t}\]
+
+For completeness, a \texttt{central\ difference} is given by
+
+\[\frac{dx}{dt} \approx \frac{x_{k+1} - x_{k-1}}{2\Delta t}\]
+
+We will also need a second derivative. In this case we only present the
+central difference.
+
+\[\frac{d^2x}{dt^2} \approx \frac{x_{k+1} -2x_k + x_{k-1}}{\Delta t^2}\]
+
+This is often used to approximate differential equations producing a
+difference equation. This is \texttt{Euler\textquotesingle{}s\ Method}.
+We approximate
+
+\[\frac{dx}{dt} = f(x)\]
+
+by
+
+\[\frac{x_{k+1} - x_k}{\Delta t} \approx \frac{dx}{dt} = f(x)\]
+
+or
+
+\[x_{k+1} - x_k = \Delta t f(x_k) \quad\Rightarrow\quad x_{k+1} = x_k + \Delta t f(x_k)\]
+
+\hypertarget{vectors-matrices-and-linear-systems}{%
+\subsection{Vectors, Matrices and Linear
+Systems}\label{vectors-matrices-and-linear-systems}}
+
+A \texttt{vector} is a list of numbers. It can be used to represent
+physical quantities like force and direction. It can be expressed as
+
+\[\vec{x} = \left< x_1, x_2, x_3, \dots , x_n \right>.\]
+
+The notation for a point in n-dimensional space and a n-dimensional
+vector are similar: \(\vec{x}\in \mathbb{R}^n\):
+\(\vec{x} = (x_1, x_2, ... x_n)\), and also written as
+
+\[\begin{aligned}
+\vec{x} = \left(\begin{array}{c} x_1 \\ x_2 \\ \vdots
+\\ x_n \end{array}\right).
+\end{aligned}\]
+
+If the context is understood, the small arrow above the variable is left
+off, so \(\vec{x}\) becomes \(x\). The basic datatype used in scientific
+computing is the array. Arrays are used to store points, vectors,
+matrices and other mathematical constructs. The basic operations defined
+on vectors are listed below. Let \(c\in \mathbb{R}\) and \(x,y \in
+\mathbb{R}^n\), then
+
+\begin{itemize}
+\tightlist
+\item
+  Sum: \(x+y = \{ x_1 + y_1, x_2 + y_2, \dots, x_n + y_n\}\)
+\item
+  Scalar multiplication: \(cx = \{ cx_1, cx_2, \dots , cx_n\}\)
+\item
+  Inner product (related to angle): \(x \cdot y = \sum_{i=1}^n x_iy_i\)
+\item
+  Norm (length): \(\| x \| = \sqrt{\sum_{i=1}^n x_i^2}\)
+\item
+  Norm as multiplication: \(\| x \|^2 = x^T x\)
+\end{itemize}
+
+We will make use of matrix algebra and will follow the normal
+conventions. Let \(A, B \in \mathbb{R}^{n\times n}\),
+
+\[\begin{aligned}
+A =
+\left( \begin{array}{ccc}a_{11}&\dots&a_{1n}\\ \dots & \dots & \dots
+\\ a_{n1} & \dots & a_{nn}\end{array}\right), \quad B =
+\left( \begin{array}{ccc}b_{11}&\dots&b_{1n}\\ \dots & \dots & \dots
+\\ b_{n1} & \dots & b_{nn}\end{array}\right).
+\end{aligned}\]
+
+Matrix addition and multiplication are defined in the standard manner as
+
+\begin{itemize}
+\tightlist
+\item
+  \(A+B=\left( \begin{array}{ccc}a_{11}+b_{11}&\dots&a_{1n}+b_{1n}\\ \dots & \dots & \dots \\ a_{n1}+b_{n1} & \dots & a_{nn}+b_{nn}\end{array}\right)\)
+\item
+  \(AB =\left( \begin{array}{ccc}c_{11}&\dots&c_{1n}\\ \dots & \dots & \dots\\ c_{n1} & \dots & c_{nn}\end{array}\right)\),
+\end{itemize}
+
+where the entries are \(c_{ij} = \sum_k a_{ik}b_{kj}\)
+
+Matrix vector multiplication occurs often and is given by
+
+\begin{itemize}
+\tightlist
+\item
+  \(Ax = \left( \begin{array}{ccc}a_{11}&\dots&a_{1n}\\ \dots & \dots & \dots\\ a_{n1} & \dots & a_{nn}\end{array}\right)\left(\begin{array}{c} x_1 \\ x_2 \\ \vdots\\ x_n \end{array}\right) =   \left(\begin{array}{c} \sum_k a_{1k}x_k \\ \sum_k a_{2k}x_k \\ \vdots\\ \sum_k a_{nk}x_k \end{array}\right)\)
+\end{itemize}
+
+The identity element and the matrix transpose are given by
+
+\begin{itemize}
+\tightlist
+\item
+  \(I=\left( \begin{array}{ccccc}1&0&\dots&0&0\\ 0&1&\dots&0&0\\ \vdots&\vdots & \ddots & \vdots & \vdots\\ 0& 0 & \dots& 1 & 0  \\ 0& 0 &  \dots &0& 1  \end{array}\right)\)
+\item
+  Transpose: \(A^T\): \(\{ a_{ij}\}^T = \{ a_{ji}\}\) Example: If \(A =
+  \left( \begin{array}{ccc}1 & 2 & 3 \\ 4 & 5 & 6
+  \\ 7 & 8 & 9\end{array}\right)\) then \(A^T =
+  \left( \begin{array}{ccc}1 & 4 & 7 \\ 2 & 5 & 8
+  \\ 3 & 6 & 9\end{array}\right)\)
+\end{itemize}
+
+Some additional matrix terms and properties:
+
+\begin{itemize}
+\tightlist
+\item
+  The matrix determinant is indicated by det(\(A\))
+\item
+  The transpose formula is given by \((AB)^T=B^TA^T\)
+\item
+  The determinant formula is given by det(\(AB\)) = det(\(A\))det(\(B\))
+\item
+  A symmetric matrix is defined by \(A^T = A\)
+\item
+  A symmetric positive definite matrix satisfies \(x^T A x >0\) for
+  \(x \neq 0\).
+\end{itemize}

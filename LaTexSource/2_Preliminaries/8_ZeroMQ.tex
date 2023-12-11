@@ -1,0 +1,299 @@
+\hypertarget{zeromq}{%
+\section{ZeroMQ}\label{zeromq}}
+
+ZeroMQ is an open-source universal messaging library. It will provide a
+clean and portable communication API that sits on top of the basic
+socket implementation. For us, it means that we can focus our attention
+on the communications without getting mired down in the details of the
+way the socket is implemented in the language and operating system. It
+will help us develop portable code as well as more robust code. ZeroMQ
+supports the various communication styles we have discussed (and more).
+
+At this point you may ask, ``why not use ROS''? ROS indeed will do what
+we need and is vastly popular in the robotics community. This book is
+about concepts. With a few exceptions, we are going to develop the
+programs we need. We do not need the whole ROS ecosystem. We need
+interprocess communications; we need some type of messaging system. ROS
+is large. ROS is under active development and can, at times, be
+challenging to install as well as use. ZeroMQ is much smaller, with
+bindings for many languages and, for us, is a library available to the
+Julia interpreter (as well as many other languages).
+
+We are only going to introduce ZeroMQ. To really learn about it,
+especially for applications outside what we need, please refer to the
+Guide: \url{http://zguide.zeromq.org/} . The guide is mostly examples in
+C, but there are some Julia examples which can be used as starting code.
+In addition there are examples from other language such as Python which
+address ZeroMQ: \url{https://pyzmq.readthedocs.io/en/latest/} and
+\url{https://learning-0mq-with-pyzmq.readthedocs.io/en/latest/} .
+
+The easiest to understand is the REP pattern. It is a direct peer to
+peer client server communication pattern. This is known as REQUEST -
+REPLY.
+
+\begin{quote}
+Pair Communication using ZMQ.
+\end{quote}
+
+A basic example is taken from the ZeroMQ guide. Here is a client server
+example. The Server code:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#!/usr/bin/env julia}
+
+\CommentTok{\#}
+\CommentTok{\# Hello World server in Julia}
+\CommentTok{\# Binds REP socket to tcp://*:5555}
+\CommentTok{\# Expects "Hello" from client, replies "World"}
+\CommentTok{\#}
+
+\KeywordTok{using}\NormalTok{ ZMQ}
+
+\NormalTok{context }\OperatorTok{=}\NormalTok{ Context()}
+\NormalTok{socket }\OperatorTok{=}\NormalTok{ Socket(context}\OperatorTok{,}\NormalTok{ REP)}
+\NormalTok{ZMQ.bind(socket}\OperatorTok{,} \StringTok{"tcp://*:5555"}\NormalTok{)}
+
+\KeywordTok{while} \ExtensionTok{true}
+    \CommentTok{\# Wait for next request from client}
+\NormalTok{    message }\OperatorTok{=} \DataTypeTok{String}\NormalTok{(ZMQ.recv(socket))}
+\NormalTok{    println(}\StringTok{"Received request: $message"}\NormalTok{)}
+
+    \CommentTok{\# Do some \textquotesingle{}work\textquotesingle{}}
+\NormalTok{    sleep(}\FloatTok{1}\NormalTok{)}
+
+    \CommentTok{\# Send reply back to client}
+\NormalTok{    ZMQ.send(socket}\OperatorTok{,} \StringTok{"World"}\NormalTok{)}
+\KeywordTok{end}
+
+\CommentTok{\# classy hit men always clean up when finish the job.}
+\NormalTok{ZMQ.close(socket)}
+\NormalTok{ZMQ.close(context)}
+\end{Highlighting}
+\end{Shaded}
+
+And the client:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#!/usr/bin/env julia}
+
+\CommentTok{\#}
+\CommentTok{\# Hello World client in Julia}
+\CommentTok{\# Connects REQ socket to tcp://localhost:5555}
+\CommentTok{\# Sends "Hello" to server, expects "World" back}
+\CommentTok{\#}
+
+\KeywordTok{using}\NormalTok{ ZMQ}
+
+\NormalTok{context }\OperatorTok{=}\NormalTok{ Context()}
+
+\CommentTok{\# Socket to talk to server}
+\NormalTok{println(}\StringTok{"Connecting to hello world server..."}\NormalTok{)}
+\NormalTok{socket }\OperatorTok{=}\NormalTok{ Socket(context}\OperatorTok{,}\NormalTok{ REQ)}
+\NormalTok{ZMQ.connect(socket}\OperatorTok{,} \StringTok{"tcp://localhost:5555"}\NormalTok{)}
+
+\KeywordTok{for}\NormalTok{ request }\KeywordTok{in} \FloatTok{1}\OperatorTok{:}\FloatTok{10}
+\NormalTok{    println(}\StringTok{"Sending request $request ..."}\NormalTok{)}
+\NormalTok{    ZMQ.send(socket}\OperatorTok{,} \StringTok{"Hello"}\NormalTok{)}
+
+    \CommentTok{\# Get the reply.}
+\NormalTok{    message }\OperatorTok{=} \DataTypeTok{String}\NormalTok{(ZMQ.recv(socket))}
+\NormalTok{    println(}\StringTok{"Received reply $request [ $message ]"}\NormalTok{)}
+\KeywordTok{end}
+
+\CommentTok{\# Making a clean exit.}
+\NormalTok{ZMQ.close(socket)}
+\NormalTok{ZMQ.close(context)}
+\end{Highlighting}
+\end{Shaded}
+
+Copy these two programs to two files, server.jl and client.jl. In
+different shells (separate terminals run them (enter on the command
+line) using:
+
+\begin{verbatim}
+$ julia server.jl
+\end{verbatim}
+
+\begin{verbatim}
+$ julia client.jl
+\end{verbatim}
+
+Note that control-c will kill the server process. If you change the
+permissions by setting the execute bit, you can run the file. We will go
+line by line through the code to understand how this works. To bring in
+the ZeroMQ library:
+
+\begin{verbatim}
+import ZMQ
+\end{verbatim}
+
+Each process needs a container for the sockets. This container is called
+a context:
+
+\begin{verbatim}
+context = zmq.Context()
+\end{verbatim}
+
+We can create a socket in the context:
+
+\begin{verbatim}
+socket = ZMQ.Socket(ZMQ.REP)
+\end{verbatim}
+
+A socket is a communication conduit. This is a request-reply type of
+socket indicated by 'REP'. We need to select the communication protocol
+(tcp), label the address and select the port (5555):
+
+\begin{verbatim}
+ZMQ.bind(socket,"tcp://*:5678")
+\end{verbatim}
+
+Note that there is nothing special about 5678. We hope that it is high
+enough not to overlap ports used by other programs. To receive a
+message:
+
+\begin{verbatim}
+message = ZMQ.recv(socket)
+\end{verbatim}
+
+To send a message:
+
+\begin{verbatim}
+ZMQ.send(socket, "Hello")
+\end{verbatim}
+
+The string function converts byte code to unicode.
+
+\begin{verbatim}
+message = String(ZMQ.recv(socket))
+\end{verbatim}
+
+In Julia (and Python) strings are stored using Unicode. ZeroMQ uses byte
+strings, not Unicode. In Julia, the the ZMQ send command will take a
+unicode string and the conversion to a byte string is done
+automatically. The receive commend returns a byte string which can be
+converted using the String function.
+
+We take the previous example and code up a client server example where
+the client sends 10 (x,y) pairs to a server which computes the Two Link
+Manipulator Inverse Kinematics for each.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#!/usr/bin/env julia}
+
+\CommentTok{\#}
+\CommentTok{\#   Weather update server}
+\CommentTok{\#   Binds PUB socket to tcp://*:5556}
+\CommentTok{\#   Publishes random weather updates}
+\CommentTok{\#}
+
+\KeywordTok{using}\NormalTok{ ZMQ}
+
+\NormalTok{context }\OperatorTok{=}\NormalTok{ Context()}
+\NormalTok{socket }\OperatorTok{=}\NormalTok{ Socket(context}\OperatorTok{,}\NormalTok{ PUB)}
+\NormalTok{bind(socket}\OperatorTok{,} \StringTok{"tcp://*:5556"}\NormalTok{)}
+
+\KeywordTok{while} \ExtensionTok{true}
+\NormalTok{    zipcode }\OperatorTok{=}\NormalTok{ rand(}\FloatTok{10000}\OperatorTok{:}\FloatTok{99999}\NormalTok{)}
+\NormalTok{    temperature }\OperatorTok{=}\NormalTok{ rand(}\OperatorTok{{-}}\FloatTok{80}\OperatorTok{:}\FloatTok{135}\NormalTok{)}
+\NormalTok{    relhumidity }\OperatorTok{=}\NormalTok{ rand(}\FloatTok{10}\OperatorTok{:}\FloatTok{60}\NormalTok{)}
+\NormalTok{    message }\OperatorTok{=} \StringTok{"$zipcode $temperature $relhumidity"}
+\NormalTok{    send(socket}\OperatorTok{,}\NormalTok{ message)}
+\NormalTok{    yield()}
+\KeywordTok{end}
+
+\NormalTok{close(socket)}
+\NormalTok{close(context)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#!/usr/bin/env julia}
+
+\CommentTok{\#}
+\CommentTok{\#   Weather update client}
+\CommentTok{\#   Connects SUB socket to tcp://localhost:5556}
+\CommentTok{\#   Collects weather updates and finds avg temp in zipcode}
+\CommentTok{\#}
+
+\KeywordTok{using}\NormalTok{ ZMQ}
+
+\NormalTok{context }\OperatorTok{=}\NormalTok{ Context()}
+\NormalTok{socket }\OperatorTok{=}\NormalTok{ Socket(context}\OperatorTok{,}\NormalTok{ SUB)}
+
+\NormalTok{println(}\StringTok{"Collecting updates from weather server..."}\NormalTok{)}
+\NormalTok{connect(socket}\OperatorTok{,} \StringTok{"tcp://localhost:5556"}\NormalTok{)}
+
+\CommentTok{\# Subscribe to zipcode, default is NYC, 10001}
+\NormalTok{zip\_filter }\OperatorTok{=}\NormalTok{ length(}\ConstantTok{ARGS}\NormalTok{) }\OperatorTok{\textgreater{}} \FloatTok{0}\NormalTok{ ? int(}\ConstantTok{ARGS}\NormalTok{[}\FloatTok{1}\NormalTok{]) }\OperatorTok{:} \FloatTok{10001}
+
+\NormalTok{subscribe(socket}\OperatorTok{,}\NormalTok{ string(zip\_filter))}
+
+\CommentTok{\# Process 5 updates}
+\NormalTok{update\_nbr }\OperatorTok{=} \FloatTok{5}
+
+\NormalTok{total\_temp }\OperatorTok{=} \FloatTok{0}
+\KeywordTok{for}\NormalTok{ update }\KeywordTok{in} \FloatTok{1}\OperatorTok{:}\NormalTok{update\_nbr}
+    \KeywordTok{global}\NormalTok{ total\_temp}
+\NormalTok{    message }\OperatorTok{=}\NormalTok{ unsafe\_string(recv(socket))}
+\NormalTok{    zipcode}\OperatorTok{,}\NormalTok{ temperature}\OperatorTok{,}\NormalTok{ relhumidity }\OperatorTok{=}\NormalTok{ split(message)}
+\NormalTok{    total\_temp }\OperatorTok{+=}\NormalTok{ parse(}\DataTypeTok{Int}\OperatorTok{,}\NormalTok{ temperature)}
+\KeywordTok{end}
+
+\NormalTok{avg\_temp }\OperatorTok{=}\NormalTok{ total\_temp }\OperatorTok{/}\NormalTok{ update\_nbr}
+
+\NormalTok{println(}\StringTok{"Average temperature for zipcode $zip\_filter was $(avg\_temp)F"}\NormalTok{)}
+
+\CommentTok{\# Making a clean exit.}
+\NormalTok{close(socket)}
+\NormalTok{close(context)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{import}\NormalTok{ ZMQ}
+
+\NormalTok{pub }\OperatorTok{=}\NormalTok{ ZMQ.Socket(ZMQ.PUB)}
+\NormalTok{ZMQ.bind(pub}\OperatorTok{,} \StringTok{"tcp://*:5678"}\NormalTok{)}
+
+
+\KeywordTok{for}\NormalTok{ i }\KeywordTok{in} \FloatTok{1}\OperatorTok{:}\FloatTok{20}
+    \CommentTok{\#  Do some \textquotesingle{}work\textquotesingle{}}
+\NormalTok{    sleep(}\FloatTok{1}\NormalTok{)}
+\NormalTok{    println(i)}
+    \CommentTok{\#  Send to client}
+\NormalTok{    ZMQ.send(pub}\OperatorTok{,}\StringTok{"Hello"}\NormalTok{)}
+\KeywordTok{end}
+
+\NormalTok{ZMQ.send(pub}\OperatorTok{,}\StringTok{"0"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{import}\NormalTok{ ZMQ}
+
+
+\CommentTok{\#  Socket to talk to server}
+\NormalTok{println(}\StringTok{"Connecting to hello world server…"}\NormalTok{)}
+\NormalTok{sub }\OperatorTok{=}\NormalTok{ ZMQ.Socket(ZMQ.SUB)}
+\NormalTok{ZMQ.subscribe(sub)}
+\NormalTok{ZMQ.connect(sub}\OperatorTok{,} \StringTok{"tcp://localhost:5678"}\NormalTok{)}
+
+
+\CommentTok{\#  Do 10 requests, waiting each time for a response}
+\KeywordTok{while} \ExtensionTok{true}
+    \CommentTok{\#  Get the reply.}
+\NormalTok{    message }\OperatorTok{=} \DataTypeTok{String}\NormalTok{(ZMQ.recv(sub))}
+\NormalTok{    println(message)}
+    \KeywordTok{if}\NormalTok{ message }\OperatorTok{==} \StringTok{"0"}
+        \KeywordTok{break}
+    \KeywordTok{end}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}

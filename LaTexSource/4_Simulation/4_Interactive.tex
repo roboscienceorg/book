@@ -1,0 +1,360 @@
+\hypertarget{simulation-code-examples}{%
+\section{Simulation Code Examples}\label{simulation-code-examples}}
+
+This section is here to provide some examples of simulations and
+interactive code.
+
+The first cell imports the libraries. First time use you will need to
+add the package. The commented code gives an example for adding the
+Interact package.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#using Pkg}
+\CommentTok{\#Pkg.add("Interact")}
+
+\KeywordTok{using}\NormalTok{ Interact}
+\KeywordTok{using}\NormalTok{ Plots}
+\KeywordTok{using}\NormalTok{ LinearAlgebra}
+\end{Highlighting}
+\end{Shaded}
+
+If you have a series of joint values, here is how you might compute the
+end-effector location and list the values.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a1}\OperatorTok{,}\NormalTok{ a2 }\OperatorTok{=} \FloatTok{10}\OperatorTok{,} \FloatTok{10}
+\NormalTok{θ}\FloatTok{1} \OperatorTok{=}\NormalTok{ range(π}\OperatorTok{/}\FloatTok{4}\OperatorTok{,}\NormalTok{ π}\OperatorTok{/}\FloatTok{3}\OperatorTok{,}\NormalTok{ length }\OperatorTok{=} \FloatTok{10}\NormalTok{)}
+\NormalTok{θ}\FloatTok{2} \OperatorTok{=}\NormalTok{ range(π}\OperatorTok{/}\FloatTok{6}\OperatorTok{,}\NormalTok{ π}\OperatorTok{/}\FloatTok{4}\OperatorTok{,}\NormalTok{ length }\OperatorTok{=} \FloatTok{10}\NormalTok{)}
+\KeywordTok{for}\NormalTok{ i }\KeywordTok{in} \FloatTok{1}\OperatorTok{:}\FloatTok{10}
+\NormalTok{    x }\OperatorTok{=}\NormalTok{ a2}\OperatorTok{*}\NormalTok{cos(θ}\FloatTok{1}\NormalTok{[i]}\OperatorTok{+}\NormalTok{θ}\FloatTok{2}\NormalTok{[i]) }\OperatorTok{+}\NormalTok{ a1}\OperatorTok{*}\NormalTok{cos(θ}\FloatTok{1}\NormalTok{[i])}
+\NormalTok{    y }\OperatorTok{=}\NormalTok{ a2}\OperatorTok{*}\NormalTok{sin(θ}\FloatTok{1}\NormalTok{[i]}\OperatorTok{+}\NormalTok{θ}\FloatTok{2}\NormalTok{[i]) }\OperatorTok{+}\NormalTok{ a1}\OperatorTok{*}\NormalTok{sin(θ}\FloatTok{1}\NormalTok{[i])}
+\NormalTok{    println(}\StringTok{"x = "}\OperatorTok{,}\NormalTok{ x}\OperatorTok{,} \StringTok{", y = "}\OperatorTok{,}\NormalTok{ y)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+Normally we want to provide \((x,y)\) location data and the compute the
+joint values. So the inverse kinematics is first. In this next example
+we will use the implicit loop notation (the dot).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{N }\OperatorTok{=} \FloatTok{50}
+\NormalTok{t }\OperatorTok{=}\NormalTok{ range(}\FloatTok{1}\OperatorTok{,} \FloatTok{5}\OperatorTok{,}\NormalTok{ length }\OperatorTok{=}\NormalTok{ N)}
+\NormalTok{x }\OperatorTok{=}\NormalTok{  t .}\OperatorTok{+} \FloatTok{1.0}
+\NormalTok{y }\OperatorTok{=} \FloatTok{2} \OperatorTok{.*}\NormalTok{ t .}\OperatorTok{{-}} \FloatTok{1.0}
+\NormalTok{plot(x}\OperatorTok{,}\NormalTok{y}\OperatorTok{,}\NormalTok{ title}\OperatorTok{=}\StringTok{"Desired Path"}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend}\OperatorTok{=}\ExtensionTok{false}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Taking these input \((x,y)\) values, we can plug into the IK and obtain
+the values for \(\theta_1\), \(\theta_2\).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a1}\OperatorTok{,}\NormalTok{a2 }\OperatorTok{=} \FloatTok{10.0}\OperatorTok{,}\FloatTok{10.0}
+\NormalTok{d }\OperatorTok{=}\NormalTok{  ((x}\OperatorTok{.*}\NormalTok{x) .}\OperatorTok{+}\NormalTok{ (y}\OperatorTok{.*}\NormalTok{y) .}\OperatorTok{{-}}\NormalTok{ (a1}\OperatorTok{.*}\NormalTok{a1) .}\OperatorTok{{-}}\NormalTok{ (a2}\OperatorTok{.*}\NormalTok{a2))}\OperatorTok{/}\NormalTok{(}\FloatTok{2.0} \OperatorTok{.*}\NormalTok{ (a1}\OperatorTok{.*}\NormalTok{a2))}
+\NormalTok{θ}\FloatTok{2} \OperatorTok{=}\NormalTok{ atan.(}\OperatorTok{{-}}\NormalTok{sqrt.(}\FloatTok{1.0}\NormalTok{ .}\OperatorTok{{-}}\NormalTok{ (d}\OperatorTok{.*}\NormalTok{d))}\OperatorTok{,}\NormalTok{d)}
+\NormalTok{θ}\FloatTok{1} \OperatorTok{=}\NormalTok{ atan.(y}\OperatorTok{,}\NormalTok{x) }\OperatorTok{{-}}\NormalTok{ atan.(a2}\OperatorTok{.*}\NormalTok{ sin.(θ}\FloatTok{2}\NormalTok{)}\OperatorTok{,}\NormalTok{ a1 .}\OperatorTok{+}\NormalTok{ a2}\OperatorTok{.*}\NormalTok{cos.(θ}\FloatTok{2}\NormalTok{))}
+\NormalTok{plot(θ}\FloatTok{1}\OperatorTok{,}\NormalTok{θ}\FloatTok{2}\OperatorTok{,}\NormalTok{ title}\OperatorTok{=}\StringTok{"Plot of θ1, θ2"}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The obvious question, is this correct? An easy way to figure this out is
+to plug those values into the forward kinematics and plot the results.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x1 }\OperatorTok{=}\NormalTok{ a2}\OperatorTok{.*}\NormalTok{cos.(θ}\FloatTok{1}\NormalTok{ .}\OperatorTok{+}\NormalTok{ θ}\FloatTok{2}\NormalTok{) .}\OperatorTok{+}\NormalTok{ a1}\OperatorTok{.*}\NormalTok{cos.(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{y1 }\OperatorTok{=}\NormalTok{ a2}\OperatorTok{.*}\NormalTok{sin.(θ}\FloatTok{1}\NormalTok{ .}\OperatorTok{+}\NormalTok{ θ}\FloatTok{2}\NormalTok{) .}\OperatorTok{+}\NormalTok{ a1}\OperatorTok{.*}\NormalTok{sin.(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{plot(x1}\OperatorTok{,}\NormalTok{y1}\OperatorTok{,}\NormalTok{ title }\OperatorTok{=} \StringTok{"Checking Path"}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend}\OperatorTok{=}\ExtensionTok{false}\NormalTok{)}
+\CommentTok{\# if you want to overlap the plots}
+\CommentTok{\# plot!(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+It can be helpful to visualize the dynamics of the manipulator. The
+following example is Julia/Plots animation of the two link manipulator
+endpoints. An animation needs a delay (the sleep function) and you need
+this clear output method to replot over the previous plot.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\NormalTok{N}
+\NormalTok{    IJulia.clear\_output(}\ExtensionTok{true}\NormalTok{)}
+\NormalTok{    p }\OperatorTok{=}\NormalTok{ scatter([x[i]]}\OperatorTok{,}\NormalTok{[y[i]]}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{green)}
+\NormalTok{    display(p)}
+\NormalTok{    sleep(}\FloatTok{0.05}\NormalTok{)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+If you want to leave the path (the trace), you can try the following
+variant.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{scatter([x[}\FloatTok{1}\NormalTok{]]}\OperatorTok{,}\NormalTok{[y[}\FloatTok{1}\NormalTok{]]}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{green)}
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{2}\OperatorTok{:}\NormalTok{N}
+\NormalTok{    IJulia.clear\_output(}\ExtensionTok{true}\NormalTok{)}
+\NormalTok{    xl }\OperatorTok{=}\NormalTok{ x[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{    yl }\OperatorTok{=}\NormalTok{ y[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{    p }\OperatorTok{=}\NormalTok{ scatter(xl}\OperatorTok{,}\NormalTok{yl}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{green)}
+\NormalTok{    display(p)}
+\NormalTok{    sleep(}\FloatTok{0.05}\NormalTok{)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+Just to play with the graphics, we change the trace. plot! and scatter!
+are different functions than plot and scatter. The "!" means this
+version will add to the previous plot. Otherwise a new plot is created.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{scatter([x[}\FloatTok{1}\NormalTok{]]}\OperatorTok{,}\NormalTok{[y[}\FloatTok{1}\NormalTok{]]}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{green)}
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{2}\OperatorTok{:}\NormalTok{N}
+\NormalTok{    IJulia.clear\_output(}\ExtensionTok{true}\NormalTok{)}
+\NormalTok{    xl }\OperatorTok{=}\NormalTok{ x[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{    yl }\OperatorTok{=}\NormalTok{ y[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{    p }\OperatorTok{=}\NormalTok{ scatter([x[i]]}\OperatorTok{,}\NormalTok{[y[i]]}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{green)}
+\NormalTok{    plot}\OperatorTok{!}\NormalTok{(xl}\OperatorTok{,}\NormalTok{yl}\OperatorTok{,}\NormalTok{ color}\OperatorTok{=:}\NormalTok{red)}
+\NormalTok{    display(p)}
+\NormalTok{    sleep(}\FloatTok{0.05}\NormalTok{)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+An actual animation should in include the link arms.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{xmid }\OperatorTok{=}\NormalTok{ a1 }\OperatorTok{.*}\NormalTok{ cos.(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{ymid }\OperatorTok{=}\NormalTok{ a1 }\OperatorTok{.*}\NormalTok{ sin.(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{scatter([x[}\FloatTok{1}\NormalTok{]]}\OperatorTok{,}\NormalTok{[y[}\FloatTok{1}\NormalTok{]]}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\OperatorTok{{-}}\FloatTok{10}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{blue)}
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{2}\OperatorTok{:}\NormalTok{N}
+\NormalTok{    IJulia.clear\_output(}\ExtensionTok{true}\NormalTok{)}
+\NormalTok{    p }\OperatorTok{=}\NormalTok{ scatter([x[i]]}\OperatorTok{,}\NormalTok{[y[i]]}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\OperatorTok{{-}}\FloatTok{10}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{blue)}
+\NormalTok{    xl }\OperatorTok{=}\NormalTok{ [}\FloatTok{0}\OperatorTok{,}\NormalTok{ xmid[i]}\OperatorTok{,}\NormalTok{ x[i]]}
+\NormalTok{    yl }\OperatorTok{=}\NormalTok{ [}\FloatTok{0}\OperatorTok{,}\NormalTok{ ymid[i]}\OperatorTok{,}\NormalTok{ y[i]]}
+\NormalTok{    plot}\OperatorTok{!}\NormalTok{(xl}\OperatorTok{,}\NormalTok{yl}\OperatorTok{,}\NormalTok{ color}\OperatorTok{=:}\NormalTok{blue}\OperatorTok{,}\NormalTok{  linewidth}\OperatorTok{=}\FloatTok{8}\NormalTok{)}
+\NormalTok{    scatter}\OperatorTok{!}\NormalTok{(xl}\OperatorTok{,}\NormalTok{ yl}\OperatorTok{,}\NormalTok{ color}\OperatorTok{=:}\NormalTok{red}\OperatorTok{,}\NormalTok{ markershape}\OperatorTok{=:}\NormalTok{circle)}
+\NormalTok{    display(p)}
+\NormalTok{    sleep(}\FloatTok{0.05}\NormalTok{)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+The Interact package connects up some Javascript widgets in the Notebook
+with Julia. It supports a variety of widgets and manages the callbacks
+for you. This is not a tutorial on the Interact package. There are some
+macros available that make the interact package easy to use. This
+example sets up two slider bars which are used to set the 𝜃1 , 𝜃2
+values.
+
+The @manipulate macro sets up the event loop and connects the slider
+values to values that can be used in the event loop.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function}\NormalTok{ arm(θ}\FloatTok{1}\OperatorTok{,}\NormalTok{θ}\FloatTok{2}\NormalTok{)}
+\NormalTok{    x1 }\OperatorTok{=}\NormalTok{ cos(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{    y1 }\OperatorTok{=}\NormalTok{ sin(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{    x2 }\OperatorTok{=}\NormalTok{ x1 }\OperatorTok{+}\NormalTok{ cos(θ}\FloatTok{1}\OperatorTok{+}\NormalTok{θ}\FloatTok{2}\NormalTok{)}
+\NormalTok{    y2 }\OperatorTok{=}\NormalTok{ y1 }\OperatorTok{+}\NormalTok{ sin(θ}\FloatTok{1}\OperatorTok{+}\NormalTok{θ}\FloatTok{2}\NormalTok{)}
+    \KeywordTok{return}\NormalTok{ x1}\OperatorTok{,}\NormalTok{x2}\OperatorTok{,}\NormalTok{y1}\OperatorTok{,}\NormalTok{y2}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{s1 }\OperatorTok{=}\NormalTok{ slider(}\OperatorTok{{-}}\NormalTok{π}\OperatorTok{:}\FloatTok{0.05}\OperatorTok{:}\NormalTok{π }\OperatorTok{,}\NormalTok{value }\OperatorTok{=} \FloatTok{0.0}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"Theta1"}\NormalTok{)}
+\NormalTok{s2 }\OperatorTok{=}\NormalTok{ slider(}\OperatorTok{{-}}\NormalTok{π}\OperatorTok{:}\FloatTok{0.05}\OperatorTok{:}\NormalTok{π}\OperatorTok{,}\NormalTok{ value }\OperatorTok{=} \FloatTok{0.0}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"Theta2"}\NormalTok{)}
+
+\NormalTok{mp }\OperatorTok{=} \PreprocessorTok{@manipulate} \KeywordTok{for}\NormalTok{ θ}\FloatTok{1} \KeywordTok{in}\NormalTok{ s1}\OperatorTok{,}\NormalTok{ θ}\FloatTok{2} \KeywordTok{in}\NormalTok{ s2}
+\NormalTok{    x1}\OperatorTok{,}\NormalTok{x2}\OperatorTok{,}\NormalTok{y1}\OperatorTok{,}\NormalTok{y2 }\OperatorTok{=}\NormalTok{ arm(θ}\FloatTok{1}\OperatorTok{,}\NormalTok{θ}\FloatTok{2}\NormalTok{)}
+\NormalTok{    xl }\OperatorTok{=}\NormalTok{ [}\FloatTok{0}\OperatorTok{,}\NormalTok{x1}\OperatorTok{,}\NormalTok{x2]}
+\NormalTok{    yl }\OperatorTok{=}\NormalTok{ [}\FloatTok{0}\OperatorTok{,}\NormalTok{y1}\OperatorTok{,}\NormalTok{y2]}
+\NormalTok{    plot(xl}\OperatorTok{,}\NormalTok{yl}\OperatorTok{,}\NormalTok{ legend}\OperatorTok{=}\ExtensionTok{false}\OperatorTok{,}\NormalTok{xlim}\OperatorTok{=}\NormalTok{(}\OperatorTok{{-}}\FloatTok{2}\OperatorTok{,}\FloatTok{2}\NormalTok{)}\OperatorTok{,}\NormalTok{ylim}\OperatorTok{=}\NormalTok{(}\OperatorTok{{-}}\FloatTok{2}\OperatorTok{,}\FloatTok{2}\NormalTok{)}\OperatorTok{,}\NormalTok{ aspect\_ratio }\OperatorTok{=} \OperatorTok{:}\NormalTok{equal}\OperatorTok{,}\NormalTok{ linewidth}\OperatorTok{=}\FloatTok{8}\NormalTok{)}
+\NormalTok{    scatter}\OperatorTok{!}\NormalTok{(xl}\OperatorTok{,}\NormalTok{ yl}\OperatorTok{,}\NormalTok{ color}\OperatorTok{=:}\NormalTok{red}\OperatorTok{,}\NormalTok{ markershape}\OperatorTok{=:}\NormalTok{circle)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+To demonstrate how this can be used in 3D, here is the manipulator from
+the last homework (\#23).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function}\NormalTok{ arm3(d}\OperatorTok{,}\NormalTok{ a1}\OperatorTok{,}\NormalTok{ a2}\OperatorTok{,}\NormalTok{ θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{    x1 }\OperatorTok{=} \FloatTok{0}
+\NormalTok{    y1 }\OperatorTok{=} \FloatTok{0}
+\NormalTok{    z1 }\OperatorTok{=}\NormalTok{ d}
+\NormalTok{    x2 }\OperatorTok{=}\NormalTok{ a1}\OperatorTok{*}\NormalTok{cos(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{    y2 }\OperatorTok{=}\NormalTok{ a1}\OperatorTok{*}\NormalTok{sin(θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{    z2 }\OperatorTok{=}\NormalTok{ z1}
+\NormalTok{    x3 }\OperatorTok{=}\NormalTok{ x2}
+\NormalTok{    y3 }\OperatorTok{=}\NormalTok{ y2}
+\NormalTok{    z3 }\OperatorTok{=}\NormalTok{ z1 }\OperatorTok{{-}}\NormalTok{ a2}
+\NormalTok{    j }\OperatorTok{=}\NormalTok{ [x1}\OperatorTok{,}\NormalTok{y1}\OperatorTok{,}\NormalTok{z1}\OperatorTok{,}\NormalTok{x2}\OperatorTok{,}\NormalTok{y2}\OperatorTok{,}\NormalTok{z2}\OperatorTok{,}\NormalTok{x3}\OperatorTok{,}\NormalTok{y3}\OperatorTok{,}\NormalTok{z3]}
+    \KeywordTok{return}\NormalTok{ j}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+This gives an example of plots in 3D.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{s1 }\OperatorTok{=}\NormalTok{ slider(}\FloatTok{0.0}\OperatorTok{:}\FloatTok{0.01}\OperatorTok{:}\NormalTok{π}\OperatorTok{/}\FloatTok{2} \OperatorTok{,}\NormalTok{value }\OperatorTok{=} \FloatTok{0.0}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"Theta1"}\NormalTok{)}
+\NormalTok{s2 }\OperatorTok{=}\NormalTok{ slider(}\FloatTok{1.0}\OperatorTok{:}\FloatTok{0.01}\OperatorTok{:}\FloatTok{5}\OperatorTok{,}\NormalTok{ value }\OperatorTok{=} \FloatTok{2.0}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"a1"}\NormalTok{)}
+\NormalTok{s3 }\OperatorTok{=}\NormalTok{ slider(}\FloatTok{1.0}\OperatorTok{:}\FloatTok{0.01}\OperatorTok{:}\FloatTok{5}\OperatorTok{,}\NormalTok{ value }\OperatorTok{=} \FloatTok{3.0}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"a2"}\NormalTok{)}
+\NormalTok{d }\OperatorTok{=} \FloatTok{5}
+
+\NormalTok{mp }\OperatorTok{=} \PreprocessorTok{@manipulate} \KeywordTok{for}\NormalTok{ θ}\FloatTok{1} \KeywordTok{in}\NormalTok{ s1}\OperatorTok{,}\NormalTok{ a1 }\KeywordTok{in}\NormalTok{ s2}\OperatorTok{,}\NormalTok{ a2 }\KeywordTok{in}\NormalTok{ s3}
+\NormalTok{    j }\OperatorTok{=}\NormalTok{ arm3(d}\OperatorTok{,}\NormalTok{a1}\OperatorTok{,}\NormalTok{a2}\OperatorTok{,}\NormalTok{θ}\FloatTok{1}\NormalTok{)}
+\NormalTok{    p1 }\OperatorTok{=}\NormalTok{ [}\FloatTok{0}\OperatorTok{,}\NormalTok{ j[}\FloatTok{1}\NormalTok{]}\OperatorTok{,}\NormalTok{ j[}\FloatTok{4}\NormalTok{]}\OperatorTok{,}\NormalTok{ j[}\FloatTok{7}\NormalTok{]]}
+\NormalTok{    p2 }\OperatorTok{=}\NormalTok{ [}\FloatTok{0}\OperatorTok{,}\NormalTok{  j[}\FloatTok{2}\NormalTok{]}\OperatorTok{,}\NormalTok{ j[}\FloatTok{5}\NormalTok{]}\OperatorTok{,}\NormalTok{ j[}\FloatTok{8}\NormalTok{]]}
+\NormalTok{    p3 }\OperatorTok{=}\NormalTok{ [}\FloatTok{0}\OperatorTok{,}\NormalTok{ j[}\FloatTok{3}\NormalTok{]}\OperatorTok{,}\NormalTok{ j[}\FloatTok{6}\NormalTok{]}\OperatorTok{,}\NormalTok{ j[}\FloatTok{9}\NormalTok{]]}
+\NormalTok{    plot(p1}\OperatorTok{,}\NormalTok{p2}\OperatorTok{,}\NormalTok{p3}\OperatorTok{,}\NormalTok{ xlim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{6}\NormalTok{)}\OperatorTok{,}\NormalTok{ylim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{6}\NormalTok{)}\OperatorTok{,}\NormalTok{zlim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{6}\NormalTok{)}\OperatorTok{,}\NormalTok{linewidth}\OperatorTok{=}\FloatTok{10}\OperatorTok{,}\NormalTok{legend}\OperatorTok{=}\ExtensionTok{false}\NormalTok{)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+A simple "Etch-a-Sketch" type demo:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{s1 }\OperatorTok{=}\NormalTok{ slider(}\OperatorTok{{-}}\FloatTok{1}\OperatorTok{:}\FloatTok{0.1}\OperatorTok{:}\FloatTok{1}\OperatorTok{,}\NormalTok{ value }\OperatorTok{=} \FloatTok{0.0}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"x"}\NormalTok{)}
+\NormalTok{s2 }\OperatorTok{=}\NormalTok{ slider(}\OperatorTok{{-}}\FloatTok{1}\OperatorTok{:}\FloatTok{0.1}\OperatorTok{:}\FloatTok{1}\OperatorTok{,}\NormalTok{ value }\OperatorTok{=} \FloatTok{0.0}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"y"}\NormalTok{)}
+\NormalTok{plot(legend}\OperatorTok{=}\ExtensionTok{false}\OperatorTok{,}\NormalTok{xlim}\OperatorTok{=}\NormalTok{(}\OperatorTok{{-}}\FloatTok{1.5}\OperatorTok{,}\FloatTok{1.5}\NormalTok{)}\OperatorTok{,}\NormalTok{ylim}\OperatorTok{=}\NormalTok{(}\OperatorTok{{-}}\FloatTok{1.5}\OperatorTok{,}\FloatTok{1.5}\NormalTok{))}
+
+\NormalTok{mp }\OperatorTok{=} \PreprocessorTok{@manipulate} \KeywordTok{for}\NormalTok{ x }\KeywordTok{in}\NormalTok{ s1}\OperatorTok{,}\NormalTok{ y }\KeywordTok{in}\NormalTok{ s2}
+\NormalTok{    l1 }\OperatorTok{=}\NormalTok{ [x]}
+\NormalTok{    l2 }\OperatorTok{=}\NormalTok{ [y]}
+\NormalTok{    plot}\OperatorTok{!}\NormalTok{(l1}\OperatorTok{,}\NormalTok{l2}\OperatorTok{,}\NormalTok{ markershape}\OperatorTok{=:}\NormalTok{circle}\OperatorTok{,}\NormalTok{ markercolor}\OperatorTok{=:}\NormalTok{blue)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+An interactive plotting tool:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OperatorTok{=}\NormalTok{ range(}\FloatTok{0}\OperatorTok{,} \FloatTok{10}\OperatorTok{,}\NormalTok{ length}\OperatorTok{=}\FloatTok{100}\NormalTok{)}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ sin.(x) .}\OperatorTok{+} \FloatTok{1.5}
+
+\NormalTok{s1 }\OperatorTok{=}\NormalTok{ slider(}\FloatTok{1}\OperatorTok{:}\FloatTok{100}\OperatorTok{,}\NormalTok{ value }\OperatorTok{=} \FloatTok{1}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"time"}\NormalTok{)}
+
+\NormalTok{scatter(legend}\OperatorTok{=}\ExtensionTok{false}\OperatorTok{,}\NormalTok{xlim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ylim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{3}\NormalTok{))}
+
+\NormalTok{mp }\OperatorTok{=} \PreprocessorTok{@manipulate} \KeywordTok{for}\NormalTok{ t }\KeywordTok{in}\NormalTok{ s1}
+\NormalTok{    i }\OperatorTok{=}\NormalTok{ trunc(}\DataTypeTok{Int}\OperatorTok{,}\NormalTok{t)}
+\NormalTok{    l1 }\OperatorTok{=}\NormalTok{ x[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{    l2 }\OperatorTok{=}\NormalTok{ y[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{    scatter}\OperatorTok{!}\NormalTok{(l1}\OperatorTok{,}\NormalTok{l2}\OperatorTok{,}\NormalTok{ markershape}\OperatorTok{=:}\NormalTok{circle}\OperatorTok{,}\NormalTok{ markercolor}\OperatorTok{=:}\NormalTok{blue)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+or
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OperatorTok{=}\NormalTok{ y }\OperatorTok{=} \FloatTok{0}\OperatorTok{:}\FloatTok{0.1}\OperatorTok{:}\FloatTok{30}
+
+\NormalTok{freqs }\OperatorTok{=}\NormalTok{ OrderedDict(zip([}\StringTok{"pi/4"}\OperatorTok{,} \StringTok{"π/2"}\OperatorTok{,} \StringTok{"3π/4"}\OperatorTok{,} \StringTok{"π"}\NormalTok{]}\OperatorTok{,}\NormalTok{ [π}\OperatorTok{/}\FloatTok{4}\OperatorTok{,}\NormalTok{ π}\OperatorTok{/}\FloatTok{2}\OperatorTok{,} \FloatTok{3}\NormalTok{π}\OperatorTok{/}\FloatTok{4}\OperatorTok{,}\NormalTok{ π]))}
+
+\NormalTok{mp }\OperatorTok{=} \PreprocessorTok{@manipulate} \KeywordTok{for}\NormalTok{ freq1 }\KeywordTok{in}\NormalTok{ freqs}\OperatorTok{,}\NormalTok{ freq2 }\KeywordTok{in}\NormalTok{ slider(}\FloatTok{0.01}\OperatorTok{:}\FloatTok{0.1}\OperatorTok{:}\FloatTok{4}\NormalTok{π}\OperatorTok{;}\NormalTok{ label}\OperatorTok{=}\StringTok{"freq2"}\NormalTok{)}
+\NormalTok{    y }\OperatorTok{=} \OperatorTok{@}\NormalTok{. sin(freq1}\OperatorTok{*}\NormalTok{x) }\OperatorTok{*}\NormalTok{ sin(freq2}\OperatorTok{*}\NormalTok{x)}
+\NormalTok{    plot(x}\OperatorTok{,}\NormalTok{ y)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+An example showing how to clear a plot.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OperatorTok{=}\NormalTok{ range(}\FloatTok{0}\OperatorTok{,} \FloatTok{10}\OperatorTok{,}\NormalTok{ length}\OperatorTok{=}\FloatTok{100}\NormalTok{)}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ sin.(x) .}\OperatorTok{+} \FloatTok{1.5}
+
+\NormalTok{s1 }\OperatorTok{=}\NormalTok{ slider(}\FloatTok{1}\OperatorTok{:}\FloatTok{100}\OperatorTok{,}\NormalTok{ value }\OperatorTok{=} \FloatTok{1}\OperatorTok{,}\NormalTok{ label}\OperatorTok{=}\StringTok{"Time"}\NormalTok{)}
+\NormalTok{s2 }\OperatorTok{=}\NormalTok{ OrderedDict(zip([}\StringTok{"Plot"}\OperatorTok{,} \StringTok{"Clear"}\NormalTok{]}\OperatorTok{,}\NormalTok{ [}\FloatTok{1}\OperatorTok{,} \FloatTok{0}\NormalTok{]))}
+
+\NormalTok{scatter(legend}\OperatorTok{=}\ExtensionTok{false}\OperatorTok{,}\NormalTok{xlim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ylim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{3}\NormalTok{))}
+
+\NormalTok{mp }\OperatorTok{=} \PreprocessorTok{@manipulate} \KeywordTok{for}\NormalTok{ t }\KeywordTok{in}\NormalTok{ s1}\OperatorTok{,}\NormalTok{ Select }\KeywordTok{in}\NormalTok{ s2}
+\NormalTok{    i }\OperatorTok{=}\NormalTok{ trunc(}\DataTypeTok{Int}\OperatorTok{,}\NormalTok{t)}
+    \KeywordTok{if}\NormalTok{ Select }\OperatorTok{==} \FloatTok{0}
+\NormalTok{        scatter(legend}\OperatorTok{=}\ExtensionTok{false}\OperatorTok{,}\NormalTok{xlim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{10}\NormalTok{)}\OperatorTok{,}\NormalTok{ylim}\OperatorTok{=}\NormalTok{(}\FloatTok{0}\OperatorTok{,}\FloatTok{3}\NormalTok{))}
+    \KeywordTok{else}
+\NormalTok{        l1 }\OperatorTok{=}\NormalTok{ x[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{        l2 }\OperatorTok{=}\NormalTok{ y[}\FloatTok{1}\OperatorTok{:}\NormalTok{i]}
+\NormalTok{        scatter}\OperatorTok{!}\NormalTok{(l1}\OperatorTok{,}\NormalTok{l2}\OperatorTok{,}\NormalTok{ markershape}\OperatorTok{=:}\NormalTok{circle}\OperatorTok{,}\NormalTok{ markercolor}\OperatorTok{=:}\NormalTok{blue)}
+    \KeywordTok{end}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+A differential drive example ...
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function}\NormalTok{ DDstep(θ}\OperatorTok{,}\NormalTok{ r}\OperatorTok{,}\NormalTok{ L}\OperatorTok{,}\NormalTok{ ϕ}\FloatTok{1}\NormalTok{dot}\OperatorTok{,}\NormalTok{ ϕ}\FloatTok{2}\NormalTok{dot}\OperatorTok{,}\NormalTok{ dt)}
+\NormalTok{    δx }\OperatorTok{=}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2}\NormalTok{)}\OperatorTok{*}\NormalTok{(ϕ}\FloatTok{1}\NormalTok{dot}\OperatorTok{+}\NormalTok{ϕ}\FloatTok{2}\NormalTok{dot)}\OperatorTok{*}\NormalTok{cos(θ)}
+\NormalTok{    δy }\OperatorTok{=}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2}\NormalTok{)}\OperatorTok{*}\NormalTok{(ϕ}\FloatTok{1}\NormalTok{dot}\OperatorTok{+}\NormalTok{ϕ}\FloatTok{2}\NormalTok{dot)}\OperatorTok{*}\NormalTok{sin(θ)}
+\NormalTok{    δθ }\OperatorTok{=}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\NormalTok{(}\FloatTok{2}\OperatorTok{*}\NormalTok{L))}\OperatorTok{*}\NormalTok{(ϕ}\FloatTok{1}\NormalTok{dot}\OperatorTok{{-}}\NormalTok{ϕ}\FloatTok{2}\NormalTok{dot)}
+    \KeywordTok{return}\NormalTok{ δx}\OperatorTok{,}\NormalTok{ δy}\OperatorTok{,}\NormalTok{ δθ}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+Variable setup for the simulation.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{r }\OperatorTok{=} \FloatTok{1}
+\NormalTok{L }\OperatorTok{=} \FloatTok{2}
+\NormalTok{N }\OperatorTok{=} \FloatTok{100}
+\NormalTok{t }\OperatorTok{=}\NormalTok{ range(}\FloatTok{0}\OperatorTok{,} \FloatTok{5}\OperatorTok{,}\NormalTok{ length }\OperatorTok{=}\NormalTok{ N)}
+\NormalTok{ω}\FloatTok{1} \OperatorTok{=} \FloatTok{1.25}\NormalTok{ .}\OperatorTok{+}\NormalTok{ cos.(t)}
+\NormalTok{ω}\FloatTok{2} \OperatorTok{=} \FloatTok{1.0}\NormalTok{ .}\OperatorTok{+}\NormalTok{ sin.(t)}
+\NormalTok{dt }\OperatorTok{=} \FloatTok{0.1}
+\NormalTok{x}\OperatorTok{,}\NormalTok{ y }\OperatorTok{=} \FloatTok{0}\OperatorTok{,} \FloatTok{0}
+\NormalTok{θ }\OperatorTok{=} \FloatTok{0}
+
+\NormalTok{lx }\OperatorTok{=}\NormalTok{ zeros(N)}
+\NormalTok{ly }\OperatorTok{=}\NormalTok{ zeros(N)}
+\NormalTok{lθ }\OperatorTok{=}\NormalTok{ zeros(N)}
+
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\NormalTok{(N}\OperatorTok{{-}}\FloatTok{1}\NormalTok{)}
+\NormalTok{    δx}\OperatorTok{,}\NormalTok{ δy}\OperatorTok{,}\NormalTok{ δθ }\OperatorTok{=}\NormalTok{ DDstep(lθ[i]}\OperatorTok{,}\NormalTok{ r}\OperatorTok{,}\NormalTok{ L}\OperatorTok{,}\NormalTok{ ω}\FloatTok{1}\NormalTok{[i]}\OperatorTok{,}\NormalTok{ ω}\FloatTok{2}\NormalTok{[i]}\OperatorTok{,}\NormalTok{ dt)}
+\NormalTok{    lx[i}\OperatorTok{+}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ lx[i] }\OperatorTok{+}\NormalTok{ δx}
+\NormalTok{    ly[i}\OperatorTok{+}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ ly[i] }\OperatorTok{+}\NormalTok{ δy}
+\NormalTok{    lθ[i}\OperatorTok{+}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ lθ[i] }\OperatorTok{+}\NormalTok{ δθ}
+\KeywordTok{end}
+\NormalTok{scatter(lx}\OperatorTok{,}\NormalTok{ly}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{12}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\OperatorTok{{-}}\FloatTok{1}\OperatorTok{,}\FloatTok{2.5}\NormalTok{)}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{blue)}
+\end{Highlighting}
+\end{Shaded}
+
+The animation of the simulation loop
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\NormalTok{N}
+    \KeywordTok{global}\NormalTok{ x}\OperatorTok{,}\NormalTok{ y}\OperatorTok{,}\NormalTok{ θ}
+\NormalTok{    δx}\OperatorTok{,}\NormalTok{ δy}\OperatorTok{,}\NormalTok{ δθ }\OperatorTok{=}\NormalTok{ DDstep(θ}\OperatorTok{,}\NormalTok{ r}\OperatorTok{,}\NormalTok{ L}\OperatorTok{,}\NormalTok{ ω}\FloatTok{1}\NormalTok{[i]}\OperatorTok{,}\NormalTok{ ω}\FloatTok{2}\NormalTok{[i]}\OperatorTok{,}\NormalTok{ dt)}
+\NormalTok{    x }\OperatorTok{=}\NormalTok{ x }\OperatorTok{+}\NormalTok{ δx}
+\NormalTok{    y }\OperatorTok{=}\NormalTok{ y }\OperatorTok{+}\NormalTok{ δy}
+\NormalTok{    θ }\OperatorTok{=}\NormalTok{ θ }\OperatorTok{+}\NormalTok{ δθ}
+\NormalTok{    p }\OperatorTok{=}\NormalTok{ scatter([x]}\OperatorTok{,}\NormalTok{[y]}\OperatorTok{,}\NormalTok{ xlim }\OperatorTok{=}\NormalTok{ (}\FloatTok{0}\OperatorTok{,}\FloatTok{12}\NormalTok{)}\OperatorTok{,}\NormalTok{ ylim }\OperatorTok{=}\NormalTok{ (}\OperatorTok{{-}}\FloatTok{1}\OperatorTok{,}\FloatTok{3}\NormalTok{)}\OperatorTok{,}\NormalTok{ legend }\OperatorTok{=} \ExtensionTok{false}\OperatorTok{,}\NormalTok{ color }\OperatorTok{=} \OperatorTok{:}\NormalTok{blue)}
+\NormalTok{    display(p)}
+\NormalTok{    sleep(}\FloatTok{0.2}\NormalTok{)}
+\NormalTok{    IJulia.clear\_output(}\ExtensionTok{true}\NormalTok{)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}

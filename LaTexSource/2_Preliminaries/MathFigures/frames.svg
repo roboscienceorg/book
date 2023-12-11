@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="10.884cm" height="7.325cm" viewBox="2.776 1.347 13.660 8.672"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<line x1="3.150" y1="8.400" x2="3.103" y2="4.474" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="3.357,4.859 3.101,4.362 2.857,4.865 "/>
+<line x1="3.100" y1="8.300" x2="6.126" y2="8.347" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="5.734,8.591 6.238,8.348 5.742,8.091 "/>
+<line x1="3.150" y1="8.300" x2="4.569" y2="6.331" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="4.545,6.792 4.635,6.241 4.139,6.500 "/>
+<line x1="11.172" y1="6.840" x2="10.039" y2="3.792" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="10.803,6.564 11.211,6.945 11.271,6.389 "/>
+<line x1="10.039" y1="3.792" x2="13.330" y2="3.237" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="12.988,3.548 13.440,3.219 12.905,3.055 "/>
+<line x1="10.089" y1="3.792" x2="11.011" y2="1.655" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="11.087,2.111 11.056,1.553 10.628,1.913 "/>
+<line x1="3.200" y1="8.300" x2="9.712" y2="4.072" stroke="#000000" stroke-width="0.100" stroke-dasharray="0.10,0.10"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="9.523,4.493 9.806,4.011 9.251,4.073 "/>
+</svg>

@@ -1,0 +1,434 @@
+\hypertarget{moving-the-differential-drive-robot}{%
+\section{Moving the Differential Drive
+robot}\label{moving-the-differential-drive-robot}}
+
+In the last section, we moved the two link articulator by updating the
+position. It is certainly possible to simulate a robot moving through
+space by simply jumping positions. Motion effect is produced like a
+movie projector gives the impression of motion. So, for animation, this
+approach can and often does suffice. However, objects in the world don't
+jump positions. Momentum, inertia and limits on acceleration and
+velocity do play a significant role. To move a ground robot, the
+position should be controlled by velocity. In reality the position is
+controlled by control signals to a motor which in turn generates a
+velocity, but we will assume we have a perfect motor controller for now;
+one that can take a velocity command and achieve that velocity.
+
+In this section we simulate the motion of the differential drive robot
+that we introduced in the Terms Chapter shown in
+\texttt{ddriveRecalled}.
+
+\begin{quote}
+Simple differential drive robot.
+\end{quote}
+
+and the associated equations~\texttt{ddkinematicsmodel}
+
+\[\begin{aligned}
+\boxed{
+\begin{array}{l}
+ \dot{x} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\cos(\theta) \\[5mm]
+\dot{y} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\sin(\theta) \\[5mm]
+\dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
+\end{array}}
+\end{aligned}\]
+
+where \(\dot{\phi_1}\) and \(\dot{\phi_2}\) are the right and left wheel
+rotational speeds (respectively), \(r\) is wheel radius and \(2L\) is
+the axle length.
+
+In practice you want to prescribe \(x(t), y(t)\) to obtain
+\(\dot{\phi_1},\dot{\phi_2}\). Clearly if you have \(x(t), y(t)\),
+differentiation will yield \(\dot{x}(t), \dot{y}(t)\), so we may assume
+that we know \(\dot{x}(t), \dot{y}(t)\). Using \(\dot{x}\) and
+\(\dot{y}\) we may drive the robot along the curve of interest. We will
+explore methods to do this below.
+
+Our work last chapter has given us
+
+\[\theta(t) = \theta(0) + \int_0^t \frac{r}{2L} \left(\frac{d\phi_1}{d\tau}-\frac{d\phi_2}{d\tau}\right)d\tau\]
+
+If you have the mathematical form to determine \(\dot{\phi_i}\), you can
+proceed like in the last chapter. But it might not have a standard
+functional form. In general, looking for an analytic function for the
+position is not possible. Practically you don't actually have a function
+representation of \(\phi(t)\). We are normally sampling the wheel
+angular velocity during runtime. How should we formulate and proceed in
+that case?
+
+So what if we relax the constant velocity assumption. This gives rise to
+two additional issues. The first is that you may not be able to gain an
+antiderivative of the wheel velocities to find \(\theta(t)\). If you are
+able to find \(\theta\), the right hand sides for \(\dot{x}\) and
+\(\dot{y}\) normally are not integrable. A simple example below
+demonstrates issues with finding antiderivatives.
+
+Let \(\dot{\phi_1} = e^{-t^2}\) and \(\dot{\phi_2} = t\)
+
+\[\theta(t) = \theta(0) + \int_0^t \frac{r}{2L} \left(e^{-\tau^2}-\tau\right)d\tau = ???\]
+
+This integral cannot be resolved. Meaning we cannot find an analytic
+antiderivative. It is possible to approximate it either with a Taylor
+expansion or numerical formulation, but it is an example of a vast
+number of functions which we must stop at this step.
+
+In practice it is not possible to instantaneously jump wheel speeds as
+we did in our analytical approach previously. Inertia in the system
+(mass, inductance, power limits) means that it is not possible to
+instantaneous jumps in velocity. In addition, it is not possible to have
+perfect velocities when surfaces and power are not consistent. These
+errors in wheel velocites can over time translate to significant errors
+in position.
+
+\hypertarget{a-numerical-approach}{%
+\subsection{A numerical approach}\label{a-numerical-approach}}
+
+We will use Euler's (\emph{Oil-ler's}) method for solving the
+differential equations. \texttt{Euler’s\ method} approximates the
+derivatives with a forward finite difference and converts the
+differential equation into a difference equation. The difference
+equations are algebraic and can be evaluated numerically. This is also
+known as a finite difference method. Let the time between measurements
+be denoted by \(\Delta t\). We discretize (or approximate) the time
+variable and the three state variables using discrete variables. This
+simple means we have a sequence of numbers \(\{x_k\}\) instead of a
+function \(x(t)\). Technically we should use a different variable, but I
+will often be efficient\footnote{that would be a \emph{codeword} for
+  sloppy} and reuse the variable even though one denotes a function of
+time and one denotes a sequence.
+
+\[t_k \equiv k\Delta t, \quad t_{k+1} = (k+1)\Delta t\]
+
+\[x_k \equiv x(t_k), ~~~ y_k \equiv y(t_k)\]
+
+\[\omega_{1, k}\equiv \dot{\phi}_{1}(t_k), ~~~
+\omega_{2, k}\equiv \dot{\phi}_{2}(t_k)\]
+
+Recall that if \(x\) is position then \(\dot{x}=dx/dt\) is velocity (and
+\(\ddot{x}=d^2x/dt^2\) is acceleration). From basic calculus, we recall
+that we may approximate a derivative using a forward
+\texttt{finite\ difference}:
+
+\[\dot{x} \approx \frac{x(t+\Delta t) - x(t)}{\Delta t}.\]
+
+Using this we can take a time step of \(\Delta t\) forward (meaning
+\(t_{k+1} = t_k + \Delta t\)) and Euler's method gives us
+
+\[x(t_{k+1}) = x(t_k) + (\Delta t)x'(t_k) \quad \mbox{and}
+\quad y(t_{k+1}) = y(t_k) + (\Delta t)y'(t_k).\]
+
+And so we can write our differential equations as difference equations,
+
+\[\begin{aligned}
+\begin{array}{l}
+\displaystyle \frac{x(t+\Delta t) - x(t)}{\Delta t}\approx \dot{x} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\cos(\theta) \\[5mm]
+\displaystyle \frac{y(t+\Delta t) - y(t)}{\Delta t}\approx \dot{y} = \frac{r}{2} (\dot{\phi_1}+\dot{\phi_2})\sin(\theta) \\[5mm]
+\displaystyle \frac{\theta (t+\Delta t) - \theta (t)}{\Delta t}\approx \dot{\theta} = \frac{r}{2L} (\dot{\phi_1}-\dot{\phi_2})
+\end{array}
+\end{aligned}\]
+
+After some algebra, we obtain:
+
+\[\begin{aligned}
+\begin{array}{l}
+ x(t+\Delta t) \approx x(t) +\frac{r\Delta t}{2} (\dot{\phi_1}+\dot{\phi_2})\cos(\theta) \\[5mm]
+ y(t+\Delta t) \approx y(t) +\frac{r\Delta t}{2} (\dot{\phi_1}+\dot{\phi_2})\sin(\theta) \\[5mm]
+\theta (t+\Delta t) \approx \theta (t) +\frac{r\Delta t}{2L} (\dot{\phi_1}-\dot{\phi_2}).
+\end{array}
+\end{aligned}\]
+
+Using the discrete (sample) variables, \(x(t_k) \to x_k\), etc, we can
+rewrite the expression in terms of the discrete variables. Given
+starting configuration and wheel velocity measurements, we have the
+following difference equations:
+
+\[\begin{aligned}
+\begin{array}{l}
+ x_{k+1} = x_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\cos(\theta_k) \\[5mm]
+y_{k+1} = y_k + \frac{r\Delta t}{2} (\omega_{1, k}+\omega_{2, k})\sin(\theta_k) \\[5mm]
+\theta_{k+1} = \theta_k + \frac{r\Delta t}{2L} (\omega_{1, k}-\omega_{2, k})
+\end{array}
+\end{aligned}\]
+
+These equations are the main model for approximating motion of a
+differential drive robot. It has also been used as a first approximation
+for a tractor or tank drive system.
+
+\hypertarget{listDDstep}{%
+\label{listDDstep}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{function}\NormalTok{ ddstep(xc}\OperatorTok{,}\NormalTok{ yc}\OperatorTok{,}\NormalTok{ qc}\OperatorTok{,}\NormalTok{r}\OperatorTok{,}\NormalTok{l}\OperatorTok{,}\NormalTok{dt}\OperatorTok{,}\NormalTok{w1}\OperatorTok{,}\NormalTok{w2)}
+\NormalTok{   xn }\OperatorTok{=}\NormalTok{ xc }\OperatorTok{+}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2.0}\NormalTok{)}\OperatorTok{*}\NormalTok{(w1}\OperatorTok{+}\NormalTok{w2)}\OperatorTok{*}\NormalTok{cos(qc)}
+\NormalTok{   yn }\OperatorTok{=}\NormalTok{ yc }\OperatorTok{+}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2.0}\NormalTok{)}\OperatorTok{*}\NormalTok{(w1}\OperatorTok{+}\NormalTok{w2)}\OperatorTok{*}\NormalTok{sin(qc)}
+\NormalTok{   qn }\OperatorTok{=}\NormalTok{ qc }\OperatorTok{+}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\NormalTok{(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{l))}\OperatorTok{*}\NormalTok{(w1}\OperatorTok{{-}}\NormalTok{w2)}
+   \KeywordTok{return}\NormalTok{ (xn}\OperatorTok{,}\NormalTok{yn}\OperatorTok{,}\NormalTok{qn)}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+Assume that \(r=1\), \(dt = 0.1\), \(w1=w2=2\) and \(l=6\) and take the
+initial pose to be \(x=1\), \(y=2\) and \(\theta = q =0.7\). The
+following is a Python program to take 10 steps with the 0.1 time step:
+
+\hypertarget{listDDstepwrapper}{%
+\label{listDDstepwrapper}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{xc }\OperatorTok{=} \FloatTok{1}\OperatorTok{;}\NormalTok{ yc }\OperatorTok{=} \FloatTok{2}\OperatorTok{;}\NormalTok{ qc  }\OperatorTok{=} \FloatTok{0.7}
+\NormalTok{t }\OperatorTok{=} \FloatTok{0}\OperatorTok{;}\NormalTok{  dt }\OperatorTok{=} \FloatTok{0.1}
+\KeywordTok{for}\NormalTok{ i}\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\FloatTok{10}
+   \KeywordTok{global}\NormalTok{ xc}\OperatorTok{,}\NormalTok{ yc}\OperatorTok{,}\NormalTok{ qc}\OperatorTok{,}\NormalTok{ t}\OperatorTok{,}\NormalTok{ dt}
+\NormalTok{   xc}\OperatorTok{,}\NormalTok{ yc}\OperatorTok{,}\NormalTok{ qc }\OperatorTok{=}\NormalTok{ ddstep(xc}\OperatorTok{,}\NormalTok{ yc}\OperatorTok{,}\NormalTok{ qc}\OperatorTok{,}\FloatTok{1.0}\OperatorTok{,}\FloatTok{6.0}\OperatorTok{,}\NormalTok{dt}\OperatorTok{,}\FloatTok{2.0}\OperatorTok{,}\FloatTok{2.0}\NormalTok{)}
+\NormalTok{   t }\OperatorTok{=}\NormalTok{ t }\OperatorTok{+}\NormalTok{ dt}
+\NormalTok{   println(round(t}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{3}\NormalTok{)}\OperatorTok{,} \StringTok{" "}\OperatorTok{,}\NormalTok{ round(xc}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{5}\NormalTok{)}\OperatorTok{,} \StringTok{" "}\OperatorTok{,}\NormalTok{ round(yc}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{5}\NormalTok{)}\OperatorTok{,} \StringTok{" "}\OperatorTok{,}\NormalTok{round(qc}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{5}\NormalTok{))}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+The output:
+
+\begin{verbatim}
+0.1 1.15297 2.12884 0.7
+0.2 1.30594 2.25769 0.7
+0.3 1.45891 2.38653 0.7
+0.4 1.61187 2.51537 0.7
+0.5 1.76484 2.64422 0.7
+0.6 1.91781 2.77306 0.7
+0.7 2.07078 2.9019 0.7
+0.8 2.22375 3.03075 0.7
+0.9 2.37672 3.15959 0.7
+1.0 2.52968 3.28844 0.7
+\end{verbatim}
+
+The Euler approximation amounts to assuming the vehicle has constant
+wheel velocity over the interval \(\Delta t\), see
+\texttt{fig:piecewiseconst}. The assumption of piecewise constant
+velocity does not hold in the general case and so we see accumulating
+drift when comparing the robot's true path and the approximated one.
+
+\begin{quote}
+Piecewise Constant nature of the Euler Approximation.
+\end{quote}
+
+A simple modification of the code can accept other wheel speeds. For
+example, if the wheel speeds are given by \(w1 = 0.1 + 2*t\) and
+\(w2 = 0.1\), we would have
+
+\hypertarget{listDDvarwheel}{%
+\label{listDDvarwheel}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{xc }\OperatorTok{=} \FloatTok{1}\OperatorTok{;}\NormalTok{ yc }\OperatorTok{=} \FloatTok{2}\OperatorTok{;}\NormalTok{ qc  }\OperatorTok{=} \FloatTok{0.7}
+\NormalTok{t }\OperatorTok{=} \FloatTok{0}\OperatorTok{;}\NormalTok{  dt }\OperatorTok{=} \FloatTok{0.1}
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\FloatTok{10}
+    \KeywordTok{global}\NormalTok{ t}\OperatorTok{,}\NormalTok{ dt}\OperatorTok{,}\NormalTok{ xc}\OperatorTok{,}\NormalTok{ yc}\OperatorTok{,}\NormalTok{ qc}
+\NormalTok{    w1 }\OperatorTok{=} \FloatTok{0.1} \OperatorTok{+} \FloatTok{2}\OperatorTok{*}\NormalTok{t}
+\NormalTok{    w2 }\OperatorTok{=} \FloatTok{0.1}
+\NormalTok{    xc}\OperatorTok{,}\NormalTok{ yc}\OperatorTok{,}\NormalTok{ qc }\OperatorTok{=}\NormalTok{ ddstep(xc}\OperatorTok{,}\NormalTok{ yc}\OperatorTok{,}\NormalTok{ qc}\OperatorTok{,}\FloatTok{1.0}\OperatorTok{,}\FloatTok{6.0}\OperatorTok{,}\NormalTok{dt}\OperatorTok{,}\NormalTok{w1}\OperatorTok{,}\NormalTok{w2)}
+\NormalTok{    t }\OperatorTok{+=}\NormalTok{  dt}
+\NormalTok{    println(round(t}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{3}\NormalTok{)}\OperatorTok{,} \StringTok{" "}\OperatorTok{,}\NormalTok{ round(xc}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{5}\NormalTok{)}\OperatorTok{,} \StringTok{" "}\OperatorTok{,}\NormalTok{ round(yc}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{5}\NormalTok{)}\OperatorTok{,} \StringTok{" "}\OperatorTok{,}\NormalTok{round(qc}\OperatorTok{,}\NormalTok{digits}\OperatorTok{=}\FloatTok{5}\NormalTok{))}
+\KeywordTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+The output:
+
+\begin{verbatim}
+0.1 1.00765 2.00644 0.7
+0.2 1.02295 2.01933 0.70167
+0.3 1.04586 2.03869 0.705
+0.4 1.07632 2.06461 0.71
+0.5 1.11424 2.0972 0.71667
+0.6 1.15948 2.13662 0.725
+0.7 1.21188 2.18304 0.735
+0.8 1.27122 2.23668 0.74667
+0.9 1.33728 2.29781 0.76
+1.0 1.40976 2.3667 0.775
+\end{verbatim}
+
+You can plot the motion in Python. Another example with circular motion:
+
+\hypertarget{listDDplot}{%
+\label{listDDplot}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{N }\OperatorTok{=} \FloatTok{200}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ zeros(N)}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ zeros(N)}
+\NormalTok{q }\OperatorTok{=}\NormalTok{ zeros(N)}
+
+\NormalTok{x[}\FloatTok{1}\NormalTok{] }\OperatorTok{=} \FloatTok{1.0}\OperatorTok{;}\NormalTok{ y[}\FloatTok{1}\NormalTok{] }\OperatorTok{=} \FloatTok{2.0}\OperatorTok{;}\NormalTok{ q[}\FloatTok{1}\NormalTok{]  }\OperatorTok{=} \FloatTok{0.7}
+\NormalTok{t }\OperatorTok{=} \FloatTok{0}\OperatorTok{;}\NormalTok{  dt }\OperatorTok{=} \FloatTok{0.1}
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\NormalTok{N}\OperatorTok{{-}}\FloatTok{1}
+    \KeywordTok{global}\NormalTok{ t}\OperatorTok{,}\NormalTok{ dt}\OperatorTok{,}\NormalTok{ x}\OperatorTok{,}\NormalTok{ y}\OperatorTok{,}\NormalTok{ q}
+\NormalTok{    w1 }\OperatorTok{=} \FloatTok{0.1}
+\NormalTok{    w2 }\OperatorTok{=} \FloatTok{0.5}
+\NormalTok{    x[i}\OperatorTok{+}\FloatTok{1}\NormalTok{]}\OperatorTok{,}\NormalTok{ y[i}\OperatorTok{+}\FloatTok{1}\NormalTok{]}\OperatorTok{,}\NormalTok{ q[i}\OperatorTok{+}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ ddstep(x[i]}\OperatorTok{,}\NormalTok{ y[i]}\OperatorTok{,}\NormalTok{ q[i]}\OperatorTok{,}\FloatTok{1.0}\OperatorTok{,}\FloatTok{6.0}\OperatorTok{,}\NormalTok{dt}\OperatorTok{,}\NormalTok{w1}\OperatorTok{,}\NormalTok{w2)}
+\NormalTok{    t }\OperatorTok{+=}\NormalTok{  dt}
+\KeywordTok{end}
+
+\NormalTok{display(plot(x}\OperatorTok{,}\NormalTok{y))}
+\NormalTok{readline()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{listPlotExample}{%
+\label{listPlotExample}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{using}\NormalTok{ Plots}
+\NormalTok{N}\OperatorTok{=}\FloatTok{100}
+\NormalTok{t0 }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{t1 }\OperatorTok{=} \FloatTok{2.0}
+\NormalTok{t }\OperatorTok{=} \DataTypeTok{LinRange}\NormalTok{(t0}\OperatorTok{,}\NormalTok{t1}\OperatorTok{,}\NormalTok{N)}
+\NormalTok{dt }\OperatorTok{=}\NormalTok{ (t1}\OperatorTok{{-}}\NormalTok{t0)}\OperatorTok{/}\NormalTok{N}
+\NormalTok{one }\OperatorTok{=}\NormalTok{ ones((N))}
+\NormalTok{xp }\OperatorTok{=}\NormalTok{ zeros((N))}
+\NormalTok{yp }\OperatorTok{=}\NormalTok{ zeros((N))}
+\NormalTok{th }\OperatorTok{=}\NormalTok{ zeros((N))}
+
+\NormalTok{x }\OperatorTok{=}\NormalTok{ t }\OperatorTok{.*}\NormalTok{ t}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ t}
+
+\NormalTok{p }\OperatorTok{=}\NormalTok{ plot(x}\OperatorTok{,}\NormalTok{y}\OperatorTok{,}\NormalTok{ title }\OperatorTok{=} \StringTok{"Quadratic Path"}\NormalTok{)}
+\NormalTok{display(p)}
+\NormalTok{readline()}
+\end{Highlighting}
+\end{Shaded}
+
+Generate wheel speeds:
+
+\hypertarget{listwheelspeed}{%
+\label{listwheelspeed}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{using}\NormalTok{ Plots}
+\NormalTok{N}\OperatorTok{=}\FloatTok{100}
+\NormalTok{t0 }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{t1 }\OperatorTok{=} \FloatTok{2.0}
+\NormalTok{t }\OperatorTok{=} \DataTypeTok{LinRange}\NormalTok{(t0}\OperatorTok{,}\NormalTok{t1}\OperatorTok{,}\NormalTok{N)}
+\NormalTok{one }\OperatorTok{=}\NormalTok{ ones((N))}
+\NormalTok{doty}\OperatorTok{=}\NormalTok{one}
+\NormalTok{dotx}\OperatorTok{=}\FloatTok{2}\OperatorTok{*}\NormalTok{t}
+\NormalTok{ddoty}\OperatorTok{=}\FloatTok{0}
+\NormalTok{ddotx}\OperatorTok{=}\FloatTok{2}\OperatorTok{*}\NormalTok{one}
+
+\NormalTok{r }\OperatorTok{=} \FloatTok{1.0}
+\NormalTok{L }\OperatorTok{=} \FloatTok{4.0}
+\NormalTok{v }\OperatorTok{=}\NormalTok{ sqrt.(dotx}\OperatorTok{.*}\NormalTok{dotx .}\OperatorTok{+}\NormalTok{ doty}\OperatorTok{.*}\NormalTok{doty)}
+\NormalTok{kappa }\OperatorTok{=}\NormalTok{ (dotx}\OperatorTok{.*}\NormalTok{ddoty .}\OperatorTok{{-}}\NormalTok{ doty}\OperatorTok{.*}\NormalTok{ddotx)}\OperatorTok{./}\NormalTok{(v}\OperatorTok{.*}\NormalTok{v}\OperatorTok{.*}\NormalTok{v)}
+\NormalTok{dotphi1 }\OperatorTok{=}\NormalTok{ (v}\OperatorTok{./}\NormalTok{r)}\OperatorTok{.*}\NormalTok{(kappa}\OperatorTok{*}\NormalTok{L .}\OperatorTok{+}\FloatTok{1}\NormalTok{)}
+\NormalTok{dotphi2 }\OperatorTok{=}\NormalTok{ (v}\OperatorTok{./}\NormalTok{r)}\OperatorTok{.*}\NormalTok{(}\OperatorTok{{-}}\NormalTok{kappa}\OperatorTok{*}\NormalTok{L.}\OperatorTok{+}\FloatTok{1}\NormalTok{)}
+
+\NormalTok{p}\OperatorTok{=}\NormalTok{plot(t}\OperatorTok{,}\NormalTok{[dotphi1}\OperatorTok{,}\NormalTok{dotphi2]}\OperatorTok{,}\NormalTok{title }\OperatorTok{=} \StringTok{"Wheel Speeds"}\OperatorTok{,}\NormalTok{label }\OperatorTok{=}\NormalTok{ [}\StringTok{"Right"} \StringTok{"Left"}\NormalTok{])}
+\NormalTok{display(p)}
+\NormalTok{readline()}
+\end{Highlighting}
+\end{Shaded}
+
+And the section of code to check:
+
+\hypertarget{listcheckwheelspeed}{%
+\label{listcheckwheelspeed}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{xp[}\FloatTok{1}\NormalTok{] }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{yp[}\FloatTok{1}\NormalTok{] }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{th[}\FloatTok{1}\NormalTok{] }\OperatorTok{=} \FloatTok{1.5707963267949}
+
+\KeywordTok{for}\NormalTok{ i}\OperatorTok{=}\FloatTok{1}\OperatorTok{:}\NormalTok{N}\OperatorTok{{-}}\FloatTok{1}
+\NormalTok{    xp[i}\OperatorTok{+}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ xp[i] }\OperatorTok{+}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2.0}\NormalTok{)}\OperatorTok{*}\NormalTok{(dotphi1[i]}\OperatorTok{+}\NormalTok{dotphi2[i])}\OperatorTok{*}\NormalTok{cos(th[i])}
+\NormalTok{    yp[i}\OperatorTok{+}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ yp[i] }\OperatorTok{+}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\FloatTok{2.0}\NormalTok{)}\OperatorTok{*}\NormalTok{(dotphi1[i]}\OperatorTok{+}\NormalTok{dotphi2[i])}\OperatorTok{*}\NormalTok{sin(th[i])}
+\NormalTok{    th[i}\OperatorTok{+}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ th[i] }\OperatorTok{+}\NormalTok{ (r}\OperatorTok{*}\NormalTok{dt}\OperatorTok{/}\NormalTok{(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{L))}\OperatorTok{*}\NormalTok{(dotphi1[i]}\OperatorTok{{-}}\NormalTok{dotphi2[i])}
+\KeywordTok{end}
+
+\NormalTok{plot(x}\OperatorTok{,}\NormalTok{y}\OperatorTok{,}\NormalTok{ label }\OperatorTok{=} \StringTok{"Original Path"}\NormalTok{ )}
+\NormalTok{p }\OperatorTok{=}\NormalTok{ plot}\OperatorTok{!}\NormalTok{(xp}\OperatorTok{,}\NormalTok{yp}\OperatorTok{,}\NormalTok{  title}\OperatorTok{=}\StringTok{"Path"}\OperatorTok{,}\NormalTok{ label }\OperatorTok{=} \StringTok{"Robot Path"}\NormalTok{)}
+\NormalTok{display(p)}
+\NormalTok{readline()}
+
+
+
+
+
+
+
+
+\NormalTok{The wheel velocities.}
+
+
+
+
+
+
+
+\NormalTok{Comparison of the path and driven path.}
+\end{Highlighting}
+\end{Shaded}
+
+On a robot, the motor controllers will be taking digital commands which
+means the wheel velocities are discrete. This implies that the robot has
+fixed wheel velocities during the interval between velocity updates. We
+know in the case of the differential drive robot, fixed wheel speeds
+means the robot is driving a line or circle. Therefor the DD robot in
+this case is following a connected path made up of line or circle
+segments, see \texttt{fig:piecewiseconst}. Even when we do have
+functional forms for the wheel speeds, the implementation is still
+discrete.
+
+It makes sense to treat this as a discrete formula and to write as such:
+
+\[\begin{aligned}
+\boxed{
+\begin{array}{l}
+v_k = \sqrt{\dot{x}(t_k)^2 + \dot{y}(t_k)^2} , \quad\quad
+\displaystyle  \kappa_k = \frac{\dot{x}(t_k) \ddot{y}(t_k ) -  \dot{y}(t_k) \ddot{x}(t_k)}{v_k^3}, \\[3mm]
+\displaystyle  \omega_{1,k} = \frac{v_k}{r}(\kappa_k L + 1), \quad\quad
+\displaystyle  \omega_{2,k} = \frac{v_k}{r}(-\kappa_k L + 1)
+\end{array} }
+\end{aligned}\]
+
+Determine the wheel velocities to drive through the way points (0,1),
+(1,2), (2,5). Recall that we found an interpolating polynomial in the
+Lagrange Interpolation section. This provided us with the following:
+
+\[x(t) = -t(t-2) + t(t-1)  = t,\]
+
+\[y(t) =  \frac{1}{2} (t-1)(t-2) - 2t(t-2) + \frac{5}{2} (t)(t-1)= t^2+1 .\]
+
+Next we compute the derivatives
+
+\[\dot{x} = 1,\quad \ddot{x} = 0,\quad \dot{y} = 2t,\quad \ddot{y} = 2\]
+
+and then plug into the equations
+
+\[\kappa = \frac{(1)(2) - (2t)(0)}{\left(1 + 4t^2\right)^{3/2}} = \frac{2}{\left(1 + 4t^2\right)^{3/2}} ,\]
+
+\[\dot{\phi_1} =  \frac{v}{r}\left( \kappa L + 1\right) , \quad \dot{\phi_2} = \frac{v}{r}\left( - \kappa L  + 1\right).\]
+
+\hypertarget{limitations}{%
+\subsection{Limitations}\label{limitations}}
+
+In the previous sections we have shown how to drive a robot along any
+path that the kinematics admits. In the mathematical examples, there are
+no problems with following a precomputed path. However, this is an
+example of open loop control and it suffers from many types of error
+such as discretization error, non-uniform components, variations in
+power, signals and an unpredictable environment. The robot will drift
+from the intended path. This drift grows over time.
+
+In practice, we will normally not compute the analytic path from which
+to compute the derivatives and such to plug into the inverse kinematics.
+We will use more traditional control algorithms to direct the robot such
+as a PID controller. We may have a path to follow, but we will not plug
+that path into the inverse kinematics. Instead we will extract samples
+from the path and feed destination points into the control algorithm.
+This does not mean that our efforts working out the inverse kinematics
+was wasted. Very much to the contrary. We will still use the IK formulas
+in our controllers. Understanding the IK will help in the controller
+design. The IK can often help isolate aspects of the system dynamics
+which eases controller development or makes it possible to gain a stable
+controller.
+
+\textbf{Footnotes}

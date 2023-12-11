@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="13cm" viewBox="192 49 308 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="252" y1="63.7361" x2="252" y2="288.264"/>
+    <polygon style="fill: #000000" points="252,56.2361 257,66.2361 252,63.7361 247,66.2361 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="252,56.2361 257,66.2361 252,63.7361 247,66.2361 "/>
+    <polygon style="fill: #000000" points="252,295.764 247,285.764 252,288.264 257,285.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="252,295.764 247,285.764 252,288.264 257,285.764 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="202.736" y1="246" x2="488.264" y2="246"/>
+    <polygon style="fill: #000000" points="195.236,246 205.236,241 202.736,246 205.236,251 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="195.236,246 205.236,241 202.736,246 205.236,251 "/>
+    <polygon style="fill: #000000" points="495.764,246 485.764,251 488.264,246 485.764,241 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="495.764,246 485.764,251 488.264,246 485.764,241 "/>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="254" y="104" width="141" height="141"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="254" y="104" width="141" height="141"/>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="381" y="265">
+    <tspan x="381" y="265">2</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="766" y="145">
+    <tspan x="766" y="145"></tspan>
+  </text>
+  <text font-size="19.1911" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="392" y="265">
+    <tspan x="392" y="265">p</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="227.3" y="111.3">
+    <tspan x="227.3" y="111.3">2</tspan>
+  </text>
+  <text font-size="19.1911" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="238.3" y="111.3">
+    <tspan x="238.3" y="111.3">p</tspan>
+  </text>
+  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="492" y="237">
+    <tspan x="492" y="237">1</tspan>
+  </text>
+  <text font-size="12.4178" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="278" y="71">
+    <tspan x="278" y="71">2</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="265" y="65">
+    <tspan x="265" y="65">Q</tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:SymbolPi;font-style:normal;font-weight:normal" x="478.3" y="233">
+    <tspan x="478.3" y="233">Q</tspan>
+  </text>
+</svg>

@@ -1,0 +1,299 @@
+\hypertarget{sensor-noise-and-measurement}{%
+\section{Sensor Noise and
+Measurement}\label{sensor-noise-and-measurement}}
+
+The main concern of this chapter is the errors involved with the
+measurements. There are plenty of ways error can enter. A brief list of
+error types is given below.
+
+\begin{itemize}
+\tightlist
+\item
+  Intrinsic ability of the sensor
+\item
+  Connection of the sensor to the world
+\item
+  Connection of the sensor to the electronics
+\item
+  Sampling and Aliasing
+\item
+  Interference
+\item
+  Precision
+\item
+  Accuracy
+\item
+  Signal to noise ratio
+\end{itemize}
+
+The current values of the variables in the system is called the
+\emph{state}. Often this is represented as \(x_k\) (a vector of real
+values), the state at time step \(k\) (an integer). By \(x_k\) we mean
+the system's configuration which includes pose, dynamics, and internal
+measurements that are relevant to the problem. The temperature of the
+CPU may be an important variable in the system, but probably has little
+to do with localization. So \(x_k\) does not contain everything. All of
+the sensors have uncertainty, i.e. they are very noisy. For example,
+smooth surfaces cause sonar and lasers to reflect less back to the
+source and thus give wrong ranging results. This is known as specular
+reflection. Normally this results in estimating the object as much
+further away. So we don't know the robot's state. We can only estimate
+it. To gain an accurate estimate, we must model the type of error
+present in the system. Clearly we design the system to minimize the
+errors, but one cannot design them all away. The greatest error normally
+encountered is with the sensor itself. This will be our focus.
+
+How can we model this error or uncertainty? Error is modeled using
+probabilistic tools. Typically we ask "what is the error of this
+measurement for a particular state"? We can define \(p(z_k|x_k)\) as the
+probability or likelihood of getting the measurement value \(z_k\) given
+we are reading state \(x_k\). Can we determine or model \(p(z_k|x_k)\)?
+Again, the question we ask here is ... what is the current status of the
+robot? What are all the values of all the relevant parameters for the
+robot's relation to the environment?
+
+If we happen to know something about the environment, say we have a map
+and a set of expectations based on that map, does this change our
+probability? This is pretty intuitive. If my previous location was near
+San Francisco and as a ground robot can only travel at some speed, then
+the probability of seeing the Eiffel tower should be low. In this case
+can we write down \(p(z_k|x_k,m_k)\) where \(m_k\) is a map of the
+environment?
+
+In many sensing systems we may have redundant measurements of some
+quantities. We may actually measure combinations of components and
+possibly miss some. For example, I might be able to measure velocity but
+not position. I might know speed but not the components of velocity.
+This means that the measurement \(z\) is some function of the state
+\(x\) with errors: \(z = h(x) + \delta\). Is it possible to determine
+\(h\) and \(\delta\)? We will normally have an array of values
+\(z_k = \{ z_k^1, z_k^2, \dots
+, z_k^k\}\). We will assume the measurements are independent:
+
+\[p(z|x,m) = \prod_{k=1}^{N}p(z_k|x,m).\]
+
+What is involved in a measurement? What can activate the sensor?
+Measurement can be caused by:
+
+\begin{itemize}
+\tightlist
+\item
+  a known obstacle
+\item
+  interference
+\item
+  other obstacles
+\item
+  random events
+\item
+  maximum range
+\item
+  sensor or software errors
+\end{itemize}
+
+The error or noise enters in the measurement of known item, the position
+of known item, the position of other obstacles and as a missing item.
+
+\hypertarget{state-estimation}{%
+\section{State Estimation}\label{state-estimation}}
+
+\hypertarget{state-variables-and-errors}{%
+\subsection{State variables and
+Errors}\label{state-variables-and-errors}}
+
+Recall that for any state variable we have
+
+\begin{itemize}
+\tightlist
+\item
+  True value: \(y\)
+\item
+  Measured value: \(\tilde{y}\)
+\item
+  Estimated value: \(\hat{y}\)
+\end{itemize}
+
+The true value is not known. It is what we seek. The measured value
+comes from the sensor which is subject to error as listed above.
+Estimated value comes from measurement and system model.
+
+Basic errors that are used:
+
+\begin{itemize}
+\tightlist
+\item
+  Measurement error: \(v = y - \tilde{y}\)
+\item
+  Residual error: \(e = \tilde{y} - \hat{y}\)
+\end{itemize}
+
+We don't know \(v\) obviously. The residual error, \(e\), is based on a
+model of the system and is known explicitly. Basic error types: we are
+concerned with two fundamental error types
+
+\begin{itemize}
+\tightlist
+\item
+  Systematic error - deterministic
+\item
+  Random error - non-deterministic
+\end{itemize}
+
+Systematic errors are errors of design or implementation:
+
+\begin{itemize}
+\tightlist
+\item
+  Incorrectly mounted sensor
+\item
+  Blocked sensor
+\item
+  Sensor biased by hardware
+\item
+  Sampling issues
+\item
+  Resolution issues
+\item
+  Incomplete measurements
+\item
+  Sensitivity
+\item
+  Nonlinearity
+\end{itemize}
+
+Random errors
+
+\begin{itemize}
+\tightlist
+\item
+  Based on white or Gaussian noise
+\item
+  Actually could be any distribution, but Gaussian is standard.
+\end{itemize}
+
+\hypertarget{filters}{%
+\subsection{Filters}\label{filters}}
+
+The idea of filtering is to use the measurement PLUS the model to
+provide a better estimate of the state. Finding the model may be the
+hardest part but the part that makes the process effective. For example,
+it is where the Kalman Filter enters. The Kalman filter uses a linear
+time stepping model and environmental data to improve state estimation.
+
+What does one mean by filter? In this case we are attempting to filter
+out noise. Simple filters in signal processing often filter in the
+frequency domain. For example filtering out high frequencies since this
+is often noise. We can filter out noise by fitting the data to a model.
+We assume that the data represents a constant and so we can compute the
+mean of the data. This model can also be represented by the distribution
+that the data appears to have come from, e.g. a normal distribution.
+
+The distribution that the data comes from can change over time. If two
+data items come from the same distribution then we have some reason to
+believe a mean is a good filter value. If not, how do we balance data
+items which have different reliability?
+
+\hypertarget{high-and-low-pass-filters}{%
+\subsection{High and Low pass filters}\label{high-and-low-pass-filters}}
+
+Assume that you have digitized signal, meaning the analog sensed values
+have been converted to numerical values sampled at regular times. Call
+that signal \(\{ z[n]\}\). If that signal has high frequency noise
+(static or white noise), how can you eliminate or filter out that noise?
+If the signal has low frequency noise (like mechanical oscillations or
+other forms of bias), can this be filtered out. The answer is yes. Two
+common filters are low and high pass filters. The low pass refers to the
+filter allowing low frequencies through but filtering out the higher
+frequencies like the static. {[}And similarly for the high pass
+filter.{]}
+
+Since integration tends to smooth out signals, we use an integration
+formula that has an exponential decay built in. This removes the high
+frequencies (the static) and leaves the core signal. The algorithm is
+given below. Sample output may be found in \texttt{fig:lowpass}.
+
+\hypertarget{low-pass-filter-integration-based}{%
+\subsubsection{Low Pass Filter (integration
+based)}\label{low-pass-filter-integration-based}}
+
+\begin{verbatim}
+for i from 1 to n
+       y[i] := y[i-1] + a * (z[i] - y[i-1])
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{using} \BuiltInTok{Random}\OperatorTok{,}\NormalTok{ Distributions}
+
+\NormalTok{N }\OperatorTok{=} \FloatTok{1000}
+\NormalTok{sigma }\OperatorTok{=} \FloatTok{1.0}
+\NormalTok{r }\OperatorTok{=}\NormalTok{ Normal(}\FloatTok{0}\OperatorTok{,}\NormalTok{ sigma)}
+\NormalTok{n }\OperatorTok{=}\NormalTok{ rand(r}\OperatorTok{,}\NormalTok{ N)}
+
+\NormalTok{t }\OperatorTok{=}\NormalTok{ range(}\FloatTok{0}\OperatorTok{,}\FloatTok{12}\OperatorTok{,}\NormalTok{length}\OperatorTok{=}\NormalTok{N)}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ sin.(t)}
+\NormalTok{z }\OperatorTok{=}\NormalTok{ x }\OperatorTok{+}\NormalTok{ n}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ zeros(N)}
+
+\NormalTok{y[}\FloatTok{1}\NormalTok{] }\OperatorTok{=}\NormalTok{ z[}\FloatTok{1}\NormalTok{]}
+\KeywordTok{for}\NormalTok{ i }\OperatorTok{=} \FloatTok{1}\OperatorTok{:}\NormalTok{N}
+\NormalTok{    y[i] }\OperatorTok{=}\NormalTok{ y[i] }\OperatorTok{+} \FloatTok{0.075}\OperatorTok{*}\NormalTok{(z[i] }\OperatorTok{{-}}\NormalTok{ y[i])}
+\KeywordTok{end}
+
+
+
+
+
+
+
+
+\NormalTok{Signal }\KeywordTok{in}\NormalTok{ red}\OperatorTok{,}\NormalTok{ noisy version of the signal }\KeywordTok{in}\NormalTok{ blue.}
+
+
+
+
+
+
+\NormalTok{Noisy signal }\KeywordTok{in}\NormalTok{ blue}\OperatorTok{,}\NormalTok{ filtered signal }\KeywordTok{in}\NormalTok{ green.}
+\end{Highlighting}
+\end{Shaded}
+
+Differentiation will set constants to zero and attenuate low
+frequencies, filters based on differentiation formulas are employed. One
+such formula is given below. The output of this filter is given in
+\texttt{fig:highpass}.
+
+\hypertarget{high-pass-filter-differentiation-based}{%
+\subsubsection{High Pass Filter (differentiation
+based)}\label{high-pass-filter-differentiation-based}}
+
+\begin{verbatim}
+for i from 1 to n
+     y[i] := a * (z[i] - z[i-1])
+
+
+
+
+
+
+Signal in red, noisy version of the signal in blue.
+
+
+
+
+
+
+Noisy signal in blue, filtered signal in green.
+\end{verbatim}
+
+A variation of the high pass filter is
+
+\begin{verbatim}
+for i from 1 to n
+     y[i] := a * (y[i-1]  + z[i] - z[i-1])
+\end{verbatim}
+
+The band pass filter is a filter which allows a range of frequencies to
+pass through. One may simply try applying both a low and high pass
+filter. Although filters are easy to understand and to implement,
+designing them for a specific application can be challenging.

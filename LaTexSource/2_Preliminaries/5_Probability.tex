@@ -1,0 +1,116 @@
+\hypertarget{probability}{%
+\section{Probability}\label{probability}}
+
+Let \(X\) denote a \texttt{random\ variable}. Let \(P\) denote the
+\texttt{probability} that \(X\) takes on a specific value \(x\):
+\(P(X=x)\). If \(X\) takes on discrete values we say that \(X\) is a
+discrete variable. If \(X\) takes on continuous values we say that \(X\)
+is a continuous variable.
+
+Normally \(P(X=x)\) makes sense for discrete spaces and we use \(P(x_1 <
+X < x_2)\) for continuous spaces. For continuous spaces we define the
+probability density function (pdf) \(p(x)\) in the following manner:
+
+\[P(x_1 \leq X \leq x_2) = \int_{x_1}^{x_2} p(x)\, dx\]
+
+\hypertarget{uncertainty-and-distributions}{%
+\subsection{Uncertainty and
+Distributions}\label{uncertainty-and-distributions}}
+
+Recall that random variables are drawn from some \texttt{probability
+distribution} function. Often these are the normal distributions seen in
+many areas of the sciences, but can be any shape as long as the area
+under the curve is one. Specifically, the normal distribution is given
+by
+
+\[p(x) = \frac{1}{\sqrt{2\pi}\, \sigma}e^{-(x-\mu)^2/2\sigma^2}\]
+
+where \(\mu\) is the mean and \(\sigma^2\) is the variance (\(\sigma\)
+is the standard deviation). For multivariate distributions (vector
+valued random variables) we can exend to
+
+\[p(x) = \frac{1}{(2\pi)^{n/2}\sqrt{\det(\Sigma)}}e^{-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)}\]
+
+where \(\mu\) - mean vector, \(\Sigma\) - covariance matrix (symmetric
+positive definite).
+
+\begin{quote}
+Probability Distribution Function
+\end{quote}
+
+Let \(X,Y\) be two random variables, the joint distribution is
+
+\[P(x,y) = P(X=x~\mbox{and}~Y=y).\]
+
+We say the the variables are independent if
+
+\[P(x,y) = P(x)P(y)\]
+
+\texttt{Conditional\ probability}: what is the probability of \(x\) if
+we know \(y\) has occurred? Denoted \(P(x|y)\),
+
+\[P(x|y) = \frac{P(x,y)}{P(y)}\]
+
+If they are independent
+
+\[P(x|y) = \frac{P(x,y)}{P(y)}=\frac{P(x)P(y)}{P(y)} = P(x)\]
+
+Total probability (relax the uppercase formalism)
+
+\[p(x) = \sum_{y} p(x|y)p(y)\quad \left[= \int_Y p(x|y)p(y)\, dy \right]\]
+
+\textbf{Bayes Rule} (way to invert conditional probabilities)
+
+\[p(x|y) = \frac{p(y|x)p(x)}{p(y)}\]
+
+\textbf{Expectation} or the mean or average for a distribution is given
+by
+
+\[E(x) = \sum x p(x) \quad \left[ =\int_X x p(x)\, dx \right]\]
+
+Moments for a distribution are given by
+
+\[\tilde{\mu_r} = E(x^r) = \int_X x^rp(x)\, dx\]
+
+\[\mu = \tilde{\mu_1} = \quad \mbox{Mean - expected value}\]
+
+Moments about the mean
+
+\[\mu_r = \int_X (x-\mu)^rp(x) \,dx\]
+
+Second moment about the mean is called the \emph{Variance}: \(\mu_2 =
+\sigma^2\), where \(\sigma\) is called the \emph{Standard Deviation}.
+Note that variance \(=E[(x-\mu)^2]\) and covariance
+\(E(X\cdot Y)-\mu\nu\)
+
+where \(\mu\), \(\nu\) are the means for \(X\) and \(Y\).
+
+The \textbf{Covariance} Matrix is given by \(\Sigma =\)
+
+\[\begin{aligned}
+\left( \begin{array}{cccc}E[(x_1-\mu_1)(x_1-\mu_1)^T]& \dots & E[(x_1-\mu_1)(x_n-\mu_n)^T]
+ \\     \dots & \ddots & \dots
+  \\ E[(x_n-\mu_n)(x_1-\mu_1)^T]  & \dots &
+  E[(x_n-\mu_n)(x_n-\mu_n)^T]\end{array}\right)
+\end{aligned}\]
+
+\[= E[(x-\mu)(x-\mu)^T]\]
+
+There are many terms to describe the variance of a set of random
+variables. Variance, covariance and cross-variance, variance-covariance
+are a few example terms. We will use variance for scalar terms and
+covariance for vector terms.
+
+\hypertarget{sample-covariance}{%
+\subsubsection{Sample covariance}\label{sample-covariance}}
+
+If you know the population mean, the covariance is given by
+
+\[Q = \frac{1}{N} \sum_{k=1}^{N}(x_k - E(x))(x_k - E(x))^T\]
+
+and if you don't know the mean the covariance is given by
+
+\[Q = \frac{1}{N-1} \sum_{k=1}^{N}(x_k - \overline{x})(x_k - \overline{x})^T\]
+
+Note: \((x_1-\overline{x})\), \((x_2-\overline{x})\),
+\((x_2-\overline{x})\) has \(n-1\) residuals (since they sum to zero).

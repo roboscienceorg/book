@@ -1,0 +1,81 @@
+\hypertarget{problems}{%
+\section{Problems}\label{problems}}
+
+\begin{enumerate}
+\tightlist
+\item
+  Using Python with Matplotlib, code the basic motion algorithm.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Demonstrate your approach with one obstacle.
+  \item
+    Demonstrate with several obstacles.
+  \end{enumerate}
+\item
+  Using Python with Matplotlib and the basic motion algorithm, place a
+  set of obstacles that cause the robot to cycle and not find the goal.
+  In other words, build a robot trap.
+\item
+  Write a Python algorithm to perform boundary following on a grid
+  domain.
+\item
+  Write a boundary following routine for the DD robot in Gazebo using
+  the Lidar. Use a video screen capture program to record the results.
+\item
+  Assume that you have a finite number of convex solid obstacles (solid
+  means you are not starting inside). Prove or provide a
+  counter-example.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Will Bug 1 succeed in navigating from any start point to any goal
+    point?
+  \item
+    Will Bug 2 succeed in navigating from any start point to any goal
+    point?
+  \item
+    Will Tangent Bug succeed in navigating from any start point to any
+    goal point?
+  \end{enumerate}
+\item
+  Sketch equations \texttt{LidarRangeEq} and \texttt{ObsConstrEq}.
+\item
+  Assume that you have a grid map of the type found in the left image of
+  \texttt{coarsemap} which was stored in an array. If the start point
+  was an interior cell, implement the Bug 1 algorithm to find the
+  sequence of cells which describe an escape path if one exists.
+\item
+  Is it possible to have a single non-convex obstacle trap Bug 1 or Bug
+  2?
+\item
+  Assume that you have a grid domain and the obstacles are represented
+  in the grid map. Write a Python program to implement:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Bug 1
+  \item
+    Bug 2
+  \item
+    Bug 3
+  \item
+    Tangent Bug
+  \end{enumerate}
+\item
+  Write a Python program to implement the Wavefront algorithm.
+
+  \begin{enumerate}
+  \tightlist
+  \item
+    Demonstrate on a map with multiple obstacles.
+  \item
+    Compare to the \(A^*\) approach in the previous exercise.
+  \end{enumerate}
+\end{enumerate}

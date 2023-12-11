@@ -1,0 +1,703 @@
+\hypertarget{ros-communication}{%
+\section{ROS Communication}\label{ros-communication}}
+
+OSRF provides tutorials on ROS, \url{http://wiki.ros.org/ROS/Tutorials}.
+Some of that material is repeated here and much greater detail can be
+found in the texts referenced earlier. After installing ROS and setting
+up the environment, one can get started using ROS if you plan to use
+Python. One can use several other languages for development. Some of
+those languages may require additional setup. For example, C/C++ require
+additional setup and so you will need to learn about the build
+environment, ROS packages, etc. These commands are covered in the
+Beginner Level Tutorials online. Our goal for this section is to
+illustrate basic ROS communications which requires some infrastructure.
+We will return to the administrative side of ROS after some simple
+coding examples. Some experience with Linux and the command line is
+useful here.
+
+The terminal or command window brings up the shell or command
+interpreter. For those not familiar with linux, this is like DOS. The
+shell program is called bash. There are good online references for bash.
+The appendix has a brief introduction.
+
+As mentioned above the basic form of ROS communication is the
+\texttt{Publish-Subscribe} mechanism. To see this in action, you need to
+do two things: (1) run a subscriber, (2) run a publisher. The "pubsub"
+communication will be shown in Python. ROS2 is only available for
+Python3, so if you don't have Python3, please load it now.
+
+\hypertarget{simple-publisher-subscriber-example}{%
+\subsection{Simple Publisher-Subscriber
+Example}\label{simple-publisher-subscriber-example}}
+
+Our first example is going to send a single text message from one
+program to another. This material is adapted from the basic examples on
+the ROS2 Github site. Bring up two more terminal windows and type python
+in each:
+
+\begin{verbatim}
+alta:~ jmcgough$ python3
+Python 3.6.5 (default, Apr 25 2018, 14:26:36)
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+\end{verbatim}
+
+In one window type:
+
+\begin{verbatim}
+>>> import rclpy
+>>> from std_msgs.msg import String
+>>> rclpy.init(args=None)
+>>> pnode = rclpy.create_node('minimal_publisher')
+>>> publisher = pnode.create_publisher(String, 'topic')
+\end{verbatim}
+
+The first step imports ROS library. The second step brings in the ROS
+message type \emph{String}. Next we start up ROS2. The fourth line
+creates a ROS node and names it. The fifth line establishes ourself as a
+publisher and sets the topic name and datatype. In this example, the
+topic name is {topic} and the topic datatype is the ROS standard message
+type {String}. So, your python shell is now a ROS node that can publish
+on the established topic.
+
+In the second window, type:
+
+\begin{verbatim}
+>>> import rclpy
+>>> from std_msgs.msg import String
+>>> rclpy.init(args=None)
+>>> node = rclpy.create_node('min_sub')
+>>> def chatter_callback(msg):
+...   global node
+...   node.get_logger().info('This is what I heard: "%s"' % msg.data)
+...
+>>> subscription = node.create_subscription(String, 'topic', chatter_callback)
+>>> while rclpy.ok():
+...   rclpy.spin_once(node)
+\end{verbatim}
+
+The first four steps are the same as above. The fifth line defines the
+callback function. This function is called when a message is published
+on the topic that our node has subscribed to. Following the callback
+function, we subscribe to the topic and define the callback function to
+handle the message that has arrived. The while at the end places the
+node into an event loop to capture the message.
+
+\begin{quote}
+Simple PubSub example
+\end{quote}
+
+Now the fun step. In the first python window (the one that has the
+Publisher line), type:
+
+\begin{verbatim}
+>>> msg = String()
+>>> msg.data = "Hello"
+>>> publisher.publish(msg)
+\end{verbatim}
+
+You should see on the Subscriber window:
+
+\begin{verbatim}
+[INFO] [min_sub]: This is what I heard: "Hello"
+\end{verbatim}
+
+You have successfully sent a message from one process (program) to
+another. There is a similarity between writing to a topic and writing to
+a file. The line
+
+\begin{verbatim}
+publisher = pnode.create_publisher(String, 'topic')
+\end{verbatim}
+
+is similar to opening a file named topic and returning the file
+descriptor \texttt{publisher}. The full power of Python is available; a
+simple extension can produce multiple messages. He is a sample of a loop
+containing a publish.
+
+\begin{verbatim}
+>>> for i in range(5):
+...   msg.data = "Message number " + str(i)
+...   publisher.publish(msg)
+...
+>>>
+\end{verbatim}
+
+This results with the text in the other window:
+
+\begin{verbatim}
+[INFO] [min_sub]: This is what I heard: "Message number 0"
+[INFO] [min_sub]: This is what I heard: "Message number 1"
+[INFO] [min_sub]: This is what I heard: "Message number 2"
+[INFO] [min_sub]: This is what I heard: "Message number 3"
+[INFO] [min_sub]: This is what I heard: "Message number 4"
+\end{verbatim}
+
+We can extend this example so that our talker is talking to two
+listening programs. First we modify our talker to {talk} on two topics,
+by adding the line:
+
+\begin{verbatim}
+>>> publisher2 = pnode.create_publisher(String, 'topic2')
+\end{verbatim}
+
+Next we create a new program to listen to the new optic. Create a new
+terminal window and enter:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ rclpy}
+\ImportTok{from}\NormalTok{ std\_msgs.msg }\ImportTok{import}\NormalTok{ String}
+\NormalTok{rclpy.init(args}\OperatorTok{=}\VariableTok{None}\NormalTok{)}
+\NormalTok{node }\OperatorTok{=}\NormalTok{ rclpy.create\_node(}\StringTok{\textquotesingle{}min\_sub2\textquotesingle{}}\NormalTok{)}
+\KeywordTok{def}\NormalTok{ chatter\_callback(msg):}
+\NormalTok{...   }\KeywordTok{global}\NormalTok{ node}
+\NormalTok{...   node.get\_logger().info(}\StringTok{\textquotesingle{}This is what I heard: "}\SpecialCharTok{\%s}\StringTok{"\textquotesingle{}} \OperatorTok{\%}\NormalTok{ msg.data)}
+\NormalTok{...}
+
+\NormalTok{subscription }\OperatorTok{=}\NormalTok{ node.create\_subscription(String, }\StringTok{\textquotesingle{}topic2\textquotesingle{}}\NormalTok{, chatter\_callback)}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}} \ControlFlowTok{while}\NormalTok{ rclpy.ok():}
+\NormalTok{...   rclpy.spin\_once(node)}
+\NormalTok{...}
+
+
+
+
+
+
+
+\NormalTok{Simple PubSub example cont.}
+\end{Highlighting}
+\end{Shaded}
+
+From the publisher python process, setup the new topic
+
+\begin{verbatim}
+>>> publisher2 = pnode.create_publisher(String, 'topic2')
+\end{verbatim}
+
+and now you can send to the new node:
+
+\begin{verbatim}
+>>> msg.data = "Second topic Hello"
+>>> publisher2.publish(msg)
+\end{verbatim}
+
+or you can send to the old node:
+
+\begin{verbatim}
+>>> msg.data = "First topic Hello"
+>>> publisher.publish(msg)
+\end{verbatim}
+
+You should see the output on the two separate listener programs. One
+more modification will illustrate these ideas. The previous examples got
+us up and running. At this point, it is easy to make small changes and
+run brief experiments in the command interpreter.
+
+\hypertarget{python-ros-programs}{%
+\subsection{Python ROS Programs}\label{python-ros-programs}}
+
+There is a limit to how convenient it is using the interpreter directly.
+The Python interpreter is very handy for developing code and
+experimenting with parameters. However, as the code base grows it makes
+sense to move over to placing the code in a file and running it from the
+bash terminal. For the rest of the examples, we switch to a more
+traditional programming style. This means the code is in a file which
+will be executed as a script and not as individual commands. A bit more
+like what you do with C, Java or normal Python usage.
+
+The main difference it makes at this stage is that you no longer have
+the event loop which the Python command interpreter gave you. You will
+need to supply some type of event loop or have all the commands entered
+and timed as needed. We will focus on the former. So the last example
+above will be modified with a small loop added and the three programs
+will be listed below. If you are reading this from an electronic
+version, you can then cut and paste into your editor. Otherwise the code
+can be obtained from CODE REPO LINK HERE!!!
+
+Place the code in a file and at the top of the file enter
+
+\begin{verbatim}
+#!/usr/bin/env python3
+\end{verbatim}
+
+The \texttt{\#!} (called shebang) in the first two bytes tells the
+operating system to use the python interpreter for the file. One new
+issue is that the process will terminate after the last command. We did
+not need to worry about this when we were running in the interpreter
+since it was running an event loop (waiting for our input). So we need
+to have something to keep the process going. A simple open loop has been
+added to the publisher for the demonstration. On the subscriber side, we
+also need a way to keep the process running. ROS provides some commands
+that allow us to set up the event loop. We will combine a while loop
+with \texttt{rclpy.spin\_once(node)} which gives us an infinite loop and
+waits for an event like a message published on a topic.
+
+Based on the couple of modifications above, the simple publisher and
+subscriber example can be written as the following Python programs,
+\texttt{lst:publishercode}, \texttt{lst:subscribercode}.
+
+\begin{quote}
+\#!/usr/bin/env python3 import rclpy from std\_msgs.msg import String
+
+rclpy.init(args=None)
+
+node = rclpy.create\_node('publisher') pub1 =
+node.create\_publisher(String, 'topic1') pub2 =
+node.create\_publisher(String, 'topic2') msg = String()
+
+\begin{description}
+\item[while True:]
+message = input("\textgreater{} ") if message == 'exit': break msgarr =
+message.split(',') ch = int(msgarr{[}1{]}) msg.data = msgarr{[}0{]} if
+ch == 1: pub1.publish(msg) if ch == 2: pub2.publish(msg)
+\end{description}
+
+node.destroy\_node() rclpy.shutdown()
+
+\#!/usr/bin/env python3 import rclpy from std\_msgs.msg import String
+
+\begin{description}
+\item[def chatter\_callback(msg):]
+global node node.get\_logger().info('This is what I heard: "\%s"' \%
+msg.data)
+\end{description}
+
+rclpy.init(args=None) node = rclpy.create\_node('min\_sub1')
+subscription = node.create\_subscription(String, 'topic1',
+chatter\_callback) while rclpy.ok(): rclpy.spin\_once(node)
+\end{quote}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#!/usr/bin/env python3}
+\ImportTok{import}\NormalTok{ rclpy}
+\ImportTok{from}\NormalTok{ std\_msgs.msg }\ImportTok{import}\NormalTok{ String}
+
+\KeywordTok{def}\NormalTok{ chatter\_callback(msg):}
+   \KeywordTok{global}\NormalTok{ node}
+\NormalTok{   node.get\_logger().info(}\StringTok{\textquotesingle{}This is what I heard: "}\SpecialCharTok{\%s}\StringTok{"\textquotesingle{}} \OperatorTok{\%}\NormalTok{ msg.data)}
+
+\NormalTok{rclpy.init(args}\OperatorTok{=}\VariableTok{None}\NormalTok{)}
+\NormalTok{node }\OperatorTok{=}\NormalTok{ rclpy.create\_node(}\StringTok{\textquotesingle{}min\_sub2\textquotesingle{}}\NormalTok{)}
+\NormalTok{subscription }\OperatorTok{=}\NormalTok{ node.create\_subscription(String, }\StringTok{\textquotesingle{}topic2\textquotesingle{}}\NormalTok{, chatter\_callback)}
+\ControlFlowTok{while}\NormalTok{ rclpy.ok():}
+\NormalTok{   rclpy.spin\_once(node)}
+\end{Highlighting}
+\end{Shaded}
+
+Cut and paste these into three different files, pub.py, sub1.py and
+sub2.py, and run in three different terminals. In pub.py one can type
+your message, then comma, then the topic number (1 or 2): {message,
+number} .
+
+\begin{quote}
+Simple PubSub Program example. Computing the wheel velocties in one
+program and sending the commmands to another program to implement.
+\end{quote}
+
+Don't forget to make the two files executable by
+
+\begin{verbatim}
+chmod +x <filename>
+\end{verbatim}
+
+One can have multiple communication lines between nodes. We will add a
+third topic to the publisher and have sub1 subscribe to it. The new
+versions of the publisher and sub1 are given below.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#!/usr/bin/env python3}
+\ImportTok{import}\NormalTok{ rclpy}
+\ImportTok{from}\NormalTok{ std\_msgs.msg }\ImportTok{import}\NormalTok{ String}
+\ImportTok{from}\NormalTok{ std\_msgs.msg }\ImportTok{import}\NormalTok{ Int16}
+
+\NormalTok{rclpy.init(args}\OperatorTok{=}\VariableTok{None}\NormalTok{)}
+
+\NormalTok{node }\OperatorTok{=}\NormalTok{ rclpy.create\_node(}\StringTok{\textquotesingle{}publisher\textquotesingle{}}\NormalTok{)}
+\NormalTok{pub1 }\OperatorTok{=}\NormalTok{ node.create\_publisher(String, }\StringTok{\textquotesingle{}topic1\textquotesingle{}}\NormalTok{)}
+\NormalTok{pub2 }\OperatorTok{=}\NormalTok{ node.create\_publisher(String, }\StringTok{\textquotesingle{}topic2\textquotesingle{}}\NormalTok{)}
+\NormalTok{pub3 }\OperatorTok{=}\NormalTok{ node.create\_publisher(Int16, }\StringTok{\textquotesingle{}topic3\textquotesingle{}}\NormalTok{)}
+\NormalTok{msg }\OperatorTok{=}\NormalTok{ String()}
+\NormalTok{var }\OperatorTok{=}\NormalTok{ Int16()}
+
+\ControlFlowTok{while} \VariableTok{True}\NormalTok{:}
+\NormalTok{  message }\OperatorTok{=} \BuiltInTok{input}\NormalTok{(}\StringTok{"\textgreater{} "}\NormalTok{)}
+  \ControlFlowTok{if}\NormalTok{ message }\OperatorTok{==} \StringTok{\textquotesingle{}exit\textquotesingle{}}\NormalTok{:}
+     \ControlFlowTok{break}
+\NormalTok{  msgarr }\OperatorTok{=}\NormalTok{ message.split(}\StringTok{\textquotesingle{},\textquotesingle{}}\NormalTok{)}
+\NormalTok{  ch }\OperatorTok{=} \BuiltInTok{int}\NormalTok{(msgarr[}\DecValTok{1}\NormalTok{])}
+\NormalTok{  msg.data }\OperatorTok{=}\NormalTok{ msgarr[}\DecValTok{0}\NormalTok{]}
+  \ControlFlowTok{if}\NormalTok{ ch }\OperatorTok{==} \DecValTok{1}\NormalTok{:}
+\NormalTok{     pub1.publish(msg)}
+  \ControlFlowTok{if}\NormalTok{ ch }\OperatorTok{==} \DecValTok{2}\NormalTok{:}
+\NormalTok{     pub2.publish(msg)}
+  \ControlFlowTok{if}\NormalTok{ ch }\OperatorTok{==} \DecValTok{3}\NormalTok{:}
+\NormalTok{     var.data }\OperatorTok{=} \BuiltInTok{int}\NormalTok{(msgarr[}\DecValTok{0}\NormalTok{])}
+\NormalTok{     pub3.publish(var)}
+
+
+\NormalTok{node.destroy\_node()}
+\NormalTok{rclpy.shutdown()}
+\end{Highlighting}
+\end{Shaded}
+
+and for sub1.py we modify
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#!/usr/bin/env python3}
+\ImportTok{import}\NormalTok{ rclpy}
+\ImportTok{from}\NormalTok{ std\_msgs.msg }\ImportTok{import}\NormalTok{ String}
+\ImportTok{from}\NormalTok{ std\_msgs.msg }\ImportTok{import}\NormalTok{ Int16}
+
+\KeywordTok{def}\NormalTok{ chatter\_callback(msg):}
+   \KeywordTok{global}\NormalTok{ node}
+\NormalTok{   node.get\_logger().info(}\StringTok{\textquotesingle{}This is what I heard: "}\SpecialCharTok{\%s}\StringTok{"\textquotesingle{}} \OperatorTok{\%}\NormalTok{ msg.data)}
+
+\KeywordTok{def}\NormalTok{ chatter\_callback2(msg):}
+   \KeywordTok{global}\NormalTok{ node}
+\NormalTok{   node.get\_logger().info(}\StringTok{\textquotesingle{}This is what I heard: "}\SpecialCharTok{\%s}\StringTok{"\textquotesingle{}} \OperatorTok{\%}\NormalTok{ msg.data)}
+
+
+\NormalTok{rclpy.init(args}\OperatorTok{=}\VariableTok{None}\NormalTok{)}
+\NormalTok{node }\OperatorTok{=}\NormalTok{ rclpy.create\_node(}\StringTok{\textquotesingle{}min\_sub1\textquotesingle{}}\NormalTok{)}
+\NormalTok{subscription }\OperatorTok{=}\NormalTok{ node.create\_subscription(String, }\StringTok{\textquotesingle{}topic1\textquotesingle{}}\NormalTok{, chatter\_callback)}
+\NormalTok{subscription }\OperatorTok{=}\NormalTok{ node.create\_subscription(Int16, }\StringTok{\textquotesingle{}topic3\textquotesingle{}}\NormalTok{, chatter\_callback2)}
+
+\ControlFlowTok{while}\NormalTok{ rclpy.ok():}
+\NormalTok{   rclpy.spin\_once(node)}
+\end{Highlighting}
+\end{Shaded}
+
+Then on the publisher enter: {42, 3} . You should see the number 42
+echoed on the terminal running sub1.
+
+\begin{quote}
+Simple PubSub example cont.
+\end{quote}
+
+To see what topics are defined, you can get a list of them:
+
+\begin{verbatim}
+alta:Desktop jmcgough$ ros2 topic list
+/topic1
+/topic2
+/topic3
+\end{verbatim}
+
+As of early 2018, the topic list command was under development. This
+tool is only accurate for nodes and topics on a single computer. Current
+development by OSRF is to make the topic list work on distributed nodes.
+
+You can listen in on a topic using the rostopic command.
+
+\begin{verbatim}
+alta:Desktop jmcgough$ ros2 topic echo /topic1
+\end{verbatim}
+
+Into the publisher python window type:
+
+\begin{verbatim}
+> Hello, 1
+\end{verbatim}
+
+and you will see in the rostopic command window:
+
+\begin{verbatim}
+data: Hello
+\end{verbatim}
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{Data Types}\tabularnewline
+\toprule
+\endhead
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+Bool\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Byte\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+ByteMultiArray\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+Char\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+ColorRGBA\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Duration\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+Empty\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Float32\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Float32MultiArray\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+Float64\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Float64MultiArray\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Header\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int16\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int16MultiArray\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int32\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int32MultiArray\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int64\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int64MultiArray\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int8\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Int8MultiArray\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+MultiArrayDimension\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+MultiArrayLayout\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+String\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+Time\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt16\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt16MultiArray\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt32\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt32MultiArray\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt64\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt64MultiArray\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt8\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+UInt8MultiArray\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
+...\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Often we need to publish a message on a periodic basis. It is possible
+to place a delay via python sleep in the publishing loop:
+
+\begin{verbatim}
+while True:
+  message = input("> ")
+  if message == 'exit':
+     break
+  time.sleep(delay)
+\end{verbatim}
+
+The sleep command will introduce a delay. This approach will enforce at
+least that time interval, but not exactly that time interval. The
+process shares the cpu and longer delays can arise when other processes
+slow down the system. Some robotics applications require that the time
+interval is accurate within some constraint.
+
+To increase the timing accuracy, ROS supports an interrupt based method.
+This approach sets a timer which raises an interrupt. That interrupt
+causes a function to be called, known as an interrupt handler. Sample
+code is provided below (adapted from the ROS2 example programs).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ rclpy}
+\ImportTok{from}\NormalTok{ std\_msgs.msg }\ImportTok{import}\NormalTok{ String}
+\KeywordTok{def}\NormalTok{ timer\_callback():}
+    \KeywordTok{global}\NormalTok{ i}
+\NormalTok{    msg.data }\OperatorTok{=} \StringTok{\textquotesingle{}Hello World: }\SpecialCharTok{\%d}\StringTok{\textquotesingle{}} \OperatorTok{\%}\NormalTok{ i}
+\NormalTok{    i }\OperatorTok{+=} \DecValTok{1}
+\NormalTok{    node.get\_logger().info(}\StringTok{\textquotesingle{}Publishing: "}\SpecialCharTok{\%s}\StringTok{"\textquotesingle{}} \OperatorTok{\%}\NormalTok{ msg.data)}
+\NormalTok{    publisher.publish(msg)}
+
+
+\NormalTok{rclpy.init(args}\OperatorTok{=}\VariableTok{None}\NormalTok{)}
+\NormalTok{node }\OperatorTok{=}\NormalTok{ rclpy.create\_node(}\StringTok{\textquotesingle{}publisher\textquotesingle{}}\NormalTok{)}
+\NormalTok{publisher }\OperatorTok{=}\NormalTok{ node.create\_publisher(String, }\StringTok{\textquotesingle{}topic1\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{msg }\OperatorTok{=}\NormalTok{ String()}
+\NormalTok{i }\OperatorTok{=} \DecValTok{0}
+\NormalTok{timer\_period }\OperatorTok{=} \FloatTok{0.5}  \CommentTok{\# seconds}
+\NormalTok{timer }\OperatorTok{=}\NormalTok{ node.create\_timer(timer\_period, timer\_callback)}
+
+\NormalTok{rclpy.spin(node)}
+
+\NormalTok{node.destroy\_timer(timer)}
+\NormalTok{node.destroy\_node()}
+\NormalTok{rclpy.shutdown()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{publisher---subscriber-for-the-two-link-kinematics}{%
+\subsection{Publisher - Subscriber for the Two Link
+Kinematics}\label{publisher---subscriber-for-the-two-link-kinematics}}
+
+Assume that you want to control a two link manipulator using ROS. To do
+this you will need to describe the path you want to travel in the
+workspace. So, the first step is to produce the workspace domain points.
+The you want to ship those points to the inverse kinematics to find the
+corresponding angles that set the manipulator end effector in the
+workspace points you desire.
+
+For this example, we are going to create the workspace data, and then
+publish it with the first node. The next node will subscribe and convert
+\((x,y)\) data to angle data. That node will then publish to a node that
+will run the forward kinematics to check the answer. To make this look
+like a stream of points, a delay is placed
+
+The node that creates the workspace points is given in
+\texttt{lst:workspacepathcode}. We illustrate with the curve
+\(x(t) = 5\cos(t)+8\), \(y(t) = 3\sin(t)+10\). The interval is
+discretized into intervals of \(0.1\). The \((x,y)\) points are
+published on the topic named /WorkspacePath.
+
+\begin{quote}
+\#!/usr/bin/env python import rclpy from std\_msgs.msg import Float32
+from std\_msgs.msg import Int8 import math
+
+\begin{description}
+\item[def timer\_callback():]
+global t, pubx, puby x = 5.0*math.cos(t) + 8.0 y = 3.0*math.sin(t) +
+10.0 xval.data = x yval.data = y node.get\_logger().info('Publishing:
+"\%f" , "\%f" ' \% (x,y) ) pubx.publish(xval) puby.publish(yval) t =
+t+step
+\end{description}
+
+rclpy.init(args=None) node = rclpy.create\_node('Workspace') pubx =
+node.create\_publisher(Float32, 'WorkspacePathX') puby =
+node.create\_publisher(Float32, 'WorkspacePathY') step = 0.1 t = 0.0
+xval = Float32() yval = Float32()
+
+timer\_period = 0.5 \# seconds timer = node.create\_timer(timer\_period,
+timer\_callback)
+
+rclpy.spin(node)
+
+node.destroy\_timer(timer) node.destroy\_node() rclpy.shutdown()
+\end{quote}
+
+The next stage of the process is to convert the points from the
+workspace to the configuration space using the inverse kinematic
+equations. The program performs the inverse kinematics and then
+publishes the results on the topic /ConfigspacePath. The code is given
+in \texttt{lst:inversekinematicscode}.
+
+\begin{quote}
+\#!/usr/bin/env python import rclpy from std\_msgs.msg import Float32
+from std\_msgs.msg import Int8 import math
+
+\begin{description}
+\item[def callbackX(data):]
+global x, y x = data.data
+\item[def callbackY(data):]
+global x, y y = data.data convert(x,y)
+\item[def convert(x,y):]
+global pub, a1, a2 d = (x*x + y*y - a1*a1 - a2*a2)/(2*a1*a2) t2 =
+math.atan2(-math.sqrt(1.0-d*d),d) t1 = math.atan2(y,x) -
+math.atan2(a2*math.sin(t2),a1+a2*math.cos(t2)) xval.data = t1 yval.data
+= t2 node.get\_logger().info('Publishing: "\%f" , "\%f" ' \% (t1,t2) )
+pubcx.publish(xval) pubcy.publish(yval)
+\end{description}
+
+global x, y, a1, a2, pub rclpy.init(args=None) node =
+rclpy.create\_node('InverseK') subx = node.create\_subscription(Float32,
+'WorkspacePathX', callbackX) suby = node.create\_subscription(Float32,
+'WorkspacePathY', callbackY) pubcx = node.create\_publisher(Float32,
+'ConfigspacePathX') pubcy = node.create\_publisher(Float32,
+'ConfigspacePathY') xval = Float32() yval = Float32()
+
+\#Initialize global variables a1, a2 = 10.0, 10.0 x, y = 0.0, 0.0 while
+rclpy.ok(): rclpy.spin\_once(node)
+\end{quote}
+
+Finally we would like to check our answer. The angle values from the
+last node are evaluated by the forward kinematics producing
+\((\tilde{x},\tilde{y})\) values. These values are compared to the
+original \((x,y)\) values. The two sets of values should agree closely.
+The code for the verification is given in
+\texttt{lst:checkinversekinematics}.
+
+\begin{quote}
+\#!/usr/bin/env python import rclpy from std\_msgs.msg import Float32
+from std\_msgs.msg import Int8 import math
+
+\begin{description}
+\item[def callbackX(data):]
+global t1, t2 t1 = data.data
+\item[def callbackY(data):]
+global t1, t2 t2 = data.data convert(t1,t2)
+
+\begin{description}
+\item[def convert(t1,t2):]
+global a1, a2 x = a1*math.cos(t1) + a2*math.cos(t1+t2) y =
+a1*math.sin(t1) + a2*math.sin(t1+t2) print (x, y)
+\end{description}
+\end{description}
+
+global a1, a2 rclpy.init(args=None) node =
+rclpy.create\_node('InverseKcheck') subx =
+node.create\_subscription(Float32, 'ConfigspacePathX', callbackX) suby =
+node.create\_subscription(Float32, 'ConfigspacePathY', callbackY)
+
+\#Initialize global variables a1, a2 = 10.0, 10.0 t1, t2 = 0.0, 0.0
+
+\begin{description}
+\item[while rclpy.ok():]
+rclpy.spin\_once(node)
+\end{description}
+
+Two Link Manipulator ROS example.
+\end{quote}
+
+Although many devices produce data in a sequential manner, there are
+times when you have blocks of data. ROS provides a number of datatypes
+in both scalar and array form as well as some specialized messages for
+sending common data blocks such as position and pose updates. When it is
+possible, one can often get better performance out of sending arrays.
+This next example demonstrates how to send arrays. For this example we
+will send a block of 32bit integers which is the datatype
+\texttt{Int32MultiArray}.
+
+\begin{quote}
+\#!/usr/bin/env python import rclpy from std\_msgs.msg import
+Int32MultiArray rclpy.init(args=None) node =
+rclpy.create\_node('Talker') pub =
+node.create\_publisher(Int32MultiArray, 'Chatter')
+
+a={[}1,2,3,4,5{]} myarray = Int32MultiArray(data=a) pub.publish(myarray)
+
+\#!/usr/bin/env python import rclpy from std\_msgs.msg import
+Int32MultiArray
+
+\begin{description}
+\item[def callback(data):]
+print(data.data) var = data.data n = len(var) for i in range(n):
+print(var{[}i{]})
+\end{description}
+
+rclpy.init(args=None) node = rclpy.create\_node('Subscriber') sub =
+node.create\_subscription(Int32MultiArray, 'Chatter', callback)
+
+\begin{description}
+\item[while rclpy.ok():]
+rclpy.spin\_once(node)
+\end{description}
+\end{quote}

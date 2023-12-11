@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="16cm" viewBox="112 62 411 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="113" y="92" width="409" height="261"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="113" y="92" width="409" height="261"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="181.8" y="249.6" width="137.9" height="51.5"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="181.8" y="249.6" width="137.9" height="51.5"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="384.1" y="248.1" width="136" height="103"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="384.1" y="248.1" width="136" height="103"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="253.7" y="93.6" width="266" height="51.5"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="253.7" y="93.6" width="266" height="51.5"/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="114" y="94" width="137.7" height="103.1"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="114" y="94" width="137.7" height="103.1"/>
+  </g>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="190.7" y="81.1">
+    <tspan x="190.7" y="81.1">Image with Obstacles in red</tspan>
+  </text>
+  <text font-size="19.7556" style="fill: #000000;text-anchor:start;font-family:Utopia;font-style:normal;font-weight:normal" x="195.7" y="378.1">
+    <tspan x="195.7" y="378.1">Array Storage of Image Data</tspan>
+  </text>
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="24cm" height="6cm" viewBox="71 7 475 101" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="62.4721" x2="101" y2="102.528"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="106,70.2361 101,60.2361 96,70.2361 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="96,94.7639 101,104.764 106,94.7639 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="125.528" y1="83" x2="76.4721" y2="83"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="117.764,88 127.764,83 117.764,78 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="84.2361,78 74.2361,83 84.2361,88 "/>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="259" y="48" width="38" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="259" y="48" width="38" height="36"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="82.5" x2="254.528" y2="83.9575"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="246.717,88.8836 256.764,83.9788 246.812,78.8841 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="82.5" x2="254.631" y2="48.954"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="248.112,55.4952 256.815,48.477 245.979,45.7254 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="82.5" x2="251.57" y2="61.6144"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="244.567,67.6337 253.785,61.3072 243.193,57.7286 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="101" y1="83" x2="251.539" y2="72.3166"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="244.149,77.8536 253.77,72.1583 243.441,67.8787 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="365.1" y1="58.7911" x2="365.1" y2="98.8469"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="370.1,66.5551 365.1,56.5551 360.1,66.5551 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="360.1,91.0829 365.1,101.083 370.1,91.0829 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="389.628" y1="79.319" x2="340.572" y2="79.319"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="381.864,84.319 391.864,79.319 381.864,74.319 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="348.336,74.319 338.336,79.319 348.336,84.319 "/>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="523.1" y="62" width="20.9" height="18.3191"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="523.1" y="62" width="20.9" height="18.3191"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="365.1" y1="78.819" x2="518.628" y2="80.2765"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="510.817,85.2026 520.864,80.2978 510.912,75.2031 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="365.1" y1="78.819" x2="522.884" y2="11.7495"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="517.695,19.3882 524.942,10.8747 513.783,10.1852 "/>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="523.2" y="42.4" width="20.9" height="18.3191"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="523.2" y="42.4" width="20.9" height="18.3191"/>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="523.3" y="23.6" width="20.9" height="18.3191"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="523.3" y="23.6" width="20.9" height="18.3191"/>
+  </g>
+</svg>
