@@ -13,3 +13,32 @@ To build the html:   make html
 To build the pdf:    make latexpdf
 
 Our goal is to build a useful and modular curriculum.   So, instead of just forking the distro in silence, how about you contact us.  We might be able to add the content you want and end up with a better product overall.  We might also be able to setup for custom builds.  Thanks.
+
+## Steps to take to get the book up and running
+- Modify the latex conversion script to:
+  - convert all image files to one format that Tex can handle
+  - remove ".*" in the text
+  - Add a header and closing document tag at the end of every rst file
+- Look at image size and scaling
+- Sections that need some love:
+  - 2: Preliminaries
+  - 4: Simulation
+  - 10: Planning
+  - 11: Control
+  - 13: Localization
+  - 14: Machine Leanring
+- General clean up and updating images
+- ZeroMQ or ROS?
+- Finding/making a pretty LaTex template
+- Sections to possibly write:
+  - DeepCV
+  - Reinforcement Learning Control
+  - Advanced Controls
+  - Advanced Planning
+  - Exploration
+  - SystemID
+  - UAVs
+  - Spacecraft
+  - UUVs
+  
+
